@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #555;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Menu_bar_copy" data-name="Menu bar copy" class="cls-1" d="M30,23.993H69.99v2.012H30V23.993Zm0,30.024H69.99v1.977H30V54.017Zm0-10.01H69.99v1.977H30V44.007ZM30,34H69.99V36.01H30V34Z" transform="translate(-30 -24)"/>
+</svg>

@@ -1,0 +1,169 @@
+//    ____  _____    _    ____   ____ _   _ 
+//   / ___|| ____|  / \  |  _ \ / ___| | | |
+//   \___ \|  _|   / _ \ | |_) | |   | |_| |
+//    ___) | |___ / ___ \|  _ <| |___|  _  |
+//   |____/|_____/_/   \_\_| \_\\____|_| |_|
+//                                          
+
+
+
+
+
+//     ____  ___   ___   ____ _     _____ 
+//    / ___|/ _ \ / _ \ / ___| |   | ____|
+//   | |  _| | | | | | | |  _| |   |  _|  
+//   | |_| | |_| | |_| | |_| | |___| |___ 
+//    \____|\___/ \___/ \____|_____|_____|
+//                                        
+
+
+
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Styles for goog.ui.ac.AutoComplete and its derivatives.
+ * Note: these styles need some work to get them working properly at various
+ * font sizes other than the default.
+ *
+ * @author pupius@google.com (Daniel Pupius)
+ * @author annams@google.com (Srinivas Annam)
+ */
+
+
+/*
+ * TODO(annams): Rename (here and in renderer.js) to specify class name as
+ * goog-autocomplete-renderer
+ */
+.ac-renderer,
+.ac-renderer-header-search,
+.ac-renderer-header-mobile-search{
+  //font: normal 13px Arial, sans-serif;
+  //.montserrat-bold;
+  //.opacity(0.3);
+  
+  // replaced
+  //.gotham-medium-03-menu-smaller-header-text(1);
+  //line-height: 30px;
+
+  // .gotham-medium;
+  .open-sans;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.075em;
+  // text-transform: uppercase;
+  // color: @dark-blue;
+  color: #898989;
+
+
+  // padding-bottom: 8px;          // removed extra padding due to comment
+
+
+  position: absolute;
+  background: #fff;
+  //border: 1px solid #666;
+  
+  //-moz-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+  //-webkit-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+  
+  width: 300px;
+  //position: relative;
+  //z-index: 5000;
+  // z-index: 10000;
+  // z-index: 10000 !important;
+  z-index: 100001 !important;
+  // text-transform: uppercase;
+  // margin-top: 6px;
+  margin-top: 2px;
+
+  .ac-highlighted{
+    // color: @dark-blue;
+    color: @dark-grey;
+    font-weight: 600;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #b7b7b7;
+    border-top: none;
+    .opacity(0.6);
+  }
+
+}
+
+//.manic-mobile{
+@media only screen and (max-width: 991px) {
+  .ac-renderer,
+  .ac-renderer-header-search,
+  .ac-renderer-header-mobile-search{
+    z-index: 200000 !important;
+    
+    //z-index: 20000 !important;
+  }
+}
+
+
+.ac-row {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  //padding: .4em;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  &:hover{
+    //background-color: #b2b4bf;
+    //background: @white;
+    background: #b7b7b7;
+    color: @white;
+  }
+}
+
+.ac-highlighted {
+  //font-weight: bold;
+}
+
+.ac-active {
+  //background-color: #b2b4bf;
+  //
+  //
+}
+
+
+.ac-renderer,
+.ac-renderer-header-search,
+.ac-renderer-header-mobile-search{
+  &.has-highlight{
+    .ac-active {
+      // background: @bronze;
+      background: #b7b7b7;
+      color: @white;
+
+      .ac-highlighted{
+        color: @white;
+        font-weight: 400;
+      }
+    }
+    
+  }
+}
+/*
+.ac-renderer.has-highlight{
+}
+*/

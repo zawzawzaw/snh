@@ -1,0 +1,245 @@
+
+
+#contact-form-title{
+  text-align: center;
+
+  padding-top: 83px;
+  padding-bottom: 29px;
+
+
+  h1{
+    padding-top: 2px;
+    padding-bottom: 8px;
+  }
+}
+
+
+#contact-form-copy{
+
+  padding-right: 40px;
+  height: 445px;
+
+  padding-top: 25px;
+
+}
+
+.contact-form-address{
+  // margin-bottom: 50px;
+  margin-bottom: 48px;
+  position: relative;
+
+  h4{
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    margin-bottom: 5px;
+  }
+  p{
+
+  }
+
+  ul{
+    padding-top: 4px;
+
+    li{
+      position: relative;
+      padding-left: 21px;
+
+      span{
+        .lato-bold;
+        font-size: 15px;
+        line-height: 26px;
+        color: @violet;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+      }
+      p{
+        font-size: 15px;
+        line-height: 26px;
+
+        a{
+          color: @dark-grey;
+          &:focus,
+          &:hover{
+            color: @light-violet;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact-form-operating-hours{
+  position: relative;
+  
+  h4{
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    margin-bottom: 13px;
+  }
+
+}
+
+.contact-form-operating-hours-item{
+  margin-bottom: 19px;
+
+  strong{
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    display: block;
+    margin-bottom: 1px;
+  }
+  ul{
+    font-size: 0;
+    height: 22px;
+
+    li{
+      color: @dark-grey;
+      font-size: 15px;
+      line-height: 26px;
+      letter-spacing: 0.025em;
+
+      .display-inline-block;
+      position: relative;
+      padding-right: 22px;
+
+
+      &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 8px;
+
+        height: 14px;
+        border-left: 1px solid #959595;
+        position: absolute;
+      }
+
+
+      &:last-child{
+        padding-right: 0px;
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  #contact-form-title{
+    padding-top: 50px;
+    padding-bottom: 48px;
+  }
+}
+
+    
+
+
+
+
+//    _____ ___  ____  __  __
+//   |  ___/ _ \|  _ \|  \/  |
+//   | |_ | | | | |_) | |\/| |
+//   |  _|| |_| |  _ <| |  | |
+//   |_|   \___/|_| \_\_|  |_|
+//
+
+
+#contact-form-divider{
+
+  margin-top: 25px;
+  margin-bottom: 90px;
+
+  width: 0px;
+  height: 535px;
+  border-left: 1px solid @border-grey;
+}
+
+
+#contact-form-container{
+  padding-top: 26px;
+  margin-left: -20px;
+
+  h3.contact-form-introduction{
+    margin-bottom: 18px;
+  }
+
+
+}
+
+#contact-form-thankyou{
+  display: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+  /*
+  #contact-form-title{
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+    padding-top: 50px;
+    // padding-bottom: 48px;
+    padding-bottom: 40px;
+  }
+  */
+  #contact-form-copy{
+    padding-right: 0px;
+    height: auto;
+    position: relative;
+
+    // padding-top: 60px;
+    // padding-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .contact-form-copy-mobile-hr{
+      margin-top: 60px;
+    }
+  }
+  .contact-form-address{
+    margin-bottom: 35px;
+  }
+
+  .contact-form-operating-hours-item{
+    strong{
+      white-space: nowrap;
+    }
+  }
+
+
+
+
+
+
+  #contact-form-divider{
+    display: none;
+  }
+
+
+  #contact-form-container{
+    padding-top: 0px;
+    padding-bottom: 60px;
+    margin-left: 0px;
+  }
+
+}

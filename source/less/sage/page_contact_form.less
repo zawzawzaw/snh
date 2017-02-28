@@ -1,0 +1,268 @@
+
+
+//    _____ ___  ____  __  __ 
+//   |  ___/ _ \|  _ \|  \/  |
+//   | |_ | | | | |_) | |\/| |
+//   |  _|| |_| |  _ <| |  | |
+//   |_|   \___/|_| \_\_|  |_|
+//                            
+
+
+
+.contact-us-form{
+  &.default-form{
+    .form-group{
+      // margin-bottom: 43px;
+      // margin-bottom: 33px;
+      // margin-bottom: 23px;
+      // margin-bottom: 63px;
+      // margin-bottom: 43px;
+      margin-bottom: 11px;
+
+      label{
+        font-size: 13px;
+        line-height: 13px;
+        letter-spacing: 0.120em;
+
+        padding-bottom: 8px;
+      }
+
+      .form-control{
+        //height: 40px;
+        height: 35px;
+        // background: @white;
+        background: @off-white;
+
+        // padding-left: 15px;
+        // padding-right: 15px;
+
+        // padding-left: 20px;
+        // padding-right: 20px;
+
+        padding-left: 14px;
+        padding-right: 14px;
+
+        .lato-regular;
+        // font-size: 15px;
+        font-size: 14px;
+
+        &.has-placeholder{
+          color: #afafaf;
+        }
+        
+      }
+      textarea.form-control{
+        .lato-regular;
+        // height: 124px;
+        height: 160px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      
+    } // .form-group
+
+    .square-cta{
+      width: auto;
+    }
+  } // .default-form
+
+  .goog-menu.scroll-version{
+    //top: 38px !important;
+    height: 233px;
+    // height: 233px;
+    // height: 232px;
+  }
+  .goog-menu.goog-menu-vertical{
+    // top: 38px !important;
+    top: 35px!important;
+
+    
+    max-width: none !important;
+    min-width: 0 !important;
+    width: auto !important;
+    right: -1px;
+
+  }
+  .goog-menu.goog-menu-vertical.scroll-version{
+    // top: 39px !important;
+    top: 35px !important;
+
+  }
+
+  .manic-dropdown{
+    //background: @white;
+    background: @off-white;
+    // height: 40px;
+    height: 35px;
+    .goog-menu-button{
+      // height: 38px;
+      height: 33px;
+    }
+  }
+
+  .manic-dropdown,
+  .manic-combobox{
+    .goog-menu-button-caption{
+      padding-right: 30px;
+      overflow: hidden;
+    }
+  }
+
+  .goog-menu-button-dropdown{
+    // top: 10px;
+    top: 7px;
+    right: 11px;
+  }
+
+
+  .goog-menu-button-caption{
+    .lato-regular;
+    // font-size: 15px;
+    font-size: 14px;
+    // line-height: 38px;
+    // height: 40px;
+
+    line-height: 33px;
+    height: 35px;
+
+    // padding-left: 20px;
+    // padding-right: 20px;
+
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+
+
+  .cta-container{
+    text-align: right;
+    padding-top: 9px;
+  }
+
+}
+
+
+
+//    _____ ___  ____  __  __   __  __  ___  ____ ___ _     _____ 
+//   |  ___/ _ \|  _ \|  \/  | |  \/  |/ _ \| __ )_ _| |   | ____|
+//   | |_ | | | | |_) | |\/| | | |\/| | | | |  _ \| || |   |  _|  
+//   |  _|| |_| |  _ <| |  | | | |  | | |_| | |_) | || |___| |___ 
+//   |_|   \___/|_| \_\_|  |_| |_|  |_|\___/|____/___|_____|_____|
+//                                                                
+
+
+
+// mobile
+@media only screen and (max-width: 991px) {
+  .contact-us-form{
+    &.default-form{
+
+
+      .form-group{
+
+        margin-bottom: 14px;
+
+        label{
+          font-size: 11px;
+          //line-height: 14px;
+          line-height: 13px;
+          letter-spacing: .025em;
+
+          padding-bottom: 5px;
+        }
+        .form-control{
+          font-size: 12px;
+          // line-height: 28px;
+
+          height: 28px;
+          padding-left: 12px;
+          padding-right: 12px;
+
+        }
+        textarea.form-control{
+          height: 100px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        
+        
+
+      } // .form-group
+
+
+
+
+
+    } // default form
+
+
+    .manic-dropdown{
+      //background: @white;
+      background: @off-white;
+      height: 28px;
+    }
+
+    .manic-dropdown,
+    .manic-combobox{
+      .goog-menu-button-caption{
+        padding-right: 30px;
+        overflow: hidden;
+      }
+    }
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.zoomed-version{
+  .contact-us-form{
+    .manic-dropdown .goog-menu-button{
+      // height: 37px;
+      height: 32px;
+    }
+    .goog-menu.scroll-version{
+      height: 231px;
+    }
+
+    .goog-menu.goog-menu-vertical{
+      // top: 41px!important;
+      // top: 40px!important;
+      // right: -2px!important;
+
+      top: 35px!important;
+      right: -2px!important;
+
+
+    }
+    .goog-menu.goog-menu-vertical.scroll-version{
+      // top: 37px !important;
+      // top: 38px !important;
+      top: 33px !important;
+
+
+
+      
+
+    }
+
+  }
+}
+
+
+

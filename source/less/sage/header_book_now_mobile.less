@@ -1,0 +1,341 @@
+
+//    __  __  ___  ____ ___ _     _____   ____   ___   ___  _  __  _   _  _____        __
+//   |  \/  |/ _ \| __ )_ _| |   | ____| | __ ) / _ \ / _ \| |/ / | \ | |/ _ \ \      / /
+//   | |\/| | | | |  _ \| || |   |  _|   |  _ \| | | | | | | ' /  |  \| | | | \ \ /\ / / 
+//   | |  | | |_| | |_) | || |___| |___  | |_) | |_| | |_| | . \  | |\  | |_| |\ V  V /  
+//   |_|  |_|\___/|____/___|_____|_____| |____/ \___/ \___/|_|\_\ |_| \_|\___/  \_/\_/   
+//                                                                                       
+
+
+
+#mobile-header-book-now-form{
+  // display: none;                   // temp
+
+  height: 0;
+  overflow: hidden;
+  
+  padding-left: 16px + 6px;
+  padding-right: 16px + 6px;
+
+  &.expand-version{
+    height: auto;
+    overflow: visible;
+  }
+  
+
+  .book-now-spacer-top{
+    height: 21px;
+  }
+  .book-now-spacer-bottom{
+    height: 18px;
+  }
+
+
+  background: @white;
+
+
+  &.default-form{
+    .square-cta{
+      background: @light-blue;
+      margin-bottom: 16px;
+
+      &:hover{
+        background: @dark-blue;
+      }
+    }
+
+    .form-group{
+      margin-bottom: 6px;
+    }
+  }
+
+
+  #book-now-villas-txt,
+  #book-now-adults-txt,
+  #book-now-hotel-txt{
+    text-align: center;
+  }
+
+  .book-now-cta-container{
+    padding-top: 9px;
+  }
+
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .book-now-offers-cta{
+    color: #898989;
+    display: block;
+    text-align: center;
+
+    padding-top: 8px;
+
+    h4{
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      color: #898989;
+      text-transform: uppercase;
+      .transition-in(0.3s);
+    }
+  }
+
+  .book-now-cancel-cta{
+    color: #898989;
+    display: block;
+    text-align: center;
+
+    padding-top: 8px;
+
+    h4{
+      font-size: 12px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      color: #898989;
+      text-transform: none;
+      .transition-in(0.3s);
+    }
+  }
+
+
+
+  //     ____    _    _     _____ _   _ ____    _    ____  
+  //    / ___|  / \  | |   | ____| \ | |  _ \  / \  |  _ \ 
+  //   | |     / _ \ | |   |  _| |  \| | | | |/ _ \ | |_) |
+  //   | |___ / ___ \| |___| |___| |\  | |_| / ___ \|  _ < 
+  //    \____/_/   \_\_____|_____|_| \_|____/_/   \_\_| \_\
+  //                                                       
+
+
+  .book-now-content{
+    overflow: hidden;
+    max-height: 600px;
+
+    .transition-in(0.5s);
+
+    &.collapse-version{
+      max-height: 0px;
+    }
+  }
+
+  .book-now-calendar-container-container{
+    /*
+    position: absolute;
+    width: 494px;
+    height: 235px + 26px;
+    bottom: 0px;
+    right: 100%;
+
+    
+    */
+    visibility: hidden;
+    .opacity(0);
+
+    max-height: 0px;
+    overflow: hidden;
+
+    .transition-in(0.5s);
+
+    &.expand-version{
+      max-height: 600px;
+    }
+    
+    /*
+    -webkit-animation: animate_from_right 0.3s both cubic-bezier(0.7,0,0.3,1);
+    -moz-animation: animate_from_right 0.3s both cubic-bezier(0.7,0,0.3,1);
+    -o-animation: animate_from_right 0.3s both cubic-bezier(0.7,0,0.3,1);
+    animation: animate_from_right 0.3s both cubic-bezier(0.7,0,0.3,1);
+    
+    &.expand-version{
+      // max-width: 494px;
+      // .transition-in(0.5s);
+        
+      -webkit-animation: animate_from_left 0.5s both cubic-bezier(0.7,0,0.3,1);
+      -moz-animation: animate_from_left 0.5s both cubic-bezier(0.7,0,0.3,1);
+      -o-animation: animate_from_left 0.5s both cubic-bezier(0.7,0,0.3,1);
+      animation: animate_from_left 0.5s both cubic-bezier(0.7,0,0.3,1);
+
+    }
+    */
+  }
+  .book-now-calendar-container{
+
+    padding-top: 16px;
+
+
+    /*
+    width: 494px;
+    height: 235px + 26px;
+
+    padding-top: 19px;
+
+    .book-now-calendar-bg{
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background: @white;
+      .opacity(0.9);
+      .transition-in(0.5s);
+    }
+
+    .book-now-calendar{
+      position: relative;
+    }
+    */
+   
+    .book-now-calendar{
+      > .ui-datepicker-inline{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+  }
+
+
+
+
+
+  // prev
+  .ui-icon-circle-triangle-w,
+  .ui-icon-circle-triangle-e{
+    text-indent: 0px !important;
+    text-align: center;
+
+    &:before{
+      .fa;
+      font-size: 20px;
+      top: -6px;
+      line-height: 21px;
+    }
+
+  }
+
+
+  .ui-datepicker .ui-datepicker-title{
+    font-size: 19px;
+    line-height: 21px;
+
+    padding-bottom: 5px + 1px;
+    
+  } // .ui-datepicker
+  .ui-datepicker th {
+    font-size: 14px;
+    line-height: 26px + 8px;
+    
+    span{
+      position: relative;
+      top: 0px;
+    }
+
+  }
+  .ui-datepicker td span,
+  .ui-datepicker td a {
+    font-size: 14px;
+    line-height: 26px + 8px;
+  }
+
+
+
+
+} // #mobile-header-book-now-form
+
+
+
+body.is-tablet.is-tablet-landscape{
+  #mobile-header-book-now-form{
+    .book-now-content{
+      padding-bottom: 40px;
+    }
+  }
+}
+
+
+
+
+
+#mobile-calendar-done-cta-spacer{
+  height: 40px;
+  display: none;
+}
+
+#mobile-calendar-done-cta{
+  height: 40px;
+
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  background: @light-blue;
+
+  display: none;
+
+  &:after{
+    content: "";
+    display: block;
+
+    position: absolute;
+    z-index: 21;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent url('../images/bg/mobile-square-cta-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+  .square-cta{
+    //background: @light-blue;
+    background: transparent;
+
+    width: 100%;
+    text-align: center;
+    display: block;
+
+    position: relative;
+    z-index: 22;
+    padding-left: 0;
+    padding-right: 0;
+    
+  }
+}
+
+
+#mobile-header-book-now-form.open-calendar-version{
+  #mobile-calendar-done-cta-spacer{
+    display: block;
+  }
+  #mobile-calendar-done-cta{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*
+@media (min-width: 992px) {
+  #mobile-header-book-now-form{
+    display: none !important;
+
+  }
+}
+*/
