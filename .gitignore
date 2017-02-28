@@ -1,2 +1,4 @@
 source/library/
 01/
+.gitignore
+.DS_Store
