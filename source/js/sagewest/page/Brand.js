@@ -415,7 +415,7 @@ sagewest.page.Brand.prototype.others = function(){
           return prevent();
       } else if (up && delta > scrollTop) {
           // Scrolling up, but this will take us past the top.
-          $this.scrollTop(0);
+          // $this.scrollTop(0);
           return prevent();
       }
   });

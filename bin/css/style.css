@@ -4599,9 +4599,11 @@ html.actual-mobile .scroll-down-cta:hover:before {
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   background: #262626;
 }
-html.fixed {
+html.fixed,
+body.fixed {
   overflow: hidden;
   height: 100%;
+  position: relative;
 }
 #desktop-header {
   position: fixed;
