@@ -7,20 +7,81 @@
 
 .default-copy{
 
-  h5 + p{
-    padding-top: 14px;
+  h5{
+
   }
+  h6{
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  
 
   p{
 
   }
-  p + p{
 
-  }
+
 
   .cta-container{
     padding-top: 36px;
+
   }
+
+
+
+
+  ul {
+    padding-left: 13px;
+    li {
+      position: relative;
+      &:before {
+        display: block;
+        content:"·";
+
+        .open-sans-light;
+        font-size: 35px;
+        line-height: 24px;
+
+        position: absolute;
+        top: 0;
+        left: -14px;
+      }
+    }
+  }
+
+
+  h5 + p{
+    padding-top: 14px;
+  }
+  h5 + h6{
+    padding-top: 23px;
+  }
+
+  p + p{
+    padding-top: 24px;
+  }
+
+
+  p + ul{
+    padding-top: 19px;
+  }
+  h6 + ul{
+    padding-top: 8px;
+  }
+
+
+  ul + h6 {
+    padding-top: 21px;
+  }
+  ul + p {
+    padding-top: 21px;
+  }
+
+  
+
+  
 
 
 } // .default-copy
@@ -334,7 +395,8 @@ body.is-tablet.is-tablet-portrait{
 }
 
 #default-footer-spacer{
-  height: 66px;
+  // height: 66px;
+  height: 76px;
 }
 
 
@@ -460,10 +522,10 @@ body.is-tablet.is-tablet-portrait{
 
 
 .detail-banner-slider-section{
-  
 
   .detail-banner-slider-title{
     text-align: center;
+    padding-bottom: 15px;
   }
   .detail-banner-slider-container{
     margin-left: -50px;
@@ -557,6 +619,8 @@ body.is-tablet.is-tablet-portrait{
 
 @media only screen and (max-width: 991px) {
   .detail-banner-slider-section{
+    padding-bottom: 30px;
+
     .detail-banner-slider-title{
       text-align: center;
     }
@@ -572,4 +636,72 @@ body.is-tablet.is-tablet-portrait{
       }
     }
   }  
+}
+
+
+
+//    _____ _     ___ ____  ____  _____ ____    _____ _   _ _   _  ____ _____ ___ ___  _   _
+//   |  ___| |   |_ _|  _ \|  _ \| ____|  _ \  |  ___| | | | \ | |/ ___|_   _|_ _/ _ \| \ | |
+//   | |_  | |    | || |_) | |_) |  _| | |_) | | |_  | | | |  \| | |     | |  | | | | |  \| |
+//   |  _| | |___ | ||  __/|  __/| |___|  _ <  |  _| | |_| | |\  | |___  | |  | | |_| | |\  |
+//   |_|   |_____|___|_|   |_|   |_____|_| \_\ |_|    \___/|_| \_|\____| |_| |___\___/|_| \_|
+//
+
+
+.add-flipper-function{
+  .flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;      
+  }
+
+  .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  .flip-container, .front, .back {
+  }
+
+  .flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  .front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .front {        
+    z-index: 2;
+  }
+
+  .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
 }

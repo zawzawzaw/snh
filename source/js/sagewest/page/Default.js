@@ -340,6 +340,51 @@ sagewest.page.Default.prototype.create_detail_page = function(){
   } // .detail-banner-slider
   
 
+
+  // CREATE ALL flipper containers
+
+  if ($('.flip-container.manic-version').length != 0) {
+
+    var arr = $('.flip-container.manic-version');
+    var item = null;
+    var flip_btn = null;
+    var back_btn = null;
+
+    for (var i = 0, l=arr.length; i < l; i++) {
+      item = $(arr[i]);
+
+      flip_btn = item.find('.flipper-front-btn');
+      flip_btn.data('flip-container', item);
+      flip_btn.click(function(event){
+        event.preventDefault();
+        var target = $(event.currentTarget);
+        var item = target.data('flip-container');
+        item.addClass('hover');
+      });
+
+      back_btn = item.find('.flipper-back-btn');
+      back_btn.data('flip-container', item);
+      back_btn.click(function(event){
+        event.preventDefault();
+        var target = $(event.currentTarget);
+        var item = target.data('flip-container');
+        item.removeClass('hover');
+      });
+    }
+    
+
+  } // .flip-container
+
+  $(".tnc").on("click", function(e){
+      e.preventDefault();
+      $(this).closest('.flip-container').addClass("hover");
+    });
+
+    $(".back-to-offer").on("click", function(e){
+      e.preventDefault();
+      $(this).closest('.flip-container').removeClass("hover");
+    });
+
   
 };
 
