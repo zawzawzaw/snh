@@ -59,7 +59,9 @@ sagewest.component.MobileHeader = function(options, element) {
   this.create_main_buttons();
   this.create_menu();
 
-  this.calendar_open_menu();
+  if(manic.IS_ACTUAL_MOBILE == true) {
+    this.calendar_open_menu();
+  }
 
   console.log('init');
 };
@@ -222,6 +224,8 @@ sagewest.component.MobileHeader.prototype.calendar_open_menu = function() {
     this.body.addClass('mobile-calendar-open');
     this.body.removeClass('mobile-menu-open');
 
+    $('html').addClass('fixed');    
+
     this.expand_container.addClass('expand-version');
 
     TweenMax.to(this.calendar_close_btn, 0.3, {autoAlpha: 1});
@@ -240,6 +244,8 @@ sagewest.component.MobileHeader.prototype.calendar_close_menu = function() {
 
     this.body.removeClass('mobile-calendar-open');
     this.body.removeClass('mobile-menu-open');
+
+    $('html').removeClass('fixed');
 
     this.expand_container.removeClass('expand-version');
 

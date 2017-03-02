@@ -22,6 +22,8 @@ ob_start();
 
   <body class="<?php echo $body_class; ?>">
 
+    <div id="overlay"></div>
+
     <div id="page-preloader">
       <div id="page-preloader-line-01"></div>
       <div id="page-preloader-line-02">
