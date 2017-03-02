@@ -32,6 +32,8 @@
   <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
   <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
   <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
+  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
+  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
 
   <!-- Google Closure -->
   <script src="../source/library/closure-library/closure/goog/base.js"></script>
@@ -40,8 +42,9 @@
     goog.require('sagewest.page.Default');
   </script>
   <script type="text/javascript">
-    page = new sagewest.page.Default({});
-    $('body').addClass('preload-start');    
+    jQuery(document).ready(function($) {
+      page = new sagewest.page.Default({});
+    });
   </script>
 
 <?php else: ?>
@@ -56,7 +59,6 @@
       head.load(PAGE_JS, function() {
           
         page = new sagewest.page.Default({});
-        $('body').addClass('preload-start');
 
       });
     });

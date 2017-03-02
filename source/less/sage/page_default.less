@@ -1,3 +1,44 @@
+
+
+
+
+
+
+
+.default-copy{
+
+  h5 + p{
+    padding-top: 14px;
+  }
+
+  p{
+
+  }
+  p + p{
+
+  }
+
+  .cta-container{
+    padding-top: 36px;
+  }
+
+
+} // .default-copy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .default-page-banner{
   // height: 800px;
   position: relative;
@@ -278,3 +319,257 @@ body.is-tablet.is-tablet-portrait{
 }
 
 
+
+
+
+
+
+
+
+
+
+// space of the header 
+#default-header-spacer{
+  height: 83px;
+}
+
+#default-footer-spacer{
+  height: 66px;
+}
+
+
+
+
+
+//    ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
+//   | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
+//   |  _ \| |_) |  _|   / _ \ | | | | |   | |_) | | | | |\/| |  _ \
+//   | |_) |  _ <| |___ / ___ \| |_| | |___|  _ <| |_| | |  | | |_) |
+//   |____/|_| \_\_____/_/   \_\____/ \____|_| \_\\___/|_|  |_|____/
+//
+
+.default-breadcrumb-section{
+  // padding-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+} // .default-breadcrumb-section
+
+.default-breadcrumb{
+  ul {
+    font-size: 0;
+
+    li {
+      .display-inline-block;
+      position: relative; 
+      padding-right: 20px;
+
+      &:after{
+        .fa;
+        content: "\f178"; // .fa-long-arrow-right
+        font-size: 11px;
+        line-height: 11px;
+        color: @light-grey;
+
+        .display-inline-block;
+        position: absolute;
+        top: 1px;
+        right: 4px;
+      }
+
+      &:last-child{
+        padding-right: 0;
+
+        &:after{
+          display: none;
+        }
+      }
+
+      // default style
+      .header-h5-style;
+      color: @violet;
+      font-size: 11px;
+      line-height: 11px;
+      text-transform: uppercase;
+      vertical-align: middle;
+
+      a {
+        .header-h6-style;
+        font-size: 11px;
+        line-height: 11px;
+        text-transform: uppercase;
+        color: @light-grey;
+
+        &:focus,
+        &:hover{
+          color: @violet;
+        }
+      }
+
+
+
+    }
+  }
+} // .default-breadcrumb
+
+
+//    _____ ___ _____ _     _____
+//   |_   _|_ _|_   _| |   | ____|
+//     | |  | |  | | | |   |  _|
+//     | |  | |  | | | |___| |___
+//     |_| |___| |_| |_____|_____|
+//
+
+
+
+.index-page-title-section{
+  padding-bottom: 65px;
+
+} // .index-page-title-section
+
+.index-page-title{
+  text-align: center;
+
+  h1{
+
+  }
+
+  p{
+    .playfair-regular;
+    font-size: 19px;
+    line-height: 27px;
+    color: @grey-3;
+    // max-width: 800px;
+    // margin: 0 auto;
+  }
+
+  h1 + p{
+    padding-top: 4px;
+  }
+
+} // .index-page-title
+
+
+//    ____  _     ___ ____  _____ ____
+//   / ___|| |   |_ _|  _ \| ____|  _ \
+//   \___ \| |    | || | | |  _| | |_) |
+//    ___) | |___ | || |_| | |___|  _ <
+//   |____/|_____|___|____/|_____|_| \_\
+//
+
+
+
+.detail-banner-slider-section{
+  
+
+  .detail-banner-slider-title{
+    text-align: center;
+  }
+  .detail-banner-slider-container{
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .detail-banner-slider{
+
+    .slick-prev,
+    .slick-next{
+      position: absolute;
+      top: 50%;
+      z-index: 200;
+      width: 70px;
+      height: 70px;
+      .transition-in(0.3s);
+
+      background: transparent;
+      text-indent: -9999px;
+      border: 3px solid @white;
+      .round(35px);
+      outline: none;
+
+      margin-top: -35px;
+
+      &:before{
+        content: "";
+      }
+
+      &:after{
+        content: "";
+        display: block;
+
+
+        position: absolute;
+        width: 20px;
+        height: 30px;
+        top: 16px;
+        left: 0;
+
+        .transition-in(0.3s);
+
+      }
+
+      &:focus,
+      &:hover{
+        &:after{
+          color: @brown;
+        }
+      }
+
+      &.slick-disabled{
+        pointer-events: none;
+        .opacity_important(0.5);
+
+        &:after{
+          color: @white; 
+        }
+      }
+    }
+
+    .slick-prev{
+      left: 51px;
+      right: auto;
+
+      &:after{
+        .white-arrow-left;
+        // left: 22px;
+        left: 18px;
+      }
+    }
+    .slick-next{
+      left: auto;
+      right: 51px;
+
+      &:after{
+        .white-arrow-right;
+        left: auto;
+        // right: 22px;
+        right: 18px;
+      }
+    }
+
+  } // .detail-banner-slider
+
+  .detail-banner-slider-item{
+    .manic-image-container{
+      height: 670px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .detail-banner-slider-section{
+    .detail-banner-slider-title{
+      text-align: center;
+    }
+    .detail-banner-slider-container{
+
+    }
+    .detail-banner-slider{
+
+    }
+    .detail-banner-slider-item{
+      .manic-image-container{
+        height: 250px;
+      }
+    }
+  }  
+}

@@ -184,6 +184,11 @@ sagewest.page.Default.prototype.init = function() {
     this.create_contact_form();
   }
 
+
+  this.create_detail_page();
+
+
+
   // mobile!
   this.update_page_layout();
 
@@ -296,8 +301,47 @@ sagewest.page.Default.prototype.create_mobile_menu = function(){
 }
 
 
+//    ____  _____ _____  _    ___ _
+//   |  _ \| ____|_   _|/ \  |_ _| |
+//   | | | |  _|   | | / _ \  | || |
+//   | |_| | |___  | |/ ___ \ | || |___
+//   |____/|_____| |_/_/   \_\___|_____|
+//
 
 
+sagewest.page.Default.prototype.create_detail_page = function(){
+
+
+  // CREATE DETAIL BANNER
+
+  if ($('.detail-banner-slider').length != 0) {
+
+    $('.detail-banner-slider').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('.detail-banner-slider').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.detail_banner_carousel = $('.detail-banner-slider').slick({
+      'speed': 350,
+      'dots': false,
+      'arrows': true,
+      'infinite': false,
+      'slidesToShow': 1,
+      'slidesToScroll': 1,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000
+    });
+
+    this.detail_banner_carousel
+
+  } // .detail-banner-slider
+  
+
+  
+};
 
 
 //    ____   _    ____ _  __    _    ____ _____ ____
