@@ -365,7 +365,7 @@
               </div>
               <h4>sage hotels west perth</h4>
               <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
-              <a href="#" class="arrow-cta">Visit This Hotel</a>
+              <a href="hotel.php" class="arrow-cta">Visit This Hotel</a>
             </div>
             <div class="carousel-content">
               <div class="manic-image-container">
@@ -373,7 +373,7 @@
               </div>
               <h4>sage hotels west perth</h4>
               <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
-              <a href="#" class="arrow-cta">Visit This Hotel</a>
+              <a href="hotel.php" class="arrow-cta">Visit This Hotel</a>
             </div>
             <div class="carousel-content">
               <div class="manic-image-container">
@@ -381,7 +381,7 @@
               </div>
               <h4>sage hotels west perth</h4>
               <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
-              <a href="#" class="arrow-cta">Visit This Hotel</a>
+              <a href="hotel.php" class="arrow-cta">Visit This Hotel</a>
             </div>
           </div>
         </div>
@@ -389,7 +389,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="#" id="view-all-locations-cta" class="arrow-cta">view all Locations</a>
+        <a href="brand_location.php" id="view-all-locations-cta" class="arrow-cta">view all Locations</a>
       </div>
     </div>
   </div>

@@ -22,6 +22,11 @@
   background: @off-black;
 }
 
+html.fixed {
+  overflow: hidden;
+  height: 100%;
+}
+
 
 #desktop-header{
   position: fixed;
@@ -543,7 +548,7 @@ body.hotel {
     border: none;
     border-radius: 0px;
     height: 370px;
-    background-color: @off-white;
+    background-color: #f1f2f2;
     padding: 5px 9px;
     &:after, &:before {
       display: none;
@@ -554,7 +559,7 @@ body.hotel {
     .calendar {
       margin-top: -4px;
       .calendar-table {
-        background-color: @off-white;
+        background-color: #f1f2f2;
         padding-bottom: 0px;
       }
       &.right {
@@ -617,7 +622,7 @@ body.hotel {
       }
       tbody {
         tr {
-          border-bottom: 5px solid @off-white;
+          border-bottom: 5px solid #f1f2f2;
         }
       }
     }

@@ -822,14 +822,16 @@ sagewest.page.Default.prototype.common_menu = function() {
 
     $('#mobile-date-picker').on('show.daterangepicker', function(ev, picker) {
       var windowHeight = $("html").height();
-      $("#mobile-header-expanded").css({"position":"absolute", "height": windowHeight});
+      // $("#mobile-header-expanded").css({"position":"absolute", "height": windowHeight});
 
-      $('html, body').animate({
-          scrollTop: $( '#mobile-header-booking-calendar' ).offset().top - 70
-      }, 500);
+      // $('#mobile-header-expanded').animate({
+      //     scrollTop: $( '#mobile-header-booking-calendar' ).offset().top - 70
+      // }, 500);
+
+      
     });
     $('#mobile-date-picker').on('hide.daterangepicker', function(ev, picker) {
-      $("#mobile-header-expanded").css("position", "fixed");
+      // $("#mobile-header-expanded").css("position", "fixed");      
     });
 
     $('#mobile-date-picker').daterangepicker({
@@ -945,6 +947,7 @@ sagewest.page.Default.prototype.scroll_to_after_the_fold = function(){
       console.log($('.mobile-header-bg').height());
       // 108px different from mobile simulator and actual device
       target_y = (this.window_height - $('.mobile-header-bg').height()) + 108;
+      return false;
     }
     
   }

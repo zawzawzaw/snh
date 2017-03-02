@@ -232,6 +232,7 @@ body.body-sticky-version{
 
 body.mobile-menu-open{
   // background: @off-white;
+  overflow: hidden;
   #mobile-header {
     .mobile-header-bg {
       width: 100%;
@@ -248,7 +249,10 @@ body.mobile-menu-open{
       }
     }
   }
-  #mobile-header-expanded {    
+  #mobile-header-expanded {   
+    background: rgba(0, 0, 0, 0.8); 
+    height: ~"calc(100% - 63px)";
+    overflow: scroll;
     #mobile-header-menu-container {
       display: block;
     }
@@ -256,6 +260,7 @@ body.mobile-menu-open{
 }
 
 body.mobile-calendar-open {
+  overflow: hidden;
   #mobile-header {
     .mobile-header-bg {
       width: 100%;
@@ -265,7 +270,8 @@ body.mobile-calendar-open {
   }  
   #mobile-header-expanded {
     background: rgba(0, 0, 0, 0.8);
-    height: 100%;
+    height: ~"calc(100% - 63px)";
+    overflow: scroll;
   }
   #mobile-header-booking-form {
     display: block;
@@ -631,12 +637,12 @@ html#brand-page, html#hotel-page {
   top: 172px;
   left: 0;
   width: 100%;
-  padding: 0 5px;
+  padding: 0px;
   .daterangepicker {
     position: static!important;
     border: none;
     border-radius: 0px;
-    background-color: @off-white;
+    background-color: #f1f2f2;
     padding: 10px 10px;
     width: 100%;
     &:after, &:before {
@@ -649,7 +655,7 @@ html#brand-page, html#hotel-page {
       margin-top: -4px;
       max-width: 100%;
       .calendar-table {
-        background-color: @off-white;
+        background-color: #f1f2f2;
         padding-bottom: 0px;
       }
       &.right {
@@ -713,7 +719,7 @@ html#brand-page, html#hotel-page {
       }
       tbody {
         tr {
-          border-bottom: 5px solid @off-white;
+          border-bottom: 5px solid #f1f2f2;
         }
       }
     }
