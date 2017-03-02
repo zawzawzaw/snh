@@ -225,6 +225,7 @@ sagewest.component.MobileHeader.prototype.calendar_open_menu = function() {
     this.body.removeClass('mobile-menu-open');
 
     $('html').addClass('fixed');    
+    $('body').addClass('fixed');    
 
     this.expand_container.addClass('expand-version');
 
@@ -246,6 +247,7 @@ sagewest.component.MobileHeader.prototype.calendar_close_menu = function() {
     this.body.removeClass('mobile-menu-open');
 
     $('html').removeClass('fixed');
+    $('body').removeClass('fixed');
 
     this.expand_container.removeClass('expand-version');
 
