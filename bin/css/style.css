@@ -5558,14 +5558,6 @@ body.scrolled #mobile-header .mobile-header-bg {
   -moz-box-shadow: 1px -1px 10px #000000;
   box-shadow: 1px -1px 10px #000000;
 }
-html#brand-page body.mobile-menu-open #page-wrapper,
-html#hotel-page body.mobile-menu-open #page-wrapper {
-  display: none;
-}
-html#brand-page body.mobile-menu-open #mobile-header-expanded.expand-version,
-html#hotel-page body.mobile-menu-open #mobile-header-expanded.expand-version {
-  position: absolute;
-}
 #mobile-header-menu-container {
   background: #ffffff;
   display: none;
