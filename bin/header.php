@@ -40,32 +40,15 @@
     </div>
   </div>
 
-  <div id="desktop-header-menu">          
-    <div id="sage-links">
-      <ul>
-        <li><a href="#">sage adelaide</a></li>
-        <li><a href="#">Sage James Street Brisbane</a></li>
-        <li><a href="#">sage west perth</a></li>
-        <li><a href="#">sage wollongong</a></li>
-      </ul>
-    </div>
-    <div id="brand-link" class="menu-link">
-      <a href="#"><span>Our Brands</span></a>
-    </div>
-    <div id="group-link" class="menu-link">
-      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
-    </div>
-  </div>
-
   <div id="desktop-header-booking-form">
     <form action="">
       <div class="input-box">
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
-          <select name="hotel" id="hotel">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
             <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
             <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-            <option value="Sage Hotel, James Street">Sage Hotel, James Street</option>
+            <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
             <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
           </select>
         </div>
@@ -73,7 +56,7 @@
       <div class="input-box">
         <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
         <div class="date-input">
-          <input type="text" name="date" id="date-picker">
+          <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
         </div>
       </div>
       <div class="input-box">
@@ -98,6 +81,7 @@
           <label for="">Children</label>
           <div class="dropdown">
             <select name="children" id="children">
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -126,3 +110,19 @@
   </div>
 </header> <!-- #desktop-header -->
 
+<div id="desktop-header-menu">          
+  <div id="sage-links">
+    <ul>
+      <li><a href="#">sage adelaide</a></li>
+      <li><a href="#">Sage James Street Brisbane</a></li>
+      <li><a href="#">sage west perth</a></li>
+      <li><a href="#">sage wollongong</a></li>
+    </ul>
+  </div>
+  <div id="brand-link" class="menu-link">
+    <a href="#"><span>Our Brands</span></a>
+  </div>
+  <div id="group-link" class="menu-link">
+    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+  </div>
+</div>

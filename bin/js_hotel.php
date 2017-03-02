@@ -15,7 +15,6 @@
 <?php if($is_debug): ?>
   <!-- Development Version -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="../source/library/daterangepicker/daterangepicker.css">   -->
 
   <!-- Page Library -->
   <script type="text/javascript" src="../source/js/all.js"></script>

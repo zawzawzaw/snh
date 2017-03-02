@@ -186,21 +186,23 @@
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
               </div>
-              <h1>Standard Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
+              <div class="box-content-text">
+                <h1>Standard Room</h1>
+                <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+                <h4 class="room-size-sqft room-size">25 SQM</h4>
 
-              <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="#" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
+                <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                
+                <div class="cta-and-price-container">
+                  <a href="#" class="arrow-cta view-room-details">View room details</a>
+                  <div class="book-now-container">
+                    <a href="#" class="square-cta book-now">Book now</a>
+                  </div>
+                  <div class="price-container">
+                    <span>per night</span>
+                    <div class="price">
+                      <span class="currency">AUD</span><span class="price">$135</span>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -269,6 +269,39 @@ sagewest.page.Brand.prototype.others = function(){
 
     $('body').addClass('preload-start');
 
+    $('#home-location-content-carousel').slick({
+      dots: true,
+      centerMode: true,
+      centerPadding: '155px',
+      slidesToShow: 1,
+      prevArrow: '<a class="carousel-prev"><span></span></a>',
+      nextArrow: '<a class="carousel-next"><span></span></a>',
+      responsive: [
+        {
+          breakpoint: 5000,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
     $(".brand-location-link").on("click", function(e){
       e.preventDefault();
       var target = $(event.currentTarget);
@@ -383,106 +416,20 @@ sagewest.page.Brand.prototype.map_initialize = function() {
 
     var styles = [
         {
-            "featureType": "water",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#d3d3d3"
-                }
-            ]
-        },
-        {
-            "featureType": "transit",
-            "stylers": [
-                {
-                    "color": "#808080"
-                },
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#b3b3b3"
-                }
-            ]
-        },
-        {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "road.local",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#ffffff"
-                },
-                {
-                    "weight": 1.8
-                }
-            ]
-        },
-        {
-            "featureType": "road.local",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "color": "#d7d7d7"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#ebebeb"
-                }
-            ]
-        },
-        {
             "featureType": "administrative",
-            "elementType": "geometry",
+            "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "color": "#a7a7a7"
+                    "color": "#6195a0"
                 }
             ]
         },
         {
-            "featureType": "road.arterial",
-            "elementType": "geometry.fill",
+            "featureType": "landscape",
+            "elementType": "all",
             "stylers": [
                 {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "road.arterial",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
+                    "color": "#f2f2f2"
                 }
             ]
         },
@@ -491,63 +438,96 @@ sagewest.page.Brand.prototype.map_initialize = function() {
             "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "visibility": "on"
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#e6f3d6"
                 },
                 {
-                    "color": "#efefef"
+                    "visibility": "on"
                 }
             ]
         },
         {
             "featureType": "road",
-            "elementType": "labels.text.fill",
+            "elementType": "all",
             "stylers": [
                 {
-                    "color": "#696969"
-                }
-            ]
-        },
-        {
-            "featureType": "administrative",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "visibility": "on"
+                    "saturation": -100
                 },
                 {
-                    "color": "#737373"
+                    "lightness": 45
+                },
+                {
+                    "visibility": "simplified"
                 }
             ]
         },
         {
-            "featureType": "poi",
-            "elementType": "labels.icon",
+            "featureType": "road.highway",
+            "elementType": "all",
             "stylers": [
                 {
-                    "visibility": "off"
+                    "visibility": "simplified"
                 }
             ]
         },
         {
-            "featureType": "poi",
-            "elementType": "labels",
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "visibility": "off"
+                    "color": "#f4d2c5"
+                },
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "road.highway",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "color": "#4e4e4e"
                 }
             ]
         },
         {
             "featureType": "road.arterial",
-            "elementType": "geometry.stroke",
+            "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "color": "#d6d6d6"
+                    "color": "#f4f4f4"
                 }
             ]
         },
         {
-            "featureType": "road",
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#787878"
+                }
+            ]
+        },
+        {
+            "featureType": "road.arterial",
             "elementType": "labels.icon",
             "stylers": [
                 {
@@ -555,13 +535,33 @@ sagewest.page.Brand.prototype.map_initialize = function() {
                 }
             ]
         },
-        {},
         {
-            "featureType": "poi",
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#eaf6f8"
+                },
+                {
+                    "visibility": "on"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
             "elementType": "geometry.fill",
             "stylers": [
                 {
-                    "color": "#dadada"
+                    "color": "#eaf6f8"
                 }
             ]
         }

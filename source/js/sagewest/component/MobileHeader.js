@@ -129,15 +129,23 @@ sagewest.component.MobileHeader.prototype.create_menu = function() {
     item.click(this.on_menu_expand_btn_click.bind(this));
   }  
 
-
-  $(document).click(function(event) { 
-      if(!$(event.target).closest('#mobile-header-open-btn').length && !$(event.target).closest('#mobile-header-close-btn').length&& !$(event.target).closest('a').length) {
+  // click on else where
+  $("#mobile-header-expanded").on('click tap', function(event) { 
+      if(!$(event.target).closest('#mobile-header-open-btn').length && !$(event.target).closest('#mobile-header-close-btn').length && !$(event.target).closest('a').length && !$(event.target).closest('#mobile-header-booking-form').length) {
           this.close_menu();
       }        
-      if(!$(event.target).closest('#mobile-header-calendar-open-btn').length && !$(event.target).closest('#mobile-header-calendar-close-btn').length && !$(event.target).closest('#mobile-date-picker').length && !$(event.target).closest('.next').length && !$(event.target).closest('.prev').length && !$(event.target).closest('#hover-day').length && !$(event.target).closest('#hover-weekname').length && !$(event.target).closest('th, td, tr').length && !$(event.target).closest('select').length && !$(event.target).closest('input').length && !$(event.target).closest('.date-input').length) {
+      if(!$(event.target).closest('#mobile-header-calendar-open-btn').length && !$(event.target).closest('#mobile-header-calendar-close-btn').length && !$(event.target).closest('#mobile-date-picker').length && !$(event.target).closest('.next').length && !$(event.target).closest('.prev').length && !$(event.target).closest('#hover-day').length && !$(event.target).closest('#hover-weekname').length && !$(event.target).closest('th, td, tr').length && !$(event.target).closest('select').length && !$(event.target).closest('input').length && !$(event.target).closest('.date-input').length && !$(event.target).closest('#mobile-header-booking-form').length) {
           this.calendar_close_menu();
       }        
   }.bind(this));
+
+  $(".hotel-dropdown").on("mouseup change", function(e){
+    var selectedVal = $(this).val();
+
+    if(selectedVal.length > 23) {
+      $("#hotel option[value='"+selectedVal+"']").html(selectedVal.substring(0, 24) + "...");
+    }
+  });
 
 };
 

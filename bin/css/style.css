@@ -4349,6 +4349,12 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   background-color: #7d0052;
   color: #ffffff;
 }
+@media all and (max-width: 375px) {
+  .square-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .arrow-cta {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
@@ -5218,7 +5224,7 @@ body.hotel #desktop-header-nav ul li {
   color: #ffffff !important;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.off {
-  color: #555555;
+  color: #b9b9b9;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar tbody tr {
   border-bottom: 5px solid #fcf8f7;
@@ -5469,6 +5475,10 @@ body.mobile-calendar-open #mobile-header .mobile-header-bg {
   -webkit-box-shadow: 1px -1px 10px #000000;
   -moz-box-shadow: 1px -1px 10px #000000;
   box-shadow: 1px -1px 10px #000000;
+}
+body.mobile-calendar-open #mobile-header-expanded {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
 }
 body.mobile-calendar-open #mobile-header-booking-form {
   display: block;
@@ -5770,14 +5780,14 @@ html#hotel-page body.mobile-menu-open #mobile-header-expanded.expand-version {
   top: 172px;
   left: 0;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 5px;
 }
 #mobile-header-booking-calendar .daterangepicker {
   position: static!important;
   border: none;
   border-radius: 0px;
   background-color: #fcf8f7;
-  padding: 15px 10px;
+  padding: 10px 10px;
   width: 100%;
 }
 #mobile-header-booking-calendar .daterangepicker:after,
@@ -5839,6 +5849,7 @@ html#hotel-page body.mobile-menu-open #mobile-header-expanded.expand-version {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.08em;
+  padding: 0px;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.active {
   background-color: #7d0052;
@@ -5860,7 +5871,7 @@ html#hotel-page body.mobile-menu-open #mobile-header-expanded.expand-version {
   color: #ffffff !important;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.off {
-  color: #555555;
+  color: #b9b9b9;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar tbody tr {
   border-bottom: 5px solid #fcf8f7;
@@ -5876,6 +5887,14 @@ html#hotel-page body.mobile-menu-open #mobile-header-expanded.expand-version {
 }
 #desktop-footer #footer-logo img {
   margin-left: -5px;
+}
+@media all and (max-width: 991px) {
+  #desktop-footer #footer-logo {
+    top: -50px;
+  }
+  #desktop-footer #footer-logo img {
+    width: 118px;
+  }
 }
 #desktop-footer h1 {
   font-size: 16px;
@@ -7133,12 +7152,16 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #home-location-section #home-location-content #home-location-content-carousel .slick-dots li {
   display: inline-block;
   margin-right: 10px;
+  width: 18px;
 }
 #home-location-section #home-location-content #home-location-content-carousel .slick-dots li button {
   border: none;
   background: none;
-  background-color: #747474;
   text-indent: -9999px;
+  position: relative;
+}
+#home-location-section #home-location-content #home-location-content-carousel .slick-dots li button:before {
+  content: "";
   -webkit-border-radius: 18px;
   border-radius: 18px;
   -moz-background-clip: padding;
@@ -7146,8 +7169,14 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   background-clip: padding-box;
   width: 18px;
   height: 18px;
+  background-color: #747474;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
 }
-#home-location-section #home-location-content #home-location-content-carousel .slick-dots li.slick-active button {
+#home-location-section #home-location-content #home-location-content-carousel .slick-dots li.slick-active button:before {
   background-color: #7d0052;
 }
 #home-location-section #home-location-content .home-location-content-carousel-text {
@@ -7179,21 +7208,62 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text {
-    padding: 0 30px;
+  #home-location-section #home-location-title {
+    text-align: left!important;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-header-text {
-    display: none;
-  }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text {
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots {
+    width: 100%;
+    height: 8px;
+    padding: 0 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     text-align: center;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text h1 {
-    margin-top: 30px;
-    padding-bottom: 30px;
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text p {
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li button {
+    border: none;
+    background: none;
+    text-indent: -9999px;
+    position: relative;
+  }
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li button:before {
+    content: "";
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #747474;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+  }
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li.slick-active button:before {
+    background-color: #7d0052;
+  }
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content .manic-image-container {
+    height: 174px;
+    margin-bottom: 30px;
+  }
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content h4 {
     padding-bottom: 20px;
+  }
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content p {
+    padding-bottom: 25px;
+  }
+  #home-location-section #view-all-locations-cta {
+    text-align: right;
+    display: block;
   }
 }
 #home-promotion-section {
@@ -7285,7 +7355,10 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   letter-spacing: 0.08em;
   color: #747474;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+#home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .more-details {
+  font-size: 12px;
 }
 #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .view-offer-details {
   display: block;
@@ -7315,7 +7388,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .cta-and-price-container {
   position: absolute;
   bottom: 20px;
-  width: 90%;
+  width: 100%;
+  left: 0;
+  padding: 0 20px;
 }
 #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .cta-and-price-container .cta-container {
   display: inline-block;
@@ -7432,7 +7507,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-bottom: 30px;
   }
   #home-promotion-section #home-promotion-content .home-promotion-content-box {
-    height: 740px;
+    min-height: 750px;
   }
   #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content {
     padding: 0px;
@@ -7498,7 +7573,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 @media only screen and (max-width: 991px) {
   #home-moment-section {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
   }
   #home-moment-section #home-moment-instagram-feed-container {
     position: static;
@@ -7636,6 +7711,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 @media only screen and (max-width: 991px) {
   #home-map-section {
+    display: none;
     padding-top: 60px;
   }
   #home-map-section #home-map-title {
@@ -8005,7 +8081,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .cta-and-price-container {
   position: absolute;
   bottom: 20px;
-  width: 90%;
+  left: 0px;
+  width: 100%;
+  padding: 0 20px;
 }
 #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .cta-and-price-container .view-room-details {
   display: block;
@@ -8064,6 +8142,12 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   }
   #hotel-accommodation-section #hotel-accommodation-title {
     padding-bottom: 30px;
+  }
+  #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content {
+    padding: 0px;
+  }
+  #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .box-content-text {
+    padding: 20px 20px 30px;
   }
   #hotel-accommodation-section #hotel-accommodation-view-all {
     text-align: left;
@@ -8262,7 +8346,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box .box-content .cta-and-price-container {
   position: absolute;
   bottom: 20px;
-  width: 90%;
+  width: 100%;
+  left: 0;
+  padding: 0 20px;
 }
 #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box .box-content .cta-and-price-container .cta-container {
   display: inline-block;
@@ -8581,6 +8667,8 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   #hotel-booking-section #hotel-booking-content ul.slick-dots li button {
     text-indent: -999999px;
     position: relative;
+    border: none;
+    background: none;
   }
   #hotel-booking-section #hotel-booking-content ul.slick-dots li button:before {
     content: "";
@@ -8609,6 +8697,11 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 #hotel-moment-section #hotel-moment-content h1 {
   padding-bottom: 5px;
+}
+@media all and (max-width: 375px) {
+  #hotel-moment-section #hotel-moment-content h1 {
+    font-size: 27px;
+  }
 }
 #hotel-moment-section #hotel-moment-content p {
   padding-bottom: 20px;
@@ -9035,6 +9128,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 @media only screen and (max-width: 991px) {
   #brand-location-section {
+    display: none;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -9061,6 +9155,215 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   #brand-location-section #brand-locaiton-view-all-mobile {
     padding-top: 70px;
   }
+}
+#home-location-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+#home-location-section #home-location-title {
+  text-align: center;
+  padding-bottom: 45px;
+}
+#home-location-section .no-padding {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-content img {
+  margin: 0 auto;
+  width: 90%;
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-next,
+#home-location-section #home-location-content #home-location-content-carousel .carousel-prev {
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid #7d0052;
+  -webkit-border-radius: 125px;
+  border-radius: 125px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 125px;
+  height: 125px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  /* transition */
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-next span,
+#home-location-section #home-location-content #home-location-content-carousel .carousel-prev span {
+  display: block;
+  width: 21px;
+  height: 35px;
+  position: absolute;
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-next:hover,
+#home-location-section #home-location-content #home-location-content-carousel .carousel-prev:hover {
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity=50);
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-next {
+  right: 10.5%;
+  top: 35%;
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-next span {
+  background: url("../images/icons/carousel-right.png") no-repeat;
+  right: 38%;
+  top: 36%;
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-prev {
+  left: 10.5%;
+  top: 35%;
+}
+#home-location-section #home-location-content #home-location-content-carousel .carousel-prev span {
+  background: url("../images/icons/carousel-left.png") no-repeat;
+  left: 38%;
+  top: 36%;
+}
+#home-location-section #home-location-content #home-location-content-carousel .slick-dots {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 140px;
+  padding-top: 30px;
+}
+#home-location-section #home-location-content #home-location-content-carousel .slick-dots li {
+  display: inline-block;
+  margin-right: 10px;
+  width: 18px;
+}
+#home-location-section #home-location-content #home-location-content-carousel .slick-dots li button {
+  border: none;
+  background: none;
+  text-indent: -9999px;
+  position: relative;
+}
+#home-location-section #home-location-content #home-location-content-carousel .slick-dots li button:before {
+  content: "";
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 18px;
+  height: 18px;
+  background-color: #747474;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+#home-location-section #home-location-content #home-location-content-carousel .slick-dots li.slick-active button:before {
+  background-color: #7d0052;
+}
+#home-location-section #home-location-content .home-location-content-carousel-text {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 140px;
+  padding-top: 20px;
+  display: none;
+}
+#home-location-section #home-location-content .home-location-content-carousel-text.active {
+  display: block;
+}
+#home-location-section #home-location-content .home-location-content-carousel-text h4 {
+  margin-bottom: 10px;
+}
+#home-location-section #home-location-content .home-location-content-carousel-text h3 {
+  text-transform: uppercase;
+  width: 130%;
+}
+#home-location-section #home-location-content .home-location-content-carousel-text h1 {
+  margin-top: -20px;
+}
+#home-location-section #home-location-content .home-location-content-carousel-text .arrow-cta {
+  display: block;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 991px) {
+  #home-location-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #home-location-section #home-location-content #home-location-content-carousel .slick-dots {
+    width: 100%;
+    padding: 0 40px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  #home-location-section #home-location-content #home-location-content-carousel .slick-dots li {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 15px;
+  }
+  #home-location-section #home-location-content #home-location-content-carousel .slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+  }
+  #home-location-section #home-location-content .home-location-content-carousel-text {
+    padding: 0 30px;
+  }
+  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-header-text {
+    display: none;
+  }
+  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text {
+    text-align: center;
+  }
+  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text h1 {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text p {
+    padding-bottom: 20px;
+  }
+}
+#brand-all-location-section {
+  padding-top: 60px;
+  padding-bottom: 130px;
+}
+#brand-all-location-section #brand-all-location-title {
+  text-align: left;
+  padding-bottom: 35px;
+}
+#brand-all-location-section #brand-all-location-content-box h4 {
+  font-size: 13px;
+  line-height: 16px;
+}
+#brand-all-location-section #brand-all-location-content-box .main-title-bar,
+#brand-all-location-section #brand-all-location-content-box .sub-title-bar {
+  background: #998e8b;
+  padding: 10px 0px;
+  height: 35px;
+  margin: 0px -25px;
+}
+#brand-all-location-section #brand-all-location-content-box .main-title-bar h4,
+#brand-all-location-section #brand-all-location-content-box .sub-title-bar h4 {
+  color: #ffffff;
+  padding: 0 25px;
+}
+#brand-all-location-section #brand-all-location-content-box .sub-title-bar {
+  background-color: #c2b4b0;
+  margin-bottom: 20px;
+}
+#brand-all-location-section #brand-all-location-content-box .brand-all-location-content-box {
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 18px;
+}
+#brand-all-location-section #brand-all-location-content-box .brand-all-location-content-box .manic-image-container {
+  height: 200px;
+}
+#brand-all-location-section #brand-all-location-content-box .brand-all-location-content-box .box-title {
+  padding: 20px 15px;
 }
 #brand-promotion-section {
   padding-top: 80px;

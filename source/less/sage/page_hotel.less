@@ -293,7 +293,9 @@
         .cta-and-price-container {
           position: absolute;
           bottom: 20px;
-          width: 90%;
+          left: 0px;
+          width: 100%;
+          padding: 0 20px;
           .view-room-details {
             display: block;
             padding-bottom: 10px;
@@ -352,6 +354,16 @@
     padding-bottom: 60px;
     #hotel-accommodation-title {
       padding-bottom: 30px;
+    }
+    #hotel-accommodation-content {    
+      .hotel-accommodation-content-box {
+        .box-content {
+          padding: 0px;
+          .box-content-text {
+            padding: 20px 20px 30px;
+          }
+        }
+      }
     }
     #hotel-accommodation-view-all {
       text-align: left;
@@ -548,7 +560,9 @@
         .cta-and-price-container {
           position: absolute;
           bottom: 20px;
-          width: 90%;
+          width: 100%;
+          left: 0;
+          padding: 0 20px;
           .cta-container {
             display: inline-block;
             vertical-align: middle;
@@ -875,6 +889,8 @@
           button {
             text-indent: -999999px;
             position: relative;
+            border: none;
+            background: none;
             &:before {
               content: "";
               width: 9px;
@@ -916,6 +932,9 @@
   #hotel-moment-content{    
     h1{
       padding-bottom: 5px;
+      @media all and (max-width: 375px) {
+        font-size: 27px;
+      }
     }
     p {
       padding-bottom: 20px;
@@ -965,7 +984,7 @@
 @media only screen and (max-width: 991px) {
   #hotel-moment-section{
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px;    
     #hotel-moment-instagram-feed-container {
       position: static;
       width: 100%;

@@ -226,7 +226,7 @@ body.body-sticky-version{
     top: 63px;
     width: 100%;
     z-index: 30;
-  }
+  }  
 }
 
 
@@ -263,9 +263,14 @@ body.mobile-calendar-open {
       .box-shadow (1px -1px 10px #000);
     }  
   }  
+  #mobile-header-expanded {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+  }
   #mobile-header-booking-form {
     display: block;
-  }  
+  }
+
 }
 
 body.scrolled {
@@ -626,13 +631,13 @@ html#brand-page, html#hotel-page {
   top: 172px;
   left: 0;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 5px;
   .daterangepicker {
     position: static!important;
     border: none;
     border-radius: 0px;
     background-color: @off-white;
-    padding: 15px 10px;
+    padding: 10px 10px;
     width: 100%;
     &:after, &:before {
       display: none;
@@ -681,6 +686,7 @@ html#brand-page, html#hotel-page {
         .open-sans-regular;
         font-size: 12px;
         letter-spacing: 0.08em;
+        padding: 0px;
         &.active {
           background-color: @violet;          
           color: @white!important;
@@ -701,7 +707,8 @@ html#brand-page, html#hotel-page {
           color: @white!important;
         }
         &.off {
-          color: @grey-2;
+          // color: @grey-2;
+          color: #b9b9b9;
         }        
       }
       tbody {

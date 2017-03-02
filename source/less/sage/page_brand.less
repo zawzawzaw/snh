@@ -251,6 +251,7 @@
 
 @media only screen and (max-width: 991px) {
   #brand-location-section{
+    display: none;
     padding-top: 60px;
     padding-bottom: 60px;
     #brand-location-title {
@@ -272,6 +273,232 @@
     }
     #brand-locaiton-view-all-mobile {
       padding-top: 70px;
+    }
+  }
+}
+
+//     __    ____  _________  ______________  _   __   __  _______  ____  ______    ______   _____ ___    __  _________   ___   _____    ____  ________  ____________     ____  ____  ___    _   ______     __    ___    _   ______  _____   ________
+//    / /   / __ \/ ____/   |/_  __/  _/ __ \/ | / /  /  |/  / __ \/ __ )/  _/ /   / ____/  / ___//   |  /  |/  / ____/  /   | / ___/   / __ \/_  __/ / / / ____/ __ \   / __ )/ __ \/   |  / | / / __ \   / /   /   |  / | / / __ \/  _/ | / / ____/
+//   / /   / / / / /   / /| | / /  / // / / /  |/ /  / /|_/ / / / / __  |/ // /   / __/     \__ \/ /| | / /|_/ / __/    / /| | \__ \   / / / / / / / /_/ / __/ / /_/ /  / __  / /_/ / /| | /  |/ / / / /  / /   / /| | /  |/ / / / // //  |/ / / __
+//  / /___/ /_/ / /___/ ___ |/ / _/ // /_/ / /|  /  / /  / / /_/ / /_/ // // /___/ /___    ___/ / ___ |/ /  / / /___   / ___ |___/ /  / /_/ / / / / __  / /___/ _, _/  / /_/ / _, _/ ___ |/ /|  / /_/ /  / /___/ ___ |/ /|  / /_/ // // /|  / /_/ /
+// /_____/\____/\____/_/  |_/_/ /___/\____/_/ |_/  /_/  /_/\____/_____/___/_____/_____/   /____/_/  |_/_/  /_/_____/  /_/  |_/____/   \____/ /_/ /_/ /_/_____/_/ |_|  /_____/_/ |_/_/  |_/_/ |_/_____/  /_____/_/  |_/_/ |_/_____/___/_/ |_/\____/
+
+
+#home-location-section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  #home-location-title{
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .no-padding {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+  #home-location-content {
+    #home-location-content-carousel {
+      .carousel-content {
+        img {
+          margin: 0 auto;
+          width: 90%;
+        }  
+      }
+      .carousel-next, .carousel-prev {
+        position: absolute;
+        background-color: transparent;
+        border: 2px solid @violet;
+        .round(125px);
+        width: 125px;
+        height: 125px;
+        .transition(.3s);
+        span {                    
+          display: block;
+          width: 21px;
+          height: 35px;
+          position: absolute;
+        }  
+        &:hover {
+          .opacity(0.5);
+        }      
+      }
+      .carousel-next {
+        right: 10.5%;
+        top: 35%;
+        span {
+          background: url("../images/icons/carousel-right.png") no-repeat;
+          right: 38%;
+          top: 36%;
+        }
+      }
+      .carousel-prev {
+        left: 10.5%;
+        top: 35%;
+        span {
+          background: url("../images/icons/carousel-left.png") no-repeat;
+          left: 38%;
+          top: 36%;
+        }        
+      }
+      .slick-dots {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 140px;
+        padding-top: 30px;
+        li {
+          display: inline-block;                               
+          margin-right: 10px;
+          width: 18px;
+          button {
+            border: none;
+            background: none;
+            text-indent: -9999px;
+            position: relative;
+            
+            &:before {
+              content: "";
+              .round(18px);
+              width: 18px;
+              height: 18px;
+              background-color: @grey;
+              display: block;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              cursor: pointer;
+            }
+          }
+          &.slick-active {
+            button {
+              // background-color: @violet;  
+              &:before {
+                background-color: @violet;
+              }
+            }            
+          }
+        }
+      }
+    }
+    .home-location-content-carousel-text {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 140px;
+      padding-top: 20px;
+      display: none;
+      &.active {
+        display: block;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        width: 130%;
+      }
+
+      h1 {
+        margin-top: -20px;
+      }
+
+      .arrow-cta {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #home-location-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    #home-location-content {      
+      #home-location-content-carousel {
+        .slick-dots {
+          width: 100%;          
+          padding: 0 40px;
+          padding-top: 30px;
+          text-align: center;
+          li {
+            margin-left: 5px;
+            margin-right: 5px;
+            width: 15px;
+            button {
+              &:before {
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+        }
+      }
+      .home-location-content-carousel-text {
+        padding: 0 30px;
+        #home-location-content-carousel-header-text {
+          display: none; 
+        }
+        #home-location-content-carousel-content-text {
+          text-align: center;
+          h1 {
+            margin-top: 30px;
+            padding-bottom: 30px;
+          }
+          p {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//     __    ____  _________  ______________  _   __   _____   _______ ________  ______
+//    / /   / __ \/ ____/   |/_  __/  _/ __ \/ | / /  /  _/ | / / ___//  _/ __ \/ ____/
+//   / /   / / / / /   / /| | / /  / // / / /  |/ /   / //  |/ /\__ \ / // / / / __/
+//  / /___/ /_/ / /___/ ___ |/ / _/ // /_/ / /|  /  _/ // /|  /___/ // // /_/ / /___
+// /_____/\____/\____/_/  |_/_/ /___/\____/_/ |_/  /___/_/ |_//____/___/_____/_____/
+
+
+#brand-all-location-section {
+  padding-top: 60px;
+  padding-bottom: 130px;
+
+  #brand-all-location-title{
+    text-align: left;
+    padding-bottom: 35px;
+  }
+
+  #brand-all-location-content-box {
+    h4 {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .main-title-bar, .sub-title-bar {
+      background: #998e8b;
+      padding: 10px 0px;
+      height: 35px;
+      margin: 0px -25px;
+      h4 {
+        color: @white;
+        padding: 0 25px;
+      }
+    }
+    .sub-title-bar {
+      background-color: #c2b4b0;
+      margin-bottom: 20px;
+    }
+    .brand-all-location-content-box {
+      .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
+      margin-bottom: 18px;
+      
+      .manic-image-container {
+        height: 200px;
+      }
+      .box-title {
+        padding: 20px 15px;      
+      }
     }
   }
 }

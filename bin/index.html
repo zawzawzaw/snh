@@ -99,10 +99,10 @@
       <div class="input-box">
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
-          <select name="hotel" id="hotel">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
             <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
             <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-            <option value="Sage Hotel, James Street">Sage Hotel, James Street</option>
+            <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
             <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
           </select>
         </div>
@@ -110,7 +110,7 @@
       <div class="input-box">
         <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
         <div class="date-input">
-          <input type="text" name="date" id="mobile-date-picker">
+          <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
         </div>
       </div>
       <div class="input-box">
@@ -135,6 +135,7 @@
           <label for="">Children</label>
           <div class="dropdown">
             <select name="children" id="children">
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -158,7 +159,7 @@
       </div>
     </form>
   </div>
-  <div id="mobile-header-booking-calendar">
+  <div id="mobile-header-booking-calendar"></div>
 
 </header> <!-- #mobile-header-expanded -->        
     <div id="page-wrapper">
@@ -206,32 +207,15 @@
     </div>
   </div>
 
-  <div id="desktop-header-menu">          
-    <div id="sage-links">
-      <ul>
-        <li><a href="#">sage adelaide</a></li>
-        <li><a href="#">Sage James Street Brisbane</a></li>
-        <li><a href="#">sage west perth</a></li>
-        <li><a href="#">sage wollongong</a></li>
-      </ul>
-    </div>
-    <div id="brand-link" class="menu-link">
-      <a href="#"><span>Our Brands</span></a>
-    </div>
-    <div id="group-link" class="menu-link">
-      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
-    </div>
-  </div>
-
   <div id="desktop-header-booking-form">
     <form action="">
       <div class="input-box">
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
-          <select name="hotel" id="hotel">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
             <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
             <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-            <option value="Sage Hotel, James Street">Sage Hotel, James Street</option>
+            <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
             <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
           </select>
         </div>
@@ -239,7 +223,7 @@
       <div class="input-box">
         <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
         <div class="date-input">
-          <input type="text" name="date" id="date-picker">
+          <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
         </div>
       </div>
       <div class="input-box">
@@ -264,6 +248,7 @@
           <label for="">Children</label>
           <div class="dropdown">
             <select name="children" id="children">
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -292,7 +277,22 @@
   </div>
 </header> <!-- #desktop-header -->
 
-
+<div id="desktop-header-menu">          
+  <div id="sage-links">
+    <ul>
+      <li><a href="#">sage adelaide</a></li>
+      <li><a href="#">Sage James Street Brisbane</a></li>
+      <li><a href="#">sage west perth</a></li>
+      <li><a href="#">sage wollongong</a></li>
+    </ul>
+  </div>
+  <div id="brand-link" class="menu-link">
+    <a href="#"><span>Our Brands</span></a>
+  </div>
+  <div id="group-link" class="menu-link">
+    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+  </div>
+</div>
         <!--
            ____ _____  _    ____ _____
           / ___|_   _|/ \  |  _ \_   _|
@@ -452,7 +452,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid no-padding">
+  <div class="container-fluid no-padding hidden-sm hidden-xs">
     <div class="row">
       <div class="col-md-12">
           <div id="home-location-content">
@@ -506,10 +506,49 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>          
       </div>
     </div>
   </div>  
+  <div class="container-fluid visible-sm visible-xs">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="home-location-content-mobile">
+          <div id="home-location-content-mobile-carousel">
+            <div class="carousel-content">
+              <div class="manic-image-container">
+                <img src="images_cms/home/home-location-01.jpg" alt="">        
+              </div>
+              <h4>sage hotels</h4>
+              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
+              <a href="#" class="arrow-cta">Visit This Hotel</a>
+            </div>
+            <div class="carousel-content">
+              <div class="manic-image-container">
+                <img src="images_cms/home/home-location-02.jpg" alt="">                
+              </div>
+              <h4>sage hotels 2</h4>
+              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
+              <a href="#" class="arrow-cta">Visit This Hotel</a>
+            </div>
+            <div class="carousel-content">
+              <div class="manic-image-container">
+                <img src="images_cms/home/home-location-03.jpg" alt="">                
+              </div>
+              <h4>sage hotels 3</h4>
+              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
+              <a href="#" class="arrow-cta">Visit This Hotel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <a href="#" id="view-all-locations-cta" class="arrow-cta">view all Locations</a>
+      </div>
+    </div>
+  </div>
 </article>
 
 <!-- 
@@ -551,6 +590,8 @@
                   <li><p>Late Check out at 12 noon</p></li>
                 </ul>
                 <span class="date">valid from now – 1st april 2017</span>
+
+                <a href="#" class="more-details arrow-cta visible-xs visible-sm">More details</a>
                 
                 <div class="cta-and-price-container">
                   <div class="cta-container">
@@ -836,7 +877,6 @@
 
   <!-- Development Version -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="../source/library/daterangepicker/daterangepicker.css">   -->
 
   <!-- Page Library -->
   <script type="text/javascript" src="../source/js/all.js"></script>

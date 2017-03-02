@@ -134,7 +134,7 @@
  -->
 
 <div class="scroll-target" data-value="location"></div>
-<article id="brand-location-section">
+<article id="brand-location-section" class="hidden-sm hidden-xs">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -339,6 +339,76 @@
           <a href="#" id="brand-locaiton-view-all-mobile" class="visible-xs visible-sm arrow-cta">View all hotels</a>
 
         </div>
+      </div>
+    </div>
+  </div>    
+</article>
+<article id="home-location-section" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <div id="home-location-title">
+            <h4>sage hotels</h4>
+            <h1>Our locations</h1>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid no-padding">
+    <div class="row">
+      <div class="col-md-12">
+          <div id="home-location-content">
+            <div id="home-location-content-carousel">
+              <div class="carousel-content">
+                <img src="images_cms/home/home-location-01.jpg" alt="">                
+              </div>
+              <div class="carousel-content">
+                <img src="images_cms/home/home-location-02.jpg" alt="">                
+              </div>
+              <div class="carousel-content">
+                <img src="images_cms/home/home-location-03.jpg" alt="">                
+              </div>
+            </div>
+            <div id="home-location-content-carousel-text-1" class="active home-location-content-carousel-text">
+              <div class="row">
+                <div id="home-location-content-carousel-header-text" class="col-md-2">
+                  <h4>Sage Hotels</h4>
+                  <h3>West Perth</h3>
+                </div>
+                <div id="home-location-content-carousel-content-text" class="col-md-8 col-md-offset-1">
+                  <h1>Gateway to the City of Light</h1>
+                  <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  <a href="#" class="arrow-cta">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div id="home-location-content-carousel-text-2" class="home-location-content-carousel-text">
+              <div class="row">
+                <div id="home-location-content-carousel-header-text" class="col-md-2">
+                  <h4>Sage Hotels</h4>
+                  <h3>West Perth</h3>
+                </div>
+                <div id="home-location-content-carousel-content-text" class="col-md-8 col-md-offset-1">
+                  <h1>Gateway to the City of Light 2</h1>
+                  <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  <a href="#" class="arrow-cta">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div id="home-location-content-carousel-text-3" class="home-location-content-carousel-text">
+              <div class="row">
+                <div id="home-location-content-carousel-header-text" class="col-md-2">
+                  <h4>Sage Hotels</h4>
+                  <h3>West Perth</h3>
+                </div>
+                <div id="home-location-content-carousel-content-text" class="col-md-8 col-md-offset-1">
+                  <h1>Gateway to the City of Light 3</h1>
+                  <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  <a href="#" class="arrow-cta">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>  

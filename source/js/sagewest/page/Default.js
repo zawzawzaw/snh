@@ -820,6 +820,18 @@ sagewest.page.Default.prototype.common_menu = function() {
         }
     });
 
+    $('#mobile-date-picker').on('show.daterangepicker', function(ev, picker) {
+      var windowHeight = $("html").height();
+      $("#mobile-header-expanded").css({"position":"absolute", "height": windowHeight});
+
+      $('html, body').animate({
+          scrollTop: $( '#mobile-header-booking-calendar' ).offset().top - 70
+      }, 500);
+    });
+    $('#mobile-date-picker').on('hide.daterangepicker', function(ev, picker) {
+      $("#mobile-header-expanded").css("position", "fixed");
+    });
+
     $('#mobile-date-picker').daterangepicker({
         "autoApply": true,
         "opens": "bottom",
@@ -851,6 +863,10 @@ sagewest.page.Default.prototype.common_menu = function() {
                 "December"
             ]
         }
+    });
+
+    $(".book-now").on("click", function(e){
+      $("#mobile-header-calendar-open-btn").trigger("click");
     });
 
     $('#date-picker').on('apply.daterangepicker', function(ev, picker) {

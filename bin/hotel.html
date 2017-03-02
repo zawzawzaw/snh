@@ -113,10 +113,10 @@
       <div class="input-box">
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
-          <select name="hotel" id="hotel">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
             <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
             <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-            <option value="Sage Hotel, James Street">Sage Hotel, James Street</option>
+            <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
             <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
           </select>
         </div>
@@ -124,7 +124,7 @@
       <div class="input-box">
         <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
         <div class="date-input">
-          <input type="text" name="date" id="mobile-date-picker">
+          <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
         </div>
       </div>
       <div class="input-box">
@@ -149,6 +149,7 @@
           <label for="">Children</label>
           <div class="dropdown">
             <select name="children" id="children">
+              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -172,7 +173,7 @@
       </div>
     </form>
   </div>
-  <div id="mobile-header-booking-calendar">
+  <div id="mobile-header-booking-calendar"></div>
 
 </header> <!-- #mobile-header-expanded -->        
     <div id="page-wrapper">
@@ -187,7 +188,6 @@
                                            
 -->
 
-<!-- <div id="desktop-header-spacer"></div> -->
 <header id="desktop-header">
   
   <div class="container-fluid">
@@ -242,32 +242,15 @@
     </div>
   </div>
 
-  <div id="desktop-header-menu">          
-    <div id="sage-links">
-      <ul>
-        <li><a href="#">sage adelaide</a></li>
-        <li><a href="#">Sage James Street Brisbane</a></li>
-        <li><a href="#">sage west perth</a></li>
-        <li><a href="#">sage wollongong</a></li>
-      </ul>
-    </div>
-    <div id="brand-link" class="menu-link">
-      <a href="#"><span>Our Brands</span></a>
-    </div>
-    <div id="group-link" class="menu-link">
-      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
-    </div>
-  </div>
-
   <div id="desktop-header-booking-form">
       <form action="">
         <div class="input-box">
           <label for="hotel">Select Hotel</label>
           <div class="dropdown">
-            <select name="hotel" id="hotel">
+            <select name="hotel" id="hotel" class="hotel-dropdown">
               <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
               <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-              <option value="Sage Hotel, James Street">Sage Hotel, James Street</option>
+              <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
               <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
             </select>
           </div>
@@ -275,7 +258,7 @@
         <div class="input-box">
           <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
           <div class="date-input">
-            <input type="text" name="date" id="date-picker">
+            <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
           </div>
         </div>
         <div class="input-box">
@@ -300,6 +283,7 @@
             <label for="">Children</label>
             <div class="dropdown">
               <select name="children" id="children">
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -322,13 +306,28 @@
           <input type="submit" class="check-availability square-cta" value="check availability">
         </div>
       </form>
-    </div>
-    <div id="desktop-header-booking-calendar">
-      
-    </div>
+  </div>
+  <div id="desktop-header-booking-calendar">
+    
+  </div>
 </header> <!-- #desktop-header -->
 
-
+<div id="desktop-header-menu">          
+  <div id="sage-links">
+    <ul>
+      <li><a href="#">sage adelaide</a></li>
+      <li><a href="#">Sage James Street Brisbane</a></li>
+      <li><a href="#">sage west perth</a></li>
+      <li><a href="#">sage wollongong</a></li>
+    </ul>
+  </div>
+  <div id="brand-link" class="menu-link">
+    <a href="#"><span>Our Brands</span></a>
+  </div>
+  <div id="group-link" class="menu-link">
+    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+  </div>
+</div>
         <!--
            ____ _____  _    ____ _____
           / ___|_   _|/ \  |  _ \_   _|
@@ -529,21 +528,23 @@
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
               </div>
-              <h1>Standard Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
+              <div class="box-content-text">
+                <h1>Standard Room</h1>
+                <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+                <h4 class="room-size-sqft room-size">25 SQM</h4>
 
-              <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="#" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
+                <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                
+                <div class="cta-and-price-container">
+                  <a href="#" class="arrow-cta view-room-details">View room details</a>
+                  <div class="book-now-container">
+                    <a href="#" class="square-cta book-now">Book now</a>
+                  </div>
+                  <div class="price-container">
+                    <span>per night</span>
+                    <div class="price">
+                      <span class="currency">AUD</span><span class="price">$135</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1221,7 +1222,6 @@
 
   <!-- Development Version -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <link rel="stylesheet" type="text/css" href="../source/library/daterangepicker/daterangepicker.css">   -->
 
   <!-- Page Library -->
   <script type="text/javascript" src="../source/js/all.js"></script>
