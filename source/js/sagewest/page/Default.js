@@ -924,7 +924,7 @@ sagewest.page.Default.prototype.common_menu = function() {
                 $("#desktop-header").removeClass("open");
             }
         }        
-        if(!$(event.target).closest('#book-now').length && !$(event.target).closest('#date-picker').length && !$(event.target).closest('.next').length && !$(event.target).closest('.prev').length && !$(event.target).closest('#hover-day').length && !$(event.target).closest('#hover-weekname').length && !$(event.target).closest('th, td, tr').length && !$(event.target).closest('select').length && !$(event.target).closest('input').length && !$(event.target).closest('.date-input').length) {
+        if(!$(event.target).closest('#book-now').length && !$(event.target).closest('#date-picker').length && !$(event.target).closest('.next').length && !$(event.target).closest('.prev').length && !$(event.target).closest('#hover-day').length && !$(event.target).closest('#hover-weekname').length && !$(event.target).closest('th, td, tr').length && !$(event.target).closest('select').length && !$(event.target).closest('input').length && !$(event.target).closest('.date-input').length && !$(event.target).closest('.daterangepicker').length ) {
             if($('#desktop-header-booking-form').is(":visible")) {
                 $('#desktop-header-booking-form').slideUp(300);
             }
@@ -984,8 +984,11 @@ sagewest.page.Default.prototype.scroll_to_after_the_fold = function(){
       
       console.log('here lies something')
       console.log('target_y: ' + target_y);
-    } else {
-      target_y = this.window_height - $('#mobile-header').height();
+    } else {      
+      console.log(this.window_height);
+      console.log($('.mobile-header-bg').height());
+      // 108px different from mobile simulator and actual device
+      target_y = (this.window_height - $('.mobile-header-bg').height()) + 108;
     }
     
   }

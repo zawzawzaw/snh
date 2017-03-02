@@ -438,10 +438,7 @@
           color: @dark-grey;
           text-transform: uppercase;
           padding-bottom: 10px;
-        }
-        .more-details {
-          font-size: 12px;
-        }
+        }        
         .view-offer-details {
           display: block;
           padding-bottom: 30px;
@@ -590,9 +587,12 @@
     }
     #home-promotion-content {
       .home-promotion-content-box {
-        min-height: 750px;
+        min-height: 680px;
         .box-content {
           padding: 0px;
+          .manic-image-container {
+            margin-bottom: 0px;
+          }
           .box-content-text {            
             padding: 20px 20px 30px;
             .cta-and-price-container {
@@ -602,6 +602,26 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #home-promotion-section{
+    #home-promotion-content {
+      .home-promotion-content-box {
+        min-height: 680px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #home-promotion-section{
+    #home-promotion-content {
+      .home-promotion-content-box {
+        min-height: 750px;
       }
     }
   }
@@ -689,6 +709,9 @@
     #home-moment-content {
       text-align: center;
       padding-top: 30px;
+      h1 {
+        font-size: 20px;
+      }
     }
   }
 }

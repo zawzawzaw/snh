@@ -357,16 +357,29 @@
     }
     #hotel-accommodation-content {    
       .hotel-accommodation-content-box {
+        margin-bottom: 0px;
+        box-shadow: none;
+        min-height: auto;
         .box-content {
           padding: 0px;
+          .manic-image-container {
+            height: 204px;
+          }
           .box-content-text {
-            padding: 20px 20px 30px;
+            padding: 0px;
+            h1, h4 {
+              display: none;
+            }
+            .cta-and-price-container {
+              display: none;
+            }
           }
         }
       }
     }
     #hotel-accommodation-view-all {
-      text-align: left;
+      padding-top: 0px;
+      text-align: right;
     }
   }
 }
@@ -435,15 +448,24 @@
   #hotel-dining-section{
     padding-top: 60px;
     padding-bottom: 60px;
+    #hotel-dining-content{    
+      h1{
+        margin-bottom: 20px;
+      }
+      p {
+        display: none;
+        &:nth-of-type(1) {
+          display: block;
+        }
+      }
+      .more-dining-options {
+        text-align: right;
+        display: block;
+      }
+    }
     #mobile-hotel-dining-instagram-feed-container {
       .instagram-feed-text {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        display: block;
-        .playfair-regular;
-        font-size: 19px;
-        line-height: 27px;
-        color: @grey-3;
+        display: none;
       }
       .manic-image-container {
         height: 320px;
@@ -531,7 +553,7 @@
           .header-h6-style;
           color: @dark-grey;
           text-transform: uppercase;
-          padding-bottom: 20px;
+          padding-bottom: 10px;
         }
         .view-offer-details {
           display: block;
@@ -681,9 +703,12 @@
     }
     #hotel-promotion-content {
       .hotel-promotion-content-box {
-        height: 740px;
+        min-height: 680px;
         .box-content {
           padding: 0px;
+          .manic-image-container {
+            margin-bottom: 0px;
+          }
           .box-content-text {            
             padding: 20px 20px 30px;
             .cta-and-price-container {
@@ -693,6 +718,26 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #hotel-promotion-section{
+    #hotel-promotion-content {
+      .hotel-promotion-content-box {
+        min-height: 680px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #hotel-promotion-section{
+    #hotel-promotion-content {
+      .hotel-promotion-content-box {
+        min-height: 750px;
       }
     }
   }
@@ -809,11 +854,17 @@
     padding-top: 60px;
     padding-bottom: 60px;
     #hotel-reviews-slider {
+      .hotel-reviews-slider-title {
+        padding-bottom: 30px;
+      }
       .hotel-reviews-slider-text {
+        .stars {
+          padding-bottom: 30px;
+        }
         .quote {
           .playfair-regular;
-          font-size: 25px;
-          line-height: 42px;
+          font-size: 22px;
+          line-height: 30px;
           color: @grey-3;
           width: 100%;
           text-align: center;
@@ -826,8 +877,8 @@
       display: none!important;     
     }
     #hotel-reviews-reall-all-reviews {
-      padding-top: 15px;
-      text-align: center;
+      padding-top: 50px;
+      text-align: right;
     }
   }
 }
@@ -886,6 +937,10 @@
       ul.slick-dots {
         li {
           display: inline-block;
+          margin-left: 4px;
+          margin-right: 4px;
+          width: 8px;
+          height: 8px;
           button {
             text-indent: -999999px;
             position: relative;
@@ -893,10 +948,10 @@
             background: none;
             &:before {
               content: "";
-              width: 9px;
-              height: 9px;
+              width: 10px;
+              height: 10px;
               background-color: @grey;
-              .round(9px);
+              .round(10px);
               display: block;
               position: absolute;
               left: 0px;
@@ -932,9 +987,6 @@
   #hotel-moment-content{    
     h1{
       padding-bottom: 5px;
-      @media all and (max-width: 375px) {
-        font-size: 27px;
-      }
     }
     p {
       padding-bottom: 20px;
@@ -1002,6 +1054,9 @@
     #hotel-moment-content {
       text-align: center;
       padding-top: 30px;
+      h1 {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -1104,7 +1159,7 @@
         .manic-image-container {
           width: 100%;
           height: 270px;
-          margin-bottom: 20px;
+          // margin-bottom: 20px;
         }        
         h1 {
           .header-h1-style;

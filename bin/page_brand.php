@@ -354,64 +354,45 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid no-padding">
+  <div class="container-fluid visible-sm visible-xs">
     <div class="row">
       <div class="col-md-12">
-          <div id="home-location-content">
-            <div id="home-location-content-carousel">
-              <div class="carousel-content">
-                <img src="images_cms/home/home-location-01.jpg" alt="">                
+        <div id="home-location-content-mobile">
+          <div id="home-location-content-mobile-carousel">
+            <div class="carousel-content">
+              <div class="manic-image-container">
+                <img src="images_cms/home/home-location-01.jpg" alt="">        
               </div>
-              <div class="carousel-content">
+              <h4>sage hotels west perth</h4>
+              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
+              <a href="#" class="arrow-cta">Visit This Hotel</a>
+            </div>
+            <div class="carousel-content">
+              <div class="manic-image-container">
                 <img src="images_cms/home/home-location-02.jpg" alt="">                
               </div>
-              <div class="carousel-content">
+              <h4>sage hotels west perth</h4>
+              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
+              <a href="#" class="arrow-cta">Visit This Hotel</a>
+            </div>
+            <div class="carousel-content">
+              <div class="manic-image-container">
                 <img src="images_cms/home/home-location-03.jpg" alt="">                
               </div>
-            </div>
-            <div id="home-location-content-carousel-text-1" class="active home-location-content-carousel-text">
-              <div class="row">
-                <div id="home-location-content-carousel-header-text" class="col-md-2">
-                  <h4>Sage Hotels</h4>
-                  <h3>West Perth</h3>
-                </div>
-                <div id="home-location-content-carousel-content-text" class="col-md-8 col-md-offset-1">
-                  <h1>Gateway to the City of Light</h1>
-                  <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  <a href="#" class="arrow-cta">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div id="home-location-content-carousel-text-2" class="home-location-content-carousel-text">
-              <div class="row">
-                <div id="home-location-content-carousel-header-text" class="col-md-2">
-                  <h4>Sage Hotels</h4>
-                  <h3>West Perth</h3>
-                </div>
-                <div id="home-location-content-carousel-content-text" class="col-md-8 col-md-offset-1">
-                  <h1>Gateway to the City of Light 2</h1>
-                  <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  <a href="#" class="arrow-cta">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div id="home-location-content-carousel-text-3" class="home-location-content-carousel-text">
-              <div class="row">
-                <div id="home-location-content-carousel-header-text" class="col-md-2">
-                  <h4>Sage Hotels</h4>
-                  <h3>West Perth</h3>
-                </div>
-                <div id="home-location-content-carousel-content-text" class="col-md-8 col-md-offset-1">
-                  <h1>Gateway to the City of Light 3</h1>
-                  <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  <a href="#" class="arrow-cta">Read more</a>
-                </div>
-              </div>
+              <h4>sage hotels west perth</h4>
+              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
+              <a href="#" class="arrow-cta">Visit This Hotel</a>
             </div>
           </div>
+        </div>
       </div>
     </div>
-  </div>  
+    <div class="row">
+      <div class="col-md-12">
+        <a href="#" id="view-all-locations-cta" class="arrow-cta">view all Locations</a>
+      </div>
+    </div>
+  </div>
 </article>
 
 <!-- 
@@ -453,6 +434,8 @@
                   <li><p>Late Check out at 12 noon</p></li>
                 </ul>
                 <span class="date">valid from now – 1st april 2017</span>
+
+                <a href="#" class="more-details arrow-cta visible-xs visible-sm">More details</a>
                 
                 <div class="cta-and-price-container">
                   <div class="cta-container">

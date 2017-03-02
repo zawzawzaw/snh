@@ -59,6 +59,8 @@ sagewest.component.MobileHeader = function(options, element) {
   this.create_main_buttons();
   this.create_menu();
 
+  this.calendar_open_menu();
+
   console.log('init');
 };
 goog.inherits(sagewest.component.MobileHeader, goog.events.EventTarget);
