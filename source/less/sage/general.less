@@ -46,6 +46,9 @@ html, body{
   }
   h5{
     // reserved
+    .playfair-regular;
+    font-size: 27px * @multiplier;
+    line-height: 38px * @multiplier;
   }
   h6{
     .header-h6-style(@multiplier);
@@ -70,6 +73,10 @@ html, body{
     line-height: 18px !important;
   }
   h3{
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+  h5{
     font-size: 13px !important;
     line-height: 18px !important;
   }
@@ -149,7 +156,8 @@ textarea{
   
 
   &.has-breakpoint{
-    max-width: 1665px;
+    // max-width: 1665px;
+    max-width: 1380px;        // dependent on design
     margin: 0 auto;
   }
 
