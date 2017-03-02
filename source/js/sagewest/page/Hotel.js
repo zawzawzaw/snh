@@ -272,6 +272,7 @@ sagewest.page.Hotel.prototype.others = function(){
     $('#hotel-reviews-slider').slick({
       dots: false,
       infinite: true,
+      autoplay: true,
       slidesToShow: 1,
       prevArrow: '<a class="carousel-prev"><span></span></a>',
       nextArrow: '<a class="carousel-next"><span></span></a>'      

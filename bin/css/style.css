@@ -3836,7 +3836,7 @@ h4 {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 17px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #b1a5a0;
@@ -4369,6 +4369,14 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   font-family: FontAwesome;
   font-size: 13px;
   padding-left: 5px;
+}
+@media all and (max-width: 375px) {
+  .arrow-cta {
+    font-size: 12px;
+  }
+  .arrow-cta:after {
+    font-size: 12px;
+  }
 }
 html.actual-mobile .square-cta:focus,
 html.actual-mobile .square-cta:hover {
@@ -5124,7 +5132,6 @@ body.hotel #desktop-header-nav ul li {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 13px;
@@ -5506,7 +5513,7 @@ html#hotel-page body.mobile-menu-open #mobile-header-expanded.expand-version {
   display: none;
 }
 #mobile-header-menu-container #mobile-menu {
-  padding: 25px 0px 25px 20px;
+  padding: 25px 20px 25px 20px;
   position: relative;
 }
 #mobile-header-menu-container #mobile-menu ul li {
@@ -5767,7 +5774,6 @@ html#hotel-page body.mobile-menu-open #mobile-header-expanded.expand-version {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 13px;
@@ -7357,9 +7363,6 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-#home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .more-details {
-  font-size: 12px;
-}
 #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .view-offer-details {
   display: block;
   padding-bottom: 30px;
@@ -7507,16 +7510,29 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-bottom: 30px;
   }
   #home-promotion-section #home-promotion-content .home-promotion-content-box {
-    min-height: 750px;
+    min-height: 680px;
   }
   #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content {
     padding: 0px;
+  }
+  #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .manic-image-container {
+    margin-bottom: 0px;
   }
   #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .box-content-text {
     padding: 20px 20px 30px;
   }
   #home-promotion-section #home-promotion-content .home-promotion-content-box .box-content .box-content-text .cta-and-price-container .cta-container {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #home-promotion-section #home-promotion-content .home-promotion-content-box {
+    min-height: 680px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #home-promotion-section #home-promotion-content .home-promotion-content-box {
+    min-height: 750px;
   }
 }
 #home-moment-section {
@@ -7593,6 +7609,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   #home-moment-section #home-moment-content {
     text-align: center;
     padding-top: 30px;
+  }
+  #home-moment-section #home-moment-content h1 {
+    font-size: 20px;
   }
 }
 #home-map-section {
@@ -8143,14 +8162,30 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   #hotel-accommodation-section #hotel-accommodation-title {
     padding-bottom: 30px;
   }
+  #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box {
+    margin-bottom: 0px;
+    box-shadow: none;
+    min-height: auto;
+  }
   #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content {
     padding: 0px;
   }
+  #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .manic-image-container {
+    height: 204px;
+  }
   #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .box-content-text {
-    padding: 20px 20px 30px;
+    padding: 0px;
+  }
+  #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .box-content-text h1,
+  #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .box-content-text h4 {
+    display: none;
+  }
+  #hotel-accommodation-section #hotel-accommodation-content .hotel-accommodation-content-box .box-content .box-content-text .cta-and-price-container {
+    display: none;
   }
   #hotel-accommodation-section #hotel-accommodation-view-all {
-    text-align: left;
+    padding-top: 0px;
+    text-align: right;
   }
 }
 #hotel-dining-section {
@@ -8211,16 +8246,21 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  #hotel-dining-section #mobile-hotel-dining-instagram-feed-container .instagram-feed-text {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  #hotel-dining-section #hotel-dining-content h1 {
+    margin-bottom: 20px;
+  }
+  #hotel-dining-section #hotel-dining-content p {
+    display: none;
+  }
+  #hotel-dining-section #hotel-dining-content p:nth-of-type(1) {
     display: block;
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 27px;
-    color: #8c8c8c;
+  }
+  #hotel-dining-section #hotel-dining-content .more-dining-options {
+    text-align: right;
+    display: block;
+  }
+  #hotel-dining-section #mobile-hotel-dining-instagram-feed-container .instagram-feed-text {
+    display: none;
   }
   #hotel-dining-section #mobile-hotel-dining-instagram-feed-container .manic-image-container {
     height: 320px;
@@ -8316,7 +8356,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   letter-spacing: 0.08em;
   color: #747474;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box .box-content .view-offer-details {
   display: block;
@@ -8465,16 +8505,29 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-bottom: 30px;
   }
   #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box {
-    height: 740px;
+    min-height: 680px;
   }
   #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box .box-content {
     padding: 0px;
+  }
+  #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box .box-content .manic-image-container {
+    margin-bottom: 0px;
   }
   #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box .box-content .box-content-text {
     padding: 20px 20px 30px;
   }
   #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box .box-content .box-content-text .cta-and-price-container .cta-container {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box {
+    min-height: 680px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #hotel-promotion-section #hotel-promotion-content .hotel-promotion-content-box {
+    min-height: 750px;
   }
 }
 #hotel-reviews-section {
@@ -8523,7 +8576,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 17px;
   letter-spacing: 0.08em;
   color: #747474;
   text-transform: uppercase;
@@ -8598,12 +8651,18 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  #hotel-reviews-section #hotel-reviews-slider .hotel-reviews-slider-title {
+    padding-bottom: 30px;
+  }
+  #hotel-reviews-section #hotel-reviews-slider .hotel-reviews-slider-text .stars {
+    padding-bottom: 30px;
+  }
   #hotel-reviews-section #hotel-reviews-slider .hotel-reviews-slider-text .quote {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 42px;
+    font-size: 22px;
+    line-height: 30px;
     color: #8c8c8c;
     width: 100%;
     text-align: center;
@@ -8615,8 +8674,8 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     display: none!important;
   }
   #hotel-reviews-section #hotel-reviews-reall-all-reviews {
-    padding-top: 15px;
-    text-align: center;
+    padding-top: 50px;
+    text-align: right;
   }
 }
 #hotel-booking-section {
@@ -8663,6 +8722,10 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   }
   #hotel-booking-section #hotel-booking-content ul.slick-dots li {
     display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
   }
   #hotel-booking-section #hotel-booking-content ul.slick-dots li button {
     text-indent: -999999px;
@@ -8672,11 +8735,11 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   }
   #hotel-booking-section #hotel-booking-content ul.slick-dots li button:before {
     content: "";
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     background-color: #747474;
-    -webkit-border-radius: 9px;
-    border-radius: 9px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -8697,11 +8760,6 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 #hotel-moment-section #hotel-moment-content h1 {
   padding-bottom: 5px;
-}
-@media all and (max-width: 375px) {
-  #hotel-moment-section #hotel-moment-content h1 {
-    font-size: 27px;
-  }
 }
 #hotel-moment-section #hotel-moment-content p {
   padding-bottom: 20px;
@@ -8769,6 +8827,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   #hotel-moment-section #hotel-moment-content {
     text-align: center;
     padding-top: 30px;
+  }
+  #hotel-moment-section #hotel-moment-content h1 {
+    font-size: 20px;
   }
 }
 #hotel-attraction-section {
@@ -8866,7 +8927,6 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-box .box-content .manic-image-container {
   width: 100%;
   height: 270px;
-  margin-bottom: 20px;
 }
 #hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-box .box-content h1 {
   font-family: 'Playfair Display', serif;
@@ -9126,36 +9186,6 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   display: block;
   padding-top: 5px;
 }
-@media only screen and (max-width: 991px) {
-  #brand-location-section {
-    display: none;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  #brand-location-section #brand-location-title {
-    text-align: left;
-  }
-  #brand-location-section #brand-location-content .brand-location-content {
-    display: none;
-  }
-  #brand-location-section #brand-location-content .brand-location-content.mobile-default-location {
-    display: block;
-    position: static;
-    visibility: visible;
-    -moz-opacity: 1;
-    -khtml-opacity: 1;
-    -webkit-opacity: 1;
-    opacity: 1;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-    filter: alpha(opacity=100);
-  }
-  #brand-location-section #brand-location-content .brand-location-content .manic-image-container {
-    height: 202px;
-  }
-  #brand-location-section #brand-locaiton-view-all-mobile {
-    padding-top: 70px;
-  }
-}
 #home-location-section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -9294,36 +9324,62 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  #home-location-section #home-location-content #home-location-content-carousel .slick-dots {
+  #home-location-section #home-location-title {
+    text-align: left!important;
+  }
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots {
     width: 100%;
+    height: 8px;
     padding: 0 40px;
     padding-top: 30px;
+    padding-bottom: 50px;
     text-align: center;
   }
-  #home-location-section #home-location-content #home-location-content-carousel .slick-dots li {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 15px;
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
   }
-  #home-location-section #home-location-content #home-location-content-carousel .slick-dots li button:before {
-    width: 15px;
-    height: 15px;
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li button {
+    border: none;
+    background: none;
+    text-indent: -9999px;
+    position: relative;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text {
-    padding: 0 30px;
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li button:before {
+    content: "";
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #747474;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-header-text {
-    display: none;
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li.slick-active button:before {
+    background-color: #7d0052;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text {
-    text-align: center;
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content .manic-image-container {
+    height: 174px;
+    margin-bottom: 30px;
   }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text h1 {
-    margin-top: 30px;
-    padding-bottom: 30px;
-  }
-  #home-location-section #home-location-content .home-location-content-carousel-text #home-location-content-carousel-content-text p {
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content h4 {
     padding-bottom: 20px;
+  }
+  #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content p {
+    padding-bottom: 25px;
+  }
+  #home-location-section #view-all-locations-cta {
+    text-align: right;
+    display: block;
   }
 }
 #brand-all-location-section {
@@ -9454,7 +9510,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   letter-spacing: 0.08em;
   color: #747474;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 #brand-promotion-section #brand-promotion-content .brand-promotion-content-box .box-content .view-offer-details {
   display: block;
@@ -9603,16 +9659,29 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-bottom: 30px;
   }
   #brand-promotion-section #brand-promotion-content .brand-promotion-content-box {
-    height: 740px;
+    min-height: 680px;
   }
   #brand-promotion-section #brand-promotion-content .brand-promotion-content-box .box-content {
     padding: 0px;
+  }
+  #brand-promotion-section #brand-promotion-content .brand-promotion-content-box .box-content .manic-image-container {
+    margin-bottom: 0px;
   }
   #brand-promotion-section #brand-promotion-content .brand-promotion-content-box .box-content .box-content-text {
     padding: 20px 20px 30px;
   }
   #brand-promotion-section #brand-promotion-content .brand-promotion-content-box .box-content .box-content-text .cta-and-price-container .cta-container {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #brand-promotion-section #brand-promotion-content .brand-promotion-content-box {
+    min-height: 680px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #brand-promotion-section #brand-promotion-content .brand-promotion-content-box {
+    min-height: 750px;
   }
 }
 #brand-moment-section {
@@ -9689,6 +9758,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   #brand-moment-section #brand-moment-content {
     text-align: center;
     padding-top: 30px;
+  }
+  #brand-moment-section #brand-moment-content h1 {
+    font-size: 20px;
   }
 }
 #brand-map-section {

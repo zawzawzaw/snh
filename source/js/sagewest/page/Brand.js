@@ -302,6 +302,22 @@ sagewest.page.Brand.prototype.others = function(){
       ]
     });
 
+    $('#home-location-content-mobile-carousel').slick({
+      dots: true,
+      slidesToShow: 1,
+      prevArrow: '<a class="carousel-prev"><span></span></a>',
+      nextArrow: '<a class="carousel-next"><span></span></a>',
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
     $(".brand-location-link").on("click", function(e){
       e.preventDefault();
       var target = $(event.currentTarget);

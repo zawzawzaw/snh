@@ -940,8 +940,11 @@ sagewest.page.Default.prototype.scroll_to_after_the_fold = function(){
       
       console.log('here lies something')
       console.log('target_y: ' + target_y);
-    } else {
-      target_y = this.window_height - $('#mobile-header').height();
+    } else {      
+      console.log(this.window_height);
+      console.log($('.mobile-header-bg').height());
+      // 108px different from mobile simulator and actual device
+      target_y = (this.window_height - $('.mobile-header-bg').height()) + 108;
     }
     
   }
