@@ -491,6 +491,16 @@
           </div>
 
           <div class="detail-page-content-description">
+            <div class="room-details">
+              <div class="row">
+                <div class="col-md-5"><h4 class="room-size-sqft room-detail">25 SQM</h4></div>
+                <div class="col-md-7"><h4 class="room-bed-size room-detail">1 KING SIZE BED, 2 TWIN BEDs</h4></div>
+              </div>
+              <div class="row">
+                <div class="col-md-5"><h4 class="room-size-person room-detail">2 adults, 2 children</h4></div>
+                <div class="col-md-7"><h4 class="room-view room-detail">PARTIAL MOUNTAIN AND CITY VIEW</h4></div>
+              </div>
+            </div>
             <div class="default-copy">
               <p>Superior Sage Twin Room located in our Levels 10 - 13 is superior in every sense of the word these rooms offer amazing views of the Perth Skyline or Kings Park.</p>
               <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring two single beds you will have no problems drifting off on our custom mattresses for the two of you. After a long day out refresh yourself under the duel shower heads and revitalizing SOAK amenities. Equipped with free and fast WiFi you can surf the net or work though those emails. Alternatively, kick back and enjoy the 48” flat screen TV with a cold drink and snack from the mini bar. </p>
@@ -554,33 +564,86 @@
 
 
 
-          <div class="detail-page-contact-info">
+          <div class="detail-page-booking-form">
 
-            <div class="detail-page-contact-info-title">
+            <div class="detail-page-booking-form-title">
               <h5>Check Availability</h5>
             </div>
 
-            <div class="detail-page-contact-info-item">
-              <h6>Address</h6>
-              <p>Firehouse Restaurant Perth, <br>249 Great Eastern Highway Belmont WA 6104</p>
+            <div class="booking-form">
+              <form action="">
+                <div class="input-box">
+                  <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+                  <div class="date-input">
+                    <input type="text" name="date" id="sidebar-date-picker" readonly="true" onfocus="this.blur()">
+                  </div>
+                </div>
+                <div class="input-box">
+                  <div class="input-box-col-1">
+                    <label for="">Adults</label>
+                    <div class="dropdown">
+                      <select name="adults" id="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input-box-col-2">
+                    <label for="">Children</label>
+                    <div class="dropdown">
+                      <select name="children" id="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-box">
+                  <label for="">Promotion Code</label>
+                  <input type="text" name="promo_code">
+                </div>
+                <div class="input-box">
+                  <input type="submit" class="check-availability square-cta" value="check availability">
+                </div>
+              </form>
             </div>
+            <div id="booking-calendar"></div>
+            
 
-            <div class="detail-page-contact-info-item last-version">
-              <h6>Contact us</h6>
-              <p>F&B Manager: Aleysha Campbell <br>Contact: 08-94780899 <br>Email: <a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+            
+          </div> <!-- detail-page-booking-form -->
+
+
+          <div class="detail-page-other-info">
+            <h4>Other Information</h4>
+            
+            <div class="other-info-1">
+              <h6>SAGE Hotel App:</h6>
+              <p>Control the lights, temperature, Smart TV, door lock, room service and have access to over 2,000 of the world’s newspapers and magazines throughout your stay</p>
             </div>
-
-            <div class="cta-container">
-              <a href="" class="arrow-cta">Visit Restaurant Website</a>
-              <a href="javascript:void(0);" class="dimmi-book-cta"></a>
+            
+            <div class="other-info-2">
+              <h6>Turn Down Service:</h6> 
+              <p>Enjoy complementary cookies in the evening</p>
             </div>
-          </div> <!-- detail-page-contact-info -->
-
-
-
-
-
-
+          </div>
 
 
         </div> <!-- detail-page-content-sidebar -->
@@ -601,6 +664,85 @@
     </div>
   </div>
 </div>
+
+<article id="detail-page-content-2-section">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>more accommodation choices</h4>
+      </div>
+    </div>
+    <div id="room-content">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
+              </div>
+              <div class="box-content-text">
+                <h1>Standard Room</h1>
+                <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+                <h4 class="room-size-sqft room-size">25 SQM</h4>              
+                
+                <div class="cta-and-price-container">                
+                  <div class="price-container">
+                    <span>Price from</span>
+                    <div class="price">
+                      <span class="currency">AUD</span><span class="price">$119</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-sm hidden-xs">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
+              </div>
+              <h1>Deluxe Room</h1>
+              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+              <h4 class="room-size-sqft room-size">25 SQM</h4>
+
+              <div class="cta-and-price-container">                
+                <div class="price-container">
+                  <span>Price from</span>
+                  <div class="price">
+                    <span class="currency">AUD</span><span class="price">$119</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-sm hidden-xs">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
+              </div>
+              <h1>Superior Room</h1>
+              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+              <h4 class="room-size-sqft room-size">25 SQM</h4>
+
+              <div class="cta-and-price-container">                
+                <div class="price-container">
+                  <span>Price from</span>
+                  <div class="price">
+                    <span class="currency">AUD</span><span class="price">$119</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</article>
 
 
 

@@ -38,6 +38,51 @@
 
   .detail-page-content-description{
     margin-bottom: 45px;
+    .room-details {
+      padding-bottom: 25px;
+    }
+    .room-detail {
+      position: relative;
+      color: @grey-4;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+      padding-left: 30px;
+      &:before {
+        position: absolute;
+        left: 0px;
+        color: #6c665e;
+        font-family: FontAwesome;
+        font-size: 19px;
+        letter-spacing: 0.08em;
+      }
+    }
+    .room-size-person {          
+      &:before {
+        content: "";
+        background: url(../images/icons/person-icon.png) no-repeat;
+        width: 24px;
+        height: 18px;
+        display: inline-block;            
+        position: absolute;
+        left: -3px;
+        top: -2px;
+      }          
+    }
+    .room-size-sqft {
+      &:before {
+        content: "\f125";            
+      }
+    }
+    .room-bed-size {
+      &:before {
+        content: "\f236";          
+      }
+    }
+    .room-view {
+      &:before {
+        content: "\f06e";          
+      }
+    }
   }
 
   .detail-page-content-image{

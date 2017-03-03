@@ -5244,7 +5244,7 @@ body.hotel #desktop-header-nav ul li {
   text-transform: none;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar th.available:hover {
-  background-color: none;
+  background: none!important;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar th #hover-day {
   font-family: 'Playfair Display', serif;
@@ -5295,7 +5295,7 @@ body.hotel #desktop-header-nav ul li {
   color: #b9b9b9;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.available:hover {
-  background-color: none;
+  background: none!important;
 }
 #mobile-header-spacer {
   height: 63px;
@@ -5895,6 +5895,9 @@ body.scrolled #mobile-header .mobile-header-bg {
   font-size: 16px;
   text-transform: none;
 }
+#mobile-header-booking-calendar .daterangepicker .calendar th.available:hover {
+  background: none;
+}
 #mobile-header-booking-calendar .daterangepicker .calendar th #hover-day {
   font-family: 'Playfair Display', serif;
   font-style: normal;
@@ -5943,6 +5946,9 @@ body.scrolled #mobile-header .mobile-header-bg {
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.off {
   color: #b9b9b9;
+}
+#mobile-header-booking-calendar .daterangepicker .calendar td.available:hover {
+  background: none;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar tbody tr {
   border-bottom: 5px solid #f1f2f2;
@@ -10359,6 +10365,469 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
 }
+#detail-list-section #room-content .room-content-box {
+  margin-bottom: 20px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  min-height: 670px;
+  position: relative;
+}
+@media all and (max-width: 1280px) {
+  #detail-list-section #room-content .room-content-box {
+    min-height: 700px;
+  }
+}
+#detail-list-section #room-content .room-content-box .box-content {
+  padding: 20px 20px 30px;
+}
+#detail-list-section #room-content .room-content-box .box-content .manic-image-container {
+  width: 100%;
+  height: 270px;
+  margin-bottom: 20px;
+}
+#detail-list-section #room-content .room-content-box .box-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 60px;
+  font-size: 27px;
+  line-height: 32px;
+  padding-bottom: 12px;
+  color: #7d0052;
+}
+#detail-list-section #room-content .room-content-box .box-content .room-size {
+  position: relative;
+  color: #929090;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+#detail-list-section #room-content .room-content-box .box-content .room-size-person:before {
+  content: "";
+  background: url(../images/icons/person-icon.png) no-repeat;
+  width: 24px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  left: -3px;
+  top: -2px;
+}
+#detail-list-section #room-content .room-content-box .box-content .room-size-sqft:before {
+  content: "\f125";
+  font-family: FontAwesome;
+  font-size: 19px;
+  letter-spacing: 0.08em;
+  color: #6c665e;
+  position: absolute;
+  left: 0px;
+}
+#detail-list-section #room-content .room-content-box .box-content p {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+#detail-list-section #room-content .room-content-box .box-content .cta-and-price-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 100%;
+  padding: 0 20px;
+}
+#detail-list-section #room-content .room-content-box .box-content .cta-and-price-container .view-room-details {
+  display: block;
+  padding-bottom: 10px;
+}
+#detail-list-section #room-content .room-content-box .box-content .cta-and-price-container .book-now-container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 65%;
+}
+#detail-list-section #room-content .room-content-box .box-content .cta-and-price-container .price-container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+  margin-left: -4px;
+  text-align: right;
+}
+#detail-list-section #room-content .room-content-box .box-content .cta-and-price-container .price-container span {
+  text-transform: uppercase;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+#detail-list-section #room-content .room-content-box .box-content .cta-and-price-container .price-container .price .currency {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-right: 2px;
+}
+#detail-list-section #room-content .room-content-box .box-content .cta-and-price-container .price-container .price .price {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.075px;
+  text-transform: uppercase;
+}
+#detail-list-section #room-content .room-content-box .box-content .view-offer-details {
+  display: block;
+  padding-bottom: 30px;
+}
+.detail-page-booking-form {
+  width: 100%;
+  margin-bottom: 45px;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 8px #e5e5e5;
+  box-shadow: 1px 1px 8px #e5e5e5;
+}
+.detail-page-booking-form .detail-page-booking-form-title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.detail-page-booking-form .booking-form .input-box {
+  margin-bottom: 15px;
+}
+.detail-page-booking-form .booking-form .input-box label {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #555;
+  display: block;
+  padding-bottom: 10px;
+}
+.detail-page-booking-form .booking-form .input-box .dropdown {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.detail-page-booking-form .booking-form .input-box .dropdown select {
+  background-color: transparent;
+  background-image: none!important;
+  border: 1px solid #cccccc;
+  height: 30px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 15px;
+}
+.detail-page-booking-form .booking-form .input-box .dropdown:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f107";
+  font-size: 20px;
+  line-height: 41px;
+  text-align: center;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  color: #767676;
+}
+.detail-page-booking-form .booking-form .input-box input[type=text] {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+}
+.detail-page-booking-form .booking-form .input-box .date-input {
+  position: relative;
+}
+.detail-page-booking-form .booking-form .input-box .date-input:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f073";
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  color: #7d0052;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.detail-page-booking-form .booking-form .input-box .input-box-col-1,
+.detail-page-booking-form .booking-form .input-box .input-box-col-2 {
+  display: inline-block;
+  width: 46.3%;
+}
+.detail-page-booking-form .booking-form .input-box .input-box-col-1 {
+  margin-right: 15px;
+}
+.detail-page-booking-form .booking-form .input-box input[type=submit] {
+  width: 100%;
+  height: 35px;
+  color: #ffffff;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 17px;
+  padding-top: 0px;
+  border: none;
+}
+.detail-page-booking-form #booking-calendar {
+  position: absolute;
+  top: 172px;
+  right: 40px;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker {
+  position: static!important;
+  border: none;
+  border-radius: 0px;
+  height: 370px;
+  background-color: #f1f2f2;
+  padding: 5px 9px;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker:after,
+.detail-page-booking-form #booking-calendar .daterangepicker:before {
+  display: none;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .daterangepicker_input {
+  display: none;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar {
+  margin-top: -4px;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar .calendar-table {
+  background-color: #f1f2f2;
+  padding-bottom: 0px;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar.right {
+  display: none;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar th {
+  color: #7d0052;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar th.month {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar th.available:hover {
+  background: none!important;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar th #hover-day {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 38px;
+  margin-top: -15px;
+  color: #7d0052;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar th #hover-weekname {
+  color: #555;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td {
+  border-radius: 0px!important;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td.active {
+  background-color: #7d0052;
+  color: #ffffff !important;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td.active:hover {
+  background-color: #7d0052;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td.start-date {
+  border-left: 3px solid #fff;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td.disabled {
+  background-color: #b9b9b9;
+  text-decoration: none!important;
+  color: #ffffff !important;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td.in-range {
+  background-color: #7d0052;
+  color: #ffffff !important;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td.off {
+  color: #b9b9b9;
+}
+.detail-page-booking-form #booking-calendar .daterangepicker .calendar td.available:hover {
+  background: none!important;
+}
+.detail-page-other-info {
+  width: 100%;
+  background-color: #f1f1f1;
+  margin-bottom: 45px;
+  padding-top: 27px;
+  padding-bottom: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-shadow: 1px 1px 8px #e5e5e5;
+  box-shadow: 1px 1px 8px #e5e5e5;
+}
+.detail-page-other-info h4 {
+  padding-bottom: 20px;
+}
+.detail-page-other-info .other-info-1 {
+  padding-bottom: 20px;
+}
+.detail-page-other-info h6 {
+  font-size: 15px;
+  line-height: 24px;
+  color: #7d7d7d;
+}
+#detail-page-content-2-section {
+  padding-top: 50px;
+}
+#detail-page-content-2-section #room-content {
+  padding-top: 30px;
+}
+#detail-page-content-2-section #room-content .room-content-box {
+  margin-bottom: 20px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content {
+  padding: 20px 20px 20px;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .manic-image-container {
+  width: 100%;
+  height: 270px;
+  margin-bottom: 20px;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 60px;
+  font-size: 27px;
+  line-height: 32px;
+  padding-bottom: 12px;
+  color: #7d0052;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .room-size {
+  position: relative;
+  color: #929090;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .room-size-person:before {
+  content: "";
+  background: url(../images/icons/person-icon.png) no-repeat;
+  width: 24px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  left: -3px;
+  top: -2px;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .room-size-sqft:before {
+  content: "\f125";
+  font-family: FontAwesome;
+  font-size: 19px;
+  letter-spacing: 0.08em;
+  color: #6c665e;
+  position: absolute;
+  left: 0px;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .cta-and-price-container {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  width: 100%;
+  padding: 0 20px;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .cta-and-price-container .price-container {
+  display: block;
+  vertical-align: middle;
+  width: 35%;
+  margin-left: auto;
+  text-align: right;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .cta-and-price-container .price-container span {
+  text-transform: uppercase;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .cta-and-price-container .price-container .price .currency {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-right: 2px;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .cta-and-price-container .price-container .price .price {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.075px;
+  text-transform: uppercase;
+}
+#detail-page-content-2-section #room-content .room-content-box .box-content .view-offer-details {
+  display: block;
+  padding-bottom: 30px;
+}
 #detail-list-section {
   padding-bottom: 100px;
 }
@@ -10407,6 +10876,43 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 #detail-page-content .detail-page-content-description {
   margin-bottom: 45px;
+}
+#detail-page-content .detail-page-content-description .room-details {
+  padding-bottom: 25px;
+}
+#detail-page-content .detail-page-content-description .room-detail {
+  position: relative;
+  color: #929090;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+#detail-page-content .detail-page-content-description .room-detail:before {
+  position: absolute;
+  left: 0px;
+  color: #6c665e;
+  font-family: FontAwesome;
+  font-size: 19px;
+  letter-spacing: 0.08em;
+}
+#detail-page-content .detail-page-content-description .room-size-person:before {
+  content: "";
+  background: url(../images/icons/person-icon.png) no-repeat;
+  width: 24px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  left: -3px;
+  top: -2px;
+}
+#detail-page-content .detail-page-content-description .room-size-sqft:before {
+  content: "\f125";
+}
+#detail-page-content .detail-page-content-description .room-bed-size:before {
+  content: "\f236";
+}
+#detail-page-content .detail-page-content-description .room-view:before {
+  content: "\f06e";
 }
 #detail-page-content .detail-page-content-image .manic-image-container {
   height: 410px;

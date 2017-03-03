@@ -876,6 +876,39 @@ sagewest.page.Default.prototype.common_menu = function() {
 
         console.log(formatted_current_date);
 
+    $('#sidebar-date-picker').daterangepicker({
+        "autoApply": true,
+        "opens": "right",
+        "parentEl": "#booking-calendar",
+        "minDate": formatted_current_date,
+        "locale": {
+            "separator": " to ",
+            "daysOfWeek": [
+                "S",
+                "M",
+                "T",
+                "W",
+                "T",
+                "F",
+                "S"
+            ],
+            "monthNames": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ]
+        }
+    });
+
     $('#date-picker').daterangepicker({
         "autoApply": true,
         "opens": "right",

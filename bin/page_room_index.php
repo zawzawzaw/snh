@@ -81,11 +81,182 @@
   </div>
 </article> <!-- index-page-title-section -->
 
+<article id="detail-list-section">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div id="room-content">
+        <div class="col-md-4">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
+              </div>
+              <div class="box-content-text">
+                <h1>Standard Room</h1>
+                <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+                <h4 class="room-size-sqft room-size">25 SQM</h4>
+
+                <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                
+                <div class="cta-and-price-container">
+                  <a href="#" class="arrow-cta view-room-details">View room details</a>
+                  <div class="book-now-container">
+                    <a href="#" class="square-cta book-now">Book now</a>
+                  </div>
+                  <div class="price-container">
+                    <span>per night</span>
+                    <div class="price">
+                      <span class="currency">AUD</span><span class="price">$119</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-sm hidden-xs">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
+              </div>
+              <h1>Standard Twin Room</h1>
+              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+              <h4 class="room-size-sqft room-size">25 SQM</h4>
+
+              <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+              
+              <div class="cta-and-price-container">
+                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <div class="book-now-container">
+                  <a href="#" class="square-cta book-now">Book now</a>
+                </div>
+                <div class="price-container">
+                  <span>per night</span>
+                  <div class="price">
+                    <span class="currency">AUD</span><span class="price">$119</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-sm hidden-xs">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
+              </div>
+              <h1>Superior Room</h1>
+              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+              <h4 class="room-size-sqft room-size">25 SQM</h4>
+
+              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+              
+              <div class="cta-and-price-container">
+                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <div class="book-now-container">
+                  <a href="#" class="square-cta book-now">Book now</a>
+                </div>
+                <div class="price-container">
+                  <span>per night</span>
+                  <div class="price">
+                    <span class="currency">AUD</span><span class="price">$135</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="col-md-4">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-04.png" alt="">
+              </div>
+              <h1>Superior Twin Room</h1>
+              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
+              <h4 class="room-size-sqft room-size">25 SQM</h4>
+
+              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+              
+              <div class="cta-and-price-container">
+                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <div class="book-now-container">
+                  <a href="#" class="square-cta book-now">Book now</a>
+                </div>
+                <div class="price-container">
+                  <span>per night</span>
+                  <div class="price">
+                    <span class="currency">AUD</span><span class="price">$135</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-05.png" alt="">
+              </div>
+              <h1>Deluxe Room</h1>
+              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
+              <h4 class="room-size-sqft room-size">35 SQM</h4>
+
+              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+              
+              <div class="cta-and-price-container">
+                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <div class="book-now-container">
+                  <a href="#" class="square-cta book-now">Book now</a>
+                </div>
+                <div class="price-container">
+                  <span>per night</span>
+                  <div class="price">
+                    <span class="currency">AUD</span><span class="price">$235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="room-content-box">
+            <div class="box-content">
+              <div class="manic-image-container">
+                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-06.png" alt="">
+              </div>
+              <h1>Deluxe Twin Room</h1>
+              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
+              <h4 class="room-size-sqft room-size">35 SQM</h4>
+
+              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+              
+              <div class="cta-and-price-container">
+                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <div class="book-now-container">
+                  <a href="#" class="square-cta book-now">Book now</a>
+                </div>
+                <div class="price-container">
+                  <span>per night</span>
+                  <div class="price">
+                    <span class="currency">AUD</span><span class="price">$235</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
 
 
 
-
-images_cms/room/room-index-standard-room.jpg
+<!-- images_cms/room/room-index-standard-room.jpg
 images_cms/room/room-index-standard-twin-room.jpg
 images_cms/room/room-index-superior-room.jpg
 images_cms/room/room-index-superior-twin-room.jpg
@@ -96,7 +267,7 @@ images_cms/room/room-index-standard-twin-room-mobile.jpg
 images_cms/room/room-index-superior-room-mobile.jpg
 images_cms/room/room-index-superior-twin-room-mobile.jpg
 images_cms/room/room-index-deluxe-room-mobile.jpg
-images_cms/room/room-index-deluxe-twin-room-mobile.jpg
+images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
 
 
 <div id="default-footer-spacer"></div>

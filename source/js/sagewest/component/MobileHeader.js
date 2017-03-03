@@ -180,6 +180,9 @@ sagewest.component.MobileHeader.prototype.open_menu = function() {
 
     this.body.addClass('mobile-menu-open');
 
+    $('html').addClass('fixed');    
+    $('body').addClass('fixed'); 
+
     // this.page_wrapper.addClass('hidden-version');
     this.expand_container.addClass('expand-version');
 
@@ -199,6 +202,9 @@ sagewest.component.MobileHeader.prototype.close_menu = function() {
     this.is_open = false;
 
     this.body.removeClass('mobile-menu-open');
+
+    $('html').removeClass('fixed');    
+    $('body').removeClass('fixed'); 
 
     // this.page_wrapper.removeClass('hidden-version');
     this.expand_container.removeClass('expand-version');
