@@ -589,6 +589,11 @@ body.hotel {
           font-size: 16px;
           text-transform: none;
         }
+        &.available {
+          &:hover {
+            background-color: none;
+          }
+        }
         #hover-day {
           .playfair-bold;
           font-size: 46px;
@@ -631,11 +636,16 @@ body.hotel {
         &.off {
           // color: @grey-2;
           color: #b9b9b9;
-        }        
+        }
+        &.available {
+          &:hover {
+            background-color: none;
+          }
+        }     
       }
       tbody {
         tr {
-          border-bottom: 5px solid #f1f2f2;
+          // border-bottom: 5px solid #f1f2f2;
         }
       }
     }
