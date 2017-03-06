@@ -8,7 +8,7 @@ ob_start();
   // $is_debug = false;
   $is_debug = true;
 
-  $body_class = "brand-location-page";
+  $body_class = "hotel error-404-page permanent-scrolled";
 ?>
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -32,12 +32,12 @@ ob_start();
 
 
     <!-- mobile header is outside the page wrapper -->
-    <?php include('brand_header_mobile.php'); ?>
+    <?php include('hotel_header_mobile.php'); ?>
     
     <div id="page-wrapper">
       <div id="page-wrapper-content">
 
-        <?php include('brand_header.php'); ?>
+        <?php include('hotel_header.php'); ?>
 
         <!--
            ____ _____  _    ____ _____
@@ -51,7 +51,37 @@ ob_start();
 
 
 
-        <?php include('page_brand_location.php'); ?>
+        <!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
+        <div id="page-wrapper-content-min-height">
+
+          <div id="default-header-spacer"></div>
+
+          <article id="error-404-page-content-section">
+            <div class="container-fluid has-breakpoint">
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div id="error-404-page-content">
+                    <h1>We’ve looked everywhere.</h1>
+                    <p>What you’re looking for doesn’t seem to exist.</p>
+                    <div class="cta-container">
+                      <a href="index.php" class="square-cta highlight-version">Back to Home</a>
+                    </div>
+                  </div> <!-- 404-page-content -->
+
+                </div>
+              </div>
+            </div>
+
+          </article> <!-- 404-page-content-section -->
+
+          <div id="default-footer-spacer"></div>
+
+        </div> <!-- page-wrapper-content-min-height -->
+
+
+
+        
 
 
 
@@ -65,7 +95,7 @@ ob_start();
 
         -->
         
-        <?php include('js_brand.php'); ?>
+        <?php include('js_default.php'); ?>
         <?php include('footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
@@ -77,7 +107,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('brand_location.html', ob_get_contents());
+file_put_contents('404.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>

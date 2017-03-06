@@ -58,6 +58,7 @@
             <li><a href="#">Country Comfort</a></li>
             <li><a href="#">Chifley Hotels</a></li>
             <li><a href="#">Sundowner Inns</a></li>
+            <li><a href="#">Kafnu</a></li>
           </ul>
         </div>      
       </div>
@@ -85,6 +86,7 @@
             <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+            <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
           </ul>
         </div>
 

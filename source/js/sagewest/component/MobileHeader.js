@@ -59,9 +59,11 @@ sagewest.component.MobileHeader = function(options, element) {
   this.create_main_buttons();
   this.create_menu();
 
+  /*
   if(manic.IS_ACTUAL_MOBILE == true) {
     this.calendar_open_menu();
   }
+  */
 
   console.log('init');
 };

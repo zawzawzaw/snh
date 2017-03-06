@@ -18,7 +18,7 @@
               <img src="images/icons/menu-bar.svg" alt="">     
               <span>Menu</span>       
             </a>
-            <a href="index.html" id="desktop-header-logo">
+            <a href="index.php" id="desktop-header-logo">
               <img src="images/logo/sage-west-logo.svg">            
             </a>
           </div>          
@@ -29,7 +29,7 @@
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#location">Our Locations</a></li>
-            <li><a href="#promotion">Promotions</a></li>
+            <li><a href="#offers">Offers</a></li>
             <li><a href="#map">Map</a></li>
           </ul>
         </div>
@@ -46,10 +46,10 @@
           <label for="hotel">Select Hotel</label>
           <div class="dropdown">
             <select name="hotel" id="hotel" class="hotel-dropdown">
-              <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
-              <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-              <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
-              <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
+              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+              <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
+              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
             </select>
           </div>
         </div>
@@ -115,19 +115,19 @@
     <!-- <div class="scroll-container"> -->
       <div class="scroller">
         <ul>
-          <li><a href="#">Country Comfort Hotel Adelaide</a></li>
-          <li><a href="#">Country Comfort Adelaide Manor</a></li>
-          <li><a href="#">Country Comfort Amity Motel Albany</a></li>
-          <li><a href="#">Country Comfort Armidale</a></li>
-          <li><a href="#">Country Comfort Bundaberg International</a></li>
-          <li><a href="#">Country Comfort Coffs Harbour</a></li>
-          <li><a href="#">Country Comfort gin gin</a></li>
-          <li><a href="#">Country Comfort hunts liverpool</a></li>   
-          <li><a href="#">Country Comfort Inter City Perth</a></li>   
-          <li><a href="#">Country Comfort Inter Mt Gambier</a></li>   
-          <li><a href="#">Country Comfort Newcastle Airport & Convention Centre</a></li>   
-          <li><a href="#">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
-          <li><a href="#">Country Comfort Toowoomba</a></li>   
+          <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
+          <li><a href="hotel.php">Country Comfort Adelaide Manor</a></li>
+          <li><a href="hotel.php">Country Comfort Amity Motel Albany</a></li>
+          <li><a href="hotel.php">Country Comfort Armidale</a></li>
+          <li><a href="hotel.php">Country Comfort Bundaberg International</a></li>
+          <li><a href="hotel.php">Country Comfort Coffs Harbour</a></li>
+          <li><a href="hotel.php">Country Comfort gin gin</a></li>
+          <li><a href="hotel.php">Country Comfort hunts liverpool</a></li>   
+          <li><a href="hotel.php">Country Comfort Inter City Perth</a></li>   
+          <li><a href="hotel.php">Country Comfort Inter Mt Gambier</a></li>   
+          <li><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></li>   
+          <li><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
+          <li><a href="hotel.php">Country Comfort Toowoomba</a></li>   
         </ul>        
       </div>
       <!-- <div id="hoverscroll"><i class="fa fa-angle-down" aria-hidden="true"></i></div> -->

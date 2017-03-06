@@ -7,12 +7,12 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="index.html" id="mobile-header-logo">
+    <a href="index.php" id="mobile-header-logo">
       <img src="images/logo/sage-west-logo.svg">
     </a>  
   
-    <a href="index.html" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
-    <a href="index.html" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+    <a href="index.php" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
   </div>
 
 </header> <!-- #mobile-header -->
@@ -20,35 +20,34 @@
 <header id="mobile-header-expanded">
 
   <div id="mobile-header-menu-container">
-      <nav id="mobile-menu" class="has-mobile-sub-menu">
-        <span>sage west perth</span>
-        <ul>
-          <li><a href="#">rooms</a></li>
-          <li><a href="#">offers</a></li>
-          <li><a href="#">dining</a></li>
-          <li class="has-subnav">
-            <a href="#">facilities</a>
-            <ul class="mobile-sub-menu">
-              <li><a href="#">Spa</a></li>
-              <li><a href="#">Swimming Pool</a></li>
-              <li><a href="#">Gym</a></li>
-            </ul>
-          </li>
-          <li><a href="#">gallery</a></li>
-          <li><a href="#">activities</a></li>
-          <li><a href="#">location</a></li>
-          <li><a href="#">reviews</a></li>
-          <li><a href="#">events</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
-      <div id="brand-link" class="menu-link">
-        <a href="#"><span>Our Brands</span></a>
-      </div>
-      <div id="group-link" class="menu-link">
-        <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
-      </div>
-    </div> <!-- #mobile-header-menu-container -->
+    <nav id="mobile-menu" class="has-mobile-sub-menu">
+      <span>sage west perth</span>
+      <ul>
+        <li><a href="room_index.php">rooms</a></li>
+        <li><a href="#">offers</a></li>
+        <li><a href="dining_index.php">dining</a></li>
+        <li class="has-subnav">
+          <a href="#">facilities</a>
+          <ul class="mobile-sub-menu">
+            <li><a href="#">Spa</a></li>
+            <li><a href="#">Swimming Pool</a></li>
+            <li><a href="#">Gym</a></li>
+          </ul>
+        </li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">activities</a></li>
+        <li><a href="#">reviews</a></li>
+        <li><a href="#">events</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <div id="brand-link" class="menu-link">
+      <a href="#"><span>Our Brands</span></a>
+    </div>
+    <div id="group-link" class="menu-link">
+      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    </div>
+  </div> <!-- #mobile-header-menu-container -->
 
   <div id="mobile-header-booking-form">
     <form action="">
@@ -56,10 +55,10 @@
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
           <select name="hotel" id="hotel" class="hotel-dropdown">
-            <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
-            <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-            <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
-            <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
+            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+            <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
+            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
           </select>
         </div>
       </div>

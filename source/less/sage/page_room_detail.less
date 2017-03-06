@@ -19,6 +19,8 @@
   }
 
   .booking-form {
+    position: relative;
+
     .input-box {
       margin-bottom: 15px;
       label {
@@ -86,6 +88,7 @@
           top: 5px;
           right: 5px;
           cursor: pointer;
+          pointer-events: none;
         }
       }
       .input-box-col-1, .input-box-col-2 {
@@ -115,14 +118,21 @@
     // right: -370px;
     position: absolute;
     top: 172px;
-    right: 40px;
+    // right: 40px;
+    
+    right: 30px;
+    left: 30px;
+
     .daterangepicker {
       position: static!important;
       border: none;
       border-radius: 0px;
       height: 370px;
       background-color: #f1f2f2;
-      padding: 5px 9px;    
+      padding: 5px 9px;
+
+      width: 100%; // new
+
       &:after, &:before {
         display: none;
       }
@@ -131,6 +141,10 @@
       }
       .calendar {
         margin-top: -4px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+
         .calendar-table {
           background-color: #f1f2f2;
           padding-bottom: 0px;
@@ -182,7 +196,7 @@
             }
           }
           &.start-date {
-            border-left: 3px solid #fff;
+            //border-left: 3px solid #fff;
           }
           &.disabled {
             background-color: #b9b9b9;
@@ -199,7 +213,9 @@
           }
           &.available {
             &:hover {
-              background: none!important;
+              // background: none!important;
+              color: @white;
+              background-color: darken(@violet, 10%);
             }
           }     
         }
@@ -235,6 +251,7 @@
   h6 {  
     font-size: 15px;
     line-height: 24px;
+    letter-spacing: 0em;
     color: #7d7d7d;
   }
 }
@@ -291,6 +308,11 @@
             position: absolute;
             left: 0px;
           }
+        }
+
+        .view-room-details{
+          display: block;
+          margin-bottom: 18px;
         }
         
         .cta-and-price-container {

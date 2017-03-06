@@ -33,7 +33,9 @@
         <h1>Welcome to Sage West Perth</h1>
         <h3>Sage Hotel West Perth is your modern gateway to the City of Light.</h3>
       </div>
-      <div class="scroll-down-cta visible-xs visible-sm"></div>
+      
+      <!-- <div class="scroll-down-cta visible-xs visible-sm"></div> -->
+
     </div>
   </div>
   <!--
@@ -121,7 +123,7 @@
           <div id="hotel-introduction-copy-text">
             <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at hotel.</p>          
 
-            <a href="#" class="arrow-cta">Read More</a>
+            <!-- <a href="#" class="arrow-cta">Read More</a> -->
           </div>
 
         </div>

@@ -21,9 +21,9 @@
         <div class="default-breadcrumb">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="javascript:void(0);">Sage Hotels</a></li>
-            <li><a href="javascript:void(0);">Sage West Perth</a></li>
-            <li><a href="javascript:void(0);">Rooms</a></li>
+            <li><a href="index.php">Sage Hotels</a></li>
+            <li><a href="hotel.php">Sage West Perth</a></li>
+            <li><a href="room_index.php">Rooms</a></li>
             <li>Superior Twin Room</li>
           </ul>
         </div> <!-- default-breadcrumb -->
@@ -41,9 +41,9 @@
         <div class="default-breadcrumb-mobile">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="javascript:void(0);">Sage Hotels</a></li>
-            <li><a href="javascript:void(0);">Sage West Perth</a></li>
-            <li><a href="javascript:void(0);">Rooms</a></li>
+            <li><a href="index.php">Sage Hotels</a></li>
+            <li><a href="hotel.php">Sage West Perth</a></li>
+            <li><a href="room_index.php">Rooms</a></li>
             <li>Superior Twin Room</li>
           </ul>
         </div> <!-- default-breadcrumb -->
@@ -112,7 +112,16 @@
             </div>
 
           </div> <!-- detail-banner-slider -->
-        </div>
+
+          <div class="detail-banner-slider-price-container">
+            <h6>prices from</h6>
+            <div class="content-price">
+              <span class="currency">aud</span>
+              <span class="number">$135</span>
+            </div>
+          </div> <!-- detail-banner-slider-price-container -->
+
+        </div> <!-- detail-banner-slider-container -->
         
       </div>
     </div>
@@ -220,7 +229,7 @@
 
         <div id="detail-page-content-sidebar">
 
-
+          <div class="space20"></div>
 
           <div class="detail-page-booking-form">
 
@@ -340,10 +349,12 @@
               </div>
               <div class="box-content-text">
                 <h1>Standard Room</h1>
+                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
+
                 <h4 class="room-size-person room-size">2 adults, 2 children</h4>
                 <h4 class="room-size-sqft room-size">25 SQM</h4>              
                 
-                <div class="cta-and-price-container">                
+                <div class="cta-and-price-container">
                   <div class="price-container">
                     <span>Price from</span>
                     <div class="price">
@@ -362,10 +373,12 @@
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
               </div>
               <h1>Deluxe Room</h1>
+              <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
+
               <h4 class="room-size-person room-size">2 adults, 2 children</h4>
               <h4 class="room-size-sqft room-size">25 SQM</h4>
 
-              <div class="cta-and-price-container">                
+              <div class="cta-and-price-container">
                 <div class="price-container">
                   <span>Price from</span>
                   <div class="price">
@@ -383,10 +396,12 @@
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
               </div>
               <h1>Superior Room</h1>
+              <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
+              
               <h4 class="room-size-person room-size">2 adults, 2 children</h4>
               <h4 class="room-size-sqft room-size">25 SQM</h4>
 
-              <div class="cta-and-price-container">                
+              <div class="cta-and-price-container">
                 <div class="price-container">
                   <span>Price from</span>
                   <div class="price">

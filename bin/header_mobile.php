@@ -7,12 +7,12 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="index.html" id="mobile-header-logo">
+    <a href="index.php" id="mobile-header-logo">
       <img src="images/logo/sage-west-logo.svg">
     </a>  
   
     <a href="#" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
-    <a href="index.html" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
   </div>
 
 </header> <!-- #mobile-header -->
@@ -22,10 +22,10 @@
   <div id="mobile-header-menu-container">
       <nav id="mobile-menu">
         <ul>
-          <li><a href="#">sage adelaide</a></li>
-          <li><a href="#">Sage James Street Brisbane</a></li>
-          <li><a href="#">sage west perth</a></li>
-          <li><a href="#">sage wollongong</a></li>
+          <li><a href="hotel.php">sage adelaide</a></li>
+          <li><a href="hotel.php">Sage James Street Brisbane</a></li>
+          <li><a href="hotel.php">sage west perth</a></li>
+          <li><a href="hotel.php">sage wollongong</a></li>
         </ul>
       </nav>
       <div id="brand-link" class="menu-link">
@@ -42,10 +42,10 @@
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
           <select name="hotel" id="hotel" class="hotel-dropdown">
-            <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
-            <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-            <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
-            <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
+            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+            <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
+            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
           </select>
         </div>
       </div>

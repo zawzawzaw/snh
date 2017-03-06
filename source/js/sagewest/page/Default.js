@@ -77,6 +77,8 @@ sagewest.page.Default = function(options) {
 
 
 
+  this.min_height_container = null;
+
 
 
   this.is_home_page = this.body.hasClass('home-page');
@@ -119,8 +121,12 @@ sagewest.page.Default = function(options) {
 
   this.mobile_header_spacer = $('#mobile-header-spacer');
   this.mobile_header = $('#mobile-header');
+
   this.desktop_header_spacer = $('#desktop-header-spacer');
   this.desktop_header = $('#desktop-header');
+
+  this.desktop_footer_spacer = $('#desktop-footer-spacer');
+  this.desktop_footer = $('#desktop-footer');
 
 
   console.log('init');
@@ -185,6 +191,7 @@ sagewest.page.Default.prototype.init = function() {
   }
 
 
+  this.create_min_height();
   this.create_detail_page();
 
 
@@ -203,6 +210,20 @@ sagewest.page.Default.prototype.init = function() {
 //   | |___|  _ <| |___ / ___ \| | | |___ 
 //    \____|_| \_\_____/_/   \_\_| |_____|
 //                                        
+
+
+
+
+sagewest.page.Default.prototype.create_min_height = function(){
+
+  if ($('#page-wrapper-content-min-height').length != 0) {
+
+    this.min_height_container = $('#page-wrapper-content-min-height');
+
+  }
+
+
+};
 
 
 /*
@@ -299,6 +320,19 @@ sagewest.page.Default.prototype.create_mobile_menu = function(){
     
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //    ____  _____ _____  _    ___ _
@@ -642,6 +676,18 @@ sagewest.page.Default.prototype.update_page_layout = function() {
 
 
 
+  // update min height
+  if (this.min_height_container != null ) {
+    var target_height = this.window_height - this.desktop_header_spacer.height() - this.desktop_footer_spacer.height() - this.desktop_footer.height();
+    
+    this.min_height_container.css({
+      'min-height': target_height + 'px'
+    });
+
+  }
+  
+
+
   
 
 
@@ -868,7 +914,19 @@ sagewest.page.Default.prototype.common_menu = function() {
 
     $("#book-now").on("click", function(e){
       e.preventDefault();
-      $("#desktop-header-booking-form").slideToggle(300);
+      // $("#desktop-header-booking-form").slideToggle(300);
+      
+      if($('#desktop-header-booking-form').is(":visible")) {
+
+        $("#desktop-header-booking-form").slideUp(300);
+        $("#book-now span").html('Book Now');
+
+      } else {
+
+        $("#desktop-header-booking-form").slideDown(300);
+        $("#book-now span").html('Close');
+
+      }
     });
 
     var date = new Date();
@@ -1007,6 +1065,7 @@ sagewest.page.Default.prototype.common_menu = function() {
         if(!$(event.target).closest('#book-now').length && !$(event.target).closest('#date-picker').length && !$(event.target).closest('.next').length && !$(event.target).closest('.prev').length && !$(event.target).closest('#hover-day').length && !$(event.target).closest('#hover-weekname').length && !$(event.target).closest('th, td, tr').length && !$(event.target).closest('select').length && !$(event.target).closest('input').length && !$(event.target).closest('.date-input').length && !$(event.target).closest('.daterangepicker').length ) {
             if($('#desktop-header-booking-form').is(":visible")) {
                 $('#desktop-header-booking-form').slideUp(300);
+                $("#book-now span").html('Book Now');
             }
         }        
     });    

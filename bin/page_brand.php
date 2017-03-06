@@ -33,7 +33,7 @@
         <h1>Experience Local At <br class="visible-xs"> Sage Hotels</h1>
         <h3>What you want to do, see, eat & experience.</h3>
       </div>
-      <div class="scroll-down-cta"></div>
+      <div class="scroll-down-cta visible-md visible-lg"></div>
     </div>
   </div>
   
@@ -87,7 +87,7 @@
           <div id="brand-introduction-text">
             <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at brand.</p>
 
-            <a href="#" class="arrow-cta">Read More</a>
+            <!-- <a href="#" class="arrow-cta">Read More</a> -->
           </div>
 
         </div>
@@ -175,7 +175,7 @@
               <div class="col-md-6"><h1>Country Comfort Hotel Adelaide</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>          
@@ -187,7 +187,7 @@
               <div class="col-md-6"><h1>Country Comfort Adelaide Manor</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -199,7 +199,7 @@
               <div class="col-md-6"><h1>Country Comfort Amity Motel Albany</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -211,7 +211,7 @@
               <div class="col-md-6"><h1>Country Comfort Armidale</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@
               <div class="col-md-6"><h1>Country Comfort Bundaberg International</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -235,7 +235,7 @@
               <div class="col-md-6"><h1>Country Comfort Coffs Harbour</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -247,7 +247,7 @@
               <div class="col-md-6"><h1>Country Comfort Cowra</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -259,7 +259,7 @@
               <div class="col-md-6"><h1>Country Comfort Gin Gin</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -271,7 +271,7 @@
               <div class="col-md-6"><h1>Country Comfort Hunts Liverpool</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -283,7 +283,7 @@
               <div class="col-md-6"><h1>Country Comfort Inter City Perth</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -295,7 +295,7 @@
               <div class="col-md-6"><h1>Country Comfort Inter Mt Gambier</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@
               <div class="col-md-6"><h1>Country Comfort Newcastle Airport & Convention Centre</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -319,7 +319,7 @@
               <div class="col-md-6"><h1>Country Comfort Port Macquarie Water Edge Boutique</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -331,7 +331,7 @@
               <div class="col-md-6"><h1>Country Comfort Toowoomba</h1></div>
               <div class="col-md-6">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">Read more</a>
+                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
               </div>
             </div>
           </div>
@@ -403,14 +403,14 @@
 /_/   /_/ |_|\____/_/  /_/\____/ /_/ /___/\____/_/ |_/
 
  -->
-<div class="scroll-target" data-value="promotion"></div>
+<div class="scroll-target" data-value="offers"></div>
 <article id="brand-promotion-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
         <div id="brand-promotion-title">
           <h4>simply irresistable</h4>
-          <h1>Promotions</h1>          
+          <h1>Offers</h1>          
         </div>
       </div>
     </div>
@@ -543,7 +543,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="#" id="brand-promotion-view-all" class="arrow-cta">View all</a>
+        <a href="#" id="brand-promotion-view-all" class="arrow-cta">View all offers</a>
       </div>
     </div>
   </div>

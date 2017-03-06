@@ -65,12 +65,12 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="index.html" id="mobile-header-logo">
+    <a href="index.php" id="mobile-header-logo">
       <img src="images/logo/sage-west-logo.svg">
     </a>  
   
-    <a href="index.html" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
-    <a href="index.html" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+    <a href="index.php" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
   </div>
 
 </header> <!-- #mobile-header -->
@@ -78,35 +78,34 @@
 <header id="mobile-header-expanded">
 
   <div id="mobile-header-menu-container">
-      <nav id="mobile-menu" class="has-mobile-sub-menu">
-        <span>sage west perth</span>
-        <ul>
-          <li><a href="#">rooms</a></li>
-          <li><a href="#">offers</a></li>
-          <li><a href="#">dining</a></li>
-          <li class="has-subnav">
-            <a href="#">facilities</a>
-            <ul class="mobile-sub-menu">
-              <li><a href="#">Spa</a></li>
-              <li><a href="#">Swimming Pool</a></li>
-              <li><a href="#">Gym</a></li>
-            </ul>
-          </li>
-          <li><a href="#">gallery</a></li>
-          <li><a href="#">activities</a></li>
-          <li><a href="#">location</a></li>
-          <li><a href="#">reviews</a></li>
-          <li><a href="#">events</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
-      <div id="brand-link" class="menu-link">
-        <a href="#"><span>Our Brands</span></a>
-      </div>
-      <div id="group-link" class="menu-link">
-        <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
-      </div>
-    </div> <!-- #mobile-header-menu-container -->
+    <nav id="mobile-menu" class="has-mobile-sub-menu">
+      <span>sage west perth</span>
+      <ul>
+        <li><a href="room_index.php">rooms</a></li>
+        <li><a href="#">offers</a></li>
+        <li><a href="dining_index.php">dining</a></li>
+        <li class="has-subnav">
+          <a href="#">facilities</a>
+          <ul class="mobile-sub-menu">
+            <li><a href="#">Spa</a></li>
+            <li><a href="#">Swimming Pool</a></li>
+            <li><a href="#">Gym</a></li>
+          </ul>
+        </li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">activities</a></li>
+        <li><a href="#">reviews</a></li>
+        <li><a href="#">events</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <div id="brand-link" class="menu-link">
+      <a href="#"><span>Our Brands</span></a>
+    </div>
+    <div id="group-link" class="menu-link">
+      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    </div>
+  </div> <!-- #mobile-header-menu-container -->
 
   <div id="mobile-header-booking-form">
     <form action="">
@@ -199,7 +198,7 @@
               <img src="images/icons/menu-bar.svg" alt="">     
               <span>Menu</span>       
             </a>
-            <a href="index.html" id="desktop-header-logo">
+            <a href="index.php" id="desktop-header-logo">
               <img src="images/logo/sage-west-logo.svg">            
             </a>
           </div>          
@@ -209,13 +208,12 @@
         <div id="desktop-header-nav">
           <nav>
             <ul>
-              <li><a href="#">Rooms</a></li>
+              <li><a href="room_index.php">Rooms</a></li>
               <li><a href="#">Offers</a></li>
-              <li><a href="#">Dining</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
               <li><a href="#">Facilities</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Activities</a></li>
-              <li><a href="#">Location</a></li>
               <li><a href="#">Reviews</a></li>
               <li><a href="#">Events</a></li>
               <li><a href="#">Contact</a></li>
@@ -315,10 +313,10 @@
 <div id="desktop-header-menu">          
   <div id="sage-links">
     <ul>
-      <li><a href="#">sage adelaide</a></li>
-      <li><a href="#">Sage James Street Brisbane</a></li>
-      <li><a href="#">sage west perth</a></li>
-      <li><a href="#">sage wollongong</a></li>
+      <li><a href="hotel.php">sage adelaide</a></li>
+      <li><a href="hotel.php">Sage James Street Brisbane</a></li>
+      <li><a href="hotel.php">sage west perth</a></li>
+      <li><a href="hotel.php">sage wollongong</a></li>
     </ul>
   </div>
   <div id="brand-link" class="menu-link">
@@ -375,7 +373,9 @@
         <h1>Welcome to Sage West Perth</h1>
         <h3>Sage Hotel West Perth is your modern gateway to the City of Light.</h3>
       </div>
-      <div class="scroll-down-cta visible-xs visible-sm"></div>
+      
+      <!-- <div class="scroll-down-cta visible-xs visible-sm"></div> -->
+
     </div>
   </div>
   <!--
@@ -463,7 +463,7 @@
           <div id="hotel-introduction-copy-text">
             <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at hotel.</p>          
 
-            <a href="#" class="arrow-cta">Read More</a>
+            <!-- <a href="#" class="arrow-cta">Read More</a> -->
           </div>
 
         </div>
@@ -1361,6 +1361,7 @@
             <li><a href="#">Country Comfort</a></li>
             <li><a href="#">Chifley Hotels</a></li>
             <li><a href="#">Sundowner Inns</a></li>
+            <li><a href="#">Kafnu</a></li>
           </ul>
         </div>      
       </div>
@@ -1388,6 +1389,7 @@
             <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+            <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
           </ul>
         </div>
 

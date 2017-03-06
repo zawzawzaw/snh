@@ -21,9 +21,9 @@
         <div class="default-breadcrumb">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="javascript:void(0);">Sage Hotels</a></li>
-            <li><a href="javascript:void(0);">Sage West Werth</a></li>
-            <li><a href="javascript:void(0);">Dining</a></li>
+            <li><a href="index.php">sage hotels</a></li>
+            <li><a href="hotel.php">sage west perth</a></li>
+            <li><a href="dining_index.php">Dining</a></li>
             <li>The Pool Terrace & Bar</li>
           </ul>
         </div> <!-- default-breadcrumb -->
@@ -41,9 +41,9 @@
         <div class="default-breadcrumb-mobile">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="javascript:void(0);">Sage Hotels</a></li>
-            <li><a href="javascript:void(0);">Sage West Werth</a></li>
-            <li><a href="javascript:void(0);">Dining</a></li>
+            <li><a href="index.php">sage hotels</a></li>
+            <li><a href="hotel.php">sage west perth</a></li>
+            <li><a href="dining_index.php">Dining</a></li>
             <li>The Pool Terrace & Bar</li>
           </ul>
         </div> <!-- default-breadcrumb -->
@@ -283,7 +283,7 @@
         <div id="detail-page-more">
 
           <div class="detail-page-more-title">
-            <h4>more accommodation choices</h4>
+            <h4>Current promotions</h4>
           </div>
 
           <div class="detail-page-more-item-container">
@@ -388,7 +388,7 @@
                           </div>
                         </div> <!-- detail-page-more-item-content-box -->
                         
-                      </div>
+                      </div> <!-- front -->
                       <div class="back">
 
                         <div class="detail-page-more-item-content-box">
@@ -406,7 +406,7 @@
                               </ul>
 
                               <div class="underline-cta-container">
-                                <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back to accommodation choice</a>
+                                <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
                               </div>
 
 
@@ -414,15 +414,10 @@
                             </div>
                           </div> <!-- detail-page-more-item-content-copy -->
                         </div>
-                        <div class="asd">
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      </div> <!-- back -->
+                    </div> <!-- flipper -->
+                  </div> <!-- flip-container -->
                   
-
-
                 </div> <!-- detail-page-more-item -->
               </div>
 
