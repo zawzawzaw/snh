@@ -8,3 +8,5 @@ deploy.php
 test.php
 
 
+bin/css/style.css
+bin/css/critical.css
