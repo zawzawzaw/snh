@@ -110,6 +110,7 @@
           font-size: 13px;
           line-height: 22px;
           .transition(.3s);
+          white-space: nowrap;
           &:hover {
             .opacity(0.8);
           }
@@ -120,6 +121,15 @@
 
   #footer-snh-group-logos {
     padding-top: 20px;
+
+    @media only screen and (max-width: 1380px) {
+      margin-right: -50px;
+    }
+    @media only screen and (max-width: 1180px) {
+      margin-right: -90px;
+    }
+
+
     h1 {
       padding-bottom: 15px;
     }

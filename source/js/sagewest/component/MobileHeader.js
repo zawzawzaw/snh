@@ -243,6 +243,9 @@ sagewest.component.MobileHeader.prototype.calendar_open_menu = function() {
     TweenMax.to(this.close_btn, 0.3, {autoAlpha: 0});
     TweenMax.to(this.open_btn, 0.3, {autoAlpha: 1});
 
+    $('#mobile-header-calendar-open-btn span').html('Close');
+    $('#mobile-header-calendar-close-btn span').html('Close');
+    
   }
 
 };
@@ -261,6 +264,11 @@ sagewest.component.MobileHeader.prototype.calendar_close_menu = function() {
 
     TweenMax.to(this.calendar_close_btn, 0.3, {autoAlpha: 0});
     TweenMax.to(this.calendar_open_btn, 0.3, {autoAlpha: 1});
+
+    
+
+    $('#mobile-header-calendar-open-btn span').html('Book Now');
+    $('#mobile-header-calendar-close-btn span').html('Book Now');
 
   }
 

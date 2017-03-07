@@ -271,3 +271,12 @@ images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
 
 
 <div id="default-footer-spacer"></div>
+
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+
+    $('#desktop-header-nav a[attr="dining_index.php"]').addClass('selected');
+    
+  });
+</script>
