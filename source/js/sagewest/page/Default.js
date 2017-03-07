@@ -1175,7 +1175,9 @@ sagewest.page.Default.prototype.scroll_to_after_the_fold = function(){
   });
 };
 
-
+sagewest.page.Default.prototype.create_map_events = function(marker) {
+  console.log("herereree");
+};
 
 sagewest.page.Default.prototype.map_initialize = function() {
   
@@ -1420,7 +1422,7 @@ sagewest.page.Default.prototype.map_initialize = function() {
     // EVENTS
     /////
 
-    function events(Marker, MarkerLatLng, MarkerRequest, MarkerHtml) {
+    var events = function(Marker, MarkerLatLng, MarkerRequest, MarkerHtml) {
 
       google.maps.event.addListener(Marker, 'click', function() {
           infobox.open(map, this);              
@@ -1428,6 +1430,8 @@ sagewest.page.Default.prototype.map_initialize = function() {
           infobox.setOptions({ 'pixelOffset' : new google.maps.Size(45, -95) });
           map.panTo(MarkerLatLng);
       }); 
+
+      this.create_map_events(Marker);
 
       // google.maps.event.addListener(Marker, 'mouseover', function() {
       //     Marker.setIcon('images/icons/map-pin-hover.png');
@@ -1455,7 +1459,7 @@ sagewest.page.Default.prototype.map_initialize = function() {
       //       }
       //   });
       
-    }
+    }.bind(this);
 
     $(".markers").each(function(i, v){
       var location = $(v).data('location');

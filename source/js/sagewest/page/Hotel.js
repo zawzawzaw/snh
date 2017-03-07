@@ -376,6 +376,15 @@ sagewest.page.Hotel.prototype.others = function(){
 
 };
 
+sagewest.page.Hotel.prototype.create_map_events = function(marker) {
+  google.maps.event.addListener(marker, 'mouseover', function() {
+      marker.setIcon('images/icons/map-pin-hover.png');
+  });
+  google.maps.event.addListener(marker, 'mouseout', function() {
+      marker.setIcon('images/icons/map-pin-grey.png');
+  });
+}
+
 // sagewest.page.Hotel.prototype.map_initialize = function() {
   
 //     var map;    
