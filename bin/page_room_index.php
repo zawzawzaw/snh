@@ -89,9 +89,9 @@
 <article id="detail-list-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
-      <div id="room-content">
+      <div id="default-room-content">
         <div class="col-md-4">
-          <div class="room-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
@@ -120,7 +120,7 @@
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="room-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
@@ -147,7 +147,7 @@
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="room-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
@@ -174,7 +174,7 @@
           </div>
         </div>        
         <div class="col-md-4">
-          <div class="room-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-04.png" alt="">
@@ -201,7 +201,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="room-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-05.png" alt="">
@@ -228,7 +228,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="room-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-06.png" alt="">

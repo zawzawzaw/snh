@@ -170,20 +170,20 @@
  -->
 
 <div class="scroll-target" data-value="about"></div>
-<article id="hotel-accommodation-section">
+<article id="default-room-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
-        <div id="hotel-accommodation-title">
+        <div id="default-room-title">
           <h4>our accommodations</h4>
           <h1>West Perth Hotel Rooms</h1>
         </div>
       </div>
     </div>
     <div class="row">
-      <div id="hotel-accommodation-content">
+      <div id="default-room-content">
         <div class="col-md-4">
-          <div class="hotel-accommodation-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
@@ -212,7 +212,7 @@
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="hotel-accommodation-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
@@ -239,7 +239,7 @@
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="hotel-accommodation-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
@@ -266,7 +266,7 @@
           </div>
         </div>        
         <!-- <div class="col-md-4">
-          <div class="hotel-accommodation-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-04.png" alt="">
@@ -293,7 +293,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="hotel-accommodation-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-05.png" alt="">
@@ -320,7 +320,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="hotel-accommodation-content-box">
+          <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
                 <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-06.png" alt="">
@@ -350,7 +350,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="#" id="hotel-accommodation-view-all" class="arrow-cta">View all Room Types</a>
+        <a href="#" id="default-room-view-all" class="arrow-cta">View all Room Types</a>
       </div>
     </div>
   </div>
@@ -369,7 +369,7 @@
 <article id="hotel-dining-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-4 col-md-5">
         <div id="hotel-dining-content">
           <h4>fresh, vibrant, authentic service</h4>
           <h1>West Perth Dining</h1>
@@ -387,7 +387,7 @@
           <a href="#" class="more-dining-options arrow-cta">more dining options</a>
         </div>
       </div>
-      <div class="col-md-7 col-md-offset-1 hidden-xs hidden-sm">
+      <div class="col-lg-7 col-md-6 col-md-offset-1 hidden-xs hidden-sm">
         <div id="hotel-dining-instagram-feed-container">
           <div class="instagram-feed">
             <img src="images_cms/hotel/hotel-dining-01.png" alt="">
@@ -410,29 +410,21 @@
 /_/   /_/ |_|\____/_/  /_/\____/ /_/ /___/\____/_/ |_/
 
  -->
-<!-- 
-    ____  ____  ____  __  _______  ______________  _   __
-   / __ \/ __ \/ __ \/  |/  / __ \/_  __/  _/ __ \/ | / /
-  / /_/ / /_/ / / / / /|_/ / / / / / /  / // / / /  |/ /
- / ____/ _, _/ /_/ / /  / / /_/ / / / _/ // /_/ / /|  /
-/_/   /_/ |_|\____/_/  /_/\____/ /_/ /___/\____/_/ |_/
-
- -->
 <div class="scroll-target" data-value="promotion"></div>
-<article id="hotel-promotion-section">
+<article id="default-promotion-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
-        <div id="hotel-promotion-title">
+        <div id="default-promotion-title">
           <h4>simply irresistable</h4>
           <h1>Promotions</h1>          
         </div>
       </div>
     </div>
     <div class="row">
-      <div id="hotel-promotion-content">
+      <div id="default-promotion-content">
         <div class="col-md-4">
-          <div class="hotel-promotion-content-box">
+          <div class="default-promotion-content-box">
             <div class="box-title">
               <span class="tag">Accommodation</span>
             </div>
@@ -462,7 +454,7 @@
           </div>
         </div>
         <div class="col-md-4 hidden-xs hidden-sm">
-          <div class="hotel-promotion-content-box">
+          <div class="default-promotion-content-box">
             <div class="box-title">
               <span class="tag">Dining</span>
             </div>
@@ -497,7 +489,7 @@
           <div class="flip-container">
             <div class="flipper">
               <div class="front">
-                <div class="hotel-promotion-content-box">
+                <div class="default-promotion-content-box">
                   <div class="box-title">
                     <span class="tag">Dining</span>
                   </div>
@@ -526,7 +518,7 @@
                 </div>
               </div>
               <div class="back">
-                <div class="hotel-promotion-content-box">
+                <div class="default-promotion-content-box">
                   <div class="box-content">
                     <h1>Ascot Horse Racing</h1>              
                     <h6>terms & conditions</h6>
@@ -554,7 +546,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="#" id="hotel-promotion-view-all" class="arrow-cta">View all</a>
+        <a href="#" id="default-promotion-view-all" class="arrow-cta">View all</a>
       </div>
     </div>
   </div>
@@ -675,11 +667,11 @@
  -->
 
 <div class="scroll-target" data-value="moment"></div>
-<article id="hotel-moment-section">
+<article id="default-moment-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-4 hidden-xs hidden-sm">
-        <div id="hotel-moment-content">
+        <div id="default-moment-content">
           <h4>capture the best moments</h4>
           <h1>#SageHotelWestPerth</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -690,7 +682,7 @@
         </div>
       </div>
       <div class="col-md-7 col-md-offset-1">
-        <div id="hotel-moment-instagram-feed-container">
+        <div id="default-moment-instagram-feed-container">
           <div class="instagram-feed">
             <img src="images_cms/hotel/hotel-instagram-01.png" alt="">
           </div>
@@ -712,7 +704,7 @@
         </div>
       </div>
       <div class="col-md-4 visible-xs visible-sm">
-        <div id="hotel-moment-content">
+        <div id="default-moment-content">
           <h4>capture the best moments</h4>
           <h1>#SageHotelWestPerth</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -747,7 +739,13 @@
       </div>
     </div>
   </div>
-  <div id="hotel-attraction-map"></div>
+  <div id="map"></div>
+  <div class="default_marker" data-zoom="15" data-location="Australia" data-lat="-31.946899" data-lng="115.8524116"></div>
+  <div class="markers" data-location="Sage West Perth" data-lat="-31.947888" data-lng="115.8362825" data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-location="Ord Street" data-lat="-31.948616" data-lng="115.835907" data-place-id="EihKYW1lcyBTdCwgTm9ydGhicmlkZ2UgV0EgNjAwMywgQXVzdHJhbGlh" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>  
+  <div class="markers" data-location="James Street" data-lat="-31.946899" data-lng="115.8524116" data-place-id="ChIJe1YLH6UZE2sRIOcyFmh9AQU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>  
+  <div class="markers" data-location="Fielder Street" data-lat="-31.9509356" data-lng="115.8708259" data-place-id="ChIJ56QDo9fOsGoRUz4cTlhwjbM" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-location="Sterling Street" data-lat="-31.9468795" data-lng="115.8635481" data-place-id="ChIJ56QDo9fOsGoRUz4cTlhwjbM" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="container-fluid has-breakpoint">
     <div class="row">
