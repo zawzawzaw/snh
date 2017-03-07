@@ -1393,6 +1393,13 @@ sagewest.page.Default.prototype.map_initialize = function() {
           map.panTo(MarkerLatLng);
       }); 
 
+      // google.maps.event.addListener(Marker, 'mouseover', function() {
+      //     Marker.setIcon('images/icons/map-pin-hover.png');
+      // });
+      // google.maps.event.addListener(Marker, 'mouseout', function() {
+      //     Marker.setIcon('images/icons/map-pin-grey.png');
+      // });
+
       google.maps.event.addListener(map, "click", function(event) {
           infobox.close();
       });
