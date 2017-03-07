@@ -610,7 +610,13 @@ html#brand-page, html#hotel-page {
     }
     .input-box-col-1, .input-box-col-2 {
       display: inline-block;
-      width: 46.3%;      
+      width: 46.3%; 
+      @media all and (max-width: 1024px) {
+        width: 49%; 
+      }
+      @media all and (max-width: 991px) {
+        width: 47.3%; 
+      }
     }   
     .input-box-col-1 {
       margin-right: 15px;
@@ -638,7 +644,10 @@ html#brand-page, html#hotel-page {
   top: 172px;
   left: 0;
   width: 100%;
-  padding: 0px;
+  padding: 0px;  
+  @media all and (max-width: 1024px) {
+    padding-left: 30px;
+  }
   .daterangepicker {
     position: static!important;
     border: none;
@@ -646,6 +655,9 @@ html#brand-page, html#hotel-page {
     background-color: #f1f2f2;
     padding: 10px 10px;
     width: 100%;
+    @media all and (max-width: 1024px) {
+      width: auto;
+    }
     &:after, &:before {
       display: none;
     }
