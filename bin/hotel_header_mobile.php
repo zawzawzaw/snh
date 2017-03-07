@@ -24,7 +24,7 @@
       <span>sage west perth</span>
       <ul>
         <li><a href="room_index.php">rooms</a></li>
-        <li><a href="#">offers</a></li>
+        <li><a href="offer_index.php">offers</a></li>
         <li><a href="dining_index.php">dining</a></li>
         <li class="has-subnav">
           <a href="#">facilities</a>
@@ -34,11 +34,11 @@
             <li><a href="#">Gym</a></li>
           </ul>
         </li>
-        <li><a href="#">gallery</a></li>
+        <li><a href="gallery.php">gallery</a></li>
         <li><a href="#">activities</a></li>
         <li><a href="#">reviews</a></li>
         <li><a href="#">events</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="contact.php">contact</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">

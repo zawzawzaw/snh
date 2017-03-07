@@ -2,6 +2,11 @@
 
 
 
+<!-- this will select the header link with the following value -->
+<div id="desktop-header-selector" data-value="room_index.php"></div>
+
+
+
 <!--
    ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
   | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
@@ -99,7 +104,7 @@
                 <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
                 
                 <div class="cta-and-price-container">
-                  <a href="#" class="arrow-cta view-room-details">View room details</a>
+                  <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
                   <div class="book-now-container">
                     <a href="#" class="square-cta book-now">Book now</a>
                   </div>
@@ -127,7 +132,7 @@
               <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
               
               <div class="cta-and-price-container">
-                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
                 <div class="book-now-container">
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
@@ -154,7 +159,7 @@
               <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
               
               <div class="cta-and-price-container">
-                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
                 <div class="book-now-container">
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
@@ -181,7 +186,7 @@
               <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
               
               <div class="cta-and-price-container">
-                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
                 <div class="book-now-container">
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
@@ -208,7 +213,7 @@
               <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
               
               <div class="cta-and-price-container">
-                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
                 <div class="book-now-container">
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
@@ -235,7 +240,7 @@
               <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
               
               <div class="cta-and-price-container">
-                <a href="#" class="arrow-cta view-room-details">View room details</a>
+                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
                 <div class="book-now-container">
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
@@ -273,10 +278,4 @@ images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
 <div id="default-footer-spacer"></div>
 
 
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
 
-    $('#desktop-header-nav a[attr="dining_index.php"]').addClass('selected');
-    
-  });
-</script>

@@ -44,7 +44,7 @@
   </head>
 
 
-  <body class="hotel room-index-page permanent-scrolled">
+  <body class="hotel offer-index-page permanent-scrolled">
 
     <div id="page-preloader">
       <div id="page-preloader-line-01"></div>
@@ -82,7 +82,7 @@
       <span>sage west perth</span>
       <ul>
         <li><a href="room_index.php">rooms</a></li>
-        <li><a href="#">offers</a></li>
+        <li><a href="offer_index.php">offers</a></li>
         <li><a href="dining_index.php">dining</a></li>
         <li class="has-subnav">
           <a href="#">facilities</a>
@@ -92,11 +92,11 @@
             <li><a href="#">Gym</a></li>
           </ul>
         </li>
-        <li><a href="#">gallery</a></li>
+        <li><a href="gallery.php">gallery</a></li>
         <li><a href="#">activities</a></li>
         <li><a href="#">reviews</a></li>
         <li><a href="#">events</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="contact.php">contact</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -209,14 +209,14 @@
           <nav>
             <ul>
               <li><a href="room_index.php">Rooms</a></li>
-              <li><a href="#">Offers</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
               <li><a href="dining_index.php">Dining</a></li>
               <li><a href="#">Facilities</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
               <li><a href="#">Activities</a></li>
               <li><a href="#">Reviews</a></li>
               <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -338,286 +338,37 @@
 
 
 
-        <div id="default-header-spacer"></div>
+        <!-- this will select the header link with the following value -->
+<div id="desktop-header-selector" data-value="offer_index.php"></div>
 
 
 
-<!-- this will select the header link with the following value -->
-<div id="desktop-header-selector" data-value="room_index.php"></div>
+<!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
+<div id="page-wrapper-content-min-height">
 
+  <div id="default-header-spacer"></div>
 
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-12">
 
-<!--
-   ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
-  | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
-  |  _ \| |_) |  _|   / _ \ | | | | |   | |_) | | | | |\/| |  _ \
-  | |_) |  _ <| |___ / ___ \| |_| | |___|  _ <| |_| | |  | | |_) |
-  |____/|_| \_\_____/_/   \_\____/ \____|_| \_\\___/|_|  |_|____/
-
--->
-
-<!-- used in index & inner pages -->
-
-<article class="default-breadcrumb-section visible-md visible-lg">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="default-breadcrumb">
-          <ul>
-            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">Sage Hotels</a></li>
-            <li><a href="hotel.php">Sage West Perth</a></li>
-            <li>Rooms</li>
-          </ul>
-        </div> <!-- default-breadcrumb -->
-
-      </div>
-    </div>
-  </div>
-</article> <!-- default-breadcrumb-container -->
-
-<article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="default-breadcrumb-mobile">
-          <ul>
-            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">Sage Hotels</a></li>
-            <li><a href="hotel.php">Sage West Perth</a></li>
-            <li>Rooms</li>
-          </ul>
-        </div> <!-- default-breadcrumb -->
-
-      </div>
-    </div>
-  </div>
-</article> <!-- default-breadcrumb-container -->
-
-
-
-
-<!--
-   _____ ___ _____ _     _____
-  |_   _|_ _|_   _| |   | ____|
-    | |  | |  | | | |   |  _|
-    | |  | |  | | | |___| |___
-    |_| |___| |_| |_____|_____|
-
--->
-
-<!-- used in index pages -->
-
-<article class="index-page-title-section">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div class="col-md-2 col-sm-1 col-xs-0"></div>
-      <div class="col-md-8 col-sm-10 col-xs-12">
-
-        <div class="index-page-title">
-          <h1>Your stay, your way.</h1>
-          <p>Say goodbye (or goodnight) to the standard stays you’ll find all over the globe and g’day to fresh new experiences with a local flavour. We go all out so you enjoy full-on flexibility on your accommodation in Perth.</p>
-        </div> <!-- default-index-page-title -->
-
-      </div>
-    </div> <!-- row -->
-  </div>
-</article> <!-- index-page-title-section -->
-
-<article id="detail-list-section">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div id="default-room-content">
-        <div class="col-md-4">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
-              </div>
-              <div class="box-content-text">
-                <h1>Standard Room</h1>
-                <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-                <h4 class="room-size-sqft room-size">25 SQM</h4>
-
-                <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                
-                <div class="cta-and-price-container">
-                  <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                  <div class="book-now-container">
-                    <a href="#" class="square-cta book-now">Book now</a>
-                  </div>
-                  <div class="price-container">
-                    <span>per night</span>
-                    <div class="price">
-                      <span class="currency">AUD</span><span class="price">$119</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="default-copy">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
-              </div>
-              <h1>Standard Twin Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
 
-              <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$119</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
-              </div>
-              <h1>Superior Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
-        <div class="col-md-4">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-04.png" alt="">
-              </div>
-              <h1>Superior Twin Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-05.png" alt="">
-              </div>
-              <h1>Deluxe Room</h1>
-              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">35 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-06.png" alt="">
-              </div>
-              <h1>Deluxe Twin Room</h1>
-              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">35 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-</article>
+  
 
+  <div id="default-footer-spacer"></div>
 
-
-<!-- images_cms/room/room-index-standard-room.jpg
-images_cms/room/room-index-standard-twin-room.jpg
-images_cms/room/room-index-superior-room.jpg
-images_cms/room/room-index-superior-twin-room.jpg
-images_cms/room/room-index-deluxe-room.jpg
-images_cms/room/room-index-deluxe-twin-room.jpg
-images_cms/room/room-index-standard-room-mobile.jpg
-images_cms/room/room-index-standard-twin-room-mobile.jpg
-images_cms/room/room-index-superior-room-mobile.jpg
-images_cms/room/room-index-superior-twin-room-mobile.jpg
-images_cms/room/room-index-deluxe-room-mobile.jpg
-images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
-
-
-<div id="default-footer-spacer"></div>
-
-
+</div> <!-- page-wrapper-content-min-height -->
 
 
 
@@ -664,6 +415,13 @@ images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
   <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
   <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
   <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
+
+
+  <!-- for gallery grid -->
+  <script type="text/javascript" src="../source/library/isotope/isotope.pkgd.js"></script>
+  <script type="text/javascript" src="../source/library/isotope/packery-mode.pkgd.js"></script>
+
+
 
   <!-- Google Closure -->
   <script src="../source/library/closure-library/closure/goog/base.js"></script>

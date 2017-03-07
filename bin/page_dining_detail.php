@@ -2,6 +2,11 @@
 
 
 
+<!-- this will select the header link with the following value -->
+<div id="desktop-header-selector" data-value="dining_index.php"></div>
+
+
+
 <!--
    ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
   | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )

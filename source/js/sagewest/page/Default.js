@@ -191,6 +191,7 @@ sagewest.page.Default.prototype.init = function() {
   }
 
 
+  this.highlight_header_link();
   this.create_min_height();
   this.create_detail_page();
 
@@ -211,7 +212,23 @@ sagewest.page.Default.prototype.init = function() {
 //    \____|_| \_\_____/_/   \_\_| |_____|
 //                                        
 
+sagewest.page.Default.prototype.highlight_header_link = function(){
 
+  if ($('#desktop-header-selector').length != 0 && 
+      goog.isDefAndNotNull($('#desktop-header-selector').attr('data-value')) ) {
+
+    var target_url = $('#desktop-header-selector').attr('data-value');
+
+    $('#desktop-header-nav a[href="' + target_url + '"]').addClass('selected');
+    $('#mobile-menu a[href="' + target_url + '"]').addClass('selected');
+
+  }
+
+
+  
+
+
+};
 
 
 sagewest.page.Default.prototype.create_min_height = function(){
@@ -361,12 +378,17 @@ sagewest.page.Default.prototype.create_detail_page = function(){
       'speed': 350,
       'dots': false,
       'arrows': true,
-      'infinite': false,
+      // 'infinite': false,
+      'infinite': true,
       'slidesToShow': 1,
       'slidesToScroll': 1,
       'pauseOnHover': true,
       'autoplay': true,
-      'autoplaySpeed': 4000
+      'autoplaySpeed': 4000,
+      
+      'prevArrow': '<a href="javascript:void(0);" class="slick-prev">Previous</a>',
+      'nextArrow': '<a href="javascript:void(0);" class="slick-next">Next</a>'
+
     });
 
     this.detail_banner_carousel
@@ -966,6 +988,20 @@ sagewest.page.Default.prototype.common_menu = function() {
             ]
         }
     });
+
+    /*
+    $('#sidebar-date-picker').click(function(event){
+      event.stopPropagation();
+      var date_picker = $('#sidebar-date-picker').data('daterangepicker');
+      if (date_picker.isShowing) {
+        date_picker.hide();
+      }
+    });
+    $('#sidebar-date-picker').focus(function(event){
+      event.stopPropagation();
+    });
+    */
+
 
     $('#date-picker').daterangepicker({
         "autoApply": true,
