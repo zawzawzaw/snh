@@ -44,7 +44,7 @@
   </head>
 
 
-  <body class="hotel room-index-page permanent-scrolled">
+  <body class="hotel gallery-page permanent-scrolled">
 
     <div id="page-preloader">
       <div id="page-preloader-line-01"></div>
@@ -53,7 +53,6 @@
         <div class="line-b"></div>
       </div>
     </div>
-
 
     <!-- mobile header is outside the page wrapper -->
     <!-- <div id="mobile-header-spacer"></div> -->
@@ -82,7 +81,7 @@
       <span>sage west perth</span>
       <ul>
         <li><a href="room_index.php">rooms</a></li>
-        <li><a href="#">offers</a></li>
+        <li><a href="offer_index.php">offers</a></li>
         <li><a href="dining_index.php">dining</a></li>
         <li class="has-subnav">
           <a href="#">facilities</a>
@@ -92,11 +91,11 @@
             <li><a href="#">Gym</a></li>
           </ul>
         </li>
-        <li><a href="#">gallery</a></li>
+        <li><a href="gallery.php">gallery</a></li>
         <li><a href="#">activities</a></li>
         <li><a href="#">reviews</a></li>
         <li><a href="#">events</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="contact.php">contact</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -209,14 +208,14 @@
           <nav>
             <ul>
               <li><a href="room_index.php">Rooms</a></li>
-              <li><a href="#">Offers</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
               <li><a href="dining_index.php">Dining</a></li>
               <li><a href="#">Facilities</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
               <li><a href="#">Activities</a></li>
               <li><a href="#">Reviews</a></li>
               <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -338,286 +337,314 @@
 
 
 
-        <div id="default-header-spacer"></div>
-
-
-
-<!-- this will select the header link with the following value -->
-<div id="desktop-header-selector" data-value="room_index.php"></div>
-
-
-
-<!--
-   ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
-  | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
-  |  _ \| |_) |  _|   / _ \ | | | | |   | |_) | | | | |\/| |  _ \
-  | |_) |  _ <| |___ / ___ \| |_| | |___|  _ <| |_| | |  | | |_) |
-  |____/|_| \_\_____/_/   \_\____/ \____|_| \_\\___/|_|  |_|____/
+        <!--
+   ____    _    ____ _  _______ _   _ ____    _   _  ___ _____ _____ ____
+  | __ )  / \  / ___| |/ / ____| \ | |  _ \  | \ | |/ _ \_   _| ____/ ___|
+  |  _ \ / _ \| |   | ' /|  _| |  \| | | | | |  \| | | | || | |  _| \___ \
+  | |_) / ___ \ |___| . \| |___| |\  | |_| | | |\  | |_| || | | |___ ___) |
+  |____/_/   \_\____|_|\_\_____|_| \_|____/  |_| \_|\___/ |_| |_____|____/
 
 -->
 
-<!-- used in index & inner pages -->
+<!-- 
 
-<article class="default-breadcrumb-section visible-md visible-lg">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div class="col-md-12">
+  IMAGE SIZES: 
+  general sizes in pixels
 
-        <div class="default-breadcrumb">
-          <ul>
-            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">Sage Hotels</a></li>
-            <li><a href="hotel.php">Sage West Perth</a></li>
-            <li>Rooms</li>
-          </ul>
-        </div> <!-- default-breadcrumb -->
+  1x1 = 430 x 580
+  2x1 = 880 x 580
+  2x2 = 880 x 1180
+  4x1 = 1770 x 580
 
-      </div>
-    </div>
-  </div>
-</article> <!-- default-breadcrumb-container -->
-
-<article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="default-breadcrumb-mobile">
-          <ul>
-            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">Sage Hotels</a></li>
-            <li><a href="hotel.php">Sage West Perth</a></li>
-            <li>Rooms</li>
-          </ul>
-        </div> <!-- default-breadcrumb -->
-
-      </div>
-    </div>
-  </div>
-</article> <!-- default-breadcrumb-container -->
-
-
-
-
-<!--
-   _____ ___ _____ _     _____
-  |_   _|_ _|_   _| |   | ____|
-    | |  | |  | | | |   |  _|
-    | |  | |  | | | |___| |___
-    |_| |___| |_| |_____|_____|
+  large: 1480 x 980
+  thumbnail: 200x200
 
 -->
 
-<!-- used in index pages -->
 
-<article class="index-page-title-section">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div class="col-md-2 col-sm-1 col-xs-0"></div>
-      <div class="col-md-8 col-sm-10 col-xs-12">
 
-        <div class="index-page-title">
-          <h1>Your stay, your way.</h1>
-          <p>Say goodbye (or goodnight) to the standard stays you’ll find all over the globe and g’day to fresh new experiences with a local flavour. We go all out so you enjoy full-on flexibility on your accommodation in Perth.</p>
-        </div> <!-- default-index-page-title -->
+<!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
+<div id="page-wrapper-content-min-height">
 
+  <div id="default-header-spacer"></div>
+
+
+
+  <!-- this will select the header link with the following value -->
+  <div id="desktop-header-selector" data-value="gallery.php"></div>
+
+
+
+  <!--
+     ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
+    | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
+    |  _ \| |_) |  _|   / _ \ | | | | |   | |_) | | | | |\/| |  _ \
+    | |_) |  _ <| |___ / ___ \| |_| | |___|  _ <| |_| | |  | | |_) |
+    |____/|_| \_\_____/_/   \_\____/ \____|_| \_\\___/|_|  |_|____/
+
+  -->
+
+  <!-- used in index & inner pages -->
+
+  <article class="default-breadcrumb-section visible-md visible-lg">
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="default-breadcrumb">
+            <ul>
+              <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
+              <li><a href="index.php">sage hotels</a></li>
+              <li><a href="hotel.php">sage west perth</a></li>
+              <li>dining</li>
+            </ul>
+          </div> <!-- default-breadcrumb -->
+
+        </div>
       </div>
-    </div> <!-- row -->
-  </div>
-</article> <!-- index-page-title-section -->
+    </div>
+  </article> <!-- default-breadcrumb-container -->
 
-<article id="detail-list-section">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div id="room-content">
-        <div class="col-md-4">
-          <div class="room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
-              </div>
-              <div class="box-content-text">
-                <h1>Standard Room</h1>
-                <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-                <h4 class="room-size-sqft room-size">25 SQM</h4>
+  <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
 
-                <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                
-                <div class="cta-and-price-container">
-                  <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                  <div class="book-now-container">
-                    <a href="#" class="square-cta book-now">Book now</a>
+          <div class="default-breadcrumb-mobile">
+            <ul>
+              <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
+              <li><a href="index.php">sage hotels</a></li>
+              <li><a href="hotel.php">sage west perth</a></li>
+              <li>dining</li>
+            </ul>
+          </div> <!-- default-breadcrumb -->
+
+        </div>
+      </div>
+    </div>
+  </article> <!-- default-breadcrumb-container -->
+
+  <!--
+     _____ ___ _____ _     _____
+    |_   _|_ _|_   _| |   | ____|
+      | |  | |  | | | |   |  _|
+      | |  | |  | | | |___| |___
+      |_| |___| |_| |_____|_____|
+
+  -->
+
+  <article id="gallery-page-title-section">
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="gallery-page-title">
+            <h1>Gallery</h1>
+          </div> <!-- default-index-page-title -->
+
+          <div id="gallery-page-tab-container">
+            <nav>
+              <ul>
+                <li><a href="#index/accommodation">Accommodation</a></li>
+                <li><a href="#index/dining">Dining</a></li>
+                <li><a href="#index/facilities">Facilities</a></li>
+                <li><a href="#index/activities">Activities</a></li>
+                <li><a href="#index/events">Events</a></li>
+              </ul>
+            </nav>
+          </div> <!-- gallery-page-tab-container -->
+
+
+        </div>
+      </div> <!-- row -->
+    </div>
+  </article>
+
+
+
+  <!--
+     ___ _   _ ____  _______  __  _____  _    ____
+    |_ _| \ | |  _ \| ____\ \/ / |_   _|/ \  | __ )
+     | ||  \| | | | |  _|  \  /    | | / _ \ |  _ \
+     | || |\  | |_| | |___ /  \    | |/ ___ \| |_) |
+    |___|_| \_|____/|_____/_/\_\   |_/_/   \_\____/
+
+  -->
+
+
+  <div id="page-gallery-index-tab">
+
+
+
+  </div> <!-- page-gallery-index-tab -->
+
+
+  <!--
+     ____  _____ _____  _    ___ _       _____  _    ____
+    |  _ \| ____|_   _|/ \  |_ _| |     |_   _|/ \  | __ )
+    | | | |  _|   | | / _ \  | || |       | | / _ \ |  _ \
+    | |_| | |___  | |/ ___ \ | || |___    | |/ ___ \| |_) |
+    |____/|_____| |_/_/   \_\___|_____|   |_/_/   \_\____/
+
+  -->
+
+  <div id="page-gallery-detail-tab">
+
+    <article id="gallery-slider-section">
+      <div class="container-fluid has-breakpoint">
+        <div class="row">
+          <div class="col-md-12">
+
+
+            <!--
+               ____  _     ___ ____  _____ ____
+              / ___|| |   |_ _|  _ \| ____|  _ \
+              \___ \| |    | || | | |  _| | |_) |
+               ___) | |___ | || |_| | |___|  _ <
+              |____/|_____|___|____/|_____|_| \_\
+
+            -->
+
+            <div id="gallery-slider-container">
+
+              <div id="gallery-slider">
+
+                <div class="gallery-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" 
+                      data-image="images_cms/gallery/accommodation-01-large.jpg">
                   </div>
-                  <div class="price-container">
-                    <span>per night</span>
-                    <div class="price">
-                      <span class="currency">AUD</span><span class="price">$119</span>
+                </div>
+
+                <div class="gallery-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" 
+                      data-image="images_cms/gallery/accommodation-01-large.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" 
+                      data-image="images_cms/gallery/accommodation-01-large.jpg">
+                  </div>
+                </div>
+
+              </div> <!-- gallery-slider -->
+
+
+              <div id="gallery-slider-overlay">
+                <div class="col-md-7">
+                  <div id="gallery-slider-overlay-left-container">
+                    <h5>1 Bedroom Apartment with Sofa Bed</h5>
+                  </div>
+                  
+                </div>
+                <div class="col-md-5">
+
+                  <div id="gallery-slider-overlay-right-container">
+
+                    <div class="content-price">
+                      <h6>Prices from</h6>
+                      <p class="content-price">
+                        <span class="currency">aud</span>
+                        <span class="number">$135</span>
+                      </p>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
-              </div>
-              <h1>Standard Twin Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
 
-              <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$119</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
-              </div>
-              <h1>Superior Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
+                    <div class="cta-container">
+                      <a href="javascript:void(0);">Book Now</a>
+                    </div>
+                    
+                  </div> <!-- gallery-slider-overlay-right-container -->
 
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
                 </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
-        <div class="col-md-4">
-          <div class="room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-04.png" alt="">
-              </div>
-              <h1>Superior Twin Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
+                
 
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+              </div> <!-- gallery-slider-overlay -->
               
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-05.png" alt="">
-              </div>
-              <h1>Deluxe Room</h1>
-              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">35 SQM</h4>
+            </div> <!-- gallery-slider-container -->
 
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-06.png" alt="">
-              </div>
-              <h1>Deluxe Twin Room</h1>
-              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">35 SQM</h4>
 
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$235</span>
+            <!--
+               _____ _   _ _   _ __  __ ____  _   _    _    ___ _
+              |_   _| | | | | | |  \/  | __ )| \ | |  / \  |_ _| |
+                | | | |_| | | | | |\/| |  _ \|  \| | / _ \  | || |
+                | | |  _  | |_| | |  | | |_) | |\  |/ ___ \ | || |___
+                |_| |_| |_|\___/|_|  |_|____/|_| \_/_/   \_\___|_____|
+
+            -->
+
+            <div id="gallery-thumbnail-slider-container">
+              <div id="gallery-thumbnail-slider">
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-01-thumbnail.jpg">
                   </div>
                 </div>
-              </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-02-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-03-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-04-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-05-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-06-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-07-thumbnail.jpg">
+                  </div>
+                </div>
+
+              </div> <!-- gallery-thumbnail-slider -->
+            </div> <!-- gallery-thumbnail-slider-container -->
+
+            <div class="gallery-cta-container">
+              <a href="" class="arrow-cta">Back to index</a>
             </div>
+
+
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</article>
+    </article> <!-- gallery-slider-section -->
+
+
+    
+  </div>  <!-- gallery-detail-tab -->
 
 
 
-<!-- images_cms/room/room-index-standard-room.jpg
-images_cms/room/room-index-standard-twin-room.jpg
-images_cms/room/room-index-superior-room.jpg
-images_cms/room/room-index-superior-twin-room.jpg
-images_cms/room/room-index-deluxe-room.jpg
-images_cms/room/room-index-deluxe-twin-room.jpg
-images_cms/room/room-index-standard-room-mobile.jpg
-images_cms/room/room-index-standard-twin-room-mobile.jpg
-images_cms/room/room-index-superior-room-mobile.jpg
-images_cms/room/room-index-superior-twin-room-mobile.jpg
-images_cms/room/room-index-deluxe-room-mobile.jpg
-images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
 
+  
 
-<div id="default-footer-spacer"></div>
+  <div id="default-footer-spacer"></div>
 
-
+</div> <!-- page-wrapper-content-min-height -->
 
 
 
@@ -664,6 +691,13 @@ images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
   <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
   <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
   <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
+
+
+  <!-- for gallery grid -->
+  <script type="text/javascript" src="../source/library/isotope/isotope.pkgd.js"></script>
+  <script type="text/javascript" src="../source/library/isotope/packery-mode.pkgd.js"></script>
+
+
 
   <!-- Google Closure -->
   <script src="../source/library/closure-library/closure/goog/base.js"></script>

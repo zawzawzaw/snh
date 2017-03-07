@@ -367,6 +367,78 @@
   } // .detail-page-more-item-content-cta
 
 
+  .detail-page-more-item-room-detail{
+    margin-top: -9px;
+
+    @media only screen and (max-width: 1280px) {
+      margin-top: -6px;
+    }
+    @media only screen and (max-width: 1180px) {
+      margin-top: -5px;
+    }
+    
+
+    .detail-person,
+    .detail-size{
+      position: relative;
+
+      .open-sans-semi-bold;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: @grey-4;
+      
+      margin-bottom: 13px;
+      padding-left: 35px;
+
+      margin-right: -30px;
+      white-space: nowrap;
+
+      &:last-child{
+        margin-bottom: 0px;
+      }
+
+      @media only screen and (max-width: 1280px) {
+        font-size: 11px;
+        margin-bottom: 5px;
+        &:last-child{
+          margin-bottom: 0px;
+        }
+      }
+      @media only screen and (max-width: 1280px) {
+        font-size: 10px;
+        letter-spacing: 0;
+      }
+
+    }
+
+    .detail-person{
+      &:before {
+        content: "";
+        background: url(../images/icons/person-icon.png) no-repeat;
+        width: 24px;
+        height: 18px;
+        display: inline-block;            
+        position: absolute;
+        left: 0px;
+        top: 2px;
+      }
+    }
+    .detail-size{
+      &:before {
+        content: "\f125";
+        font-family: FontAwesome;
+        font-size: 19px;
+        letter-spacing: 0.08em;
+        color: #6c665e;
+        position: absolute;
+        left: 3px;
+      }
+    }
+  }
+
+
   .detail-page-more-item-content-price{
     text-align: right;
 
@@ -388,10 +460,11 @@
       letter-spacing: 0.08em;
 
       margin-bottom: 1px;
+      white-space: nowrap;
     }
     
     .content-price{
-      
+      white-space: nowrap;
     }
 
     .currency{
@@ -420,7 +493,7 @@
         font-size: 22px;
       }
     }
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 1180px) {
       h6{
         font-size: 10px;
         line-height: 14px;
@@ -436,6 +509,12 @@
     }
 
   } // .detail-page-more-item-content-price
+
+
+  .detail-page-more-item-extra-cta-container{
+    padding-top: 15px;
+    margin-bottom: -8px;
+  }
   
 } // .detail-page-more-item
 
@@ -478,5 +557,37 @@
   .detail-page-more-item,
   .detail-page-more-item-content-box{
     height: 790px + 20px;
+  }
+}
+
+
+
+
+
+
+
+
+//    ____  _   _  ___  ____ _____
+//   / ___|| | | |/ _ \|  _ \_   _|
+//   \___ \| |_| | | | | |_) || |
+//    ___) |  _  | |_| |  _ < | |
+//   |____/|_| |_|\___/|_| \_\|_|
+//
+
+#detail-page-more-section.short-version{
+  .detail-page-more-item{
+    .detail-page-more-item-content-image{
+      .manic-image-container{
+        height: 230px;
+      }
+    }
+    .detail-page-more-item-content-copy h5{
+      color: @violet;
+    }
+  }
+
+  .detail-page-more-item,
+  .detail-page-more-item-content-box{
+    height: 430px;
   }
 }

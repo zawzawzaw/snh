@@ -29,14 +29,14 @@
           <nav>
             <ul>
               <li><a href="room_index.php">Rooms</a></li>
-              <li><a href="#">Offers</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
               <li><a href="dining_index.php">Dining</a></li>
               <li><a href="#">Facilities</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
               <li><a href="#">Activities</a></li>
               <li><a href="#">Reviews</a></li>
               <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
           </nav>
         </div>

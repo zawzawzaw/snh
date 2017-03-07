@@ -2,6 +2,11 @@
 
 
 
+<!-- this will select the header link with the following value -->
+<div id="desktop-header-selector" data-value="room_index.php"></div>
+
+
+
 <!--
    ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
   | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
@@ -332,6 +337,8 @@
   </div>
 </div>
 
+
+<!-- 
 <article id="detail-page-content-2-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
@@ -420,6 +427,204 @@
 
 
 <div class="space100"></div>
+-->
+
+
+
+
+
+<!--
+   __  __  ___  ____  _____
+  |  \/  |/ _ \|  _ \| ____|
+  | |\/| | | | | |_) |  _|
+  | |  | | |_| |  _ <| |___
+  |_|  |_|\___/|_| \_\_____|
+
+-->
+
+<article id="detail-page-more-section" class="short-version">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="detail-page-more">
+
+          <div class="detail-page-more-title">
+            <h4>more accommodation choices</h4>
+          </div>
+
+          <div class="detail-page-more-item-container">
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="detail-page-more-item">
+
+                  <div class="detail-page-more-item-content-box">
+
+                    <div class="detail-page-more-item-content-image">
+                      <div class="manic-image-container">
+                        <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-page-more-item-content-copy">
+                      <div class="default-copy">
+                        <h5>Standard Room</h5>
+                      </div>
+                    </div>
+                    <div class="detail-page-more-item-content-cta">
+                      <div class="row">
+                        <div class="col-xs-7">
+
+                          <div class="detail-page-more-item-room-detail">
+                            <p class="detail-person">2 adults, 2 children</p>
+                            <p class="detail-size">25 SQM</p>
+                          </div>
+
+                        </div>
+                        <div class="col-xs-5">
+
+                          <div class="detail-page-more-item-content-price">
+                            <h6>Prices from</h6>
+                            <p class="content-price">
+                              <span class="currency">aud</span>
+                              <span class="number">$119</span>
+                            </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="detail-page-more-item-extra-cta-container">
+                            <a href="room_detail.php" class="arrow-cta">View room details</a>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- detail-page-more-item-content-cta -->
+                  </div> <!-- detail-page-more-item-content-box -->
+
+                </div> <!-- detail-page-more-item -->
+              </div> <!-- col-md-4 -->
+
+              <div class="col-md-4">
+                <div class="detail-page-more-item">
+                  <div class="detail-page-more-item-content-box">
+
+                    <div class="detail-page-more-item-content-image">
+                      <div class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-page-more-item-content-copy">
+                      <div class="default-copy">
+                        <h5>Deluxe Room</h5>
+                      </div>
+                    </div> <!-- detail-page-more-item-content-copy -->
+                    <div class="detail-page-more-item-content-cta">
+                      <div class="row">
+                        <div class="col-xs-8">
+
+                          <div class="detail-page-more-item-room-detail">
+                            <p class="detail-person">2 adults, 2 children</p>
+                            <p class="detail-size">25 SQM</p>
+                          </div>
+
+                        </div>
+                        <div class="col-xs-4">
+
+                          <div class="detail-page-more-item-content-price">
+                            <h6>Prices from</h6>
+                            <p class="content-price">
+                              <span class="currency">aud</span>
+                              <span class="number">$235</span>
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="detail-page-more-item-extra-cta-container">
+                            <a href="room_detail.php" class="arrow-cta">View room details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- detail-page-more-item-content-box -->
+                  
+                </div> <!-- detail-page-more-item -->
+              </div>
+
+              <div class="col-md-4">
+                <div class="detail-page-more-item">
+
+                  <div class="detail-page-more-item-content-box">
+
+                    <div class="detail-page-more-item-content-image">
+                      <div class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
+                      </div>
+                    </div>
+                    <div class="detail-page-more-item-content-copy">
+                      <div class="default-copy">
+                        <h5>Superior Room</h5>
+                      </div>
+                    </div>
+                    <div class="detail-page-more-item-content-cta">
+                      <div class="row">
+                        <div class="col-xs-8">
+
+                          <div class="detail-page-more-item-room-detail">
+                            <p class="detail-person">2 adults, 2 children</p>
+                            <p class="detail-size">25 SQM</p>
+                          </div>
+
+                        </div>
+                        <div class="col-xs-4">
+
+                          <div class="detail-page-more-item-content-price">
+                            <h6>Prices from</h6>
+                            <p class="content-price">
+                              <span class="currency">aud</span>
+                              <span class="number">$135</span>
+                            </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="detail-page-more-item-extra-cta-container">
+                            <a href="room_detail.php" class="arrow-cta">View room details</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- detail-page-more-item-content-box -->
+
+                </div> <!-- detail-page-more-item -->
+              </div>
+
+
+
+            </div> <!-- row -->
+          </div> <!-- detail-page-more-item-container -->
+          
+        </div> <!-- detail-page-more -->
+        
+
+      </div>
+    </div>
+  </div>
+</article> <!-- detail-page-more-section -->
+
+
+
+
+
+
 
 
 
