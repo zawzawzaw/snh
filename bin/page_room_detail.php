@@ -38,7 +38,7 @@
   </div>
 </article> <!-- default-breadcrumb-container -->
 
-<article class="default-breadcrumb-section-mobile visible-sm visible-xs">
+<!-- <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -51,12 +51,12 @@
             <li><a href="room_index.php">Rooms</a></li>
             <li>Superior Twin Room</li>
           </ul>
-        </div> <!-- default-breadcrumb -->
+        </div> 
 
       </div>
     </div>
   </div>
-</article> <!-- default-breadcrumb-container -->
+</article> --> <!-- default-breadcrumb-container -->
 
 
 
@@ -514,7 +514,7 @@
 
                     <div class="detail-page-more-item-content-image">
                       <div class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
+                        <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
                       </div>
                     </div>
                     <div class="detail-page-more-item-content-copy">
@@ -564,7 +564,7 @@
 
                     <div class="detail-page-more-item-content-image">
                       <div class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
+                        <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
                       </div>
                     </div>
                     <div class="detail-page-more-item-content-copy">

@@ -37,7 +37,7 @@
   </div>
 </article> <!-- default-breadcrumb-container -->
 
-<article class="default-breadcrumb-section-mobile visible-sm visible-xs">
+<!-- <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -49,12 +49,12 @@
             <li><a href="hotel.php">Sage West Perth</a></li>
             <li>Rooms</li>
           </ul>
-        </div> <!-- default-breadcrumb -->
+        </div>
 
       </div>
     </div>
   </div>
-</article> <!-- default-breadcrumb-container -->
+</article> --> <!-- default-breadcrumb-container -->
 
 
 
@@ -173,7 +173,7 @@
             </div>
           </div>
         </div>        
-        <div class="col-md-4">
+        <div class="col-md-4 hidden-sm hidden-xs">
           <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
@@ -200,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 hidden-sm hidden-xs">
           <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">
@@ -227,7 +227,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 hidden-sm hidden-xs">
           <div class="default-room-content-box">
             <div class="box-content">
               <div class="manic-image-container">

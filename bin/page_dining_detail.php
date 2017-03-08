@@ -38,7 +38,7 @@
   </div>
 </article> <!-- default-breadcrumb-container -->
 
-<article class="default-breadcrumb-section-mobile visible-sm visible-xs">
+<!-- <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -51,12 +51,12 @@
             <li><a href="dining_index.php">Dining</a></li>
             <li>The Pool Terrace & Bar</li>
           </ul>
-        </div> <!-- default-breadcrumb -->
+        </div>
 
       </div>
     </div>
   </div>
-</article> <!-- default-breadcrumb-container -->
+</article> --> <!-- default-breadcrumb-container -->
 
 
 
@@ -139,7 +139,7 @@
 <article id="detail-page-content-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
-      <div class="col-md-7 col-sm-8">
+      <div class="col-md-7 col-sm-12">
 
         <div id="detail-page-content">
 
@@ -183,7 +183,7 @@
 
       </div>
       <div class="col-md-1 col-sm-0"></div>
-      <div class="col-md-4 col-sm-4">
+      <div class="col-md-4 col-sm-12">
 
         <div id="detail-page-content-sidebar">
 

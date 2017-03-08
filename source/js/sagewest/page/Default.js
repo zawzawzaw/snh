@@ -1176,7 +1176,7 @@ sagewest.page.Default.prototype.scroll_to_after_the_fold = function(){
 };
 
 sagewest.page.Default.prototype.create_map_events = function(marker) {
-  console.log("herereree");
+  // Silence is golden..
 };
 
 sagewest.page.Default.prototype.map_initialize = function() {
@@ -1399,7 +1399,7 @@ sagewest.page.Default.prototype.map_initialize = function() {
           position: Latlng,
           map: map,
           title: title,
-          icon: 'images/icons/map-pin.png'
+          icon: icon
         });
 
     }   
@@ -1464,12 +1464,13 @@ sagewest.page.Default.prototype.map_initialize = function() {
     $(".markers").each(function(i, v){
       var location = $(v).data('location');
       var placeId = $(v).data('place_id');
+      var pinIcon = $(v).data('pin-icon');
       var marker_html = $(v).data('html');
       var marker_name = location.split(' ').join('_')+"Marker";   
       var request_name = location.split(' ').join('_')+"Request";   
       
       var LatLng = setMarkerLatLng($(v).data('lat'), $(v).data('lng'));
-      createGoogleMarker(marker_name, LatLng, '', location);
+      createGoogleMarker(marker_name, LatLng, pinIcon, location);
       createRequestObj(request_name, placeId);
       events(markersObj[marker_name], LatLng, requestObj[request_name], marker_html);      
     });
