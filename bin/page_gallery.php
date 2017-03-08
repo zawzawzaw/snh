@@ -159,6 +159,45 @@
   <!-- DINING -->
 
   <div class="page-gallery-data-item"
+    data-title="Room Bed"
+    data-id="room-bed"
+    data-category="dining"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-05-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Purple Bed"
+    data-id="purple-bed"
+    data-category="dining"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-06-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Overhead Pool"
+    data-id="overhead-pool"
+    data-category="dining"
+    data-masonry-width="4"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-07-size-4x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
     data-title="Pool"
     data-id="pool"
     data-category="dining"
@@ -210,75 +249,14 @@
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg">
   </div>
 
-  <div class="page-gallery-data-item"
-    data-title="Room Bed"
-    data-id="room-bed"
-    data-category="dining"
-    data-masonry-width="2"
-    data-masonry-height="1"
-    data-masonry-image="images_cms/gallery/accommodation-05-size-2x1.jpg"
-    data-gallery-desktop-image="images_cms/gallery/accommodation-05-large.jpg"
-    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
-    data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
-    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg">
-  </div>
-
-  <div class="page-gallery-data-item"
-    data-title="Purple Bed"
-    data-id="purple-bed"
-    data-category="dining"
-    data-masonry-width="2"
-    data-masonry-height="1"
-    data-masonry-image="images_cms/gallery/accommodation-06-size-2x1.jpg"
-    data-gallery-desktop-image="images_cms/gallery/accommodation-06-large.jpg"
-    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
-    data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
-    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg">
-  </div>
-
-  <div class="page-gallery-data-item"
-    data-title="Overhead Pool"
-    data-id="overhead-pool"
-    data-category="dining"
-    data-masonry-width="4"
-    data-masonry-height="1"
-    data-masonry-image="images_cms/gallery/accommodation-07-size-4x1.jpg"
-    data-gallery-desktop-image="images_cms/gallery/accommodation-07-large.jpg"
-    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
-    data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
-    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
-  </div>
+  
 
 
 
 
   <!-- FACILITIES  -->
 
-  <div class="page-gallery-data-item"
-    data-title="Pool"
-    data-id="pool"
-    data-category="facilities"
-    data-masonry-width="2"
-    data-masonry-height="1"
-    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
-    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
-    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
-    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
-    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
-  </div>
-
-  <div class="page-gallery-data-item"
-    data-title="White House"
-    data-id="white-house"
-    data-category="facilities"
-    data-masonry-width="1"
-    data-masonry-height="1"
-    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
-    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
-    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
-    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
-    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
-  </div>
+  
 
   <div class="page-gallery-data-item"
     data-title="Food Plater"
@@ -343,6 +321,32 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Pool"
+    data-id="pool"
+    data-category="facilities"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="White House"
+    data-id="white-house"
+    data-category="facilities"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
   </div>
 
 
@@ -350,18 +354,7 @@
 
   <!-- ACTIVITIES -->
 
-  <div class="page-gallery-data-item"
-    data-title="Pool"
-    data-id="pool"
-    data-category="activities"
-    data-masonry-width="2"
-    data-masonry-height="1"
-    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
-    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
-    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
-    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
-    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
-  </div>
+  
 
   <div class="page-gallery-data-item"
     data-title="White House"
@@ -441,14 +434,10 @@
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
   </div>
 
-
-
-  <!-- EVENTS -->
-
   <div class="page-gallery-data-item"
     data-title="Pool"
     data-id="pool"
-    data-category="events"
+    data-category="activities"
     data-masonry-width="2"
     data-masonry-height="1"
     data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
@@ -458,18 +447,9 @@
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
   </div>
 
-  <div class="page-gallery-data-item"
-    data-title="White House"
-    data-id="white-house"
-    data-category="events"
-    data-masonry-width="1"
-    data-masonry-height="1"
-    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
-    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
-    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
-    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
-    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
-  </div>
+
+
+  <!-- EVENTS -->
 
   <div class="page-gallery-data-item"
     data-title="Food Plater"
@@ -522,6 +502,34 @@
     data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg">
   </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Pool"
+    data-id="pool"
+    data-category="events"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="White House"
+    data-id="white-house"
+    data-category="events"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
+  </div>
+
+  
 
   <div class="page-gallery-data-item"
     data-title="Overhead Pool"
@@ -768,35 +776,47 @@
               </div> <!-- gallery-slider -->
 
 
-              <div id="gallery-slider-overlay">
-                <div class="col-md-7">
-                  <div id="gallery-slider-overlay-left-container">
-                    <h5>1 Bedroom Apartment with Sofa Bed</h5>
-                  </div>
-                  
-                </div>
-                <div class="col-md-5">
-
-                  <div id="gallery-slider-overlay-right-container">
-
-                    <div class="gallery-slider-overlay-content-price">
-                      <h6>Prices from</h6>
-                      <p class="content-price">
-                        <span class="currency">aud</span>
-                        <span class="number">$135</span>
-                      </p>
-                    </div>
-
-                    <div class="cta-container">
-                      <a href="javascript:void(0);" class="square-cta highlight-version">Book Now</a>
+              <!-- 
+              <div class="gallery-slider-overlay">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="gallery-slider-overlay-left-container">
+                      <h5>1 Bedroom Apartment with Sofa Bed</h5>
                     </div>
                     
-                  </div> <!-- gallery-slider-overlay-right-container -->
+                  </div>
+                  <div class="col-md-5">
 
+                    <div class="gallery-slider-overlay-right-container">
+
+                      <div class="gallery-slider-overlay-content-price">
+                        <h6>Prices from</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$135</span>
+                        </p>
+                      </div>
+                      <div class="cta-container">
+                        <a href="javascript:void(0);" class="square-cta highlight-version">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                
+              </div>
+               -->
 
-              </div> <!-- gallery-slider-overlay -->
+
+              <!-- 
+              <div class="gallery-slider-overlay">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div id="gallery-slider-overlay-left-container">
+                      <h5>1 Bedroom Apartment with Sofa Bed</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               -->
 
               <a href="javascript:void(0);" title="Prev Image" id="gallery-slider-prev-btn"></a>
               <a href="javascript:void(0);" title="Next Image" id="gallery-slider-next-btn"></a>
@@ -821,6 +841,8 @@
                     <img src="" data-image="images_cms/gallery/accommodation-01-thumbnail.jpg">
                   </div>
                 </div>
+
+
 
                 <div class="gallery-thumbnail-slider-item">
                   <div class="manic-image-container">

@@ -71,23 +71,23 @@ manic.ui.ImageContainer = function(options, element) {
   }
 
 
-  console.log('manic.IS_TABLET_PORTRAIT: ' + manic.IS_TABLET_PORTRAIT);
-  console.log('this.data_image_tablet: ' + this.data_image_tablet)
+  //console.log('manic.IS_TABLET_PORTRAIT: ' + manic.IS_TABLET_PORTRAIT);
+  //console.log('this.data_image_tablet: ' + this.data_image_tablet)
   if(manic.IS_TABLET_PORTRAIT == true && this.data_image_tablet != "") {
     this.current_image = this.data_image_tablet;
     load_array = [this.current_image];
 
-    console.log('choose tablet image');
+    //console.log('choose tablet image');
 
   } else if(manic.IS_MOBILE == true && this.data_image_mobile != ""){
     this.current_image = this.data_image_mobile;
     load_array = [this.current_image];
-    console.log('choose mobile image');
+    //console.log('choose mobile image');
 
   } else if(manic.IS_MOBILE == false && this.data_image_desktop != ""){
     this.current_image = this.data_image_desktop;
     load_array = [this.current_image];
-    console.log('choose desktop image');
+    //console.log('choose desktop image');
 
   } else if(this.data_image != ""){
     this.current_image = this.data_image;
@@ -95,7 +95,7 @@ manic.ui.ImageContainer = function(options, element) {
 
   }
 
-  console.log('this.current_image: ' + this.current_image);
+  //console.log('this.current_image: ' + this.current_image);
 
   
 
