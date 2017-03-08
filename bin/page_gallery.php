@@ -1,13 +1,15 @@
 <!--
-   ____    _    ____ _  _______ _   _ ____    _   _  ___ _____ _____ ____
-  | __ )  / \  / ___| |/ / ____| \ | |  _ \  | \ | |/ _ \_   _| ____/ ___|
-  |  _ \ / _ \| |   | ' /|  _| |  \| | | | | |  \| | | | || | |  _| \___ \
-  | |_) / ___ \ |___| . \| |___| |\  | |_| | | |\  | |_| || | | |___ ___) |
-  |____/_/   \_\____|_|\_\_____|_| \_|____/  |_| \_|\___/ |_| |_____|____/
+   ____    _  _____  _
+  |  _ \  / \|_   _|/ \
+  | | | |/ _ \ | | / _ \
+  | |_| / ___ \| |/ ___ \
+  |____/_/   \_\_/_/   \_\
 
 -->
 
 <!-- 
+  it is important to note that how you arrange these data items will affect how it is placed in the masonry grid
+  accommodation category items have more data attributes
 
   IMAGE SIZES: 
   general sizes in pixels
@@ -21,6 +23,526 @@
   thumbnail: 200x200
 
 -->
+
+<div id="page-gallery-data-item-container">
+
+  <!-- ACCOMMODATION -->
+
+  <div class="page-gallery-data-item"
+    data-title="Standard Room"
+    data-id="standard-room"
+    data-category="accommodation"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-price-copy="Prices from"
+    data-accommodation-price-currency="AUD"
+    data-accommodation-price-number="$135">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Standard Twin Room"
+    data-id="standard-twin-room"
+    data-category="accommodation"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-price-copy="Prices from"
+    data-accommodation-price-currency="AUD"
+    data-accommodation-price-number="$135">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Superior Room"
+    data-id="superior-room"
+    data-category="accommodation"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-03-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
+    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-price-copy="Prices from"
+    data-accommodation-price-currency="AUD"
+    data-accommodation-price-number="$135">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Superior Twin Room"
+    data-id="superior-twin-room"
+    data-category="accommodation"
+    data-masonry-width="2"
+    data-masonry-height="2"
+    data-masonry-image="images_cms/gallery/accommodation-04-size-2x2.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
+    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-price-copy="Prices from"
+    data-accommodation-price-currency="AUD"
+    data-accommodation-price-number="$135">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Deluxe Room"
+    data-id="deluxe-room"
+    data-category="accommodation"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-05-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
+    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-price-copy="Prices from"
+    data-accommodation-price-currency="AUD"
+    data-accommodation-price-number="$135">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Deluxe Twin Room"
+    data-id="deluxe-twin-room"
+    data-category="accommodation"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-06-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
+    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-price-copy="Prices from"
+    data-accommodation-price-currency="AUD"
+    data-accommodation-price-number="$135">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Deluxe Triple Room"
+    data-id="deluxe-triple-room"
+    data-category="accommodation"
+    data-masonry-width="4"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-07-size-4x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
+    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-price-copy="Prices from"
+    data-accommodation-price-currency="AUD"
+    data-accommodation-price-number="$135">
+  </div>
+
+
+
+
+  <!-- DINING -->
+
+  <div class="page-gallery-data-item"
+    data-title="Pool"
+    data-id="pool"
+    data-category="dining"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="White House"
+    data-id="white-house"
+    data-category="dining"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Food Plater"
+    data-id="food-plater"
+    data-category="dining"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-03-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Glass Door"
+    data-id="glass-door"
+    data-category="dining"
+    data-masonry-width="2"
+    data-masonry-height="2"
+    data-masonry-image="images_cms/gallery/accommodation-04-size-2x2.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Room Bed"
+    data-id="room-bed"
+    data-category="dining"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-05-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Purple Bed"
+    data-id="purple-bed"
+    data-category="dining"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-06-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Overhead Pool"
+    data-id="overhead-pool"
+    data-category="dining"
+    data-masonry-width="4"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-07-size-4x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
+  </div>
+
+
+
+
+  <!-- FACILITIES  -->
+
+  <div class="page-gallery-data-item"
+    data-title="Pool"
+    data-id="pool"
+    data-category="facilities"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="White House"
+    data-id="white-house"
+    data-category="facilities"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Food Plater"
+    data-id="food-plater"
+    data-category="facilities"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-03-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Glass Door"
+    data-id="glass-door"
+    data-category="facilities"
+    data-masonry-width="2"
+    data-masonry-height="2"
+    data-masonry-image="images_cms/gallery/accommodation-04-size-2x2.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Room Bed"
+    data-id="room-bed"
+    data-category="facilities"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-05-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Purple Bed"
+    data-id="purple-bed"
+    data-category="facilities"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-06-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Overhead Pool"
+    data-id="overhead-pool"
+    data-category="facilities"
+    data-masonry-width="4"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-07-size-4x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
+  </div>
+
+
+
+
+  <!-- ACTIVITIES -->
+
+  <div class="page-gallery-data-item"
+    data-title="Pool"
+    data-id="pool"
+    data-category="activities"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="White House"
+    data-id="white-house"
+    data-category="activities"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Food Plater"
+    data-id="food-plater"
+    data-category="activities"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-03-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Glass Door"
+    data-id="glass-door"
+    data-category="activities"
+    data-masonry-width="2"
+    data-masonry-height="2"
+    data-masonry-image="images_cms/gallery/accommodation-04-size-2x2.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Room Bed"
+    data-id="room-bed"
+    data-category="activities"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-05-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Purple Bed"
+    data-id="purple-bed"
+    data-category="activities"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-06-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Overhead Pool"
+    data-id="overhead-pool"
+    data-category="activities"
+    data-masonry-width="4"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-07-size-4x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
+  </div>
+
+
+
+  <!-- EVENTS -->
+
+  <div class="page-gallery-data-item"
+    data-title="Pool"
+    data-id="pool"
+    data-category="events"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-01-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="White House"
+    data-id="white-house"
+    data-category="events"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-02-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Food Plater"
+    data-id="food-plater"
+    data-category="events"
+    data-masonry-width="1"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-03-size-1x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-03-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Glass Door"
+    data-id="glass-door"
+    data-category="events"
+    data-masonry-width="2"
+    data-masonry-height="2"
+    data-masonry-image="images_cms/gallery/accommodation-04-size-2x2.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-04-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Room Bed"
+    data-id="room-bed"
+    data-category="events"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-05-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Purple Bed"
+    data-id="purple-bed"
+    data-category="events"
+    data-masonry-width="2"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-06-size-2x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg">
+  </div>
+
+  <div class="page-gallery-data-item"
+    data-title="Overhead Pool"
+    data-id="overhead-pool"
+    data-category="events"
+    data-masonry-width="4"
+    data-masonry-height="1"
+    data-masonry-image="images_cms/gallery/accommodation-07-size-4x1.jpg"
+    data-gallery-desktop-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
+    data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
+    data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg">
+  </div>
+
+</div> <!-- page-gallery-data-item-container -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -57,7 +579,7 @@
               <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
               <li><a href="index.php">sage hotels</a></li>
               <li><a href="hotel.php">sage west perth</a></li>
-              <li>dining</li>
+              <li>Gallery</li>
             </ul>
           </div> <!-- default-breadcrumb -->
 
@@ -76,7 +598,7 @@
               <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
               <li><a href="index.php">sage hotels</a></li>
               <li><a href="hotel.php">sage west perth</a></li>
-              <li>dining</li>
+              <li>Gallery</li>
             </ul>
           </div> <!-- default-breadcrumb -->
 
@@ -106,11 +628,12 @@
           <div id="gallery-page-tab-container">
             <nav>
               <ul>
-                <li><a href="#index/accommodation">Accommodation</a></li>
-                <li><a href="#index/dining">Dining</a></li>
-                <li><a href="#index/facilities">Facilities</a></li>
-                <li><a href="#index/activities">Activities</a></li>
-                <li><a href="#index/events">Events</a></li>
+                <li><a href="#all" class="selected">All</a></li>
+                <li><a href="#accommodation">Accommodation</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#events">Events</a></li>
               </ul>
             </nav>
           </div> <!-- gallery-page-tab-container -->
@@ -135,6 +658,48 @@
 
   <div id="page-gallery-index-tab">
 
+    <article id="page-gallery-masonry-section">
+      <div class="container-fluid has-breakpoint">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div id="gallery-masonry-grid-container">
+              <div id="gallery-masonry-grid">
+
+                <!-- 
+                <div class="gallery-masonry-grid-item">
+                  <a href="#accommodation/standard-room">
+                    <div class="manic-image-container">
+                      <img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg">
+                    </div>
+                  </a>
+                </div>
+                -->
+
+                <div class="gallery-masonry-grid-item height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item width-2"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item width-2 height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
+                <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+
+              </div> <!-- gallery-masonry-grid -->
+            </div> <!-- gallery-masonry-grid-container -->
+
+
+
+          </div>
+        </div>
+      </div>
+    </article> <!-- page-gallery-masonry-section -->
 
 
   </div> <!-- page-gallery-index-tab -->
@@ -205,7 +770,7 @@
 
                   <div id="gallery-slider-overlay-right-container">
 
-                    <div class="content-price">
+                    <div class="gallery-slider-overlay-content-price">
                       <h6>Prices from</h6>
                       <p class="content-price">
                         <span class="currency">aud</span>
@@ -214,7 +779,7 @@
                     </div>
 
                     <div class="cta-container">
-                      <a href="javascript:void(0);">Book Now</a>
+                      <a href="javascript:void(0);" class="square-cta highlight-version">Book Now</a>
                     </div>
                     
                   </div> <!-- gallery-slider-overlay-right-container -->
@@ -223,6 +788,9 @@
                 
 
               </div> <!-- gallery-slider-overlay -->
+
+              <a href="javascript:void(0);" title="Prev Image" id="gallery-slider-prev-btn"></a>
+              <a href="javascript:void(0);" title="Next Image" id="gallery-slider-next-btn"></a>
               
             </div> <!-- gallery-slider-container -->
 
@@ -281,10 +849,55 @@
                   </div>
                 </div>
 
+
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-01-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-02-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-03-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-04-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-05-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-06-thumbnail.jpg">
+                  </div>
+                </div>
+
+                <div class="gallery-thumbnail-slider-item">
+                  <div class="manic-image-container">
+                    <img src="" data-image="images_cms/gallery/accommodation-07-thumbnail.jpg">
+                  </div>
+                </div>
+
+
               </div> <!-- gallery-thumbnail-slider -->
             </div> <!-- gallery-thumbnail-slider-container -->
 
-            <div class="gallery-cta-container">
+            <div id="gallery-cta-container">
               <a href="" class="arrow-cta">Back to index</a>
             </div>
 

@@ -39,18 +39,19 @@
   <!-- for gallery grid -->
   <script type="text/javascript" src="../source/library/isotope/isotope.pkgd.js"></script>
   <script type="text/javascript" src="../source/library/isotope/packery-mode.pkgd.js"></script>
-
+  <script type="text/javascript" src="../source/library/isotope/fit-columns.js"></script>
+  
 
 
   <!-- Google Closure -->
   <script src="../source/library/closure-library/closure/goog/base.js"></script>
   <script src="../source/js/goog-custom-dependencies.js"></script>
   <script type="text/javascript">
-    goog.require('sagewest.page.Default');
+    goog.require('sagewest.page.Gallery');
   </script>
   <script type="text/javascript">
     jQuery(document).ready(function($) {
-      page = new sagewest.page.Default({});
+      page = new sagewest.page.Gallery({});
     });
   </script>
 
@@ -58,14 +59,14 @@
 
   <!-- Optimized Version -->
   <script type="text/javascript">
-    var PAGE_LIBRARY        = "js/page-libraries.min.js";
-    var PAGE_JS             = "js/page-default.min.js";
+    var PAGE_LIBRARY        = "js/page-gallery-libraries.min.js";
+    var PAGE_JS             = "js/page-gallery.min.js";
 
     head.load("css/style.css");
     head.load(PAGE_LIBRARY, function() {
       head.load(PAGE_JS, function() {
           
-        page = new sagewest.page.Default({});
+        page = new sagewest.page.Gallery({});
 
       });
     });
