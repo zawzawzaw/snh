@@ -22,6 +22,12 @@
   large: 1480 x 980
   thumbnail: 200x200
 
+  supports only 
+  width-2
+  width-3
+  width-4
+  height-2
+
 -->
 
 <div id="page-gallery-data-item-container">
@@ -676,6 +682,8 @@
                 </div>
                 -->
 
+
+                <!-- 
                 <div class="gallery-masonry-grid-item height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
                 <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
                 <div class="gallery-masonry-grid-item height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
@@ -690,6 +698,7 @@
                 <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
                 <div class="gallery-masonry-grid-item height-2"><a href="#accommodation/standard-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-01-size-2x1.jpg"></div></a></div>
                 <div class="gallery-masonry-grid-item"><a href="#accommodation/standard-twin-room"><div class="manic-image-container"><img src="" data-image="images_cms/gallery/accommodation-02-size-1x1.jpg"></div></a></div>
+                -->
 
               </div> <!-- gallery-masonry-grid -->
             </div> <!-- gallery-masonry-grid-container -->

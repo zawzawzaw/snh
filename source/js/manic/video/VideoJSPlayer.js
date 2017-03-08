@@ -141,6 +141,7 @@ manic.video.VideoJSPlayer.prototype.update_layout = function() {
   this.window_height = this.window.height();
 
   
+  /*  
   // zoom check
   if (this.window_width <= 1280 && manic.IS_ACTUAL_MOBILE == false ||
       manic.IS_ACTUAL_MOBILE == true && manic.IS_TABLET_LANDSCAPE) {
@@ -150,6 +151,7 @@ manic.video.VideoJSPlayer.prototype.update_layout = function() {
 
     console.log('this got here.....');
   }
+  */
   
 
   var temp_height = 0,

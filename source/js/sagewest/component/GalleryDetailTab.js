@@ -101,6 +101,16 @@ sagewest.component.GalleryDetailTab.prototype.set_category_and_id = function(cat
   console.log('set_category_and_id: ' + category_param + " " + id_param);
 
 };
+sagewest.component.GalleryDetailTab.prototype.animate_in = function() {
+  this.element.css({
+    'display': 'block'
+  });
+};
+sagewest.component.GalleryDetailTab.prototype.animate_out = function() {
+  this.element.css({
+    'display': 'none'
+  });
+};
 sagewest.component.GalleryDetailTab.prototype.public_method_02 = function() {};
 sagewest.component.GalleryDetailTab.prototype.public_method_03 = function() {};
 sagewest.component.GalleryDetailTab.prototype.public_method_04 = function() {};
