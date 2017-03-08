@@ -671,6 +671,17 @@ strong {
   font-size: 98px;
   line-height: 98px;
 }
+.justify-inline-blocks {
+  text-align: justify;
+  overflow: hidden;
+  zoom: 1;
+}
+.justify-inline-blocks:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  zoom: 1;
+}
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -10712,15 +10723,100 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #contact-thankyou-page-content .cta-container {
   padding-top: 64px;
 }
-#page-gallery-index-tab {
+#page-gallery-detail-tab {
   display: none;
 }
+#page-gallery-data-item-container {
+  display: none;
+}
+#gallery-page-title {
+  text-align: center;
+  margin-bottom: 26px;
+}
+#gallery-page-tab-container nav ul {
+  font-size: 0;
+  text-align: center;
+}
+#gallery-page-tab-container nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+#gallery-page-tab-container nav ul li a {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #929090;
+  position: relative;
+}
+#gallery-page-tab-container nav ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  width: 0;
+  border-bottom: 2px solid #7d0052;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+#gallery-page-tab-container nav ul li a.selected,
+#gallery-page-tab-container nav ul li a:hover {
+  color: #7d0052;
+}
+#gallery-page-tab-container nav ul li a.selected:before,
+#gallery-page-tab-container nav ul li a:hover:before {
+  width: 100%;
+}
+#page-gallery-masonry-section {
+  padding-top: 67px;
+  padding-bottom: 94px;
+}
+#gallery-masonry-grid-container {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.gallery-masonry-grid-item {
+  width: 25%;
+  padding-bottom: 33.93%;
+}
+.gallery-masonry-grid-item.width-2 {
+  width: 50%;
+}
+.gallery-masonry-grid-item.height-2 {
+  padding-bottom: 67.86%;
+}
+.gallery-masonry-grid-item a {
+  display: block;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+.gallery-masonry-grid-item a .manic-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 #gallery-slider-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 64px;
+  padding-bottom: 20px;
 }
 #gallery-slider-container {
   position: relative;
+  margin-bottom: 20px;
 }
 #gallery-slider {
   position: relative;
@@ -10744,11 +10840,15 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   bottom: 0;
   width: 100%;
   background: #000000;
-  padding-top: 26px;
-  padding-bottom: 33px;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 31px;
+  padding-bottom: 25px;
+  padding-left: 21px;
+  padding-right: 20px;
 }
 #gallery-slider-overlay-left-container {
   text-align: left;
+  padding-top: 6px;
 }
 #gallery-slider-overlay-left-container h5 {
   color: #ffffff;
@@ -10757,11 +10857,66 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   text-align: right;
   color: #ffffff;
 }
-#gallery-slider-overlay-right-container .content-price {
+#gallery-slider-overlay-right-container .gallery-slider-overlay-content-price {
   display: inline-block;
   vertical-align: top;
   *display: inline;
   zoom: 1;
+  padding-right: 24px;
+  margin-top: -4px;
+}
+#gallery-slider-overlay-right-container .gallery-slider-overlay-content-price h6 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  white-space: nowrap;
+}
+#gallery-slider-overlay-right-container .content-price {
+  white-space: nowrap;
+}
+#gallery-slider-overlay-right-container .content-price .currency {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-right: 1px;
+}
+#gallery-slider-overlay-right-container .content-price .number {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 27px;
+  letter-spacing: 0.075px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1280px) {
+  #gallery-slider-overlay-right-container .content-price .currency {
+    font-size: 11px;
+  }
+  #gallery-slider-overlay-right-container .content-price .number {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  #gallery-slider-overlay-right-container .content-price .currency {
+    font-size: 10px;
+    line-height: 22px;
+  }
+  #gallery-slider-overlay-right-container .content-price .number {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 #gallery-slider-overlay-right-container .cta-container {
   display: inline-block;
@@ -10769,20 +10924,31 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   *display: inline;
   zoom: 1;
 }
+#gallery-thumbnail-slider-container {
+  margin-left: -3px;
+  margin-right: -3px;
+}
 #gallery-thumbnail-slider {
   width: 100%;
   height: 135px;
   overflow: hidden;
+  font-size: 0;
 }
 .gallery-thumbnail-slider-item {
   display: inline-block;
   vertical-align: top;
   *display: inline;
   zoom: 1;
-  width: 135px;
+  width: 141px;
   height: 135px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 .gallery-thumbnail-slider-item .manic-image-container {
   width: 135px;
   height: 135px;
+}
+#gallery-cta-container {
+  padding-top: 54px;
+  text-align: right;
 }
