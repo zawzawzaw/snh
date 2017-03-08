@@ -809,6 +809,7 @@ sagewest.page.Default.prototype.on_window_resize = function(event) {
   this.original_window_width = this.window.width();
   this.original_window_height = this.window.height();
 
+  /*
   // zoom check
   if (this.original_window_width <= 1280 && manic.IS_ACTUAL_MOBILE == false ||
       manic.IS_ACTUAL_MOBILE == true && manic.IS_TABLET_LANDSCAPE) {
@@ -822,6 +823,7 @@ sagewest.page.Default.prototype.on_window_resize = function(event) {
     window['is_custom_zoomed'] = false;
 
   }
+  */
 
 
 

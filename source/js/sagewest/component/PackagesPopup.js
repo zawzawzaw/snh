@@ -99,6 +99,8 @@ sagewest.component.PackagesPopup.prototype.open_fullscreen = function() {
 
     this.window_height = this.window.height();
     this.window_width = this.window.width();
+
+    /*
     // zoom check
     // if (this.window_width <= 1280 && manic.IS_ACTUAL_MOBILE == false ||
     // manic.IS_ACTUAL_MOBILE == true && manic.IS_TABLET_LANDSCAPE) {
@@ -113,6 +115,7 @@ sagewest.component.PackagesPopup.prototype.open_fullscreen = function() {
 
       // console.log('asdfasdfasd');
     }
+    */
 
     // disable scroll
     this.body.addClass('fullscreen-component-open');

@@ -69,7 +69,6 @@ sagewest.page.Gallery = function(options, element) {
   
   
   
-  
 
 
 };
@@ -104,7 +103,11 @@ sagewest.page.Gallery.prototype.init = function() {
 
 
   this.gallery_index_tab = new sagewest.component.GalleryIndexTab({}, $('#page-gallery-index-tab'));
+  this.gallery_index_tab.set_data_array(this.gallery_data_array);
+
+  this.create_image_container();
   // goog.events.listen(this.gallery_index_tab, sagewest.component.GalleryIndexTab.EVENTNAME, function(){}.bind(this));
+  
   
   this.gallery_detail_tab = new sagewest.component.GalleryDetailTab({}, $('#page-gallery-detail-tab'));
   // goog.events.listen(this.gallery_detail_tab, sagewest.component.GalleryDetailTab.EVENTNAME, function(){}.bind(this));
@@ -136,17 +139,41 @@ sagewest.page.Gallery.prototype.parse_data = function() {
   var data = null;
 
 
+  var category = '';
+  var id = '';
+
 
   for (var i = 0, l=arr.length; i < l; i++) {
     item = $(arr[i]);
 
     data = new sagewest.component.GalleryData({}, item);
 
+    category = data.data_category;
+    id = data.data_id;
+
+    this.gallery_data_array[this.gallery_data_array.length] = data;
 
 
+
+    // add to category dictionary
+    if (goog.isDefAndNotNull(this.gallery_data_category_dictionary[category]) == false) {
+      this.gallery_data_category_dictionary[category] = [];
+    }
+
+    var temp_index = this.gallery_data_category_dictionary[category].length;
+    this.gallery_data_category_dictionary[category][temp_index] = data;
+
+
+
+    // add to category id dictionary
     
+    if (goog.isDefAndNotNull(this.gallery_data_category_id_dictionary[category]) == false) {
+      this.gallery_data_category_id_dictionary[category] = [];
+    }
 
-  }
+    this.gallery_data_category_id_dictionary[category][id] = data;
+
+  } // endfor
   
 };
 
@@ -160,10 +187,14 @@ sagewest.page.Gallery.prototype.parse_data = function() {
 
 
 sagewest.page.Gallery.prototype.show_detail_tab = function(){
+  this.gallery_index_tab.animate_out();
+  this.gallery_detail_tab.animate_in();
 
 };
 
 sagewest.page.Gallery.prototype.show_index_tab = function(){
+  this.gallery_index_tab.animate_in();
+  this.gallery_detail_tab.animate_out();
 
 };
 

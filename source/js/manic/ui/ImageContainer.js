@@ -448,6 +448,7 @@ manic.ui.ImageContainer.prototype.update_layout = function() {
   }
   
 
+  /*
   // zoom check
   if (this.window_width <= 1280 && manic.IS_ACTUAL_MOBILE == false ||
       manic.IS_ACTUAL_MOBILE == true && manic.IS_TABLET_LANDSCAPE) {
@@ -459,6 +460,7 @@ manic.ui.ImageContainer.prototype.update_layout = function() {
     target_offset_height *= 0.9;
 
   }
+  */
   
  
   

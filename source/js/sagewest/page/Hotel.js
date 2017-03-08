@@ -214,12 +214,14 @@ sagewest.page.Hotel.prototype.update_page_layout = function() {
   this.window_width = this.window.width();
   this.window_height = this.window.height();
 
+  /*
   // zoom check
   if (this.window_width <= 1280 && manic.IS_ACTUAL_MOBILE == false ||
       manic.IS_ACTUAL_MOBILE == true && manic.IS_TABLET_LANDSCAPE) {
     this.window_width *= 1.1111;
     this.window_height *= 1.1111;
   }
+  */
 
 
 };

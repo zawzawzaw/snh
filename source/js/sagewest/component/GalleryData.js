@@ -18,6 +18,7 @@ sagewest.component.GalleryData = function(options, element) {
 
   this.is_accommodation = false;
   this.link_url = '';
+  this.extra_class = '';
 
   this.thumbnail_data_object = {};
   this.masonry_data_object = {};
@@ -54,10 +55,12 @@ sagewest.component.GalleryData = function(options, element) {
 
   if (goog.isDefAndNotNull(this.element.attr('data-masonry-width'))) {
     this.data_masonry_width = this.element.attr('data-masonry-width');
+    this.data_masonry_width = parseInt(this.data_masonry_width);
   }
 
   if (goog.isDefAndNotNull(this.element.attr('data-masonry-height'))) {
     this.data_masonry_height = this.element.attr('data-masonry-height');
+    this.data_masonry_height = parseInt(this.data_masonry_height);
   }
 
   if (goog.isDefAndNotNull(this.element.attr('data-masonry-image'))) {
@@ -113,6 +116,33 @@ sagewest.component.GalleryData = function(options, element) {
   this.link_url = '#' + this.data_category + '/' + this.data_id;
 
 
+
+  // important for masonry
+  
+  this.extra_class = '';
+
+  this.extra_class += ('category-' + this.data_category);      // adds class for category filter
+
+
+  if (this.data_masonry_height == 2) {
+    this.extra_class += ' height-2';
+  }
+
+  if (this.data_masonry_width == 2) {
+    this.extra_class += ' width-2';
+  }
+  if (this.data_masonry_width == 3) {
+    this.extra_class += ' width-3';
+  }
+  if (this.data_masonry_width == 4) {
+    this.extra_class += ' width-4';
+  }
+
+
+  
+  
+
+
   // CREATE DATA OBJECTS FOR TEMPLATING
   
   this.thumbnail_data_object = {
@@ -123,8 +153,9 @@ sagewest.component.GalleryData = function(options, element) {
 
   this.masonry_data_object = {
     'image': this.data_masonry_image,
-    'width': this.data_masonry_width,
-    'height': this.data_masonry_height,
+    // 'width': this.data_masonry_width,
+    // 'height': this.data_masonry_height,
+    'extraclass': this.extra_class,
     'url': this.link_url
   };
 
