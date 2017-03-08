@@ -614,16 +614,16 @@ html#brand-page, html#hotel-page {
     }
     .input-box-col-1, .input-box-col-2 {
       display: inline-block;
-      width: 46.3%; 
-      @media all and (max-width: 1024px) {
-        width: 49%; 
-      }
-      @media all and (max-width: 991px) {
-        width: 47.3%; 
-      }
+      // width: 46.3%; 
+      // @media all and (max-width: 1024px) {
+      //   width: 49%; 
+      // }
+      // @media all and (max-width: 991px) {
+      //   width: 47.3%; 
+      // }
     }   
     .input-box-col-1 {
-      margin-right: 15px;
+      // margin-right: 15px;
     }
     input[type=submit] {
       // background-color: @violet;
@@ -652,6 +652,9 @@ html#brand-page, html#hotel-page {
   @media all and (max-width: 1024px) {
     padding-left: 30px;
   }
+  @media all and (max-width: 480px) {
+    padding-left: 0px;
+  }
   .daterangepicker {
     position: static!important;
     border: none;
@@ -661,6 +664,9 @@ html#brand-page, html#hotel-page {
     width: 100%;
     @media all and (max-width: 1024px) {
       width: auto;
+    }
+    @media all and (max-width: 480px) {
+      width: 100%;
     }
     &:after, &:before {
       display: none;
@@ -740,7 +746,7 @@ html#brand-page, html#hotel-page {
         }   
         &.available {
           &:hover {
-            background: none;
+            // background: none;
           }
         }     
       }

@@ -33,7 +33,7 @@
         <h1>Experience Local At <br class="visible-xs"> Sage Hotels</h1>
         <h3>What you want to do, see, eat & experience.</h3>
       </div>
-      <div class="scroll-down-cta"></div>
+      <div class="scroll-down-cta visible-md visible-lg"></div>
     </div>
   </div>
   
@@ -69,7 +69,7 @@
   <div class="container-fluid">
     <div id="brand-all-location-content-box">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="main-title-bar"><h4>Australia</h4></div>
           <div class="sub-title-bar"><h4>Adelaide</h4></div>
           <div id="hoteladelaide" class="brand-all-location-content-box active">
@@ -77,7 +77,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="box-title row">
-              <div class="col-md-6"><h4>Country Comfort Hotel Adelaide</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Hotel Adelaide</h4></div>              
             </div>
           </div>          
           <div id="adelaidemanor" class="brand-all-location-content-box">
@@ -85,7 +85,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Adelaide Manor</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Adelaide Manor</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>ALBANY</h4></div>
@@ -94,7 +94,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Amity Motel Albany</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>ARMIDALE</h4></div>
@@ -103,7 +103,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Armidale</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>BUNDABERG</h4></div>
@@ -112,7 +112,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Bundaberg International</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Bundaberg International</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>COFFS HARBOUR</h4></div>
@@ -121,7 +121,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Coffs Harbour</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>cowra</h4></div>
@@ -130,7 +130,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Cowra</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Cowra</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>GIN GIN</h4></div>
@@ -139,7 +139,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Gin Gin</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Gin Gin</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>HUNTS LIVERPOOL</h4></div>
@@ -148,7 +148,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Hunts Liverpool</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Hunts Liverpool</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>INNER CITY PERTH</h4></div>          
@@ -157,7 +157,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Inter City Perth</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Inter City Perth</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>MT GAMBIER</h4></div>
@@ -166,7 +166,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Inter Mt Gambier</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Inter Mt Gambier</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>NEWCASTLE</h4></div>
@@ -175,7 +175,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Newcastle Airport & Convention Centre</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Newcastle Airport & Convention Centre</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>PORT MACQUARIE</h4></div>
@@ -184,7 +184,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Port Macquarie Water Edge Boutique</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Port Macquarie Water Edge Boutique</h4></div>              
             </div>
           </div>
           <div class="sub-title-bar"><h4>TOOWOOMBA</h4></div>
@@ -193,7 +193,7 @@
               <img src="images_cms/brand/brand-location-01.png" alt="">
             </div>
             <div class="row box-title">
-              <div class="col-md-6"><h4>Country Comfort Toowoomba</h4></div>              
+              <div class="col-md-12"><h4>Country Comfort Toowoomba</h4></div>              
             </div>
           </div>
 

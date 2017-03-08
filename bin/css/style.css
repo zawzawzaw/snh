@@ -5187,10 +5187,6 @@ body.hotel #desktop-header-nav ul li {
 #desktop-header-booking-form .input-box .input-box-col-1,
 #desktop-header-booking-form .input-box .input-box-col-2 {
   display: inline-block;
-  width: 46.3%;
-}
-#desktop-header-booking-form .input-box .input-box-col-1 {
-  margin-right: 15px;
 }
 #desktop-header-booking-form .input-box input[type=submit] {
   width: 100%;
@@ -5836,22 +5832,6 @@ body.scrolled #mobile-header .mobile-header-bg {
 #mobile-header-booking-form .input-box .input-box-col-1,
 #mobile-header-booking-form .input-box .input-box-col-2 {
   display: inline-block;
-  width: 46.3%;
-}
-@media all and (max-width: 1024px) {
-  #mobile-header-booking-form .input-box .input-box-col-1,
-  #mobile-header-booking-form .input-box .input-box-col-2 {
-    width: 49%;
-  }
-}
-@media all and (max-width: 991px) {
-  #mobile-header-booking-form .input-box .input-box-col-1,
-  #mobile-header-booking-form .input-box .input-box-col-2 {
-    width: 47.3%;
-  }
-}
-#mobile-header-booking-form .input-box .input-box-col-1 {
-  margin-right: 15px;
 }
 #mobile-header-booking-form .input-box input[type=submit] {
   width: 100%;
@@ -5880,6 +5860,11 @@ body.scrolled #mobile-header .mobile-header-bg {
     padding-left: 30px;
   }
 }
+@media all and (max-width: 480px) {
+  #mobile-header-booking-calendar {
+    padding-left: 0px;
+  }
+}
 #mobile-header-booking-calendar .daterangepicker {
   position: static!important;
   border: none;
@@ -5891,6 +5876,11 @@ body.scrolled #mobile-header .mobile-header-bg {
 @media all and (max-width: 1024px) {
   #mobile-header-booking-calendar .daterangepicker {
     width: auto;
+  }
+}
+@media all and (max-width: 480px) {
+  #mobile-header-booking-calendar .daterangepicker {
+    width: 100%;
   }
 }
 #mobile-header-booking-calendar .daterangepicker:after,
@@ -5978,9 +5968,6 @@ body.scrolled #mobile-header .mobile-header-bg {
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.off {
   color: #b9b9b9;
-}
-#mobile-header-booking-calendar .daterangepicker .calendar td.available:hover {
-  background: none;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar tbody tr {
   border-bottom: 5px solid #f1f2f2;
@@ -9968,10 +9955,6 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 .detail-page-booking-form .booking-form .input-box .input-box-col-1,
 .detail-page-booking-form .booking-form .input-box .input-box-col-2 {
   display: inline-block;
-  width: 46.3%;
-}
-.detail-page-booking-form .booking-form .input-box .input-box-col-1 {
-  margin-right: 15px;
 }
 .detail-page-booking-form .booking-form .input-box input[type=submit] {
   width: 100%;

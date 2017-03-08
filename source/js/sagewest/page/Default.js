@@ -1155,7 +1155,7 @@ sagewest.page.Default.prototype.scroll_to_after_the_fold = function(){
   if(manic.IS_ACTUAL_MOBILE == true) {
 
     if(manic.IS_TABLET_LANDSCAPE == true) {
-      target_y = this.window_height - ($('#mobile-header').height() * 0.9);
+      target_y = this.window_height - ($('#mobile-header').height() * 0.9) + 20;
       
       console.log('here lies something')
       console.log('target_y: ' + target_y);

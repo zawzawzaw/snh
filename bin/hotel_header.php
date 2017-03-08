@@ -79,8 +79,8 @@
             <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
           </div>
         </div>
-        <div class="input-box">
-          <div class="input-box-col-1">
+        <div class="input-box row">
+          <div class="input-box-col-1 col-md-6">
             <label for="">Adults</label>
             <div class="dropdown">
               <select name="adults" id="adults">
@@ -97,7 +97,7 @@
               </select>
             </div>
           </div>
-          <div class="input-box-col-2">
+          <div class="input-box-col-2 col-md-6">
             <label for="">Children</label>
             <div class="dropdown">
               <select name="children" id="children">
