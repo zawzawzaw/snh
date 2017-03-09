@@ -402,6 +402,13 @@ manic.page.Page.prototype.scroll_to = function(num_param) {
   TweenMax.to(this.window, target_duration, {scrollTo:{y:target_y,autoKill: true}, ease:Quad.easeInOut});
 };
 
+manic.page.Page.prototype.scroll_to_fast = function(num_param) {
+  var target_y = num_param;
+  var current_scroll = this.window.scrollTop();
+  var target_duration = 0.5;
+  TweenMax.to(this.window, target_duration, {scrollTo:{y:target_y,autoKill: true}, ease:Quad.easeInOut});
+};
+
 
 /*
 manic.page.Page.prototype.public_method_05 = function() {};

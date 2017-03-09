@@ -82,7 +82,7 @@
       <span>sage west perth</span>
       <ul>
         <li><a href="room_index.php">rooms</a></li>
-        <li><a href="#">offers</a></li>
+        <li><a href="offer_index.php">offers</a></li>
         <li><a href="dining_index.php">dining</a></li>
         <li class="has-subnav">
           <a href="#">facilities</a>
@@ -92,11 +92,11 @@
             <li><a href="#">Gym</a></li>
           </ul>
         </li>
-        <li><a href="#">gallery</a></li>
+        <li><a href="gallery.php">gallery</a></li>
         <li><a href="#">activities</a></li>
         <li><a href="#">reviews</a></li>
         <li><a href="#">events</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="contact.php">contact</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -113,10 +113,10 @@
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
           <select name="hotel" id="hotel" class="hotel-dropdown">
-            <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
-            <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-            <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
-            <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
+            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+            <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
+            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
           </select>
         </div>
       </div>
@@ -126,8 +126,8 @@
           <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
         </div>
       </div>
-      <div class="input-box">
-        <div class="input-box-col-1">
+      <div class="input-box row">
+        <div class="input-box-col-1 col-sm-6 col-xs-6">
           <label for="">Adults</label>
           <div class="dropdown">
             <select name="adults" id="adults">
@@ -144,7 +144,7 @@
             </select>
           </div>
         </div>
-        <div class="input-box-col-2">
+        <div class="input-box-col-2 col-sm-6 col-xs-6">
           <label for="">Children</label>
           <div class="dropdown">
             <select name="children" id="children">
@@ -209,14 +209,14 @@
           <nav>
             <ul>
               <li><a href="room_index.php">Rooms</a></li>
-              <li><a href="#">Offers</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
               <li><a href="dining_index.php">Dining</a></li>
               <li><a href="#">Facilities</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
               <li><a href="#">Activities</a></li>
               <li><a href="#">Reviews</a></li>
               <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -246,10 +246,10 @@
           <label for="hotel">Select Hotel</label>
           <div class="dropdown">
             <select name="hotel" id="hotel" class="hotel-dropdown">
-              <option value="Sage Hotel, Adelaide">Sage Hotel, Adelaide</option>
-              <option value="Sage Hotel, West Perth">Sage Hotel, West Perth</option>
-              <option value="Sage Hotel, James Street Brisbane">Sage Hotel, James Street Brisbane</option>
-              <option value="Sage Hotel, Wollongong">Sage Hotel, Wollongong</option>
+              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+              <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
+              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
             </select>
           </div>
         </div>
@@ -259,8 +259,8 @@
             <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
           </div>
         </div>
-        <div class="input-box">
-          <div class="input-box-col-1">
+        <div class="input-box row">
+          <div class="input-box-col-1 col-md-6">
             <label for="">Adults</label>
             <div class="dropdown">
               <select name="adults" id="adults">
@@ -277,7 +277,7 @@
               </select>
             </div>
           </div>
-          <div class="input-box-col-2">
+          <div class="input-box-col-2 col-md-6">
             <label for="">Children</label>
             <div class="dropdown">
               <select name="children" id="children">
@@ -537,6 +537,7 @@
             <li><a href="#">Country Comfort</a></li>
             <li><a href="#">Chifley Hotels</a></li>
             <li><a href="#">Sundowner Inns</a></li>
+            <li><a href="#">Kafnu</a></li>
           </ul>
         </div>      
       </div>

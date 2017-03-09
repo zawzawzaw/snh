@@ -104,6 +104,7 @@
 
         <form id="contact-page-form" 
           action="contact_thankyou.php"
+          method="POST"
           class="default-form simple-form-check"
           novalidate>
 
@@ -225,14 +226,14 @@
       <div class="col-md-7">
 
         <div id="contact-page-map-container">
-
-          <div id="contact-page-map" class="generic-map" data-lat="-31.946899" data-lng="115.8524116"  data-zoom="15">
+          
+          <div id="contact-page-map" class="generic-map" data-lat="-31.947643" data-lng="115.838698"  data-zoom="15">
             <div class="generic-map-map"></div>
             <div class="generic-map-markers open-version" 
               data-pin-icon="images/icons/map-pin-grey.png" 
               data-location="Sage West Perth" 
-              data-lat="-31.946899" 
-              data-lng="115.8524116" 
+              data-lat="-31.947643" 
+              data-lng="115.838698" 
               data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" 
               data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>">
             </div>

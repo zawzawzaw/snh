@@ -226,6 +226,7 @@ sagewest.component.GenericMap.prototype.create_markers = function() {
       generic_map.infobox.setContent(marker_html);
       generic_map.infobox.setOptions({ 'pixelOffset' : new google.maps.Size(48, -85) });
       generic_map.map.panTo(lat_lng);
+      generic_map.map.panBy(110, -50);
 
     }.bind(item));
 

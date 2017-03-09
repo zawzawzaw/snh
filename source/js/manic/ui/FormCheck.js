@@ -508,9 +508,9 @@ manic.ui.FormCheck.prototype.public_method_04 = function() {};
 manic.ui.FormCheck.prototype.on_form_submit = function(event) {
   var return_value = this.check_form();
   
-  // return return_value;
+  return return_value;
   
-  return false;                           //                                            // THIS WILL PREVENT FORM FROM SUBMITTING.
+  // return false;                           //                                            // THIS WILL PREVENT FORM FROM SUBMITTING.
 };
 
 /**
