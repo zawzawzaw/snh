@@ -1,7 +1,7 @@
 <?php 
 ob_start();
 ?>
-<?php 
+<?php
   global $is_debug;
   global $body_class;
 
