@@ -145,10 +145,34 @@ sagewest.component.GalleryData = function(options, element) {
 
   // CREATE DATA OBJECTS FOR TEMPLATING
   
+  this.gallery_data_object = {
+    'image': this.data_gallery_desktop_image,
+    'mobileimage': this.data_gallery_mobile_image
+  };
+
+  this.overlay_data_object = {
+    'title': this.data_title
+  };
+
+
+  if (this.is_accommodation) {
+    this.overlay_data_object = {
+      'title': this.data_title,
+      'url': this.data_accommodation_cta_url,
+      'pricecopy': this.data_accommodation_price_copy,
+      'currency': this.data_accommodation_price_currency,
+      'price': this.data_accommodation_price_number
+    };
+  }
+
+
   this.thumbnail_data_object = {
     'image': this.data_gallery_desktop_thumnbail,
+    'mobileimage': this.data_gallery_mobile_thumnbail,
     'url': this.link_url
   };
+
+
 
 
   this.masonry_data_object = {
@@ -161,12 +185,12 @@ sagewest.component.GalleryData = function(options, element) {
 
 
   
-  console.log(this.masonry_data_object)
+  // console.log(this.masonry_data_object)
 
   
 
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(sagewest.component.GalleryData, goog.events.EventTarget);
 

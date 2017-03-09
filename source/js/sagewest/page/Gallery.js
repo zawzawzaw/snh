@@ -102,15 +102,38 @@ sagewest.page.Gallery.prototype.init = function() {
   this.parse_data();
 
 
+  // INDEX
+
   this.gallery_index_tab = new sagewest.component.GalleryIndexTab({}, $('#page-gallery-index-tab'));
+
   this.gallery_index_tab.set_data_array(this.gallery_data_array);
 
-  this.create_image_container();
-  // goog.events.listen(this.gallery_index_tab, sagewest.component.GalleryIndexTab.EVENTNAME, function(){}.bind(this));
+  this.create_image_container(); // create manic-image-container
+
+  goog.events.listen(this.gallery_index_tab, sagewest.component.GalleryIndexTab.UPDATE_IMAGE, function(){
+    this.update_page_layout();
+  }.bind(this));
+
   
+  
+
+
+  // DETAIL
   
   this.gallery_detail_tab = new sagewest.component.GalleryDetailTab({}, $('#page-gallery-detail-tab'));
-  // goog.events.listen(this.gallery_detail_tab, sagewest.component.GalleryDetailTab.EVENTNAME, function(){}.bind(this));
+  this.gallery_detail_tab.set_data_array(
+    this.gallery_data_array, 
+    this.gallery_data_category_dictionary, 
+    this.gallery_data_category_id_dictionary
+  );
+
+  goog.events.listen(this.gallery_detail_tab, sagewest.component.GalleryDetailTab.CREATE_IMAGE, function(){
+    this.create_image_container();
+  }.bind(this));
+
+  goog.events.listen(this.gallery_detail_tab, sagewest.component.GalleryDetailTab.UPDATE_IMAGE, function(){
+    this.update_page_layout();
+  }.bind(this));
   
 
 
@@ -252,28 +275,12 @@ sagewest.page.Gallery.prototype.scroll_to_target = function(str_param, str_param
     this.show_index_tab();
     this.gallery_index_tab.set_category(str_param);
     // this.show_category(str_param);      // accepts null & '', displays all
+    // 
+    // 
 
   }
 
   this.update_page_layout();
-
-  /*
-  // Mice venue landing - on hash change
-  if(manic.IS_MOBILE == true && this.is_mice_venue_landing == true){
-
-    // console.log('str_param: ' + str_param);
-    if (str_param == "indoor-venue") {
-      this.mice_landing_mobile_indoor_open();
-
-    } else if (str_param == "outdoor-venue") {
-      this.mice_landing_mobile_outdoor_open();
-
-    } else if (str_param == "ballrooms-venue") {
-      this.mice_landing_mobile_ballrooms_open();
-    }
-
-  }
-  */
 
 };
 /**
@@ -282,14 +289,12 @@ sagewest.page.Gallery.prototype.scroll_to_target = function(str_param, str_param
  */
 sagewest.page.Gallery.prototype.on_scroll_to_no_target = function(){
 
-  // Mice venue landing
-  /*
-  if(manic.IS_MOBILE == true && this.is_mice_venue_landing == true){
-    // console.log('go home!!');
-    this.mice_landing_mobile_both_close();
-  }
-  */
 
+  this.show_index_tab();
+  this.gallery_index_tab.set_category(null);
+
+  this.update_page_layout();
+  
 };
 
 
