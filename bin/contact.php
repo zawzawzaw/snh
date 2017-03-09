@@ -65,7 +65,7 @@ ob_start();
 
         -->
         
-        <?php include('js_default.php'); ?>
+        <?php include('js_contact.php'); ?>
         <?php include('footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
