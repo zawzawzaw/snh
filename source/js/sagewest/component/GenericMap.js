@@ -49,10 +49,9 @@ sagewest.component.GenericMap = function(options, element) {
   var target_lng = this.element.attr('data-lng');
 
   if (goog.isDefAndNotNull(target_lat) && 
-      target_lat != '' && 
       goog.isDefAndNotNull(target_lng) && 
+      target_lat != '' && 
       target_lng != ''){
-
 
     this.create_map();
     this.create_markers();
@@ -126,7 +125,8 @@ sagewest.component.GenericMap.prototype.create_map = function() {
     mapTypeId: 'Styled',
     scrollwheel: false,
     // zoomControl: true
-    zoomControl: false
+    /// zoomControl: false
+    zoomControl: true
   });
 
   var styledMapType = new google.maps.StyledMapType(this.google_style_array, { name: 'Styled' });  
