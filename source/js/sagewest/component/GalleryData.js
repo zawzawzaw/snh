@@ -167,6 +167,7 @@ sagewest.component.GalleryData = function(options, element) {
 
 
   this.thumbnail_data_object = {
+    'title': this.data_title,
     'image': this.data_gallery_desktop_thumnbail,
     'mobileimage': this.data_gallery_mobile_thumnbail,
     'url': this.link_url
@@ -176,6 +177,7 @@ sagewest.component.GalleryData = function(options, element) {
 
 
   this.masonry_data_object = {
+    'title': this.data_title,
     'image': this.data_masonry_image,
     // 'width': this.data_masonry_width,
     // 'height': this.data_masonry_height,

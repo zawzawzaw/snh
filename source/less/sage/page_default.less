@@ -7,6 +7,11 @@
 
 .default-copy{
 
+  h3{
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
   h5{
 
   }
@@ -19,7 +24,12 @@
   
 
   p{
-
+    a{
+      color: @violet;
+      &:hover{
+        color: darken(@violet, 20%);
+      }
+    }
   }
 
 
@@ -51,7 +61,37 @@
     }
   }
 
+  ol {
+    padding-left: 16px;
+    counter-reset: ol-counter;
 
+    li {
+      position: relative;
+      margin-bottom: 14px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+
+      &:before {
+        display: block;
+
+        content: counter(ol-counter) ".";
+        counter-increment: ol-counter;
+
+        .open-sans-light;
+        font-size: 15px;
+        line-height: 24px;
+
+        position: absolute;
+        top: 0;
+        left: -16px;
+      }
+    }
+  }
+
+  h3 + p{
+    padding-top: 8px;
+  }
   h5 + p{
     padding-top: 14px;
   }
@@ -63,13 +103,28 @@
     padding-top: 24px;
   }
 
-
+  // ul
   p + ul{
     padding-top: 19px;
+  }
+  h3 + ul{
+    padding-top: 8px;
   }
   h6 + ul{
     padding-top: 8px;
   }
+
+  // ol
+  p + ol{
+    padding-top: 6px;
+  }
+  h3 + ol{
+    padding-top: 8px;
+  }
+  h6 + ol{
+    padding-top: 8px;
+  }
+
 
 
   ul + h6 {
@@ -509,7 +564,16 @@ body.is-tablet.is-tablet-portrait{
     padding-top: 4px;
   }
 
+  // TABLET PORTRAIT & SMALL DESKTOP
+  @media only screen and (max-width: 991px) {
+    br{
+      display: none;    // remove breaklines on tablet portrait & mobile 
+    }
+  }
+
+
 } // .index-page-title
+
 
 
 //    ____  _     ___ ____  _____ ____

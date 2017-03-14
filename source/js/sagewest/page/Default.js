@@ -20,6 +20,7 @@ goog.require('manic.page.Page');
 
 goog.require('sagewest.component.MobileHeader');
 goog.require('sagewest.component.PackagesPopup');
+goog.require('sagewest.component.GenericMap');
 
 
 /**
@@ -74,6 +75,13 @@ sagewest.page.Default = function(options) {
    * @type {ayana.component.MobileHeader}
    */
   this.mobile_menu = null;
+
+
+
+  /**
+   * @type {Array.<sagewest.component.GenericMap>}
+   */
+  this.generic_map_array = [];
 
 
 
@@ -194,6 +202,7 @@ sagewest.page.Default.prototype.init = function() {
   this.highlight_header_link();
   this.create_min_height();
   this.create_detail_page();
+  this.create_generic_map();
 
 
 
@@ -241,6 +250,13 @@ sagewest.page.Default.prototype.create_min_height = function(){
 
 
 };
+
+
+
+
+
+
+
 
 
 /*
@@ -443,6 +459,33 @@ sagewest.page.Default.prototype.create_detail_page = function(){
 
   
 };
+
+//    __  __    _    ____
+//   |  \/  |  / \  |  _ \
+//   | |\/| | / _ \ | |_) |
+//   | |  | |/ ___ \|  __/
+//   |_|  |_/_/   \_\_|
+//
+
+
+sagewest.page.Default.prototype.create_generic_map = function(){
+  var arr = $('.generic-map');
+  var item = null;
+  var generic_map = null;
+
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+
+    generic_map = new sagewest.component.GenericMap({}, item);
+
+    this.generic_map_array[this.generic_map_array.length] = generic_map;
+  }
+  
+};
+
+
+
 
 
 //    ____   _    ____ _  __    _    ____ _____ ____

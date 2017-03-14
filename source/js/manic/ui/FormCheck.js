@@ -87,31 +87,36 @@ manic.ui.FormCheck.ON_SUCCESS = 'on_success';
  * Form Check Constant
  * @type {string}                       // can be changed on runtime :D
  */
-manic.ui.FormCheck.STRING_REQUIRED = ' required';
+manic.ui.FormCheck.STRING_REQUIRED = ' This is a required field.';
+// manic.ui.FormCheck.STRING_REQUIRED = ' required';
 
 /**
  * Form Check Constant
  * @type {string}                       // can be changed on runtime :D
  */
-manic.ui.FormCheck.STRING_REQUIRED_GROUP = ' required';
+manic.ui.FormCheck.STRING_REQUIRED_GROUP = ' This is a required field.';
+// manic.ui.FormCheck.STRING_REQUIRED_GROUP = ' required';
 
 /**
  * Form Check Constant
  * @type {string}
  */
-manic.ui.FormCheck.STRING_ONLY_EMAIL = ' must be a valid email address';
+manic.ui.FormCheck.STRING_ONLY_EMAIL = ' This must be a valid email address.';
+// manic.ui.FormCheck.STRING_ONLY_EMAIL = ' must be a valid email address';
 
 /**
  * Form Check Constant
  * @type {string}
  */
-manic.ui.FormCheck.STRING_ONLY_NUMBERS = ' must be all numbers';
+manic.ui.FormCheck.STRING_ONLY_NUMBERS = ' This must be all numbers';
+// manic.ui.FormCheck.STRING_ONLY_NUMBERS = ' must be all numbers';
 
 /**
  * Form Check Constant
  * @type {string}
  */
-manic.ui.FormCheck.STRING_MUST_MATCH_01 = ' must match';
+manic.ui.FormCheck.STRING_MUST_MATCH_01 = ' This must match';
+// manic.ui.FormCheck.STRING_MUST_MATCH_01 = ' must match';
 
 
 //    ____  ____  _____     ___  _____ _____
@@ -375,6 +380,17 @@ manic.ui.FormCheck.prototype.check_form = function() {
         (this.options['class_filter'] != '' && input_item.hasClass(this.options['class_filter']))  ) {
 
 
+      // email check
+      if(input_item.hasClass('only-email')){
+        if(this.validate_email( input_item.val() ) == false){
+          this.error_id_array[this.error_id_array.length] = input_id;
+          this.add_input_error(input_item, input_name, manic.ui.FormCheck.STRING_ONLY_EMAIL );   ///////////////
+
+          if(this.options["alert_on_error"] == true){ return false; } else { return_value = false; }
+        }
+      }
+
+
       // check required
       if(input_item.hasClass("required")){
 
@@ -395,15 +411,7 @@ manic.ui.FormCheck.prototype.check_form = function() {
 
 
 
-      // email check
-      if(input_item.hasClass('only-email')){
-        if(this.validate_email( input_item.val() ) == false){
-          this.error_id_array[this.error_id_array.length] = input_id;
-          this.add_input_error(input_item, input_name, manic.ui.FormCheck.STRING_ONLY_EMAIL );   ///////////////
-
-          if(this.options["alert_on_error"] == true){ return false; } else { return_value = false; }
-        }
-      }
+      
 
       // number check
       if(input_item.hasClass('only-numbers')){
@@ -500,9 +508,9 @@ manic.ui.FormCheck.prototype.public_method_04 = function() {};
 manic.ui.FormCheck.prototype.on_form_submit = function(event) {
   var return_value = this.check_form();
   
-  // return return_value;
+  return return_value;
   
-  return false;                           //                                            // THIS WILL PREVENT FORM FROM SUBMITTING.
+  // return false;                           //                                            // THIS WILL PREVENT FORM FROM SUBMITTING.
 };
 
 /**

@@ -47,13 +47,15 @@ sagewest.component.GalleryDetailTab = function(options, element) {
   this.main_slider.on('init', function(event, slick){
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.CREATE_IMAGE));
   }.bind(this));
+
   this.main_slider.on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.UPDATE_IMAGE));
   }.bind(this));
-
+  
   this.thumbnail_slider.on('init', function(event, slick){
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.CREATE_IMAGE));
   }.bind(this));
+  
   this.thumbnail_slider.on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.UPDATE_IMAGE));
   }.bind(this));
@@ -172,6 +174,8 @@ sagewest.component.GalleryDetailTab.prototype.set_category_and_id = function(cat
     // recreate sliders
     this.create_main_slider();
     this.create_thumbnail_slider();
+
+    $('#gallery-cta-container a.arrow-cta').attr('href', '#' + this.current_category);
 
   }
 
@@ -364,7 +368,7 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
   
   var slider_thumbnail_template = [
     '<div class="gallery-thumbnail-slider-item">',
-      '<a href="{url}" class="manic-image-container">',
+      '<a href="{url}" title="{title}" class="manic-image-container">',
         '<img src=""',
           'data-image-desktop="{image}"',
           'data-image-mobile="{mobileimage}">',

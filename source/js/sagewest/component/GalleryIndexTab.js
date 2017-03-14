@@ -84,7 +84,7 @@ sagewest.component.GalleryIndexTab.prototype.create_html = function() {
 
   var masonry_item_template = [
     '<div class="gallery-masonry-grid-item {extraclass}">',
-      '<a href="{url}">',
+      '<a href="{url}" title="{title}">',
         '<div class="manic-image-container">',
           '<img src="" data-image="{image}">',
         '</div>',
@@ -234,8 +234,8 @@ sagewest.component.GalleryIndexTab.prototype.set_category = function(category_pa
     $('#gallery-page-tab-container a').removeClass('selected');
     $('#gallery-page-tab-container a[href="#' + this.current_category + '"]').addClass('selected');
 
-    console.log('current_category' + this.current_category)
-    $('#gallery-cta-container a.arrow-cta').attr('href', '#' + this.current_category);
+    // moved to detail
+    // $('#gallery-cta-container a.arrow-cta').attr('href', '#' + this.current_category);
 
 
 

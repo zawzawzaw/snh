@@ -256,10 +256,12 @@ manic.ui.Dropdown.prototype.create_google_select = function() {
   //this.goog_select_menu.css('min-width', this.element.width() + 'px');
   
   // this is to force the width of the element
+  /*
   this.goog_select_menu.css({
     'max-width': (this.element.width() + 2) + 'px',
     'min-width': (this.element.width() + 2) + 'px'
   });
+  */
 
   if (this.element.hasClass('scroll-version')) {
     this.goog_select_menu.addClass('scroll-version');
@@ -433,10 +435,12 @@ manic.ui.Dropdown.prototype.on_goog_select_change = function(event) {
  * @param  {object} event
  */
 manic.ui.Dropdown.prototype.on_goog_select_show = function(event){
+  /*
   this.goog_select_menu.css({
     'max-width': (this.element.width() + 2) + 'px',
     'min-width': (this.element.width() + 2) + 'px'
   });
+  */
 };
 
 /**
