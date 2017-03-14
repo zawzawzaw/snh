@@ -222,7 +222,9 @@ sagewest.component.GalleryIndexTab.prototype.set_category = function(category_pa
       filter_class = '';
     }
 
-    $('#gallery-masonry-grid').isotope({ 
+
+    // THIS WON'T WORK ANYMORE
+    $('#gallery-masonry-grid').isotope({
       itemSelector: '.gallery-masonry-grid-item',
       layoutMode: 'packery',
       filter: filter_class 

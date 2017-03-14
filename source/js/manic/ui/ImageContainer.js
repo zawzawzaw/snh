@@ -825,3 +825,17 @@ manic.ui.ImageContainer.prototype.on_image_load_complete = function(event) {
   }
 
 };
+
+
+
+//    _        _     _______   __  _     ___    _    ____
+//   | |      / \   |__  /\ \ / / | |   / _ \  / \  |  _ \
+//   | |     / _ \    / /  \ V /  | |  | | | |/ _ \ | | | |
+//   | |___ / ___ \  / /_   | |   | |__| |_| / ___ \| |_| |
+//   |_____/_/   \_\/____|  |_|   |_____\___/_/   \_\____/
+//
+
+manic.ui.ImageContainer.prototype.on_image_visible = function(){
+  //console.log('this is visible');
+  //console.log(this.element);
+};

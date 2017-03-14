@@ -20,9 +20,7 @@ sagewest.page.Gallery = function(options, element) {
 
   sagewest.page.Default.call(this, options, element);
   this.options = $.extend(this.options, sagewest.page.Gallery.DEFAULT, options);
-
-
-
+  
   this.current_category = 'all';
 
 
@@ -295,7 +293,7 @@ sagewest.page.Gallery.prototype.scroll_to_target = function(str_param, str_param
   }
   this.current_category = str_param;
 
-  
+
 
 
 
