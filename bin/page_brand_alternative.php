@@ -83,13 +83,11 @@
 
           <div id="default-introduction-title-2">
             <h4>a sense of place</h4>
-            <h1>We care about your thing</h1>
+            <h1>We care about <br>your thing</h1>
           </div>
 
           <div id="default-introduction-text">
-            <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at brand.</p>
-
-            <!-- <a href="#" class="arrow-cta">Read More</a> -->
+            <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at home.</p>
           </div>
 
         </div>
@@ -106,7 +104,9 @@
 
             <!-- <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=1&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
 
-            <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=0&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe>
+            <iframe width="809" height="475" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=0&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe>
+
+            
 
 
           </div>
@@ -126,276 +126,107 @@
   </div>
 </article>
 
-<!-- 
-    __    ____  _________  ______________  _   __
-   / /   / __ \/ ____/   |/_  __/  _/ __ \/ | / /
-  / /   / / / / /   / /| | / /  / // / / /  |/ /
- / /___/ /_/ / /___/ ___ |/ / _/ // /_/ / /|  /
-/_____/\____/\____/_/  |_/_/ /___/\____/_/ |_/
 
- -->
+<!--
+   _     ___   ____    _  _____ ___ ___  _   _ ____     ___ ____
+  | |   / _ \ / ___|  / \|_   _|_ _/ _ \| \ | / ___|   / _ \___ \
+  | |  | | | | |     / _ \ | |  | | | | |  \| \___ \  | | | |__) |
+  | |__| |_| | |___ / ___ \| |  | | |_| | |\  |___) | | |_| / __/
+  |_____\___/ \____/_/   \_\_| |___\___/|_| \_|____/   \___/_____|
 
+-->
 <div class="scroll-target" data-value="location"></div>
-<article id="brand-location-section" class="hidden-sm hidden-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-          <div id="brand-location-title">
-            <h4>country comfort HOTELS</h4>
-            <h1>Our locations</h1>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div id="brand-location-content">
-      <div class="row">
-        <div class="col-md-4 col-lg-3 hidden-xs hidden-sm">            
-            <ul id="brand-location-links">
-              <li><a href="#hoteladelaide" class="brand-location-link">Country Comfort Hotel Adelaide</a></li>
-              <li><a href="#adelaidemanor" class="brand-location-link">Country Comfort Adelaide Manor</a></li>
-              <li><a href="#amitymotelalbany" class="brand-location-link">Country Comfort Amity Motel Albany</a></li>
-              <li><a href="#armidale" class="brand-location-link">Country Comfort Armidale</a></li>
-              <li><a href="#bundaberginternational" class="brand-location-link">Country Comfort Bundaberg International</a></li>
-              <li><a href="#coffsharbour" class="brand-location-link">Country Comfort Coffs Harbour</a></li>
-              <li><a href="#cowra" class="brand-location-link">Country Comfort Cowra</a></li>
-              <li><a href="#gingin" class="brand-location-link">Country Comfort Gin Gin</a></li>
-              <li><a href="#huntsliverpool" class="brand-location-link">Country Comfort Hunts Liverpool</a></li>
-              <li><a href="#intercityperth" class="brand-location-link">Country Comfort Inter City Perth</a></li>
-              <li><a href="#intermtgambier" class="brand-location-link">Country Comfort Inter Mt Gambier</a></li>
-              <li><a href="#newcastleairport" class="brand-location-link">Country Comfort Newcastle Airport <br class="hidden-xs hidden-sm"> & Convention Centre</a></li>
-              <li><a href="#portmacquarie" class="brand-location-link">Country Comfort Port Macquarie <br class="hidden-xs hidden-sm"> Water Edge Boutique</a></li>
-              <li><a href="#toowoomba" class="brand-location-link">Country Comfort Toowoomba</a></li>                
-            </ul>          
-        </div>
-        <div class="col-md-7 col-lg-8 col-md-offset-1">
-          <div id="hoteladelaide" class="brand-location-content active">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Hotel Adelaide</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>          
-          <div id="adelaidemanor" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Adelaide Manor</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="amitymotelalbany" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Amity Motel Albany</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="armidale" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Armidale</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="bundaberginternational" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Bundaberg International</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="coffsharbour" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Coffs Harbour</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="cowra" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Cowra</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="gingin" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Gin Gin</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="huntsliverpool" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Hunts Liverpool</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="intercityperth" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Inter City Perth</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="intermtgambier" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Inter Mt Gambier</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="newcastleairport" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Newcastle Airport & Convention Centre</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="portmacquarie" class="brand-location-content mobile-default-location">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Port Macquarie Water Edge Boutique</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
-          <div id="toowoomba" class="brand-location-content">
-            <div class="manic-image-container">
-              <img src="images_cms/brand/brand-location-01.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-md-6"><h1>Country Comfort Toowoomba</h1></div>
-              <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ther and ligula eget dolor.</p>
-                <a href="#" class="read-more-cta arrow-cta hidden-xs hidden-sm">view hotel</a>
-              </div>
-            </div>
-          </div>
 
-          <a href="#" id="brand-locaiton-view-all-mobile" class="visible-xs visible-sm arrow-cta">View all hotels</a>
+<article id="brand-all-location-section-version-02">
+  <div class="container-fluid has-breakpoint">
 
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="brand-all-location-title-version-02">
+          <h4>SAGE HOTELS</h4>
+          <h1>Our Locations</h1>
+        </div> <!-- brand-all-location-title-version-02 -->
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+
+        <div id="brand-all-location-slider-container-version-02">
+          <div id="brand-all-location-slider-version-02">
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="white-bg"></div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4>Newcastle</h4>
+                    <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                  </div>
+                  <div class="col-md-7">
+                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="white-bg"></div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4>wollongong</h4>
+                    <h2><a href="hotel.php">Sage hotel Wollongong</a></h2>
+                  </div>
+                  <div class="col-md-7">
+                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- brand-all-location-slider-version-02 -->
+
+          <a href="javascript:void(0);" title="Prev Image" id="brand-all-location-slider-prev-btn"></a>
+          <a href="javascript:void(0);" title="Next Image" id="brand-all-location-slider-next-btn"></a>
+
+        </div> <!-- brand-all-location-slider-container-version-02 -->
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div id="brand-all-location-cta-container-version-02">
+          <a href="javascript:void(0);" class="square-cta highlight-version">View all hotels</a>
         </div>
       </div>
     </div>
-  </div>    
-</article>
-<article id="home-location-section" class="visible-sm visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-          <div id="home-location-title">
-            <h4>sage hotels</h4>
-            <h1>Our locations</h1>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid visible-sm visible-xs">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="home-location-content-mobile">
-          <div id="home-location-content-mobile-carousel">
-            <div class="carousel-content">
-              <div class="manic-image-container">
-                <img src="images_cms/home/home-location-01.jpg" alt="">        
-              </div>
-              <h4>sage hotels west perth</h4>
-              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
-              <a href="hotel.php" class="arrow-cta">view hotel</a>
-            </div>
-            <div class="carousel-content">
-              <div class="manic-image-container">
-                <img src="images_cms/home/home-location-02.jpg" alt="">                
-              </div>
-              <h4>sage hotels west perth</h4>
-              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
-              <a href="hotel.php" class="arrow-cta">view hotel</a>
-            </div>
-            <div class="carousel-content">
-              <div class="manic-image-container">
-                <img src="images_cms/home/home-location-03.jpg" alt="">                
-              </div>
-              <h4>sage hotels west perth</h4>
-              <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance...</p>
-              <a href="hotel.php" class="arrow-cta">view hotel</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <a href="brand_location.php" id="view-all-locations-cta" class="arrow-cta">view all Locations</a>
-      </div>
-    </div>
+
   </div>
 </article>
+
+
+
+
+
+
+
 
 <!-- 
     ____  ____  ____  __  _______  ______________  _   __
@@ -429,6 +260,7 @@
               </div>
               <div class="box-content-text">
                 <h1>City Escape</h1>              
+                <h4>sage hotel adelaide</h4>
                 <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                 <ul>
                   <li><p>Newly Constructed Sage Rooms</p></li>
@@ -459,6 +291,7 @@
               </div>          
               <div class="box-content-text">
                 <h1>Valentine’s Day</h1>
+                <h4>Country comfort newcastle airport & convention centre</h4>
                 <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                 <ul>
                   <li><p>Arrival rose for your significant other</p></li>
@@ -495,7 +328,8 @@
                       <img src="" data-image-desktop="images_cms/brand/brand-promotion-03.png" data-image-mobile="images_cms/brand/brand-promotion-03.png" alt="">
                     </div>
                     <div class="box-content-text">
-                      <h1>Ascot Horse Racing</h1>              
+                      <h1>Ascot Horse Racing</h1> 
+                      <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>             
                       <ul>
                         <li><p>Complimentary upgrade to Executive Wing</p></li>
                         <li><p>General admission ticket for 2 to Ascot Races</p></li>
@@ -545,7 +379,12 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="#" id="default-promotion-view-all" class="arrow-cta">View all offers</a>
+        <!-- <a href="#" id="default-promotion-view-all" class="arrow-cta">View all offers</a> -->
+
+        <div id="default-promotion-view-all-container">
+          <a href="#" class="square-cta highlight-version">View all offers</a>
+        </div>
+
       </div>
     </div>
   </div>

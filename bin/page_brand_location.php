@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="default-page-banner-mobile-image visible-sm visible-xs">
-      <div class="manic-image-container has-window-height" data-vertical-align="bottom">
+      <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
         <img src=""
           data-image-tablet="images_cms/brand/brand-banner-tablet.jpg"
           data-image-mobile="images_cms/brand/brand-banner-mobile.jpg">
@@ -33,7 +33,9 @@
         <h1>Experience Local At <br class="visible-xs"> Sage Hotels</h1>
         <h3>What you want to do, see, eat & experience.</h3>
       </div>
-      <div class="scroll-down-cta visible-md visible-lg"></div>
+      <!-- <div class="scroll-down-cta visible-md visible-lg"></div> -->
+      <div class="scroll-down-cta"></div>
+      
     </div>
   </div>
   

@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="default-page-banner-mobile-image visible-sm visible-xs">
-      <div class="manic-image-container has-window-height" data-vertical-align="bottom">
+      <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
         <img src=""
           data-image-tablet="images_cms/hotel/hotel-banner-tablet.jpg"
           data-image-mobile="images_cms/hotel/hotel-banner-mobile.jpg">
@@ -33,9 +33,9 @@
         <h1>Welcome to Sage West Perth</h1>
         <h3>Sage Hotel West Perth is your modern gateway to the City of Light.</h3>
       </div>
-      
       <!-- <div class="scroll-down-cta visible-xs visible-sm"></div> -->
-
+      <div class="scroll-down-cta"></div>
+      
     </div>
   </div>
   <!--

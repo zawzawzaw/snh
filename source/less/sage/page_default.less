@@ -279,7 +279,7 @@
   .default-page-banner{
     .default-page-banner-text{
       .banner-text {
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
       }
       .scroll-down-cta{
         bottom: 20px;
@@ -1018,15 +1018,16 @@ body.is-tablet.is-tablet-portrait{
   #default-promotion-content {    
     .default-promotion-content-box {
       .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
-      min-height: 660px;
+
+      min-height: 660px + 70px;
       @media all and (max-width: 1510px) {
-        min-height: 730px;  
+        min-height: 730px + 70px;
       } 
       @media all and (max-width: 1280px) {
-        min-height: 773px;  
+        min-height: 773px + 70px;
       }     
       @media all and (max-width: 1024px) {
-        min-height: 833px;
+        min-height: 833px + 70px;
       }
       position: relative;
       .box-title {       

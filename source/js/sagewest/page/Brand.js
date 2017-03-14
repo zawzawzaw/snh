@@ -59,7 +59,10 @@ sagewest.page.Brand.prototype.init = function() {
   // this.create_instagram();
   
   this.others();
-  this.map_initialize();    
+  this.map_initialize();
+
+  this.creage_brand_slider();
+
 
   this.update_page_layout();    // this is called after the initial create to update the layout
 
@@ -76,6 +79,56 @@ sagewest.page.Brand.prototype.init = function() {
 //   | |___|  _ <| |___ / ___ \| | | |___
 //    \____|_| \_\_____/_/   \_\_| |_____|
 //
+
+
+
+
+
+
+
+sagewest.page.Brand.prototype.creage_brand_slider = function(){
+
+
+  if ($('#brand-all-location-slider-version-02').length != 0) {
+
+    $('#brand-all-location-slider-version-02').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#brand-all-location-slider-version-02').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+
+    this.home_brand_slider = $('#brand-all-location-slider-version-02').slick({
+      'speed': 350,
+      'dots': false,
+      // 'arrows': true,
+      'arrows': false,
+      'infinite': true,
+      'slidesToShow': 1,
+      'slidesToScroll': 1,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000,
+    });
+
+    
+    $('#brand-all-location-slider-prev-btn').click(function(event){
+      event.preventDefault();
+      $('#brand-all-location-slider-version-02').slick('slickPrev');
+
+    }.bind(this));
+
+    $('#brand-all-location-slider-next-btn').click(function(event){
+      event.preventDefault();
+      $('#brand-all-location-slider-version-02').slick('slickNext');
+
+    }.bind(this));
+
+
+  } // if
+
+};
 
 
 
