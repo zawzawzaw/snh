@@ -377,9 +377,15 @@ manic.ui.ImageContainer.prototype.update_layout = function() {
   this.window_width = this.window.width();
   this.window_height = this.window.height();
 
+
+  /*
+  // REMOVED BECAUSE BANNER HEIGHT IS NOT PROPERLY REFLECTED.
   if (manic.IS_MOBILE) {
     this.window_height = window.screen.height;
   }
+  */
+
+
 
   // window.screen.availHeight 
   
@@ -836,6 +842,6 @@ manic.ui.ImageContainer.prototype.on_image_load_complete = function(event) {
 //
 
 manic.ui.ImageContainer.prototype.on_image_visible = function(){
-  //console.log('this is visible');
+  console.log('this is visible');
   //console.log(this.element);
 };

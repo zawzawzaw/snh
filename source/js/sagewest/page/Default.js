@@ -69,6 +69,8 @@ sagewest.page.Default = function(options) {
   this.padding_array = [];
 
 
+  this.lazy_scene_array = [];
+
   
 
   /**
@@ -278,10 +280,44 @@ sagewest.page.Default.prototype.create_image_container = function() {
       'has_window_resize': false                                // updated manually by 'update_page_layout'
     }, item);
     this.manic_image_array[i] = image_container;
+
+
+
+    
+    // ADD LAZY LOAD
+    if (item.hasClass('has-lazy-load') == true) {
+      this.add_lazy_load(image_container);
+    } // if
+
   }
 
 
 };
+
+
+/**
+ * @param {manic.ui.ImageContainer} image_container_param
+ */
+sagewest.page.Default.prototype.add_lazy_load = function(image_container_param) {
+
+  
+  if (goog.isDefAndNotNull(image_container_param)) {
+    
+    var lazy_scene = new ScrollMagic.Scene({
+      triggerHook: 1,
+      triggerElement: image_container_param.element[0],
+    })
+    .addIndicators({name: ("" + Math.random()) })
+    .on('start', image_container_param.on_image_visible.bind(image_container_param))
+    .addTo(this.controller);
+
+    this.lazy_scene_array[this.lazy_scene_array.length] = lazy_scene;
+
+  }
+  
+
+};
+
 
 sagewest.page.Default.prototype.create_dropdown = function() {
   var arr = $('.manic-dropdown');

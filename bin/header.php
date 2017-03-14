@@ -47,8 +47,8 @@
         <div class="dropdown">
           <select name="hotel" id="hotel" class="hotel-dropdown">
             <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
             <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-            <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
             <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
           </select>
         </div>
