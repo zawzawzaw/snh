@@ -159,8 +159,8 @@
   <!-- DINING -->
 
   <div class="page-gallery-data-item"
-    data-title="Room Bed"
-    data-id="room-bed"
+    data-title="Title Lorem A"
+    data-id="title-a"
     data-category="dining"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -172,8 +172,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Purple Bed"
-    data-id="purple-bed"
+    data-title="Title Lorem B"
+    data-id="title-b"
     data-category="dining"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -185,8 +185,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Overhead Pool"
-    data-id="overhead-pool"
+    data-title="Title Lorem C"
+    data-id="title-c"
     data-category="dining"
     data-masonry-width="4"
     data-masonry-height="1"
@@ -198,8 +198,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Pool"
-    data-id="pool"
+    data-title="Title Lorem D"
+    data-id="title-d"
     data-category="dining"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -211,8 +211,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="White House"
-    data-id="white-house"
+    data-title="Title Lorem E"
+    data-id="title-e"
     data-category="dining"
     data-masonry-width="1"
     data-masonry-height="1"
@@ -224,8 +224,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Food Plater"
-    data-id="food-plater"
+    data-title="Title Lorem F"
+    data-id="title-f"
     data-category="dining"
     data-masonry-width="1"
     data-masonry-height="1"
@@ -237,8 +237,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Glass Door"
-    data-id="glass-door"
+    data-title="Title Lorem G"
+    data-id="title-g"
     data-category="dining"
     data-masonry-width="2"
     data-masonry-height="2"
@@ -259,8 +259,8 @@
   
 
   <div class="page-gallery-data-item"
-    data-title="Food Plater"
-    data-id="food-plater"
+    data-title="Title Lorem F"
+    data-id="title-f"
     data-category="facilities"
     data-masonry-width="1"
     data-masonry-height="1"
@@ -272,8 +272,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Room Bed"
-    data-id="room-bed"
+    data-title="Title Lorem A"
+    data-id="title-a"
     data-category="facilities"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -285,8 +285,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Purple Bed"
-    data-id="purple-bed"
+    data-title="Title Lorem B"
+    data-id="title-b"
     data-category="facilities"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -298,8 +298,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Overhead Pool"
-    data-id="overhead-pool"
+    data-title="Title Lorem C"
+    data-id="title-c"
     data-category="facilities"
     data-masonry-width="4"
     data-masonry-height="1"
@@ -311,8 +311,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Pool"
-    data-id="pool"
+    data-title="Title Lorem D"
+    data-id="title-d"
     data-category="facilities"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -324,8 +324,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="White House"
-    data-id="white-house"
+    data-title="Title Lorem E"
+    data-id="title-e"
     data-category="facilities"
     data-masonry-width="1"
     data-masonry-height="1"
@@ -344,8 +344,8 @@
   
 
   <div class="page-gallery-data-item"
-    data-title="White House"
-    data-id="white-house"
+    data-title="Title Lorem E"
+    data-id="title-e"
     data-category="activities"
     data-masonry-width="1"
     data-masonry-height="1"
@@ -357,8 +357,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Food Plater"
-    data-id="food-plater"
+    data-title="Title Lorem F"
+    data-id="title-f"
     data-category="activities"
     data-masonry-width="1"
     data-masonry-height="1"
@@ -370,8 +370,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Glass Door"
-    data-id="glass-door"
+    data-title="Title Lorem G"
+    data-id="title-g"
     data-category="activities"
     data-masonry-width="2"
     data-masonry-height="2"
@@ -383,8 +383,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Room Bed"
-    data-id="room-bed"
+    data-title="Title Lorem A"
+    data-id="title-a"
     data-category="activities"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -396,8 +396,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Purple Bed"
-    data-id="purple-bed"
+    data-title="Title Lorem B"
+    data-id="title-b"
     data-category="activities"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -409,8 +409,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Overhead Pool"
-    data-id="overhead-pool"
+    data-title="Title Lorem C"
+    data-id="title-c"
     data-category="activities"
     data-masonry-width="4"
     data-masonry-height="1"
@@ -422,8 +422,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Pool"
-    data-id="pool"
+    data-title="Title Lorem D"
+    data-id="title-d"
     data-category="activities"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -439,8 +439,8 @@
   <!-- EVENTS -->
 
   <div class="page-gallery-data-item"
-    data-title="Glass Door"
-    data-id="glass-door"
+    data-title="Title Lorem G"
+    data-id="title-g"
     data-category="events"
     data-masonry-width="2"
     data-masonry-height="2"
@@ -452,8 +452,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Room Bed"
-    data-id="room-bed"
+    data-title="Title Lorem A"
+    data-id="title-a"
     data-category="events"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -465,8 +465,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Purple Bed"
-    data-id="purple-bed"
+    data-title="Title Lorem B"
+    data-id="title-b"
     data-category="events"
     data-masonry-width="2"
     data-masonry-height="1"
@@ -478,8 +478,8 @@
   </div>
 
   <div class="page-gallery-data-item"
-    data-title="Pool"
-    data-id="pool"
+    data-title="Title Lorem D"
+    data-id="title-d"
     data-category="events"
     data-masonry-width="2"
     data-masonry-height="1"

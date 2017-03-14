@@ -184,6 +184,8 @@
             </div>
           </div> <!-- row -->
 
+          <div class="space20"></div>
+
           <div class="form-group">
             <label>Inquiry<span class="asterisk-span">*</span></label>
             <textarea id="contact-form-inquiry" name="contact-form-inquiry" class="required"></textarea>

@@ -312,12 +312,21 @@
       text-align: left;
       display: block;
 
-      overflow: hidden;
-      max-height: 0px;
-      .transition-in(0.3s);
+      position: absolute;
+      bottom: -20px;
+      width: 100%;
+
+      //overflow: hidden;
+      //max-height: 0px;
+      // .transition-in(0.3s);
+      .transition-in(0.2s);
+      .opacity(0);
 
       content: attr(data-error);
       padding-top: 0px;
+
+
+
 
       // TABLET PORTRAIT & SMALL DESKTOP
       @media only screen and (max-width: 991px) {
@@ -331,8 +340,8 @@
       
       
       padding-top: 3px;
-      max-height: 20px;       // remove space from bottom
-
+      // max-height: 20px;       // remove space from bottom
+      .opacity(1);
       
     }
 

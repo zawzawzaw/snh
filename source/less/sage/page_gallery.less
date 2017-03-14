@@ -234,6 +234,13 @@
     bottom: @gallery-gutter / 2;
     left: @gallery-gutter / 2;
     right: @gallery-gutter / 2;
+
+
+    // .transition-in-single(opacity);
+    
+    &:hover{
+      .opacity(0.5);
+    }
     
     .manic-image-container{
       position: absolute;
@@ -495,7 +502,11 @@
   padding-left: @gallery-thumbnail-gutter;
   padding-right: @gallery-thumbnail-gutter;
 
+  .transition-in-single(opacity);
 
+  &:hover{
+    .opacity(0.5);
+  }
 
   .manic-image-container{
     display: block;
