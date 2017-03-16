@@ -7222,6 +7222,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   left: auto;
   right: 18px;
 }
+.detail-banner-slider-section .detail-banner-slider .slick-dots {
+  display: none!important;
+}
 .detail-banner-slider-section .detail-banner-slider-item .manic-image-container {
   height: 670px;
 }
@@ -7230,10 +7233,60 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-bottom: 30px;
   }
   .detail-banner-slider-section .detail-banner-slider-title {
+    text-align: left;
+  }
+  .detail-banner-slider-section .detail-banner-slider-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .detail-banner-slider-section .detail-banner-slider .slick-prev,
+  .detail-banner-slider-section .detail-banner-slider .slick-next {
+    display: none!important;
+  }
+  .detail-banner-slider-section .detail-banner-slider .slick-dots {
+    display: block!important;
+    width: 100%;
+    height: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     text-align: center;
   }
+  .detail-banner-slider-section .detail-banner-slider .slick-dots li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
+  }
+  .detail-banner-slider-section .detail-banner-slider .slick-dots li button {
+    border: none;
+    background: none;
+    text-indent: -9999px;
+    position: relative;
+  }
+  .detail-banner-slider-section .detail-banner-slider .slick-dots li button:before {
+    content: "";
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #747474;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+  }
+  .detail-banner-slider-section .detail-banner-slider .slick-dots li.slick-active button:before {
+    background-color: #7d0052;
+  }
   .detail-banner-slider-section .detail-banner-slider-item .manic-image-container {
-    height: 350px;
+    height: 200px;
   }
 }
 .add-flipper-function .flip-container {
@@ -10990,12 +11043,14 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
     color: #7d0052;
   }
 }
-#detail-page-content-section {
+#detail-page-content-section,
+#detail-page-content-section-mobile {
   padding-top: 60px;
   padding-bottom: 30px;
 }
 @media all and (max-width: 991px) {
-  #detail-page-content-section {
+  #detail-page-content-section,
+  #detail-page-content-section-mobile {
     padding-top: 0px;
   }
 }
@@ -11058,6 +11113,48 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   height: 410px;
 }
 @media only screen and (max-width: 991px) {
+  #detail-page-content {
+    background: #fcf8f7;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+  }
+  #detail-page-content .detail-page-content-description {
+    margin-bottom: 0px;
+  }
+  #detail-page-content .detail-page-content-description a.read-more {
+    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.08em;
+    color: #707070;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-top: 25px;
+  }
+  #detail-page-content .detail-page-content-description a.read-more:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f107";
+    font-size: 13px;
+    line-height: 12px;
+    color: #707070;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1;
+    padding-left: 10px;
+  }
   #detail-page-content .detail-page-content-image .manic-image-container {
     height: 250px;
   }
@@ -11071,6 +11168,12 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   padding-right: 30px;
   -webkit-box-shadow: 1px 1px 8px #e5e5e5;
   box-shadow: 1px 1px 8px #e5e5e5;
+}
+@media all and (max-width: 991px) {
+  .detail-page-contact-info {
+    padding: 0px;
+    box-shadow: none;
+  }
 }
 .detail-page-contact-info .detail-page-contact-info-title {
   margin-bottom: 29px;
@@ -11114,6 +11217,85 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 .detail-page-contact-info .cta-container .arrow-cta + .dimmi-book-cta:before {
   content: '';
   display: block;
+}
+@media all and (max-width: 991px) {
+  .detail-page-contact-info .cta-container .arrow-cta + .dimmi-book-cta {
+    margin-top: 25px;
+  }
+}
+.detail-page-contact-info ul li p,
+.detail-page-contact-info ul li a {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  color: #929090;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.detail-page-contact-info ul li p span,
+.detail-page-contact-info ul li a span {
+  width: 85%;
+  display: inline-block;
+  word-wrap: break-word;
+}
+.detail-page-contact-info ul li p.address:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f041";
+  font-size: 25px;
+  letter-spacing: 0.08em;
+  color: #4a443d;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  padding-right: 10px;
+}
+.detail-page-contact-info ul li p.phoneno:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f095";
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: #4a443d;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.detail-page-contact-info ul li p.phoneno span {
+  vertical-align: middle;
+}
+.detail-page-contact-info ul li a.email:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f0e0";
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: #4a443d;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding-right: 10px;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+.detail-page-contact-info ul li a.email span {
+  vertical-align: middle;
 }
 .detail-page-menu-info .detail-page-menu-info-item {
   margin-bottom: 37px;

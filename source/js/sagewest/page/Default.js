@@ -442,7 +442,7 @@ sagewest.page.Default.prototype.create_detail_page = function(){
 
     this.detail_banner_carousel = $('.detail-banner-slider').slick({
       'speed': 350,
-      'dots': false,
+      'dots': true,
       'arrows': true,
       // 'infinite': false,
       'infinite': true,
