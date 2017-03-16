@@ -86,6 +86,379 @@
   </div>
 </article> <!-- index-page-title-section -->
 
+
+
+<!--
+    ____ ___  _   _ _____ _____ _   _ _____
+   / ___/ _ \| \ | |_   _| ____| \ | |_   _|
+  | |  | | | |  \| | | | |  _| |  \| | | |
+  | |__| |_| | |\  | | | | |___| |\  | | |
+   \____\___/|_| \_| |_| |_____|_| \_| |_|
+
+-->
+
+
+
+<article id="room-index-page-list-section">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+
+      <div id="room-index-page-item-container" class="boxlist-item-container">
+
+
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="room-index-page-item boxlist-item">
+              <div class="room-index-page-item-box boxlist-item-box">
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src=""
+                      data-image="images_cms/room/room-index-standard-room.jpg"
+                      data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                  </div>
+                </div>
+
+                <div class="room-index-page-item-title">
+                  <h5>Standard Room</h5>
+                </div>
+
+                <div class="room-index-page-item-detail boxlist-item-content-room-detail">
+                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-size">25 SQM</p>
+                </div>
+
+                
+                <div class="room-index-page-item-content-copy">
+                  <div class="default-copy">
+                    <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta">
+
+                  <div class="room-index-page-item-arrow-cta-container">
+                    <a href="room_detail.php" class="arrow-cta">View room details</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                    </div>
+                    <div class="col-xs-6">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$119</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- room-index-page-item -->
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="room-index-page-item boxlist-item">
+              <div class="room-index-page-item-box boxlist-item-box">
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src=""
+                      data-image="images_cms/room/room-index-standard-room.jpg"
+                      data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                  </div>
+                </div>
+
+                <div class="room-index-page-item-title">
+                  <h5>Standard Twin Room</h5>
+                </div>
+
+                <div class="room-index-page-item-detail boxlist-item-content-room-detail">
+                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-size">25 SQM</p>
+                </div>
+
+                
+                <div class="room-index-page-item-content-copy">
+                  <div class="default-copy">
+                    <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta">
+
+                  <div class="room-index-page-item-arrow-cta-container">
+                    <a href="room_detail.php" class="arrow-cta">View room details</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                    </div>
+                    <div class="col-xs-6">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$119</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- room-index-page-item -->
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="room-index-page-item boxlist-item">
+              <div class="room-index-page-item-box boxlist-item-box">
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src=""
+                      data-image="images_cms/room/room-index-standard-room.jpg"
+                      data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                  </div>
+                </div>
+
+                <div class="room-index-page-item-title">
+                  <h5>Superior Room</h5>
+                </div>
+
+                <div class="room-index-page-item-detail boxlist-item-content-room-detail">
+                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-size">25 SQM</p>
+                </div>
+
+                
+                <div class="room-index-page-item-content-copy">
+                  <div class="default-copy">
+                    <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta">
+
+                  <div class="room-index-page-item-arrow-cta-container">
+                    <a href="room_detail.php" class="arrow-cta">View room details</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                    </div>
+                    <div class="col-xs-6">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$135</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- room-index-page-item -->
+          </div> <!-- col-md-4 -->
+
+        </div> <!-- row -->
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="room-index-page-item boxlist-item">
+              <div class="room-index-page-item-box boxlist-item-box">
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src=""
+                      data-image="images_cms/room/room-index-standard-room.jpg"
+                      data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                  </div>
+                </div>
+
+                <div class="room-index-page-item-title">
+                  <h5>Superior Twin Room</h5>
+                </div>
+
+                <div class="room-index-page-item-detail boxlist-item-content-room-detail">
+                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-size">25 SQM</p>
+                </div>
+
+                
+                <div class="room-index-page-item-content-copy">
+                  <div class="default-copy">
+                    <p>These corner rooms offer extra living space to help stretch your legs. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta">
+
+                  <div class="room-index-page-item-arrow-cta-container">
+                    <a href="room_detail.php" class="arrow-cta">View room details</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                    </div>
+                    <div class="col-xs-6">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$135</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- room-index-page-item -->
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="room-index-page-item boxlist-item">
+              <div class="room-index-page-item-box boxlist-item-box">
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src=""
+                      data-image="images_cms/room/room-index-standard-room.jpg"
+                      data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                  </div>
+                </div>
+
+                <div class="room-index-page-item-title">
+                  <h5>Deluxe Room</h5>
+                </div>
+
+                <div class="room-index-page-item-detail boxlist-item-content-room-detail">
+                  <p class="detail-person">3 adults, 2 children</p>
+                  <p class="detail-size">35 SQM</p>
+                </div>
+
+                
+                <div class="room-index-page-item-content-copy">
+                  <div class="default-copy">
+                    <p>These corner rooms offer extra living space to help stretch your legs. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta">
+
+                  <div class="room-index-page-item-arrow-cta-container">
+                    <a href="room_detail.php" class="arrow-cta">View room details</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                    </div>
+                    <div class="col-xs-6">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$235</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- room-index-page-item -->
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-4">
+            <div class="room-index-page-item boxlist-item">
+              <div class="room-index-page-item-box boxlist-item-box">
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src=""
+                      data-image="images_cms/room/room-index-standard-room.jpg"
+                      data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                  </div>
+                </div>
+
+                <div class="room-index-page-item-title">
+                  <h5>Deluxe Twin Room</h5>
+                </div>
+
+                <div class="room-index-page-item-detail boxlist-item-content-room-detail">
+                  <p class="detail-person">3 adults, 2 children</p>
+                  <p class="detail-size">35 SQM</p>
+                </div>
+
+                
+                <div class="room-index-page-item-content-copy">
+                  <div class="default-copy">
+                    <p>These corner rooms offer extra living space to help stretch your legs. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta">
+
+                  <div class="room-index-page-item-arrow-cta-container">
+                    <a href="room_detail.php" class="arrow-cta">View room details</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                    </div>
+                    <div class="col-xs-6">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$235</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- room-index-page-item -->
+          </div> <!-- col-md-4 -->
+
+        </div> <!-- row -->
+
+
+
+
+      </div> <!-- room-index-page-item-container -->
+
+      
+    </div>
+  </div>
+</article>
+
+
+
+
+<!-- 
 <article id="detail-list-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
@@ -258,6 +631,11 @@
     </div>
   </div>
 </article>
+-->
+
+
+
+
 
 
 

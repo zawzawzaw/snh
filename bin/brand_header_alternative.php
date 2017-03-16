@@ -16,7 +16,7 @@
           <div id="desktop-header-logo-container">
             <a href="#" id="desktop-menu-bar" class="open">
               <img src="images/icons/menu-bar.svg" alt="">     
-              <span>Menu</span>       
+              <span>Hotels</span>       
             </a>
             <a href="index.php" id="desktop-header-logo">
               <img src="images/logo/sage-west-logo.svg">            
@@ -100,9 +100,10 @@
           <label for="">Promotion Code</label>
           <input type="text" name="promo_code">
         </div>
-        <div class="input-box">
-          <input type="submit" class="check-availability square-cta" value="check availability">
+        <div class="cta-container">
+          <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
         </div>
+        
       </form>
   </div>
   <div id="desktop-header-booking-calendar">
@@ -110,33 +111,28 @@
   </div>
 </header> <!-- #desktop-header -->
 
-<div id="desktop-header-menu">          
-  <div id="sage-links" class="full-height">
-    <!-- <div class="scroll-container"> -->
-      <div class="scroller">
-        <ul>
-          <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
-          <li><a href="hotel.php">Country Comfort Adelaide Manor</a></li>
-          <li><a href="hotel.php">Country Comfort Amity Motel Albany</a></li>
-          <li><a href="hotel.php">Country Comfort Armidale</a></li>
-          <li><a href="hotel.php">Country Comfort Bundaberg International</a></li>
-          <li><a href="hotel.php">Country Comfort Coffs Harbour</a></li>
-          <li><a href="hotel.php">Country Comfort gin gin</a></li>
-          <li><a href="hotel.php">Country Comfort hunts liverpool</a></li>   
-          <li><a href="hotel.php">Country Comfort Inter City Perth</a></li>   
-          <li><a href="hotel.php">Country Comfort Inter Mt Gambier</a></li>   
-          <li><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></li>   
-          <li><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
-          <li><a href="hotel.php">Country Comfort Toowoomba</a></li>   
-        </ul>        
-      </div>
-      <!-- <div id="hoverscroll"><i class="fa fa-angle-down" aria-hidden="true"></i></div> -->
-    <!-- </div> -->
+<div id="desktop-header-menu">
+
+  <div id="destination-indicator">
+    <p>Select a destination:</p>
+  </div>
+  <div id="country-indicator">
+    <p>Australia</p>
+  </div>
+
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">Adelaide</a></li>
+      <li><a href="hotel.php">brisbane</a></li>
+      <li><a href="hotel.php">west perth</a></li>
+      <li><a href="hotel.php">wollongong</a></li>
+    </ul>        
+    
   </div>
   <div id="brand-link" class="menu-link">
     <a href="#"><span>Our Brands</span></a>
   </div>
   <div id="group-link" class="menu-link">
-    <a href="#"><span>SilverNeedle™ <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
   </div>
 </div>

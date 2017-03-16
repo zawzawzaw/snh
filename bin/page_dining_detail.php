@@ -291,15 +291,25 @@
             <h4>Current promotions</h4>
           </div>
 
-          <div class="detail-page-more-item-container">
+          <div id="dining-detail-page-item-container" class="boxlist-item-container">
             <div class="row">
 
+
+              <!--
+                  ___  _
+                 / _ \/ |
+                | | | | |
+                | |_| | |
+                 \___/|_|
+
+              -->
+
               <div class="col-md-4">
-                <div class="detail-page-more-item">
+                <div class="dining-detail-page-item boxlist-item">
 
-                  <div class="detail-page-more-item-content-box">
+                  <div class="dining-detail-page-item-box boxlist-item-box">
 
-                    <div class="detail-page-more-item-content-image">
+                    <div class="boxlist-item-content-image">
                       <div class="manic-image-container">
                         <img src=""
                           data-image-desktop="images_cms/dining/dining-detail-promotion-01.jpg"
@@ -307,7 +317,7 @@
                           data-image-mobile="images_cms/dining/dining-detail-promotion-01-mobile.jpg">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="dining-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>1-for-1 Tapas</h5>
                         <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
@@ -316,18 +326,23 @@
                           <li>3-course dinner with choice of dish</li>
                           <li>Complimentary bottle of red or white wine</li>
                           <li>Live jazz singer duo</li>
+                          <li>Live jazz singer duo</li>
+                          <li>Live jazz singer duo</li>
+                          <li>Live jazz singer duo</li>
+                          <li>Live jazz singer duo</li>
                         </ul>
                         <h6>Also open for a la carte bookings with valentine’s day dessert specials</h6>
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-cta">
+
+                    <div class="boxlist-item-content-cta">
                       <div class="row">
                         <div class="col-xs-6">
                           <a href="javascript:void(0);" class="square-cta">Contact us</a>
                         </div>
                         <div class="col-xs-6">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>Min. Spend/pax</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -338,13 +353,22 @@
                         </div>
                       </div>
                     </div>
-                  </div> <!-- detail-page-more-item-content-box -->
+                  </div> <!-- boxlist-item-content-box -->
 
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- dining-detail-page-item -->
               </div> <!-- col-md-4 -->
 
+              <!--
+                  ___ ____
+                 / _ \___ \
+                | | | |__) |
+                | |_| / __/
+                 \___/_____|
+
+              -->
+
               <div class="col-md-4">
-                <div class="detail-page-more-item">
+                <div class="dining-detail-page-item boxlist-item">
 
 
                   
@@ -352,9 +376,9 @@
                     <div class="flipper">
                       <div class="front">
 
-                        <div class="detail-page-more-item-content-box">
+                        <div class="dining-detail-page-item-box boxlist-item-box">
 
-                          <div class="detail-page-more-item-content-image">
+                          <div class="boxlist-item-content-image">
                             <div class="manic-image-container">
                               <img src=""
                                 data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
@@ -362,7 +386,7 @@
                                 data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
                             </div>
                           </div>
-                          <div class="detail-page-more-item-content-copy">
+                          <div class="dining-detail-page-item-content-copy">
                             <div class="default-copy">
                               <h5>Sage Amour</h5>
                               <p>Why fly to Rome when you can Sage Amour? </p>
@@ -380,8 +404,8 @@
                               </div>
 
                             </div>
-                          </div> <!-- detail-page-more-item-content-copy -->
-                          <div class="detail-page-more-item-content-cta">
+                          </div> <!-- dining-detail-page-item-content-copy -->
+                          <div class="boxlist-item-content-cta">
                             <div class="row">
                               <div class="col-xs-6">
                                 <a href="javascript:void(0);" class="square-cta">Contact us</a>
@@ -391,13 +415,13 @@
                               </div>
                             </div>
                           </div>
-                        </div> <!-- detail-page-more-item-content-box -->
+                        </div> <!-- boxlist-item-content-box -->
                         
                       </div> <!-- front -->
                       <div class="back">
 
-                        <div class="detail-page-more-item-content-box">
-                          <div class="detail-page-more-item-content-copy">
+                        <div class="dining-detail-page-item-box boxlist-item-box">
+                          <div class="dining-detail-page-item-content-copy">
                             <div class="default-copy">
 
                               <h5>Sage Amour</h5>
@@ -417,21 +441,30 @@
 
 
                             </div>
-                          </div> <!-- detail-page-more-item-content-copy -->
+                          </div> <!-- dining-detail-page-item-content-copy -->
                         </div>
                       </div> <!-- back -->
                     </div> <!-- flipper -->
                   </div> <!-- flip-container -->
                   
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- dining-detail-page-item -->
               </div>
 
+              <!--
+                  ___ _____
+                 / _ \___ /
+                | | | ||_ \
+                | |_| |__) |
+                 \___/____/
+
+              -->
+
               <div class="col-md-4">
-                <div class="detail-page-more-item">
+                <div class="dining-detail-page-item boxlist-item">
 
-                  <div class="detail-page-more-item-content-box">
+                  <div class="dining-detail-page-item-box boxlist-item-box">
 
-                    <div class="detail-page-more-item-content-image">
+                    <div class="boxlist-item-content-image">
                       <div class="manic-image-container">
                         <img src=""
                           data-image-desktop="images_cms/dining/dining-detail-promotion-03.jpg"
@@ -439,7 +472,7 @@
                           data-image-mobile="images_cms/dining/dining-detail-promotion-03-mobile.jpg">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="dining-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>Valentine’s Day</h5>
                         <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
@@ -452,14 +485,14 @@
                         <h6>Also open for a la carte bookings with valentine’s day dessert specials</h6>
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-cta">
+                    <div class="boxlist-item-content-cta">
                       <div class="row">
                         <div class="col-xs-6">
                           <a href="javascript:void(0);" class="square-cta">Contact us</a>
                         </div>
                         <div class="col-xs-6">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>per pax</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -470,15 +503,15 @@
                         </div>
                       </div>
                     </div>
-                  </div> <!-- detail-page-more-item-content-box -->
+                  </div> <!-- dining-detail-page-item-box -->
 
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- dining-detail-page-item -->
               </div>
 
 
 
             </div> <!-- row -->
-          </div> <!-- detail-page-more-item-container -->
+          </div> <!-- dining-detail-page-item-container -->
           
         </div> <!-- detail-page-more -->
         

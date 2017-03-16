@@ -7,7 +7,7 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="index.php" id="mobile-header-logo">
+    <a href="hotel.php" id="mobile-header-logo">
       <img src="images/logo/sage-west-logo.svg">
     </a>  
   

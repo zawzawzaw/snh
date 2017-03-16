@@ -453,29 +453,37 @@
             <h4>more accommodation choices</h4>
           </div>
 
-          <div class="detail-page-more-item-container">
+          <div id="room-detail-page-item-container" class="boxlist-item-container">
             <div class="row">
 
+              <!--
+                  ___  _
+                 / _ \/ |
+                | | | | |
+                | |_| | |
+                 \___/|_|
+
+              -->
+
               <div class="col-md-4">
-                <div class="detail-page-more-item">
+                <div class="room-detail-page-item boxlist-item">
+                  <div class="room-detail-page-item-box boxlist-item-box">
 
-                  <div class="detail-page-more-item-content-box">
-
-                    <div class="detail-page-more-item-content-image">
+                    <div class="boxlist-item-content-image short-version">
                       <div class="manic-image-container">
                         <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>Standard Room</h5>
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-cta">
+                    <div class="room-detail-page-item-content-detail">
                       <div class="row">
                         <div class="col-xs-7">
 
-                          <div class="detail-page-more-item-room-detail">
+                          <div class="boxlist-item-content-room-detail">
                             <p class="detail-person">2 adults, 2 children</p>
                             <p class="detail-size">25 SQM</p>
                           </div>
@@ -483,7 +491,7 @@
                         </div>
                         <div class="col-xs-5">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -494,39 +502,44 @@
                         </div>
                       </div>
 
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="detail-page-more-item-extra-cta-container">
-                            <a href="room_detail.php" class="arrow-cta">View room details</a>
-                          </div>
-                        </div>
-                      </div>
+                    </div> <!-- room-detail-page-item-content-detail -->
 
-                    </div> <!-- detail-page-more-item-content-cta -->
-                  </div> <!-- detail-page-more-item-content-box -->
+                    <div class="room-detail-page-item-cta-container">
+                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                    </div>
+                  </div> <!-- boxlist-item-box -->
 
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- room-detail-page-item -->
               </div> <!-- col-md-4 -->
 
-              <div class="col-md-4">
-                <div class="detail-page-more-item">
-                  <div class="detail-page-more-item-content-box">
+              <!--
+                  ___ ____
+                 / _ \___ \
+                | | | |__) |
+                | |_| / __/
+                 \___/_____|
 
-                    <div class="detail-page-more-item-content-image">
+              -->
+
+              <div class="col-md-4">
+                <div class="room-detail-page-item boxlist-item">
+                  <div class="room-detail-page-item-box boxlist-item-box">
+
+                    <div class="boxlist-item-content-image short-version">
                       <div class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>Deluxe Room</h5>
                       </div>
-                    </div> <!-- detail-page-more-item-content-copy -->
-                    <div class="detail-page-more-item-content-cta">
+                    </div> <!-- room-detail-page-item-content-copy -->
+                    <div class="room-detail-page-item-content-detail">
                       <div class="row">
                         <div class="col-xs-8">
 
-                          <div class="detail-page-more-item-room-detail">
+                          <div class="boxlist-item-content-room-detail">
                             <p class="detail-person">2 adults, 2 children</p>
                             <p class="detail-size">25 SQM</p>
                           </div>
@@ -534,7 +547,7 @@
                         </div>
                         <div class="col-xs-4">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -544,39 +557,45 @@
 
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="detail-page-more-item-extra-cta-container">
-                            <a href="room_detail.php" class="arrow-cta">View room details</a>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div> <!-- detail-page-more-item-content-box -->
+
+                    <div class="room-detail-page-item-cta-container">
+                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                    </div>
+                  </div> <!-- boxlist-item-box -->
                   
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- room-detail-page-item -->
               </div>
 
+              <!--
+                  ___ _____
+                 / _ \___ /
+                | | | ||_ \
+                | |_| |__) |
+                 \___/____/
+
+              -->
+
               <div class="col-md-4">
-                <div class="detail-page-more-item">
+                <div class="room-detail-page-item boxlist-item">
 
-                  <div class="detail-page-more-item-content-box">
+                  <div class="room-detail-page-item-box boxlist-item-box">
 
-                    <div class="detail-page-more-item-content-image">
+                    <div class="boxlist-item-content-image short-version">
                       <div class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>Superior Room</h5>
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-cta">
+                    <div class="room-detail-page-item-content-detail">
                       <div class="row">
                         <div class="col-xs-8">
 
-                          <div class="detail-page-more-item-room-detail">
+                          <div class="boxlist-item-content-room-detail">
                             <p class="detail-person">2 adults, 2 children</p>
                             <p class="detail-size">25 SQM</p>
                           </div>
@@ -584,7 +603,7 @@
                         </div>
                         <div class="col-xs-4">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -594,17 +613,13 @@
                           
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="detail-page-more-item-extra-cta-container">
-                            <a href="room_detail.php" class="arrow-cta">View room details</a>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div> <!-- detail-page-more-item-content-box -->
+                    <div class="room-detail-page-item-cta-container">
+                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                    </div>
+                  </div> <!-- boxlist-item-box -->
 
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- room-detail-page-item -->
               </div>
 
 

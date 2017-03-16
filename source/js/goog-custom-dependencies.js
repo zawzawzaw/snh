@@ -32,6 +32,7 @@ goog.addDependency('../../../../js/manic/util/JsonImagePreloaderMobile.js', ['ma
 goog.addDependency('../../../../js/manic/util/JsonParser.js', ['manic.util.JsonParser'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/manic/util/StringUtil.js', ['manic.util.StringUtil'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/manic/video/VideoJSPlayer.js', ['manic.video.VideoJSPlayer'], ['goog.events.Event', 'goog.events.EventTarget']);
+goog.addDependency('../../../../js/sagewest/component/BoxList.js', ['sagewest.component.BoxList'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/GalleryData.js', ['sagewest.component.GalleryData'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/GalleryDetailTab.js', ['sagewest.component.GalleryDetailTab'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/GalleryIndexTab.js', ['sagewest.component.GalleryIndexTab'], ['goog.events.Event', 'goog.events.EventTarget', 'sagewest.component.GalleryData']);
@@ -39,7 +40,7 @@ goog.addDependency('../../../../js/sagewest/component/GenericMap.js', ['sagewest
 goog.addDependency('../../../../js/sagewest/component/MobileHeader.js', ['sagewest.component.MobileHeader'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/PackagesPopup.js', ['sagewest.component.PackagesPopup'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/page/Brand.js', ['sagewest.page.Brand'], ['manic.google.Map', 'sagewest.page.Default']);
-goog.addDependency('../../../../js/sagewest/page/Default.js', ['sagewest.page.Default'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.page.Page', 'manic.ui.Dropdown', 'manic.ui.FormCheck', 'manic.ui.ImageContainer', 'manic.ui.ImageContainerPadding', 'manic.ui.TextPadding', 'sagewest.component.GenericMap', 'sagewest.component.MobileHeader', 'sagewest.component.PackagesPopup']);
+goog.addDependency('../../../../js/sagewest/page/Default.js', ['sagewest.page.Default'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.page.Page', 'manic.ui.Dropdown', 'manic.ui.FormCheck', 'manic.ui.ImageContainer', 'manic.ui.ImageContainerPadding', 'manic.ui.TextPadding', 'sagewest.component.BoxList', 'sagewest.component.GenericMap', 'sagewest.component.MobileHeader', 'sagewest.component.PackagesPopup']);
 goog.addDependency('../../../../js/sagewest/page/Gallery.js', ['sagewest.page.Gallery'], ['manic.google.Map', 'sagewest.component.GalleryData', 'sagewest.component.GalleryDetailTab', 'sagewest.component.GalleryIndexTab', 'sagewest.page.Default']);
 goog.addDependency('../../../../js/sagewest/page/Home.js', ['sagewest.page.Home'], ['manic.google.Map', 'sagewest.page.Default']);
 goog.addDependency('../../../../js/sagewest/page/Hotel.js', ['sagewest.page.Hotel'], ['manic.google.Map', 'sagewest.page.Default']);
