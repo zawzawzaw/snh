@@ -63,7 +63,7 @@ ob_start();
 
                   <div id="error-404-page-content">
                     <h1>We’ve looked everywhere.</h1>
-                    <p>What you’re looking for doesn’t seem to exist.</p>
+                    <p>We cant find the URL you are looking for.</p>
                     <div class="cta-container">
                       <a href="index.php" class="square-cta highlight-version">Back to Home</a>
                     </div>

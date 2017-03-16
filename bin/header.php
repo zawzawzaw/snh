@@ -111,6 +111,13 @@
 </header> <!-- #desktop-header -->
 
 <div id="desktop-header-menu">          
+  <div id="destination-indicator">
+    <p>Select a destination:</p>
+  </div>
+  <div id="country-indicator">
+    <p>Australia</p>
+  </div>
+  
   <div id="sage-links">
     <ul>
       <li><a href="hotel.php">sage adelaide</a></li>

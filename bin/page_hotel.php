@@ -66,12 +66,12 @@
               <li><a href="#">Offers</a></li>
               <li><a href="dining_index.php">Dining</a></li>
               <li><a href="#">Facilities</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
               <li><a href="#">Activities</a></li>
               <!-- <li><a href="#">Location</a></li> -->
               <li><a href="#">Reviews</a></li>
               <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
           </nav>
       </div>
@@ -94,7 +94,7 @@
     <div class="row">
       <div class="col-md-12">
         <div id="hotel-introduction-breadcrumb">
-          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
+          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="brand.php">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
         </div>
         <div id="hotel-introduction-title">
           <h1>We’re so glad to have you stay</h1>
@@ -180,7 +180,7 @@
 
 <div class="scroll-target" data-value="accommodation"></div>
 <article id="default-room-section">
-  <div class="container-fluid had-breakpoint">
+  <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
 
