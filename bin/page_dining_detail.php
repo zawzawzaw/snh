@@ -211,13 +211,14 @@
 
               <div class="dimmi-book-cta-container">
 
-                <!-- code from dimmi -->
                 <!-- https://www.dimmi.com.au/widget-embed-code/33719?key=5rDmNrPfQhrTDVAYeXXs3nWdtMdbD4ybvk1NU9vZEUA%3D -->
+                <!-- code from dimmi -->
                 <a href="https://www.dimmi.com.au/make-booking/kirrabelle-kitchen?mode=Widget" target="_blank" rel="nofollow" class="dimmi-button">
                   <img src="https://widget.dimmi.com.au/Shared/RestaurantButtons/33719-dp.gif" alt="Book Online - Free, Instant, Guaranteed." />
                 </a>
-                
                 <script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33719"></script>
+                <!-- end code from dimmi -->
+
               </div>
 
             </div>
@@ -532,101 +533,219 @@
 </article> <!-- detail-page-more-section -->
 
 
+
+<!--
+   __  __  ___  ____ ___ _     _____
+  |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |\/| | | | |  _ \| || |   |  _|
+  | |  | | |_| | |_) | || |___| |___
+  |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
 <article id="detail-page-content-section-mobile" class="visible-sm visible-xs">
+
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-sm-12">
-        <div id="detail-page-content-sidebar">
-          <div class="detail-page-contact-info visible-xs visible-sm">
-            <ul>
-              <li><p class="address"><span>Firehouse Restaurant Perth, <br>249 Great Eastern Highway Belmont WA 6104</span></p></li>
-              <li><p class="phoneno"><span>08-94780899</span></p></li>
-              <li><a class="email" href="mailto:firehouse.intercityperth@snhgroup.com"><span>firehouse.intercityperth@snhgroup.com</span></a></li>
-            </ul>
-            <div class="cta-container">
-              <a href="" class="arrow-cta">Visit Restaurant Website</a>
-              <a href="javascript:void(0);" class="dimmi-book-cta"></a>
+
+        <div class="detail-page-contact-info">
+          <ul>
+            <li><p class="address"><span>Firehouse Restaurant Perth, <br>249 Great Eastern Highway Belmont WA 6104</span></p></li>
+            <li><p class="phoneno"><span>08-94780899</span></p></li>
+            <li><a class="email" href="mailto:firehouse.intercityperth@snhgroup.com"><span>firehouse.intercityperth@snhgroup.com</span></a></li>
+          </ul>
+          <div class="cta-container">
+            <a href="" class="arrow-cta">Visit Restaurant Website</a>
+            <!-- <a href="javascript:void(0);" class="dimmi-book-cta"></a> -->
+
+            <div class="dimmi-book-cta-container">
+
+              <!-- https://www.dimmi.com.au/widget-embed-code/33719?key=5rDmNrPfQhrTDVAYeXXs3nWdtMdbD4ybvk1NU9vZEUA%3D -->
+              <!-- code from dimmi -->
+              <a href="https://www.dimmi.com.au/make-booking/kirrabelle-kitchen?mode=Widget" target="_blank" rel="nofollow" class="dimmi-button">
+                <img src="https://widget.dimmi.com.au/Shared/RestaurantButtons/33719-dp.gif" alt="Book Online - Free, Instant, Guaranteed." />
+              </a>
+              <script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33719"></script>
+              <!-- end code from dimmi -->
+
             </div>
+
+          </div>
+        </div> <!-- detail-page-contact-info -->
+
+
+      </div>
+    </div> <!-- row -->
+
+  </div> <!-- container-fluid -->
+
+
+
+  <div id="detail-page-content">
+    <div class="detail-page-content-title">
+      <h5>The best rooftop bar in West Perth. </h5>
+    </div>
+
+    <div class="detail-page-content-description">
+      <div class="default-copy">
+        <p>Chilling out sky-high over the rest of the city, refreshment in hand, is truly one of life’s great pleasures. Brisbane has what not many of the other capital cities can... </p>
+      </div>
+      <div class="read-more-cta-container">
+        <a href="#" class="read-more">Read more</a>
+      </div>
+    </div>
+  </div> <!-- detail-page-content -->
+
+</article> <!-- detail-page-content-section-mobile -->
+
+
+
+<article id="detail-page-expanding-content-section" class="visible-sm visible-xs">
+
+  <div class="manic-expand-container" data-group="mobile-dining-detail-page">
+    <div class="scroll-target" data-value="title-01"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>this is a title</h4>
+
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
 
-        <div id="detail-page-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
 
-          <!--
-              ___ ___  _  _ _____ ___ _  _ _____   ___ _____ _   ___ _____
-             / __/ _ \| \| |_   _| __| \| |_   _| / __|_   _/_\ | _ \_   _|
-            | (_| (_) | .` | | | | _|| .` | | |   \__ \ | |/ _ \|   / | |
-             \___\___/|_|\_| |_| |___|_|\_| |_|   |___/ |_/_/ \_\_|_\ |_|
-          -->
+            <div class="detail-page-menu-info">
 
-          
-          <div class="detail-page-content-title">
-            <h5>The best rooftop bar in West Perth. </h5>
+              <div class="detail-page-menu-info-item">
+                <h4>Breakfast</h4>
+                <p>Mon – Fri: 6am to 9am</p>
+                <p>Sat & Sun: 7am to 10am</p>
+                <div class="cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
+                </div>
+              </div> <!-- detail-page-menu-info-item -->
+              <div class="detail-page-menu-info-item">
+                <h4>Lunch</h4>
+                <p>Mon – Fri: 12pm to 4pm</p>
+                <p>Sat & Sun: Closed</p>
+                <div class="cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
+                </div>
+              </div> <!-- detail-page-menu-info-item -->
+              <div class="detail-page-menu-info-item last-version">
+                <h4>Dinner</h4>
+                <p>Mon – Fri: 5.30pm to 10pm</p>
+                <p>Sat & Sun: 5.30pm to 9pm</p>
+                <div class="cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
+                </div>
+              </div> <!-- detail-page-menu-item -->
+            </div> <!-- detail-page-menu-info -->
+
+
           </div>
-
-          <div class="detail-page-content-description">
-            <div class="default-copy">
-              <p>Chilling out sky-high over the rest of the city, refreshment in hand, is truly one of life’s great pleasures. Brisbane has what not many of the other capital cities can... </p>
-              <a href="#" class="read-more">Read more</a>              
-            </div>
-          </div>          
-
-          <!--
-              ___ ___  _  _ _____ ___ _  _ _____   ___ _  _ ___
-             / __/ _ \| \| |_   _| __| \| |_   _| | __| \| |   \
-            | (_| (_) | .` | | | | _|| .` | | |   | _|| .` | |) |
-             \___\___/|_|\_| |_| |___|_|\_| |_|   |___|_|\_|___/
-          -->
-
-        </div> <!-- detail-page-content -->
-
-      </div>      
-      <div class="col-sm-12">
-
-        <div id="detail-page-content-sidebar">
-
-
-          <div class="detail-page-menu-info">
-
-            <div class="detail-page-menu-info-item">
-              <h4>Breakfast</h4>
-              <p>Mon – Fri: 6am to 9am</p>
-              <p>Sat & Sun: 7am to 10am</p>
-              <div class="cta-container">
-                <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
-              </div>
-            </div> <!-- detail-page-menu-info-item -->
-            <div class="detail-page-menu-info-item">
-              <h4>Lunch</h4>
-              <p>Mon – Fri: 12pm to 4pm</p>
-              <p>Sat & Sun: Closed</p>
-              <div class="cta-container">
-                <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
-              </div>
-            </div> <!-- detail-page-menu-info-item -->
-            <div class="detail-page-menu-info-item last-version">
-              <h4>Dinner</h4>
-              <p>Mon – Fri: 5.30pm to 10pm</p>
-              <p>Sat & Sun: 5.30pm to 9pm</p>
-              <div class="cta-container">
-                <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
-              </div>
-            </div> <!-- detail-page-menu-item -->
-
-
-          </div> <!-- detail-page-menu-info -->
-
-
-        </div> <!-- detail-page-content-sidebar -->
-
+        </div>
       </div>
-    </div> <!-- row -->
-  </div> <!-- container-fluid -->
-</article> <!-- detail-page-content-section-mobile -->
+    </div>
+  </div>
+
+  <div class="manic-expand-container" data-group="mobile-dining-detail-page">
+    <div class="scroll-target" data-value="title-02"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>this is a title 02</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div class="default-copy">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--
+      ___ _____
+     / _ \___ /
+    | | | ||_ \
+    | |_| |__) |
+     \___/____/
+
+  -->
+
+
+  <div class="manic-expand-container" data-group="mobile-dining-detail-page">
+    <div class="scroll-target" data-value="title-03"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>this is a title 03</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div class="default-copy">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+
 
 
 

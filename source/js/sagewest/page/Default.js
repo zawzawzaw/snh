@@ -17,6 +17,8 @@ goog.require('manic.ui.TextPadding');
 
 goog.require('manic.page.Page');
 
+goog.require('manic.ui.ExpandContainer');
+
 
 goog.require('sagewest.component.MobileHeader');
 goog.require('sagewest.component.PackagesPopup');
@@ -90,6 +92,11 @@ sagewest.page.Default = function(options) {
    * @type {Array.<sagewest.component.BoxList>}
    */
   this.box_list_array = [];
+
+  /**
+   * @type {Array.<manic.ui.ExpandContainer>}
+   */
+  this.expand_container_array = [];
 
 
 
@@ -191,6 +198,7 @@ sagewest.page.Default.prototype.init = function() {
   this.controller.scrollTo(this.controller_scroll_to.bind(this));
 
   this.create_image_container();
+  this.create_expand_container();
   this.create_dropdown();
   this.create_form_check();
 
@@ -307,6 +315,91 @@ sagewest.page.Default.prototype.create_image_container = function() {
 
 
 };
+
+
+sagewest.page.Default.prototype.create_expand_container = function() {
+  var arr = $('.manic-expand-container');
+  var item = null;
+
+  /**
+   * @type {manic.ui.ExpandContainer}
+   */
+  var expand_container = null;
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+    expand_container = new manic.ui.ExpandContainer({}, item);
+    goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_EXPAND, this.on_expand_container_expand.bind(this));
+
+    this.expand_container_array[this.expand_container_array.length] = expand_container;
+  }
+
+  
+};
+
+
+
+/**
+ * event handler
+ * @param  {goog.events.Event} event
+ */
+sagewest.page.Default.prototype.on_expand_container_expand = function(event) {
+  //console.log('has expanded');
+  //console.log(event);
+
+  /**
+   * @type {manic.ui.ExpandContainer}
+   */
+  var expand_container = event.currentTarget;
+
+
+
+  /**
+   * @type {manic.ui.ExpandContainer}
+   */
+  var expand_container_02 = null;
+
+  if (manic.IS_MOBILE == true) {
+
+    if (expand_container.scroll_value != 'none'){
+      this.util_scroll_to(expand_container.scroll_value);
+    }
+
+
+  } else {
+    
+  }
+
+  console.log('expand_container.group_value: ' + expand_container.group_value);
+
+  if(expand_container.group_value != 'none') {
+
+    // collapse all other from the same group
+
+    for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
+
+      expand_container_02 = this.expand_container_array[i];
+
+      console.log(expand_container_02.group_value);
+
+      if(expand_container_02.group_value == expand_container.group_value && expand_container_02 !== expand_container){
+        expand_container_02.collapse();
+      }
+
+    } // for
+
+  }
+
+};
+
+
+
+
+
+
+
+
+
 
 
 /**

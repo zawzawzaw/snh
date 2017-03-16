@@ -20,8 +20,21 @@
 <header id="mobile-header-expanded">
 
   <div id="mobile-header-menu-container">
+    <div id="destination-indicator">
+      <p>Select a destination:</p>
+    </div>
+    <div id="country-indicator">
+      <p>Australia</p>
+    </div>
+
     <nav id="mobile-menu">
       <ul>
+        <li><a href="hotel.php">Adelaide</a></li>
+        <li><a href="hotel.php">brisbane</a></li>
+        <li><a href="hotel.php">west perth</a></li>
+        <li><a href="hotel.php">wollongong</a></li>
+        
+        <!-- 
         <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
         <li><a href="hotel.php">Country Comfort Adelaide Manor</a></li>
         <li><a href="hotel.php">Country Comfort Amity Motel Albany</a></li>
@@ -35,6 +48,7 @@
         <li><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></li>   
         <li><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
         <li><a href="hotel.php">Country Comfort Toowoomba</a></li>   
+        -->
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">

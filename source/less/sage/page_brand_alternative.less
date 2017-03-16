@@ -573,12 +573,23 @@ body.brand-alternative-page{
   padding-top: 21px;
   padding-bottom: 16px;
 
+  @media all and (max-width: 991px) {
+    padding-left: 20px;
+  }
+
   p{
-    .poppins-light;
+    .playfair-regular;
     font-size: 16px;
     line-height: 18px;
     color: @white;
     letter-spacing: 0.01em;
+  }
+}
+body.brand-alternative-page{
+  #destination-indicator{
+    p{
+      .poppins-light;
+    }
   }
 }
 
@@ -588,6 +599,10 @@ body.brand-alternative-page{
   padding-left: 30px;
   padding-top: 8px;
   padding-bottom: 9px;
+
+  @media all and (max-width: 991px) {
+    padding-left: 20px;
+  }
 
   p{
     .open-sans-bold;
@@ -600,6 +615,8 @@ body.brand-alternative-page{
 
   }
 }
+
+
 
 
 
