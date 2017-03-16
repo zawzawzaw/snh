@@ -198,6 +198,95 @@
               </div>
             </div>
 
+
+
+
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="white-bg"></div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4>Newcastle</h4>
+                    <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                  </div>
+                  <div class="col-md-7">
+                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="white-bg"></div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4>wollongong</h4>
+                    <h2><a href="hotel.php">Sage hotel Wollongong</a></h2>
+                  </div>
+                  <div class="col-md-7">
+                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="white-bg"></div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4>Newcastle</h4>
+                    <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                  </div>
+                  <div class="col-md-7">
+                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="white-bg"></div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <h4>wollongong</h4>
+                    <h2><a href="hotel.php">Sage hotel Wollongong</a></h2>
+                  </div>
+                  <div class="col-md-7">
+                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+
+
           </div> <!-- brand-all-location-slider-version-02 -->
 
           <a href="javascript:void(0);" title="Prev Image" id="brand-all-location-slider-prev-btn"></a>
@@ -298,7 +387,11 @@
                   <li><p>3-course dinner with choice of dish</p></li>
                   <li><p>Complimentary bottle of red or white wine</p></li>
                   <li><p>Live jazz singer duo</p></li>
-                </ul>              
+                </ul>
+
+                <div class="arrow-cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">More details</a>
+                </div>
                 
                 <div class="cta-and-price-container">
                   <div class="cta-container">
@@ -472,7 +565,7 @@
       </div>
     </div>
   </div>
-  <div id="map"></div>
+  <div id="map" class="default-version"></div>
   <div class="default_marker" data-zoom="4" data-location="Australia" data-lat="-25.783190" data-lng="133.583079"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="Sage West Perth" data-lat="-31.947888" data-lng="115.8364702" data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="James Street" data-lat="-33.3220933" data-lng="116.4979821" data-place-id="EihKYW1lcyBTdCwgTm9ydGhicmlkZ2UgV0EgNjAwMywgQXVzdHJhbGlh" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>

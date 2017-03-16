@@ -18,7 +18,7 @@
               <img src="images/icons/menu-bar.svg" alt="">     
               <span>Menu</span>       
             </a>
-            <a href="index.php" id="desktop-header-logo">
+            <a href="hotel.php" id="desktop-header-logo">
               <img src="images/logo/sage-west-logo.svg">            
             </a>
           </div>          

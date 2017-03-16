@@ -160,6 +160,235 @@
   </div>
 </article>
 
+
+
+
+
+
+
+
+
+
+<!--
+      _    ____ ____ ___  __  __ __  __  ___  ____    _  _____ ___ ___  _   _
+     / \  / ___/ ___/ _ \|  \/  |  \/  |/ _ \|  _ \  / \|_   _|_ _/ _ \| \ | |
+    / _ \| |  | |  | | | | |\/| | |\/| | | | | | | |/ _ \ | |  | | | | |  \| |
+   / ___ \ |__| |__| |_| | |  | | |  | | |_| | |_| / ___ \| |  | | |_| | |\  |
+  /_/   \_\____\____\___/|_|  |_|_|  |_|\___/|____/_/   \_\_| |___\___/|_| \_|
+
+-->
+
+<div class="scroll-target" data-value="accommodation"></div>
+<article id="default-room-section">
+  <div class="container-fluid had-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="default-room-title">
+          <h4>our accommodations</h4>
+          <h1>West Perth Hotel Rooms</h1>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="default-room-content" class="boxlist-item-container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="hotel-page-item boxlist-item">
+            <div class="hotel-page-item-box boxlist-item-box">
+              <div class="boxlist-item-content-image">
+                <div class="manic-image-container">
+                  <img src=""
+                    data-image="images_cms/room/room-index-standard-room.jpg"
+                    data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                </div>
+              </div>
+
+              <div class="hotel-page-item-title">
+                <h5>Standard Room</h5>
+              </div>
+
+              <div class="hotel-page-item-detail boxlist-item-content-room-detail">
+                <p class="detail-person">2 adults, 2 children</p>
+                <p class="detail-size">25 SQM</p>
+              </div>
+
+              
+              <div class="hotel-page-item-content-copy">
+                <div class="default-copy">
+                  <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                </div>
+              </div>
+
+              <div class="boxlist-item-content-cta">
+
+                <div class="hotel-page-item-arrow-cta-container">
+                  <a href="room_detail.php" class="arrow-cta">View room details</a>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="javascript:void(0);" class="square-cta">book now</a>
+                  </div>
+                  <div class="col-xs-6">
+
+                    <div class="boxlist-item-content-price">
+                      <h6>per night</h6>
+                      <p class="content-price">
+                        <span class="currency">aud</span>
+                        <span class="number">$119</span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- hotel-page-item -->
+        </div> <!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <div class="hotel-page-item boxlist-item">
+            <div class="hotel-page-item-box boxlist-item-box">
+              <div class="boxlist-item-content-image">
+                <div class="manic-image-container">
+                  <img src=""
+                    data-image="images_cms/room/room-index-standard-room.jpg"
+                    data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                </div>
+              </div>
+
+              <div class="hotel-page-item-title">
+                <h5>Standard Twin Room</h5>
+              </div>
+
+              <div class="hotel-page-item-detail boxlist-item-content-room-detail">
+                <p class="detail-person">2 adults, 2 children</p>
+                <p class="detail-size">25 SQM</p>
+              </div>
+
+              
+              <div class="hotel-page-item-content-copy">
+                <div class="default-copy">
+                  <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                </div>
+              </div>
+
+              <div class="boxlist-item-content-cta">
+
+                <div class="hotel-page-item-arrow-cta-container">
+                  <a href="room_detail.php" class="arrow-cta">View room details</a>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="javascript:void(0);" class="square-cta">book now</a>
+                  </div>
+                  <div class="col-xs-6">
+
+                    <div class="boxlist-item-content-price">
+                      <h6>per night</h6>
+                      <p class="content-price">
+                        <span class="currency">aud</span>
+                        <span class="number">$119</span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- hotel-page-item -->
+        </div> <!-- col-md-4 -->
+
+        <div class="col-md-4">
+          <div class="hotel-page-item boxlist-item">
+            <div class="hotel-page-item-box boxlist-item-box">
+              <div class="boxlist-item-content-image">
+                <div class="manic-image-container">
+                  <img src=""
+                    data-image="images_cms/room/room-index-standard-room.jpg"
+                    data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
+                </div>
+              </div>
+
+              <div class="hotel-page-item-title">
+                <h5>Superior Room</h5>
+              </div>
+
+              <div class="hotel-page-item-detail boxlist-item-content-room-detail">
+                <p class="detail-person">2 adults, 2 children</p>
+                <p class="detail-size">25 SQM</p>
+              </div>
+
+              
+              <div class="hotel-page-item-content-copy">
+                <div class="default-copy">
+                  <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                </div>
+              </div>
+
+              <div class="boxlist-item-content-cta">
+
+                <div class="hotel-page-item-arrow-cta-container">
+                  <a href="room_detail.php" class="arrow-cta">View room details</a>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="javascript:void(0);" class="square-cta">book now</a>
+                  </div>
+                  <div class="col-xs-6">
+
+                    <div class="boxlist-item-content-price">
+                      <h6>per night</h6>
+                      <p class="content-price">
+                        <span class="currency">aud</span>
+                        <span class="number">$135</span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- hotel-page-item -->
+        </div> <!-- col-md-4 -->
+
+
+
+      </div>
+    </div> <!-- default-room-content -->
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="default-room-cta-container">
+          <a href="#" class="arrow-cta">View all Room Types</a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
 <!-- 
     ___   ________________  __  _____  _______  ____  ___  ______________  _   __
    /   | / ____/ ____/ __ \/  |/  /  |/  / __ \/ __ \/   |/_  __/  _/ __ \/ | / /
@@ -170,7 +399,7 @@
  -->
 
 <div class="scroll-target" data-value="about"></div>
-<article id="default-room-section">
+<article id="default-room-section" style="display:none">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
@@ -201,7 +430,7 @@
                     <a href="#" class="square-cta book-now">Book now</a>
                   </div>
                   <div class="price-container">
-                    <span>per night</span>
+                    <span>prices from</span>
                     <div class="price">
                       <span class="currency">AUD</span><span class="price">$135</span>
                     </div>
@@ -229,7 +458,7 @@
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
                 <div class="price-container">
-                  <span>per night</span>
+                  <span>prices from</span>
                   <div class="price">
                     <span class="currency">AUD</span><span class="price">$135</span>
                   </div>
@@ -256,7 +485,7 @@
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
                 <div class="price-container">
-                  <span>per night</span>
+                  <span>prices from</span>
                   <div class="price">
                     <span class="currency">AUD</span><span class="price">$135</span>
                   </div>
@@ -283,7 +512,7 @@
                   <a href="#" class="square-cta book-now">Book now</a>
                 </div>
                 <div class="price-container">
-                  <span>per night</span>
+                  <span>prices from</span>
                   <div class="price">
                     <span class="currency">AUD</span><span class="price">$135</span>
                   </div>
@@ -543,10 +772,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- row -->
+
     <div class="row">
       <div class="col-md-12">
-        <a href="#" id="default-promotion-view-all" class="arrow-cta">View all</a>
+
+        <div class="default-promotion-cta-container">
+          <a href="#" class="arrow-cta">View all</a>
+        </div>
+
       </div>
     </div>
   </div>
@@ -568,36 +802,40 @@
         <div id="hotel-reviews-slider">
           <div class="hotel-reviews-slider-content">
             <div class="hotel-reviews-slider-title">
-              <h4>more reasons to stay with us</h4>
-              <h1>Guest Reviews</h1>            
+              <h4>Guest Reviews</h4>
+              <h1>“Great location, comfortable stay.”</h1>            
             </div>
             <div class="hotel-reviews-slider-text">
               <div class="stars">
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
               </div>
               <span class="quote">“Out of town location so very quiet and peaceful. Lots of interesting birdlife to see close up. Interesting walks from here and historical interest in the town.…”</span>
               <hr class="small">
               <span class="name-and-location">Ralph, United Kingdom</span>
+              <span class="hotel-reviews-date">Trip Advisor, 15 March 2017</span>
             </div>
           </div>
           <div class="hotel-reviews-slider-content">
             <div class="hotel-reviews-slider-title">
-              <h4>more reasons to stay with us</h4>
-              <h1>Guest Reviews</h1>            
+              <h4>Guest Reviews</h4>
+              <h1>“Great location, comfortable stay.”</h1>            
             </div>
             <div class="hotel-reviews-slider-text">
               <div class="stars">
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
                 <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
               </div>
               <span class="quote">“Out of town location so very quiet and peaceful. Lots of interesting birdlife to see close up. Interesting walks from here and historical interest in the town.…”</span>
               <hr class="small">
               <span class="name-and-location">Ralph, United Kingdom</span>
+              <span class="hotel-reviews-date">Trip Advisor, 15 March 2017</span>
             </div>
           </div>
         </div>

@@ -19,7 +19,8 @@
 
 <!-- open-sans -->
 <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500" rel="stylesheet">
 
 
 <!-- Social Tags -->
@@ -65,7 +66,7 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="index.php" id="mobile-header-logo">
+    <a href="hotel.php" id="mobile-header-logo">
       <img src="images/logo/sage-west-logo.svg">
     </a>  
   
@@ -114,8 +115,8 @@
         <div class="dropdown">
           <select name="hotel" id="hotel" class="hotel-dropdown">
             <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
             <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-            <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
             <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
           </select>
         </div>
@@ -127,7 +128,7 @@
         </div>
       </div>
       <div class="input-box row">
-        <div class="input-box-col-1 col-md-6">
+        <div class="input-box-col-1 col-sm-6 col-xs-6">
           <label for="">Adults</label>
           <div class="dropdown">
             <select name="adults" id="adults">
@@ -144,7 +145,7 @@
             </select>
           </div>
         </div>
-        <div class="input-box-col-2 col-md-6">
+        <div class="input-box-col-2 col-sm-6 col-xs-6">
           <label for="">Children</label>
           <div class="dropdown">
             <select name="children" id="children">
@@ -198,7 +199,7 @@
               <img src="images/icons/menu-bar.svg" alt="">     
               <span>Menu</span>       
             </a>
-            <a href="index.php" id="desktop-header-logo">
+            <a href="hotel.php" id="desktop-header-logo">
               <img src="images/logo/sage-west-logo.svg">            
             </a>
           </div>          
@@ -247,8 +248,8 @@
           <div class="dropdown">
             <select name="hotel" id="hotel" class="hotel-dropdown">
               <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
               <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-              <option value="Sage Hotel James Street Brisbane">Sage Hotel James Street Brisbane</option>
               <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
             </select>
           </div>
@@ -793,29 +794,37 @@
             <h4>more accommodation choices</h4>
           </div>
 
-          <div class="detail-page-more-item-container">
+          <div id="room-detail-page-item-container" class="boxlist-item-container">
             <div class="row">
 
+              <!--
+                  ___  _
+                 / _ \/ |
+                | | | | |
+                | |_| | |
+                 \___/|_|
+
+              -->
+
               <div class="col-md-4">
-                <div class="detail-page-more-item">
+                <div class="room-detail-page-item boxlist-item">
+                  <div class="room-detail-page-item-box boxlist-item-box">
 
-                  <div class="detail-page-more-item-content-box">
-
-                    <div class="detail-page-more-item-content-image">
+                    <div class="boxlist-item-content-image short-version">
                       <div class="manic-image-container">
                         <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>Standard Room</h5>
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-cta">
+                    <div class="room-detail-page-item-content-detail">
                       <div class="row">
                         <div class="col-xs-7">
 
-                          <div class="detail-page-more-item-room-detail">
+                          <div class="boxlist-item-content-room-detail">
                             <p class="detail-person">2 adults, 2 children</p>
                             <p class="detail-size">25 SQM</p>
                           </div>
@@ -823,7 +832,7 @@
                         </div>
                         <div class="col-xs-5">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -834,39 +843,44 @@
                         </div>
                       </div>
 
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="detail-page-more-item-extra-cta-container">
-                            <a href="room_detail.php" class="arrow-cta">View room details</a>
-                          </div>
-                        </div>
-                      </div>
+                    </div> <!-- room-detail-page-item-content-detail -->
 
-                    </div> <!-- detail-page-more-item-content-cta -->
-                  </div> <!-- detail-page-more-item-content-box -->
+                    <div class="room-detail-page-item-cta-container">
+                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                    </div>
+                  </div> <!-- boxlist-item-box -->
 
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- room-detail-page-item -->
               </div> <!-- col-md-4 -->
 
-              <div class="col-md-4">
-                <div class="detail-page-more-item">
-                  <div class="detail-page-more-item-content-box">
+              <!--
+                  ___ ____
+                 / _ \___ \
+                | | | |__) |
+                | |_| / __/
+                 \___/_____|
 
-                    <div class="detail-page-more-item-content-image">
+              -->
+
+              <div class="col-md-4">
+                <div class="room-detail-page-item boxlist-item">
+                  <div class="room-detail-page-item-box boxlist-item-box">
+
+                    <div class="boxlist-item-content-image short-version">
                       <div class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>Deluxe Room</h5>
                       </div>
-                    </div> <!-- detail-page-more-item-content-copy -->
-                    <div class="detail-page-more-item-content-cta">
+                    </div> <!-- room-detail-page-item-content-copy -->
+                    <div class="room-detail-page-item-content-detail">
                       <div class="row">
                         <div class="col-xs-8">
 
-                          <div class="detail-page-more-item-room-detail">
+                          <div class="boxlist-item-content-room-detail">
                             <p class="detail-person">2 adults, 2 children</p>
                             <p class="detail-size">25 SQM</p>
                           </div>
@@ -874,7 +888,7 @@
                         </div>
                         <div class="col-xs-4">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -884,39 +898,45 @@
 
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="detail-page-more-item-extra-cta-container">
-                            <a href="room_detail.php" class="arrow-cta">View room details</a>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div> <!-- detail-page-more-item-content-box -->
+
+                    <div class="room-detail-page-item-cta-container">
+                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                    </div>
+                  </div> <!-- boxlist-item-box -->
                   
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- room-detail-page-item -->
               </div>
 
+              <!--
+                  ___ _____
+                 / _ \___ /
+                | | | ||_ \
+                | |_| |__) |
+                 \___/____/
+
+              -->
+
               <div class="col-md-4">
-                <div class="detail-page-more-item">
+                <div class="room-detail-page-item boxlist-item">
 
-                  <div class="detail-page-more-item-content-box">
+                  <div class="room-detail-page-item-box boxlist-item-box">
 
-                    <div class="detail-page-more-item-content-image">
+                    <div class="boxlist-item-content-image short-version">
                       <div class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-copy">
+                    <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
                         <h5>Superior Room</h5>
                       </div>
                     </div>
-                    <div class="detail-page-more-item-content-cta">
+                    <div class="room-detail-page-item-content-detail">
                       <div class="row">
                         <div class="col-xs-8">
 
-                          <div class="detail-page-more-item-room-detail">
+                          <div class="boxlist-item-content-room-detail">
                             <p class="detail-person">2 adults, 2 children</p>
                             <p class="detail-size">25 SQM</p>
                           </div>
@@ -924,7 +944,7 @@
                         </div>
                         <div class="col-xs-4">
 
-                          <div class="detail-page-more-item-content-price">
+                          <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
                               <span class="currency">aud</span>
@@ -934,17 +954,13 @@
                           
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <div class="detail-page-more-item-extra-cta-container">
-                            <a href="room_detail.php" class="arrow-cta">View room details</a>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div> <!-- detail-page-more-item-content-box -->
+                    <div class="room-detail-page-item-cta-container">
+                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                    </div>
+                  </div> <!-- boxlist-item-box -->
 
-                </div> <!-- detail-page-more-item -->
+                </div> <!-- room-detail-page-item -->
               </div>
 
 

@@ -21,6 +21,7 @@ goog.require('manic.page.Page');
 goog.require('sagewest.component.MobileHeader');
 goog.require('sagewest.component.PackagesPopup');
 goog.require('sagewest.component.GenericMap');
+goog.require('sagewest.component.BoxList');
 
 
 /**
@@ -85,9 +86,21 @@ sagewest.page.Default = function(options) {
    */
   this.generic_map_array = [];
 
+  /**
+   * @type {Array.<sagewest.component.BoxList>}
+   */
+  this.box_list_array = [];
+
 
 
   this.min_height_container = null;
+
+
+  this.is_brand_alternative_version = false;
+
+  if (this.body.hasClass('brand-alternative-page')) {
+    this.is_brand_alternative_version = true;
+  }
 
 
 
@@ -205,6 +218,7 @@ sagewest.page.Default.prototype.init = function() {
   this.create_min_height();
   this.create_detail_page();
   this.create_generic_map();
+  this.create_box_list();
 
 
 
@@ -520,8 +534,31 @@ sagewest.page.Default.prototype.create_generic_map = function(){
   
 };
 
+//    ____   _____  ___     ___ ____ _____
+//   | __ ) / _ \ \/ / |   |_ _/ ___|_   _|
+//   |  _ \| | | \  /| |    | |\___ \ | |
+//   | |_) | |_| /  \| |___ | | ___) || |
+//   |____/ \___/_/\_\_____|___|____/ |_|
+//
 
 
+
+sagewest.page.Default.prototype.create_box_list = function(){
+
+  var arr = $('.boxlist-item-container');
+  var item = null;
+  var box_list = null;
+
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+    box_list = new sagewest.component.BoxList({}, item);
+
+    this.box_list_array[this.box_list_array.length] = box_list;
+  }
+  
+  
+};
 
 
 //    ____   _    ____ _  __    _    ____ _____ ____
@@ -789,6 +826,20 @@ sagewest.page.Default.prototype.update_page_layout = function() {
   
 
 
+
+  /**
+   * @type {sagewest.component.BoxList}
+   */
+  var box_list = null;
+
+  for (var i = 0, l=this.box_list_array.length; i < l; i++) {
+    box_list = this.box_list_array[i];
+    box_list.update_layout();
+    
+  }
+  
+
+
   
 
 
@@ -1015,22 +1066,26 @@ sagewest.page.Default.prototype.common_menu = function() {
       $("#desktop-header").toggleClass("open");
     });
 
-    $("#book-now").on("click", function(e){
-      e.preventDefault();
-      // $("#desktop-header-booking-form").slideToggle(300);
-      
-      if($('#desktop-header-booking-form').is(":visible")) {
+    // if (this.is_brand_alternative_version == false) {
+      $("#book-now").on("click", function(e){
+        e.preventDefault();
+        // $("#desktop-header-booking-form").slideToggle(300);
+        
+        if($('#desktop-header-booking-form').is(":visible")) {
 
-        $("#desktop-header-booking-form").slideUp(300);
-        $("#book-now span").html('Book Now');
+          $("#desktop-header-booking-form").slideUp(300);
+          $("#book-now span").html('Book Now');
 
-      } else {
+        } else {
 
-        $("#desktop-header-booking-form").slideDown(300);
-        $("#book-now span").html('Close');
+          $("#desktop-header-booking-form").slideDown(300);
+          $("#book-now span").html('Close');
 
-      }
-    });
+        }
+      });
+
+    // } // endif
+    
 
     var date = new Date();
         formatted_current_date = ("0" + (date.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + date.getDate().toString()).substr(-2)  + "/" + (date.getFullYear().toString());        
@@ -1163,7 +1218,7 @@ sagewest.page.Default.prototype.common_menu = function() {
             ]
         }
     });
-
+    
     $(".book-now").on("click", function(e){
       $("#mobile-header-calendar-open-btn").trigger("click");
     });
@@ -1434,21 +1489,58 @@ sagewest.page.Default.prototype.map_initialize = function() {
     var zoom = $(".default_marker").data('zoom');
 
     var AusLatLng = setMarkerLatLng(lat, lng);
-    var mapOptions = {
-      mapTypeControlOptions: {  
-          mapTypeIds: ['Styled']  
-      },  
-      zoom: zoom,
-      center: AusLatLng,
-      disableDefaultUI: true,   
-      mapTypeId: 'Styled',
-      scrollwheel: false,
-      zoomControl: true
-    };
-    map = new google.maps.Map(document.getElementById('map'),
-      mapOptions);
-    var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });  
-    map.mapTypes.set('Styled', styledMapType);
+
+
+    var map_element = $('#map');
+    var is_default_version = false;
+
+    if (map_element.hasClass('default-version') == true) {
+      is_default_version = true;
+    }
+    
+
+    
+
+      
+
+    if (is_default_version) {
+      var mapOptions = {
+        mapTypeControlOptions: {  
+            mapTypeIds: ['Styled']  
+        },  
+        zoom: zoom,
+        center: AusLatLng,
+        disableDefaultUI: true,   
+        scrollwheel: false,
+        zoomControl: true
+      };
+      map = new google.maps.Map(document.getElementById('map'),
+        mapOptions);
+    } else {
+      var mapOptions = {
+        mapTypeControlOptions: {  
+            mapTypeIds: ['Styled']  
+        },  
+        zoom: zoom,
+        center: AusLatLng,
+        disableDefaultUI: true,   
+        mapTypeId: 'Styled',      // not in default version
+        scrollwheel: false,
+        zoomControl: true
+      };
+      map = new google.maps.Map(document.getElementById('map'),
+        mapOptions);
+      var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });  
+      map.mapTypes.set('Styled', styledMapType);
+
+    }
+    
+
+    
+
+    
+
+    
 
     // var service = new google.maps.places.PlacesService(map);
 
