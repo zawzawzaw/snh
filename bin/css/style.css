@@ -4773,6 +4773,7 @@ body.scrolled #desktop-header .container-fluid {
 body.permanent-scrolled #desktop-header-menu,
 body.scrolled #desktop-header-menu {
   position: fixed;
+  z-index: 200000;
   top: 80px;
   left: 0px;
 }
@@ -11101,7 +11102,14 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   top: -2px;
 }
 #detail-page-content .detail-page-content-description .room-size-sqft:before {
-  content: "\f125";
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -4px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../images/icons/detail-area-icon.svg") center center no-repeat;
 }
 #detail-page-content .detail-page-content-description .room-bed-size:before {
   content: "\f236";
@@ -11210,6 +11218,9 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 .detail-page-contact-info .cta-container .dimmi-book-cta {
   position: relative;
   left: -3px;
+}
+.detail-page-contact-info .cta-container .dimmi-book-cta-container {
+  padding-top: 9px;
 }
 .detail-page-contact-info .cta-container .arrow-cta + .dimmi-book-cta {
   margin-top: 6px;
@@ -11374,13 +11385,14 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   left: -1px;
 }
 #contact-page-map-section {
-  background: #f1f2f2;
-  padding-top: 54px;
   padding-bottom: 70px;
 }
 #contact-page-map-title {
   margin-bottom: 56px;
   text-align: center;
+}
+#contact-page-map-container {
+  border: 2px solid #f1f2f2;
 }
 #contact-page-map-copy-container {
   padding-left: 40px;

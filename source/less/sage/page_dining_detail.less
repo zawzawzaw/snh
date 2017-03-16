@@ -73,7 +73,17 @@
     }
     .room-size-sqft {
       &:before {
-        content: "\f125";            
+        // content: "\f125";
+        
+
+        content: '';
+        position: absolute;
+        top: -7px;
+        left: -4px;
+
+        .detail-area-icon;
+
+
       }
     }
     .room-bed-size {
@@ -244,9 +254,14 @@
     .arrow-cta{
 
     }
-    .dimmi-book-cta{
+
+
+    .dimmi-book-cta{          // not relevant anymore
       position: relative;
       left: -3px;
+    }
+    .dimmi-book-cta-container{
+      padding-top: 9px;
     }
     .arrow-cta + .dimmi-book-cta{
       &:before{

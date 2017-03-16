@@ -207,7 +207,19 @@
 
             <div class="cta-container">
               <a href="" class="arrow-cta">Visit Restaurant Website</a>
-              <a href="javascript:void(0);" class="dimmi-book-cta"></a>
+              <!-- <a href="javascript:void(0);" class="dimmi-book-cta"></a> -->
+
+              <div class="dimmi-book-cta-container">
+
+                <!-- code from dimmi -->
+                <!-- https://www.dimmi.com.au/widget-embed-code/33719?key=5rDmNrPfQhrTDVAYeXXs3nWdtMdbD4ybvk1NU9vZEUA%3D -->
+                <a href="https://www.dimmi.com.au/make-booking/kirrabelle-kitchen?mode=Widget" target="_blank" rel="nofollow" class="dimmi-button">
+                  <img src="https://widget.dimmi.com.au/Shared/RestaurantButtons/33719-dp.gif" alt="Book Online - Free, Instant, Guaranteed." />
+                </a>
+                
+                <script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33719"></script>
+              </div>
+
             </div>
           </div> <!-- detail-page-contact-info -->
 

@@ -131,6 +131,24 @@
 </header> <!-- #desktop-header -->
 
 <div id="desktop-header-menu">          
+
+  <div id="destination-indicator">
+    <p>Select a destination:</p>
+  </div>
+  <div id="country-indicator">
+    <p>Australia</p>
+  </div>
+
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">Adelaide</a></li>
+      <li><a href="hotel.php">brisbane</a></li>
+      <li><a href="hotel.php">west perth</a></li>
+      <li><a href="hotel.php">wollongong</a></li>
+    </ul>    
+  </div>
+
+  <!-- 
   <div id="sage-links">
     <ul>
       <li><a href="hotel.php">sage adelaide</a></li>
@@ -139,6 +157,8 @@
       <li><a href="hotel.php">sage wollongong</a></li>
     </ul>
   </div>
+  -->
+  
   <div id="brand-link" class="menu-link">
     <a href="#"><span>Our Brands</span></a>
   </div>
