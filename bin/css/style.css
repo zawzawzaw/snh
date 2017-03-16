@@ -7041,6 +7041,11 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 .index-page-title-section {
   padding-bottom: 65px;
 }
+@media all and (max-width: 991px) {
+  .index-page-title-section {
+    padding-bottom: 35px;
+  }
+}
 .index-page-title {
   text-align: center;
 }
@@ -7056,6 +7061,17 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   padding-top: 4px;
 }
 @media only screen and (max-width: 991px) {
+  .index-page-title {
+    text-align: left;
+  }
+  .index-page-title p {
+    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 15px;
+  }
   .index-page-title br {
     display: none;
   }
@@ -10931,6 +10947,11 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 #detail-list-section {
   padding-bottom: 100px;
 }
+@media all and (max-width: 991px) {
+  #detail-list-section {
+    padding-bottom: 30px;
+  }
+}
 .detail-list-item-container .detail-list-item {
   margin-bottom: 50px;
   padding-bottom: 50px;
@@ -10953,11 +10974,20 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   }
 }
 @media only screen and (max-width: 991px) {
-  .detail-list-item .detail-list-item-image .manic-image-container {
+  .detail-list-item-container .detail-list-item {
+    -webkit-box-shadow: 1px 1px 8px #e5e5e5;
+    box-shadow: 1px 1px 8px #e5e5e5;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .detail-list-item-container .detail-list-item .detail-list-item-image .manic-image-container {
     height: 250px;
   }
-  .detail-list-item .detail-list-item-copy {
-    padding-left: 0px;
+  .detail-list-item-container .detail-list-item .detail-list-item-copy {
+    padding: 20px 20px 30px 20px;
+  }
+  .detail-list-item-container .detail-list-item .detail-list-item-copy .default-copy h5 {
+    color: #7d0052;
   }
 }
 #detail-page-content-section {
