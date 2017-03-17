@@ -1813,6 +1813,7 @@ body.is-tablet.is-tablet-portrait{
   
   @media all and (max-width: 991px) {
     margin-bottom: 20px;
+    height: auto!important;
   }
 
   .add-flipper-function;
@@ -1822,9 +1823,12 @@ body.is-tablet.is-tablet-portrait{
 
     background: @white;
     position: relative;
+    @media all and (max-width: 991px) {
+      height: auto!important;
+    }
 
     .box-shadow (1px, 1px, 8px, #e5e5e5);
-    padding: 20px;
+    padding: 0px;
 
   } // .boxlist-itembox
 
@@ -2111,7 +2115,7 @@ a.boxlist-item-content-image{
 
     display: block;
     position: absolute;
-    top: 20px;
+    top: 13px;
     right: 7px;
 
     width: 24px;
@@ -2123,7 +2127,8 @@ a.boxlist-item-content-image{
     &:after,
     &:before{
       .fa;
-      font-size: 17px;
+      font-size: 16px;
+      color: @light-brown;
 
       content: "";
       display: block;
@@ -2140,13 +2145,13 @@ a.boxlist-item-content-image{
     // plus
     &:after{
       // content: "\f055"; // fa-plus-circle
-      content: "\f067"; // .fa-plus
+      content: "\f107"; // .fa-plus
       .opacity(1);
     }
     // minus
     &:before{
       // content: "\f056"; // fa-minus-circle
-      content: "\f068"; // .fa-minus
+      content: "\f106"; // .fa-minus
       .opacity(0);
     }
 
@@ -2193,7 +2198,7 @@ a.boxlist-item-content-image{
     
     .manic-expand-container-title{
       h4{
-        color: @violet;
+        // color: @violet;
       }
     }
 
@@ -2205,7 +2210,7 @@ a.boxlist-item-content-image{
 
       &:after,
       &:before{
-        color: @violet !important;
+        // color: @violet !important;
       }
 
       // plus
@@ -2381,7 +2386,7 @@ a.boxlist-item-content-image{
       }
     }
     .manic-expand-container-btn{
-      top: 17px;
+      top: 14px;
       right: 11px;
     }
     .manic-expand-container-content{

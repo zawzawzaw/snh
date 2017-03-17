@@ -234,6 +234,8 @@ sagewest.page.Default.prototype.init = function() {
   this.update_page_layout();
 
   this.common_menu();
+
+  this.expandable_text();
 };
 
 
@@ -1335,7 +1337,43 @@ sagewest.page.Default.prototype.common_menu = function() {
         }        
     });    
 
-}
+};
+
+sagewest.page.Default.prototype.expandable_text = function() {
+
+  var minimized_read_more_elements = $('p.minimize-read-more');
+  var minimized_elements = $('p.minimize');
+  
+  minimized_read_more_elements.each(function(){    
+      var t = $(this).text();       
+      var length = $(this).data('length');
+       
+      if(t.length < length) return;
+      
+      $(this).html(
+          t.slice(0,length)+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
+          '<span style="display:none;">'+ t.slice(length,t.length)+'</span>'
+      );
+  }); 
+
+  minimized_elements.each(function(){    
+      var t = $(this).text();       
+      var length = $(this).data('length');
+
+      if(t.length < length) return;
+      
+      $(this).html(
+          t.slice(0,length)+'<span>... </span>'
+      );
+  }); 
+  
+  $('a.read-more', minimized_read_more_elements).click(function(event){
+      event.preventDefault();
+      $(this).parent().hide().prev().hide();
+      $(this).parent().next().show();        
+  });
+
+};
 
 
 
