@@ -7,6 +7,8 @@ goog.require('goog.math.Box');
 goog.require('goog.events.Event');
 goog.require('goog.events.EventTarget');
 
+goog.require('manic.util.StringUtil');
+
 /**
  * The Dropdown constructor
  * @param {object} options The object extendable like jquery plugins
@@ -62,7 +64,7 @@ manic.ui.Dropdown = function(options, element) {
   //
 
   this.current_value = this.select_element.val();
-  //console.log('this.current_value: ' + this.current_value);
+  ////console.log('this.current_value: ' + this.current_value);
 
   this.initial_value = this.current_value;
 
@@ -76,20 +78,21 @@ manic.ui.Dropdown = function(options, element) {
   for (var i = 0, l=arr.length; i < l; i++) {
     item = $(arr[i]);
     value = '';
-    label = item.html();
+    label = manic.util.StringUtil.decodeHTML(item.html());
 
     if (goog.isDef(item.attr('value'))) {
       value = item.attr('value');
     } else {
-      value = item.html();
+      value = manic.util.StringUtil.decodeHTML(item.html());
     }
     
+
     if (value == this.current_value) {
       this.initial_index = i - 1;   // off for some reason
     }
 
-    //console.log('value: ' + value);
-    //console.log('label: ' + label);
+    ////console.log('value: ' + value);
+    ////console.log('label: ' + label);
 
     if (value == '') {
       this.initial_label = label;
@@ -154,11 +157,11 @@ manic.ui.Dropdown.prototype.init_mobile = function(){
   this.element.attr('data-label', this.initial_label);
   this.select_element.change(this.on_mobile_select_element_change.bind(this));
 
-  //console.log('Dropdown: init_mobile');
-  //console.log('this.initial_index: ' + this.initial_index);
+  ////console.log('Dropdown: init_mobile');
+  ////console.log('this.initial_index: ' + this.initial_index);
 
 
-  //console.log('this.initial_index: ' + this.initial_index);
+  ////console.log('this.initial_index: ' + this.initial_index);
 
   // select initial index:
   if (this.initial_index != -1) {
@@ -174,12 +177,12 @@ manic.ui.Dropdown.prototype.init_mobile = function(){
     
     this.element.attr('data-label', target_label);
 
-    //console.log('to remove: ');
-    //console.log(this.select_element.find('option[value=""]'));
+    ////console.log('to remove: ');
+    ////console.log(this.select_element.find('option[value=""]'));
     this.select_element.find('option[value=""]').remove();  // i don't remember why i added this
 
-    //console.log('this.initial_index: ' + this.initial_index);
-    //console.log('target_value: ' + target_value);
+    ////console.log('this.initial_index: ' + this.initial_index);
+    ////console.log('target_value: ' + target_value);
   }
 
 
@@ -256,12 +259,10 @@ manic.ui.Dropdown.prototype.create_google_select = function() {
   //this.goog_select_menu.css('min-width', this.element.width() + 'px');
   
   // this is to force the width of the element
-  /*
   this.goog_select_menu.css({
     'max-width': (this.element.width() + 2) + 'px',
     'min-width': (this.element.width() + 2) + 'px'
   });
-  */
 
   if (this.element.hasClass('scroll-version')) {
     this.goog_select_menu.addClass('scroll-version');
@@ -284,7 +285,7 @@ manic.ui.Dropdown.prototype.create_google_select = function() {
  */
 manic.ui.Dropdown.prototype.set_value = function(str_param) {
   /*
-  console.log('str_param: ' + str_param);
+  //console.log('str_param: ' + str_param);
   if(this.goog_select != null) {
 
     if(str_param == ''){
@@ -325,6 +326,18 @@ manic.ui.Dropdown.prototype.set_disabled = function() {
   this.select_element.prop('disabled', 'disabled');
 };
 
+manic.ui.Dropdown.prototype.add_scroll = function() {
+  this.element.addClass('scroll-version');
+  this.goog_select_menu.addClass('scroll-version');
+  this.goog_select.setScrollOnOverflow(true);
+};
+manic.ui.Dropdown.prototype.remove_scroll = function() {
+  this.element.removeClass('scroll-version');
+  this.goog_select_menu.removeClass('scroll-version');
+  this.goog_select.setScrollOnOverflow(false);
+};
+
+
 
 
 
@@ -337,9 +350,6 @@ manic.ui.Dropdown.prototype.disable_value = function(str_param){
    */
   var menu_item = this.menu_item_dictionary['' + str_param];
 
-
-  console.log('menu_item: ');
-  console.log(menu_item);
 
   if(goog.isDefAndNotNull(menu_item)){
     this.goog_select.removeItem(menu_item);
@@ -400,7 +410,59 @@ manic.ui.Dropdown.prototype.enable_all = function(str_param){
 
 };
 
+/**
+* @type {goog.ui.MenuItem}
+*/
+manic.ui.Dropdown.prototype.reset_option_array = function() {
+  
+  for(var i=0,l=this.value_array.length;i<l;i++)
+  {
+    this.disable_value(this.value_array[i]);
+  }
+  
+  this.menu_item_array = [];
+  this.menu_item_dictionary = [];
+  this.label_array = [];
+  this.value_array = [];
+  this.option_array = [];
+  this.option_dictionary = [];
 
+}
+
+/**
+* @param {Array} arr_param
+*/
+manic.ui.Dropdown.prototype.set_option_array = function(arr_param) {
+  
+  this.reset_option_array();
+
+  var item = null;
+  var options = "";
+
+  for (var i = 0, l=arr_param.length; i < l; i++) {
+    
+    item = arr_param[i];
+
+    if (goog.isDefAndNotNull(item['label']) && goog.isDefAndNotNull(item['value'])) {
+      label =  item['label'];
+      value = item['value'];
+
+      menu_item = new goog.ui.MenuItem(label,value);
+      this.goog_select.addItem(menu_item);
+
+      this.menu_item_array[this.menu_item_array.length] = menu_item;
+      this.menu_item_dictionary['' + value] = menu_item;
+      this.value_array[this.value_array.length]=String(value);
+      this.label_array[this.label_array.length]=label;
+
+      options += "<option value='" + value + "'>"+ label +"</option>";
+    }
+
+  }
+
+  this.select_element[0].innerHTML = options;
+  this.set_value('' + this.value_array[0]);// this should trigger the on_change event
+};
 
 //    _______     _______ _   _ _____ ____
 //   | ____\ \   / / ____| \ | |_   _/ ___|
@@ -419,7 +481,6 @@ manic.ui.Dropdown.prototype.on_goog_select_change = function(event) {
   if(this.current_value == null){
     this.current_value = '';
   }
-
   this.select_element.val(this.current_value);
   
   if(manic.IS_MOBILE == false){
@@ -435,12 +496,10 @@ manic.ui.Dropdown.prototype.on_goog_select_change = function(event) {
  * @param  {object} event
  */
 manic.ui.Dropdown.prototype.on_goog_select_show = function(event){
-  /*
   this.goog_select_menu.css({
     'max-width': (this.element.width() + 2) + 'px',
     'min-width': (this.element.width() + 2) + 'px'
   });
-  */
 };
 
 /**
@@ -449,11 +508,9 @@ manic.ui.Dropdown.prototype.on_goog_select_show = function(event){
  */
 manic.ui.Dropdown.prototype.on_mobile_select_element_change = function(event) {
   this.current_value = this.select_element.val();
-
+  
   var current_label = this.initial_index;
   var value_index = this.value_array.indexOf(this.current_value);
-
-  // console.log('value_index: ' + value_index);
 
   if(value_index != -1){
     current_label = this.label_array[value_index];
@@ -461,12 +518,13 @@ manic.ui.Dropdown.prototype.on_mobile_select_element_change = function(event) {
     current_label = this.initial_label;
   }
 
+
   if(current_label == ''){
     this.element.attr('data-label', this.initial_label);
   } else {
     this.element.attr('data-label', current_label);
   }
-  
+
   if(manic.IS_MOBILE == true){
     this.dispatchEvent(new goog.events.Event(manic.ui.Dropdown.ON_CHANGE));
   }

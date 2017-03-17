@@ -59,3 +59,35 @@ manic.util.StringUtil.is_email = function(email_param) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email_param);
 };
+
+
+
+// http://stackoverflow.com/questions/5796718/html-entity-decode
+
+
+/**
+ * static class function
+ *
+ * check if email or not
+ *
+ * @type {function}
+ * @param {string} email_param string to check
+ * @return {string}
+ */
+manic.util.StringUtil.decodeHTML = function(str) {
+
+  if(manic.util.StringUtil.decodeHTMLElement == null){
+    manic.util.StringUtil.decodeHTMLElement = document.createElement('div');
+  }
+
+  if(str && typeof str === 'string') {
+    // strip script/html tags
+    str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
+    str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');
+    manic.util.StringUtil.decodeHTMLElement.innerHTML = str;
+    str = manic.util.StringUtil.decodeHTMLElement.textContent;
+    manic.util.StringUtil.decodeHTMLElement.textContent = '';
+  }
+
+  return str;
+};
