@@ -1851,9 +1851,10 @@ body.is-tablet.is-tablet-portrait{
 
     background: @white;
     position: relative;
+
     @media all and (max-width: 991px) {
       height: auto!important;
-      padding: 0px;
+      // padding: 0px;                            // please don't do this...
     }
 
     .box-shadow (1px, 1px, 8px, #e5e5e5);    
@@ -1881,9 +1882,16 @@ body.is-tablet.is-tablet-portrait{
 }
 
 .boxlist-item-content-image{
-  width: 100%;
+  //width: 100%;
+  width: auto;
   margin-bottom: 20px;
   display: block;
+
+  @media all and (max-width: 991px) {
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 
   .manic-image-container{
     width: 100%;
@@ -1981,12 +1989,15 @@ a.boxlist-item-content-image{
       content: '\f236';
       display: block;
       
-      font-size: 24px;
+      // font-size: 24px;
+      font-size: 21px;
 
       .display-inline-block;
       position: absolute;
-      top: -5px;
-      left: -2px;
+      // top: -5px;
+      // left: -2px;
+      top: -2px;
+      left: 1px;
       color: @icon-brown;
     }
   }
@@ -2297,6 +2308,7 @@ a.boxlist-item-content-image{
     &:first-child{
       // border-top: 1px solid #d7d7d7;
       border-top: none;
+
     }
 
     &:last-child{
