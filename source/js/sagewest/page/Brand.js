@@ -4,6 +4,8 @@ goog.require('sagewest.page.Default');
 
 goog.require('manic.google.Map');
 
+goog.require('sagewest.component.BrandLocationTitle');
+
 
 
 /**
@@ -27,6 +29,14 @@ sagewest.page.Brand = function(options, element) {
    * @type {manic.google.Map}
    */
   this.contact_map = null;
+
+
+  /**
+   * @type {sagewest.component.BrandLocationTitle}
+   */
+  this.brand_location_title = null;
+
+
 
 
 };
@@ -62,6 +72,7 @@ sagewest.page.Brand.prototype.init = function() {
   this.map_initialize();
 
   this.creage_brand_slider();
+  this.create_brand_location_title();
 
 
   this.update_page_layout();    // this is called after the initial create to update the layout
@@ -130,6 +141,25 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
 
 };
 
+
+sagewest.page.Brand.prototype.create_brand_location_title = function() {
+
+
+  
+
+
+
+  if($('#brand-location-page-title-section').length != 0){
+
+    this.brand_location_title = new sagewest.component.BrandLocationTitle({}, $('#brand-location-page-title-section'));
+
+    goog.events.listen(this.brand_location_title, sagewest.component.BrandLocationTitle.ON_CHANGE, this.on_brand_location_title_filter_change.bind(this) );
+
+    this.on_brand_location_title_filter_change();
+
+  }
+  
+};
 
 
 
@@ -485,6 +515,77 @@ sagewest.page.Brand.prototype.others = function(){
 //   |_____|  \_/  |_____|_| \_| |_| |____/
 //
 
+
+
+/**
+ * @param  {Object} event
+ */
+sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(event){
+
+  
+  console.log('on_brand_location_title_filter_change');
+
+  console.log(this.brand_location_title.current_country);
+  console.log(this.brand_location_title.current_territory);
+  console.log(this.brand_location_title.current_city);
+
+  /*
+  this.brand_location_title.current_country = 'none';
+  this.brand_location_title.current_territory = 'none';
+  this.brand_location_title.current_city = 'none';
+  */
+
+  var arr = $('#brand-location-page-item-container .brand-location-page-item');
+  var item = null;
+
+  // arr.removeClass('invisible-version');
+
+
+  var country = '';
+  var territory = '';
+  var city = '';
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+    
+    country = item.attr('data-country');
+    territory = item.attr('data-territory');
+    city = item.attr('data-city');
+
+
+    if(this.brand_location_title.current_country == 'none'){
+      item.show(0);
+
+    } else if(this.brand_location_title.current_country == country) {
+
+      if (this.brand_location_title.current_territory == 'none'){
+        item.show(0);
+
+      } else if(this.brand_location_title.current_territory == territory) {
+
+        if (this.brand_location_title.current_city == 'none') {
+          item.show(0);
+        } else if (this.brand_location_title.current_city == city) {
+          item.show(0);
+        } else {
+          item.hide(0);
+        }
+
+      } else {
+        item.hide(0);
+      }
+
+    } else {
+      item.hide(0);
+    }
+
+  }
+
+
+  this.update_page_layout();
+
+
+};
 
 
 //    _   _ _____ ___ _
