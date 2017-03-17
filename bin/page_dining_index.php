@@ -111,7 +111,7 @@
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
                     <h5>Lennons Restaurant & Bar</h5>
-                    <p>We don’t see why you should have to wait long for good food. Sit back and watch as our chefs deftly whip up healthy gourmet comfort food from fresh regional produce right in front of you. Then pair with a superb wine or beer. Cheers!</p>
+                    <p class="minimize" data-length="85">We don’t see why you should have to wait long for good food. Sit back and watch as our chefs deftly whip up healthy gourmet comfort food from fresh regional produce right in front of you. Then pair with a superb wine or beer. Cheers!</p>
                     <div class="cta-container">
                       <a href="" class="arrow-cta">More details</a>
                     </div>
@@ -138,7 +138,7 @@
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
                     <h5>Julio’s</h5>
-                    <p>With over 20 years of rich heritage and a passion for seriously delicious food, we’ve got something for everyone from a quick bite to a leisurely dinner.</p>
+                    <p class="minimize" data-length="85">With over 20 years of rich heritage and a passion for seriously delicious food, we’ve got something for everyone from a quick bite to a leisurely dinner.</p>
                     <div class="cta-container">
                       <a href="" class="arrow-cta">More details</a>
                     </div>
@@ -165,7 +165,7 @@
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
                     <h5>The Five Islands Room & Terrace Restaurant</h5>
-                    <p>Experience a special way to energise your day at The Five Islands Room & Terrace Restaurant. Serving a full buffet breakfast every day, enjoy your meals with stunning views across the ocean. The restaurant is located on level 3, and opens from 6.30am on weekdays and 7.00am on weekends.</p>
+                    <p class="minimize" data-length="85">Experience a special way to energise your day at The Five Islands Room & Terrace Restaurant. Serving a full buffet breakfast every day, enjoy your meals with stunning views across the ocean. The restaurant is located on level 3, and opens from 6.30am on weekdays and 7.00am on weekends.</p>
                     <div class="cta-container">
                       <a href="" class="arrow-cta">More details</a>
                     </div>
