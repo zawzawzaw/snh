@@ -8285,7 +8285,7 @@ a.boxlist-item-content-image:hover {
 @media only screen and (max-width: 1280px) {
   .boxlist-item-content-room-detail p {
     font-size: 11px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .boxlist-item-content-room-detail p:last-child {
     margin-bottom: 0px;
@@ -8630,6 +8630,7 @@ a.boxlist-item-content-image:hover {
   }
   .manic-expand-container .manic-expand-container-title h4 {
     padding-right: 30px;
+    font-size: 13px;
   }
   .manic-expand-container .manic-expand-container-content {
     border-top: 1px solid #d7d7d7;
@@ -11425,6 +11426,14 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   line-height: 24px;
   letter-spacing: 0em;
   color: #7d7d7d;
+}
+@media all and (max-width: 991px) {
+  .detail-page-other-info {
+    padding: 0px;
+    margin-bottom: 0px;
+    box-shadow: none;
+    background: none;
+  }
 }
 .room-detail-page-item .room-detail-page-item-box {
   padding-bottom: 70px;

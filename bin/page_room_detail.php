@@ -760,7 +760,7 @@
         <div class="row">
           <div class="col-xs-12">
 
-            <h4>current promotions</h4>
+            <h4>more accommodation choices</h4>
 
           </div>
         </div>
@@ -773,9 +773,8 @@
         <div class="row">
           <div class="col-xs-12">
 
-            <div id="dining-detail-page-item-container" class="boxlist-item-container">
+            <div id="room-detail-page-item-container" class="boxlist-item-container">
               <div class="row">
-
 
                 <!--
                     ___  _
@@ -787,35 +786,52 @@
                 -->
 
                 <div class="col-md-4">
-                  <div class="dining-detail-page-item boxlist-item">
+                  <div class="room-detail-page-item boxlist-item">
+                    <div class="room-detail-page-item-box boxlist-item-box">
 
-                    <div class="dining-detail-page-item-box boxlist-item-box">
-
-                      <div class="boxlist-item-content-image">
+                      <div class="boxlist-item-content-image short-version">
                         <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/dining/dining-detail-promotion-01.jpg"
-                            data-image-tablet="images_cms/dining/dining-detail-promotion-01-mobile.jpg"
-                            data-image-mobile="images_cms/dining/dining-detail-promotion-01-mobile.jpg">
+                          <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
                         </div>
                       </div>
-                      <div class="dining-detail-page-item-content-copy">
+                      <div class="room-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>1-for-1 Tapas</h5>
-                          <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                          <h5>Standard Room</h5>
                         </div>
                       </div>
-
-                      <div class="boxlist-item-content-cta">
+                      <div class="room-detail-page-item-content-detail">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="arrow-cta">more details</a>
-                          </div>                          
-                        </div>
-                      </div>
-                    </div> <!-- boxlist-item-content-box -->
 
-                  </div> <!-- dining-detail-page-item -->
+                            <div class="boxlist-item-content-room-detail">
+                              <p class="detail-person">2 adults, 2 children</p>
+                              <p class="detail-size">25 SQM</p>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div> <!-- room-detail-page-item-content-detail -->
+                      
+                      <div class="room-detail-page-item-cta-container">
+                        <div class="row">
+                          <div class="col-xs-7">
+                              <a href="room_detail.php" class="arrow-cta">View room</a>
+                          </div>
+                          <div class="col-xs-5">
+                            <div class="boxlist-item-content-price">
+                              <h6>Prices from</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$119</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div> 
+                      </div>                     
+                    </div> <!-- boxlist-item-box -->
+
+                  </div> <!-- room-detail-page-item -->
                 </div> <!-- col-md-4 -->
 
                 <!--
@@ -828,34 +844,51 @@
                 -->
 
                 <div class="col-md-4">
-                  <div class="dining-detail-page-item boxlist-item">
+                  <div class="room-detail-page-item boxlist-item">
+                    <div class="room-detail-page-item-box boxlist-item-box">
 
-                    <div class="dining-detail-page-item-box boxlist-item-box">
-
-                      <div class="boxlist-item-content-image">
+                      <div class="boxlist-item-content-image short-version">
                         <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
-                            data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
-                            data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
+                          <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
                         </div>
                       </div>
-                      <div class="dining-detail-page-item-content-copy">
+                      <div class="room-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Sage Amour</h5>
-                          <p>Why fly to Rome when you can Sage Amour? </p>
+                          <h5>Deluxe Room</h5>
                         </div>
-                      </div> <!-- dining-detail-page-item-content-copy -->
-                      <div class="boxlist-item-content-cta">
+                      </div> <!-- room-detail-page-item-content-copy -->
+                      <div class="room-detail-page-item-content-detail">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="arrow-cta">more details</a>
-                          </div>                          
+
+                            <div class="boxlist-item-content-room-detail">
+                              <p class="detail-person">2 adults, 2 children</p>
+                              <p class="detail-size">25 SQM</p>
+                            </div>
+
+                          </div>
                         </div>
                       </div>
-                    </div> <!-- boxlist-item-content-box -->
+
+                      <div class="room-detail-page-item-cta-container">
+                        <div class="row">
+                          <div class="col-xs-7">
+                            <a href="room_detail.php" class="arrow-cta">View room</a>
+                          </div>
+                          <div class="col-xs-5">
+                            <div class="boxlist-item-content-price">
+                              <h6>Prices from</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$235</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div> <!-- boxlist-item-box -->
                     
-                  </div> <!-- dining-detail-page-item -->
+                  </div> <!-- room-detail-page-item -->
                 </div>
 
                 <!--
@@ -868,40 +901,59 @@
                 -->
 
                 <div class="col-md-4">
-                  <div class="dining-detail-page-item boxlist-item">
+                  <div class="room-detail-page-item boxlist-item">
 
-                    <div class="dining-detail-page-item-box boxlist-item-box">
+                    <div class="room-detail-page-item-box boxlist-item-box">
 
-                      <div class="boxlist-item-content-image">
+                      <div class="boxlist-item-content-image short-version">
                         <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/dining/dining-detail-promotion-03.jpg"
-                            data-image-tablet="images_cms/dining/dining-detail-promotion-03-mobile.jpg"
-                            data-image-mobile="images_cms/dining/dining-detail-promotion-03-mobile.jpg">
+                          <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
                         </div>
                       </div>
-                      <div class="dining-detail-page-item-content-copy">
+                      <div class="room-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Valentine’s Day</h5>
-                          <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                          <h5>Superior Room</h5>
                         </div>
                       </div>
-                      <div class="boxlist-item-content-cta">
+                      <div class="room-detail-page-item-content-detail">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="arrow-cta">more details</a>
+
+                            <div class="boxlist-item-content-room-detail">
+                              <p class="detail-person">2 adults, 2 children</p>
+                              <p class="detail-size">25 SQM</p>
+                            </div>
+
                           </div>                          
                         </div>
                       </div>
-                    </div> <!-- dining-detail-page-item-box -->
+                      <div class="room-detail-page-item-cta-container">
+                        <div class="row">
+                          <div class="col-xs-7">
+                            <a href="room_detail.php" class="arrow-cta">View room</a>
+                          </div>
+                          <div class="col-xs-5">
 
-                  </div> <!-- dining-detail-page-item -->
+                            <div class="boxlist-item-content-price">
+                              <h6>Prices from</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$135</span>
+                              </p>
+                            </div>
+                            
+                          </div>
+                        </div>                        
+                      </div>
+                    </div> <!-- boxlist-item-box -->
+
+                  </div> <!-- room-detail-page-item -->
                 </div>
 
 
 
               </div> <!-- row -->
-            </div> <!-- dining-detail-page-item-container -->
+            </div> <!-- detail-page-more-item-container -->
 
           </div>
         </div>
