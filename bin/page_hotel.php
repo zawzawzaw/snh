@@ -214,6 +214,7 @@
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
                 <p class="detail-person">2 adults, 2 children</p>
                 <p class="detail-size">25 SQM</p>
+                <p class="detail-bed">1 King size, 2 Twin Beds</p>
               </div>
 
               
@@ -269,6 +270,7 @@
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
                 <p class="detail-person">2 adults, 2 children</p>
                 <p class="detail-size">25 SQM</p>
+                <p class="detail-bed">1 King size, 2 Twin Beds</p>
               </div>
 
               
@@ -324,6 +326,7 @@
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
                 <p class="detail-person">2 adults, 2 children</p>
                 <p class="detail-size">25 SQM</p>
+                <p class="detail-bed">1 King size, 2 Twin Beds</p>
               </div>
 
               
