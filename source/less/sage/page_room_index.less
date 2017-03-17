@@ -4,6 +4,9 @@
 
 #room-index-page-item-container{
   padding-bottom: 77px;
+  @media all and (max-width: 991px) {
+    padding-bottom: 0px;
+  }
 
   .room-index-page-item{
     margin-bottom: 20px;
@@ -16,10 +19,15 @@
 
   .room-index-page-item-box{
     padding-bottom: 30px + 65px + 32px;
+    @media all and (max-width: 991px) {
+      padding-bottom: 80px;
+    }
   }
 
   .room-index-page-item-title{
     padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
     h5{
       color: @violet;
 
@@ -30,9 +38,13 @@
   }
   .room-index-page-item-detail{
     padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .room-index-page-item-content-copy{
-
+    @media all and (max-width: 991px) {
+      display: none;
+    }
   }
   .room-index-page-item-arrow-cta-container{
     padding-bottom: 21px;

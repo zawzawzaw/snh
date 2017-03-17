@@ -143,7 +143,7 @@
 
 -->
 
-<article id="detail-page-content-section">
+<article id="detail-page-content-section" class="hidden-xs hidden-sm">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-7 col-sm-8">
@@ -329,7 +329,7 @@
 
 
 
-<div class="container-fluid has-breakpoint">
+<div class="container-fluid has-breakpoint hidden-xs hidden-sm">
   <div class="row">
     <div class="col-md-12">
       <hr>
@@ -442,7 +442,7 @@
 
 -->
 
-<article id="detail-page-more-section" class="short-version">
+<article id="detail-page-more-section" class="short-version hidden-xs hidden-sm">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
@@ -636,10 +636,281 @@
 </article> <!-- detail-page-more-section -->
 
 
+<!--
+   __  __  ___  ____ ___ _     _____
+  |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |\/| | | | |  _ \| || |   |  _|
+  | |  | | |_| | |_) | || |___| |___
+  |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
+<article id="detail-page-content-section-mobile" class="visible-sm visible-xs">
+
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <div class="detail-page-contact-info">
+            <ul>
+              <li><p class="room-size-sqft"><span>25 SQM</span></p></li>
+              <li><p class="room-size-person"><span>2 adults, 2 children</span></p></li>
+              <li><p class="room-bed-size">1 KING SIZE BED, 2 TWIN BEDs</p></li>
+              <li><p class="room-view">PARTIAL MOUNTAIN AND CITY VIEW</p></li>
+            </ul>
+
+          </div> <!-- detail-page-contact-info -->
+
+
+        </div>
+      </div> <!-- row -->
+
+    </div> <!-- container-fluid -->
+
+    <div id="detail-page-content">
+      <div class="detail-page-content-title">
+        <h5>About this room</h5>
+      </div>
+
+      <div class="detail-page-content-description">
+        <div class="default-copy">
+          <p class="minimize-read-more" data-length="160">Superior Sage Twin Room located in our Levels 10 - 13 is superior in every sense of the word these rooms offer amazing views of the Perth Skyline or Kings Park. <br> Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring two single beds you will have no problems drifting off on our custom mattresses for the two of you. After a long day out refresh yourself under the duel shower heads and revitalizing SOAK amenities. Equipped with free and fast WiFi you can surf the net or work though those emails. Alternatively, kick back and enjoy the 48” flat screen TV with a cold drink and snack from the mini bar. <br> One child under the age of 12 using existing bedding is free. No rollaway available in this room.</p>          
+        </div>      
+      </div>
+    </div>
+
+    <div id="detail-page-content" class="no-background">
+      <div class="detail-page-content-subtitle">
+        <h5>Amenities</h5>
+      </div>
+
+      <div class="detail-page-content-description">
+        <div class="default-copy">
+          <ul>
+            <li>Air conditioning</li>
+            <li>Expresso coffee machine</li>
+            <li>Mini-bar and kettle and tea</li>
+            <li>Balcony/terrace in selected rooms</li>
+            <li>Flat screen LCD television 51" with satellite/cable channels and DVD player</li>
+            <li>Air conditioning and climate control</li>
+            <li>Alarm clock</li>
+            <li>Complimentary high-speed WiFi</li>
+            <li>In-room safe</li>
+            <li>Linen and Towels</li>
+            <li>Non-Smoking</li>
+            <li>Room Service</li>
+            <li>Shower – separate</li>
+            <li>Telephone</li>
+          </ul>      
+        </div>      
+      </div>
+    </div> <!-- detail-page-content -->
 
 
 
+</article>
 
+<article id="detail-page-expanding-content-section" class="visible-sm visible-xs">
+
+  <div class="manic-expand-container" data-group="mobile-dining-detail-page">
+    <div class="scroll-target" data-value="title-01"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>Other Information</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+
+            <div class="detail-page-other-info">
+              
+              <div class="other-info-1">
+                <h6>SAGE Hotel App:</h6>
+                <p>Control the lights, temperature, Smart TV, door lock, room service and have access to over 2,000 of the world’s newspapers and magazines throughout your stay</p>
+              </div>
+              
+              <div class="other-info-2">
+                <h6>Turn Down Service:</h6> 
+                <p>Enjoy complementary cookies in the evening</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="manic-expand-container" data-group="mobile-dining-detail-page">
+    <div class="scroll-target" data-value="title-02"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>current promotions</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div id="dining-detail-page-item-container" class="boxlist-item-container">
+              <div class="row">
+
+
+                <!--
+                    ___  _
+                   / _ \/ |
+                  | | | | |
+                  | |_| | |
+                   \___/|_|
+
+                -->
+
+                <div class="col-md-4">
+                  <div class="dining-detail-page-item boxlist-item">
+
+                    <div class="dining-detail-page-item-box boxlist-item-box">
+
+                      <div class="boxlist-item-content-image">
+                        <div class="manic-image-container">
+                          <img src=""
+                            data-image-desktop="images_cms/dining/dining-detail-promotion-01.jpg"
+                            data-image-tablet="images_cms/dining/dining-detail-promotion-01-mobile.jpg"
+                            data-image-mobile="images_cms/dining/dining-detail-promotion-01-mobile.jpg">
+                        </div>
+                      </div>
+                      <div class="dining-detail-page-item-content-copy">
+                        <div class="default-copy">
+                          <h5>1-for-1 Tapas</h5>
+                          <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                        </div>
+                      </div>
+
+                      <div class="boxlist-item-content-cta">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#" class="arrow-cta">more details</a>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div> <!-- boxlist-item-content-box -->
+
+                  </div> <!-- dining-detail-page-item -->
+                </div> <!-- col-md-4 -->
+
+                <!--
+                    ___ ____
+                   / _ \___ \
+                  | | | |__) |
+                  | |_| / __/
+                   \___/_____|
+
+                -->
+
+                <div class="col-md-4">
+                  <div class="dining-detail-page-item boxlist-item">
+
+                    <div class="dining-detail-page-item-box boxlist-item-box">
+
+                      <div class="boxlist-item-content-image">
+                        <div class="manic-image-container">
+                          <img src=""
+                            data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
+                            data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
+                            data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
+                        </div>
+                      </div>
+                      <div class="dining-detail-page-item-content-copy">
+                        <div class="default-copy">
+                          <h5>Sage Amour</h5>
+                          <p>Why fly to Rome when you can Sage Amour? </p>
+                        </div>
+                      </div> <!-- dining-detail-page-item-content-copy -->
+                      <div class="boxlist-item-content-cta">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#" class="arrow-cta">more details</a>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div> <!-- boxlist-item-content-box -->
+                    
+                  </div> <!-- dining-detail-page-item -->
+                </div>
+
+                <!--
+                    ___ _____
+                   / _ \___ /
+                  | | | ||_ \
+                  | |_| |__) |
+                   \___/____/
+
+                -->
+
+                <div class="col-md-4">
+                  <div class="dining-detail-page-item boxlist-item">
+
+                    <div class="dining-detail-page-item-box boxlist-item-box">
+
+                      <div class="boxlist-item-content-image">
+                        <div class="manic-image-container">
+                          <img src=""
+                            data-image-desktop="images_cms/dining/dining-detail-promotion-03.jpg"
+                            data-image-tablet="images_cms/dining/dining-detail-promotion-03-mobile.jpg"
+                            data-image-mobile="images_cms/dining/dining-detail-promotion-03-mobile.jpg">
+                        </div>
+                      </div>
+                      <div class="dining-detail-page-item-content-copy">
+                        <div class="default-copy">
+                          <h5>Valentine’s Day</h5>
+                          <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                        </div>
+                      </div>
+                      <div class="boxlist-item-content-cta">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#" class="arrow-cta">more details</a>
+                          </div>                          
+                        </div>
+                      </div>
+                    </div> <!-- dining-detail-page-item-box -->
+
+                  </div> <!-- dining-detail-page-item -->
+                </div>
+
+
+
+              </div> <!-- row -->
+            </div> <!-- dining-detail-page-item-container -->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</article>
 
 
 

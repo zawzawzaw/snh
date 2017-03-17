@@ -571,7 +571,7 @@ body.brand-alternative-page{
   background: @violet;
   padding-left: 30px;
   padding-top: 21px;
-  padding-bottom: 16px;
+  padding-bottom: 21px;
 
   @media all and (max-width: 991px) {
     padding-left: 20px;
@@ -583,6 +583,21 @@ body.brand-alternative-page{
     line-height: 18px;
     color: @white;
     letter-spacing: 0.01em;
+  }
+
+  &.link-to-location {
+    &:after{
+      .fa;
+      content: "\f105"; // .fa-long-arrow-right
+      font-size: 15px;
+      line-height: 18px;
+      color: @white;
+
+      .display-inline-block;
+      position: absolute;
+      top: 22px;
+      right: 28px;
+    }
   }
 }
 body.brand-alternative-page{

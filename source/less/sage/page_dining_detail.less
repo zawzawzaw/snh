@@ -124,6 +124,10 @@
     padding-top: 60px;
     padding-bottom: 45px;
 
+    &.no-background {
+      background: none;
+    }
+
     .detail-page-content-title{
 
     }
@@ -305,49 +309,70 @@
           display: inline-block;   
           word-wrap: break-word;       
         }
-      }
-      p.address {
+
         &:before {
           .fa;
-          content: "\f041"; // .fa-long-arrow-right
+          content: "\f041";
           font-size: 25px;
           letter-spacing: 0.08em;
           color: @dark-brown;
-
           .display-inline-block;
           padding-right: 10px;
+        }
+        span {
+          vertical-align: middle;
+        } 
+      }
+      p.address {
+        &:before {          
+          content: "\f041"; // .fa-long-arrow-right
+          font-size: 25px;          
         }          
       }
       p.phoneno {
-        &:before {
-          .fa;
+        &:before {          
           content: "\f095"; // .fa-long-arrow-right
-          font-size: 20px;
-          letter-spacing: 0.08em;
-          color: @dark-brown;
-
-          .display-inline-block;
-          padding-right: 10px;
-          vertical-align: middle;
-        }  
-        span {
+          font-size: 20px;          
           vertical-align: middle;
         }  
       }
       a.email {
-        &:before {
-          .fa;
+        &:before {          
           content: "\f0e0"; // .fa-long-arrow-right
-          font-size: 16px;
-          letter-spacing: 0.08em;
-          color: @dark-brown;
-
-          .display-inline-block;
-          padding-right: 10px;
+          font-size: 16px;          
           vertical-align: top;
           word-wrap: break-word;
         }
-        span {
+      }
+      p.room-size-sqft {
+        &:before {
+          content: '';
+          display: inline-block!important;
+          vertical-align: middle;
+          margin-right: 10px;
+          .detail-area-icon;
+        }
+      }
+      p.room-bed-size {
+        &:before {          
+          content: "\f236"; // .fa-long-arrow-right
+          font-size: 20px;          
+          vertical-align: middle;
+        } 
+      }
+      p.room-size-person {
+        &:before {
+          content: '';
+          display: inline-block!important;
+          vertical-align: middle;
+          margin-right: 10px;
+          .detail-adult-icon;
+        }
+      }
+      p.room-view {        
+        &:before {          
+          content: "\f06e"; // .fa-long-arrow-right
+          font-size: 20px;          
           vertical-align: middle;
         } 
       }
@@ -445,6 +470,9 @@
 
   .dining-detail-page-item-box{
     padding-bottom: 30px + 65px;    // 65 = cta container
+    @media all and (max-width: 991px) {
+      padding-bottom: 55px;
+    }
   }
 
   .dining-detail-page-item-content-copy{

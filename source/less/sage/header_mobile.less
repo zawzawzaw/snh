@@ -70,6 +70,9 @@ body.body-sticky-version{
     .white-bg{
       top: 0px;
     }
+    .mobile-header-bg {
+      .box-shadow (1px -1px 10px #000);
+    }
   }
 
   #mobile-header-content-container{
@@ -172,7 +175,8 @@ body.body-sticky-version{
   width: @mobile-white-bg-height;
   height: @mobile-white-bg-height;
 
-  background: @white;
+  // background: @white;
+  background: @off-white;
 
   &:before{
     content: "";
@@ -237,7 +241,7 @@ body.mobile-menu-open{
   #mobile-header {
     .mobile-header-bg {
       width: 100%;
-      background: @white!important;
+      background: @off-white!important;
       .box-shadow (1px -1px 10px #000);
     }
     #mobile-header-logo {

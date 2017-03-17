@@ -77,7 +77,7 @@
       <div class="col-md-8 col-sm-10 col-xs-12">
 
         <div class="index-page-title">
-          <h1>Your stay, your way.</h1>
+          <h1>Your stay, <br class="visible-xs"> your way.</h1>
           <p>Say goodbye (or goodnight) to the standard stays you’ll find all over the globe and g’day to fresh new experiences with a local flavour. We go all out so you enjoy full-on flexibility on your accommodation in Perth.</p>
         </div> <!-- default-index-page-title -->
 
@@ -102,6 +102,7 @@
 <article id="room-index-page-list-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
+      <div class="col-md-12">
 
       <div id="room-index-page-item-container" class="boxlist-item-container">
 
@@ -127,6 +128,7 @@
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
                   <p class="detail-person">2 adults, 2 children</p>
                   <p class="detail-size">25 SQM</p>
+                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                 </div>
 
                 
@@ -136,7 +138,7 @@
                   </div>
                 </div>
 
-                <div class="boxlist-item-content-cta">
+                <div class="boxlist-item-content-cta hidden-sm hidden-xs">
 
                   <div class="room-index-page-item-arrow-cta-container">
                     <a href="room_detail.php" class="arrow-cta">View room details</a>
@@ -150,6 +152,26 @@
 
                       <div class="boxlist-item-content-price">
                         <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$119</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
+
+                  <div class="row">
+                    <div class="col-xs-6 v-align-bottom">
+                      <a href="room_detail.php" class="arrow-cta">View room</a>
+                    </div>
+                    <div class="col-xs-6 v-align-bottom">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>price from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$119</span>
@@ -182,6 +204,7 @@
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
                   <p class="detail-person">2 adults, 2 children</p>
                   <p class="detail-size">25 SQM</p>
+                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                 </div>
 
                 
@@ -191,7 +214,7 @@
                   </div>
                 </div>
 
-                <div class="boxlist-item-content-cta">
+                <div class="boxlist-item-content-cta hidden-xs hidden-sm">
 
                   <div class="room-index-page-item-arrow-cta-container">
                     <a href="room_detail.php" class="arrow-cta">View room details</a>
@@ -205,6 +228,26 @@
 
                       <div class="boxlist-item-content-price">
                         <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$119</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
+
+                  <div class="row">
+                    <div class="col-xs-6 v-align-bottom">
+                      <a href="room_detail.php" class="arrow-cta">View room</a>
+                    </div>
+                    <div class="col-xs-6 v-align-bottom">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>price from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$119</span>
@@ -237,6 +280,7 @@
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
                   <p class="detail-person">2 adults, 2 children</p>
                   <p class="detail-size">25 SQM</p>
+                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                 </div>
 
                 
@@ -246,7 +290,7 @@
                   </div>
                 </div>
 
-                <div class="boxlist-item-content-cta">
+                <div class="boxlist-item-content-cta hidden-xs hidden-sm">
 
                   <div class="room-index-page-item-arrow-cta-container">
                     <a href="room_detail.php" class="arrow-cta">View room details</a>
@@ -260,6 +304,26 @@
 
                       <div class="boxlist-item-content-price">
                         <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$135</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
+
+                  <div class="row">
+                    <div class="col-xs-6 v-align-bottom">
+                      <a href="room_detail.php" class="arrow-cta">View room</a>
+                    </div>
+                    <div class="col-xs-6 v-align-bottom">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>price from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$135</span>
@@ -296,6 +360,7 @@
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
                   <p class="detail-person">2 adults, 2 children</p>
                   <p class="detail-size">25 SQM</p>
+                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                 </div>
 
                 
@@ -305,7 +370,7 @@
                   </div>
                 </div>
 
-                <div class="boxlist-item-content-cta">
+                <div class="boxlist-item-content-cta hidden-sm hidden-xs">
 
                   <div class="room-index-page-item-arrow-cta-container">
                     <a href="room_detail.php" class="arrow-cta">View room details</a>
@@ -319,6 +384,26 @@
 
                       <div class="boxlist-item-content-price">
                         <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$135</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
+
+                  <div class="row">
+                    <div class="col-xs-6 v-align-bottom">
+                      <a href="room_detail.php" class="arrow-cta">View room</a>
+                    </div>
+                    <div class="col-xs-6 v-align-bottom">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>price from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$135</span>
@@ -351,6 +436,7 @@
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
                   <p class="detail-person">3 adults, 2 children</p>
                   <p class="detail-size">35 SQM</p>
+                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                 </div>
 
                 
@@ -360,7 +446,7 @@
                   </div>
                 </div>
 
-                <div class="boxlist-item-content-cta">
+                <div class="boxlist-item-content-cta hidden-xs hidden-sm">
 
                   <div class="room-index-page-item-arrow-cta-container">
                     <a href="room_detail.php" class="arrow-cta">View room details</a>
@@ -374,6 +460,26 @@
 
                       <div class="boxlist-item-content-price">
                         <h6>per night</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$235</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
+
+                  <div class="row">
+                    <div class="col-xs-6 v-align-bottom">
+                      <a href="room_detail.php" class="arrow-cta">View room</a>
+                    </div>
+                    <div class="col-xs-6 v-align-bottom">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>price from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$235</span>
@@ -406,6 +512,7 @@
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
                   <p class="detail-person">3 adults, 2 children</p>
                   <p class="detail-size">35 SQM</p>
+                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                 </div>
 
                 
@@ -415,7 +522,7 @@
                   </div>
                 </div>
 
-                <div class="boxlist-item-content-cta">
+                <div class="boxlist-item-content-cta hidden-sm hidden-xs">
 
                   <div class="room-index-page-item-arrow-cta-container">
                     <a href="room_detail.php" class="arrow-cta">View room details</a>
@@ -439,6 +546,26 @@
                   </div>
                 </div>
 
+                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
+
+                  <div class="row">
+                    <div class="col-xs-6 v-align-bottom">
+                      <a href="room_detail.php" class="arrow-cta">View room</a>
+                    </div>
+                    <div class="col-xs-6 v-align-bottom">
+
+                      <div class="boxlist-item-content-price">
+                        <h6>price from</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$235</span>
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
@@ -450,7 +577,7 @@
 
       </div> <!-- room-index-page-item-container -->
 
-      
+      </div>
     </div>
   </div>
 </article>

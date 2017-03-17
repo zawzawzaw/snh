@@ -20,6 +20,9 @@
 <header id="mobile-header-expanded">
 
   <div id="mobile-header-menu-container">
+    <div id="destination-indicator" class="link-to-location">
+      <a href="brand_location.php"><p>Select another location:</p></a>
+    </div>
     <nav id="mobile-menu" class="has-mobile-sub-menu">
       <span>sage west perth</span>
       <ul>
