@@ -49,31 +49,27 @@
         </div>
       </div>
 
-      <div class="col-md-1">
+      <div class="col-md-1 hidden-sm hidden-xs">
         <div class="footer-seperator">
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 hidden-sm hidden-xs">
 
-        <div id="footer-menu-container">
-          <div id="footer-menu-1" class="footer-menu">
-            <h1>Corporate</h1>
-            <ul>
-              <li><a href="#">SilverNeedle® Hospitality Group</a></li>
-              <li><a href="#">Press Room</a></li>
-              <li><a href="#">Careers</a></li>
-            </ul>
-          </div>
-          <div id="footer-menu-2" class="footer-menu">
-            <h1>&nbsp;</h1>
-            <ul>
-              <li><a href="#">SilverNeedle Select</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Events</a></li>
-            </ul>
-          </div>
-        </div> <!-- footer-menu-container -->
+        <div id="hotel-footer-menu-container">
+          <h1>Quick Links</h1>
+          <ul>
+            <li><a href="javascript:void(0);">Rooms</a></li>
+            <li><a href="javascript:void(0);">Offers</a></li>
+            <li><a href="javascript:void(0);">Dining</a></li>
+            <li><a href="javascript:void(0);">Facilities</a></li>
+            <li><a href="javascript:void(0);">Gallery</a></li>
+            <li><a href="javascript:void(0);">Activities</a></li>
+            <li><a href="javascript:void(0);">Reviews</a></li>
+            <li><a href="javascript:void(0);">Events</a></li>
+            <li><a href="javascript:void(0);">Contact</a></li>
+          </ul>
+        </div>
 
         <div id="footer-social-media">
           <ul>
@@ -88,7 +84,7 @@
       </div>
 
       
-      <div class="col-md-1">
+      <div class="col-md-1 hidden-sm hidden-xs">
         <div class="footer-seperator">
         </div>
       </div>
