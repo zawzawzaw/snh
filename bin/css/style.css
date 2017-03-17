@@ -11133,8 +11133,12 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 .room-index-page-item .room-index-page-item-title {
   padding-bottom: 13px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+@media all and (max-width: 991px) {
+  .room-index-page-item .room-index-page-item-title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .room-index-page-item .room-index-page-item-title h5 {
   color: #7d0052;
@@ -11144,8 +11148,12 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 .room-index-page-item .room-index-page-item-detail {
   padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+@media all and (max-width: 991px) {
+  .room-index-page-item .room-index-page-item-detail {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media all and (max-width: 991px) {
   .room-index-page-item .room-index-page-item-content-copy {
@@ -11438,11 +11446,28 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 .room-detail-page-item .room-detail-page-item-box {
   padding-bottom: 70px;
 }
+@media all and (max-width: 991px) {
+  .room-detail-page-item .room-detail-page-item-box {
+    padding-bottom: 80px;
+  }
+}
 .room-detail-page-item .room-detail-page-item-content-copy h5 {
   color: #7d0052;
 }
+@media all and (max-width: 991px) {
+  .room-detail-page-item .room-detail-page-item-content-copy {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .room-detail-page-item .room-detail-page-item-content-detail {
   padding-top: 10px;
+}
+@media all and (max-width: 991px) {
+  .room-detail-page-item .room-detail-page-item-content-detail {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .room-detail-page-item .room-detail-page-item-content-detail .boxlist-item-content-price {
   margin-top: 0;

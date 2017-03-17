@@ -806,6 +806,7 @@
                             <div class="boxlist-item-content-room-detail">
                               <p class="detail-person">2 adults, 2 children</p>
                               <p class="detail-size">25 SQM</p>
+                              <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                             </div>
 
                           </div>
@@ -813,12 +814,12 @@
 
                       </div> <!-- room-detail-page-item-content-detail -->
                       
-                      <div class="room-detail-page-item-cta-container">
+                      <div class="room-detail-page-item-cta-container boxlist-item-content-cta-mobile">
                         <div class="row">
-                          <div class="col-xs-7">
+                          <div class="col-xs-7 v-align-bottom">
                               <a href="room_detail.php" class="arrow-cta">View room</a>
                           </div>
-                          <div class="col-xs-5">
+                          <div class="col-xs-5 v-align-bottom">
                             <div class="boxlist-item-content-price">
                               <h6>Prices from</h6>
                               <p class="content-price">
@@ -864,18 +865,19 @@
                             <div class="boxlist-item-content-room-detail">
                               <p class="detail-person">2 adults, 2 children</p>
                               <p class="detail-size">25 SQM</p>
+                              <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                             </div>
 
                           </div>
                         </div>
                       </div>
 
-                      <div class="room-detail-page-item-cta-container">
+                      <div class="room-detail-page-item-cta-container boxlist-item-content-cta-mobile">
                         <div class="row">
-                          <div class="col-xs-7">
+                          <div class="col-xs-7 v-align-bottom">
                             <a href="room_detail.php" class="arrow-cta">View room</a>
                           </div>
-                          <div class="col-xs-5">
+                          <div class="col-xs-5 v-align-bottom">
                             <div class="boxlist-item-content-price">
                               <h6>Prices from</h6>
                               <p class="content-price">
@@ -922,17 +924,18 @@
                             <div class="boxlist-item-content-room-detail">
                               <p class="detail-person">2 adults, 2 children</p>
                               <p class="detail-size">25 SQM</p>
+                              <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
                             </div>
 
                           </div>                          
                         </div>
                       </div>
-                      <div class="room-detail-page-item-cta-container">
+                      <div class="room-detail-page-item-cta-container boxlist-item-content-cta-mobile">
                         <div class="row">
-                          <div class="col-xs-7">
+                          <div class="col-xs-7 v-align-bottom">
                             <a href="room_detail.php" class="arrow-cta">View room</a>
                           </div>
-                          <div class="col-xs-5">
+                          <div class="col-xs-5 v-align-bottom">
 
                             <div class="boxlist-item-content-price">
                               <h6>Prices from</h6>
