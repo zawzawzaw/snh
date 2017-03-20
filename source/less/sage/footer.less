@@ -12,7 +12,8 @@
   
   #footer-logo {
     position: absolute;
-    top: -80px; 
+    // top: -80px; 
+    top: -78px;
     img {
       margin-left: -5px;      
     }
@@ -31,7 +32,11 @@
   }
 
   #footer-subscribe-form {
-    padding-top: 80px;
+    // padding-top: 80px;
+    padding-top: 83px;
+    h1{
+      margin-bottom: 3px;
+    }
   }
 
   .input-box {
@@ -120,7 +125,8 @@
   }
 
   #footer-snh-group-logos {
-    padding-top: 20px;
+    // padding-top: 20px;
+    padding-top: 36px;
 
     @media only screen and (max-width: 1380px) {
       margin-right: -50px;
@@ -131,14 +137,17 @@
 
 
     h1 {
-      padding-bottom: 15px;
+      // padding-bottom: 15px;
+      padding-bottom: 13px;
     }
     ul {
       max-width: 300px;
+      font-size: 0;
       li {
         display: inline-block;
         margin-right: 20px;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
+        margin-bottom: 5px;
         a {
           img {
             .transition(.3s);
@@ -154,11 +163,15 @@
   }
 
 
+  
+
+
 
 
 
   #footer-social-media{
     padding-top: 22px;
+    margin-left: -30px;
     ul{
       font-size: 0;
 
@@ -218,6 +231,48 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+#hotel-footer-menu-container{
+  padding-top: 35px;
+  h1{
+    margin-bottom: 14px;
+  }
+
+  ul{
+    font-size: 0;
+    margin-bottom: -3px;    // move the social media up
+
+    li{
+      width: 20%;
+      .display-inline-block;
+      line-height: 22px;
+
+      a{
+        color: @white;
+        .open-sans-regular;
+        font-size: 13px;
+        line-height: 22px;
+        .transition(.3s);
+        white-space: nowrap;
+        &:hover {
+          .opacity(0.8);
+        }
+      }
+
+    }
+  }
+}
 
 
 

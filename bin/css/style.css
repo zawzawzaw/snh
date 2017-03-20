@@ -6078,7 +6078,7 @@ body.scrolled #mobile-header .mobile-header-bg {
 }
 #desktop-footer #footer-logo {
   position: absolute;
-  top: -80px;
+  top: -78px;
 }
 #desktop-footer #footer-logo img {
   margin-left: -5px;
@@ -6097,7 +6097,10 @@ body.scrolled #mobile-header .mobile-header-bg {
   color: #ffffff;
 }
 #desktop-footer #footer-subscribe-form {
-  padding-top: 80px;
+  padding-top: 83px;
+}
+#desktop-footer #footer-subscribe-form h1 {
+  margin-bottom: 3px;
 }
 #desktop-footer .input-box {
   margin-bottom: 5px;
@@ -6226,7 +6229,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   filter: alpha(opacity=80);
 }
 #desktop-footer #footer-snh-group-logos {
-  padding-top: 20px;
+  padding-top: 36px;
 }
 @media only screen and (max-width: 1380px) {
   #desktop-footer #footer-snh-group-logos {
@@ -6239,15 +6242,16 @@ body.scrolled #mobile-header .mobile-header-bg {
   }
 }
 #desktop-footer #footer-snh-group-logos h1 {
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 #desktop-footer #footer-snh-group-logos ul {
   max-width: 300px;
+  font-size: 0;
 }
 #desktop-footer #footer-snh-group-logos ul li {
   display: inline-block;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #desktop-footer #footer-snh-group-logos ul li a img {
   -webkit-transition: all 0.3s ease-out 0s;
@@ -6270,6 +6274,7 @@ body.scrolled #mobile-header .mobile-header-bg {
 }
 #desktop-footer #footer-social-media {
   padding-top: 22px;
+  margin-left: -30px;
 }
 #desktop-footer #footer-social-media ul {
   font-size: 0;
@@ -6314,6 +6319,50 @@ body.scrolled #mobile-header .mobile-header-bg {
   #desktop-footer .footer-seperator:before {
     display: none;
   }
+}
+#hotel-footer-menu-container {
+  padding-top: 35px;
+}
+#hotel-footer-menu-container h1 {
+  margin-bottom: 14px;
+}
+#hotel-footer-menu-container ul {
+  font-size: 0;
+  margin-bottom: -3px;
+}
+#hotel-footer-menu-container ul li {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  line-height: 22px;
+}
+#hotel-footer-menu-container ul li a {
+  color: #ffffff;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  /* transition */
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+#hotel-footer-menu-container ul li a:hover {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
 }
 .format-form-label-font {
   font-family: 'Playfair Display', serif;
@@ -7789,7 +7838,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #default-moment-section {
   padding-top: 80px;
   padding-bottom: 125px;
-  background-color: #fcf8f7;
+  background-color: #f1f1f1;
 }
 #default-moment-section #default-moment-content h1 {
   padding-bottom: 5px;
@@ -10946,10 +10995,8 @@ body.brand-alternative-page #destination-indicator p {
   text-transform: uppercase;
   color: #ffffff;
 }
-body.brand-alternative-page #desktop-footer #footer-logo {
-  top: -78px;
-}
-body.brand-alternative-page #desktop-footer h1 {
+body.brand-alternative-page #desktop-footer h1,
+body.hotel #desktop-footer h1 {
   font-family: 'Poppins', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -10958,13 +11005,8 @@ body.brand-alternative-page #desktop-footer h1 {
   letter-spacing: 0.025em;
   color: #ffffff;
 }
-body.brand-alternative-page #desktop-footer #footer-subscribe-form {
-  padding-top: 83px;
-}
-body.brand-alternative-page #desktop-footer #footer-subscribe-form h1 {
-  margin-bottom: 3px;
-}
-body.brand-alternative-page #desktop-footer #footer-copyright-info {
+body.brand-alternative-page #desktop-footer #footer-copyright-info,
+body.hotel #desktop-footer #footer-copyright-info {
   padding-top: 7px;
   padding-right: 5px;
   font-size: 10px;
@@ -10972,7 +11014,8 @@ body.brand-alternative-page #desktop-footer #footer-copyright-info {
   letter-spacing: -0.02em;
   margin-right: -45px;
 }
-body.brand-alternative-page #desktop-footer #footer-copyright-info span {
+body.brand-alternative-page #desktop-footer #footer-copyright-info span,
+body.hotel #desktop-footer #footer-copyright-info span {
   font-size: 10px;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -10981,7 +11024,8 @@ body.brand-alternative-page #desktop-footer #footer-copyright-info span {
   *display: inline;
   zoom: 1;
 }
-body.brand-alternative-page #desktop-footer #footer-copyright-info a {
+body.brand-alternative-page #desktop-footer #footer-copyright-info a,
+body.hotel #desktop-footer #footer-copyright-info a {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -10993,50 +11037,48 @@ body.brand-alternative-page #desktop-footer #footer-copyright-info a {
   *display: inline;
   zoom: 1;
 }
-body.brand-alternative-page #desktop-footer .footer-menu {
+body.brand-alternative-page #desktop-footer .footer-menu,
+body.hotel #desktop-footer .footer-menu {
   padding-top: 35px;
 }
-body.brand-alternative-page #desktop-footer .footer-menu h1 {
+body.brand-alternative-page #desktop-footer .footer-menu h1,
+body.hotel #desktop-footer .footer-menu h1 {
   margin-bottom: 5px;
 }
-body.brand-alternative-page #desktop-footer .footer-menu ul li {
+body.brand-alternative-page #desktop-footer .footer-menu ul li,
+body.hotel #desktop-footer .footer-menu ul li {
   line-height: 22px;
 }
-body.brand-alternative-page #desktop-footer .footer-menu ul li a {
+body.brand-alternative-page #desktop-footer .footer-menu ul li a,
+body.hotel #desktop-footer .footer-menu ul li a {
   line-height: 22px;
 }
-body.brand-alternative-page #desktop-footer #footer-menu-container {
+body.brand-alternative-page #desktop-footer #hotel-footer-menu-container,
+body.hotel #desktop-footer #hotel-footer-menu-container {
+  margin-left: -30px;
+  margin-right: -20px;
+}
+body.brand-alternative-page #desktop-footer #footer-menu-container,
+body.hotel #desktop-footer #footer-menu-container {
   font-size: 0;
   margin-left: -30px;
   margin-right: -20px;
   white-space: nowrap;
 }
-body.brand-alternative-page #desktop-footer #footer-menu-container .footer-menu {
+body.brand-alternative-page #desktop-footer #footer-menu-container .footer-menu,
+body.hotel #desktop-footer #footer-menu-container .footer-menu {
   display: inline-block;
   vertical-align: top;
   *display: inline;
   zoom: 1;
 }
-body.brand-alternative-page #desktop-footer #footer-menu-container #footer-menu-1 {
+body.brand-alternative-page #desktop-footer #footer-menu-container #footer-menu-1,
+body.hotel #desktop-footer #footer-menu-container #footer-menu-1 {
   padding-right: 45px;
 }
-body.brand-alternative-page #desktop-footer #footer-menu-container #footer-menu-2 {
+body.brand-alternative-page #desktop-footer #footer-menu-container #footer-menu-2,
+body.hotel #desktop-footer #footer-menu-container #footer-menu-2 {
   padding-left: 45px;
-}
-body.brand-alternative-page #desktop-footer #footer-social-media {
-  margin-left: -30px;
-}
-body.brand-alternative-page #desktop-footer #footer-snh-group-logos {
-  padding-top: 36px;
-}
-body.brand-alternative-page #desktop-footer #footer-snh-group-logos h1 {
-  padding-bottom: 13px;
-}
-body.brand-alternative-page #desktop-footer #footer-snh-group-logos ul {
-  font-size: 0;
-}
-body.brand-alternative-page #desktop-footer #footer-snh-group-logos ul li {
-  margin-bottom: 5px;
 }
 body.brand-alternative-page #desktop-header-booking-form .input-box {
   margin-bottom: 18px;
@@ -11186,6 +11228,11 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 .hotel-page-item .hotel-page-item-arrow-cta-container {
   padding-bottom: 21px;
+}
+.hotel-page-item .boxlist-item-content-price h6,
+.hotel-page-item .boxlist-item-content-price p,
+.hotel-page-item .boxlist-item-content-price span {
+  color: #747474;
 }
 .detail-page-booking-form {
   width: 100%;

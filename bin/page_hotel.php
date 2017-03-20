@@ -237,7 +237,7 @@
                   <div class="col-xs-6">
 
                     <div class="boxlist-item-content-price">
-                      <h6>per night</h6>
+                      <h6>Prices from</h6>
                       <p class="content-price">
                         <span class="currency">aud</span>
                         <span class="number">$119</span>
@@ -293,7 +293,7 @@
                   <div class="col-xs-6">
 
                     <div class="boxlist-item-content-price">
-                      <h6>per night</h6>
+                      <h6>Prices from</h6>
                       <p class="content-price">
                         <span class="currency">aud</span>
                         <span class="number">$119</span>
@@ -349,7 +349,7 @@
                   <div class="col-xs-6">
 
                     <div class="boxlist-item-content-price">
-                      <h6>per night</h6>
+                      <h6>Prices from</h6>
                       <p class="content-price">
                         <span class="currency">aud</span>
                         <span class="number">$135</span>
