@@ -6306,8 +6306,17 @@ body.scrolled #mobile-header .mobile-header-bg {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
   filter: alpha(opacity=80);
 }
+#desktop-footer #footer-snh-group-logos-container {
+  text-align: right;
+  margin-right: -20px;
+}
 #desktop-footer #footer-snh-group-logos {
   padding-top: 36px;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  text-align: left;
 }
 @media only screen and (max-width: 1380px) {
   #desktop-footer #footer-snh-group-logos {
@@ -6323,7 +6332,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   padding-bottom: 13px;
 }
 #desktop-footer #footer-snh-group-logos ul {
-  max-width: 300px;
+  width: 256px;
   font-size: 0;
 }
 #desktop-footer #footer-snh-group-logos ul li {
@@ -6400,9 +6409,22 @@ body.scrolled #mobile-header .mobile-header-bg {
 }
 #hotel-footer-top-bar-container {
   background: #545454;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+#hotel-footer-top-bar ul {
+  font-size: 0;
+  text-align: right;
+  line-height: 15px;
 }
 #hotel-footer-top-bar ul li {
-  padding-right: 50px;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  padding-right: 24px;
+  position: relative;
+  line-height: 15px;
 }
 #hotel-footer-top-bar ul li:after {
   display: block;
@@ -6410,17 +6432,20 @@ body.scrolled #mobile-header .mobile-header-bg {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 15px;
   color: #ffffff;
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: -1px;
+  right: 6px;
   width: 10px;
   text-align: center;
 }
 #hotel-footer-top-bar ul li:last-child {
   padding-right: 0px;
+}
+#hotel-footer-top-bar ul li:last-child:after {
+  display: none;
 }
 #hotel-footer-top-bar p,
 #hotel-footer-top-bar a {
@@ -6429,11 +6454,16 @@ body.scrolled #mobile-header .mobile-header-bg {
   font-weight: 300;
   font-size: 10px;
   line-height: 15px;
-  text-align: right;
   color: #ffffff;
 }
 #hotel-footer-top-bar a:hover {
-  color: #7d0052;
+  color: #ffffff;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity=50);
 }
 #hotel-footer-menu-container {
   padding-top: 35px;
@@ -11058,8 +11088,8 @@ body.brand-alternative-page #destination-indicator p {
 }
 body.brand-alternative-page #desktop-footer h1,
 body.hotel #desktop-footer h1 {
-  font-family: 'Poppins', Verdana, Geneva, sans-serif;
-  font-style: normal;
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
@@ -11221,6 +11251,9 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .calendar tbody tr:last-child {
   border-bottom: none;
 }
+#brand-page-introduction-title {
+  margin-bottom: 15px;
+}
 #brand-page-introduction-title h4 {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
@@ -11228,19 +11261,31 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   font-size: 17px;
   line-height: 25px;
   color: #801b55;
+  text-transform: none;
 }
 #brand-page-introduction-title h1 {
+  font-family: 'Poppins', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: #747474;
   font-size: 30px;
   line-height: 36px;
 }
+#brand-page-introduction-title h4 + h1 {
+  padding-top: 5px;
+}
+#brand-page-introduction-item-container {
+  padding-right: 22px;
+}
 .brand-page-introduction-item {
   position: relative;
-  padding-left: 100px;
+  padding-left: 68px;
   border-bottom: 1px solid #e1e1e1;
+  padding-top: 20px;
+  padding-bottom: 19px;
 }
 .brand-page-introduction-item h1 {
-  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-family: 'Poppins', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 38px;
@@ -11251,11 +11296,18 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   *display: inline;
   zoom: 1;
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
 }
 .brand-page-introduction-item h4 {
+  font-family: 'Poppins', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
   color: #747474;
+  margin-bottom: -2px;
 }
 .brand-page-introduction-item p {
   font-size: 15px;

@@ -576,7 +576,8 @@ body.hotel{
     }
 
     h1 {
-      .poppins-light;
+      // .poppins-light;
+      .lato-light;
       font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.025em;
@@ -853,30 +854,41 @@ body.brand-alternative-page{
 
 
 #brand-page-introduction-title{
+  margin-bottom: 15px;
+
   h4{
     .open-sans-semi-bold;
     font-size: 17px;
     line-height: 25px;
     color: @dark-violet-2;
+    text-transform: none;
   }
   h1{
+    .poppins-regular;
     color: @grey;
     font-size: 30px;
     line-height: 36px;
   }
+
+  h4 + h1{
+    padding-top: 5px;
+  }
 }
 
 #brand-page-introduction-item-container{
-
+  padding-right: 22px;
 }
 .brand-page-introduction-item{
   position: relative;
-  padding-left: 100px;
+  padding-left: 68px;
 
   border-bottom: 1px solid @border-grey-2;
 
+  padding-top: 20px;
+  padding-bottom: 19px;
+
   h1{
-    .open-sans-light;
+    .poppins-light;
     font-size: 38px;
     line-height: 42px;
     color: @dark-violet-2;
@@ -884,11 +896,17 @@ body.brand-alternative-page{
 
     .display-inline-block;
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
   }
   h4{
+    .poppins-medium;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
     color: @grey;
+
+    margin-bottom: -2px;
   }
   p{
     font-size: 15px;
