@@ -228,6 +228,8 @@ sagewest.page.Default.prototype.init = function() {
   this.create_generic_map();
   this.create_box_list();
 
+  this.promo_filter();
+
 
 
   // mobile!
@@ -1150,6 +1152,19 @@ sagewest.page.Default.prototype.scroll_to_target = function(str_param, str_param
         
     
   }
+
+};
+
+sagewest.page.Default.prototype.promo_filter = function() {
+
+  $("#default-promotion-filters").find('a').on("click", function(e){
+    e.preventDefault();
+    var href = $(this).attr('href').substring(1);
+
+    $(".all").addClass("hide");
+    $("."+href).removeClass("hide");
+
+  });
 
 };
 

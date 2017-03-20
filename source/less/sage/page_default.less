@@ -1129,7 +1129,10 @@ body.is-tablet.is-tablet-portrait{
         }
         &:hover {
           color: @violet;
-          width: 100%;
+          &:after {
+            width: 100%;
+            .transition(.3s);
+          }
         }
       }
     }
@@ -1141,6 +1144,14 @@ body.is-tablet.is-tablet-portrait{
   padding-bottom: 60px;
 }
 #default-promotion-content {
+  .default-promo-box {
+    .transition(.5s);  
+  }  
+  .hide {
+    visibility: hidden;
+    .opacity(0);
+    position: absolute;
+  }
 
   .default-promotion-content-item {
     margin-bottom: 25px;

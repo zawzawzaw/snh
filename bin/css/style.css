@@ -7727,11 +7727,43 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 #default-promotion-filters ul li a:hover {
   color: #7d0052;
+}
+#default-promotion-filters ul li a:hover:after {
   width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  /* transition */
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 #default-promotion-title {
   text-align: center;
   padding-bottom: 60px;
+}
+#default-promotion-content .default-promo-box {
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  /* transition */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#default-promotion-content .hide {
+  visibility: hidden;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  position: absolute;
 }
 #default-promotion-content .default-promotion-content-item {
   margin-bottom: 25px;
@@ -12104,11 +12136,17 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   font-size: 20px;
   vertical-align: middle;
 }
+.detail-page-menu-info {
+  padding-top: 37px;
+}
 .detail-page-menu-info .detail-page-menu-info-item {
   margin-bottom: 37px;
 }
 .detail-page-menu-info .detail-page-menu-info-item.last-version {
   margin-bottom: 0px;
+}
+.detail-page-menu-info .detail-page-menu-info-item .detail-page-menu-info-item-menu {
+  padding-bottom: 30px;
 }
 .detail-page-menu-info .detail-page-menu-info-item h4 {
   font-size: 11px;
@@ -12119,6 +12157,11 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
     line-height: 24px;
     color: #7d7d7d;
   }
+}
+.detail-page-menu-info .detail-page-menu-info-item h6 {
+  font-size: 15px;
+  line-height: 24px;
+  color: #7d7d7d;
 }
 .detail-page-menu-info .detail-page-menu-info-item .cta-container {
   padding-top: 6px;

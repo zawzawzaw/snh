@@ -80,11 +80,11 @@
       <div class="col-md-12">
         <div id="default-promotion-filters">
           <ul>
-            <li><a href="#" class="active-promo">All</a></li>
-            <li><a href="#">Accommodation</a></li>
-            <li><a href="#">Dining</a></li>
-            <li><a href="#">Activies</a></li>
-            <li><a href="#">Others</a></li>
+            <li><a href="#all" class="active-promo">All</a></li>
+            <li><a href="#accomodation">Accommodation</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#activies">Activies</a></li>
+            <li><a href="#others">Others</a></li>
           </ul>
         </div>
       </div>
@@ -92,7 +92,7 @@
     <div class="row">
 
       <div id="default-promotion-content" class="boxlist-item-container">
-        <div class="col-md-4">
+        <div class="col-md-4 default-promo-box all accomodation">
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
               <div class="box-title">
@@ -124,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 default-promo-box all dining">
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
               <div class="box-title">
@@ -160,7 +160,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 default-promo-box all others">
           <div class="default-promotion-content-item boxlist-item">
             <div class="flip-container">
               <div class="flipper">
@@ -220,7 +220,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 default-promo-box all dining">
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
               <div class="box-title">
@@ -257,7 +257,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 default-promo-box all dining">
           <div class="default-promotion-content-item boxlist-item">
             <div class="flip-container">
               <div class="flipper">
@@ -317,7 +317,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 default-promo-box all accomodation">
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
               <div class="box-title">
