@@ -89,7 +89,8 @@ body.scrolled {
   #desktop-header-menu {
     position: fixed;
     z-index: 200000;
-    top: 80px;
+    // top: 80px;
+    top: 83px;
     left: 0px;
   }
   #desktop-header-nav {
@@ -254,7 +255,9 @@ body.hotel {
   width: 264px;
   height: 100%;
   position: fixed;
-  top: 80px;
+  // top: 80px;
+  top: 83px;
+  
   z-index: 2;
   .menu-link {
     background-color: #998e8b;
@@ -281,11 +284,16 @@ body.hotel {
     }
   }
   #brand-link {
+    height: 80px;
+    padding-top: 12px;
+
     &:hover {
       background-color: @violet;
     }
   }
   #group-link {
+    height: 80px;
+    padding-top: 14px;
     background-color: #787372;
     &:hover {
       background-color: @violet;
@@ -293,7 +301,11 @@ body.hotel {
   }
   #sage-links {
     background-color: #f7f1ef; // changed bcaz of color clash with content bg
+
     padding: 25px 0px 25px 30px;
+    padding-top: 22px;
+    padding-bottom: 24px;
+
     position: relative;  
     &.full-height {
       height: calc(~"100vh - 228px");
@@ -362,6 +374,68 @@ body.hotel {
     }
   }
 }
+
+
+
+#destination-indicator{
+  background: @violet;
+  padding-left: 30px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media all and (max-width: 991px) {
+    padding-left: 20px;
+  }
+
+  p{
+    .playfair-regular;
+    font-size: 16px;
+    line-height: 18px;
+    color: @white;
+    letter-spacing: 0.01em;
+  }
+
+  &.link-to-location {
+    &:after{
+      .fa;
+      content: "\f105"; // .fa-long-arrow-right
+      font-size: 15px;
+      line-height: 18px;
+      color: @white;
+
+      .display-inline-block;
+      position: absolute;
+      top: 22px;
+      right: 28px;
+    }
+  }
+}
+
+#country-indicator{
+  background: @grey-7;
+
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+
+  @media all and (max-width: 991px) {
+    padding-left: 20px;
+  }
+
+  p{
+    .open-sans-bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: @white;
+
+
+  }
+}
+
+
+
 
 #weather-container {
   // .box-shadow (5px 0px 10px #000000);
