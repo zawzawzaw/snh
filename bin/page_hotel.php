@@ -448,7 +448,7 @@
       <div class="col-md-12">
         <div id="default-promotion-title">
           <h4>simply irresistable</h4>
-          <h1>Promotions</h1>          
+          <h1>Offers</h1>          
         </div>
       </div>
     </div>
@@ -579,8 +579,8 @@
     <div class="row">
       <div class="col-md-12">
 
-        <div class="default-promotion-cta-container">
-          <a href="#" class="arrow-cta">View all</a>
+        <div id="default-promotion-view-all-container">
+          <a href="#" class="square-cta highlight-version">View all offers</a>
         </div>
 
       </div>
@@ -712,7 +712,7 @@
     <div class="row">
       <div class="col-md-4 hidden-xs hidden-sm">
         <div id="default-moment-content">
-          <h4>capture the best moments</h4>
+          <h4>Capture the best moments</h4>
           <h1>#SageHotelWestPerth</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <ul id="social-buttons">
@@ -723,29 +723,24 @@
       </div>
       <div class="col-md-7 col-md-offset-1">
         <div id="default-moment-instagram-feed-container">
-          <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-instagram-01.png" alt="">
-          </div>
-          <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-instagram-02.png" alt="">
-          </div>
-          <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-instagram-03.png" alt="">
-          </div>
-          <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-instagram-04.png" alt="">
-          </div>
-          <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-instagram-05.png" alt="">
-          </div>
-          <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-instagram-06.png" alt="">
-          </div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+          
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
         </div>
       </div>
       <div class="col-md-4 visible-xs visible-sm">
         <div id="default-moment-content">
-          <h4>capture the best moments</h4>
+          <h4>Capture the best moments</h4>
           <h1>#SageHotelWestPerth</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <ul id="social-buttons">
