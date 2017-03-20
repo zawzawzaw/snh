@@ -1388,20 +1388,37 @@ body.is-tablet.is-tablet-portrait{
 
 
 #default-moment-section{
-  padding-top: 80px;
-  padding-bottom: 125px;
+  // padding-top: 80px;
+  padding-top: 71px;
+  // padding-bottom: 125px;
+  /// padding-bottom: 117px;
+  padding-bottom: 121px;
+
   // background-color: @off-white;
   background-color: @off-white-2;
 
   #default-moment-content{    
     h1{
+      font-size: 38px;
+      line-height: 48px;
+      margin-bottom: 5px;
+
       padding-bottom: 5px;
-      @media all and (max-width: 1024px) {
+      @media all and (max-width: 1280px) {
+        font-size: 32px;
+      }
+      @media all and (max-width: 1180px) {
         font-size: 29px;
       }
+
     }
+    h4{
+      margin-bottom: 11px;
+    }
+
     p {
-      padding-bottom: 20px;
+      // padding-bottom: 20px;
+      padding-bottom: 25px;
     }
     ul#social-buttons {    
       li {
@@ -1426,30 +1443,82 @@ body.is-tablet.is-tablet-portrait{
   #default-moment-instagram-feed-container {
     font-size: 0;
     position: absolute;
-    top: -165px;
+    // top: -165px;
+    /// top: -160px;
+    top: -167px;
+
     right: -30px;
-    width: 720px;
-    @media all and (max-width: 1024px) {
-      right: -110px;
+
+    // width: 720px;
+    /// width: 760px;
+    
+    width: 660px;
+
+    // @media all and (max-width: 1280px) {
+    //   width: 680px;
+    // }
+    @media all and (max-width: 1180px) {
+
+      top: -117px;
+      right: -80px;
+      width: 600px;
+
     }
+
+
     .instagram-feed {
-      display: inline-block;
-      vertical-align: top;
-      margin: -0.5px;
-      @media all and (max-width: 1024px) {
-        width: 190px;
-        margin: -2.5px;
+      // width: 185px;
+      // height: 185px;
+
+      width: 160px;
+      height: 160px;
+
+
+      // display: inline-block;
+      // vertical-align: top;
+      // margin: -0.5px;
+      .display-inline-block;
+      position: relative;
+      overflow: hidden;
+
+      margin-right: 5px;
+      margin-bottom: 5px;
+
+      // @media all and (max-width: 1280px) {
+      //   width: 165px;
+      //   height: 165px;
+      // }
+      @media all and (max-width: 1180px) {
+        width: 145px;
+        height: 145px;
       }
+
+      // @media all and (max-width: 1024px) {
+        // width: 190px;
+        // margin: -2.5px;
+      // }
+
       &:first-child {
-        margin-left: 40px;
+        // margin-left: 40px;
       }
       img {
+        display: block;
         line-height: 0px;
-        vertical-align: top;
+        // vertical-align: top;
         margin: 0;
-        @media all and (max-width: 1024px) {
-          width: 100%;
-        }
+        width: 106%;
+        position: relative;
+        top: -3%;
+        left: -3%;
+        // margin-left: -5%;
+        // margin-top: -5%;
+
+        height: auto;
+
+
+        // @media all and (max-width: 1024px) {
+        //   width: 100%;
+        // }
       }
     }
   }  
