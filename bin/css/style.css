@@ -7668,6 +7668,37 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   padding-bottom: 210px;
   overflow: hidden;
 }
+#default-promotion-filters {
+  text-align: center;
+  padding-bottom: 70px;
+}
+#default-promotion-filters ul li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#default-promotion-filters ul li a {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #929090;
+  text-transform: uppercase;
+  position: relative;
+}
+#default-promotion-filters ul li a:after {
+  content: "";
+  border-bottom: 1px solid #7d0052;
+  width: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#default-promotion-filters ul li a:hover {
+  color: #7d0052;
+  width: 100%;
+}
 #default-promotion-title {
   text-align: center;
   padding-bottom: 60px;
