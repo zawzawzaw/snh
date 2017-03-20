@@ -6107,6 +6107,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   position: relative;
   width: 280px;
   height: 36px;
+  border-radius: 0px;
   input: ;
 }
 @media all and (max-width: 991px) {
@@ -6140,6 +6141,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   width: 100%;
   height: 100%;
   padding-left: 15px;
+  border-radius: 0px;
 }
 #desktop-footer .input-box ::-webkit-input-placeholder {
   color: #ffffff !important;
@@ -7223,17 +7225,17 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     font-family: 'Open Sans', Verdana, Geneva, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 9px;
-    line-height: 9px;
+    font-size: 10px;
+    line-height: 10px;
     margin-bottom: 0px;
   }
   .detail-banner-slider-section .detail-banner-slider-price-container .content-price .currency {
-    font-size: 9px;
-    line-height: 9px;
+    font-size: 10px;
+    line-height: 14px;
   }
   .detail-banner-slider-section .detail-banner-slider-price-container .content-price .number {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 .detail-banner-slider-section .detail-banner-slider .slick-prev,
@@ -11182,12 +11184,6 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 .room-index-page-item .room-index-page-item-title {
   padding-bottom: 13px;
 }
-@media all and (max-width: 991px) {
-  .room-index-page-item .room-index-page-item-title {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 .room-index-page-item .room-index-page-item-title h5 {
   color: #7d0052;
 }
@@ -11196,12 +11192,6 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 .room-index-page-item .room-index-page-item-detail {
   padding-bottom: 15px;
-}
-@media all and (max-width: 991px) {
-  .room-index-page-item .room-index-page-item-detail {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 @media all and (max-width: 991px) {
   .room-index-page-item .room-index-page-item-content-copy {
@@ -11508,20 +11498,8 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 .room-detail-page-item .room-detail-page-item-content-copy h5 {
   color: #7d0052;
 }
-@media all and (max-width: 991px) {
-  .room-detail-page-item .room-detail-page-item-content-copy {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 .room-detail-page-item .room-detail-page-item-content-detail {
   padding-top: 10px;
-}
-@media all and (max-width: 991px) {
-  .room-detail-page-item .room-detail-page-item-content-detail {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 .room-detail-page-item .room-detail-page-item-content-detail .boxlist-item-content-price {
   margin-top: 0;
@@ -11886,6 +11864,12 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
     margin-top: 25px;
   }
 }
+.detail-page-contact-info ul li {
+  padding-bottom: 10px;
+}
+.detail-page-contact-info ul li:first-child {
+  padding-bottom: 5px;
+}
 .detail-page-contact-info ul li p,
 .detail-page-contact-info ul li a {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -11896,7 +11880,6 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   letter-spacing: 0.08em;
   color: #929090;
   text-transform: uppercase;
-  padding-bottom: 10px;
 }
 .detail-page-contact-info ul li p span,
 .detail-page-contact-info ul li a span {

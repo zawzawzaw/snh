@@ -296,14 +296,17 @@
 
   ul {
     li {
+      padding-bottom: 10px;
+      &:first-child {
+        padding-bottom: 5px;
+      }
       p, a {
         .open-sans-semi-bold;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.08em;
         color: @grey-4;
-        text-transform: uppercase;
-        padding-bottom: 10px;
+        text-transform: uppercase;        
         span {
           width: 85%;
           display: inline-block;   
