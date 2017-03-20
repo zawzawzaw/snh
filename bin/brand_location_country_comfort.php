@@ -8,7 +8,7 @@ ob_start();
   // $is_debug = false;
   $is_debug = true;
 
-  $body_class = "brand-location-page";
+  $body_class = "brand-location-page permanent-scrolled";
 ?>
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -66,7 +66,7 @@ ob_start();
         -->
         
         <?php include('js_brand_country_comfort.php'); ?>
-        <?php include('footer.php'); ?>
+        <?php include('brand_alternative_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
     </div> <!-- #page-wrapper -->

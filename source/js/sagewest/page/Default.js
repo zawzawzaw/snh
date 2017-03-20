@@ -1743,16 +1743,26 @@ sagewest.page.Default.prototype.map_initialize = function() {
       // EVENTS
       /////
 
-      var events = function(Marker, MarkerLatLng, MarkerRequest, MarkerHtml) {
+      var events = function(Marker, MarkerLatLng, MarkerRequest, MarkerHtml, element) {
 
-        google.maps.event.addListener(Marker, 'click', function() {
-            infobox.open(map, this);              
-            infobox.setContent(MarkerHtml);
-            infobox.setOptions({ 'pixelOffset' : new google.maps.Size(45, -95) });
-            map.panTo(MarkerLatLng);
-        }); 
 
-        this.create_map_events(Marker);
+
+        if (element.hasClass('no-hover') == false) {
+          google.maps.event.addListener(Marker, 'click', function() {
+              infobox.open(map, this);              
+              infobox.setContent(MarkerHtml);
+              infobox.setOptions({ 'pixelOffset' : new google.maps.Size(45, -95) });
+              map.panTo(MarkerLatLng);
+          }); 
+          this.create_map_events(Marker);
+        } else {
+          google.maps.event.addListener(Marker, 'click', function() {
+              infobox.open(map, this);              
+              map.panTo(MarkerLatLng);
+          }); 
+        }
+        
+
 
         // google.maps.event.addListener(Marker, 'mouseover', function() {
         //     Marker.setIcon('images/icons/map-pin-hover.png');
@@ -1793,7 +1803,7 @@ sagewest.page.Default.prototype.map_initialize = function() {
         var LatLng = setMarkerLatLng($(v).data('lat'), $(v).data('lng'));
         createGoogleMarker(marker_name, LatLng, pinIcon, location);
         createRequestObj(request_name, placeId);
-        events(markersObj[marker_name], LatLng, requestObj[request_name], marker_html);      
+        events(markersObj[marker_name], LatLng, requestObj[request_name], marker_html, $(v));      
       });
 
         //Resize Function

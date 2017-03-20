@@ -417,6 +417,7 @@ sagewest.page.Brand.prototype.others = function(){
 
     }.bind(this));    
 
+    /*
     $("#desktop-header-nav ul li a").on('click', function(e){
       e.preventDefault();
 
@@ -426,6 +427,7 @@ sagewest.page.Brand.prototype.others = function(){
           scrollTop: $('*[data-value="'+div+'"]').offset().top
       }, 800);
     });
+    */
 
     $(".tnc").on("click", function(e){
       e.preventDefault();

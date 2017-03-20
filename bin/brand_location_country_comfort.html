@@ -20,7 +20,7 @@
 <!-- open-sans -->
 <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
 <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300" rel="stylesheet">
 
 
 <!-- Social Tags -->
@@ -45,7 +45,7 @@
   </head>
 
 
-  <body class="brand-location-page">
+  <body class="brand-location-page permanent-scrolled">
 
     <div id="page-preloader">
       <div id="page-preloader-line-01"></div>
@@ -66,12 +66,12 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="index.php" id="mobile-header-logo">
+    <a href="brand_alternative.php" id="mobile-header-logo">
       <img src="images/logo/sage-west-logo.svg">
     </a>  
   
-    <a href="index.php" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
-    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+    <a href="javascript:void(0);" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="javascript:void(0);" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
   </div>
 
 </header> <!-- #mobile-header -->
@@ -209,7 +209,7 @@
               <img src="images/icons/menu-bar.svg" alt="">     
               <span>Menu</span>       
             </a>
-            <a href="index.php" id="desktop-header-logo">
+            <a href="brand_alternative.php" id="desktop-header-logo">
               <img src="images/logo/country-comfort-logo.png">
             </a>
           </div>          
@@ -218,10 +218,10 @@
       <div class="col-md-6">
         <div id="desktop-header-nav">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#location">Our Locations</a></li>
-            <li><a href="#offers">Offers</a></li>
-            <li><a href="#map">Map</a></li>
+            <li><a href="brand_alternative.php#about">About</a></li>
+            <li><a href="brand_alternative.php#location">Our Locations</a></li>
+            <li><a href="brand_alternative.php#offers">Offers</a></li>
+            <li><a href="brand_alternative.php#map">Map</a></li>
           </ul>
         </div>
       </div>  
@@ -391,7 +391,7 @@
           <div class="default-breadcrumb">
             <ul>
               <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
-              <li><a href="index.php">Country Comfort</a></li>
+              <li><a href="brand_alternative.php">Country Comfort</a></li>
               <li>locations</li>
             </ul>
           </div> <!-- default-breadcrumb -->
@@ -576,7 +576,7 @@
               data-city="Armidale"
               data-id="Country Comfort Armidale">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Armidale</h5>
@@ -604,7 +604,7 @@
               data-city="North Coffs Harbour"
               data-id="Country Comfort Coffs Harbour">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-coffs-harbour.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Coffs Harbour</h5>
@@ -618,7 +618,7 @@
               data-city="Cowra"
               data-id="Country Comfort Cowra">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-cowra.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Cowra</h5>
@@ -646,7 +646,7 @@
               data-city="Casula"
               data-id="Country Comfort Hunts Liverpool">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-hunts-liverpool.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Hunts Liverpool</h5>
@@ -688,7 +688,7 @@
               data-city="Heatherbrae"
               data-id="Country Comfort Newcastle Airport & Convention Centre">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-newcastle-airport-convention-centre.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Newcastle Airport & Convention Centre</h5>
@@ -702,7 +702,7 @@
               data-city="Port Macquarie"
               data-id="Country Comfort Port Macquarie Water Edge Boutique">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-port-macquarie-water-edge-boutique.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Port Macquarie Water Edge Boutique</h5>
@@ -1118,45 +1118,63 @@
           <a href="#">Privacy Policy</a>
         </div>
       </div>
-      <div class="col-md-2 col-md-offset-1 hidden-xs hidden-sm">
-        <div id="footer-menu-1" class="footer-menu">
-          <h1>Our Brands</h1>
-          <ul>
-            <li><a href="#">SilverNeedle® Collection</a></li>
-            <li><a href="#">Next Hotels</a></li>
-            <li><a href="#">Sage® Hotels</a></li>
-            <li><a href="#">Country Comfort</a></li>
-            <li><a href="#">Chifley Hotels</a></li>
-            <li><a href="#">Sundowner Inns</a></li>
-            <li><a href="#">Kafnu</a></li>
-          </ul>
-        </div>      
-      </div>
-      <div class="col-md-2 hidden-xs hidden-sm">
-        <div id="footer-menu-2" class="footer-menu">
-          <h1>Corporate</h1>
-          <ul>
-            <li><a href="#">SilverNeedle® Hospitality Group</a></li>
-            <li><a href="#">Press Room</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">SilverNeedle Select</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Events</a></li>
-          </ul>
+
+      <div class="col-md-1">
+        <div class="footer-seperator">
         </div>
       </div>
-      <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm">
+
+      <div class="col-md-4">
+
+        <div id="footer-menu-container">
+          <div id="footer-menu-1" class="footer-menu">
+            <h1>Corporate</h1>
+            <ul>
+              <li><a href="#">SilverNeedle® Hospitality Group</a></li>
+              <li><a href="#">Press Room</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div id="footer-menu-2" class="footer-menu">
+            <h1>&nbsp;</h1>
+            <ul>
+              <li><a href="#">SilverNeedle Select</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+        </div> <!-- footer-menu-container -->
+
+        <div id="footer-social-media">
+          <ul>
+            <li><a href="#" class="fa fa-facebook-square"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-youtube-square"></a></li>
+            <li><a href="#" class="fa fa-twitter-square"></a></li>
+            <li><a href="#" class="fa fa-google-plus-square"></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      
+      <div class="col-md-1">
+        <div class="footer-seperator">
+        </div>
+      </div>
+      <div class="col-md-3 hidden-xs hidden-sm">
 
         <div id="footer-snh-group-logos">
-          <h1>SilverNeedle® Hospitality Group</h1>
+          <h1>Our Brands</h1>
           <ul>
             <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
+            <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
+            <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
             <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
+            
           </ul>
         </div>
 

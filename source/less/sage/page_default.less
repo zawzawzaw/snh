@@ -1990,8 +1990,9 @@ div.default-promotion-cta-container{
 
 
   .back{
-    .boxlist-itembox{
-      background: @off-white;
+    .boxlist-item-box{
+      // background: @off-white;
+      background: @off-white-2;
     }
   } // .back
 
@@ -2064,25 +2065,31 @@ a.boxlist-item-content-image{
       margin-bottom: 0px;
     }
 
-    @media only screen and (max-width: 1280px) {
-      font-size: 11px;
-      margin-bottom: 10px;
-      &:last-child{
-        margin-bottom: 0px;
-      }
-    }
-    @media only screen and (max-width: 1280px) {
-      font-size: 10px;
-      letter-spacing: 0;
-    }
-
-    @media all and (max-width: 991px) {
-      margin-bottom: 10px;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-    }
-
   } // p
+
+  &.scaling-version{
+    p{
+
+      @media only screen and (max-width: 1280px) {
+        font-size: 11px;
+        margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0px;
+        }
+      }
+      @media only screen and (max-width: 1280px) {
+        font-size: 10px;
+        letter-spacing: 0;
+      }
+
+      @media all and (max-width: 991px) {
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+      }
+
+    }
+  }
 
   .detail-person{
     &:before {

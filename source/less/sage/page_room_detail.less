@@ -279,7 +279,7 @@
 
   .room-detail-page-item-box{
     // padding-bottom: 30px + 65px;
-    padding-bottom: 70px;
+    padding-bottom: 70px + 25px;
     @media all and (max-width: 991px) {
       padding-bottom: 80px;
     }
@@ -288,6 +288,10 @@
   .room-detail-page-item-content-copy{
     h5{
       color: @violet;
+
+      a{
+        color: @violet;
+      }
     }
     @media all and (max-width: 991px) {
       // padding-left: 20px;
@@ -304,18 +308,35 @@
     .boxlist-item-content-room-detail{
 
     }
-    .boxlist-item-content-price{
-      margin-top: 0;
-      padding-top: 5px;
 
-    }
+    // .boxlist-item-content-price{
+      // margin-top: 0;
+      // padding-top: 5px;
+    // }
   }
+  .boxlist-item-content-price{
+    h6, p, span{
+      color: @grey;
+    }
+  } // .boxlist-item-content-price
 
   .room-detail-page-item-cta-container{
     position: absolute;
     bottom: 30px - 8px;     // due to line height of an arrow cta
     left: 20px;
     right: 20px;
+
+    .arrow-cta{
+      white-space: nowrap;
+    }
+
+    .boxlist-item-content-price{
+      margin-top: -20px;
+
+      @media only screen and (max-width: 1180px){
+        margin-top: -15px;
+      }
+    }
 
     // padding-top: 15px;
     // margin-bottom: -8px;

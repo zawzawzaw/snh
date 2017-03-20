@@ -397,7 +397,13 @@
 
 .detail-page-menu-info{
 
-  padding-top: 37px;
+  padding-top: 16px;
+  padding-bottom: 25px;
+
+  @media all and (max-width: 991px) {
+    padding-top: 37px;
+    padding-bottom: 0px;
+  }
 
   .detail-page-menu-info-item{
     margin-bottom: 37px;
@@ -501,6 +507,11 @@
       margin-bottom: -11px;
     }
 
+  }
+  .boxlist-item-content-price{
+    h6, p, span{
+      color: @grey;
+    }
   }
   .back{
     .dining-detail-page-item-content-copy{

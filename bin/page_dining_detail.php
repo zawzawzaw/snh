@@ -160,6 +160,49 @@
               <p>Chilling out sky-high over the rest of the city, refreshment in hand, is truly one of life’s great pleasures. Brisbane has what not many of the other capital cities can depend on – fantastic weather all year round.  As the sun sets like a fiery orb behind the cityscape and the sky is clear, our city always delivers on the outdoor drinking front.</p>              
             </div>
           </div>
+
+
+          <div class="detail-page-menu-info">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="detail-page-menu-info-item">
+                  <h4>Breakfast</h4>
+                  <p>Mon – Fri: 6am to 9am</p>
+                  <p>Sat & Sun: 7am to 10am</p>
+                  <div class="cta-container">
+                    <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="detail-page-menu-info-item">
+                  <h4>Lunch</h4>
+                  <p>Mon – Fri: 12pm to 4pm</p>
+                  <p>Sat & Sun: Closed</p>
+                  <div class="cta-container">
+                    <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="detail-page-menu-info-item last-version">
+                  <h4>Dinner</h4>
+                  <p>Mon – Fri: 5.30pm to 10pm</p>
+                  <p>Sat & Sun: 5.30pm to 9pm</p>
+                  <div class="cta-container">
+                    <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            
+          </div> 
+
+
             
           <div class="detail-page-content-image">
             <div class="manic-image-container">
@@ -228,7 +271,7 @@
 
 
 
-
+          <!-- 
           <div class="detail-page-menu-info">
 
             <div class="detail-page-menu-info-item">
@@ -238,7 +281,7 @@
               <div class="cta-container">
                 <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
               </div>
-            </div> <!-- detail-page-menu-info-item -->
+            </div>
             <div class="detail-page-menu-info-item">
               <h4>Lunch</h4>
               <p>Mon – Fri: 12pm to 4pm</p>
@@ -246,7 +289,7 @@
               <div class="cta-container">
                 <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
               </div>
-            </div> <!-- detail-page-menu-info-item -->
+            </div>
             <div class="detail-page-menu-info-item last-version">
               <h4>Dinner</h4>
               <p>Mon – Fri: 5.30pm to 10pm</p>
@@ -254,10 +297,10 @@
               <div class="cta-container">
                 <a href="javascript:void(0);" class="arrow-cta">View Menu</a>
               </div>
-            </div> <!-- detail-page-menu-item -->
+            </div>
+          </div> 
+           -->
 
-
-          </div> <!-- detail-page-menu-info -->
 
 
 
