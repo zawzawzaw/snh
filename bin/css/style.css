@@ -8237,16 +8237,22 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 @media all and (max-width: 991px) {
   .boxlist-item .boxlist-item-box {
     height: auto!important;
-    padding: 0px;
   }
 }
 .boxlist-item .back .boxlist-itembox {
   background: #fcf8f7;
 }
 .boxlist-item-content-image {
-  width: 100%;
+  width: auto;
   margin-bottom: 20px;
   display: block;
+}
+@media all and (max-width: 991px) {
+  .boxlist-item-content-image {
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
 .boxlist-item-content-image .manic-image-container {
   width: 100%;
@@ -8332,14 +8338,14 @@ a.boxlist-item-content-image:hover {
   -moz-osx-font-smoothing: grayscale;
   content: '\f236';
   display: block;
-  font-size: 24px;
+  font-size: 21px;
   display: inline-block;
   vertical-align: top;
   *display: inline;
   zoom: 1;
   position: absolute;
-  top: -5px;
-  left: -2px;
+  top: -2px;
+  left: 1px;
   color: #57514b;
 }
 .boxlist-item-content-cta,
@@ -11307,6 +11313,7 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   font-size: 13px;
   line-height: 17px;
   padding-top: 0px;
+  padding-bottom: 0px;
   border: none;
 }
 .detail-page-booking-form #booking-calendar {
