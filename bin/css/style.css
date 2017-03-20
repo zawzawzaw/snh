@@ -9791,17 +9791,14 @@ a.boxlist-item-content-image:hover {
 #hotel-attraction-section #hotel-attraction-content {
   padding-top: 60px;
 }
+#hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-item {
+  margin-bottom: 25px;
+}
 #hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-box {
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
-  min-height: 480px;
-  margin-bottom: 25px;
+  padding-bottom: 50px;
   position: relative;
-}
-@media all and (max-width: 1280px) {
-  #hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-box {
-    min-height: 538px;
-  }
 }
 #hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-box .box-title {
   position: absolute;
@@ -9826,9 +9823,6 @@ a.boxlist-item-content-image:hover {
   line-height: 11px;
   letter-spacing: 0.08em;
   font-size: 12.5px;
-}
-#hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-box .box-content {
-  padding: 20px 20px 30px;
 }
 #hotel-attraction-section #hotel-attraction-content .hotel-attraction-content-box .box-content .manic-image-container {
   width: 100%;
