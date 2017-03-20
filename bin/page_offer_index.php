@@ -77,482 +77,266 @@
 <article id="offer-index-page-list-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
-      <div class="col-md-12">
 
-      <div id="offer-index-page-item-container" class="boxlist-item-container">
-
-
-
-        <div class="row">
-
-          <div class="col-md-4">
-            <div class="offer-index-page-item boxlist-item">
-              <div class="offer-index-page-item-box boxlist-item-box">
-                <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
-                    <img src=""
-                      data-image="images_cms/room/offer-index-standard-room.jpg"
-                      data-image-mobile="images_cms/room/offer-index-standard-room-mobile.jpg">
-                  </div>
-                </div>
-
-                <div class="offer-index-page-item-title">
-                  <h5>Standard Room</h5>
-                </div>
-
-                <div class="offer-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
-                  <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
-                </div>
-
-                
-                <div class="offer-index-page-item-content-copy">
-                  <div class="default-copy">
-                    <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta hidden-sm hidden-xs">
-
-                  <div class="offer-index-page-item-arrow-cta-container">
-                    <a href="room_detail.php" class="arrow-cta">View room details</a>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
-                    </div>
-                    <div class="col-xs-6">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$119</span>
-                        </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
-
-                  <div class="row">
-                    <div class="col-xs-6 v-align-bottom">
-                      <a href="room_detail.php" class="arrow-cta">View room</a>
-                    </div>
-                    <div class="col-xs-6 v-align-bottom">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>prices from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$119</span>
-                        </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-
+      <div id="default-promotion-content" class="boxlist-item-container">
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+              <div class="box-title">
+                <span class="tag">Accommodation</span>
               </div>
-            </div> <!-- offer-index-page-item -->
-          </div> <!-- col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="offer-index-page-item boxlist-item">
-              <div class="offer-index-page-item-box boxlist-item-box">
-                <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
-                    <img src=""
-                      data-image="images_cms/room/offer-index-standard-room.jpg"
-                      data-image-mobile="images_cms/room/offer-index-standard-room-mobile.jpg">
-                  </div>
+              <div class="box-content">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/home-promotion-01.png" data-image-mobile="images_cms/home/home-promotion-01.png" alt="">
                 </div>
+                <div class="box-content-text">
+                  <h1>City Escape</h1>              
+                  <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
+                  <ul>
+                    <li><p>Newly Constructed Sage Rooms</p></li>
+                    <li><p>Continental Buffet Breakfast for 2</p></li>
+                    <li><p>Late Check out at 12 noon</p></li>
+                  </ul>
+                  <span class="date">valid from now – 1st april 2017</span>
 
-                <div class="offer-index-page-item-title">
-                  <h5>Standard Twin Room</h5>
-                </div>
-
-                <div class="offer-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
-                  <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
-                </div>
-
-                
-                <div class="offer-index-page-item-content-copy">
-                  <div class="default-copy">
-                    <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta hidden-xs hidden-sm">
-
-                  <div class="offer-index-page-item-arrow-cta-container">
-                    <a href="room_detail.php" class="arrow-cta">View room details</a>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
-                    </div>
-                    <div class="col-xs-6">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$119</span>
-                        </p>
-                      </div>
-                      
+                  <a href="#" class="more-details arrow-cta visible-xs visible-sm">More details</a>
+                  
+                  <div class="cta-and-price-container">
+                    <div class="cta-container">
+                      <a href="#" class="square-cta book-now">Book now</a>
                     </div>
                   </div>
                 </div>
-
-                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
-
-                  <div class="row">
-                    <div class="col-xs-6 v-align-bottom">
-                      <a href="room_detail.php" class="arrow-cta">View room</a>
-                    </div>
-                    <div class="col-xs-6 v-align-bottom">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>prices from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$119</span>
-                        </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-
               </div>
-            </div> <!-- offer-index-page-item -->
-          </div> <!-- col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="offer-index-page-item boxlist-item">
-              <div class="offer-index-page-item-box boxlist-item-box">
-                <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
-                    <img src=""
-                      data-image="images_cms/room/offer-index-standard-room.jpg"
-                      data-image-mobile="images_cms/room/offer-index-standard-room-mobile.jpg">
-                  </div>
-                </div>
-
-                <div class="offer-index-page-item-title">
-                  <h5>Superior Room</h5>
-                </div>
-
-                <div class="offer-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
-                  <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
-                </div>
-
-                
-                <div class="offer-index-page-item-content-copy">
-                  <div class="default-copy">
-                    <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta hidden-xs hidden-sm">
-
-                  <div class="offer-index-page-item-arrow-cta-container">
-                    <a href="room_detail.php" class="arrow-cta">View room details</a>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
-                    </div>
-                    <div class="col-xs-6">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$135</span>
-                        </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
-
-                  <div class="row">
-                    <div class="col-xs-6 v-align-bottom">
-                      <a href="room_detail.php" class="arrow-cta">View room</a>
-                    </div>
-                    <div class="col-xs-6 v-align-bottom">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>prices from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$135</span>
-                        </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+              <div class="box-title">
+                <span class="tag">Dining</span>
               </div>
-            </div> <!-- offer-index-page-item -->
-          </div> <!-- col-md-4 -->
+              <div class="box-content">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/home-promotion-02.png" alt="">
+                </div>            
+                <h1>Valentine’s Day</h1>
+                <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                <ul>
+                  <li><p>Arrival rose for your significant other</p></li>
+                  <li><p>3-course dinner with choice of dish</p></li>
+                  <li><p>Complimentary bottle of red or white wine</p></li>
+                  <li><p>Live jazz singer duo</p></li>
+                </ul>              
 
-        </div> <!-- row -->
-
-        <div class="row">
-
-          <div class="col-md-4">
-            <div class="offer-index-page-item boxlist-item">
-              <div class="offer-index-page-item-box boxlist-item-box">
-                <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
-                    <img src=""
-                      data-image="images_cms/room/offer-index-standard-room.jpg"
-                      data-image-mobile="images_cms/room/offer-index-standard-room-mobile.jpg">
-                  </div>
-                </div>
-
-                <div class="offer-index-page-item-title">
-                  <h5>Superior Twin Room</h5>
-                </div>
-
-                <div class="offer-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
-                  <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
-                </div>
-
+                <a href="#" class="more-details arrow-cta">More details</a>
                 
-                <div class="offer-index-page-item-content-copy">
-                  <div class="default-copy">
-                    <p>These corner rooms offer extra living space to help stretch your legs. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
+                <div class="cta-and-price-container">
+                  <div class="cta-container">
+                    <a href="#" class="square-cta contact-us">Contact us</a>
                   </div>
-                </div>
-
-                <div class="boxlist-item-content-cta hidden-sm hidden-xs">
-
-                  <div class="offer-index-page-item-arrow-cta-container">
-                    <a href="room_detail.php" class="arrow-cta">View room details</a>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
-                    </div>
-                    <div class="col-xs-6">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$135</span>
-                        </p>
-                      </div>
-                      
+                  <div class="price-container">
+                    <span>per pax</span>
+                    <div class="price">
+                      <span class="currency">AUD</span><span class="price">$79.90</span>
                     </div>
                   </div>
                 </div>
-
-                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
-
-                  <div class="row">
-                    <div class="col-xs-6 v-align-bottom">
-                      <a href="room_detail.php" class="arrow-cta">View room</a>
-                    </div>
-                    <div class="col-xs-6 v-align-bottom">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>prices from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$135</span>
-                        </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-
               </div>
-            </div> <!-- offer-index-page-item -->
-          </div> <!-- col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="offer-index-page-item boxlist-item">
-              <div class="offer-index-page-item-box boxlist-item-box">
-                <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
-                    <img src=""
-                      data-image="images_cms/room/offer-index-standard-room.jpg"
-                      data-image-mobile="images_cms/room/offer-index-standard-room-mobile.jpg">
-                  </div>
-                </div>
-
-                <div class="offer-index-page-item-title">
-                  <h5>Deluxe Room</h5>
-                </div>
-
-                <div class="offer-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">3 adults, 2 children</p>
-                  <p class="detail-size">35 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
-                </div>
-
-                
-                <div class="offer-index-page-item-content-copy">
-                  <div class="default-copy">
-                    <p>These corner rooms offer extra living space to help stretch your legs. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta hidden-xs hidden-sm">
-
-                  <div class="offer-index-page-item-arrow-cta-container">
-                    <a href="room_detail.php" class="arrow-cta">View room details</a>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <div class="default-promotion-content-box boxlist-item-box">
+                    <div class="box-title">
+                      <span class="tag">weekend special</span>
                     </div>
-                    <div class="col-xs-6">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$235</span>
-                        </p>
+                    <div class="box-content">
+                      <div class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/home/home-promotion-03.png" alt="">
                       </div>
+                      <h1>Ascot Horse Racing</h1>              
+                      <ul>
+                        <li><p>Complimentary upgrade to Executive Wing</p></li>
+                        <li><p>General admission ticket for 2 to Ascot Races</p></li>
+                        <li><p>Early Check-in</p></li>
+                        <li><p>Bottle of Sparkling Wine on arrival</p></li>
+                        <li><p>Complimentary shuttle to Ascot Race Track</p></li>
+                        <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
+                      </ul>
+
+                      <a href="#" class="underline-cta tnc">View terms & conditions</a>
                       
-                    </div>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
-
-                  <div class="row">
-                    <div class="col-xs-6 v-align-bottom">
-                      <a href="room_detail.php" class="arrow-cta">View room</a>
-                    </div>
-                    <div class="col-xs-6 v-align-bottom">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>prices from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$235</span>
-                        </p>
+                      <div class="cta-and-price-container">
+                        <div class="cta-container">
+                          <a href="#" class="square-cta book-now">Book now</a>
+                        </div>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
+                <div class="back">
+                  <div class="default-promotion-content-box boxlist-item-box">
+                    <div class="box-content">
+                      <h1>Ascot Horse Racing</h1>              
+                      <h6>terms & conditions</h6>
+                      <ul>
+                          <li>Guests must be 18 years old and above to enter the racecourse</li>
+                          <li>Tickets are non-transferrable</li>
+                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                          <li>Complimentary shuttle to Ascot Race Track</li>
+                          <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
+                          <li>Guests must be 18 years old and above to enter the racecourse</li>
+                          <li>Tickets are non-transferrable</li>
+                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                          <li>No pets allowed.</li>
+                      </ul>
+                      <a href="#" class="underline-cta back-to-offer">Back to offer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+              <div class="box-title">
+                <span class="tag">Dining</span>
               </div>
-            </div> <!-- offer-index-page-item -->
-          </div> <!-- col-md-4 -->
-
-          <div class="col-md-4">
-            <div class="offer-index-page-item boxlist-item">
-              <div class="offer-index-page-item-box boxlist-item-box">
-                <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
-                    <img src=""
-                      data-image="images_cms/room/offer-index-standard-room.jpg"
-                      data-image-mobile="images_cms/room/offer-index-standard-room-mobile.jpg">
-                  </div>
+              <div class="box-content">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/home-promotion-02.png" data-image-mobile="images_cms/home/home-promotion-01.png" alt="">
                 </div>
-
-                <div class="offer-index-page-item-title">
-                  <h5>Deluxe Twin Room</h5>
-                </div>
-
-                <div class="offer-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">3 adults, 2 children</p>
-                  <p class="detail-size">35 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
-                </div>
-
-                
-                <div class="offer-index-page-item-content-copy">
-                  <div class="default-copy">
-                    <p>These corner rooms offer extra living space to help stretch your legs. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                  </div>
-                </div>
-
-                <div class="boxlist-item-content-cta hidden-sm hidden-xs">
-
-                  <div class="offer-index-page-item-arrow-cta-container">
-                    <a href="room_detail.php" class="arrow-cta">View room details</a>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                <div class="box-content-text">
+                  <h1>Valentine’s Day</h1>              
+                  <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                  <ul>
+                    <li><p>Arrival rose for your significant other</p></li>
+                    <li><p>3-course dinner with choice of dish</p></li>
+                    <li><p>Complimentary bottle of red or white wine</p></li>
+                    <li><p>Live jazz singer duo</p></li>
+                  </ul>
+                  <span class="note">Also open for a la carte bookings with valentine’s day dessert specials</span>
+                  
+                  <div class="cta-and-price-container">
+                    <div class="cta-container">
+                      <a href="#" class="square-cta contact-us">Contact us</a>
                     </div>
-                    <div class="col-xs-6">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$235</span>
-                        </p>
+                    <div class="price-container">
+                      <span>per pax</span>
+                      <div class="price">
+                        <span class="currency">AUD</span><span class="price">$79.90</span>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
-
-                <div class="boxlist-item-content-cta-mobile visible-sm visible-xs">
-
-                  <div class="row">
-                    <div class="col-xs-6 v-align-bottom">
-                      <a href="room_detail.php" class="arrow-cta">View room</a>
-                    </div>
-                    <div class="col-xs-6 v-align-bottom">
-
-                      <div class="boxlist-item-content-price">
-                        <h6>prices from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$235</span>
-                        </p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-
               </div>
-            </div> <!-- offer-index-page-item -->
-          </div> <!-- col-md-4 -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <div class="default-promotion-content-box boxlist-item-box">
+                    <div class="box-title">
+                      <span class="tag">Dining</span>
+                    </div>
+                    <div class="box-content">
+                      <div class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/home/home-promotion-03.png" alt="">
+                      </div>
+                      <h1>Sage Amour</h1>              
+                      <p>Why fly to Rome when you can Sage Amour? </p>
+                      <ul> 
+                        <li><p>Night Accommodation in a Sage Room</p></li>
+                        <li><p>Continental Buffet Breakfast for 2</p></li>
+                        <li><p>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</p></li>
+                        <li><p>Bottle of  Prosecco and Chocolates on arrival</p></li>
+                        <li><p>Late Check out</p></li>
+                      </ul>
+                      <span class="date">valid from now – 1st april 2017</span>
 
-        </div> <!-- row -->
+                      <a href="#" class="underline-cta tnc">View terms & conditions</a>
+                      
+                      <div class="cta-and-price-container">
+                        <div class="cta-container">
+                          <a href="#" class="square-cta contact-us">Contact us</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="default-promotion-content-box boxlist-item-box">
+                    <div class="box-content">
+                      <h1>Ascot Horse Racing</h1>              
+                      <h6>terms & conditions</h6>
+                      <ul>
+                          <li>Guests must be 18 years old and above to enter the racecourse</li>
+                          <li>Tickets are non-transferrable</li>
+                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                          <li>Complimentary shuttle to Ascot Race Track</li>
+                          <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
+                          <li>Guests must be 18 years old and above to enter the racecourse</li>
+                          <li>Tickets are non-transferrable</li>
+                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                          <li>No pets allowed.</li>
+                      </ul>
+                      <a href="#" class="underline-cta back-to-offer">Back to offer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+              <div class="box-title">
+                <span class="tag">Accommodation</span>
+              </div>
+              <div class="box-content">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/home-promotion-01.png" data-image-mobile="images_cms/home/home-promotion-01.png" alt="">
+                </div>
+                <div class="box-content-text">
+                  <h1>Enjoy Additional 15% off</h1>              
+                  <p>Book directly with us and enjoy additional 15% discount on top of exisiting promotions. Inclusions:</p>
+                  <ul>
+                    <li><p>A round trip airport pick up</p></li>
+                    <li><p>30 min Head & Shoulder Massage or Foot massage for 2 (min. stay 3 consecutive nights)</p></li>                  
+                  </ul>
+                  <span class="date">valid until 31 March 2017</span>
 
-
-
-
-      </div> <!-- offer-index-page-item-container -->
-
+                  <a href="#" class="more-details arrow-cta">More details</a>
+                  
+                  <div class="cta-and-price-container">
+                    <div class="cta-container">
+                      <a href="#" class="square-cta book-now">Book now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </article>

@@ -7622,32 +7622,20 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   padding-bottom: 210px;
   overflow: hidden;
 }
-#default-promotion-section #default-promotion-title {
+#default-promotion-title {
   text-align: center;
   padding-bottom: 60px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box {
+#default-promotion-content .default-promotion-content-item {
+  margin-bottom: 25px;
+}
+#default-promotion-content .default-promotion-content-box {
+  padding-bottom: 70px;
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
-  min-height: 660px;
   position: relative;
 }
-@media all and (max-width: 1510px) {
-  #default-promotion-section #default-promotion-content .default-promotion-content-box {
-    min-height: 730px;
-  }
-}
-@media all and (max-width: 1280px) {
-  #default-promotion-section #default-promotion-content .default-promotion-content-box {
-    min-height: 773px;
-  }
-}
-@media all and (max-width: 1024px) {
-  #default-promotion-section #default-promotion-content .default-promotion-content-box {
-    min-height: 833px;
-  }
-}
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-title {
+#default-promotion-content .default-promotion-content-box .box-title {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -7657,7 +7645,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   height: 35px;
   display: table;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-title .tag {
+#default-promotion-content .default-promotion-content-box .box-title .tag {
   display: table-cell;
   vertical-align: middle;
   color: #ffffff;
@@ -7671,15 +7659,12 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   letter-spacing: 0.08em;
   font-size: 12.5px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content {
-  padding: 20px 20px 30px;
-}
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .manic-image-container {
+#default-promotion-content .default-promotion-content-box .box-content .manic-image-container {
   width: 100%;
   height: 270px;
   margin-bottom: 20px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content h1 {
+#default-promotion-content .default-promotion-content-box .box-content h1 {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
@@ -7689,19 +7674,20 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   line-height: 32px;
   padding-bottom: 12px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content h6 {
+#default-promotion-content .default-promotion-content-box .box-content h6 {
   text-transform: uppercase;
   padding-bottom: 10px;
   padding-top: 15px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content h4 {
+#default-promotion-content .default-promotion-content-box .box-content h4 {
   padding-bottom: 20px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content p {
+#default-promotion-content .default-promotion-content-box .box-content p {
   padding-bottom: 20px;
   padding-right: 20px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .date {
+#default-promotion-content .default-promotion-content-box .box-content .date,
+#default-promotion-content .default-promotion-content-box .box-content .note {
   display: block;
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
@@ -7709,22 +7695,23 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0.08em;
+  line-height: 15px;
   color: #747474;
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .view-offer-details {
+#default-promotion-content .default-promotion-content-box .box-content .view-offer-details {
   display: block;
   padding-bottom: 30px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content ul {
+#default-promotion-content .default-promotion-content-box .box-content ul {
   padding-left: 20px;
   padding-bottom: 20px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content ul li {
+#default-promotion-content .default-promotion-content-box .box-content ul li {
   position: relative;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content ul li:before {
+#default-promotion-content .default-promotion-content-box .box-content ul li:before {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -7735,98 +7722,101 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   position: absolute;
   left: -18px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content ul li p {
+#default-promotion-content .default-promotion-content-box .box-content ul li p {
   padding-bottom: 0px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container {
+#default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container {
   position: absolute;
   bottom: 20px;
   left: 0px;
   padding: 0 20px;
   width: 100%;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .cta-container {
+#default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .cta-container {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   width: 65%;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container {
+#default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
   width: 35%;
   margin-left: -4px;
   text-align: right;
   color: #b2a4a0;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container span {
+#default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container span {
   text-transform: uppercase;
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+  line-height: 12px;
   letter-spacing: 0.08em;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container .price .currency {
+#default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container .price .currency {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
+  line-height: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding-right: 2px;
 }
-#default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container .price .price {
+#default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container .price .price {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+  line-height: 24px;
   letter-spacing: 0.075px;
   text-transform: uppercase;
 }
 @media all and (max-width: 1024px) {
-  #default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container .price .price {
+  #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container .price .price {
     font-size: 20px;
   }
 }
-#default-promotion-section #default-promotion-content .flip-container {
+#default-promotion-content .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
 }
-#default-promotion-section #default-promotion-content .flip-container.hover .flipper {
+#default-promotion-content .flip-container.hover .flipper {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-#default-promotion-section #default-promotion-content .flip-container,
-#default-promotion-section #default-promotion-content .front,
-#default-promotion-section #default-promotion-content .back {
+#default-promotion-content .flip-container,
+#default-promotion-content .front,
+#default-promotion-content .back {
   height: 660px;
 }
 @media all and (max-width: 1510px) {
-  #default-promotion-section #default-promotion-content .flip-container,
-  #default-promotion-section #default-promotion-content .front,
-  #default-promotion-section #default-promotion-content .back {
+  #default-promotion-content .flip-container,
+  #default-promotion-content .front,
+  #default-promotion-content .back {
     min-height: 730px;
   }
 }
 @media all and (max-width: 1280px) {
-  #default-promotion-section #default-promotion-content .flip-container,
-  #default-promotion-section #default-promotion-content .front,
-  #default-promotion-section #default-promotion-content .back {
+  #default-promotion-content .flip-container,
+  #default-promotion-content .front,
+  #default-promotion-content .back {
     height: 773px;
   }
 }
 @media all and (max-width: 1024px) {
-  #default-promotion-section #default-promotion-content .flip-container,
-  #default-promotion-section #default-promotion-content .front,
-  #default-promotion-section #default-promotion-content .back {
+  #default-promotion-content .flip-container,
+  #default-promotion-content .front,
+  #default-promotion-content .back {
     min-height: 833px;
   }
 }
-#default-promotion-section #default-promotion-content .flipper {
+#default-promotion-content .flipper {
   -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
   -moz-transition: 0.6s;
@@ -7837,8 +7827,8 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   transform-style: preserve-3d;
   position: relative;
 }
-#default-promotion-section #default-promotion-content .front,
-#default-promotion-section #default-promotion-content .back {
+#default-promotion-content .front,
+#default-promotion-content .back {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
@@ -7847,20 +7837,20 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   top: 0;
   left: 0;
 }
-#default-promotion-section #default-promotion-content .front {
+#default-promotion-content .front {
   z-index: 2;
 }
-#default-promotion-section #default-promotion-content .back {
+#default-promotion-content .back {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background: #fcf8f7;
 }
-#default-promotion-section div.default-promotion-cta-container {
+div.default-promotion-cta-container {
   text-align: right;
 }
-#default-promotion-section #default-promotion-view-all {
+#default-promotion-view-all {
   text-align: right;
   display: block;
   padding-top: 25px;
@@ -7870,24 +7860,24 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  #default-promotion-section #default-promotion-title {
+  #default-promotion-title {
     text-align: left;
     padding-bottom: 30px;
   }
-  #default-promotion-section #default-promotion-content .default-promotion-content-box {
+  #default-promotion-content .default-promotion-content-box {
     min-height: 720px;
   }
-  #default-promotion-section #default-promotion-content .default-promotion-content-box .box-content {
+  #default-promotion-content .default-promotion-content-box .box-content {
     padding: 0px;
   }
-  #default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .manic-image-container {
+  #default-promotion-content .default-promotion-content-box .box-content .manic-image-container {
     margin-bottom: 0px;
     height: 370px;
   }
-  #default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .box-content-text {
+  #default-promotion-content .default-promotion-content-box .box-content .box-content-text {
     padding: 20px 20px 30px;
   }
-  #default-promotion-section #default-promotion-content .default-promotion-content-box .box-content .box-content-text .cta-and-price-container .cta-container {
+  #default-promotion-content .default-promotion-content-box .box-content .box-content-text .cta-and-price-container .cta-container {
     width: 100%;
   }
 }
@@ -11996,6 +11986,9 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 .dining-detail-page-item .back .dining-detail-page-item-content-copy .underline-cta-container {
   padding-top: 20px;
+}
+#offer-index-page-list-section {
+  padding-bottom: 80px;
 }
 #error-404-page-content-section {
   padding-top: 140px;
