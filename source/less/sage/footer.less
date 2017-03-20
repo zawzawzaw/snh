@@ -126,9 +126,17 @@
     }
   }
 
+  #footer-snh-group-logos-container{
+    text-align: right;
+    margin-right: -20px;
+  }
+
   #footer-snh-group-logos {
     // padding-top: 20px;
     padding-top: 36px;
+    .display-inline-block;
+    text-align: left;
+
 
     @media only screen and (max-width: 1380px) {
       margin-right: -50px;
@@ -143,7 +151,9 @@
       padding-bottom: 13px;
     }
     ul {
-      max-width: 300px;
+      //max-width: 300px;
+      width: ( ( 44px + 20px ) * 4);
+
       font-size: 0;
       li {
         display: inline-block;
@@ -246,29 +256,44 @@
 #hotel-footer-top-bar-container{
   background: #545454;
 
+  padding-top: 6px;
+  padding-bottom: 6px;
+
 }
 #hotel-footer-top-bar{
   
   ul{
+    font-size: 0;
+    text-align: right;
+    line-height: 15px;
+
     li{
-      padding-right: 50px;
+      .display-inline-block;
+      // padding-right: 50px;
+      padding-right: 24px;
+      position: relative;
+      line-height: 15px;
+
       &:after{
         display: block;
         content: '|';
 
         .open-sans-light;
-        font-size: 10px;
+        font-size: 11px;
         line-height: 15px;
         color: @white;
 
         position: absolute;
-        top: 0;
-        right: 20px;
+        top: -1px;
+        right: 6px;
         width: 10px;
         text-align: center;
       }
       &:last-child{
         padding-right: 0px;
+        &:after{
+          display: none;
+        }
       }
 
     }
@@ -279,15 +304,18 @@
     .open-sans-light;
     font-size: 10px;
     line-height: 15px;
-    text-align: right;  
     color: @white;
   }
   a{
     &:hover{
-      color: @violet;
+      //color: @violet;
+      color: @white;
+      .opacity(0.5);
     }
   }
 }
+
+
 
 
 
