@@ -417,31 +417,33 @@
       </div>
     </div>
     <div class="row">
-      <div id="default-promotion-content">
+      <div id="default-promotion-content" class="boxlist-item-container">
         <div class="col-md-4">
-          <div class="default-promotion-content-box">
-            <div class="box-title">
-              <span class="tag">Accommodation</span>
-            </div>
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-promotion-01.png" data-image-mobile="images_cms/brand/brand-promotion-01.png" alt="">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+              <div class="box-title">
+                <span class="tag">Accommodation</span>
               </div>
-              <div class="box-content-text">
-                <h1>City Escape</h1>              
-                <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
-                <ul>
-                  <li><p>Newly Constructed Sage Rooms</p></li>
-                  <li><p>Continental Buffet Breakfast for 2</p></li>
-                  <li><p>Late Check out at 12 noon</p></li>
-                </ul>
-                <span class="date">valid from now – 1st april 2017</span>
+              <div class="box-content">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-01.png" data-image-mobile="images_cms/brand/brand-promotion-01.png" alt="">
+                </div>
+                <div class="box-content-text">
+                  <h1>City Escape</h1>              
+                  <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
+                  <ul>
+                    <li><p>Newly Constructed Sage Rooms</p></li>
+                    <li><p>Continental Buffet Breakfast for 2</p></li>
+                    <li><p>Late Check out at 12 noon</p></li>
+                  </ul>
+                  <span class="date">valid from now – 1st april 2017</span>
 
-                <a href="#" class="more-details arrow-cta visible-xs visible-sm">More details</a>
-                
-                <div class="cta-and-price-container">
-                  <div class="cta-container">
-                    <a href="#" class="square-cta book-now">Book now</a>
+                  <a href="#" class="more-details arrow-cta visible-xs visible-sm">More details</a>
+                  
+                  <div class="cta-and-price-container">
+                    <div class="cta-container">
+                      <a href="#" class="square-cta book-now">Book now</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -449,96 +451,100 @@
           </div>
         </div>
         <div class="col-md-4 hidden-xs hidden-sm">
-          <div class="default-promotion-content-box">
-            <div class="box-title">
-              <span class="tag">Dining</span>
-            </div>
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-promotion-02.png" data-image-mobile="images_cms/brand/brand-promotion-02.png" alt="">
-              </div>          
-              <div class="box-content-text">
-                <h1>Valentine’s Day</h1>
-                <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
-                <ul>
-                  <li><p>Arrival rose for your significant other</p></li>
-                  <li><p>3-course dinner with choice of dish</p></li>
-                  <li><p>Complimentary bottle of red or white wine</p></li>
-                  <li><p>Live jazz singer duo</p></li>
-                </ul>              
-                
-                <div class="cta-and-price-container">
-                  <div class="cta-container">
-                    <a href="#" class="square-cta contact-us">Contact us</a>
-                  </div>
-                  <div class="price-container">
-                    <span>per pax</span>
-                    <div class="price">
-                      <span class="currency">AUD</span><span class="price">$79.90</span>
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+              <div class="box-title">
+                <span class="tag">Dining</span>
+              </div>
+              <div class="box-content">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-02.png" data-image-mobile="images_cms/brand/brand-promotion-02.png" alt="">
+                </div>          
+                <div class="box-content-text">
+                  <h1>Valentine’s Day</h1>
+                  <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                  <ul>
+                    <li><p>Arrival rose for your significant other</p></li>
+                    <li><p>3-course dinner with choice of dish</p></li>
+                    <li><p>Complimentary bottle of red or white wine</p></li>
+                    <li><p>Live jazz singer duo</p></li>
+                  </ul>              
+                  
+                  <div class="cta-and-price-container">
+                    <div class="cta-container">
+                      <a href="#" class="square-cta contact-us">Contact us</a>
+                    </div>
+                    <div class="price-container">
+                      <span>per pax</span>
+                      <div class="price">
+                        <span class="currency">AUD</span><span class="price">$79.90</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>  
+                </div>  
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4 hidden-xs hidden-sm">
-          <div class="flip-container">
-            <div class="flipper">
-              <div class="front">
-                <div class="default-promotion-content-box">
-                  <div class="box-title">
-                    <span class="tag">Dining</span>
-                  </div>
-                  <div class="box-content">
-                    <div class="manic-image-container">
-                      <img src="" data-image-desktop="images_cms/brand/brand-promotion-03.png" data-image-mobile="images_cms/brand/brand-promotion-03.png" alt="">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <div class="default-promotion-content-box boxlist-item-box">
+                    <div class="box-title">
+                      <span class="tag">Dining</span>
                     </div>
-                    <div class="box-content-text">
-                      <h1>Ascot Horse Racing</h1>              
-                      <ul>
-                        <li><p>Complimentary upgrade to Executive Wing</p></li>
-                        <li><p>General admission ticket for 2 to Ascot Races</p></li>
-                        <li><p>Early Check-in</p></li>
-                        <li><p>Bottle of Sparkling Wine on arrival</p></li>
-                        <li><p>Complimentary shuttle to Ascot Race Track</p></li>
-                        <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
-                      </ul>
+                    <div class="box-content">
+                      <div class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/brand/brand-promotion-03.png" data-image-mobile="images_cms/brand/brand-promotion-03.png" alt="">
+                      </div>
+                      <div class="box-content-text">
+                        <h1>Ascot Horse Racing</h1>              
+                        <ul>
+                          <li><p>Complimentary upgrade to Executive Wing</p></li>
+                          <li><p>General admission ticket for 2 to Ascot Races</p></li>
+                          <li><p>Early Check-in</p></li>
+                          <li><p>Bottle of Sparkling Wine on arrival</p></li>
+                          <li><p>Complimentary shuttle to Ascot Race Track</p></li>
+                          <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
+                        </ul>
 
-                      <a href="#" class="underline-cta tnc">View terms & conditions</a>
-                      
-                      <div class="cta-and-price-container">
-                        <div class="cta-container">
-                          <a href="#" class="square-cta book-now">Book now</a>
+                        <a href="#" class="underline-cta tnc">View terms & conditions</a>
+                        
+                        <div class="cta-and-price-container">
+                          <div class="cta-container">
+                            <a href="#" class="square-cta book-now">Book now</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="back">
-                <div class="default-promotion-content-box">
-                  <div class="box-content">
-                    <h1>Ascot Horse Racing</h1>              
-                    <h6>terms & conditions</h6>
-                    <ul>
-                        <li>Guests must be 18 years old and above to enter the racecourse</li>
-                        <li>Tickets are non-transferrable</li>
-                        <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                        <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                        <li>Complimentary shuttle to Ascot Race Track</li>
-                        <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
-                        <li>Guests must be 18 years old and above to enter the racecourse</li>
-                        <li>Tickets are non-transferrable</li>
-                        <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                        <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                        <li>No pets allowed.</li>
-                    </ul>
-                    <a href="#" class="underline-cta back-to-offer">Back to offer</a>
+                <div class="back">
+                  <div class="default-promotion-content-box boxlist-item-box">
+                    <div class="box-content">
+                      <h1>Ascot Horse Racing</h1>              
+                      <h6>terms & conditions</h6>
+                      <ul>
+                          <li>Guests must be 18 years old and above to enter the racecourse</li>
+                          <li>Tickets are non-transferrable</li>
+                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                          <li>Complimentary shuttle to Ascot Race Track</li>
+                          <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
+                          <li>Guests must be 18 years old and above to enter the racecourse</li>
+                          <li>Tickets are non-transferrable</li>
+                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                          <li>No pets allowed.</li>
+                      </ul>
+                      <a href="#" class="underline-cta back-to-offer">Back to offer</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>            
+              </div>            
+            </div>
           </div>
         </div>
       </div>
