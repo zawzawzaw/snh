@@ -3805,6 +3805,11 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
   font-style: normal;
   font-weight: 500;
 }
+.lato-light {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 300;
+}
 html,
 body {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -3850,6 +3855,10 @@ h1 {
   line-height: 60px;
   color: #747474;
   text-transform: capitalize;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  -webkit-font-feature-settings: "liga" 0;
+  font-feature-settings: "liga" 0;
+  text-rendering: optimizeSpeed;
 }
 h2 {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -6388,6 +6397,43 @@ body.scrolled #mobile-header .mobile-header-bg {
   #desktop-footer .footer-seperator:before {
     display: none;
   }
+}
+#hotel-footer-top-bar-container {
+  background: #545454;
+}
+#hotel-footer-top-bar ul li {
+  padding-right: 50px;
+}
+#hotel-footer-top-bar ul li:after {
+  display: block;
+  content: '|';
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 10px;
+  text-align: center;
+}
+#hotel-footer-top-bar ul li:last-child {
+  padding-right: 0px;
+}
+#hotel-footer-top-bar p,
+#hotel-footer-top-bar a {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: right;
+  color: #ffffff;
+}
+#hotel-footer-top-bar a:hover {
+  color: #7d0052;
 }
 #hotel-footer-menu-container {
   padding-top: 35px;
@@ -10938,7 +10984,7 @@ body.brand-alternative-page #default-promotion-section .back .default-promotion-
   background: #fcf8f7;
 }
 #default-promotion-view-all-container {
-  padding-top: 31px;
+  padding-top: 40px;
   padding-bottom: 35px;
   text-align: right;
 }
@@ -11149,6 +11195,46 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .calendar tbody tr:last-child {
   border-bottom: none;
+}
+#brand-page-introduction-title h4 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #801b55;
+}
+#brand-page-introduction-title h1 {
+  color: #747474;
+  font-size: 30px;
+  line-height: 36px;
+}
+.brand-page-introduction-item {
+  position: relative;
+  padding-left: 100px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.brand-page-introduction-item h1 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 42px;
+  color: #801b55;
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.brand-page-introduction-item h4 {
+  color: #747474;
+}
+.brand-page-introduction-item p {
+  font-size: 15px;
+  line-height: 24px;
 }
 #room-index-page-item-container {
   padding-bottom: 77px;

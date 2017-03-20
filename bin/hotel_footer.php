@@ -27,6 +27,27 @@
   </div>
 </footer>-->
 
+
+
+<div id="hotel-footer-top-bar-container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="hotel-footer-top-bar">
+
+          <ul>
+            <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
+            <li><p>+61865009100</p></li>
+            <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
+          </ul>
+
+        </div> <!-- #hotel-footer-top-bar -->
+
+      </div>
+    </div>
+  </div>
+</div>
 <footer id="desktop-footer">
   <div class="container-fluid">
     <div class="row">

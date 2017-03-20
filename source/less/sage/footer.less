@@ -239,9 +239,55 @@
 
 
 
+// .lato-light
 
 
 
+#hotel-footer-top-bar-container{
+  background: #545454;
+
+}
+#hotel-footer-top-bar{
+  
+  ul{
+    li{
+      padding-right: 50px;
+      &:after{
+        display: block;
+        content: '|';
+
+        .open-sans-light;
+        font-size: 10px;
+        line-height: 15px;
+        color: @white;
+
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 10px;
+        text-align: center;
+      }
+      &:last-child{
+        padding-right: 0px;
+      }
+
+    }
+  }
+
+  p,
+  a{
+    .open-sans-light;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: right;  
+    color: @white;
+  }
+  a{
+    &:hover{
+      color: @violet;
+    }
+  }
+}
 
 
 
@@ -275,6 +321,8 @@
     }
   }
 }
+
+
 
 
 
