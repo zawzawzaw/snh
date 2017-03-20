@@ -6,14 +6,17 @@
 //                                            
 
 #desktop-footer{
-  height: 235px;
+  // height: 235px;
+  height: 220px;
+
   background: @dark-grey;
   position: relative;
   
   #footer-logo {
     position: absolute;
     // top: -80px; 
-    top: -78px;
+    top: -78px - 27px;
+
     img {
       margin-left: -5px;      
     }
@@ -33,7 +36,8 @@
 
   #footer-subscribe-form {
     // padding-top: 80px;
-    padding-top: 83px;
+    /// padding-top: 83px;
+    padding-top: 83px - 29px;
     h1{
       margin-bottom: 3px;
     }
@@ -129,11 +133,17 @@
   #footer-snh-group-logos-container{
     text-align: right;
     margin-right: -20px;
+    position: relative;
+    #footer-snh-group-logos{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 
   #footer-snh-group-logos {
     // padding-top: 20px;
-    padding-top: 36px;
+    padding-top: 36px - 19px;
     .display-inline-block;
     text-align: left;
 
@@ -148,7 +158,8 @@
 
     h1 {
       // padding-bottom: 15px;
-      padding-bottom: 13px;
+      // padding-bottom: 13px;
+      padding-bottom: 15px;
     }
     ul {
       //max-width: 300px;
@@ -183,7 +194,8 @@
 
   #footer-social-media{
     padding-top: 22px;
-    margin-left: -30px;
+    // margin-left: -30px;
+    
     ul{
       font-size: 0;
 
@@ -222,10 +234,11 @@
       display: block;
 
       position: absolute;
-      top: 41px;
+      top: 41px - 17px;
       left: 30%;
 
-      height: 140px;
+      // height: 140px;
+      height: 138px;
       width: 0;
       border-left: 1px solid #87878c;
 
@@ -320,9 +333,9 @@
 
 
 #hotel-footer-menu-container{
-  padding-top: 35px;
+  padding-top: 35px - 18px;
   h1{
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   ul{

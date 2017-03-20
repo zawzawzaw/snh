@@ -7,12 +7,12 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="index.php" id="mobile-header-logo">
+    <a href="brand_alternative.php" id="mobile-header-logo">
       <img src="images/logo/sage-west-logo.svg">
     </a>  
   
-    <a href="#" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
-    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+    <a href="javascript:void(0);" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="javascript:void(0);" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
   </div>
 
 </header> <!-- #mobile-header -->
