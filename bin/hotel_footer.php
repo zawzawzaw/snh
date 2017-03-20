@@ -67,7 +67,7 @@
         </div>
 
         <div id="footer-copyright-info">
-          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span>
+          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
           <a href="#">Privacy Policy</a>
         </div>
       </div>
@@ -77,7 +77,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 hidden-sm hidden-xs">
+      <div class="col-md-5 hidden-sm hidden-xs">
 
         <div id="hotel-footer-menu-container">
           <h1>Quick Links</h1>
@@ -111,7 +111,7 @@
         <div class="footer-seperator">
         </div>
       </div>
-      <div class="col-md-3 hidden-xs hidden-sm">
+      <div class="col-md-2 hidden-xs hidden-sm">
 
         <div id="footer-snh-group-logos-container">
           <div id="footer-snh-group-logos">

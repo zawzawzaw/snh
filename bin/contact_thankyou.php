@@ -76,7 +76,7 @@ ob_start();
                   <div class="default-breadcrumb">
                     <ul>
                       <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-                      <li><a href="index.php">Sage Hotels</a></li>
+                      <li><a href="brand_alternative.php">Sage Hotels</a></li>
                       <li><a href="hotel.php">Sage West Perth</a></li>
                       <li>Contact</li>
                     </ul>
@@ -95,7 +95,7 @@ ob_start();
                   <div class="default-breadcrumb-mobile">
                     <ul>
                       <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-                      <li><a href="index.php">Sage Hotels</a></li>
+                      <li><a href="brand_alternative.php">Sage Hotels</a></li>
                       <li><a href="hotel.php">Sage West Perth</a></li>
                       <li>Contact</li>
                     </ul>
@@ -115,7 +115,7 @@ ob_start();
                     <h1>Thank you for getting in touch.</h1>
                     <p>Your message has been sent successfully. We will get back to you as soon as possible.</p>
                     <div class="cta-container">
-                      <a href="index.php" class="square-cta highlight-version">Back to Home</a>
+                      <a href="brand_alternative.php" class="square-cta highlight-version">Back to Home</a>
                     </div>
                   </div> <!-- 404-page-content -->
 
@@ -146,7 +146,7 @@ ob_start();
         -->
         
         <?php include('js_default.php'); ?>
-        <?php include('footer.php'); ?>
+        <?php include('hotel_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
     </div> <!-- #page-wrapper -->

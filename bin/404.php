@@ -65,7 +65,7 @@ ob_start();
                     <h1>We’ve looked everywhere.</h1>
                     <p>We cant find the URL you are looking for.</p>
                     <div class="cta-container">
-                      <a href="index.php" class="square-cta highlight-version">Back to Home</a>
+                      <a href="hotel.php" class="square-cta highlight-version">Back to Home</a>
                     </div>
                   </div> <!-- 404-page-content -->
 
@@ -96,7 +96,7 @@ ob_start();
         -->
         
         <?php include('js_default.php'); ?>
-        <?php include('footer.php'); ?>
+        <?php include('hotel_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
     </div> <!-- #page-wrapper -->

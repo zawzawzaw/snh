@@ -94,7 +94,7 @@
     <div class="row">
       <div class="col-md-12">
         <div id="hotel-introduction-breadcrumb">
-          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="brand.php">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
+          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="brand_alternative.php">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
         </div>
         <div id="hotel-introduction-title">
           <h1>We’re so glad to have you stay</h1>
@@ -200,15 +200,15 @@
           <div class="hotel-page-item boxlist-item">
             <div class="hotel-page-item-box boxlist-item-box">
               <div class="boxlist-item-content-image">
-                <div class="manic-image-container">
+                <a href="room_detail.php" class="manic-image-container">
                   <img src=""
                     data-image="images_cms/room/room-index-standard-room.jpg"
                     data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                </div>
+                </a>
               </div>
 
               <div class="hotel-page-item-title">
-                <h5>Standard Room</h5>
+                <h5><a href="room_detail.php">Standard Room</a></h5>
               </div>
 
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
@@ -256,15 +256,15 @@
           <div class="hotel-page-item boxlist-item">
             <div class="hotel-page-item-box boxlist-item-box">
               <div class="boxlist-item-content-image">
-                <div class="manic-image-container">
+                <a href="room_detail.php" class="manic-image-container">
                   <img src=""
                     data-image="images_cms/room/room-index-standard-room.jpg"
                     data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                </div>
+                </a>
               </div>
 
               <div class="hotel-page-item-title">
-                <h5>Standard Twin Room</h5>
+                <h5><a href="room_detail.php">Standard Twin Room</a></h5>
               </div>
 
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
@@ -312,15 +312,15 @@
           <div class="hotel-page-item boxlist-item">
             <div class="hotel-page-item-box boxlist-item-box">
               <div class="boxlist-item-content-image">
-                <div class="manic-image-container">
+                <a href="room_detail.php" class="manic-image-container">
                   <img src=""
                     data-image="images_cms/room/room-index-standard-room.jpg"
                     data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                </div>
+                </a>
               </div>
 
               <div class="hotel-page-item-title">
-                <h5>Superior Room</h5>
+                <h5><a href="room_detail.php">Superior Room</a></h5>
               </div>
 
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
@@ -373,7 +373,7 @@
       <div class="col-md-12">
 
         <div class="default-room-cta-container">
-          <a href="#" class="arrow-cta">View all Room Types</a>
+          <a href="#" class="square-cta">View all Room Types</a>
         </div>
 
 
@@ -586,7 +586,7 @@
       <div class="col-md-12">
 
         <div id="default-promotion-view-all-container">
-          <a href="#" class="square-cta highlight-version">View all offers</a>
+          <a href="#" class="square-cta">View all offers</a>
         </div>
 
       </div>
@@ -651,7 +651,12 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="#" id="hotel-reviews-reall-all-reviews" class="arrow-cta">Read all reviews</a>
+
+        <!-- <a href="#" id="hotel-reviews-reall-all-reviews" class="arrow-cta">Read all reviews</a> -->
+
+        <div id="hotel-reviews-reall-all-reviews">
+          <a href="javascript:void(0);" class="square-cta">Read all reviews</a>
+        </div>
       </div>
     </div>
   </div>
@@ -775,7 +780,7 @@
       <div class="col-md-12">
         <div id="hotel-attraction-title">
           <h4>sage west perth</h4>
-          <h1>Our Attractions</h1>
+          <h1>Local Attractions</h1>
         </div>
       </div>
     </div>
@@ -794,9 +799,7 @@
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">ACTIVITIES & EVENTS</span>
-              </div>
+              
               <div class="box-content">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-01.png" data-image-mobile="images_cms/hotel/hotel-attraction-01.png" alt="">
@@ -804,7 +807,7 @@
                 <div class="box-content-text">
                   <h1>Subiaco Farmers Market</h1>              
                   <p>Opens every Saturday from 8am – 12:30pm, you can find specialty local produce, seafood...</p>
-                  <a href="#" class="arrow-cta more-recommendations">More recommendations</a>
+                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
             </div>
@@ -813,9 +816,7 @@
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">ACTIVITIES & EVENTS</span>
-              </div>
+              
               <div class="box-content">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-02.png" alt="">
@@ -823,7 +824,7 @@
                 <div class="box-content-text">
                   <h1>Perth Zoo</h1>              
                   <p>Animal aficionados will definitely relish a trip to Perth Zoo in nearby South Perth.</p>
-                  <a href="#" class="arrow-cta more-recommendations">More recommendations</a>
+                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
             </div>
@@ -832,9 +833,7 @@
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">ACTIVITIES & EVENTS</span>
-              </div>
+              
               <div class="box-content">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-03.png" alt="">
@@ -842,7 +841,7 @@
                 <div class="box-content-text">
                   <h1>Leederville Farmers Market</h1>              
                   <p>Boasting a rich café, restaurant and pub culture, stop by Leederville, Highgate and Mount...</p>
-                  <a href="#" class="arrow-cta more-recommendations">More recommendations</a>
+                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
             </div>
@@ -851,9 +850,7 @@
         <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">food & Drinks</span>
-              </div>
+              
               <div class="box-content">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-04.png" data-image-mobile="images_cms/hotel/hotel-attraction-04.png" alt="">
@@ -861,7 +858,7 @@
                 <div class="box-content-text">
                   <h1>High St Dispensary</h1>              
                   <p>Dispensing all kinds of yummy items, this is THE place to go to in Freo. For those who don’t...</p>
-                  <a href="#" class="arrow-cta more-recommendations">More recommendations</a>
+                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
             </div>
@@ -870,9 +867,7 @@
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">ACTIVITIES & EVENTS</span>
-              </div>
+              
               <div class="box-content">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-05.png" alt="">
@@ -880,7 +875,7 @@
                 <div class="box-content-text">
                   <h1>Linton & Kay</h1>              
                   <p>Check out the highly recommended Linton & Kay art galleries at Mandoon Estate...</p>
-                  <a href="#" class="arrow-cta more-recommendations">More recommendations</a>
+                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
             </div>
@@ -889,9 +884,7 @@
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">food & Drinks</span>
-              </div>
+              
               <div class="box-content">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-06.png" alt="">
@@ -899,7 +892,7 @@
                 <div class="box-content-text">
                   <h1>Yelo</h1>              
                   <p>If you’re exploring the North Beach and are on the go, pop in and grab a quick takeaway...</p>
-                  <a href="#" class="arrow-cta more-recommendations">More recommendations</a>
+                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
             </div>

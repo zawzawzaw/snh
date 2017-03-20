@@ -26,7 +26,7 @@
         <div class="default-breadcrumb">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">sage hotels</a></li>
+            <li><a href="brand_alternative.php">sage hotels</a></li>
             <li><a href="hotel.php">sage west perth</a></li>
             <li><a href="dining_index.php">Dining</a></li>
             <li>The Pool Terrace & Bar</li>
@@ -46,7 +46,7 @@
         <div class="default-breadcrumb-mobile">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">sage hotels</a></li>
+            <li><a href="brand_alternative.php">sage hotels</a></li>
             <li><a href="hotel.php">sage west perth</a></li>
             <li><a href="dining_index.php">Dining</a></li>
             <li>The Pool Terrace & Bar</li>

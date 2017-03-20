@@ -25,7 +25,7 @@
           <div class="default-breadcrumb">
             <ul>
               <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
-              <li><a href="index.php">sage hotels</a></li>
+              <li><a href="brand_alternative.php">sage hotels</a></li>
               <li>locations</li>
             </ul>
           </div> <!-- default-breadcrumb -->

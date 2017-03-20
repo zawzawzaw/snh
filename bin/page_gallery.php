@@ -539,7 +539,7 @@
           <div class="default-breadcrumb">
             <ul>
               <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
-              <li><a href="index.php">sage hotels</a></li>
+              <li><a href="brand_alternative.php">sage hotels</a></li>
               <li><a href="hotel.php">sage west perth</a></li>
               <li>Gallery</li>
             </ul>
@@ -558,7 +558,7 @@
           <div class="default-breadcrumb-mobile">
             <ul>
               <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
-              <li><a href="index.php">sage hotels</a></li>
+              <li><a href="brand_alternative.php">sage hotels</a></li>
               <li><a href="hotel.php">sage west perth</a></li>
               <li>Gallery</li>
             </ul>

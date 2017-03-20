@@ -6148,13 +6148,13 @@ body.scrolled #mobile-header .mobile-header-bg {
   border-bottom: 5px solid #f1f2f2;
 }
 #desktop-footer {
-  height: 235px;
+  height: 220px;
   background: #747474;
   position: relative;
 }
 #desktop-footer #footer-logo {
   position: absolute;
-  top: -78px;
+  top: -105px;
 }
 #desktop-footer #footer-logo img {
   margin-left: -5px;
@@ -6173,7 +6173,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   color: #ffffff;
 }
 #desktop-footer #footer-subscribe-form {
-  padding-top: 83px;
+  padding-top: 54px;
 }
 #desktop-footer #footer-subscribe-form h1 {
   margin-bottom: 3px;
@@ -6309,9 +6309,15 @@ body.scrolled #mobile-header .mobile-header-bg {
 #desktop-footer #footer-snh-group-logos-container {
   text-align: right;
   margin-right: -20px;
+  position: relative;
+}
+#desktop-footer #footer-snh-group-logos-container #footer-snh-group-logos {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 #desktop-footer #footer-snh-group-logos {
-  padding-top: 36px;
+  padding-top: 17px;
   display: inline-block;
   vertical-align: top;
   *display: inline;
@@ -6329,7 +6335,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   }
 }
 #desktop-footer #footer-snh-group-logos h1 {
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 #desktop-footer #footer-snh-group-logos ul {
   width: 256px;
@@ -6361,7 +6367,6 @@ body.scrolled #mobile-header .mobile-header-bg {
 }
 #desktop-footer #footer-social-media {
   padding-top: 22px;
-  margin-left: -30px;
 }
 #desktop-footer #footer-social-media ul {
   font-size: 0;
@@ -6396,9 +6401,9 @@ body.scrolled #mobile-header .mobile-header-bg {
   content: '';
   display: block;
   position: absolute;
-  top: 41px;
+  top: 24px;
   left: 30%;
-  height: 140px;
+  height: 138px;
   width: 0;
   border-left: 1px solid #87878c;
 }
@@ -6466,10 +6471,10 @@ body.scrolled #mobile-header .mobile-header-bg {
   filter: alpha(opacity=50);
 }
 #hotel-footer-menu-container {
-  padding-top: 35px;
+  padding-top: 17px;
 }
 #hotel-footer-menu-container h1 {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 #hotel-footer-menu-container ul {
   font-size: 0;
@@ -7882,7 +7887,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   width: 35%;
   margin-left: -4px;
   text-align: right;
-  color: #b2a4a0;
+  color: #747474;
 }
 #default-promotion-content .default-promotion-content-box .box-content .cta-and-price-container .price-container span {
   text-transform: uppercase;
@@ -8278,7 +8283,7 @@ div.default-promotion-cta-container {
   padding-bottom: 60px;
 }
 #default-room-section .default-room-cta-container {
-  padding-top: 25px;
+  padding-top: 65px;
   text-align: right;
 }
 #default-room-content .default-room-content-box {
@@ -11136,6 +11141,7 @@ body.hotel #desktop-footer #footer-copyright-info {
   line-height: 20px;
   letter-spacing: -0.02em;
   margin-right: -45px;
+  white-space: nowrap;
 }
 body.brand-alternative-page #desktop-footer #footer-copyright-info span,
 body.hotel #desktop-footer #footer-copyright-info span {
@@ -11176,16 +11182,9 @@ body.brand-alternative-page #desktop-footer .footer-menu ul li a,
 body.hotel #desktop-footer .footer-menu ul li a {
   line-height: 22px;
 }
-body.brand-alternative-page #desktop-footer #hotel-footer-menu-container,
-body.hotel #desktop-footer #hotel-footer-menu-container {
-  margin-left: -30px;
-  margin-right: -20px;
-}
 body.brand-alternative-page #desktop-footer #footer-menu-container,
 body.hotel #desktop-footer #footer-menu-container {
   font-size: 0;
-  margin-left: -30px;
-  margin-right: -20px;
   white-space: nowrap;
 }
 body.brand-alternative-page #desktop-footer #footer-menu-container .footer-menu,
