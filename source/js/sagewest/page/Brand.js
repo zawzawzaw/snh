@@ -139,6 +139,70 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
 
   } // if
 
+
+  // MOBILE SLIDER
+  
+  if ($('#brand-all-location-slider-version-02-mobile').length != 0) {
+
+    
+
+    $('#brand-all-location-slider-version-02-mobile').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#brand-all-location-slider-version-02-mobile').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.home_brand_slider_mobile = $('#brand-all-location-slider-version-02-mobile').slick({
+      'speed': 350,
+      'dots': true,
+      'arrows': false,
+      'infinite': true,
+      'slidesToShow': 1,
+      'slidesToScroll': 1,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000,
+    });
+  }
+
+
+
+  if ($('#page-brand-promotion-slider-mobile').length != 0) {
+
+    
+
+    $('#page-brand-promotion-slider-mobile').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#page-brand-promotion-slider-mobile').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.home_brand_offers_slider_mobile = $('#page-brand-promotion-slider-mobile').slick({
+      'speed': 350,
+      'dots': true,
+      'arrows': false,
+      'infinite': true,
+      'slidesToShow': 2,
+      'slidesToScroll': 2,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000,
+      'responsive': [
+        {
+          'breakpoint': 767,
+          'settings':{
+            'slidesToShow': 1,
+            'slidesToScroll': 1
+          }
+        }
+      ]
+    });
+  }
+
+
+
 };
 
 

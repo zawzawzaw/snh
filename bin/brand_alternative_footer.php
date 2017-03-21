@@ -43,18 +43,24 @@
           </div>
         </div>
 
-        <div id="footer-copyright-info">
-          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span>
+        <div id="footer-copyright-info" class="visible-md visible-lg">
+          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
           <a href="#">Privacy Policy</a>
         </div>
+
+        <div id="footer-copyright-info" class="visible-sm visible-xs">
+          <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
       </div>
 
-      <div class="col-md-1">
+      <div class="col-md-1 hidden-sm hidden-xs">
         <div class="footer-seperator">
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 hidden-sm hidden-xs">
 
         <div id="footer-menu-container">
           <div id="footer-menu-1" class="footer-menu">
@@ -88,7 +94,7 @@
       </div>
 
       
-      <div class="col-md-1">
+      <div class="col-md-1 hidden-sm hidden-xs">
         <div class="footer-seperator">
         </div>
       </div>
