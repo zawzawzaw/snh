@@ -3810,6 +3810,11 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
   font-size: normal;
   font-weight: 300;
 }
+.lato-regular {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 400;
+}
 html,
 body {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -4496,7 +4501,8 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
     padding-right: 20px;
   }
 }
-.arrow-cta {
+.arrow-cta,
+.download-cta {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -4505,19 +4511,27 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   color: #7d0052;
   text-transform: uppercase;
 }
-.arrow-cta:after {
-  content: "\f061";
+.arrow-cta:after,
+.download-cta:after {
   font-family: FontAwesome;
   font-size: 13px;
   padding-left: 5px;
 }
 @media all and (max-width: 375px) {
-  .arrow-cta {
+  .arrow-cta,
+  .download-cta {
     font-size: 12px;
   }
-  .arrow-cta:after {
+  .arrow-cta:after,
+  .download-cta:after {
     font-size: 12px;
   }
+}
+.arrow-cta:after {
+  content: "\f061";
+}
+.download-cta:after {
+  content: "\f019";
 }
 html.actual-mobile .square-cta:focus,
 html.actual-mobile .square-cta:hover {
@@ -13177,4 +13191,92 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 #gallery-cta-container {
   padding-top: 54px;
   text-align: right;
+}
+body.facilities-page h1 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 400;
+}
+body.facilities-page .index-page-title p {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+}
+body.facilities-page h5 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 400;
+  font-size: 26px;
+  padding-bottom: 20px;
+  line-height: 18px;
+}
+body.facilities-page .default-copy {
+  width: 110%;
+}
+@media all and (max-width: 991px) {
+  body.facilities-page .default-copy {
+    width: 100%;
+  }
+}
+body.facilities-page .default-copy h6 {
+  color: #b2a4a0;
+}
+body.facilities-page .default-copy ul + h6 {
+  padding-top: 40px;
+}
+body.facilities-page .default-copy p + h6 {
+  padding-top: 40px;
+}
+body.facilities-page .default-copy .cta-container {
+  padding-top: 45px;
+}
+body.activities-page h1 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 400;
+}
+body.activities-page .index-page-title p {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+}
+body.activities-page h5 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 400;
+  font-size: 26px;
+  padding-bottom: 20px;
+  line-height: 18px;
+}
+@media all and (max-width: 991px) {
+  body.activities-page h5 {
+    line-height: 28px;
+  }
+}
+body.activities-page .default-copy {
+  width: 115%;
+}
+@media all and (max-width: 991px) {
+  body.activities-page .default-copy {
+    width: 100%;
+  }
+}
+body.activities-page .default-copy h6 {
+  color: #b2a4a0;
+}
+body.activities-page .default-copy ul + h6 {
+  padding-top: 40px;
+}
+body.activities-page .default-copy p + h6 {
+  padding-top: 40px;
+}
+body.activities-page .default-copy .two-columns {
+  padding-top: 20px;
+}
+body.activities-page .default-copy .cta-container {
+  padding-top: 45px;
 }

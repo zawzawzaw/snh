@@ -53,14 +53,13 @@
   }
 }
 
-.arrow-cta {
+.arrow-cta, .download-cta {
   .open-sans-semi-bold;
   font-size: 13px;
   letter-spacing: 0.08em;
   color: @violet;
   text-transform: uppercase;
-  &:after {
-    content: "\f061";
+  &:after {    
     font-family: FontAwesome;
     font-size: 13px;
     padding-left: 5px;
@@ -70,6 +69,18 @@
     &:after {
       font-size: 12px;
     }
+  }
+}
+
+.arrow-cta {
+  &:after {
+    content: "\f061";
+  }
+}
+
+.download-cta {
+  &:after {
+    content: "\f019";
   }
 }
 
