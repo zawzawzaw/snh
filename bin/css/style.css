@@ -6161,6 +6161,12 @@ body.scrolled #mobile-header .mobile-header-bg {
   padding-left: 50px;
   padding-right: 50px;
 }
+@media all and (max-width: 991px) {
+  #desktop-footer .container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 #desktop-footer #footer-logo {
   position: absolute;
   top: -105px;
