@@ -651,7 +651,7 @@
   </div>
 
   <div class="manic-expand-container" data-group="mobile-offer-detail-page">
-    <div class="scroll-target" data-value="title-01"></div>
+    <div class="scroll-target" data-value="title-02"></div>
     <div class="manic-expand-container-title">
       <div class="container-fluid">
         <div class="row">
@@ -669,8 +669,9 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
-
-
+              
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quas repellat ipsum. Repudiandae optio laboriosam atque odit laborum rerum quam...</p>
+        
           </div>
         </div>
       </div>
@@ -678,7 +679,7 @@
   </div>
 
   <div class="manic-expand-container" data-group="mobile-offer-detail-page">
-    <div class="scroll-target" data-value="title-02"></div>
+    <div class="scroll-target" data-value="title-03"></div>
     <div class="manic-expand-container-title">
       <div class="container-fluid">
         <div class="row">

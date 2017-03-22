@@ -180,7 +180,7 @@
               <div class="boxlist-item-content-cta">
                 <div class="row">
                   <div class="col-xs-6">
-                    <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                    <a href="mailto:enquiry@sagehotels.com" class="square-cta">Contact us</a>
                   </div>
                   <div class="col-xs-6">
 
@@ -326,7 +326,7 @@
               <div class="boxlist-item-content-cta">
                 <div class="row">
                   <div class="col-xs-6">
-                    <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                    <a href="mailto:enquiry@sagehotels.com" class="square-cta">Contact us</a>
                   </div>
                   <div class="col-xs-6">
 
@@ -385,7 +385,7 @@
                     </div>
 
                     <div class="boxlist-item-content-cta">
-                      <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                      <a href="mailto:enquiry@sagehotels.com" class="square-cta">Contact us</a>
                     </div>
 
                   </div> <!-- default-promotion-content-box -->
@@ -524,16 +524,18 @@
                     <div class="offer-index-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/home/home-promotion-01.png"
-                            data-image-tablet="images_cms/home/home-promotion-01.png"
-                            data-image-mobile="images_cms/home/home-promotion-01.png">
-                        </div>
+                        <a href="offer_detail.php">
+                          <div class="manic-image-container">
+                            <img src=""
+                              data-image-desktop="images_cms/home/home-promotion-01.png"
+                              data-image-tablet="images_cms/home/home-promotion-01.png"
+                              data-image-mobile="images_cms/home/home-promotion-01.png">
+                          </div>
+                        </a>
                       </div>
                       <div class="offer-index-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>City Escape</h5>
+                          <a href="offer_detail.php"><h5>City Escape</h5></a>
                           <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel ...</p>                            
                         </div>
                       </div>
@@ -541,7 +543,7 @@
                       <div class="boxlist-item-content-cta">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="square-cta">Book now</a>
+                            <a href="javascript:void(0);" class="square-cta book-now">Book now</a>
                           </div>                          
                         </div>
                       </div>
@@ -565,16 +567,18 @@
                     <div class="offer-index-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/home/home-promotion-01.png"
-                            data-image-tablet="images_cms/home/home-promotion-01.png"
-                            data-image-mobile="images_cms/home/home-promotion-01.png">
-                        </div>
+                        <a href="offer_detail.php">
+                          <div class="manic-image-container">
+                            <img src=""
+                              data-image-desktop="images_cms/home/home-promotion-01.png"
+                              data-image-tablet="images_cms/home/home-promotion-01.png"
+                              data-image-mobile="images_cms/home/home-promotion-01.png">
+                          </div>
+                        </a>
                       </div>
                       <div class="offer-index-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Enjoy Additional 15% off</h5>
+                          <a href="offer_detail.php"><h5>Enjoy Additional 15% off</h5></a>
                           <p>Book directly with us and enjoy additional 15% discount on top of exisiting promotions ...</p>                            
                         </div>
                       </div>
@@ -582,7 +586,7 @@
                       <div class="boxlist-item-content-cta">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="square-cta">Book now</a>
+                            <a href="javascript:void(0);" class="square-cta book-now">Book now</a>
                           </div>                          
                         </div>
                       </div>
@@ -641,16 +645,18 @@
                     <div class="offer-index-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/home/home-promotion-02.png"
-                            data-image-tablet="images_cms/home/home-promotion-02.png"
-                            data-image-mobile="images_cms/home/home-promotion-02.png">
-                        </div>
+                        <a href="offer_detail.php">
+                          <div class="manic-image-container">
+                            <img src=""
+                              data-image-desktop="images_cms/home/home-promotion-02.png"
+                              data-image-tablet="images_cms/home/home-promotion-02.png"
+                              data-image-mobile="images_cms/home/home-promotion-02.png">
+                          </div>
+                        </a>
                       </div>
                       <div class="offer-index-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Valentine’s Day</h5>
+                          <a href="offer_detail.php"><h5>Valentine’s Day</h5></a>
                           <p>From 16th Dec 2016 to 5th Feb 2017 guest staying at the hotel will have the option to extend their...</p>
                         </div>
                       </div>
@@ -658,7 +664,7 @@
                       <div class="boxlist-item-content-cta">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="square-cta">Book now</a>
+                            <a href="mailto:enquiry@sagehotels.com" class="square-cta">Contact us</a>
                           </div>                          
                         </div>
                       </div>
@@ -682,16 +688,18 @@
                     <div class="offer-index-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/home/home-promotion-03.png"
-                            data-image-tablet="images_cms/home/home-promotion-03.png"
-                            data-image-mobile="images_cms/home/home-promotion-03.png">
-                        </div>
+                        <a href="offer_detail.php">
+                          <div class="manic-image-container">
+                            <img src=""
+                              data-image-desktop="images_cms/home/home-promotion-03.png"
+                              data-image-tablet="images_cms/home/home-promotion-03.png"
+                              data-image-mobile="images_cms/home/home-promotion-03.png">
+                          </div>
+                        </a>
                       </div>
                       <div class="offer-index-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Sage Amour</h5>
+                          <a href="offer_detail.php"><h5>Sage Amour</h5></a>
                           <p>Why fly to Rome when you can Sage Amour? </p>
                         </div>
                       </div>
@@ -699,7 +707,7 @@
                       <div class="boxlist-item-content-cta">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="square-cta">Book now</a>
+                            <a href="mailto:enquiry@sagehotels.com" class="square-cta">Contact us</a>
                           </div>                          
                         </div>
                       </div>
@@ -740,10 +748,9 @@
 
 
             <div id="offer-index-page-item-container" class="boxlist-item-container">
-              <div class="row">
-
-
-              </div>
+                  
+                <p>There are currently no offers here. Please check back later.</p>
+                  
             </div>
 
 
@@ -794,16 +801,18 @@
                     <div class="offer-index-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
-                          <img src=""
-                            data-image-desktop="images_cms/home/home-promotion-03.png"
-                            data-image-tablet="images_cms/home/home-promotion-03.png"
-                            data-image-mobile="images_cms/home/home-promotion-03.png">
-                        </div>
+                        <a href="offer_detail.php">
+                          <div class="manic-image-container">
+                            <img src=""
+                              data-image-desktop="images_cms/home/home-promotion-03.png"
+                              data-image-tablet="images_cms/home/home-promotion-03.png"
+                              data-image-mobile="images_cms/home/home-promotion-03.png">
+                          </div>
+                        </a>
                       </div>
                       <div class="offer-index-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Ascot Horse Racing</h5>
+                          <a href="offer_detail.php"><h5>Ascot Horse Racing</h5></a>
                           <p>Complimentary upgrade to Executive Wing</p>
                         </div>
                       </div>
@@ -811,7 +820,7 @@
                       <div class="boxlist-item-content-cta">
                         <div class="row">
                           <div class="col-xs-12">
-                            <a href="#" class="square-cta">Book now</a>
+                            <a href="javascript:void(0);" class="square-cta book-now">Book now</a>
                           </div>                          
                         </div>
                       </div>

@@ -836,7 +836,7 @@ body.is-tablet.is-tablet-portrait{
       margin-right: 0px;
 
       &.slider-with-price {
-        margin-top: 20px;
+        margin-top: 40px;
       }
     }
     .detail-banner-slider{
@@ -1583,7 +1583,7 @@ div.default-promotion-cta-container{
 
   .square-cta{
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 40px;    
   }
 }
 
@@ -2313,7 +2313,7 @@ a.boxlist-item-content-image{
     padding-left: 35px;
 
     margin-right: -30px;
-    white-space: nowrap;
+    // white-space: nowrap;
 
     padding-left: 35px;
 
@@ -2325,7 +2325,7 @@ a.boxlist-item-content-image{
 
   &.scaling-version{
     p{
-
+      white-space: nowrap;
       @media only screen and (max-width: 1280px) {
         font-size: 11px;
         margin-bottom: 10px;
@@ -2414,6 +2414,13 @@ a.boxlist-item-content-image{
     .square-cta{
       padding-left: 20px;
       padding-right: 20px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .square-cta {
+      &.book-now {
+        background-color: @violet;
+      }
     }
   }
 } // .detail-page-more-item-content-cta
