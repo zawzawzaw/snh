@@ -487,7 +487,10 @@
 
           <div id="hotel-introduction-copy-text">
             <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at home.</p>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 254aed9760c41b6215257a837e270197c8f277b4
             <!-- <a href="#" class="arrow-cta">Read More</a> -->
           </div>
 
@@ -544,7 +547,7 @@
 -->
 
 <div class="scroll-target" data-value="accommodation"></div>
-<article id="default-room-section">
+<article id="default-room-section" class='visible-md visible-lg'>
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
@@ -749,6 +752,39 @@
 </article>
 
 
+<article id="page-hotel-accommodation-section-mobile" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-hotel-accommodation-title-mobile">
+          <h4>our accommodations</h4>
+          <h1>West Perth Hotel Rooms</h1>
+        </div>
+        <div id="page-hotel-accommodation-image-mobile">
+          <div class="manic-image-container">
+            <img src="" data-image-mobile="images_cms/hotel/hotel-accommodation-banner-mobile.jpg">
+          </div>
+        </div>
+        <div id="page-hotel-accommodation-content-mobile">
+          <div class="default-copy">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate fringilla consectetur. ipsum in, dictum lobortis libero.</p>
+          </div>
+        </div>
+        <div id="page-hotel-accommodation-cta-container-mobile">
+          <a href="" class="square-cta">View all Room Types</a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  
+</article> <!-- page-hotel-accommodation-section-mobile -->
+
+
 
 
 
@@ -771,7 +807,6 @@
           <h1>West Perth Dining</h1>
 
           <div id="mobile-hotel-dining-instagram-feed-container" class="visible-xs visible-sm">
-            <span class="instagram-feed-text">No half-hearted measures here—everything’s made from the freshest locally sourced ingredients!</span>
             <div class="manic-image-container">
               <img src="" data-image-mobile="images_cms/hotel/hotel-dining-01.png" alt="">
             </div>
@@ -780,7 +815,18 @@
           <span>A Taste of Italy — Julio’s</span>
           <p>With over 20 years of rich heritage and a passion for seriously delicious food, we’ve got something for everyone from a quick bite to a leisurely dinner.</p>
           <p>As sticklers for authenticity and wholesome flavours, we serve up mouth-watering modern Italian cuisine, and that includes tasty hotel-made pasta.</p>
-          <a href="#" class="more-dining-options arrow-cta">more dining options</a>
+
+          <div class="arrow-cta-container visible-md visible-lg">
+            <a href="javascript:void(0);" class="arrow-cta">more dining options</a>
+          </div>
+
+          <div class="square-cta-container visible-sm visible-xs">
+            <a href="javascript:void(0);" class="square-cta">more dining options</a>
+          </div>
+
+
+          
+
         </div>
       </div>
       <div class="col-lg-7 col-md-6 col-md-offset-1 hidden-xs hidden-sm">
@@ -976,7 +1022,7 @@
 </article>
 
 
-<article id="page-brand-promotion-mobile-section" class="visible-sm visible-xs">
+<article id="page-brand-promotion-mobile-section" class="hotel-version visible-sm visible-xs">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -1005,7 +1051,7 @@
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
                       <h5>City Escape</h5>
-                      <h4>Sage Hotel Adelaide</h4>
+                      <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                     </div>
                   </div>
 
@@ -1033,7 +1079,7 @@
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
                       <h5>Valentine’s Day</h5>
-                      <h4>Country comfort newcastle airport & convention centre</h4>
+                      <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                     </div>
                   </div>
 
@@ -1061,7 +1107,11 @@
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
                       <h5>Ascot Horse Racing</h5>
-                      <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>
+                      <ul>
+                        <li><p>Complimentary upgrade to Executive Wing</p></li>
+                        <li><p>General admission ticket for 2 to Ascot Races</p></li>
+                        <li><p>Early Check-in ...</p></li>
+                      </ul>
                     </div>
                   </div>
 
@@ -1214,7 +1264,7 @@
  -->
 
 <div class="scroll-target" data-value="moment"></div>
-<article id="default-moment-section">
+<article id="default-moment-section" class="hotel-version">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-4 hidden-xs hidden-sm">
@@ -1294,8 +1344,8 @@
   <div class="container-fluid has-breakpoint">
     <div class="row">
 
-      <div id="hotel-attraction-content" class="boxlist-item-container">
-        <div class="col-md-4 hidden-sm hidden-xs">
+      <div id="hotel-attraction-content" class="boxlist-item-container visible-md visible-lg">
+        <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
 
@@ -1320,7 +1370,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
+        <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
 
@@ -1344,7 +1394,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
+        <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
 
@@ -1395,7 +1445,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
+        <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
 
@@ -1420,7 +1470,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
+        <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
 
@@ -1447,10 +1497,179 @@
         </div>
       </div> <!-- hotel-attraction-content -->
 
+      <!-- mobile version -->
+
+      <div id="hotel-attraction-slider-container-mobile" class="boxlist-item-container mobile-height-version visible-sm visible-xs">
+        <div id="hotel-attraction-slider-mobile">
+
+          <div class="hotel-attraction-slider-mobile-item">
+            <div class="hotel-attraction-content-item boxlist-item">
+              <div class="hotel-attraction-content-box boxlist-item-box">
+
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src="" data-image-mobile="images_cms/hotel/hotel-attraction-01.png" alt="">
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-content-copy">
+                  <div class="default-copy">
+                    <h5>Subiaco Farmers Market</h5>
+                    <p>Opens every Saturday from 8am – 12:30pm, you can find specialty local produce, seafood...</p>
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+                </div>
+
+              </div>
+            </div>
+          </div> <!-- hotel-attraction-slider-mobile-item -->
+
+          <div class="hotel-attraction-slider-mobile-item">
+            <div class="hotel-attraction-content-item boxlist-item">
+              <div class="hotel-attraction-content-box boxlist-item-box">
+
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src="" data-image-mobile="images_cms/hotel/hotel-attraction-02.png" alt="">
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-content-copy">
+                  <div class="default-copy">
+                    <h5>Perth Zoo</h5>
+                    <p>Animal aficionados will definitely relish a trip to Perth Zoo in nearby South Perth.</p>
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+                </div>
+                
+              </div>
+            </div>
+          </div> <!-- hotel-attraction-slider-mobile-item -->
+
+          <div class="hotel-attraction-slider-mobile-item">
+            <div class="hotel-attraction-content-item boxlist-item">
+              <div class="hotel-attraction-content-box boxlist-item-box">
+
+
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src="" data-image-mobile="images_cms/hotel/hotel-attraction-03.png" alt="">
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-content-copy">
+                  <div class="default-copy">
+                    <h5>Leederville Farmers Market</h5>
+                    <p>Boasting a rich café, restaurant and pub culture, stop by Leederville, Highgate and Mount...</p>
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+                </div>
+                
+              </div>
+            </div>
+          </div> <!-- hotel-attraction-slider-mobile-item -->
+
+          <div class="hotel-attraction-slider-mobile-item">
+            <div class="hotel-attraction-content-item boxlist-item">
+              <div class="hotel-attraction-content-box boxlist-item-box">
+
+
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src="" data-image-mobile="images_cms/hotel/hotel-attraction-04.png" data-image-mobile="images_cms/hotel/hotel-attraction-04.png" alt="">
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-content-copy">
+                  <div class="default-copy">
+                    <h5>High St Dispensary</h5>
+                    <p>Dispensing all kinds of yummy items, this is THE place to go to in Freo. For those who don’t...</p>
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div> <!-- hotel-attraction-slider-mobile-item -->
+
+          <div class="hotel-attraction-slider-mobile-item">
+            <div class="hotel-attraction-content-item boxlist-item">
+              <div class="hotel-attraction-content-box boxlist-item-box">
+
+
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src="" data-image-mobile="images_cms/hotel/hotel-attraction-05.png" alt="">
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-content-copy">
+                  <div class="default-copy">
+                    <h5>Linton & Kay</h5>
+                    <p>Check out the highly recommended Linton & Kay art galleries at Mandoon Estate...</p>
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+                </div>
+                
+              </div>
+            </div>
+          </div> <!-- hotel-attraction-slider-mobile-item -->
+
+          <div class="hotel-attraction-slider-mobile-item">
+            <div class="hotel-attraction-content-item boxlist-item">
+              <div class="hotel-attraction-content-box boxlist-item-box">
+
+                
+                <div class="boxlist-item-content-image">
+                  <div class="manic-image-container">
+                    <img src="" data-image-mobile="images_cms/hotel/hotel-attraction-06.png" alt="">
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-content-copy">
+                  <div class="default-copy">
+                    <h5>Yelo</h5>
+                    <p>If you’re exploring the North Beach and are on the go, pop in and grab a quick takeaway...</p>
+                  </div>
+                </div>
+
+                <div class="hotel-attraction-cta-container">
+                  <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+                </div>
+                
+              </div>
+            </div>
+          </div> <!-- hotel-attraction-slider-mobile-item -->
+
+        </div>
+      </div> <!-- hotel-attraction-slider-container-mobile -->
+
+
+
 
     </div>
   </div>
-</article>
+</article> <!-- hotel-attraction-section -->
+
+
+
+
 
 
 
