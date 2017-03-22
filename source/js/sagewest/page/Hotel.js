@@ -117,11 +117,48 @@ sagewest.page.Hotel.prototype.create_sliders = function(){
     });
   }
 
+
+  if ($('#hotel-attraction-slider-mobile').length != 0) {
+    
+
+    $('#hotel-attraction-slider-mobile').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#hotel-attraction-slider-mobile').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.hotel_attractions_slider_mobile = $('#hotel-attraction-slider-mobile').slick({
+      'speed': 350,
+      'dots': true,
+      'arrows': false,
+      // 'infinite': true,
+      'infinite': false,
+      'slidesToShow': 2,
+      'slidesToScroll': 2,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000,
+      'responsive': [
+        {
+          'breakpoint': 767,
+          'settings':{
+            'slidesToShow': 1,
+            'slidesToScroll': 1
+          }
+        }
+      ]
+    });
+
+  }
+  
+
+
 };
 
 
 sagewest.page.Hotel.prototype.create_experience_slider = function(){
-  
+
   this.experience_carousel = $('#home-experience-carousel').slick({
     'speed': 350,
     'dots': false,
