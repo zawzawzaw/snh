@@ -108,7 +108,7 @@ sagewest.page.Gallery.prototype.init = function() {
   
   
 
-
+  this.gallery_index_tab.update_layout();
 
 
   this.update_page_layout();    // this is called after the initial create to update the layout
@@ -146,6 +146,9 @@ sagewest.page.Gallery.prototype.create_gallery = function() {
   goog.events.listen(this.gallery_index_tab, sagewest.component.GalleryIndexTab.UPDATE_IMAGE, function(){
     this.update_page_layout();
   }.bind(this));
+
+
+  
 
   
   
@@ -269,7 +272,8 @@ sagewest.page.Gallery.prototype.update_page_layout = function() {
 
   sagewest.page.Gallery.superClass_.update_page_layout.call(this);
 
-  
+  //this.gallery_index_tab.update_layout();
+  //this.gallery_detail_tab.update_layout();
 
 
 };
@@ -328,7 +332,7 @@ sagewest.page.Gallery.prototype.on_scroll_to_no_target = function(){
   this.current_category = 'all';
 
   this.show_index_tab();
-  this.gallery_index_tab.set_category(null);
+  this.gallery_index_tab.set_category('all');
 
   this.update_page_layout();
   

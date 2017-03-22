@@ -219,7 +219,7 @@
       width: 100%;
       height: 392px;
       position: relative;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
       iframe {
         width: 100%;
         height: 392px;
@@ -340,27 +340,42 @@
     top: -165px;
     right: -30px;
     width: 720px;
-    @media all and (max-width: 1024px) {
+
+
+    @media all and (max-width: 1280px) {
       width: 100%;
-      right: 0px;
+      right: -20px;
+      top: -20px;
     }
+
+    @media all and (max-width: 1180px) {
+      top: 20px;
+    }
+
+
+    
     .instagram-feed {
       display: inline-block;
       vertical-align: top;
       margin: -0.5px;
-      @media all and (max-width: 1024px) {
-        width: 45%;
-      }
       &:first-child {
         margin-left: 40px;
       }
+
+      @media all and (max-width: 1280px) {
+        width: 45%;
+        &:first-child {
+          margin-left: 10px;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      
       img {
         line-height: 0px;
         vertical-align: top;
         margin: 0;
-        @media all and (max-width: 1024px) {
-          width: 100%;
-        }
       }
     }
     .instagram-feed-text {
@@ -370,6 +385,10 @@
       font-size: 19px;
       line-height: 27px;
       color: @grey-3;
+
+      @media all and (max-width: 1280px) {
+        padding-left: 20px;
+      }
     }
   }  
 

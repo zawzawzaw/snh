@@ -111,10 +111,7 @@
 
         <div id="hotel-introduction-copy">          
           
-          <div id="hotel-introduction-copy-title" class="visible-sm visible-xs">
-            <h1>Our products and services are designed to be simple to use and easy to enjoy. They’re intuitive, and if there’s anything we can do to make your stay more</h1>
-          </div>
-
+          
           <div id="hotel-introduction-copy-title-2">
             <h4>a sense of place</h4>
             <h1>We care about your thing</h1>
@@ -372,7 +369,7 @@
       <div class="col-md-12">
 
         <div class="default-room-cta-container">
-          <a href="#" class="square-cta">View all Room Types</a>
+          <a href="room_index.php" class="square-cta">View all Room Types</a>
         </div>
 
 
@@ -403,7 +400,7 @@
           </div>
         </div>
         <div id="page-hotel-accommodation-cta-container-mobile">
-          <a href="" class="square-cta">View all Room Types</a>
+          <a href="room_index.php" class="square-cta">View all Room Types</a>
         </div>
 
 
@@ -448,11 +445,11 @@
           <p>As sticklers for authenticity and wholesome flavours, we serve up mouth-watering modern Italian cuisine, and that includes tasty hotel-made pasta.</p>
 
           <div class="arrow-cta-container visible-md visible-lg">
-            <a href="javascript:void(0);" class="arrow-cta">more dining options</a>
+            <a href="dining_index.php" class="arrow-cta">more dining options</a>
           </div>
 
           <div class="square-cta-container visible-sm visible-xs">
-            <a href="javascript:void(0);" class="square-cta">more dining options</a>
+            <a href="dining_index.php" class="square-cta">more dining options</a>
           </div>
 
 
@@ -644,7 +641,7 @@
       <div class="col-md-12">
 
         <div id="default-promotion-view-all-container">
-          <a href="#" class="square-cta">View all offers</a>
+          <a href="offer_index.php" class="square-cta">View all offers</a>
         </div>
 
       </div>
@@ -652,6 +649,14 @@
   </div>
 </article>
 
+<!--
+   ____  ____   ___  __  __  ___ _____ ___ ___  _   _   __  __  ___  ____ ___ _     _____
+  |  _ \|  _ \ / _ \|  \/  |/ _ \_   _|_ _/ _ \| \ | | |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |_) | |_) | | | | |\/| | | | || |  | | | | |  \| | | |\/| | | | |  _ \| || |   |  _|
+  |  __/|  _ <| |_| | |  | | |_| || |  | | |_| | |\  | | |  | | |_| | |_) | || |___| |___
+  |_|   |_| \_\\___/|_|  |_|\___/ |_| |___\___/|_| \_| |_|  |_|\___/|____/___|_____|_____|
+
+-->
 
 <article id="page-brand-promotion-mobile-section" class="hotel-version visible-sm visible-xs">
   <div class="container-fluid">
@@ -687,7 +692,7 @@
                   </div>
 
                   <div class="boxlist-item-content-cta">
-                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                    <a href="javascript:$('#mobile-header-calendar-open-btn').trigger('click');" class="square-cta highlight-version book-now">Book now</a>
                   </div>
 
                 </div>
@@ -747,7 +752,7 @@
                   </div>
 
                   <div class="boxlist-item-content-cta">
-                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                    <a href="javascript:$('#mobile-header-calendar-open-btn').trigger('click');" class="square-cta highlight-version">Book now</a>
                   </div>
 
                 </div>
@@ -760,7 +765,7 @@
           </div>
         </div>
         <div id="page-brand-promotion-cta-container-mobile">
-          <a href="javascript:void(0);" class="square-cta">View all Offers</a>
+          <a href="offer_index.php" class="square-cta">View all Offers</a>
         </div>
 
       </div>

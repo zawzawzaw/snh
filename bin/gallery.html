@@ -914,25 +914,6 @@
     </div>
   </article> <!-- default-breadcrumb-container -->
 
-  <!-- <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="default-breadcrumb-mobile">
-            <ul>
-              <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
-              <li><a href="brand_alternative.php">sage hotels</a></li>
-              <li><a href="hotel.php">sage west perth</a></li>
-              <li>Gallery</li>
-            </ul>
-          </div> 
-
-        </div>
-      </div>
-    </div>
-  </article> --> <!-- default-breadcrumb-container -->
-
   <!--
      _____ ___ _____ _     _____
     |_   _|_ _|_   _| |   | ____|
@@ -951,7 +932,7 @@
             <h1>Gallery</h1>
           </div> <!-- default-index-page-title -->
 
-          <div id="gallery-page-tab-container">
+          <div id="gallery-page-tab-container" class="visible-md visible-lg">
             <nav>
               <ul>
                 <li><a href="#all" class="selected">All</a></li>
@@ -963,6 +944,21 @@
               </ul>
             </nav>
           </div> <!-- gallery-page-tab-container -->
+
+          <div id="gallery-page-category-dropdown-container" class="visible-sm visible-xs">
+            
+            <div class="manic-dropdown">
+              <select id="gallery-page-category-dropdown">
+                <option value="">Select One</option>
+                <option value="all" selected>All</option>
+                <option value="accommodation">Accommodation</option>
+                <option value="dining">Dining</option>
+                <option value="facilities">Facilities</option>
+                <option value="activities">Activities</option>
+                <option value="events">Events</option>
+              </select>
+            </div>
+          </div>
 
 
         </div>

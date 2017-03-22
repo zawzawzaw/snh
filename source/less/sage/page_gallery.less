@@ -39,6 +39,12 @@
   h1{
 
   }
+  @media only screen and (max-width: 991px) {
+    text-align: left;
+    margin-bottom: 23px;
+
+    padding-top: 7px;
+  }
 }
 
 #gallery-page-tab-container{
@@ -98,7 +104,36 @@
 } // #gallery-page-tab-container
 
 
+#gallery-page-category-dropdown-container{
+  .manic-dropdown{
+    > .goog-menu-button{
+      border: none;
+      border-bottom: 1px solid @border-grey;
+    }
+  }
+  .goog-menu-button-caption{
+    .open-sans-semi-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: @violet;
 
+    padding-left: 15px;
+    padding-bottom: 9px;
+  }
+  .goog-menu-button-disabled{
+    .opacity(0.3);
+  }
+
+  .goog-menu-button-dropdown{
+    top: 4px;
+    right: 12px;
+
+    &:after{
+      font-size: 18px;
+    }
+  }
+
+}
 
 
 
@@ -113,15 +148,30 @@
 
 
 @gallery-gutter: 10px;
+@gallery-gutter-mobile: 4px;
 
 #page-gallery-masonry-section{
   padding-top: 67px;
   padding-bottom: 94px;
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 27px;
+    padding-bottom: 40px;
+    .container-fluid{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
 }
 
 #gallery-masonry-grid-container{
   margin-left: -1 * @gallery-gutter / 2;
   margin-right: -1 * @gallery-gutter / 2;
+
+  @media only screen and (max-width: 767px) {
+    margin-left: -1 * @gallery-gutter-mobile / 2;
+    margin-right: -1 * @gallery-gutter-mobile / 2;
+  }
 }
 
 #gallery-masonry-grid{
@@ -197,8 +247,13 @@
   }
 
   @media (max-width: 767px) { // force to 1 column
-    width: 100%;
-    padding-bottom: 135.88%;
+
+    // width: 100%;
+    // padding-bottom: 135.88%;
+    
+    width: 100% / 2;
+    padding-bottom: 135.88% / 2;
+
     &.width-2{
       width: 100% * 2 / 2;
       padding-bottom: 135.88% / 2;
@@ -209,11 +264,12 @@
     }
     &.width-4{
       width: 100% * 4 / 4;
-      padding-bottom: 135.88% / 4;
+      padding-bottom: 135.88% / 2;        // so it becomes 2:1
     }
 
     &.height-2{
-      padding-bottom: 135.88% * 2;
+      width: 100% / 2 * 2;
+      padding-bottom: 135.88% / 2 * 2;
     }
     &.width-2.height-2{ // cancel out each other
       width: 100% * 2 / 2;
@@ -235,6 +291,15 @@
     left: @gallery-gutter / 2;
     right: @gallery-gutter / 2;
 
+    @media only screen and (max-width: 767px) {
+      top: @gallery-gutter-mobile / 2;
+      bottom: @gallery-gutter-mobile / 2;
+      left: @gallery-gutter-mobile / 2;
+      right: @gallery-gutter-mobile / 2;
+    }
+
+    
+
 
     // .transition-in-single(opacity);
     
@@ -243,11 +308,18 @@
     }
     
     .manic-image-container{
+      display: block;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 }

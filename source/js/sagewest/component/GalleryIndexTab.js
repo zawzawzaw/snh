@@ -21,11 +21,11 @@ sagewest.component.GalleryIndexTab = function(options, element) {
   this.element = element;
 
   this.container = this.element.find('#gallery-masonry-grid');
-  this.current_category = 'all';
+  this.current_category = 'none';
 
   this.is_created = false;
 
-
+  this.isotope = null;
 
 
   //    ___ _   _ ___ _____
@@ -229,6 +229,7 @@ sagewest.component.GalleryIndexTab.prototype.set_category = function(category_pa
       layoutMode: 'packery',
       filter: filter_class 
     });
+    // $('#gallery-masonry-grid').isotope('layout');
 
 
 
@@ -258,7 +259,13 @@ sagewest.component.GalleryIndexTab.prototype.animate_out = function() {
     'display': 'none'
   });
 };
-sagewest.component.GalleryIndexTab.prototype.public_method_04 = function() {};
+sagewest.component.GalleryIndexTab.prototype.update_layout = function() {
+
+  if (this.isotope != null) {
+    this.isotope.layout();
+  }
+
+};
 sagewest.component.GalleryIndexTab.prototype.public_method_05 = function() {};
 sagewest.component.GalleryIndexTab.prototype.public_method_06 = function() {};
 

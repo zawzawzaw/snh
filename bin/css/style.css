@@ -9701,7 +9701,6 @@ a.boxlist-item-content-image:hover {
     width: 100%;
     height: 392px;
     position: relative;
-    margin-bottom: 30px;
   }
   #hotel-introduction-section #hotel-introduction-mobile-video iframe {
     width: 100%;
@@ -9788,10 +9787,16 @@ a.boxlist-item-content-image:hover {
   right: -30px;
   width: 720px;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1280px) {
   #hotel-dining-section #hotel-dining-instagram-feed-container {
     width: 100%;
-    right: 0px;
+    right: -20px;
+    top: -20px;
+  }
+}
+@media all and (max-width: 1180px) {
+  #hotel-dining-section #hotel-dining-instagram-feed-container {
+    top: 20px;
   }
 }
 #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed {
@@ -9799,23 +9804,24 @@ a.boxlist-item-content-image:hover {
   vertical-align: top;
   margin: -0.5px;
 }
-@media all and (max-width: 1024px) {
+#hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed:first-child {
+  margin-left: 40px;
+}
+@media all and (max-width: 1280px) {
   #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed {
     width: 45%;
   }
-}
-#hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed:first-child {
-  margin-left: 40px;
+  #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed:first-child {
+    margin-left: 10px;
+  }
+  #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed img {
+    width: 100%;
+  }
 }
 #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed img {
   line-height: 0px;
   vertical-align: top;
   margin: 0;
-}
-@media all and (max-width: 1024px) {
-  #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed img {
-    width: 100%;
-  }
 }
 #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed-text {
   padding-left: 40px;
@@ -9826,6 +9832,11 @@ a.boxlist-item-content-image:hover {
   font-size: 19px;
   line-height: 27px;
   color: #8c8c8c;
+}
+@media all and (max-width: 1280px) {
+  #hotel-dining-section #hotel-dining-instagram-feed-container .instagram-feed-text {
+    padding-left: 20px;
+  }
 }
 #hotel-dining-section .square-cta-container {
   text-align: center;
@@ -12812,6 +12823,13 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   text-align: center;
   margin-bottom: 26px;
 }
+@media only screen and (max-width: 991px) {
+  #gallery-page-title {
+    text-align: left;
+    margin-bottom: 23px;
+    padding-top: 7px;
+  }
+}
 #gallery-page-tab-container nav ul {
   font-size: 0;
   text-align: center;
@@ -12856,13 +12874,58 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 #gallery-page-tab-container nav ul li a:hover:before {
   width: 100%;
 }
+#gallery-page-category-dropdown-container .manic-dropdown > .goog-menu-button {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+#gallery-page-category-dropdown-container .goog-menu-button-caption {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7d0052;
+  padding-left: 15px;
+  padding-bottom: 9px;
+}
+#gallery-page-category-dropdown-container .goog-menu-button-disabled {
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  filter: alpha(opacity=30);
+}
+#gallery-page-category-dropdown-container .goog-menu-button-dropdown {
+  top: 4px;
+  right: 12px;
+}
+#gallery-page-category-dropdown-container .goog-menu-button-dropdown:after {
+  font-size: 18px;
+}
 #page-gallery-masonry-section {
   padding-top: 67px;
   padding-bottom: 94px;
 }
+@media only screen and (max-width: 767px) {
+  #page-gallery-masonry-section {
+    padding-top: 27px;
+    padding-bottom: 40px;
+  }
+  #page-gallery-masonry-section .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 #gallery-masonry-grid-container {
   margin-left: -5px;
   margin-right: -5px;
+}
+@media only screen and (max-width: 767px) {
+  #gallery-masonry-grid-container {
+    margin-left: -2px;
+    margin-right: -2px;
+  }
 }
 .gallery-masonry-grid-item {
   width: 25%;
@@ -12921,8 +12984,8 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 @media (max-width: 767px) {
   .gallery-masonry-grid-item {
-    width: 100%;
-    padding-bottom: 135.88%;
+    width: 50%;
+    padding-bottom: 67.94%;
   }
   .gallery-masonry-grid-item.width-2 {
     width: 100%;
@@ -12934,10 +12997,11 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   }
   .gallery-masonry-grid-item.width-4 {
     width: 100%;
-    padding-bottom: 33.97%;
+    padding-bottom: 67.94%;
   }
   .gallery-masonry-grid-item.height-2 {
-    padding-bottom: 271.76%;
+    width: 100%;
+    padding-bottom: 135.88%;
   }
   .gallery-masonry-grid-item.width-2.height-2 {
     width: 100%;
@@ -12952,6 +13016,14 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   left: 5px;
   right: 5px;
 }
+@media only screen and (max-width: 767px) {
+  .gallery-masonry-grid-item a {
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+  }
+}
 .gallery-masonry-grid-item a:hover {
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
@@ -12961,11 +13033,17 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   filter: alpha(opacity=50);
 }
 .gallery-masonry-grid-item a .manic-image-container {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.gallery-masonry-grid-item a .manic-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #gallery-slider-section {
   padding-top: 64px;
