@@ -210,7 +210,7 @@
               data-city="Armidale"
               data-id="Country Comfort Armidale">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Armidale</h5>
@@ -238,7 +238,7 @@
               data-city="North Coffs Harbour"
               data-id="Country Comfort Coffs Harbour">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-coffs-harbour.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Coffs Harbour</h5>
@@ -252,7 +252,7 @@
               data-city="Cowra"
               data-id="Country Comfort Cowra">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-cowra.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Cowra</h5>
@@ -280,7 +280,7 @@
               data-city="Casula"
               data-id="Country Comfort Hunts Liverpool">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-hunts-liverpool.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Hunts Liverpool</h5>
@@ -322,7 +322,7 @@
               data-city="Heatherbrae"
               data-id="Country Comfort Newcastle Airport & Convention Centre">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-newcastle-airport-convention-centre.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Newcastle Airport & Convention Centre</h5>
@@ -336,7 +336,7 @@
               data-city="Port Macquarie"
               data-id="Country Comfort Port Macquarie Water Edge Boutique">
               <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                <img src="" data-image-desktop="images_cms/brand/brand-location-port-macquarie-water-edge-boutique.jpg">
               </div>
               <div class="brand-location-page-item-overlay">
                 <h5>Country Comfort Port Macquarie Water Edge Boutique</h5>

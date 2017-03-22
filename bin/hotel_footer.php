@@ -31,7 +31,7 @@
 
 
 <footer id="desktop-footer">
-  <div id="hotel-footer-top-bar-container">
+  <div id="hotel-footer-top-bar-container" class="hidden-sm hidden-xs">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -73,7 +73,7 @@
       </div>
 
       <div class="col-md-1 hidden-sm hidden-xs">
-        <div class="footer-seperator">
+        <div class="footer-seperator left-version">
         </div>
       </div>
 
@@ -108,7 +108,7 @@
 
       
       <div class="col-md-1 hidden-sm hidden-xs">
-        <div class="footer-seperator">
+        <div class="footer-seperator right-version">
         </div>
       </div>
       <div class="col-md-2 hidden-xs hidden-sm">

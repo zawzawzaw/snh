@@ -292,7 +292,7 @@
                   <input type="text" name="promo_code">
                 </div>
                 <div class="input-box">
-                  <input type="submit" class="check-availability square-cta" value="check availability">
+                  <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
                 </div>
               </form>
             </div>
@@ -470,24 +470,27 @@
                   <div class="room-detail-page-item-box boxlist-item-box">
 
                     <div class="boxlist-item-content-image short-version">
-                      <div class="manic-image-container">
+                      <a href="room_detail.php" class="manic-image-container">
                         <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
-                      </div>
+                      </a>
                     </div>
                     <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
-                        <h5>Standard Room</h5>
+                        <h5><a href="room_detail.php">Standard Room</a></h5>
                       </div>
                     </div>
                     <div class="room-detail-page-item-content-detail">
+                      <div class="boxlist-item-content-room-detail">
+                        <p class="detail-person">2 adults, 2 children</p>
+                        <p class="detail-size">25 SQM</p>
+                        <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                      </div>
+                    </div> <!-- room-detail-page-item-content-detail -->
+
+                    <div class="room-detail-page-item-cta-container">
                       <div class="row">
                         <div class="col-xs-7">
-
-                          <div class="boxlist-item-content-room-detail">
-                            <p class="detail-person">2 adults, 2 children</p>
-                            <p class="detail-size">25 SQM</p>
-                          </div>
-
+                          <a href="room_detail.php" class="arrow-cta">View room details</a>
                         </div>
                         <div class="col-xs-5">
 
@@ -498,14 +501,10 @@
                               <span class="number">$119</span>
                             </p>
                           </div>
-                          
+
                         </div>
                       </div>
-
-                    </div> <!-- room-detail-page-item-content-detail -->
-
-                    <div class="room-detail-page-item-cta-container">
-                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                      
                     </div>
                   </div> <!-- boxlist-item-box -->
 
@@ -526,27 +525,29 @@
                   <div class="room-detail-page-item-box boxlist-item-box">
 
                     <div class="boxlist-item-content-image short-version">
-                      <div class="manic-image-container">
+                      <a href="room_detail.php" class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
-                      </div>
+                      </a>
                     </div>
                     <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
-                        <h5>Deluxe Room</h5>
+                        <h5><a href="room_detail.php">Deluxe Room</a></h5>
                       </div>
                     </div> <!-- room-detail-page-item-content-copy -->
                     <div class="room-detail-page-item-content-detail">
+                      <div class="boxlist-item-content-room-detail">
+                        <p class="detail-person">2 adults, 2 children</p>
+                        <p class="detail-size">25 SQM</p>
+                        <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                      </div>
+                    </div>
+
+                    <div class="room-detail-page-item-cta-container">
                       <div class="row">
-                        <div class="col-xs-8">
-
-                          <div class="boxlist-item-content-room-detail">
-                            <p class="detail-person">2 adults, 2 children</p>
-                            <p class="detail-size">25 SQM</p>
-                          </div>
-
+                        <div class="col-xs-7">
+                          <a href="room_detail.php" class="arrow-cta">View room details</a>
                         </div>
-                        <div class="col-xs-4">
-
+                        <div class="col-xs-5">
                           <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
@@ -554,13 +555,10 @@
                               <span class="number">$235</span>
                             </p>
                           </div>
-
+                          
                         </div>
                       </div>
-                    </div>
-
-                    <div class="room-detail-page-item-cta-container">
-                      <a href="room_detail.php" class="arrow-cta">View room details</a>
+                      
                     </div>
                   </div> <!-- boxlist-item-box -->
                   
@@ -582,27 +580,30 @@
                   <div class="room-detail-page-item-box boxlist-item-box">
 
                     <div class="boxlist-item-content-image short-version">
-                      <div class="manic-image-container">
+                      <a href="room_detail.php" class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
-                      </div>
+                      </a>
                     </div>
                     <div class="room-detail-page-item-content-copy">
                       <div class="default-copy">
-                        <h5>Superior Room</h5>
+                        <h5><a href="room_detail.php">Superior Room</a></h5>
                       </div>
                     </div>
                     <div class="room-detail-page-item-content-detail">
+                      <div class="boxlist-item-content-room-detail">
+                        <p class="detail-person">2 adults, 2 children</p>
+                        <p class="detail-size">25 SQM</p>
+                        <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                      </div>
+                      
+                    </div>
+                    <div class="room-detail-page-item-cta-container">
                       <div class="row">
-                        <div class="col-xs-8">
-
-                          <div class="boxlist-item-content-room-detail">
-                            <p class="detail-person">2 adults, 2 children</p>
-                            <p class="detail-size">25 SQM</p>
-                          </div>
-
+                        <div class="col-xs-7">
+                          <a href="room_detail.php" class="arrow-cta">View room details</a>
+                          
                         </div>
-                        <div class="col-xs-4">
-
+                        <div class="col-xs-5">
                           <div class="boxlist-item-content-price">
                             <h6>Prices from</h6>
                             <p class="content-price">
@@ -613,9 +614,6 @@
                           
                         </div>
                       </div>
-                    </div>
-                    <div class="room-detail-page-item-cta-container">
-                      <a href="room_detail.php" class="arrow-cta">View room details</a>
                     </div>
                   </div> <!-- boxlist-item-box -->
 

@@ -15,6 +15,14 @@ sagewest.component.BoxList = function(options, element) {
   this.options = $.extend({}, sagewest.component.BoxList.DEFAULT, options);
   this.element = element;
 
+  this.is_mobile_height = false;
+  
+  if (this.element.hasClass('mobile-height-version')) {
+    this.is_mobile_height = true;
+  }
+
+  console.log('is_mobile_height: ' + this.is_mobile_height);
+
   /**
    * @type {Array.<jQuery>}
    */
@@ -156,16 +164,28 @@ sagewest.component.BoxList.prototype.update_layout = function() {
     }
   }
 
-  
+  console.log(this.element)
   console.log('highest_height: ' + highest_height);
 
+  if (this.is_mobile_height == true) {
+    this.all_item_elements.css({
+      'cssText': ('height:' + highest_height + 'px !important')
+    });
+    this.all_box_elements.css({
+      'cssText': ('height:' + highest_height + 'px !important')
+    });
 
-  this.all_item_elements.css({
-    'height': highest_height + 'px'
-  });
-  this.all_box_elements.css({
-    'height': highest_height + 'px'
-  });
+  } else {
+
+    this.all_item_elements.css({
+      'height': highest_height + 'px'
+    });
+    this.all_box_elements.css({
+      'height': highest_height + 'px'
+    });
+
+  }
+
 
 
 

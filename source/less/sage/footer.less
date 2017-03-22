@@ -9,6 +9,16 @@
   // height: 235px;
   height: 220px;
 
+  @media all and (max-width: 991px) {
+    height: 245px;
+  }
+
+  .container-fluid{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
   background: @dark-grey;
   position: relative;
   
@@ -20,10 +30,11 @@
     img {
       margin-left: -5px;      
     }
+
     @media all and (max-width: 991px) {
-      top: -50px;
-      img {
-        width: 118px;
+      top: -62px;
+      img { 
+        width: 128px;
       }      
     }
   }
@@ -38,6 +49,11 @@
     // padding-top: 80px;
     /// padding-top: 83px;
     padding-top: 83px - 29px;
+
+    @media all and (max-width: 991px) {
+      padding-top: 83px;
+    }
+
     h1{
       margin-bottom: 3px;
     }
@@ -51,6 +67,7 @@
     border-radius: 0px;
     @media all and (max-width: 991px) {
       width: 100%;
+      max-width: 300px;
     }
     &:after {
       .fa;
@@ -84,19 +101,47 @@
 
   #footer-copyright-info {
     padding-right: 50px;
+
+    // padding-top: 7px;
+    padding-top: 9px;
+    padding-right: 5px;
+
+
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+    margin-right: -45px;
+    white-space: nowrap;
+
     span {
       .open-sans-regular;
-      font-size: 11px;
-      line-height: 19px;
+      // font-size: 11px;
+      // line-height: 19px;
+      font-size: 10px;
+      line-height: 20px;
       color: @white;
+
+      letter-spacing: -0.02em;
+
+      .display-inline-block;
     }
     a {
       .open-sans-bold;
-      font-size: 11px;
-      line-height: 9px;
-      display: inline-block;
+      // .open-sans-regular;
+
+      // font-size: 11px;
+      // line-height: 9px;
+      font-size: 10px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
       color: @white;
+
       .transition(.3s);
+
+
+      .display-inline-block;
+
       &:hover {
         .opacity(0.8);
       }
@@ -113,13 +158,23 @@
 
   .footer-menu {
     padding-top: 20px;
+    padding-top: 35px;
+
+    h1{
+      margin-bottom: 5px;
+    }
+
     ul {
       li {
+        line-height: 22px;
+
         a {
           color: @white;
           .open-sans-regular;
           font-size: 13px;
           line-height: 22px;
+          line-height: 22px;
+
           .transition(.3s);
           white-space: nowrap;
           &:hover {
@@ -144,16 +199,23 @@
   #footer-snh-group-logos {
     // padding-top: 20px;
     padding-top: 36px - 19px;
+
+
+    &.brand-version{
+      padding-top: 35px;
+    }
+
     .display-inline-block;
     text-align: left;
 
-
+    /*
     @media only screen and (max-width: 1380px) {
       margin-right: -50px;
     }
     @media only screen and (max-width: 1180px) {
       margin-right: -90px;
     }
+    */
 
 
     h1 {
@@ -236,17 +298,40 @@
       position: absolute;
       top: 41px - 17px;
       left: 30%;
+      
 
       // height: 140px;
       height: 138px;
       width: 0;
       border-left: 1px solid #87878c;
 
-      @media all and (max-width: 1280px) {
-        display: none;
-      }
+      
+
+      // @media all and (max-width: 1280px) {
+      //   display: none;
+      // }
     }
 
+    @media all and (max-width: 1380px) {
+      &.right-version{
+        &:before{
+          left: -15px;
+        }
+      }
+    }
+    @media all and (max-width: 1280px) {
+      &.left-version{
+        &:before{
+          left: auto;
+          right: 5px;
+        }
+      }
+      &.right-version{
+        &:before{
+          left: -33px;
+        }
+      }
+    }
 
 
 

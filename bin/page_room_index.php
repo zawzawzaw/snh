@@ -114,15 +114,15 @@
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
+                  <a href="room_detail.php" class="manic-image-container">
                     <img src=""
                       data-image="images_cms/room/room-index-standard-room.jpg"
                       data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                  </div>
+                  </a>
                 </div>
 
                 <div class="room-index-page-item-title">
-                  <h5>Standard Room</h5>
+                  <h5><a href="room_detail.php">Standard Room</a></h5>
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
@@ -146,12 +146,12 @@
 
                   <div class="row">
                     <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                      <a href="javascript:void(0);" class="square-cta highlight-version">book now</a>
                     </div>
                     <div class="col-xs-6">
 
                       <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
+                        <h6>prices from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$119</span>
@@ -190,15 +190,15 @@
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
+                  <a href="room_detail.php" class="manic-image-container">
                     <img src=""
                       data-image="images_cms/room/room-index-standard-room.jpg"
                       data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                  </div>
+                  </a>
                 </div>
 
                 <div class="room-index-page-item-title">
-                  <h5>Standard Twin Room</h5>
+                  <h5><a href="room_detail.php">Standard Twin Room</a></h5>
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
@@ -222,12 +222,12 @@
 
                   <div class="row">
                     <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                      <a href="javascript:void(0);" class="square-cta highlight-version">book now</a>
                     </div>
                     <div class="col-xs-6">
 
                       <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
+                        <h6>prices from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$119</span>
@@ -266,15 +266,15 @@
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
+                  <a href="room_detail.php" class="manic-image-container">
                     <img src=""
                       data-image="images_cms/room/room-index-standard-room.jpg"
                       data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                  </div>
+                  </a>
                 </div>
 
                 <div class="room-index-page-item-title">
-                  <h5>Superior Room</h5>
+                  <h5><a href="room_detail.php">Superior Room</a></h5>
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
@@ -298,12 +298,12 @@
 
                   <div class="row">
                     <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                      <a href="javascript:void(0);" class="square-cta highlight-version">book now</a>
                     </div>
                     <div class="col-xs-6">
 
                       <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
+                        <h6>prices from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$135</span>
@@ -346,15 +346,15 @@
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
+                  <a href="room_detail.php" class="manic-image-container">
                     <img src=""
                       data-image="images_cms/room/room-index-standard-room.jpg"
                       data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                  </div>
+                  </a>
                 </div>
 
                 <div class="room-index-page-item-title">
-                  <h5>Superior Twin Room</h5>
+                  <h5><a href="room_detail.php">Superior Twin Room</a></h5>
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
@@ -378,12 +378,12 @@
 
                   <div class="row">
                     <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                      <a href="javascript:void(0);" class="square-cta highlight-version">book now</a>
                     </div>
                     <div class="col-xs-6">
 
                       <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
+                        <h6>prices from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$135</span>
@@ -422,15 +422,15 @@
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
+                  <a href="room_detail.php" class="manic-image-container">
                     <img src=""
                       data-image="images_cms/room/room-index-standard-room.jpg"
                       data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                  </div>
+                  </a>
                 </div>
 
                 <div class="room-index-page-item-title">
-                  <h5>Deluxe Room</h5>
+                  <h5><a href="room_detail.php">Deluxe Room</a></h5>
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
@@ -454,12 +454,12 @@
 
                   <div class="row">
                     <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                      <a href="javascript:void(0);" class="square-cta highlight-version">book now</a>
                     </div>
                     <div class="col-xs-6">
 
                       <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
+                        <h6>prices from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$235</span>
@@ -498,15 +498,15 @@
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
-                  <div class="manic-image-container">
+                  <a href="room_detail.php" class="manic-image-container">
                     <img src=""
                       data-image="images_cms/room/room-index-standard-room.jpg"
                       data-image-mobile="images_cms/room/room-index-standard-room-mobile.jpg">
-                  </div>
+                  </a>
                 </div>
 
                 <div class="room-index-page-item-title">
-                  <h5>Deluxe Twin Room</h5>
+                  <h5><a href="room_detail.php">Deluxe Twin Room</a></h5>
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
@@ -530,12 +530,12 @@
 
                   <div class="row">
                     <div class="col-xs-6">
-                      <a href="javascript:void(0);" class="square-cta">book now</a>
+                      <a href="javascript:void(0);" class="square-cta highlight-version">book now</a>
                     </div>
                     <div class="col-xs-6">
 
                       <div class="boxlist-item-content-price">
-                        <h6>per night</h6>
+                        <h6>prices from</h6>
                         <p class="content-price">
                           <span class="currency">aud</span>
                           <span class="number">$235</span>

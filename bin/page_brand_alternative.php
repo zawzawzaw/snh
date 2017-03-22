@@ -79,7 +79,7 @@
         <div id="brand-page-introduction-copy">
           <div id="brand-page-introduction-title">
             <h4>Stay with us</h4>
-            <h1>Why Sage Hotel West Perth?</h1>
+            <h1>Why Sage Hotels?</h1>
           </div>
           <div id="brand-page-introduction-item-container">
             <div class="brand-page-introduction-item">
@@ -164,7 +164,7 @@
 -->
 <div class="scroll-target" data-value="location"></div>
 
-<article id="brand-all-location-section-version-02">
+<article id="brand-all-location-section-version-02" class="visible-md visible-lg">
   <div class="container-fluid has-breakpoint">
 
     <div class="row">
@@ -329,7 +329,7 @@
       <div class="col-md-1"></div>
       <div class="col-md-10">
         <div id="brand-all-location-cta-container-version-02">
-          <a href="javascript:void(0);" class="square-cta highlight-version">View all hotels</a>
+          <a href="javascript:void(0);" class="square-cta">View all hotels</a>
         </div>
       </div>
     </div>
@@ -337,6 +337,80 @@
   </div>
 </article>
 
+
+
+
+
+
+
+<article id="brand-all-location-section-version-02-mobile" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div id="brand-all-location-title-version-02-mobile">
+          <h4>SAGE HOTELS</h4>
+          <h1>Our Locations</h1>
+        </div>
+
+
+        <div id="brand-all-location-slider-container-version-02-mobile">
+          <div id="brand-all-location-slider-version-02-mobile">
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <h4>Newcastle</h4>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
+                <h4>Wollongong</h4>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <h4>Newcastle</h4>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
+                <h4>Wollongong</h4>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+        
+        <div id="brand-all-location-cta-container-version-02-mobile">
+          <a href="brand_location.php" class="square-cta">View all hotels</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</article> <!-- brand-all-location-section-version-02-mobile -->
 
 
 
@@ -353,7 +427,7 @@
 
  -->
 <div class="scroll-target" data-value="offers"></div>
-<article id="default-promotion-section">
+<article id="default-promotion-section" class="visible-md visible-lg">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
@@ -368,48 +442,54 @@
         <div class="col-md-4">
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">Accommodation</span>
-              </div>
-              <div class="box-content">
+
+              <div class="boxlist-item-tag">Accommodation</div>
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-01.png" data-image-mobile="images_cms/brand/brand-promotion-01.png" alt="">
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-01.png">
                 </div>
-                <div class="box-content-text">
-                  <h1>City Escape</h1>              
-                  <h4>sage hotel adelaide</h4>
+              </div>
+
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5>City Escape</h5>
+                  <h4>Sage Hotel Adelaide</h4>
                   <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                   <ul>
                     <li><p>Newly Constructed Sage Rooms</p></li>
                     <li><p>Continental Buffet Breakfast for 2</p></li>
                     <li><p>Late Check out at 12 noon</p></li>
                   </ul>
-                  <span class="date">valid from now – 1st april 2017</span>
-
-                  <a href="#" class="more-details arrow-cta visible-xs visible-sm">More details</a>
-                  
-                  <div class="cta-and-price-container">
-                    <div class="cta-container">
-                      <a href="#" class="square-cta book-now">Book now</a>
-                    </div>
-                  </div>
+                  <h6>valid from now – 1st april 2017</h6>
                 </div>
               </div>
+
+              <div class="boxlist-item-content-cta">
+                <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-xs hidden-sm">
+        <div class="col-md-4">
+
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">Dining</span>
-              </div>
-              <div class="box-content">
+
+              <div class="boxlist-item-tag">Dining</div>
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-02.png" data-image-mobile="images_cms/brand/brand-promotion-02.png" alt="">
-                </div>          
-                <div class="box-content-text">
-                  <h1>Valentine’s Day</h1>
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-02.png">
+                </div>
+              </div>
+
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5>Valentine’s Day</h5>
                   <h4>Country comfort newcastle airport & convention centre</h4>
                   <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                   <ul>
@@ -418,42 +498,58 @@
                     <li><p>Complimentary bottle of red or white wine</p></li>
                     <li><p>Live jazz singer duo</p></li>
                   </ul>
-
                   <div class="arrow-cta-container">
                     <a href="javascript:void(0);" class="arrow-cta">More details</a>
                   </div>
-                  
-                  <div class="cta-and-price-container">
-                    <div class="cta-container">
-                      <a href="#" class="square-cta contact-us">Contact us</a>
-                    </div>
-                    <div class="price-container">
-                      <span>per pax</span>
-                      <div class="price">
-                        <span class="currency">AUD</span><span class="price">$79.90</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>  
+
+                </div>
               </div>
+
+              <div class="boxlist-item-content-cta">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                  </div>
+                  <div class="col-xs-6">
+
+                    <div class="boxlist-item-content-price">
+                      <h6>per pax</h6>
+                      <p class="content-price">
+                        <span class="currency">aud</span>
+                        <span class="number">$79.90</span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
+
         </div>
-        <div class="col-md-4 hidden-xs hidden-sm">
+        <div class="col-md-4">
+
           <div class="default-promotion-content-item boxlist-item">
-            <div class="flip-container">
+
+            <div class="flip-container manic-version">
               <div class="flipper">
                 <div class="front">
+
                   <div class="default-promotion-content-box boxlist-item-box">
-                    <div class="box-title">
-                      <span class="tag">Dining</span>
-                    </div>
-                    <div class="box-content">
+
+                    <div class="boxlist-item-tag">Dining</div>
+
+                    <div class="boxlist-item-content-image">
                       <div class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/brand/brand-promotion-03.png" data-image-mobile="images_cms/brand/brand-promotion-03.png" alt="">
+                        <img src=""
+                          data-image-desktop="images_cms/brand/brand-promotion-03.png">
                       </div>
-                      <div class="box-content-text">
-                        <h1>Ascot Horse Racing</h1> 
+                    </div>
+
+                    <div class="default-promotion-content-item-copy">
+                      <div class="default-copy">
+                        <h5>Ascot Horse Racing</h5>
                         <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>             
                         <ul>
                           <li><p>Complimentary upgrade to Executive Wing</p></li>
@@ -463,43 +559,52 @@
                           <li><p>Complimentary shuttle to Ascot Race Track</p></li>
                           <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
                         </ul>
-
-                        <a href="#" class="underline-cta tnc">View terms & conditions</a>
-                        
-                        <div class="cta-and-price-container">
-                          <div class="cta-container">
-                            <a href="#" class="square-cta book-now">Book now</a>
-                          </div>
+                        <div class="underline-cta-container">
+                          <a href="javascript:void(0);" class="underline-cta flipper-front-btn">View terms & conditions</a>
                         </div>
+
                       </div>
                     </div>
-                  </div>
+
+                    <div class="boxlist-item-content-cta">
+                      <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                    </div>
+
+                  </div> <!-- default-promotion-content-box -->
+
                 </div>
                 <div class="back">
+
                   <div class="default-promotion-content-box boxlist-item-box">
-                    <div class="box-content">
-                      <h1>Ascot Horse Racing</h1>              
-                      <h6>terms & conditions</h6>
-                      <ul>
-                          <li>Guests must be 18 years old and above to enter the racecourse</li>
-                          <li>Tickets are non-transferrable</li>
-                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                          <li>Complimentary shuttle to Ascot Race Track</li>
-                          <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
-                          <li>Guests must be 18 years old and above to enter the racecourse</li>
-                          <li>Tickets are non-transferrable</li>
-                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                          <li>No pets allowed.</li>
-                      </ul>
-                      <a href="#" class="underline-cta back-to-offer">Back to offer</a>
+                    <div class="default-promotion-content-item-copy">
+                      <div class="default-copy">
+                        <h5>Ascot Horse Racing</h5>
+                        <h6>terms & conditions</h6>
+                        <ul>
+                            <li>Guests must be 18 years old and above to enter the racecourse</li>
+                            <li>Tickets are non-transferrable</li>
+                            <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                            <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                            <li>Complimentary shuttle to Ascot Race Track</li>
+                            <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
+                            <li>Guests must be 18 years old and above to enter the racecourse</li>
+                            <li>Tickets are non-transferrable</li>
+                        </ul>
+                      </div>
+                      <div class="underline-cta-container">
+                        <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
+                      </div>
                     </div>
+
                   </div>
+
+
                 </div>
-              </div>            
+              </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </div>
@@ -508,13 +613,132 @@
         <!-- <a href="#" id="default-promotion-view-all" class="arrow-cta">View all offers</a> -->
 
         <div id="default-promotion-view-all-container">
-          <a href="#" class="square-cta highlight-version">View all offers</a>
+          <a href="#" class="square-cta">View all offers</a>
         </div>
 
       </div>
     </div>
   </div>
 </article>
+
+
+<article id="page-brand-promotion-mobile-section" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-brand-promotion-title-mobile">
+          <h4>simply irresistable</h4>
+          <h1>Offers</h1>
+        </div>
+        <div id="page-brand-promotion-slider-container-mobile">
+          <div id="page-brand-promotion-slider-mobile" class="boxlist-item-container mobile-height-version">
+
+
+            <div class="page-brand-promotion-slider-item-mobile">
+              <div class="default-promotion-content-item boxlist-item">
+                <div class="default-promotion-content-box boxlist-item-box">
+
+                  <div class="boxlist-item-tag">Accommodation</div>
+
+                  <div class="boxlist-item-content-image">
+                    <div class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </div>
+                  </div>
+
+                  <div class="default-promotion-content-item-copy">
+                    <div class="default-copy">
+                      <h5>City Escape</h5>
+                      <h4>Sage Hotel Adelaide</h4>
+                    </div>
+                  </div>
+
+                  <div class="boxlist-item-content-cta">
+                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-brand-promotion-slider-item-mobile">
+              <div class="default-promotion-content-item boxlist-item">
+                <div class="default-promotion-content-box boxlist-item-box">
+
+                  <div class="boxlist-item-tag">Dining</div>
+
+                  <div class="boxlist-item-content-image">
+                    <div class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </div>
+                  </div>
+
+                  <div class="default-promotion-content-item-copy">
+                    <div class="default-copy">
+                      <h5>Valentine’s Day</h5>
+                      <h4>Country comfort newcastle airport & convention centre</h4>
+                    </div>
+                  </div>
+
+                  <div class="boxlist-item-content-cta">
+                    <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-brand-promotion-slider-item-mobile">
+              <div class="default-promotion-content-item boxlist-item">
+                <div class="default-promotion-content-box boxlist-item-box">
+
+                  <div class="boxlist-item-tag">Dining</div>
+
+                  <div class="boxlist-item-content-image">
+                    <div class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </div>
+                  </div>
+
+                  <div class="default-promotion-content-item-copy">
+                    <div class="default-copy">
+                      <h5>Ascot Horse Racing</h5>
+                      <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>
+                    </div>
+                  </div>
+
+                  <div class="boxlist-item-content-cta">
+                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <div id="page-brand-promotion-cta-container-mobile">
+          <a href="javascript:void(0);" class="square-cta">View all Offers</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</article> <!-- page-brand-promotion-mobile-section -->
+
+
+
+
+
+
+
 
 <!-- 
     __  _______  __  __________   ________
@@ -541,26 +765,28 @@
         </div>
       </div>
       <div class="col-md-7 col-md-offset-1">
-        <div id="default-moment-instagram-feed-container">
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
-          
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+        <div id="default-moment-instagram-feed-container-container">
+          <div id="default-moment-instagram-feed-container">
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+            
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+          </div>
         </div>
       </div>
       <div class="col-md-4 visible-sm visible-xs">
         <div id="default-moment-content">
           <h4>Capture the best moments</h4>
-          <h1>#SageHotelWestPerth</h1>
+          <h1><span>#</span>SageHotel</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <ul id="social-buttons">
             <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -593,7 +819,7 @@
       </div>
     </div>
   </div>
-  <div id="map" class="default-version"></div>
+  <div id="page-brand-map" class="default-version"></div>
   <div class="default_marker" data-zoom="4" data-location="Australia" data-lat="-25.783190" data-lng="133.583079"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="Sage West Perth" data-lat="-31.947888" data-lng="115.8364702" data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="James Street" data-lat="-33.3220933" data-lng="116.4979821" data-place-id="EihKYW1lcyBTdCwgTm9ydGhicmlkZ2UgV0EgNjAwMywgQXVzdHJhbGlh" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
