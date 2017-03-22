@@ -7560,6 +7560,9 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     margin-left: 0px;
     margin-right: 0px;
   }
+  .detail-banner-slider-section .detail-banner-slider-container.slider-with-price {
+    margin-top: 20px;
+  }
   .detail-banner-slider-section .detail-banner-slider .slick-prev,
   .detail-banner-slider-section .detail-banner-slider .slick-next {
     display: none!important;
@@ -8589,6 +8592,9 @@ div.default-promotion-cta-container {
     height: 204px;
   }
 }
+.boxlist-item-container .col-md-4:last-child .boxlist-item {
+  margin-bottom: 0px!important;
+}
 @media all and (max-width: 991px) {
   .boxlist-item {
     margin-bottom: 20px;
@@ -8902,6 +8908,7 @@ a.boxlist-item-content-image:hover {
 .manic-expand-container {
   position: relative;
   cursor: default;
+  margin-bottom: 2px;
 }
 .manic-expand-container:after {
   content: "";
@@ -8911,7 +8918,6 @@ a.boxlist-item-content-image:hover {
   left: 0px;
   width: 100%;
   height: 0px;
-  border-top: 1px solid #d7d7d7;
   -moz-opacity: 1;
   -khtml-opacity: 1;
   -webkit-opacity: 1;
@@ -9070,9 +9076,6 @@ a.boxlist-item-content-image:hover {
   .manic-expand-container:first-child {
     border-top: none;
   }
-  .manic-expand-container:last-child {
-    border-bottom: 1px solid #d7d7d7;
-  }
   .manic-expand-container .manic-expand-container-title {
     background: #f1f2f2;
   }
@@ -9087,7 +9090,6 @@ a.boxlist-item-content-image:hover {
     font-size: 13px;
   }
   .manic-expand-container .manic-expand-container-content {
-    border-top: 1px solid #d7d7d7;
     background: #ffffff;
   }
   .manic-expand-container .manic-expand-container-content:before {
@@ -12139,6 +12141,7 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   }
   #detail-page-content.no-background {
     background: none;
+    padding-top: 40px;
   }
   #detail-page-content .detail-page-content-description {
     margin-bottom: 0px;
@@ -12345,18 +12348,18 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 @media all and (max-width: 991px) {
   .detail-page-menu-info {
-    padding-top: 37px;
+    padding-top: 0px;
     padding-bottom: 0px;
   }
 }
 .detail-page-menu-info .detail-page-menu-info-item {
   margin-bottom: 37px;
 }
+.detail-page-menu-info .detail-page-menu-info-item.set-menu {
+  margin-bottom: 30px;
+}
 .detail-page-menu-info .detail-page-menu-info-item.last-version {
   margin-bottom: 0px;
-}
-.detail-page-menu-info .detail-page-menu-info-item .detail-page-menu-info-item-menu {
-  padding-bottom: 30px;
 }
 .detail-page-menu-info .detail-page-menu-info-item h4 {
   font-size: 11px;
@@ -12376,6 +12379,13 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 .detail-page-menu-info .detail-page-menu-info-item .cta-container {
   padding-top: 6px;
 }
+.detail-page-menu-info span.note {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
 #detail-page-more-section {
   padding-top: 47px;
   padding-bottom: 100px;
@@ -12393,7 +12403,7 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 @media all and (max-width: 991px) {
   .dining-detail-page-item .dining-detail-page-item-content-copy {
-    padding: 0 20px 20px 20px;
+    padding-bottom: 20px;
   }
 }
 .dining-detail-page-item .dining-detail-page-item-content-copy .underline-cta-container {
@@ -12410,6 +12420,42 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 #offer-index-page-list-section {
   padding-bottom: 80px;
+}
+@media all and (max-width: 991px) {
+  #offer-index-page-list-section {
+    padding-bottom: 0px;
+  }
+  #offer-index-page-item-container .offer-index-page-item .offer-index-page-item-box {
+    padding-bottom: 75px;
+  }
+  #offer-index-page-item-container .offer-index-page-item .offer-index-page-item-box .offer-index-page-item-content-copy {
+    padding-bottom: 20px;
+  }
+}
+.offer-detail-page-item .offer-detail-page-item-box {
+  padding-bottom: 95px;
+}
+@media all and (max-width: 991px) {
+  .offer-detail-page-item .offer-detail-page-item-box {
+    padding-bottom: 55px;
+  }
+}
+@media all and (max-width: 991px) {
+  .offer-detail-page-item .offer-detail-page-item-content-copy {
+    padding-bottom: 20px;
+  }
+}
+.offer-detail-page-item .offer-detail-page-item-content-copy .underline-cta-container {
+  padding-top: 3px;
+  margin-bottom: -11px;
+}
+.offer-detail-page-item .boxlist-item-content-price h6,
+.offer-detail-page-item .boxlist-item-content-price p,
+.offer-detail-page-item .boxlist-item-content-price span {
+  color: #747474;
+}
+.offer-detail-page-item .back .offer-detail-page-item-content-copy .underline-cta-container {
+  padding-top: 20px;
 }
 #error-404-page-content-section {
   padding-top: 140px;
