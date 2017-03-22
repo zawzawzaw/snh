@@ -112,7 +112,7 @@
         <div id="hotel-introduction-copy">          
           
           <div id="hotel-introduction-copy-title" class="visible-sm visible-xs">
-            <h1>Our products and services are designed to be simple to use and easy to enjoy. They’re intuitive, and if there’s anything we can do to make your stay more comfortable than it already is, we’ll be there to do just that.</h1>
+            <h1>Our products and services are designed to be simple to use and easy to enjoy. They’re intuitive, and if there’s anything we can do to make your stay more</h1>
           </div>
 
           <div id="hotel-introduction-copy-title-2">
@@ -121,7 +121,7 @@
           </div>
 
           <div id="hotel-introduction-copy-text">
-            <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at hotel.</p>          
+            <p>We know how important it is to take the hassle out of travel. You’re on the road, for business or leisure, and you want the simple things done right, and the complicated done well. At Sage Hotels, everything is where you expect it to be. Our responsive service means impeccable attention to your needs, so every stay bears the hallmark of calm familiarity, which will make you feel right at home.</p>
 
             <!-- <a href="#" class="arrow-cta">Read More</a> -->
           </div>
@@ -441,8 +441,8 @@
 /_/   /_/ |_|\____/_/  /_/\____/ /_/ /___/\____/_/ |_/
 
  -->
-<div class="scroll-target" data-value="promotion"></div>
-<article id="default-promotion-section">
+<div class="scroll-target" data-value="offers"></div>
+<article id="default-promotion-section" class="visible-md visible-lg">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
@@ -457,122 +457,138 @@
         <div class="col-md-4">
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">Accommodation</span>
-              </div>
-              <div class="box-content">
+
+              <div class="boxlist-item-tag">Accommodation</div>
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/home-promotion-01.png" data-image-mobile="images_cms/brand/brand-promotion-01.png" alt="">
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-01.png">
                 </div>
-                <div class="box-content-text">
-                  <h1>City Escape</h1>              
+              </div>
+
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5>City Escape</h5>
+                  <h4>Sage Hotel Adelaide</h4>
                   <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                   <ul>
                     <li><p>Newly Constructed Sage Rooms</p></li>
                     <li><p>Continental Buffet Breakfast for 2</p></li>
                     <li><p>Late Check out at 12 noon</p></li>
                   </ul>
-                  <span class="date">valid from now – 1st april 2017</span>
+                  <h6>valid from now – 1st april 2017</h6>
 
-                  <a href="#" class="more-details arrow-cta visible-xs visible-sm">More details</a>
-                  
-                  <div class="cta-and-price-container">
-                    <div class="cta-container">
-                      <a href="#" class="square-cta highlight-version book-now">Book now</a>
-                    </div>
-                  </div>
                 </div>
               </div>
+
+              <div class="boxlist-item-content-cta">
+                <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+              </div>
+
+
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-xs hidden-sm">
+        <div class="col-md-4">
           <div class="default-promotion-content-item boxlist-item">
             <div class="default-promotion-content-box boxlist-item-box">
-              <div class="box-title">
-                <span class="tag">Dining</span>
-              </div>
-              <div class="box-content">
+
+              <div class="boxlist-item-tag">Dining</div>
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/home-promotion-02.png" alt="">
-                </div>            
-                <h1>Valentine’s Day</h1>
-                <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
-                <ul>
-                  <li><p>Arrival rose for your significant other</p></li>
-                  <li><p>3-course dinner with choice of dish</p></li>
-                  <li><p>Complimentary bottle of red or white wine</p></li>
-                  <li><p>Live jazz singer duo</p></li>
-                </ul>              
-                
-                <div class="cta-and-price-container">
-                  <div class="cta-container">
-                    <a href="#" class="square-cta highlight-version contact-us">Contact us</a>
-                  </div>
-                  <div class="price-container">
-                    <span>per pax</span>
-                    <div class="price">
-                      <span class="currency">AUD</span><span class="price">$79.90</span>
-                    </div>
-                  </div>
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-02.png">
                 </div>
               </div>
+
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5>Valentine’s Day</h5>
+                  <h4>Country comfort newcastle airport & convention centre</h4>
+                  <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                  <ul>
+                    <li><p>Arrival rose for your significant other</p></li>
+                    <li><p>3-course dinner with choice of dish</p></li>
+                    <li><p>Complimentary bottle of red or white wine</p></li>
+                    <li><p>Live jazz singer duo</p></li>
+                  </ul>
+                  <div class="arrow-cta-container">
+                    <a href="offer_detail.php" class="arrow-cta">More details</a>
+                  </div>
+
+                </div>
+              </div>
+
+              
             </div>
           </div>
         </div>
-        <div class="col-md-4 hidden-xs hidden-sm">
+        <div class="col-md-4">
           <div class="default-promotion-content-item boxlist-item">
             <div class="flip-container">
               <div class="flipper">
                 <div class="front">
                   <div class="default-promotion-content-box boxlist-item-box">
-                    <div class="box-title">
-                      <span class="tag">Dining</span>
-                    </div>
-                    <div class="box-content">
-                      <div class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/home/home-promotion-03.png" alt="">
-                      </div>
-                      <h1>Ascot Horse Racing</h1>              
-                      <ul>
-                        <li><p>Complimentary upgrade to Executive Wing</p></li>
-                        <li><p>General admission ticket for 2 to Ascot Races</p></li>
-                        <li><p>Early Check-in</p></li>
-                        <li><p>Bottle of Sparkling Wine on arrival</p></li>
-                        <li><p>Complimentary shuttle to Ascot Race Track</p></li>
-                        <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
-                      </ul>
 
-                      <a href="#" class="underline-cta tnc">View terms & conditions</a>
-                      
-                      <div class="cta-and-price-container">
-                        <div class="cta-container">
-                          <a href="#" class="square-cta highlight-version book-now">Book now</a>
-                        </div>
+                    <div class="boxlist-item-tag">Dining</div>
+
+                    <div class="boxlist-item-content-image">
+                      <div class="manic-image-container">
+                        <img src=""
+                          data-image-desktop="images_cms/brand/brand-promotion-03.png">
                       </div>
                     </div>
+
+                    <div class="default-promotion-content-item-copy">
+                      <div class="default-copy">
+                        <h5>Ascot Horse Racing</h5>
+                        <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>             
+                        <ul>
+                          <li><p>Complimentary upgrade to Executive Wing</p></li>
+                          <li><p>General admission ticket for 2 to Ascot Races</p></li>
+                          <li><p>Early Check-in</p></li>
+                          <li><p>Bottle of Sparkling Wine on arrival</p></li>
+                          <li><p>Complimentary shuttle to Ascot Race Track</p></li>
+                          <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
+                        </ul>
+                        <div class="underline-cta-container">
+                          <a href="javascript:void(0);" class="underline-cta flipper-front-btn">View terms & conditions</a>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="boxlist-item-content-cta">
+                      <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                    </div>
+                    
                   </div>
                 </div>
                 <div class="back">
                   <div class="default-promotion-content-box boxlist-item-box">
-                    <div class="box-content">
-                      <h1>Ascot Horse Racing</h1>              
-                      <h6>terms & conditions</h6>
-                      <ul>
-                          <li>Guests must be 18 years old and above to enter the racecourse</li>
-                          <li>Tickets are non-transferrable</li>
-                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                          <li>Complimentary shuttle to Ascot Race Track</li>
-                          <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
-                          <li>Guests must be 18 years old and above to enter the racecourse</li>
-                          <li>Tickets are non-transferrable</li>
-                          <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                          <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                          <li>No pets allowed.</li>
-                      </ul>
-                      <a href="#" class="underline-cta back-to-offer">Back to offer</a>
+
+                    <div class="default-promotion-content-item-copy">
+                      <div class="default-copy">
+                        <h5>Ascot Horse Racing</h5>
+                        <h6>terms & conditions</h6>
+                        <ul>
+                            <li>Guests must be 18 years old and above to enter the racecourse</li>
+                            <li>Tickets are non-transferrable</li>
+                            <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
+                            <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
+                            <li>Complimentary shuttle to Ascot Race Track</li>
+                            <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
+                            <li>Guests must be 18 years old and above to enter the racecourse</li>
+                            <li>Tickets are non-transferrable</li>
+                        </ul>
+                      </div>
+                      <div class="underline-cta-container">
+                        <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>            
@@ -593,6 +609,121 @@
     </div>
   </div>
 </article>
+
+
+<article id="page-brand-promotion-mobile-section" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-brand-promotion-title-mobile">
+          <h4>simply irresistable</h4>
+          <h1>Offers</h1>
+        </div>
+        <div id="page-brand-promotion-slider-container-mobile">
+          <div id="page-brand-promotion-slider-mobile" class="boxlist-item-container mobile-height-version">
+
+
+            <div class="page-brand-promotion-slider-item-mobile">
+              <div class="default-promotion-content-item boxlist-item">
+                <div class="default-promotion-content-box boxlist-item-box">
+
+                  <div class="boxlist-item-tag">Accommodation</div>
+
+                  <div class="boxlist-item-content-image">
+                    <div class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </div>
+                  </div>
+
+                  <div class="default-promotion-content-item-copy">
+                    <div class="default-copy">
+                      <h5>City Escape</h5>
+                      <h4>Sage Hotel Adelaide</h4>
+                    </div>
+                  </div>
+
+                  <div class="boxlist-item-content-cta">
+                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-brand-promotion-slider-item-mobile">
+              <div class="default-promotion-content-item boxlist-item">
+                <div class="default-promotion-content-box boxlist-item-box">
+
+                  <div class="boxlist-item-tag">Dining</div>
+
+                  <div class="boxlist-item-content-image">
+                    <div class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </div>
+                  </div>
+
+                  <div class="default-promotion-content-item-copy">
+                    <div class="default-copy">
+                      <h5>Valentine’s Day</h5>
+                      <h4>Country comfort newcastle airport & convention centre</h4>
+                    </div>
+                  </div>
+
+                  <div class="boxlist-item-content-cta">
+                    <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-brand-promotion-slider-item-mobile">
+              <div class="default-promotion-content-item boxlist-item">
+                <div class="default-promotion-content-box boxlist-item-box">
+
+                  <div class="boxlist-item-tag">Dining</div>
+
+                  <div class="boxlist-item-content-image">
+                    <div class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </div>
+                  </div>
+
+                  <div class="default-promotion-content-item-copy">
+                    <div class="default-copy">
+                      <h5>Ascot Horse Racing</h5>
+                      <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>
+                    </div>
+                  </div>
+
+                  <div class="boxlist-item-content-cta">
+                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <div id="page-brand-promotion-cta-container-mobile">
+          <a href="javascript:void(0);" class="square-cta">View all Offers</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</article> <!-- page-brand-promotion-mobile-section -->
+
+
+
 
 <!-- 
     ____  _______    _____________       _______
@@ -733,20 +864,22 @@
         </div>
       </div>
       <div class="col-md-7 col-md-offset-1">
-        <div id="default-moment-instagram-feed-container">
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
-          
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-          <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+        <div id="default-moment-instagram-feed-container-container">
+          <div id="default-moment-instagram-feed-container">
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+            
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+          </div>
         </div>
       </div>
       <div class="col-md-4 visible-xs visible-sm">
@@ -795,110 +928,161 @@
 
   <div class="container-fluid has-breakpoint">
     <div class="row">
+
       <div id="hotel-attraction-content" class="boxlist-item-container">
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
+
               
-              <div class="box-content">
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-01.png" data-image-mobile="images_cms/hotel/hotel-attraction-01.png" alt="">
                 </div>
-                <div class="box-content-text">
-                  <h1>Subiaco Farmers Market</h1>              
+              </div>
+
+              <div class="hotel-attraction-content-copy">
+                <div class="default-copy">
+                  <h5>Subiaco Farmers Market</h5>
                   <p>Opens every Saturday from 8am – 12:30pm, you can find specialty local produce, seafood...</p>
-                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
+
+              <div class="hotel-attraction-cta-container">
+                <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+              </div>
+
             </div>
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              
-              <div class="box-content">
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-02.png" alt="">
                 </div>
-                <div class="box-content-text">
-                  <h1>Perth Zoo</h1>              
+              </div>
+
+              <div class="hotel-attraction-content-copy">
+                <div class="default-copy">
+                  <h5>Perth Zoo</h5>
                   <p>Animal aficionados will definitely relish a trip to Perth Zoo in nearby South Perth.</p>
-                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
+
+              <div class="hotel-attraction-cta-container">
+                <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+              </div>
+              
             </div>
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              
-              <div class="box-content">
+
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-03.png" alt="">
                 </div>
-                <div class="box-content-text">
-                  <h1>Leederville Farmers Market</h1>              
+              </div>
+
+              <div class="hotel-attraction-content-copy">
+                <div class="default-copy">
+                  <h5>Leederville Farmers Market</h5>
                   <p>Boasting a rich café, restaurant and pub culture, stop by Leederville, Highgate and Mount...</p>
-                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
+
+              <div class="hotel-attraction-cta-container">
+                <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+              </div>
+              
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              
-              <div class="box-content">
+
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-04.png" data-image-mobile="images_cms/hotel/hotel-attraction-04.png" alt="">
                 </div>
-                <div class="box-content-text">
-                  <h1>High St Dispensary</h1>              
+              </div>
+
+              <div class="hotel-attraction-content-copy">
+                <div class="default-copy">
+                  <h5>High St Dispensary</h5>
                   <p>Dispensing all kinds of yummy items, this is THE place to go to in Freo. For those who don’t...</p>
-                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
+
+              <div class="hotel-attraction-cta-container">
+                <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+              </div>
+              
+              
             </div>
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
-              
-              <div class="box-content">
+
+
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-05.png" alt="">
                 </div>
-                <div class="box-content-text">
-                  <h1>Linton & Kay</h1>              
+              </div>
+
+              <div class="hotel-attraction-content-copy">
+                <div class="default-copy">
+                  <h5>Linton & Kay</h5>
                   <p>Check out the highly recommended Linton & Kay art galleries at Mandoon Estate...</p>
-                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
+
+              <div class="hotel-attraction-cta-container">
+                <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+              </div>
+              
             </div>
           </div>
         </div>
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
+
               
-              <div class="box-content">
+              <div class="boxlist-item-content-image">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/hotel/hotel-attraction-06.png" alt="">
                 </div>
-                <div class="box-content-text">
-                  <h1>Yelo</h1>              
+              </div>
+
+              <div class="hotel-attraction-content-copy">
+                <div class="default-copy">
+                  <h5>Yelo</h5>
                   <p>If you’re exploring the North Beach and are on the go, pop in and grab a quick takeaway...</p>
-                  <a href="#" class="arrow-cta more-recommendations">Visit Website</a>
                 </div>
               </div>
+
+              <div class="hotel-attraction-cta-container">
+                <a href="javascript:void(0);" class="arrow-cta">Visit Website</a>
+              </div>
+              
             </div>
           </div>
         </div>
-      </div>
+      </div> <!-- hotel-attraction-content -->
+
+
     </div>
   </div>
 </article>
