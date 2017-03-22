@@ -1,7 +1,9 @@
-<div id="default-header-spacer"></div>
 
 <!-- this will select the header link with the following value -->
 <div id="desktop-header-selector" data-value="offer_index.php"></div>
+
+
+<div id="default-header-spacer"></div>
 
 
 <!--
@@ -23,7 +25,7 @@
         <div class="default-breadcrumb">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">sage hotels</a></li>
+            <li><a href="brand_alternative.php">sage hotels</a></li>
             <li><a href="hotel.php">sage west perth</a></li>
             <li><a href="offer_index.php">Offers</a></li>
             <li>Valentine's Day</li>
@@ -114,7 +116,16 @@
             </div>
 
           </div> <!-- detail-banner-slider -->
-        </div>
+
+          <div class="detail-banner-slider-price-container">
+            <h6>per pax</h6>
+            <div class="content-price">
+              <span class="currency">aud</span>
+              <span class="number">$79.90</span>
+            </div>
+          </div> <!-- detail-banner-slider-price-container -->
+
+        </div> <!-- detail-banner-slider-container -->
         
       </div>
     </div>
@@ -512,3 +523,7 @@
   </div>
 </article> <!-- detail-page-more-section -->
 
+
+
+
+<div id="default-footer-spacer"></div>

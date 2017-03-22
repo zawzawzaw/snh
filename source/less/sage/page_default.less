@@ -16,7 +16,11 @@
 
   }
   h5{
-
+    @media all and (max-width: 991px) {
+      font-size: 27px;
+      // line-height: 32px;
+      line-height: 30px;
+    }
   }
   h6{
     text-transform: uppercase;
@@ -98,6 +102,12 @@
   h5 + p{
     padding-top: 14px;
   }
+  h5 + ul{
+    padding-top: 14px;
+  }
+  h5 + ol{
+    padding-top: 14px;
+  }
 
   h4 + p {
     padding-top: 20px;
@@ -109,7 +119,7 @@
   h5 + h4 {
     padding-top: 12px;
     @media all and (max-width: 991px) {
-      padding-top: 0px;
+      padding-top: 3px;
     }
   }
 
@@ -1331,6 +1341,9 @@ body.is-tablet.is-tablet-portrait{
 #default-promotion-filters {
   text-align: center;
   padding-bottom: 70px;
+
+  margin-top: -8px;
+
   ul {
     li {
       display: inline-block;
@@ -1345,12 +1358,14 @@ body.is-tablet.is-tablet-portrait{
         position: relative;
         &:after {
           content: "";
-          border-bottom: 1px solid @violet;
+          border-bottom: 2px solid @violet;
           width: 0px;
           position: absolute;
-          bottom: 0px;
+          bottom: -3px;
           left: 0px;
         }
+
+        &.selected,
         &:hover {
           color: @violet;
           &:after {
@@ -1390,7 +1405,8 @@ body.is-tablet.is-tablet-portrait{
 .default-promotion-content-item {
   margin-bottom: 25px;
   .boxlist-item-box.default-promotion-content-box {
-    padding-bottom: 70px;
+    // padding-bottom: 70px;
+    padding-bottom: 90px;
     @media all and (max-width: 991px) {
       padding-bottom: 93px;
     }
@@ -1772,7 +1788,7 @@ div.default-promotion-cta-container{
           .poppins-light;
           font-size: 20px;
           margin-right: 1px;
-          
+
           position: relative;
           top: -4px;
         }
@@ -1821,7 +1837,7 @@ div.default-promotion-cta-container{
     text-align: center;
     padding-bottom: 50px;
   }
-  #map{
+  #page-brand-map{
       height: 570px;
       overflow: hidden;
       padding-bottom: 22.25%;

@@ -56,11 +56,11 @@
       </div>
 
       <div class="col-md-1 hidden-sm hidden-xs">
-        <div class="footer-seperator">
+        <div class="footer-seperator left-version">
         </div>
       </div>
 
-      <div class="col-md-4 hidden-sm hidden-xs">
+      <div class="col-md-5 hidden-sm hidden-xs">
 
         <div id="footer-menu-container">
           <div id="footer-menu-1" class="footer-menu">
@@ -95,23 +95,25 @@
 
       
       <div class="col-md-1 hidden-sm hidden-xs">
-        <div class="footer-seperator">
+        <div class="footer-seperator right-version">
         </div>
       </div>
-      <div class="col-md-3 hidden-xs hidden-sm">
+      <div class="col-md-2 hidden-xs hidden-sm">
 
-        <div id="footer-snh-group-logos">
-          <h1>Our Brands</h1>
-          <ul>
-            <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
-            
-          </ul>
+        <div id="footer-snh-group-logos-container">
+          <div id="footer-snh-group-logos" class="brand-version">
+            <h1>Our Brands</h1>
+            <ul>
+              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+              
+            </ul>
+          </div>
         </div>
 
       </div>

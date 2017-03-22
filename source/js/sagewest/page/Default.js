@@ -1157,14 +1157,24 @@ sagewest.page.Default.prototype.scroll_to_target = function(str_param, str_param
 
 sagewest.page.Default.prototype.promo_filter = function() {
 
-  $("#default-promotion-filters").find('a').on("click", function(e){
-    e.preventDefault();
-    var href = $(this).attr('href').substring(1);
+  //
+  $("#default-promotion-filters a").on("click", function(event){
 
-    $(".all").addClass("hide");
-    $("."+href).removeClass("hide");
+    event.preventDefault();
 
-  });
+    var target = $(event.currentTarget);
+
+    var href = target.attr('href').substring(1);
+
+    $(".default-promo-box.all").addClass("hide");
+    $(".default-promo-box."+href).removeClass("hide");
+
+    $("#default-promotion-filters a").removeClass('selected');
+    target.addClass('selected');
+
+    this.update_page_layout();
+
+  }.bind(this));
 
 };
 
@@ -1463,7 +1473,8 @@ sagewest.page.Default.prototype.create_map_events = function(marker) {
 
 sagewest.page.Default.prototype.map_initialize = function() {
     
-    if($('#map').length != 0) {
+
+    if($('#page-brand-map').length != 0) {
 
       var map;    
 
@@ -1639,7 +1650,7 @@ sagewest.page.Default.prototype.map_initialize = function() {
       var AusLatLng = setMarkerLatLng(lat, lng);
 
 
-      var map_element = $('#map');
+      var map_element = $('#page-brand-map');
       var is_default_version = false;
 
       if (map_element.hasClass('default-version') == true) {
@@ -1662,7 +1673,7 @@ sagewest.page.Default.prototype.map_initialize = function() {
           scrollwheel: false,
           zoomControl: true
         };
-        map = new google.maps.Map(document.getElementById('map'),
+        map = new google.maps.Map(document.getElementById('page-brand-map'),
           mapOptions);
       } else {
         var mapOptions = {
@@ -1676,7 +1687,7 @@ sagewest.page.Default.prototype.map_initialize = function() {
           scrollwheel: false,
           zoomControl: true
         };
-        map = new google.maps.Map(document.getElementById('map'),
+        map = new google.maps.Map(document.getElementById('page-brand-map'),
           mapOptions);
         var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });  
         map.mapTypes.set('Styled', styledMapType);

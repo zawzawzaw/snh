@@ -13,6 +13,11 @@
     height: 245px;
   }
 
+  .container-fluid{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
 
   background: @dark-grey;
   position: relative;
@@ -194,16 +199,23 @@
   #footer-snh-group-logos {
     // padding-top: 20px;
     padding-top: 36px - 19px;
+
+
+    &.brand-version{
+      padding-top: 35px;
+    }
+
     .display-inline-block;
     text-align: left;
 
-
+    /*
     @media only screen and (max-width: 1380px) {
       margin-right: -50px;
     }
     @media only screen and (max-width: 1180px) {
       margin-right: -90px;
     }
+    */
 
 
     h1 {
@@ -286,17 +298,40 @@
       position: absolute;
       top: 41px - 17px;
       left: 30%;
+      
 
       // height: 140px;
       height: 138px;
       width: 0;
       border-left: 1px solid #87878c;
 
-      @media all and (max-width: 1280px) {
-        display: none;
-      }
+      
+
+      // @media all and (max-width: 1280px) {
+      //   display: none;
+      // }
     }
 
+    @media all and (max-width: 1380px) {
+      &.right-version{
+        &:before{
+          left: -15px;
+        }
+      }
+    }
+    @media all and (max-width: 1280px) {
+      &.left-version{
+        &:before{
+          left: auto;
+          right: 5px;
+        }
+      }
+      &.right-version{
+        &:before{
+          left: -33px;
+        }
+      }
+    }
 
 
 

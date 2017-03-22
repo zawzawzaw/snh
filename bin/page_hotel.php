@@ -785,7 +785,7 @@
       </div>
     </div>
   </div>
-  <div id="map"></div>
+  <div id="page-brand-map"></div>
   <div class="default_marker" data-zoom="15" data-location="Australia" data-lat="-31.946899" data-lng="115.8524116"></div>
   <div class="markers no-hover" data-pin-icon="images/icons/map-pin.png" data-location="James Street" data-lat="-31.946899" data-lng="115.8524116" data-place-id="ChIJe1YLH6UZE2sRIOcyFmh9AQU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>  
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Sage West Perth" data-lat="-31.947888" data-lng="115.8362825" data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>

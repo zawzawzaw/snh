@@ -158,6 +158,6 @@
     <a href="#"><span>Our Brands</span></a>
   </div>
   <div id="group-link" class="menu-link">
-    <a href="#"><span>SilverNeedle™ <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
   </div>
 </div>
