@@ -21,7 +21,7 @@ sagewest.component.BoxList = function(options, element) {
     this.is_mobile_height = true;
   }
 
-  console.log('is_mobile_height: ' + this.is_mobile_height);
+  // console.log('is_mobile_height: ' + this.is_mobile_height);
 
   /**
    * @type {Array.<jQuery>}
@@ -69,7 +69,7 @@ sagewest.component.BoxList = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(sagewest.component.BoxList, goog.events.EventTarget);
 
@@ -164,8 +164,8 @@ sagewest.component.BoxList.prototype.update_layout = function() {
     }
   }
 
-  console.log(this.element)
-  console.log('highest_height: ' + highest_height);
+  // console.log(this.element)
+  // console.log('highest_height: ' + highest_height);
 
   if (this.is_mobile_height == true) {
     this.all_item_elements.css({

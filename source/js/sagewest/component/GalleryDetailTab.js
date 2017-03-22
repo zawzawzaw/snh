@@ -230,7 +230,14 @@ sagewest.component.GalleryDetailTab.prototype.set_data_array = function(arr_para
 
 };
 
-sagewest.component.GalleryDetailTab.prototype.public_method_03 = function() {};
+
+
+
+sagewest.component.GalleryDetailTab.prototype.update_layout = function() {
+  // update sliders ? 
+};
+
+
 sagewest.component.GalleryDetailTab.prototype.public_method_04 = function() {};
 
 
