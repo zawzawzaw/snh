@@ -57,6 +57,7 @@ sagewest.page.Hotel.prototype.init = function() {
   this.create_experience_slider();
   this.create_contact_map();
   // this.create_instagram();
+  this.create_sliders();
 
   this.map_initialize();    
   this.others();
@@ -79,11 +80,48 @@ sagewest.page.Hotel.prototype.init = function() {
 
 
 
+sagewest.page.Hotel.prototype.create_sliders = function(){
+
+  // also found in Brand.js
+  if ($('#page-brand-promotion-slider-mobile').length != 0) {
+
+    
+
+    $('#page-brand-promotion-slider-mobile').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#page-brand-promotion-slider-mobile').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.home_brand_offers_slider_mobile = $('#page-brand-promotion-slider-mobile').slick({
+      'speed': 350,
+      'dots': true,
+      'arrows': false,
+      // 'infinite': true,
+      'infinite': false,
+      'slidesToShow': 2,
+      'slidesToScroll': 2,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000,
+      'responsive': [
+        {
+          'breakpoint': 767,
+          'settings':{
+            'slidesToShow': 1,
+            'slidesToScroll': 1
+          }
+        }
+      ]
+    });
+  }
+
+};
+
 
 sagewest.page.Hotel.prototype.create_experience_slider = function(){
-
   
-
   this.experience_carousel = $('#home-experience-carousel').slick({
     'speed': 350,
     'dots': false,
