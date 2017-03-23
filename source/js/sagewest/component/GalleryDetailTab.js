@@ -41,6 +41,9 @@ sagewest.component.GalleryDetailTab = function(options, element) {
   this.main_slider_length = 0;
   this.thumbnail_slider = this.element.find('#gallery-thumbnail-slider');
 
+  this.desktop_close_btn = $('#gallery-cta-container a.arrow-cta');
+  this.mobile_close_btn = $('#gallery-close-btn-mobile');
+
 
 
   // event listeners
@@ -58,7 +61,7 @@ sagewest.component.GalleryDetailTab = function(options, element) {
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.UPDATE_IMAGE));
 
   }.bind(this));
-  
+
   
   this.thumbnail_slider.on('init', function(event, slick){
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.CREATE_IMAGE));
@@ -84,7 +87,7 @@ sagewest.component.GalleryDetailTab = function(options, element) {
   }.bind(this));
 
 
-  
+
   
   
 
@@ -187,7 +190,10 @@ sagewest.component.GalleryDetailTab.prototype.set_category_and_id = function(cat
     this.create_main_slider();
     this.create_thumbnail_slider();
 
-    $('#gallery-cta-container a.arrow-cta').attr('href', '#' + this.current_category);
+    // $('#gallery-cta-container a.arrow-cta').attr('href', '#' + this.current_category);
+
+    this.desktop_close_btn.attr('href', '#' + this.current_category);
+    this.mobile_close_btn.attr('href', '#' + this.current_category);
 
   }
 

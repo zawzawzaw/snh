@@ -20,7 +20,8 @@
 <!-- open-sans -->
 <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
 <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet">
+
 
 
 <!-- Social Tags -->
@@ -79,6 +80,9 @@
 <header id="mobile-header-expanded">
 
   <div id="mobile-header-menu-container">
+    <div id="destination-indicator" class="link-to-location">
+      <a href="brand_location.php"><p>Select another location:</p></a>
+    </div>
     <nav id="mobile-menu" class="has-mobile-sub-menu">
       <span>sage west perth</span>
       <ul>
@@ -212,11 +216,11 @@
               <li><a href="room_index.php">Rooms</a></li>
               <li><a href="offer_index.php">Offers</a></li>
               <li><a href="dining_index.php">Dining</a></li>
-              <li><a href="#">Facilities</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
               <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="#">Activities</a></li>
+              <li><a href="activities.php">Activities</a></li>
               <li><a href="#">Reviews</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="events.php">Events</a></li>
               <li><a href="contact.php">Contact</a></li>
             </ul>
           </nav>
@@ -302,7 +306,7 @@
           <input type="text" name="promo_code">
         </div>
         <div class="input-box">
-          <input type="submit" class="check-availability square-cta" value="check availability">
+          <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
         </div>
       </form>
   </div>
@@ -312,6 +316,24 @@
 </header> <!-- #desktop-header -->
 
 <div id="desktop-header-menu">          
+
+  <div id="destination-indicator">
+    <p>Select a destination:</p>
+  </div>
+  <div id="country-indicator">
+    <p>Australia</p>
+  </div>
+
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">Adelaide</a></li>
+      <li><a href="hotel.php">brisbane</a></li>
+      <li><a href="hotel.php">west perth</a></li>
+      <li><a href="hotel.php">wollongong</a></li>
+    </ul>    
+  </div>
+
+  <!-- 
   <div id="sage-links">
     <ul>
       <li><a href="hotel.php">sage adelaide</a></li>
@@ -320,6 +342,8 @@
       <li><a href="hotel.php">sage wollongong</a></li>
     </ul>
   </div>
+  -->
+  
   <div id="brand-link" class="menu-link">
     <a href="#"><span>Our Brands</span></a>
   </div>
@@ -365,7 +389,7 @@
         <div class="default-breadcrumb">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">Sage Hotels</a></li>
+            <li><a href="brand_alternative.php">Sage Hotels</a></li>
             <li><a href="hotel.php">Sage West Perth</a></li>
             <li>Contact</li>
           </ul>
@@ -384,7 +408,7 @@
         <div class="default-breadcrumb-mobile">
           <ul>
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">Sage Hotels</a></li>
+            <li><a href="brand_alternative.php">Sage Hotels</a></li>
             <li><a href="hotel.php">Sage West Perth</a></li>
             <li>Contact</li>
           </ul>
@@ -807,7 +831,30 @@
   </div>
 </footer>-->
 
+
+
+
 <footer id="desktop-footer">
+  <div id="hotel-footer-top-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-top-bar">
+
+            <ul>
+              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
+              <li><p>+61865009100</p></li>
+              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
+            </ul>
+
+          </div> <!-- #hotel-footer-top-bar -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-3 col-sm-12 col-xs-12">
@@ -824,50 +871,66 @@
         </div>
 
         <div id="footer-copyright-info">
-          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span>
+          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
           <a href="#">Privacy Policy</a>
         </div>
       </div>
-      <div class="col-md-2 col-md-offset-1 hidden-xs hidden-sm">
-        <div id="footer-menu-1" class="footer-menu">
-          <h1>Our Brands</h1>
-          <ul>
-            <li><a href="#">SilverNeedle® Collection</a></li>
-            <li><a href="#">Next Hotels</a></li>
-            <li><a href="#">Sage® Hotels</a></li>
-            <li><a href="#">Country Comfort</a></li>
-            <li><a href="#">Chifley Hotels</a></li>
-            <li><a href="#">Sundowner Inns</a></li>
-            <li><a href="#">Kafnu</a></li>
-          </ul>
-        </div>      
-      </div>
-      <div class="col-md-2 hidden-xs hidden-sm">
-        <div id="footer-menu-2" class="footer-menu">
-          <h1>Corporate</h1>
-          <ul>
-            <li><a href="#">SilverNeedle® Hospitality Group</a></li>
-            <li><a href="#">Press Room</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">SilverNeedle Select</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Events</a></li>
-          </ul>
+
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <div class="footer-seperator left-version">
         </div>
       </div>
-      <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm">
 
-        <div id="footer-snh-group-logos">
-          <h1>SilverNeedle® Hospitality Group</h1>
+      <div class="col-md-5 hidden-sm hidden-xs">
+
+        <div id="hotel-footer-menu-container">
+          <h1>Quick Links</h1>
           <ul>
-            <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
-            <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
+            <li><a href="javascript:void(0);">Rooms</a></li>
+            <li><a href="javascript:void(0);">Offers</a></li>
+            <li><a href="javascript:void(0);">Dining</a></li>
+            <li><a href="javascript:void(0);">Facilities</a></li>
+            <li><a href="javascript:void(0);">Gallery</a></li>
+            <li><a href="javascript:void(0);">Activities</a></li>
+            <li><a href="javascript:void(0);">Reviews</a></li>
+            <li><a href="javascript:void(0);">Events</a></li>
+            <li><a href="javascript:void(0);">Contact</a></li>
           </ul>
+        </div>
+
+        <div id="footer-social-media">
+          <ul>
+            <li><a href="#" class="fa fa-facebook-square"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-youtube-square"></a></li>
+            <li><a href="#" class="fa fa-twitter-square"></a></li>
+            <li><a href="#" class="fa fa-google-plus-square"></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <div class="footer-seperator right-version">
+        </div>
+      </div>
+      <div class="col-md-2 hidden-xs hidden-sm">
+
+        <div id="footer-snh-group-logos-container">
+          <div id="footer-snh-group-logos">
+            <h1>Our Brands</h1>
+            <ul>
+              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+              
+            </ul>
+          </div>
         </div>
 
       </div>

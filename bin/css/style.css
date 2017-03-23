@@ -4445,6 +4445,12 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   height: 28px;
   background: transparent url("../images/icons/detail-area-icon.svg") center center no-repeat;
 }
+.white-x-icon {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background: transparent url("../images/icons/white-x-icon.svg") center center no-repeat;
+}
 .aaaaaaa {
   display: block;
   width: 20px;
@@ -6929,6 +6935,45 @@ body.scrolled #mobile-header .mobile-header-bg {
 .manic-dropdown .goog-menu {
   left: 0;
   right: 0;
+}
+@media only screen and (max-width: 991px) {
+  .manic-dropdown select {
+    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 13px;
+    padding-right: 13px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #cccccc;
+    outline: 0;
+  }
+  .manic-dropdown:after {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    content: "\f107";
+  }
+  .manic-dropdown > .goog-menu-button {
+    display: none;
+  }
 }
 .default-form .form-group:after {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -12883,7 +12928,7 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 @media only screen and (max-width: 991px) {
   #gallery-page-title {
     text-align: left;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     padding-top: 27px;
   }
 }
@@ -12931,34 +12976,20 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 #gallery-page-tab-container nav ul li a:hover:before {
   width: 100%;
 }
-#gallery-page-category-dropdown-container .manic-dropdown > .goog-menu-button {
-  border: none;
-  border-bottom: 1px solid #cccccc;
-}
-#gallery-page-category-dropdown-container .goog-menu-button-caption {
+#gallery-page-category-dropdown-container .manic-dropdown select {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 14px;
   color: #7d0052;
-  padding-left: 15px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  text-transform: uppercase;
   padding-bottom: 9px;
 }
-#gallery-page-category-dropdown-container .goog-menu-button-disabled {
-  -moz-opacity: 0.3;
-  -khtml-opacity: 0.3;
-  -webkit-opacity: 0.3;
-  opacity: 0.3;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-  filter: alpha(opacity=30);
-}
-#gallery-page-category-dropdown-container .goog-menu-button-dropdown {
-  top: 4px;
-  right: 12px;
-}
-#gallery-page-category-dropdown-container .goog-menu-button-dropdown:after {
-  font-size: 18px;
+#gallery-page-category-dropdown-container .manic-dropdown:after {
+  top: 3px;
+  right: 10px;
 }
 #page-gallery-masonry-section {
   padding-top: 67px;
@@ -13105,6 +13136,7 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 #gallery-slider-section {
   padding-top: 64px;
   padding-bottom: 20px;
+  position: relative;
 }
 @media only screen and (max-width: 991px) {
   #gallery-slider-section {
@@ -13465,6 +13497,7 @@ body.is-tablet.is-tablet-landscape #gallery-slider-next-btn:after {
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
+  margin-bottom: 23px;
 }
 #gallery-slider-prev-btn-mobile,
 #gallery-slider-next-btn-mobile {
@@ -13528,13 +13561,41 @@ body.is-tablet.is-tablet-landscape #gallery-slider-next-btn:after {
 #gallery-slider-cta-section {
   padding-top: 54px;
 }
-@media only screen and (max-width: 991px) {
-  #gallery-slider-cta-section {
-    padding-top: 30px;
-  }
-}
 #gallery-cta-container {
   text-align: right;
+}
+#gallery-close-btn-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 54px;
+  height: 47px;
+}
+#gallery-close-btn-mobile:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+  filter: alpha(opacity=60);
+}
+#gallery-close-btn-mobile:after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 22px;
+  background: transparent url("../images/icons/white-x-icon.svg") center center no-repeat;
+  position: absolute;
+  top: 12px;
+  left: 13px;
 }
 body.facilities-page h1,
 body.activities-page h1 {
