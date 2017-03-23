@@ -334,9 +334,9 @@ sagewest.component.MobileHeader.prototype.on_menu_a_click = function(event) {
 
 
     } else {
-      event['preventDefault']();
-      this.menu_li_elements.removeClass('expand-version');
-      target_parent.addClass('expand-version');
+      // event['preventDefault']();
+      // this.menu_li_elements.removeClass('expand-version');
+      // target_parent.addClass('expand-version');
     }
   }
 
