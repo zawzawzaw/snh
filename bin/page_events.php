@@ -37,27 +37,6 @@
   </div>
 </article> <!-- default-breadcrumb-container -->
 
-<!-- <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="default-breadcrumb-mobile">
-          <ul>
-            <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
-            <li><a href="brand_alternative.php">sage hotels</a></li>
-            <li><a href="hotel.php">sage west perth</a></li>
-            <li>dining</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</article> --> <!-- default-breadcrumb-container -->
-
-
-
 <!--
    _____ ___ _____ _     _____
   |_   _|_ _|_   _| |   | ____|
@@ -87,7 +66,7 @@
 
 
 
-<article id="detail-list-section">
+<article id="detail-list-section" class="visible-md visible-lg">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
@@ -101,10 +80,7 @@
                 <div class="detail-list-item-image">
                   <a href="javascript:void(0);">
                     <div class="manic-image-container">
-                      <img src="" 
-                        data-image-desktop="images_cms/events/events-wedding.jpg"
-                        data-image-tablet="images_cms/events/events-wedding-mobile.jpg"
-                        data-image-mobile="images_cms/events/events-wedding-mobile.jpg">
+                      <img src="" data-image-desktop="images_cms/events/events-wedding.jpg">
                     </div>
                   </a>
                 </div>
@@ -144,10 +120,7 @@
                 <div class="detail-list-item-image">
                   <a href="javascript:void(0);">
                     <div class="manic-image-container">
-                      <img src="" 
-                        data-image-desktop="images_cms/events/events-meeting.jpg"
-                        data-image-tablet="images_cms/events/events-meeting-mobile.jpg"
-                        data-image-mobile="images_cms/events/events-meeting-mobile.jpg">
+                      <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
                     </div>
                   </a>
                 </div>
@@ -191,6 +164,44 @@
     </div>
   </div>
 </article> <!-- detail-list-section -->
+
+<!--
+   __  __  ___  ____ ___ _     _____
+  |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |\/| | | | |  _ \| || |   |  _|
+  | |  | | |_| | |_) | || |___| |___
+  |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
+<article id="detail-list-section-mobile" class="visible-sm visible-xs">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="detail-list-item-mobile-container">
+
+          <div class="scroll-target" data-value="wedding"></div>
+
+          <div id="detail-list-item-mobile">
+            <div class="detail-list-item-image-mobile">
+              <div class="manic-image-container">
+                <img src=""
+                  data-image-tablet="images_cms/events/events-wedding-mobile.jpg"
+                  data-image-mobile="images_cms/events/events-wedding-mobile.jpg">
+              </div>
+            </div>
+            <div class="detail-list-item-copy-mobile">
+
+            </div>
+          </div>
+
+        </div> <!-- detail-list-item-container-mobile -->
+
+      </div>
+    </div>
+  </div>
+</article> <!-- detail-list-section-mobile -->
 
 
 
