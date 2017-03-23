@@ -1338,7 +1338,8 @@ sagewest.page.Default.prototype.common_menu = function() {
             ]
         }
     });
-      
+    
+    /*  
     console.log('asdfasdfadf');
     console.log('asdfasdfadf');
     console.log('asdfasdfadf');
@@ -1346,6 +1347,7 @@ sagewest.page.Default.prototype.common_menu = function() {
     console.log('asdfasdfadf');
     console.log('asdfasdfadf');
     console.log($(".book-now"));
+    */
     
     $(".book-now").on("click", function(e){
       console.log('this is the book now class')
