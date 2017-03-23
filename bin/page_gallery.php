@@ -879,12 +879,20 @@
           </div>
         </div>
       </div>
+      
+      <div id="gallery-cta-container-mobile" class="visible-sm visible-xs">
+        <a href="javascript:void(0);" title="Prev Image" id="gallery-slider-prev-btn-mobile"></a>
+        <a href="javascript:void(0);" title="Next Image" id="gallery-slider-next-btn-mobile"></a>
+        <p id="gallery-slider-number-txt-mobile">4/12</p>
+      </div>
+
     </article> <!-- gallery-slider-section -->
 
     <article id="gallery-slider-cta-section">
       <div class="container-fluid has-breakpoint">
         <div class="row">
           <div class="col-md-12">
+
 
             <div id="gallery-cta-container">
               <a href="" class="arrow-cta">Back to index</a>
