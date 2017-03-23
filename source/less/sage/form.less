@@ -272,6 +272,7 @@
 
 .manic-dropdown{
   position: relative;
+
   select{
     display: none;
   }
@@ -294,6 +295,53 @@
     
   }
 }
+
+
+
+
+
+// TABLET PORTRAIT & SMALL DESKTOP
+@media only screen and (max-width: 991px) {
+  
+}
+@media only screen and (max-width: 991px) {
+  .manic-dropdown{
+    select{
+      .format-form-input-font-mobile;
+      
+      padding-top: 4px;   // different
+      padding-bottom: 4px;
+
+      padding-left: 13px;
+      padding-right: 13px;
+
+      display: block;
+      width: 100%;
+      background: transparent;
+      border: 1px solid @border-grey;
+      outline: 0;
+    }
+    &:after{
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+
+
+      .fa;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      
+      content: "\f107";
+    }
+    > .goog-menu-button{
+      display: none;
+    }
+  }
+}
+
 
 
 
