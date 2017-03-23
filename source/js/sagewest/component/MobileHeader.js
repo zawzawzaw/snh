@@ -129,7 +129,7 @@ sagewest.component.MobileHeader.prototype.create_menu = function() {
   }
 
 
-  arr = this.menu_element.find('> ul > li.has-subnav');
+  arr = this.menu_element.find('> ul > li.has-subnav .expand-btn');
   for (var i = 0, l=arr.length; i < l; i++) {
     item = $(arr[i]);    
     item.click(this.on_menu_expand_btn_click.bind(this));
@@ -317,7 +317,7 @@ sagewest.component.MobileHeader.prototype.on_menu_a_click = function(event) {
 
   event.stopPropagation();
 
-  console.log("herererer")
+  console.log("on_menu_a_click")
 
   var is_subnav = target_parent.hasClass('has-subnav');
   var is_expanded = target_parent.hasClass('expand-version');
@@ -352,19 +352,22 @@ sagewest.component.MobileHeader.prototype.on_menu_expand_btn_click = function(ev
   event['preventDefault']();
   event.stopPropagation();
 
-  console.log("here");
+  console.log("on_menu_expand_btn_click");
 
   var target = $(event.currentTarget);
   var target_parent = target.parent();
 
   // var is_subnav = target_parent.hasClass('has-subnav');
-  var is_expanded = target.hasClass('expand-version');
+  var is_expanded = target_parent.hasClass('expand-version');
+
+  console.log('is_expanded: '+ is_expanded)
 
   if (is_expanded) {
+    console.log(this.menu_li_elements);
     this.menu_li_elements.removeClass('expand-version');
   } else {
     this.menu_li_elements.removeClass('expand-version');
-    target.addClass('expand-version');
+    target_parent.addClass('expand-version');
   }
   
 };
