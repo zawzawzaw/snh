@@ -5828,7 +5828,14 @@ body.scrolled #mobile-header .mobile-header-bg {
 #mobile-header-menu-container #mobile-menu.has-mobile-sub-menu > ul > li.has-subnav {
   position: relative;
 }
-#mobile-header-menu-container #mobile-menu.has-mobile-sub-menu > ul > li.has-subnav:after {
+#mobile-header-menu-container #mobile-menu.has-mobile-sub-menu > ul > li .expand-btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 23px;
+  right: 23px;
+}
+#mobile-header-menu-container #mobile-menu.has-mobile-sub-menu > ul > li .expand-btn:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -5841,11 +5848,6 @@ body.scrolled #mobile-header .mobile-header-bg {
   text-align: center;
   color: #747474;
   display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 23px;
-  right: 23px;
   -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   -moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
@@ -5872,7 +5874,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   color: #929090;
   padding-left: 20px;
 }
-#mobile-header-menu-container #mobile-menu > ul > li.expand-version:after {
+#mobile-header-menu-container #mobile-menu > ul > li.expand-version .expand-btn:after {
   /* transform */
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);

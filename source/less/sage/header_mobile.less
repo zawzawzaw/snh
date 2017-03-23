@@ -368,7 +368,15 @@ html#brand-page, html#hotel-page {
           border-bottom: 1px solid rgba(146, 144, 144, 0.5);
 
           &.has-subnav {
-            position: relative;
+            position: relative;                       
+          }
+
+          .expand-btn {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 23px;
+            right: 23px;
             &:after {
               .fa;
               content: "\f107";
@@ -376,17 +384,11 @@ html#brand-page, html#hotel-page {
               line-height: 20px;
               text-align: center;
               color: @grey;
-              display: block;
-
-              position: absolute;
-              width: 20px;
-              height: 20px;
-              top: 23px;
-              right: 23px;
+              display: block;                
 
               .transition-in(0.5s);
             }
-          }
+          } 
 
           > ul {
             overflow: hidden;
@@ -482,11 +484,11 @@ html#brand-page, html#hotel-page {
 
   #mobile-menu > ul > li.expand-version {
     
-    // .expand-btn{
+    .expand-btn{
       &:after{
         .rotation(180deg);
       }
-    // }
+    }
     > ul{
       max-height: 400px;
     }
