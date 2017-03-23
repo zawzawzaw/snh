@@ -511,7 +511,8 @@
 <!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
 <div id="page-wrapper-content-min-height">
 
-  <div id="default-header-spacer"></div>
+  <div id="default-header-spacer" class="visible-md visible-lg"></div>
+  <div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
 
 
 
@@ -583,7 +584,7 @@
 
           <div id="gallery-page-category-dropdown-container" class="visible-sm visible-xs">
             
-            <div class="manic-dropdown">
+            <div class="manic-dropdown" id="gallery-page-category-manic-dropdown">
               <select id="gallery-page-category-dropdown">
                 <option value="">Select One</option>
                 <option value="all" selected>All</option>
@@ -762,8 +763,8 @@
               </div>
                -->
 
-              <a href="javascript:void(0);" title="Prev Image" id="gallery-slider-prev-btn"></a>
-              <a href="javascript:void(0);" title="Next Image" id="gallery-slider-next-btn"></a>
+              <a href="javascript:void(0);" title="Prev Image" id="gallery-slider-prev-btn" class="visible-md visible-lg"></a>
+              <a href="javascript:void(0);" title="Next Image" id="gallery-slider-next-btn" class="visible-md visible-lg"></a>
               
             </div> <!-- gallery-slider-container -->
 
@@ -777,7 +778,7 @@
 
             -->
 
-            <div id="gallery-thumbnail-slider-container">
+            <div id="gallery-thumbnail-slider-container" class="visible-md visible-lg">
               <div id="gallery-thumbnail-slider">
 
                 <div class="gallery-thumbnail-slider-item">
@@ -872,16 +873,35 @@
               </div> <!-- gallery-thumbnail-slider -->
             </div> <!-- gallery-thumbnail-slider-container -->
 
-            <div id="gallery-cta-container">
-              <a href="" class="arrow-cta">Back to index</a>
-            </div>
+            
 
 
           </div>
         </div>
       </div>
+      
+      <div id="gallery-cta-container-mobile" class="visible-sm visible-xs">
+        <a href="javascript:void(0);" title="Prev Image" id="gallery-slider-prev-btn-mobile"></a>
+        <a href="javascript:void(0);" title="Next Image" id="gallery-slider-next-btn-mobile"></a>
+        <p id="gallery-slider-number-txt-mobile">4/12</p>
+      </div>
+
     </article> <!-- gallery-slider-section -->
 
+    <article id="gallery-slider-cta-section">
+      <div class="container-fluid has-breakpoint">
+        <div class="row">
+          <div class="col-md-12">
+
+
+            <div id="gallery-cta-container">
+              <a href="" class="arrow-cta">Back to index</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </article>
 
     
   </div>  <!-- gallery-detail-tab -->

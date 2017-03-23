@@ -63,6 +63,20 @@ sagewest.page.Gallery = function(options, element) {
   this.gallery_detail_tab = null;
 
 
+  /**
+   * @type {manic.ui.Dropdown}
+   */
+  this.category_dropdown_mobile = null;
+
+
+
+
+  
+  
+
+  
+
+
 
 
   this.create_gallery();    // needed 
@@ -105,9 +119,23 @@ sagewest.page.Gallery.prototype.init = function() {
 
   $('body').addClass('preload-start');
 
-  
-  
 
+
+  if ($('#gallery-page-category-manic-dropdown').length != 0) {
+    this.category_dropdown_mobile = $('#gallery-page-category-manic-dropdown').data('manic.ui.Dropdown');
+
+    goog.events.listen(this.category_dropdown_mobile, manic.ui.Dropdown.ON_CHANGE, function(event){
+
+      console.log('this.category_dropdown_mobile.current_value: ' + this.category_dropdown_mobile.current_value)
+      window.location.hash = this.category_dropdown_mobile.current_value;
+
+    }.bind(this));
+
+  } // if
+
+
+
+  // update the isotope, after some delay
   this.gallery_index_tab.update_layout();
 
 
@@ -233,6 +261,10 @@ sagewest.page.Gallery.prototype.show_detail_tab = function(){
   this.gallery_index_tab.animate_out();
   this.gallery_detail_tab.animate_in();
 
+  this.body.removeClass('page-gallery-detail-tab-open');
+  this.body.removeClass('page-gallery-index-tab-open');
+
+  this.body.addClass('page-gallery-detail-tab-open');
   // this.scroll_to_fast(0);
 
 };
@@ -240,7 +272,11 @@ sagewest.page.Gallery.prototype.show_detail_tab = function(){
 sagewest.page.Gallery.prototype.show_index_tab = function(){
   this.gallery_index_tab.animate_in();
   this.gallery_detail_tab.animate_out();
+  
+  this.body.removeClass('page-gallery-detail-tab-open');
+  this.body.removeClass('page-gallery-index-tab-open');
 
+  this.body.addClass('page-gallery-index-tab-open');
   // this.scroll_to_fast(0);
 
 };

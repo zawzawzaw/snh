@@ -8,7 +8,11 @@ ob_start();
   // $is_debug = false;
   $is_debug = true;
 
-  $body_class = "hotel gallery-page permanent-scrolled";
+  $body_class = "hotel gallery-page permanent-scrolled page-gallery-index-tab-open";
+
+  // page-gallery-index-tab-open is important! don't remove it
+  // 
+
 ?>
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->

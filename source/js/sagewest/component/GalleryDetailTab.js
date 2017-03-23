@@ -38,6 +38,7 @@ sagewest.component.GalleryDetailTab = function(options, element) {
   this.current_id = 'none';
 
   this.main_slider = this.element.find('#gallery-slider');
+  this.main_slider_length = 0;
   this.thumbnail_slider = this.element.find('#gallery-thumbnail-slider');
 
 
@@ -49,8 +50,15 @@ sagewest.component.GalleryDetailTab = function(options, element) {
   }.bind(this));
 
   this.main_slider.on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+
+    var current_slide = (slick.currentSlide + 1); // starts from zero
+    var current_slide_txt = current_slide + ' / ' + this.main_slider_length;
+    $('#gallery-slider-number-txt-mobile').html(current_slide_txt);
+
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.UPDATE_IMAGE));
+
   }.bind(this));
+  
   
   this.thumbnail_slider.on('init', function(event, slick){
     this.dispatchEvent(new goog.events.Event(sagewest.component.GalleryDetailTab.CREATE_IMAGE));
@@ -63,17 +71,21 @@ sagewest.component.GalleryDetailTab = function(options, element) {
 
   
   
-  this.element.find('#gallery-slider-prev-btn').click(function(event){
+  this.element.find('#gallery-slider-prev-btn, #gallery-slider-prev-btn-mobile').click(function(event){
     event.preventDefault();
     this.main_slider.slick('slickPrev');
 
   }.bind(this));
 
-  this.element.find('#gallery-slider-next-btn').click(function(event){
+  this.element.find('#gallery-slider-next-btn, #gallery-slider-next-btn-mobile').click(function(event){
     event.preventDefault();
     this.main_slider.slick('slickNext');
 
   }.bind(this));
+
+
+  
+  
   
 
 
@@ -301,7 +313,6 @@ sagewest.component.GalleryDetailTab.prototype.create_main_slider = function() {
       '</div>',
     '</div>'
   ].join('');
-    
 
   var overlay_str = '';
 
@@ -334,6 +345,8 @@ sagewest.component.GalleryDetailTab.prototype.create_main_slider = function() {
     fragment.append(item);
   }
 
+
+  this.main_slider_length = this.current_category_data_array.length;
 
 
   // DESTROY CURRENT SLIDER
