@@ -49,6 +49,16 @@ sagewest.component.MobileHeader = function(options, element) {
   this.menu_a_elements = null;
   this.menu_a_array = [];
 
+
+  this.current_page = 'none';
+
+  if (goog.isDefAndNotNull($('#desktop-header-selector').attr('data-value')) == true) {
+    this.current_page = '' + $('#desktop-header-selector').attr('data-value');
+  }
+
+    
+
+
   //    ___ _   _ ___ _____
   //   |_ _| \ | |_ _|_   _|
   //    | ||  \| || |  | |
@@ -96,6 +106,15 @@ sagewest.component.MobileHeader.ON_OPEN = 'on_open';
  * @type {string}
  */
 sagewest.component.MobileHeader.ON_CLOSE = 'on_close';
+
+/**
+ * MobileHeader Event Constant
+ * @const
+ * @type {string}
+ */
+sagewest.component.MobileHeader.ON_HASH_CLICK = 'on_hash_click';
+
+
 
 
 //     ____ ____  _____    _  _____ _____ 
@@ -152,6 +171,31 @@ sagewest.component.MobileHeader.prototype.create_menu = function() {
       $("#hotel option[value='"+selectedVal+"']").html(selectedVal.substring(0, 24) + "...");
     }
   });
+
+
+
+  // create scrolling functionality for pages clicked within the page
+  
+  this.menu_element.find('.mobile-sub-menu a').click(function(event){
+
+    var target = $(event.currentTarget);
+    var target_href = '' + target.attr('href');
+
+    console.log('target_href: ' + target_href);
+    
+    if (target_href.indexOf(this.current_page) != -1) {
+
+      // event.preventDefault();
+
+      this.close_menu();
+      this.dispatchEvent(new goog.events.Event(sagewest.component.MobileHeader.ON_HASH_CLICK));
+    }
+    
+    
+    
+
+  }.bind(this))
+
 
 };
 
@@ -316,6 +360,16 @@ sagewest.component.MobileHeader.prototype.on_menu_a_click = function(event) {
   var target_parent = target.parent();
 
   event.stopPropagation();
+
+  var target_href = target.attr('href');
+
+  if(this.current_page == target_href) {
+    event.preventDefault();
+    this.close_menu();
+    return;
+  }
+
+
 
   console.log("on_menu_a_click")
 

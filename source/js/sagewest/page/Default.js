@@ -497,6 +497,8 @@ sagewest.page.Default.prototype.create_mobile_menu = function(){
     this.mobile_menu = new sagewest.component.MobileHeader({}, $('#mobile-header'));
 
     goog.events.listen(this.mobile_menu, sagewest.component.MobileHeader.ON_CLOSE, this.on_mobile_menu_close.bind(this));
+    goog.events.listen(this.mobile_menu, sagewest.component.MobileHeader.ON_HASH_CLICK, this.on_mobile_menu_hash_click.bind(this));
+
     
   }
 }
@@ -1010,6 +1012,18 @@ sagewest.page.Default.prototype.util_scroll_to = function(str_param){
  */
 sagewest.page.Default.prototype.on_mobile_menu_close = function(event) {
   this.update_page_layout();
+};
+
+
+/**
+ * event handler
+ * @param  {object} event
+ */
+sagewest.page.Default.prototype.on_mobile_menu_hash_click = function(event) {
+  console.log('on_mobile_menu_hash_click');
+  this.on_window_hash_change();
+  // this.on_scroll_target_
+
 };
 
 
