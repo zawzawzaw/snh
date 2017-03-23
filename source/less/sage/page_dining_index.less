@@ -90,6 +90,34 @@
           h5 {
             color: @violet;
           }
+          .read-more-cta-container{
+            display: block;
+            text-align: right;
+            margin-top: 25px;
+          }
+
+          a.read-more {
+            .open-sans-bold;
+            font-size: 11px;
+            line-height: 10px;
+            letter-spacing: 0.08em;
+            color: #707070;
+            text-transform: uppercase;
+
+            position: relative;
+            .display-inline-block;
+
+            &:after {
+              .fa;
+              content: "\f107"; // .fa-long-arrow-right
+              font-size: 13px;
+              line-height: 12px;
+              color: #707070;
+
+              .display-inline-block;
+              padding-left: 10px;
+            }
+          }
         }
       }
     } // .detail-list-item

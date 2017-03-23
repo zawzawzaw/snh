@@ -35,7 +35,7 @@
               <li><a href="gallery.php">Gallery</a></li>
               <li><a href="activities.php">Activities</a></li>
               <li><a href="#">Reviews</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="events.php">Events</a></li>
               <li><a href="contact.php">Contact</a></li>
             </ul>
           </nav>

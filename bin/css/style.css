@@ -3815,6 +3815,11 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
   font-size: normal;
   font-weight: 400;
 }
+.lato-bold {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 600;
+}
 html,
 body {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -4529,6 +4534,9 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
 }
 .arrow-cta:after {
   content: "\f061";
+}
+.download-cta {
+  display: block;
 }
 .download-cta:after {
   content: "\f019";
@@ -12176,6 +12184,42 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   .detail-list-item-container .detail-list-item .detail-list-item-copy .default-copy h5 {
     color: #7d0052;
   }
+  .detail-list-item-container .detail-list-item .detail-list-item-copy .default-copy .read-more-cta-container {
+    display: block;
+    text-align: right;
+    margin-top: 25px;
+  }
+  .detail-list-item-container .detail-list-item .detail-list-item-copy .default-copy a.read-more {
+    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.08em;
+    color: #707070;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1;
+  }
+  .detail-list-item-container .detail-list-item .detail-list-item-copy .default-copy a.read-more:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f107";
+    font-size: 13px;
+    line-height: 12px;
+    color: #707070;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    zoom: 1;
+    padding-left: 10px;
+  }
 }
 #detail-page-content-section,
 #detail-page-content-section-mobile {
@@ -13282,6 +13326,13 @@ body.facilities-page .index-page-title p {
   font-size: 20px;
   line-height: 26px;
 }
+@media all and (max-width: 991px) {
+  body.facilities-page .index-page-title p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #6a6a6b;
+  }
+}
 body.facilities-page h5 {
   font-family: 'Lato', Verdana, Geneva, sans-serif;
   font-size: normal;
@@ -13290,12 +13341,32 @@ body.facilities-page h5 {
   padding-bottom: 20px;
   line-height: 18px;
 }
+body.facilities-page .detail-list-item-container .detail-list-item {
+  box-shadow: none;
+  margin-bottom: 0px;
+}
+body.facilities-page .detail-list-item-container .detail-list-item-image {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+body.facilities-page .detail-list-item-container .detail-list-item-copy {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
 body.facilities-page .default-copy {
   width: 110%;
 }
 @media all and (max-width: 991px) {
   body.facilities-page .default-copy {
     width: 100%;
+  }
+  body.facilities-page .default-copy p {
+    padding-bottom: 40px;
+  }
+  body.facilities-page .default-copy h5 {
+    color: #747474 !important;
   }
 }
 body.facilities-page .default-copy h6 {
@@ -13309,6 +13380,13 @@ body.facilities-page .default-copy p + h6 {
 }
 body.facilities-page .default-copy .cta-container {
   padding-top: 45px;
+}
+body.facilities-page .default-copy .more-details {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+body.facilities-page .default-copy .cta-container {
+  text-align: center;
 }
 body.activities-page h1 {
   font-family: 'Lato', Verdana, Geneva, sans-serif;
@@ -13357,4 +13435,68 @@ body.activities-page .default-copy .two-columns {
 }
 body.activities-page .default-copy .cta-container {
   padding-top: 45px;
+}
+body.events-page h1 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 400;
+}
+body.events-page .index-page-title p {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+}
+body.events-page h5 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-size: normal;
+  font-weight: 400;
+  font-size: 26px;
+  padding-bottom: 20px;
+  line-height: 18px;
+}
+@media all and (max-width: 991px) {
+  body.events-page h5 {
+    line-height: 28px;
+  }
+}
+body.events-page .default-copy {
+  width: 115%;
+}
+@media all and (max-width: 991px) {
+  body.events-page .default-copy {
+    width: 100%;
+  }
+}
+body.events-page .default-copy h6 {
+  color: #b2a4a0;
+}
+body.events-page .default-copy ul + h6 {
+  padding-top: 40px;
+}
+body.events-page .default-copy p + h6 {
+  padding-top: 40px;
+}
+body.events-page .default-copy .cta-container {
+  padding-top: 45px;
+}
+body.events-page .default-copy .default-copy-special-description {
+  background-color: #f1f1f1;
+  padding: 20px 30px;
+  -webkit-box-shadow: -1px 1px 10px #d2cfcf 0 1px #000000;
+  box-shadow: -1px 1px 10px #d2cfcf 0 1px #000000;
+  /* box-shadow */
+  -webkit-box-shadow: -1px 1px 10px #d2cfcf;
+  -moz-box-shadow: -1px 1px 10px #d2cfcf;
+  box-shadow: -1px 1px 10px #d2cfcf;
+}
+body.events-page .default-copy .default-copy-special-description h4 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: none;
+  color: #7d7d7d;
 }
