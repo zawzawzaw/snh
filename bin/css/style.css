@@ -13652,7 +13652,7 @@ body.activities-page .default-copy .more-details ul {
 }
 body.facilities-page .default-copy .cta-container,
 body.activities-page .default-copy .cta-container {
-  padding-top: 45px;
+  padding-top: 30px;
 }
 @media all and (max-width: 991px) {
   body.facilities-page .detail-list-item-container .detail-list-item,
