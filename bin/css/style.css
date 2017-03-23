@@ -9064,6 +9064,9 @@ a.boxlist-item-content-image:hover {
   display: block;
   height: 23px;
 }
+.manic-expand-container .manic-expand-container-content.no-spacing:after {
+  height: 0px;
+}
 .manic-expand-container.expand-version {
   /*
     // line
@@ -13531,85 +13534,13 @@ body.is-tablet.is-tablet-landscape #gallery-slider-next-btn:after {
 #gallery-cta-container {
   text-align: right;
 }
-body.facilities-page h1 {
-  font-family: 'Lato', Verdana, Geneva, sans-serif;
-  font-size: normal;
-  font-weight: 400;
-}
-body.facilities-page .index-page-title p {
-  font-family: 'Lato', Verdana, Geneva, sans-serif;
-  font-size: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 26px;
-}
-@media all and (max-width: 991px) {
-  body.facilities-page .index-page-title p {
-    font-size: 15px;
-    line-height: 24px;
-    color: #6a6a6b;
-  }
-}
-body.facilities-page h5 {
-  font-family: 'Lato', Verdana, Geneva, sans-serif;
-  font-size: normal;
-  font-weight: 400;
-  font-size: 26px;
-  padding-bottom: 20px;
-  line-height: 18px;
-}
-body.facilities-page .detail-list-item-container .detail-list-item {
-  box-shadow: none;
-  margin-bottom: 0px;
-}
-body.facilities-page .detail-list-item-container .detail-list-item-image {
-  margin-left: -25px;
-  margin-right: -25px;
-}
-body.facilities-page .detail-list-item-container .detail-list-item-copy {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 30px;
-  padding-bottom: 0px;
-}
-body.facilities-page .default-copy {
-  width: 110%;
-}
-@media all and (max-width: 991px) {
-  body.facilities-page .default-copy {
-    width: 100%;
-  }
-  body.facilities-page .default-copy p {
-    padding-bottom: 40px;
-  }
-  body.facilities-page .default-copy h5 {
-    color: #747474 !important;
-  }
-}
-body.facilities-page .default-copy h6 {
-  color: #b2a4a0;
-}
-body.facilities-page .default-copy ul + h6 {
-  padding-top: 40px;
-}
-body.facilities-page .default-copy p + h6 {
-  padding-top: 40px;
-}
-body.facilities-page .default-copy .cta-container {
-  padding-top: 45px;
-}
-body.facilities-page .default-copy .more-details {
-  margin-left: -25px;
-  margin-right: -25px;
-}
-body.facilities-page .default-copy .cta-container {
-  text-align: center;
-}
+body.facilities-page h1,
 body.activities-page h1 {
   font-family: 'Lato', Verdana, Geneva, sans-serif;
   font-size: normal;
   font-weight: 400;
 }
+body.facilities-page .index-page-title p,
 body.activities-page .index-page-title p {
   font-family: 'Lato', Verdana, Geneva, sans-serif;
   font-size: normal;
@@ -13617,6 +13548,15 @@ body.activities-page .index-page-title p {
   font-size: 20px;
   line-height: 26px;
 }
+@media all and (max-width: 991px) {
+  body.facilities-page .index-page-title p,
+  body.activities-page .index-page-title p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #6a6a6b;
+  }
+}
+body.facilities-page h5,
 body.activities-page h5 {
   font-family: 'Lato', Verdana, Geneva, sans-serif;
   font-size: normal;
@@ -13626,32 +13566,78 @@ body.activities-page h5 {
   line-height: 18px;
 }
 @media all and (max-width: 991px) {
+  body.facilities-page h5,
   body.activities-page h5 {
     line-height: 28px;
   }
 }
+body.facilities-page .default-copy,
 body.activities-page .default-copy {
-  width: 115%;
+  width: 110%;
 }
-@media all and (max-width: 991px) {
-  body.activities-page .default-copy {
-    width: 100%;
-  }
-}
+body.facilities-page .default-copy h6,
 body.activities-page .default-copy h6 {
   color: #b2a4a0;
 }
-body.activities-page .default-copy ul + h6 {
-  padding-top: 40px;
+body.facilities-page .default-copy .more-details,
+body.activities-page .default-copy .more-details {
+  margin-top: 20px;
 }
-body.activities-page .default-copy p + h6 {
-  padding-top: 40px;
+body.facilities-page .default-copy .more-details ul,
+body.activities-page .default-copy .more-details ul {
+  margin-bottom: 30px;
 }
-body.activities-page .default-copy .two-columns {
-  padding-top: 20px;
-}
+body.facilities-page .default-copy .cta-container,
 body.activities-page .default-copy .cta-container {
   padding-top: 45px;
+}
+@media all and (max-width: 991px) {
+  body.facilities-page .detail-list-item-container .detail-list-item,
+  body.activities-page .detail-list-item-container .detail-list-item {
+    box-shadow: none;
+  }
+  body.facilities-page .detail-list-item-container .detail-list-item-image,
+  body.activities-page .detail-list-item-container .detail-list-item-image {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  body.facilities-page .detail-list-item-container .detail-list-item-copy,
+  body.activities-page .detail-list-item-container .detail-list-item-copy {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  body.facilities-page .default-copy,
+  body.activities-page .default-copy {
+    width: 100%;
+  }
+  body.facilities-page .default-copy h5,
+  body.activities-page .default-copy h5 {
+    color: #747474 !important;
+  }
+  body.facilities-page .default-copy .more-details,
+  body.activities-page .default-copy .more-details {
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: 40px;
+  }
+  body.facilities-page .default-copy .more-details ul,
+  body.activities-page .default-copy .more-details ul {
+    margin-bottom: 0px;
+  }
+  body.facilities-page .default-copy .cta-container,
+  body.activities-page .default-copy .cta-container {
+    text-align: center;
+  }
+  body.facilities-page .default-copy .two-columns .each-column,
+  body.activities-page .default-copy .two-columns .each-column {
+    padding-bottom: 10px;
+  }
+  body.facilities-page .default-copy .two-columns .each-column:last-child,
+  body.activities-page .default-copy .two-columns .each-column:last-child {
+    padding-bottom: 0px;
+  }
 }
 body.events-page h1 {
   font-family: 'Lato', Verdana, Geneva, sans-serif;

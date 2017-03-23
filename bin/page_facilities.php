@@ -193,7 +193,6 @@
                         <li>Signature Treament: Laotian Herbal Steam</li>
                         <li>Free Pick-up and Drop-off in Luang Prabang</li>
                       </ul>
-                      <div class="space20"></div>
                       <a href="javascript:void(0);" class="download-cta">Download spa menu</a>
                     </div>
 
