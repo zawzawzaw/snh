@@ -30,8 +30,8 @@ sagewest.component.HomeMapItem = function(options, element) {
   this.marker_html = this.element.data('html');
   this.marker_name = this.location.split(' ').join('_')+"Marker";   
   this.request_name = this.location.split(' ').join('_')+"Request";   
-  this.lat = this.element.data('lat');
-  this.lng = this.element.data('lng');  
+  this.lat = parseFloat( this.element.data('lat') );
+  this.lng = parseFloat( this.element.data('lng') );  
 
   //    ___ _   _ ___ _____
   //   |_ _| \ | |_ _|_   _|
