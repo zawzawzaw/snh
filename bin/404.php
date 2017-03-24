@@ -54,7 +54,8 @@ ob_start();
         <!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
         <div id="page-wrapper-content-min-height">
 
-          <div id="default-header-spacer"></div>
+          <div id="default-header-spacer" class="visible-md visible-lg"></div>
+          <div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
 
           <article id="error-404-page-content-section">
             <div class="container-fluid has-breakpoint">

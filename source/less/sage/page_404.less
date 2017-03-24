@@ -1,7 +1,16 @@
 #error-404-page-content-section{
   padding-top: 140px;
   padding-bottom: 50px;
+
+  @media only screen and (max-width: 991px) {
+    padding-top: 69px;
+    padding-bottom: 20px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding-top: 29px;
+  }
 }
+
 
 #error-404-page-content{
 
@@ -24,5 +33,27 @@
   .cta-container{
     padding-top: 64px;
   }
+
+
+  @media only screen and (max-width: 991px) {
+    text-align: left;
+
+    h1{
+
+    }
+    p{
+      .open-sans-light;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    h1 + p{
+      padding-top: 17px;
+    }
+    .cta-container{
+      padding-top: 44px;
+    }
+
+  }
+
 
 }

@@ -4,7 +4,7 @@ java -jar "compiler.jar" \
 --js=closure-library/**.js \
 --only_closure_dependencies \
 --compilation_level=WHITESPACE_ONLY \
---closure_entry_point=sagewest.page.Home \
+--closure_entry_point=sagewest.page.Gallery \
 --externs=closure-externs/jquery-1.9.js \
 --externs=closure-externs/html5.js \
 --externs=closure-externs/window.js \
@@ -14,6 +14,6 @@ java -jar "compiler.jar" \
 --externs=closure-externs/scrollmagic.js \
 --externs=closure-externs/new_fullpage.js \
 --externs=closure-externs/others.js \
---create_source_map=page-home.min.map \
+--create_source_map=page-gallery.min.map \
 --source_map_format=V3 \
---js_output_file=../../bin/js/page-home.min.js
+--js_output_file=../../bin/js/page-gallery-libraries.min.js

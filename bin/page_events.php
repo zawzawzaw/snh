@@ -187,7 +187,7 @@
 
     -->
 
-    <div class="scroll-target" data-value="wedding-mobile"></div>
+    <div class="scroll-target" data-value="wedding"></div>
     <div class="detail-list-item-mobile first-version">
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
@@ -286,7 +286,7 @@
 
     -->
 
-    <div class="scroll-target" data-value="meeting-mobile"></div>
+    <div class="scroll-target" data-value="meeting"></div>
     <div class="detail-list-item-mobile last-version">
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">

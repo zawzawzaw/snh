@@ -13,8 +13,11 @@ java -jar "compiler.jar" \
   --js=scrollmagic/plugins/debug.addIndicators.js \
   --js=scrollmagic/lib/iscroll-probe.js \
   --js=slick/slick.min.js \
+  --js=instafeed/instafeed.min.js \
   --js=momentjs/moment.min.js \
   --js=daterangepicker/daterangepicker.js \
-  --js=instafeed/instafeed.min.js \
+  --js=isotope/isotope.pkgd.js \
+  --js=isotope/packery-mode.pkgd.js \
+  --js=isotope/fit-columns.js \
   --compilation_level WHITESPACE_ONLY \
-  --js_output_file=../../bin/js/page-libraries.min.js
+  --js_output_file=../../bin/js/page-gallery-libraries.min.js

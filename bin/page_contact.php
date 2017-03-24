@@ -3,7 +3,9 @@
 
 
 
-<div id="default-header-spacer"></div>
+<div id="default-header-spacer" class="visible-md visible-lg"></div>
+<div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
+
 
 <!--
    ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
@@ -34,26 +36,6 @@
     </div>
   </div>
 </article> <!-- default-breadcrumb-container -->
-
-<article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="default-breadcrumb-mobile">
-          <ul>
-            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="brand_alternative.php">Sage Hotels</a></li>
-            <li><a href="hotel.php">Sage West Perth</a></li>
-            <li>Contact</li>
-          </ul>
-        </div> <!-- default-breadcrumb -->
-
-      </div>
-    </div>
-  </div>
-</article> <!-- default-breadcrumb-container -->
-
 
 <!--
    _____ ___ _____ _     _____
@@ -215,7 +197,7 @@
 
 -->
 
-<article id="contact-page-map-section">
+<article id="contact-page-map-section" class="visible-md visible-lg">
   <div class="container-fluid has-breakpoint">
     <div class="row">
 
@@ -279,7 +261,79 @@
 
 
 
-<div class="container-fluid has-breakpoint">
+
+<!--
+   __  __    _    ____    __  __  ___  ____ ___ _     _____
+  |  \/  |  / \  |  _ \  |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |\/| | / _ \ | |_) | | |\/| | | | |  _ \| || |   |  _|
+  | |  | |/ ___ \|  __/  | |  | | |_| | |_) | || |___| |___
+  |_|  |_/_/   \_\_|     |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
+<article id="contact-page-map-section-mobile" class="visible-sm visible-xs">
+  
+  <div id="contact-page-map-container-mobile">
+
+    <div id="contact-page-map-mobile" class="generic-map" data-lat="-31.947643" data-lng="115.838698"  data-zoom="15">
+      <div class="generic-map-map"></div>
+      <div class="generic-map-markers" 
+        data-pin-icon="images/icons/map-pin-grey.png" 
+        data-location="Sage West Perth" 
+        data-lat="-31.947643" 
+        data-lng="115.838698" 
+        data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" 
+        data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>">
+      </div>
+    </div>
+  </div>
+
+  <div id="contact-page-map-copy-container-mobile">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1 col-xs-0"></div>
+        <div class="col-sm-10 col-xs-12">
+
+          <div id="contact-page-map-title-mobile">
+            <h1>Contact Us</h1>
+          </div>
+
+          <div id="contact-page-map-copy-mobile">
+            <div class="default-copy">
+              <h3>Sage West Perth</h3>
+              <p>
+                1309 Hay Street, West Perth, <br>
+                WA 6005, Australia <br>
+                P: +61865009100 <br>
+                F: +61 8 6500 9101 <br>
+                E: <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a>
+              </p>
+              <p>
+                Reception Hours: 24 hours <br>
+                Check In Time: 14:00 <br>
+                Check Out Time: 10:00
+              </p>
+              <p>
+                Central Reservations <br>
+                1800 303 186 (Within Australia) <br>
+                0800 480 274 (Within New Zealand)
+              </p>
+
+            </div>
+          </div> <!-- contact-page-map-copy-mobile -->
+
+        </div>
+      </div>
+    </div>
+  </div> <!-- contact-page-map-copy-container-mobile -->
+</article>
+
+
+
+
+
+
+<div class="container-fluid has-breakpoint visible-md visible-lg">
   <div class="row">
     <div class="col-md-12">
       <hr>
@@ -296,7 +350,7 @@
 
 -->
 
-<article id="contact-page-copy-section">
+<article id="contact-page-copy-section" class="visible-md visible-lg">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-6">
@@ -373,6 +427,160 @@
     </div>
   </div>
 </article> <!-- contact-page-copy-section -->
+
+
+
+
+
+
+<!--
+    ____ ___  ______   __  __  __  ___  ____ ___ _     _____
+   / ___/ _ \|  _ \ \ / / |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |  | | | | |_) \ V /  | |\/| | | | |  _ \| || |   |  _|
+  | |__| |_| |  __/ | |   | |  | | |_| | |_) | || |___| |___
+   \____\___/|_|    |_|   |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
+
+<div id="contact-page-copy-section-mobile" class="visible-sm visible-xs">
+
+  <div id="contact-page-copy-expanding-container-mobile">
+
+    <!--
+        ___  _
+       / _ \/ |
+      | | | | |
+      | |_| | |
+       \___/|_|
+
+    -->
+
+    <div class="manic-expand-container" data-group="mobile-contact">
+      <div class="scroll-target" data-value="mobile-a"></div>
+      <div class="manic-expand-container-title">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <h4>By Metro & Bus</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="manic-expand-container-btn"></div>
+      <div class="manic-expand-container-content">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <div class="contact-page-copy-section">
+                <div class="default-copy">
+                  <h3>Shuttle Service</h3>
+                  <p>Take the Skybus service no. 978 from Terminal 2 of the airport. The journey takes about 2 hours and the bus stops right infront of our hotel.</p>
+                </div>
+              </div>
+
+              <div class="contact-page-copy-section">
+                <div class="default-copy">
+                  <h3>Metro</h3>
+                  <p>The nearest metro station is Hay Station.</p>
+                  <ol>
+                    <li>Take Exit 5 upon attival at Hay Station. On your left, you should see an area with bicycles and buses. Head straight through  and spot the building that has an orange sign saying ‘LIXIL’. The sign is on the corner of the building on the Level 3.</li>
+                    <li>Head down that street on the left hand side and after passing two roads you should pass a LAWSON’s convenience store. </li>
+                    <li>Cross the road, turn left and follow the street down, stay on the right hand side of this street. The first street on your right should be the street our hotel is on. </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="contact-page-copy-section">
+                <div class="default-copy">
+                  <h3>Public Bus</h3>
+                  <p>Take the Skybus service no. 978 from Terminal 2 of the airport. The journey takes about 2 hours and the bus stops right infront of our hotel.</p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- manic-expand-container -->
+
+    <!--
+        ___ ____
+       / _ \___ \
+      | | | |__) |
+      | |_| / __/
+       \___/_____|
+
+    -->
+
+    <div class="manic-expand-container" data-group="mobile-contact">
+      <div class="scroll-target" data-value="mobile-a"></div>
+      <div class="manic-expand-container-title">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <h4>By Car / Taxi</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="manic-expand-container-btn"></div>
+      <div class="manic-expand-container-content">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <div class="contact-page-copy-section">
+                <div class="default-copy">
+                  <h3>Via Central Expressway (CTE) from the City:</h3>
+                  <ul>
+                    <li>Take the CTE towards SLE</li>
+                    <li>Continue onto SLE towards Smith Street</li>
+                    <li>Take exit 8A at SLE onto Smith Street</li>
+                    <li>Turn left onto Hay Street</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="contact-page-copy-section">
+                <div class="default-copy">
+                  <h3>Via Pan Island Expressway (PIE) from the City:</h3>
+                  <ul>
+                    <li>Take the PIE towards BKE</li>
+                    <li>Continue onto BKE towards Fitzgerald Street</li>
+                    <li>Take exit 7 at BKE onto Roe Street</li>
+                    <li>Turn right onto Hay Street</li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- manic-expand-container -->
+
+
+
+  </div> <!-- #contact-page-copy-expanding-container-mobile -->
+
+
+</div> <!-- #contact-page-copy-section-mobile -->
 
 
 
