@@ -37,7 +37,7 @@ ob_start();
     <div id="page-wrapper">
       <div id="page-wrapper-content">
 
-        <?php include('brand_header.php'); ?>
+        <?php include('brand_header_alternative.php'); ?>
 
         <!--
            ____ _____  _    ____ _____
