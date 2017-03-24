@@ -416,7 +416,7 @@ sagewest.page.Default.prototype.add_lazy_load = function(image_container_param) 
     
     var lazy_scene = new ScrollMagic.Scene({
       triggerHook: 1,
-      triggerElement: image_container_param.element[0],
+      triggerElement: image_container_param.element[0]
     })
     .addIndicators({name: ("" + Math.random()) })
     .on('start', image_container_param.on_image_visible.bind(image_container_param))

@@ -17,4 +17,4 @@ java -jar "compiler.jar" \
   --js=momentjs/moment.min.js \
   --js=daterangepicker/daterangepicker.js \
   --compilation_level WHITESPACE_ONLY \
-  --js_output_file=../../bin/js/page-libraries.min.js
+  --js_output_file=../../bin/js/page-default-libraries.min.js

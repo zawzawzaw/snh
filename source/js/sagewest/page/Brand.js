@@ -120,7 +120,7 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
       'slidesToScroll': 1,
       'pauseOnHover': true,
       'autoplay': true,
-      'autoplaySpeed': 4000,
+      'autoplaySpeed': 4000
     });
 
     
@@ -162,7 +162,7 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
       'slidesToScroll': 1,
       'pauseOnHover': true,
       'autoplay': true,
-      'autoplaySpeed': 4000,
+      'autoplaySpeed': 4000
     });
   }
 

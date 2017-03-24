@@ -56,7 +56,7 @@
   <!-- Optimized Version -->
   <script type="text/javascript">
     var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
-    var PAGE_LIBRARY              = "js/page-libraries.min.js";
+    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
     var PAGE_JS                   = "js/page-brand.min.js";
     var PAGE_CSS                  = "css/style.css";
 
