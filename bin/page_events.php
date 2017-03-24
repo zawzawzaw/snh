@@ -1,4 +1,5 @@
-<div id="default-header-spacer"></div>
+<div id="default-header-spacer" class="visible-md visible-lg"></div>
+<div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
 
 
 
@@ -175,32 +176,269 @@
 -->
 
 <article id="detail-list-section-mobile" class="visible-sm visible-xs">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div class="col-md-12">
+  <div class="detail-list-item-mobile-container">
 
-        <div id="detail-list-item-mobile-container">
+    <!--
+        ___  _
+       / _ \/ |
+      | | | | |
+      | |_| | |
+       \___/|_|
 
-          <div class="scroll-target" data-value="wedding"></div>
+    -->
 
-          <div id="detail-list-item-mobile">
-            <div class="detail-list-item-image-mobile">
-              <div class="manic-image-container">
-                <img src=""
-                  data-image-tablet="images_cms/events/events-wedding-mobile.jpg"
-                  data-image-mobile="images_cms/events/events-wedding-mobile.jpg">
+    <div class="scroll-target" data-value="wedding-mobile"></div>
+    <div class="detail-list-item-mobile first-version">
+      <div class="detail-list-item-image-mobile">
+        <div class="manic-image-container">
+          <img src=""
+            data-image-tablet="images_cms/events/events-wedding-mobile.jpg"
+            data-image-mobile="images_cms/events/events-wedding-mobile.jpg">
+        </div>
+      </div>
+
+      
+      <div class="detail-list-item-copy-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <div class="detail-list-item-title-mobile">
+                Weddings & Celebrations
               </div>
-            </div>
-            <div class="detail-list-item-copy-mobile">
 
+              <div class="default-copy">
+                <p>A dream wedding, a birthday celebration, a social function – whatever your reason for gathering, Sage West Perth sets the stage for a truly memorable occasion.</p>
+
+                <!-- if very long copy, use this -->
+                <!-- <p class="minimize-read-more" data-length="85">A dream wedding, a birthday celebration, a social function – whatever your reason for gathering, Sage West Perth sets the stage for a truly memorable occasion.</p> -->
+
+
+              </div> <!-- default-copy -->
+              
             </div>
           </div>
+        </div>
+        
+      </div> <!-- detail-list-item-copy-mobile -->
 
-        </div> <!-- detail-list-item-container-mobile -->
+      <div class="detail-list-item-expanding-container">
 
+        <div class="manic-expand-container" data-group="mobile-events-landing">
+          <div class="scroll-target" data-value="mobile-events-01"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>more Details</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="default-copy">
+                    <ul>
+                      <li>Spacious conference room</li>
+                      <li>Catering for 10-70 guests (cocktail style)</li>
+                      <li>Individual room lighting and comfortable seating</li>
+                      <li>Split and reverse air-conditioning</li>
+                      <li>Soundproof walls and windows</li>
+                      <li>Adjoining outdoor deck & zen garden for pre or post function</li>
+                      <li>On-site car parking for meeting delegates</li>
+                      <li>Wi-Fi Internet access is available</li>
+                      <li>Ground floor and wheelchair access</li>
+                      <li>AV equipment available by request</li>
+                    </ul>
+                    <p>For further information please contact our events team.</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
+      </div> <!-- detail-list-item-expanding-container -->
+
+      <div class="detail-list-item-cta-container-mobile">
+        <a href="javascript:void(0);" class="square-cta">Contact us</a>
       </div>
-    </div>
-  </div>
+
+    </div> <!-- detail-list-item-mobile -->
+
+    <!--
+        ___ ____
+       / _ \___ \
+      | | | |__) |
+      | |_| / __/
+       \___/_____|
+
+    -->
+
+    <div class="scroll-target" data-value="meeting-mobile"></div>
+    <div class="detail-list-item-mobile last-version">
+      <div class="detail-list-item-image-mobile">
+        <div class="manic-image-container">
+          <img src=""
+            data-image-tablet="images_cms/events/events-meeting-mobile.jpg"
+            data-image-mobile="images_cms/events/events-meeting-mobile.jpg">
+        </div>
+      </div>
+
+      
+      <div class="detail-list-item-copy-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <div class="detail-list-item-title-mobile">
+                Meetings & Conferences
+              </div>
+
+              <div class="default-copy">
+                <p>Host your next conference, meeting or event at Chifley Alice Springs Resort in the heart of Australia’s Red Centre.</p>
+
+                <!-- if very long copy, use this -->
+                <!-- <p class="minimize-read-more" data-length="85">Host your next conference, meeting or event at Chifley Alice Springs Resort in the heart of Australia’s Red Centre.</p> -->
+
+              </div> <!-- default-copy -->
+              
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- detail-list-item-copy-mobile -->
+
+      <div class="detail-list-item-expanding-container">
+
+        <div class="manic-expand-container" data-group="mobile-events-landing">
+          <div class="scroll-target" data-value="mobile-events-01"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>more Details</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="default-copy">
+                    <ul>
+                      <li>2 purpose built function rooms:10 – 60 pax (theatre style)</li>
+                      <li>Function rooms feature natural light</li>
+                      <li>Choice of air-conditioning or fresh air</li>
+                      <li>Business support services</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
+        <div class="manic-expand-container" data-group="mobile-events-landing">
+          <div class="scroll-target" data-value="mobile-events-02"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>SPECIAL PROGRAMME</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="default-copy">
+                    <h4>Healthy Minds & Healthy Thinking</h4>
+                    <p>Resolve to plan smarter with Healthy Minds, Healthy Thinking™ by SilverNeedle® Hotels. With creative ideas to help energise your meetings, we offer a variety of unique venues and inspiring experiences for more productive events.</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
+        <div class="manic-expand-container" data-group="mobile-events-landing">
+          <div class="scroll-target" data-value="mobile-events-03"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>Download</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="default-copy">
+                    <a href="javascript:void(0);" class="download-cta">download conference kit</a>
+                    <a href="javascript:void(0);" class="download-cta">download CHRISTMAS PACKAGE 2017</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
+      </div> <!-- detail-list-item-expanding-container -->
+
+      <div class="detail-list-item-cta-container-mobile">
+        <a href="javascript:void(0);" class="square-cta">Contact us</a>
+      </div>
+
+    </div> <!-- detail-list-item-mobile -->
+
+
+  </div> <!-- detail-list-item-container-mobile -->
+
+
+      
 </article> <!-- detail-list-section-mobile -->
 
 

@@ -1,4 +1,5 @@
-<div id="default-header-spacer"></div>
+<div id="default-header-spacer" class="visible-md visible-lg"></div>
+<div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
 
 
 
@@ -87,7 +88,7 @@
 
 
 
-<article id="detail-list-section">
+<article id="detail-list-section" class="visible-md visible-lg">
   <div class="container-fluid has-breakpoint">
     <div class="row">
       <div class="col-md-12">
@@ -102,9 +103,7 @@
                   <a href="javascript:void(0);">
                     <div class="manic-image-container">
                       <img src="" 
-                        data-image-desktop="images_cms/facilities/facilities-lounge.jpg"
-                        data-image-tablet="images_cms/facilities/facilities-lounge-mobile.jpg"
-                        data-image-mobile="images_cms/facilities/facilities-lounge-mobile.jpg">
+                        data-image-desktop="images_cms/facilities/facilities-lounge.jpg">
                     </div>
                   </a>
                 </div>
@@ -114,7 +113,7 @@
                   <div class="default-copy">
                     <a href="javascript:void(0);" class="detail-list-item-title"><h5>Lounge</h5></a>
                     <p class="minimize-read-more" data-length="145">A lounge on steroids, our NEXT Lounge offers boardroom meeting space, a pantry, a library and a  fully equipped gym for you to pump those pecs before strolling over to the Pool bar to show them off. And did we mention free tea and coffee?</p>
-                    <div class="more-details hidden-xs hidden-sm">
+                    <div class="more-details">
                       <ul>
                         <li>Complimentary tea and coffee machine</li>
                         <li>Light snacks with chargeback to your room payment options</li>
@@ -142,9 +141,7 @@
                   <a href="javascript:void(0);">
                     <div class="manic-image-container">
                       <img src="" 
-                        data-image-desktop="images_cms/facilities/facilities-gym.jpg"
-                        data-image-tablet="images_cms/facilities/facilities-gym-mobile.jpg"
-                        data-image-mobile="images_cms/facilities/facilities-gym-mobile.jpg">
+                        data-image-desktop="images_cms/facilities/facilities-gym.jpg">
                     </div>
                   </a>
                 </div>
@@ -154,7 +151,7 @@
                   <div class="default-copy">
                     <a href="javascript:void(0);" class="detail-list-item-title"><h5>Gym</h5></a>
                     <p class="minimize-read-more" data-length="145">Check out doesn’t mean kick out. Check in and out times don’t always fit your travel plans. Refresh before your work day starts at no extra charge.</p>
-                    <div class="more-details hidden-xs hidden-sm">
+                    <div class="more-details">
                       <div class="operating-hours">
                         <h6>Operating hours</h6>
                         <p>24 hours</p>
@@ -174,9 +171,7 @@
                   <a href="javascript:void(0);">
                     <div class="manic-image-container">
                       <img src="" 
-                        data-image-desktop="images_cms/facilities/facilities-spa.jpg"
-                        data-image-tablet="images_cms/facilities/facilities-spa-mobile.jpg"
-                        data-image-mobile="images_cms/facilities/facilities-spa-mobile.jpg">
+                        data-image-desktop="images_cms/facilities/facilities-spa.jpg">
                     </div>
                   </a>
                 </div>
@@ -187,7 +182,7 @@
                     <a href="javascript:void(0);" class="detail-list-item-title"><h5>Spa</h5></a>
                     <p class="" data-length="145">The SPA at Kiridara is a boutique spa, tucked amidst dense teak forests. Serene and blissful, the aroma of essential oils and the breezy surrounds of the teak forest truly make the small and petite Kiridara Spa a unique place that demands undivided attention.</p>
 
-                    <div class="more-details hidden-xs hidden-sm">
+                    <div class="more-details">
                       <ul>
                         <li>3 Treatment rooms, 2 steam rooms</li> 
                         <li>Signature Treament: Laotian Herbal Steam</li>
@@ -275,6 +270,231 @@
   </div>
 </article> <!-- detail-list-section -->
 
+
+
+
+
+<!--
+   __  __  ___  ____ ___ _     _____
+  |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |\/| | | | |  _ \| || |   |  _|
+  | |  | | |_| | |_) | || |___| |___
+  |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
+<article id="detail-list-section-mobile" class="visible-sm visible-xs">
+  <div class="detail-list-item-mobile-container">
+
+    <!--
+        ___  _
+       / _ \/ |
+      | | | | |
+      | |_| | |
+       \___/|_|
+
+    -->
+
+    <div class="scroll-target" data-value="lounge-mobile"></div>
+    <div class="detail-list-item-mobile first-version">
+      <div class="detail-list-item-image-mobile">
+        <div class="manic-image-container">
+          <img src=""
+            data-image-tablet="images_cms/facilities/facilities-lounge-mobile.jpg"
+            data-image-mobile="images_cms/facilities/facilities-lounge-mobile.jpg">
+        </div>
+      </div>
+
+      
+      <div class="detail-list-item-copy-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <div class="detail-list-item-title-mobile">
+                Lounge
+              </div>
+
+              <div class="default-copy">
+                <p class="minimize-read-more" data-length="145">A lounge on steroids, our NEXT Lounge offers boardroom meeting space, a pantry, a library and a  fully equipped gym for you to pump those pecs before strolling over to the Pool bar to show them off. And did we mention free tea and coffee?</p>
+              </div> <!-- default-copy -->
+              
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- detail-list-item-copy-mobile -->
+
+    </div> <!-- detail-list-item-mobile -->
+
+    <!--
+        ___ ____
+       / _ \___ \
+      | | | |__) |
+      | |_| / __/
+       \___/_____|
+
+    -->
+
+    <div class="scroll-target" data-value="gym-mobile"></div>
+    <div class="detail-list-item-mobile">
+      <div class="detail-list-item-image-mobile">
+        <div class="manic-image-container">
+          <img src=""
+            data-image-tablet="images_cms/facilities/facilities-gym-mobile.jpg"
+            data-image-mobile="images_cms/facilities/facilities-gym-mobile.jpg">
+        </div>
+      </div>
+
+      
+      <div class="detail-list-item-copy-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <div class="detail-list-item-title-mobile">
+                Gym
+              </div>
+
+              <div class="default-copy">
+                <p>Check out doesn’t mean kick out. Check in and out times don’t always fit your travel plans. Refresh before your work day starts at no extra charge.</p>
+              </div> <!-- default-copy -->
+              
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- detail-list-item-copy-mobile -->
+
+    </div> <!-- detail-list-item-mobile -->
+
+
+    <!--
+        ___ _____
+       / _ \___ /
+      | | | ||_ \
+      | |_| |__) |
+       \___/____/
+
+    -->
+
+    <div class="scroll-target" data-value="spa-mobile"></div>
+    <div class="detail-list-item-mobile last-version">
+      <div class="detail-list-item-image-mobile">
+        <div class="manic-image-container">
+          <img src=""
+            data-image-tablet="images_cms/facilities/facilities-spa-mobile.jpg"
+            data-image-mobile="images_cms/facilities/facilities-spa-mobile.jpg">
+        </div>
+      </div>
+
+      
+      <div class="detail-list-item-copy-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+
+              <div class="detail-list-item-title-mobile">
+                Spa
+              </div>
+
+              <div class="default-copy">
+                <p class="minimize-read-more" data-length="145">The SPA at Kiridara is a boutique spa, tucked amidst dense teak forests. Serene and blissful, the aroma of essential oils and the breezy surrounds of the teak forest truly make the small and petite Kiridara Spa a unique place that demands undivided attention.</p>
+              </div> <!-- default-copy -->
+              
+            </div>
+          </div>
+        </div>
+        
+      </div> <!-- detail-list-item-copy-mobile -->
+
+      <div class="detail-list-item-expanding-container">
+
+        <div class="manic-expand-container" data-group="mobile-facilities-landing">
+          <div class="scroll-target" data-value="mobile-facilities-02"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>more Details</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="default-copy">
+                    <ul>
+                      <li>3 Treatment rooms, 2 steam rooms</li> 
+                      <li>Signature Treament: Laotian Herbal Steam</li>
+                      <li>Free Pick-up and Drop-off in Luang Prabang</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
+        <div class="manic-expand-container" data-group="mobile-facilities-landing">
+          <div class="scroll-target" data-value="mobile-facilities-03"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>Downloads</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="default-copy">
+                    <a href="javascript:void(0);" class="download-cta">Download spa menu</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
+      </div> <!-- detail-list-item-expanding-container -->
+
+      <div class="detail-list-item-cta-container-mobile">
+        <a href="javascript:void(0);" class="square-cta">Contact us</a>
+      </div>
+
+    </div> <!-- detail-list-item-mobile -->
+
+
+  </div> <!-- detail-list-item-container-mobile -->
+
+
+      
+</article> <!-- detail-list-section-mobile -->
 
 
 <div id="default-footer-spacer"></div>

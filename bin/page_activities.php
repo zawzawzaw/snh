@@ -1,4 +1,5 @@
-<div id="default-header-spacer"></div>
+<div id="default-header-spacer" class="visible-md visible-lg"></div>
+<div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
 
 
 

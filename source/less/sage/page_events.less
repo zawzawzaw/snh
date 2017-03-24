@@ -2,13 +2,24 @@ body.events-page {
   h1 {
     .lato-regular;
   }
+
   .index-page-title {
     p {
       .lato-light; 
       font-size: 20px;
-      line-height: 26px; 
+      line-height: 26px;
+
     }    
+    @media only screen and (max-width: 991px) {
+      p{
+        .open-sans-light;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
   }
+
+
   h5 {
     .lato-regular;
     font-size: 26px;
@@ -19,10 +30,8 @@ body.events-page {
     }
   }
   .default-copy {
-    width: 115%;
-    @media all and (max-width: 991px) {
-      width: 100%;
-    }
+    // width: 115%;      // please don't do this
+
     h6 {
       color: @brown;
     }
