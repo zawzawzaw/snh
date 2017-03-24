@@ -53,14 +53,17 @@
 <?php else: ?>
 
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet">  
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
   <!-- Optimized Version -->
   <script type="text/javascript">
     var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
     var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
     var PAGE_JS                   = "js/page-brand.min.js";
     var PAGE_CSS                  = "css/style.css";
-
-    head.load("css/style.css");
+    
+    head.load(PAGE_CSS);
     head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
 
       head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {

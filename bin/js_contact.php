@@ -57,8 +57,9 @@
     var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
     var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
     var PAGE_JS                   = "js/page-default.min.js";
-
-    head.load("css/style.css");
+    var PAGE_CSS                  = "css/style.css";
+    
+    head.load(PAGE_CSS);
     head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
 
       head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {

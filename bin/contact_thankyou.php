@@ -86,26 +86,7 @@ ob_start();
               </div>
             </div>
           </article> <!-- default-breadcrumb-container -->
-
-          <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-12">
-
-                  <div class="default-breadcrumb-mobile">
-                    <ul>
-                      <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-                      <li><a href="brand_alternative.php">Sage Hotels</a></li>
-                      <li><a href="hotel.php">Sage West Perth</a></li>
-                      <li>Contact</li>
-                    </ul>
-                  </div> <!-- default-breadcrumb -->
-
-                </div>
-              </div>
-            </div>
-          </article> <!-- default-breadcrumb-container -->
-
+          
           <article id="contact-thankyou-page-content-section">
             <div class="container-fluid has-breakpoint">
               <div class="row">

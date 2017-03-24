@@ -1,3 +1,7 @@
+<?php
+  global $is_debug;
+?>
+
 <title>Country Comfort</title>
 
 <meta charset="utf-8">
@@ -8,15 +12,8 @@
 
 <link rel="icon" href="images/icons/favicon-cc.png">
 
-
-<!-- Web Fonts -->
-
-<!-- open-sans -->
-<!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
-<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet">
-
-
+<!-- Critical Css -->
+<link rel="stylesheet" type="text/css" href="css/critical_style_country_comfort.css">
 
 <!-- Social Tags -->
 <!-- <meta content="Sage West Perth" property="og:title"/>
@@ -25,15 +22,17 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
-<!-- Critical Css -->
-<link rel="stylesheet" type="text/css" href="css/critical_style_country_comfort.css">
+<?php if($is_debug): ?>
+  <!-- move these to the at the bottom of the body -->
 
-<script type="text/javascript">
-  var head_conf = {
-    screens: [768, 992, 1200, 1380],
-    screensCss: { "gt": false, "gte": true, "lt": true, "lte": false, "eq": false },
-    browserCss: { "gt": true, "gte": false, "lt": false, "lte": false, "eq": false },
-    html5     : true
-  };
-</script>
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
+  <!-- Web Fonts -->
+
+  <!-- open-sans -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet">
+  
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+  
+<?php endif; ?>
