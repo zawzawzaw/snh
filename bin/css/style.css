@@ -13017,6 +13017,17 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 #contact-thankyou-page-content-section {
   padding-bottom: 50px;
 }
+@media only screen and (max-width: 991px) {
+  #contact-thankyou-page-content-section {
+    padding-top: 69px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #contact-thankyou-page-content-section {
+    padding-top: 29px;
+  }
+}
 #contact-thankyou-page-content {
   text-align: center;
 }
@@ -13036,6 +13047,24 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 }
 #contact-thankyou-page-content .cta-container {
   padding-top: 64px;
+}
+@media only screen and (max-width: 991px) {
+  #contact-thankyou-page-content {
+    text-align: left;
+  }
+  #contact-thankyou-page-content p {
+    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  #contact-thankyou-page-content h1 + p {
+    padding-top: 17px;
+  }
+  #contact-thankyou-page-content .cta-container {
+    padding-top: 44px;
+  }
 }
 #page-gallery-detail-tab {
   display: none;
