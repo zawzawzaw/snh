@@ -295,7 +295,7 @@
 
     -->
 
-    <div class="scroll-target" data-value="lounge-mobile"></div>
+    <div class="scroll-target" data-value="lounge"></div>
     <div class="detail-list-item-mobile first-version">
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
@@ -413,7 +413,7 @@
 
     -->
 
-    <div class="scroll-target" data-value="gym-mobile"></div>
+    <div class="scroll-target" data-value="gym"></div>
     <div class="detail-list-item-mobile">
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
@@ -492,7 +492,7 @@
 
     -->
 
-    <div class="scroll-target" data-value="spa-mobile"></div>
+    <div class="scroll-target" data-value="spa"></div>
     <div class="detail-list-item-mobile last-version">
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">

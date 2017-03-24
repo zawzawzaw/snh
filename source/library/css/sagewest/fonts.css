@@ -1,0 +1,20 @@
+.lato-regular {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.lato-light {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.lato-italic {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.lato-bold {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}

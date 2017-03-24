@@ -1,0 +1,560 @@
+
+
+
+
+//     ___  _____ _____ _____ ____  ____
+//    / _ \|  ___|  ___| ____|  _ \/ ___|
+//   | | | | |_  | |_  |  _| | |_) \___ \
+//   | |_| |  _| |  _| | |___|  _ < ___) |
+//    \___/|_|   |_|   |_____|_| \_\____/
+//
+
+
+#packages-offers-title{
+  text-align: center;
+
+  padding-top: 80px;
+  padding-bottom: 80px - 8px;
+
+  h1{
+    padding-bottom: 8px;
+  }
+}
+
+
+
+#packages-offer-item-container{
+  padding-bottom: 80px;
+}
+
+
+
+.packages-offer-item{
+
+  padding-bottom: 80px;
+  &:last-child{
+    padding-bottom: 0px;
+  }
+
+  .packages-offer-item-image{
+    height: 500px;                      // this will be replaced by the javascript!
+
+    .manic-image-container{
+      height: 100%;
+    }
+  }
+
+  h3.family-description{
+    font-size: 17px;
+    line-height: 26px;
+
+    margin-top: -15px;
+    padding-bottom: 32px;
+  }
+
+  h3.disclaimer{
+    font-size: 14px;
+    line-height: 18px;
+
+    span{
+      font-size: 14px;
+      position: relative;
+      top: -2px;
+    }
+
+    &.spaced-version{
+      padding-top: 6px;
+      padding-bottom: 15px;
+    }
+  }
+
+  h3.per-night{
+    font-size: 15px;
+    text-align: right;
+    color: #707070;
+
+    padding-top: 4px;
+  }
+
+  .packages-offer-item-copy{
+
+  } // .packages-offer-item-copy
+
+  .package-offer-title{
+    margin-bottom: 38px;
+
+    p{
+      color: @violet;
+      line-height: 16px;            // excessive line height
+      letter-spacing: 0.025em;
+
+      padding-bottom: 2px;
+    }
+    h2{
+      font-size: 30px;
+      line-height: 39px;
+
+    }
+    .price{
+      font-size: 24px;
+      line-height: 26px;
+      text-align: right;
+      letter-spacing: 0.05em;
+
+      display: block;
+      padding-top: 9px;
+      padding-right: 10px;
+      position: relative;
+
+      .price-per-night{
+        .lato-italic;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #707070;
+
+        /*
+        display: block;
+        padding-bottom: 5px;
+        margin-top: -21px;
+        */
+        display: block;
+        position: absolute;
+        right: 9px;
+        top: -12px;
+      }
+
+      .price-per-number{
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+      }
+    }
+    hr{
+      margin-top: 12px;
+    }
+  }
+
+  .package-offer-description{
+    padding-bottom: 36px;
+
+  }
+  .packages-offer-cta-container{
+
+  }
+
+  .package-offer-icon{
+    padding-left: 68px;
+    padding-bottom: 21px;
+
+    position: relative;
+
+    .span-icon{
+      position: absolute;
+      top: -9px;
+      left: -2px;
+
+    }
+    h6{
+      font-size: 13px;
+      line-height: 13px;
+      padding-bottom: 2px;
+    }
+    p{
+      color: @off-black;
+    }
+  }
+
+  .package-offer-detail{
+    padding-bottom: 10px;
+
+    &:last-child{
+      padding-bottom: 0px;
+    }
+
+    h6{
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.075em;
+      padding-bottom: 8px;
+
+      &.smaller-version{
+        font-size: 14px;
+        padding-bottom: 7px;
+      }
+    }
+    p{
+      font-size: 15px;
+      // line-height: 27px;
+      line-height: 23px;
+
+      margin-top: -7px - 2px;
+      padding-bottom: 9px;
+    }
+    ul{
+      li{
+        font-size: 15px;
+        line-height: 27px;
+        line-height: 21px;
+
+        padding-top: 3px;
+        padding-bottom: 3px;
+
+        position: relative;
+        padding-left: 20px;
+
+        &:before{
+          .fa;
+          font-size: 7px;
+          line-height: 27px;
+
+          content: "\f111";
+          display: block;
+
+          position: absolute;
+          top: 0px;
+          left: 1px;
+        }
+      }
+    }
+
+    h3.disclaimer{
+      margin-top: -7px;     // must be closer to the title
+    }
+
+  } // .package-offer-detail
+
+  
+
+} // .packages-offer-item
+
+
+
+@media only screen and (max-width: 991px) {
+
+  #packages-offers-title{
+
+    padding-top: 50px;
+    padding-bottom: 48px;
+  }
+
+  .packages-offer-item{
+    padding-bottom: 60px;
+
+    &:last-child{
+      padding-bottom: 0px;
+    }
+
+    .packages-offer-item-image{
+      height: 240px !important;  // fixed
+
+      .manic-image-container{
+        height: 240px !important; // fixed
+      }
+    }
+
+    h3.per-night{
+      font-size: 14px;
+      line-height: 18px;
+    }
+    h3.family-description{
+      font-size: 14px;
+      line-height: 18px;
+
+      margin-top: -29px;
+      padding-bottom: 40px;
+    }
+
+    .package-offer-title{
+      padding-top: 30px;
+
+      hr{
+        margin-top: 20px;
+      }
+    }
+    .package-offer-description{
+      // padding-bottom: 30px;
+      // padding-bottom: 22px;
+    }
+
+    // only in mobile
+    .package-offer-icon-row{
+      padding-bottom: 14px;
+      margin-top: -9px;
+    }
+
+    
+
+  }
+}
+
+@media (max-width: 767px){
+
+  #packages-offers-title{
+    padding-top: 50px;
+    padding-bottom: 48px;
+  }
+
+
+
+
+  .packages-offer-item{
+
+    h3.per-night{
+      text-align: center;
+      padding-top: 0px;
+      // padding-bottom: 30px;
+      // padding-bottom: 40px;
+      padding-bottom: 32px;
+    }
+
+    .package-offer-title{
+
+      h2{
+        font-size: 30px * 0.8;
+        line-height: 26px;
+      }
+      .price{
+        font-size: 24px * 0.8;
+        padding-top: 0px;
+        margin-top: -6px;
+
+        position: relative;
+        top: 28px;
+        .price-per-night{
+          font-size: 14px;
+          top: -17px;
+        }
+      }
+      hr{
+        // margin-top: 20px;
+      }
+
+      &.second-line{
+        h2{
+          padding-right: 70px;
+        }
+        .price{
+          top: 53px;
+        }
+      }
+
+    }
+    .package-offer-description{
+      padding-bottom: 22px;
+    }
+
+
+    .packages-offer-cta-container{
+      .square-cta{
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        height: 33px;
+        line-height: 33px;
+        &:after{
+          top: 6px;
+        }
+      }
+    }
+
+  }
+}
+
+
+body.is-tablet.is-tablet-portrait{
+  .packages-offer-item{
+    .packages-offer-item-image{
+      height: 550px !important;  // fixed
+      // height: 340px !important;  // fixed
+
+      .manic-image-container{
+        height: 550px !important; // fixed
+        // height: 340px !important; // fixed
+      }
+    }
+
+    .package-offer-icon-row{
+      margin-top: -6px;
+    }
+  }
+}
+
+
+//    _____ ____      ___     _______ _          _    ____ _____ _   _ _____ ____
+//   |_   _|  _ \    / \ \   / / ____| |        / \  / ___| ____| \ | |_   _/ ___|
+//     | | | |_) |  / _ \ \ / /|  _| | |       / _ \| |  _|  _| |  \| | | | \___ \
+//     | | |  _ <  / ___ \ V / | |___| |___   / ___ \ |_| | |___| |\  | | |  ___) |
+//     |_| |_| \_\/_/   \_\_/  |_____|_____| /_/   \_\____|_____|_| \_| |_| |____/
+//
+
+#packages-travel-agents-section{
+  // padding-top: 60px;
+  padding-top: 81px;
+  padding-bottom: 90px;
+  background: @off-white;
+}
+
+
+#packages-travel-agents-title{
+  text-align: center;
+  padding-bottom: 63px;
+
+  h4{
+    margin-bottom: 2px;
+  }
+  h1{
+    margin-bottom: 8px;
+  }
+}
+
+
+#packages-travel-agents-image{
+  padding-right: 40px;
+  // height: 315px;
+  height: 315px - 35px;
+
+  .manic-image-container{
+    // height: 315px;
+    height: 315px - 35px;
+  }
+}
+
+
+#packages-travel-agents-01-address{
+  padding-top: 20px + 20px;
+  padding-left: 20px;
+}
+
+/*
+#packages-travel-agents-03-address{
+  padding-top: 20px;
+}
+
+#packages-travel-agents-03-address,
+#packages-travel-agents-04-address{
+  padding-left: 20px;
+}
+*/
+#packages-travel-agents-02-address{
+  padding-top: 20px + 20px;
+  padding-left: 20px;
+}
+
+
+.packages-travel-agents-item{
+
+  padding-bottom: 28px;
+
+  h4{
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    // margin-bottom: 5px;
+  }
+
+  ul{
+    padding-top: 3px;
+    margin-bottom: -2px;
+
+    li{
+      position: relative;
+      padding-left: 21px;
+
+      
+
+      span{
+        .lato-bold;
+        font-size: 15px;
+        line-height: 26px;
+        color: @violet;
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+      }
+      p{
+        font-size: 15px;
+        line-height: 26px;
+
+        a{
+          color: @dark-grey;
+          &:focus,
+          &:hover{
+            color: @light-violet;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 991px) {
+  #packages-travel-agents-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #packages-travel-agents-title{
+    padding-bottom: 60px;
+  }
+  #packages-travel-agents-image{
+    padding-right: 0px;
+    height: 240px;
+    .manic-image-container{
+      height: 240px;
+    }
+  }
+
+  #packages-travel-agents-01-address{
+    padding-top: 60px;
+    padding-left: 0px;
+  }
+  /*
+  #packages-travel-agents-03-address{
+    padding-top: 0px;
+  }
+
+  #packages-travel-agents-03-address,
+  #packages-travel-agents-04-address{
+    padding-left: 0px;
+  }
+  #packages-travel-agents-04-address{
+    padding-bottom: 0px;
+  }
+  */
+
+  #packages-travel-agents-02-address{
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+}
+
+body.is-tablet.is-tablet-portrait{
+  #packages-travel-agents-image{
+    height: 570px;
+    .manic-image-container{
+      height: 570px;
+    }
+  }
+  #packages-travel-agents-01-address{
+    padding-top: 60px;
+  }
+  /*
+  #packages-travel-agents-03-address{
+    padding-top: 60px;
+  }
+  */
+  #packages-travel-agents-02-address{
+    padding-top: 60px;
+  }
+}
+
+

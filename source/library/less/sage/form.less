@@ -1,0 +1,410 @@
+//    _____ ___  _   _ _____ ____
+//   |  ___/ _ \| \ | |_   _/ ___|
+//   | |_ | | | |  \| | | | \___ \
+//   |  _|| |_| | |\  | | |  ___) |
+//   |_|   \___/|_| \_| |_| |____/
+//
+
+.format-form-label-font{
+  .playfair-regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: @grey-2;
+
+  white-space: nowrap;    // does not bend :P
+}
+
+.format-form-label-font-mobile{
+  .playfair-regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+
+.format-form-input-font{
+  .open-sans-light;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: @grey-2; 
+}
+.format-form-input-font-mobile{
+  .open-sans-light;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.format-form-error-font{
+  // .open-sans-light;
+  .open-sans-regular;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  color: @red; 
+}
+
+.format-form-error-font-mobile{
+  // .open-sans-light;
+  .open-sans-regular;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.025em;
+}
+
+
+
+//    _____ ___  ____  __  __
+//   |  ___/ _ \|  _ \|  \/  |
+//   | |_ | | | | |_) | |\/| |
+//   |  _|| |_| |  _ <| |  | |
+//   |_|   \___/|_| \_\_|  |_|
+//
+
+.default-form{
+  .add-clearfix();
+
+  .form-group{
+    position: relative;
+    margin-bottom: 45px;
+    width: 100%;
+
+    label{
+      .format-form-label-font;
+
+      display: block;
+      margin-bottom: 4px;
+
+      span.asterisk-span{
+        position: relative;
+        top: -1px;
+        left: 1px;
+      }
+
+      // TABLET PORTRAIT & SMALL DESKTOP
+      @media only screen and (max-width: 991px) {
+        .format-form-label-font-mobile;
+      }
+    } // label
+
+
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=password],
+    textarea,
+    select{
+
+      .format-form-input-font;
+
+
+      // http://stackoverflow.com/questions/14007655/remove-ie10s-clear-field-x-button-on-certain-inputs
+      &::-ms-clear {
+        display: none;
+      }
+
+      &::-webkit-input-placeholder{
+        .opacity(1);
+        color: #cccccc;
+      }
+      &:-moz-placeholder{
+        .opacity(1);
+        color: #cccccc;
+      }
+      &::-moz-placeholder{
+        .opacity(1);
+        color: #cccccc;
+      }
+      &:-ms-input-placeholder{
+        .opacity(1);
+        color: #cccccc;
+      }
+
+      // TABLET PORTRAIT & SMALL DESKTOP
+      @media only screen and (max-width: 991px) {
+        .format-form-input-font-mobile;
+      }
+
+
+    } // input
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=password],
+    textarea{
+      display: block;
+      width: 100%;
+
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 13px;
+      padding-right: 13px;
+
+      background: transparent;
+      border: 1px solid @border-grey;
+      outline: 0;
+    }
+
+
+    textarea{
+      height: 150px;
+      resize: none;
+    }
+
+  } // .form-group
+
+
+
+  .cta-container{
+    text-align: right;
+    padding-top: 5px;
+  }
+
+
+
+} // .default-form
+
+
+//    ____  ____   ___  ____  ____   _____        ___   _
+//   |  _ \|  _ \ / _ \|  _ \|  _ \ / _ \ \      / / \ | |
+//   | | | | |_) | | | | |_) | | | | | | \ \ /\ / /|  \| |
+//   | |_| |  _ <| |_| |  __/| |_| | |_| |\ V  V / | |\  |
+//   |____/|_| \_\\___/|_|   |____/ \___/  \_/\_/  |_| \_|
+//
+
+.goog-menu-button{
+  &:focus{
+    outline: none;
+  }
+}
+
+.goog-menu-button-caption{
+  .format-form-input-font;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 13px;
+  padding-right: 13px;
+
+  // TABLET PORTRAIT & SMALL DESKTOP
+  @media only screen and (max-width: 991px) {
+    .format-form-input-font-mobile;
+  }
+}
+
+.goog-menu-button-dropdown{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+
+  &:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .fa;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    content: "\f107";
+
+    .transition-in(0.3s);
+  }
+}
+.goog-menu-button-open{
+  .goog-menu-button-dropdown{
+    &:after{
+      .rotation(180deg);
+    }
+  }
+}
+
+.goog-menu {
+  cursor: default;
+  outline: none;
+  position: absolute;
+  z-index: 300000; /* Arbitrary, but some apps depend on it... */
+
+  border: 1px solid @border-grey;
+  border-top: none;
+}
+
+.goog-menuitem {
+  list-style: none;
+  margin: 0;
+  // background: @grey-2;
+  background: @white;
+  position: relative;
+
+
+  .goog-menuitem-content{
+    .format-form-input-font;
+
+    padding-left: 13px;
+    padding-right: 13px;
+
+    // TABLET PORTRAIT & SMALL DESKTOP
+    @media only screen and (max-width: 991px) {
+      .format-form-input-font-mobile;
+    }
+
+    &.goog-menuitem-highlight,
+    &:hover{
+      color: @white;
+      background: @grey-2;
+
+      .goog-menuitem-content{
+        color: @white;
+      }
+    }
+
+  }
+}
+
+
+.manic-dropdown{
+  position: relative;
+
+  select{
+    display: none;
+  }
+
+  width: 100%;
+  position: relative;
+  cursor: default;
+
+  > .goog-menu-button{
+    background: transparent;
+    border: 1px solid @border-grey;
+    outline: 0;
+  }
+  .goog-menu{
+    left: 0;
+    right: 0;
+  }
+
+  .goog-combobox{
+    
+  }
+}
+
+
+
+
+
+// TABLET PORTRAIT & SMALL DESKTOP
+@media only screen and (max-width: 991px) {
+  
+}
+@media only screen and (max-width: 991px) {
+  .manic-dropdown{
+    select{
+      .format-form-input-font-mobile;
+      
+      padding-top: 4px;   // different
+      padding-bottom: 4px;
+
+      padding-left: 13px;
+      padding-right: 13px;
+
+      display: block;
+      width: 100%;
+      background: transparent;
+      border: 1px solid @border-grey;
+      outline: 0;
+    }
+    &:after{
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+
+
+      .fa;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      
+      content: "\f107";
+    }
+    > .goog-menu-button{
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+//   __     ___    _     ___ ____    _  _____ ___ ___  _   _
+//   \ \   / / \  | |   |_ _|  _ \  / \|_   _|_ _/ _ \| \ | |
+//    \ \ / / _ \ | |    | || | | |/ _ \ | |  | | | | |  \| |
+//     \ V / ___ \| |___ | || |_| / ___ \| |  | | |_| | |\  |
+//      \_/_/   \_\_____|___|____/_/   \_\_| |___\___/|_| \_|
+//
+
+.default-form{
+  .form-group{
+    &:after{
+      .format-form-error-font;
+      text-align: left;
+      display: block;
+
+      position: absolute;
+      bottom: -20px;
+      width: 100%;
+
+      //overflow: hidden;
+      //max-height: 0px;
+      // .transition-in(0.3s);
+      .transition-in(0.2s);
+      .opacity(0);
+
+      content: attr(data-error);
+      padding-top: 0px;
+
+
+
+
+      // TABLET PORTRAIT & SMALL DESKTOP
+      @media only screen and (max-width: 991px) {
+        .format-form-error-font-mobile;
+      }
+    }
+  }
+  .form-group.has-error{
+
+    &:after{
+      
+      
+      padding-top: 3px;
+      // max-height: 20px;       // remove space from bottom
+      .opacity(1);
+      
+    }
+
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=password],
+    textarea,
+    select{
+      // color: @red !important;
+    }
+    .goog-menu-button-caption{      // for dropdown
+      // color: @red;
+    }
+
+  } // .form-group.has-error
+} // .default-form

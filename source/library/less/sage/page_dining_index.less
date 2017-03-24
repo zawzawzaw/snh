@@ -1,0 +1,239 @@
+
+#detail-list-section{
+  padding-bottom: 100px;
+  @media all and (max-width: 991px) {
+    padding-bottom: 30px;
+  }
+}
+
+.detail-list-item-container{
+  .detail-list-item{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid @border-grey;
+
+    &.first-version{
+
+    }
+    &.last-version{
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      border-bottom: none;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+//    ___ _____ _____ __  __
+//   |_ _|_   _| ____|  \/  |
+//    | |  | | |  _| | |\/| |
+//    | |  | | | |___| |  | |
+//   |___| |_| |_____|_|  |_|
+//
+
+.detail-list-item{
+  .detail-list-item-image{
+    .manic-image-container{
+      height: 410px;
+    }
+  }
+  .detail-list-item-copy{
+    padding-left: 38px;
+
+    .detail-list-item-title{
+      color: @grey;
+      &:hover{
+        color: @violet;
+      }
+    }
+    /*
+    a{
+      color: @grey;
+      &:hover{
+        color: @violet;
+      }
+    }
+    */
+    @media all and (max-width: 480px) {
+      padding-top: 20px;
+    }
+    .default-copy{
+    
+    }
+  }
+} // .detail-list-item
+
+
+@media only screen and (max-width: 991px) {
+  .detail-list-item-container{
+    .detail-list-item{
+      .box-shadow (1px, 1px, 8px, #e5e5e5);
+      border-bottom: 0px;  
+      padding-bottom: 0px;  
+
+      .detail-list-item-image{
+        .manic-image-container{
+          height: 250px;
+        }
+      }
+      .detail-list-item-copy{
+        // padding-left: 0px;    
+        padding: 20px 20px 30px 20px;  
+
+        .default-copy{
+          h5 {
+            color: @violet;
+          }
+          .read-more-cta-container{
+            display: block;
+            text-align: right;
+            margin-top: 25px;
+          }
+
+          a.read-more {
+            .open-sans-bold;
+            font-size: 11px;
+            line-height: 10px;
+            letter-spacing: 0.08em;
+            color: #707070;
+            text-transform: uppercase;
+
+            position: relative;
+            .display-inline-block;
+
+            &:after {
+              .fa;
+              content: "\f107"; // .fa-long-arrow-right
+              font-size: 13px;
+              line-height: 12px;
+              color: #707070;
+
+              .display-inline-block;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    } // .detail-list-item
+  }
+}
+
+
+
+
+//    __  __  ___  ____ ___ _     _____
+//   |  \/  |/ _ \| __ )_ _| |   | ____|
+//   | |\/| | | | |  _ \| || |   |  _|
+//   | |  | | |_| | |_) | || |___| |___
+//   |_|  |_|\___/|____/___|_____|_____|
+//
+
+#detail-list-section-mobile{
+  padding-bottom: 30px;
+}
+
+
+
+.detail-list-item-mobile-container{
+  .detail-list-item-mobile{
+    margin-bottom: 50px;
+
+    &.first-version{
+
+    }
+    &.last-version{
+      margin-bottom: 0px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.detail-list-item-mobile{
+  .detail-list-item-image-mobile{
+    // margin-bottom: 20px;
+
+    .manic-image-container{
+      // height: 460px;  // tablet portrait height
+      height: 400px;  // tablet portrait height
+
+      @media only screen and (max-width: 767px) {
+        height: 195px;  // mobile height
+      }
+    }
+  }
+
+  .detail-list-item-title-mobile{
+    margin-bottom: 19px;
+
+    .lato-regular;
+    font-size: 22px;
+    line-height: 26px;
+
+  }
+  .detail-list-item-copy-mobile{
+    padding-top: 24px;
+    
+
+    .default-copy{
+    }
+
+    // these are used in 
+    .read-more-cta-container{
+      display: block;
+      text-align: right;
+      margin-top: 25px;
+    }
+
+    a.read-more {
+      .open-sans-bold;
+      font-size: 11px;
+      line-height: 10px;
+      letter-spacing: 0.08em;
+      color: #707070;
+      text-transform: uppercase;
+
+      position: relative;
+      .display-inline-block;
+
+      &:after {
+        .fa;
+        content: "\f107"; // .fa-long-arrow-right
+        font-size: 13px;
+        line-height: 12px;
+        color: #707070;
+
+        .display-inline-block;
+        padding-left: 10px;
+      }
+    }
+
+  } // .detail-list-item-copy-mobile
+
+  .detail-list-item-expanding-container{
+    padding-top: 44px;
+  }
+
+  .detail-list-item-cta-container-mobile{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+
+
+
+
+}
