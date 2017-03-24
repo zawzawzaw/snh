@@ -51,10 +51,11 @@
 
   <!-- Optimized Version -->
   <script type="text/javascript">
-    var PAGE_LIBRARY        = "js/page-libraries.min.js";
-    var PAGE_JS             = "js/page-default.min.js";
+    var PAGE_LIBRARY              = "js/page-libraries.min.js";
+    var PAGE_JS                   = "js/page-default.min.js";
+    var PAGE_CSS                  = "css/style.css";
 
-    head.load("css/style.css");
+    head.load(PAGE_CSS);
     head.load(PAGE_LIBRARY, function() {
       head.load(PAGE_JS, function() {
           

@@ -32,10 +32,11 @@
   <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
   <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
   <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
-  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp&libraries=places"></script>
-  <script type="text/javascript" src="../source/library/infobox/infobox.js"></script>  
   <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
   <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
+  
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp&libraries=places"></script>
+  <script type="text/javascript" src="../source/library/infobox/infobox.js"></script>  
 
   <!-- Google Closure -->
   <script src="../source/library/closure-library/closure/goog/base.js"></script>
@@ -53,9 +54,9 @@
 
   <!-- Optimized Version -->
   <script type="text/javascript">
-    var PAGE_GOOGLE_LIBRARY        = "js/page-google.min.js";
-    var PAGE_LIBRARY        = "js/page-libraries.min.js";
-    var PAGE_JS             = "js/page-default.min.js";
+    var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
+    var PAGE_LIBRARY              = "js/page-libraries.min.js";
+    var PAGE_JS                   = "js/page-default.min.js";
 
     head.load("css/style.css");
     head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {

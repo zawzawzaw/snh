@@ -756,7 +756,7 @@
       <div class="col-md-4 hidden-sm hidden-xs">
         <div id="default-moment-content">
           <h4>Capture the best moments</h4>
-          <h1>#SageHotelWestPerth</h1>
+          <h1>#SageHotel</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <ul id="social-buttons">
             <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
