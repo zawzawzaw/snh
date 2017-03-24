@@ -113,7 +113,7 @@
                     <a href="javascript:void(0);" class="detail-list-item-title"><h5>Rooftop Yoga & Dance Party</h5></a>
                     <p class="" data-length="85">As daylight fades across the city, we gather on a rooftop oasis; summer’s energy at its peak, city lights glowing, blissful beats pulsing, community spirit flowing.</p>
                     
-                    <div class="more-details hidden-xs hidden-sm">
+                    <div class="more-details">
                       <div class="row event-information two-columns">
                         <div class="each-column col-md-6">
                           <h6>TIME & PLACE</h6>
@@ -126,47 +126,6 @@
                           <p>$10</p>
                         </div>
                       </div>                      
-                    </div>
-
-                    <div class="more-details visible-xs visible-sm">
-                      <div class="manic-expand-container" data-group="mobile-activities-page-rooftop">
-                        <div class="scroll-target" data-value="rooftop-title-01"></div>
-                        <div class="manic-expand-container-title">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <h4>EVENT INFORMATION</h4>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="manic-expand-container-btn"></div>
-                        <div class="manic-expand-container-content no-spacing">
-
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <div class="row event-information two-columns">
-                                  <div class="each-column col-sm-12">
-                                    <h6>TIME & PLACE</h6>
-                                    <p>15 March, Wed <br>
-                                    6 – 10pm <br>
-                                    Pool Terrance</p>
-                                  </div>
-                                  <div class="each-column col-sm-12">
-                                    <h6>Cost</h6>
-                                    <p>$10</p>
-                                  </div>
-                                </div>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
 
                     <div class="cta-container">
@@ -185,10 +144,7 @@
                 <div class="detail-list-item-image">
                   <a href="javascript:void(0);">
                     <div class="manic-image-container">
-                      <img src="" 
-                        data-image-desktop="images_cms/activities/activities-flow.jpg"
-                        data-image-tablet="images_cms/activities/activities-flow-mobile.jpg"
-                        data-image-mobile="images_cms/activities/activities-flow-mobile.jpg">
+                      <img src="" data-image-desktop="images_cms/activities/activities-flow.jpg">
                     </div>
                   </a>
                 </div>
@@ -199,7 +155,7 @@
                     <a href="javascript:void(0);" class="detail-list-item-title"><h5>Flow & Frolic</h5></a>
                     <p class="" data-length="85">Flow in a 60 minute class led by Julie Smerdon with soul-stirring tracks laid down by Andy Dub. Enjoy a post class frolic on the dance floor after class, or just hang around for a drink or a nibble.</p>
 
-                    <div class="more-details hidden-sm hidden-xs">
+                    <div class="more-details">
                       <ul>
                         <li>60-min class by Shri Yoga community</li>
                         <li>Post-yoga music by Andy Dub</li>
@@ -215,78 +171,6 @@
                         <div class="col-md-6">
                           <h6>Cost</h6>
                           <p>$10</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="more-details visible-xs visible-sm">
-                      <div class="manic-expand-container" data-group="mobile-activities-page-flow">
-                        <div class="scroll-target" data-value="flow-title-01"></div>
-                        <div class="manic-expand-container-title">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <h4>more Details</h4>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="manic-expand-container-btn"></div>
-                        <div class="manic-expand-container-content">
-
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <ul>
-                                  <li>60-min class by Shri Yoga community</li>
-                                  <li>Post-yoga music by Andy Dub</li>
-                                  <li>Please BYO yoga mat</li>
-                                </ul>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="manic-expand-container" data-group="mobile-activities-page-flow">
-                        <div class="scroll-target" data-value="flow-title-02"></div>
-                        <div class="manic-expand-container-title">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <h4>EVENT INFORMATION</h4>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="manic-expand-container-btn"></div>
-                        <div class="manic-expand-container-content no-spacing">
-
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <div class="row event-information two-columns">
-                                  <div class="each-column col-sm-12">
-                                    <h6>TIME & PLACE</h6>
-                                    <p>15 March, Wed <br>
-                                    6 – 10pm <br>
-                                    Pool Terrance</p>
-                                  </div>
-                                  <div class="each-column col-sm-12">
-                                    <h6>Cost</h6>
-                                    <p>$10</p>
-                                  </div>
-                                </div>
-
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -332,7 +216,7 @@
 
     -->
 
-    <div class="scroll-target" data-value="rooftop-mobile"></div>
+    <div class="scroll-target" data-value="roof-top"></div>
     <div class="detail-list-item-mobile first-version">
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
@@ -433,7 +317,7 @@
 
     -->
 
-    <div class="scroll-target" data-value="flow-mobile"></div>
+    <div class="scroll-target" data-value="flow"></div>
     <div class="detail-list-item-mobile last-version">
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
@@ -490,10 +374,11 @@
 
                   <div class="default-copy">
                     <ul>
-                      <li>3 Treatment rooms, 2 steam rooms</li> 
-                      <li>Signature Treament: Laotian Herbal Steam</li>
-                      <li>Free Pick-up and Drop-off in Luang Prabang</li>
+                      <li>60-min class by Shri Yoga community</li>
+                      <li>Post-yoga music by Andy Dub</li>
+                      <li>Please BYO yoga mat</li>
                     </ul>
+
                   </div>
 
                 </div>
@@ -510,7 +395,7 @@
                 <div class="col-sm-1 col-xs-0"></div>
                 <div class="col-sm-10 col-xs-12">
 
-                  <h4>Downloads</h4>
+                  <h4>EVENT INFORMATION</h4>
 
                 </div>
               </div>
@@ -525,7 +410,20 @@
                 <div class="col-sm-10 col-xs-12">
 
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="download-cta">Download spa menu</a>
+
+                    <div class="row event-information two-columns">
+                      <div class="each-column col-md-6">
+                        <h6>TIME & PLACE</h6>
+                        <p>15 March, Wed <br>
+                        6 – 10pm <br>
+                        Pool Terrance</p>
+                      </div>
+                      <div class="each-column col-md-6">
+                        <h6>Cost</h6>
+                        <p>$10</p>
+                      </div>
+                    </div> 
+
                   </div>
 
                 </div>
