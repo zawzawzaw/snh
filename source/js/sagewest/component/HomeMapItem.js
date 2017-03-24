@@ -44,7 +44,11 @@ sagewest.component.HomeMapItem = function(options, element) {
 
   this.latLng = null;
 
-  this.set_lat_lng();  
+  // this.set_lat_lng();  
+
+  console.log("this.lat")
+  console.log(this.lat)
+  console.log(this.lng)
 
 
 };
@@ -86,19 +90,21 @@ sagewest.component.HomeMapItem.EVENT_02 = '';
 //   |_|   |_| \_\___|  \_/_/   \_\_| |_____|
 //
 
-sagewest.component.HomeMapItem.prototype.set_lat_lng = function() {
-  this.latLng = new google.maps.LatLng(this.lat, this.lng);
-};
+// sagewest.component.HomeMapItem.prototype.set_lat_lng = function() {
+  
+// };
 
 sagewest.component.HomeMapItem.prototype.create_marker = function() {  
 
-  console.log(this.latLng);
-  console.log(this.map);
-  console.log(this.location);
-  console.log(this.pinIcon);
+  
+  // console.log(this.map);
+  // console.log(this.location);
+  // console.log(this.pinIcon);
+
+  var Latlng = new google.maps.LatLng(this.lat, this.lng);
 
   this.marker = new google.maps.Marker({
-    position: this.Latlng,
+    position: Latlng,
     map: this.map,
     title: this.location,
     icon: this.pinIcon
@@ -111,18 +117,26 @@ sagewest.component.HomeMapItem.prototype.create_event = function() {
   if (this.element.hasClass('no-hover') == false) {
 
     google.maps.event.addListener(this.marker, 'click', function() {
-        this.infobox.open(this.map, this);              
+
+        var Latlng = new google.maps.LatLng(this.lat, this.lng);
+
+        this.infobox.open(this.map, this.marker);              
         this.infobox.setContent(this.marker_html);
         this.infobox.setOptions({ 'pixelOffset' : new google.maps.Size(45, -95) });
-        this.map.panTo(this.Latlng);
+        this.map.panTo(Latlng);
+
     }.bind(this)); 
     // this.create_map_events(this.marker);
 
   } else {
 
     google.maps.event.addListener(this.marker, 'click', function() {
-        this.infobox.open(this.map, this);              
-        this.map.panTo(this.Latlng);
+
+        var Latlng = new google.maps.LatLng(this.lat, this.lng);
+
+        this.infobox.open(this.map, this.marker);              
+        this.map.panTo(Latlng);
+
     }.bind(this));
 
   }

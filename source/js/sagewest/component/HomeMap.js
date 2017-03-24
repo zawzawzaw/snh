@@ -244,7 +244,7 @@ sagewest.component.HomeMap.prototype.create_markers_and_events = function() {
     map_item.infobox = this.infobox;
 
     map_item.create_marker();
-    // map_item.create_event();
+    map_item.create_event();
   }
 
   // $(".markers").each(function(i, v){
