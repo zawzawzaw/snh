@@ -85,6 +85,7 @@
     <div class="row">
       <div class="col-md-12">
 
+        <!-- add the class 'slider-with-price' if has price -->
         <div class="detail-banner-slider-container slider-with-price">
           <div class="detail-banner-slider">
 
@@ -369,83 +370,42 @@
 
               <div class="col-md-4">
                 <div class="offer-detail-page-item boxlist-item">
+                  <div class="offer-detail-page-item-box boxlist-item-box">
 
-
-                  
-                  <div class="flip-container manic-version">
-                    <div class="flipper">
-                      <div class="front">
-
-                        <div class="offer-detail-page-item-box boxlist-item-box">
-
-                          <div class="boxlist-item-content-image">
-                            <div class="manic-image-container">
-                              <img src=""
-                                data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
-                                data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
-                                data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
-                            </div>
-                          </div>
-                          <div class="offer-detail-page-item-content-copy">
-                            <div class="default-copy">
-                              <h5>Sage Amour</h5>
-                              <p>Why fly to Rome when you can Sage Amour? </p>
-                              <ul>
-                                <li>Night Accommodation in a Sage Room</li>
-                                <li>Continental Buffet Breakfast for 2</li>
-                                <li>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</li>
-                                <li>Bottle of  Prosecco and Chocolates on arrival</li>
-                                <li>Late Check out</li>
-                              </ul>
-                              <h6>valid from now – 1st april 2017</h6>
-
-                              <div class="underline-cta-container">
-                                <a href="javascript:void(0);" class="underline-cta flipper-front-btn">View terms & conditions</a>
-                              </div>
-
-                            </div>
-                          </div> <!-- offer-detail-page-item-content-copy -->
-                          <div class="boxlist-item-content-cta">
-                            <div class="row">
-                              <div class="col-xs-6">
-                                <a href="javascript:void(0);" class="square-cta">Contact us</a>
-                              </div>
-                              <div class="col-xs-6">
-                                <!-- no price -->
-                              </div>
-                            </div>
-                          </div>
-                        </div> <!-- boxlist-item-content-box -->
+                    <div class="boxlist-item-content-image">
+                      <div class="manic-image-container">
+                        <img src=""
+                          data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
+                          data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
+                          data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
+                      </div>
+                    </div>
+                    <div class="offer-detail-page-item-content-copy">
+                      <div class="default-copy">
+                        <h5>Sage Amour</h5>
+                        <p>Why fly to Rome when you can Sage Amour? </p>
+                        <ul>
+                          <li>Night Accommodation in a Sage Room</li>
+                          <li>Continental Buffet Breakfast for 2</li>
+                          <li>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</li>
+                          <li>Bottle of  Prosecco and Chocolates on arrival</li>
+                          <li>Late Check out</li>
+                        </ul>
+                        <h6>valid from now – 1st april 2017</h6>
                         
-                      </div> <!-- front -->
-                      <div class="back">
-
-                        <div class="offer-detail-page-item-box boxlist-item-box">
-                          <div class="offer-detail-page-item-content-copy">
-                            <div class="default-copy">
-
-                              <h5>Sage Amour</h5>
-                              <h6>terms & conditions</h6>
-                              <ul>
-                                  <li>Guests must be 18 years old and above to enter the racecourse</li>
-                                  <li>Tickets are non-transferrable</li>
-                                  <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                                  <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                                  <li>Complimentary shuttle to Ascot Race Track</li>
-                              </ul>
-
-                              <div class="underline-cta-container">
-                                <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
-                              </div>
-
-
-
-                            </div>
-                          </div> <!-- offer-detail-page-item-content-copy -->
+                      </div>
+                    </div> <!-- offer-detail-page-item-content-copy -->
+                    <div class="boxlist-item-content-cta">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <a href="javascript:void(0);" class="square-cta">Contact us</a>
                         </div>
-                      </div> <!-- back -->
-                    </div> <!-- flipper -->
-                  </div> <!-- flip-container -->
+                        <div class="col-xs-6">
+                          <!-- no price -->
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- boxlist-item-content-box -->
                   
                 </div> <!-- offer-detail-page-item -->
               </div>
@@ -711,7 +671,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="offer-detail-page-item boxlist-item">
 
                     <div class="offer-detail-page-item-box boxlist-item-box">
@@ -741,7 +701,7 @@
                     </div> <!-- boxlist-item-content-box -->
 
                   </div> <!-- offer-detail-page-item -->
-                </div> <!-- col-md-4 -->
+                </div>
 
                 <!--
                     ___ ____
@@ -752,7 +712,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="offer-detail-page-item boxlist-item">
 
                     <div class="offer-detail-page-item-box boxlist-item-box">

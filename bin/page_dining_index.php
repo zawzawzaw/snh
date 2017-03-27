@@ -37,27 +37,6 @@
   </div>
 </article> <!-- default-breadcrumb-container -->
 
-<!-- <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="default-breadcrumb-mobile">
-          <ul>
-            <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
-            <li><a href="brand_alternative.php">sage hotels</a></li>
-            <li><a href="hotel.php">sage west perth</a></li>
-            <li>dining</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</article> --> <!-- default-breadcrumb-container -->
-
-
-
 <!--
    _____ ___ _____ _     _____
   |_   _|_ _|_   _| |   | ____|
@@ -72,8 +51,8 @@
 <article class="index-page-title-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
-      <div class="col-md-2 col-sm-1 col-xs-0"></div>
-      <div class="col-md-8 col-sm-10 col-xs-12">
+      <div class="col-md-2 col-sm-0 col-xs-0"></div>
+      <div class="col-md-8 col-sm-12 col-xs-12">
 
         <div class="index-page-title">
           <h1>Restaurants & Bars</h1>
@@ -90,7 +69,9 @@
 <article id="detail-list-section">
   <div class="container-fluid has-breakpoint">
     <div class="row">
-      <div class="col-md-12">
+      
+      <div class="col-md-0 col-sm-0 col-xs-0"></div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
 
         <div class="detail-list-item-container">
 

@@ -364,32 +364,32 @@
                   <div class="dining-detail-page-item-box boxlist-item-box">
 
                     <div class="boxlist-item-content-image">
-                      <div class="manic-image-container">
+                      <a href="offer_detail.php" class="manic-image-container">
                         <img src=""
                           data-image-desktop="images_cms/dining/dining-detail-promotion-01.jpg"
                           data-image-tablet="images_cms/dining/dining-detail-promotion-01-mobile.jpg"
                           data-image-mobile="images_cms/dining/dining-detail-promotion-01-mobile.jpg">
-                      </div>
+                      </a>
                     </div>
                     <div class="dining-detail-page-item-content-copy">
                       <div class="default-copy">
-                        <h5>1-for-1 Tapas</h5>
+                        <h5><a href="offer_detail.php">1-for-1 Tapas</a></h5>
                         <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                         <ul>
                           <li>Arrival rose for your significant other</li>
                           <li>3-course dinner with choice of dish</li>
                           <li>Complimentary bottle of red or white wine</li>
                           <li>Live jazz singer duo</li>
-                          <li>Live jazz singer duo</li>
-                          <li>Live jazz singer duo</li>
-                          <li>Live jazz singer duo</li>
-                          <li>Live jazz singer duo</li>
                         </ul>
-                        <h6>Also open for a la carte bookings with valentine’s day dessert specials</h6>
                       </div>
                     </div>
 
                     <div class="boxlist-item-content-cta">
+
+                      <div class="dining-detail-page-item-arrow-cta-container">
+                        <a href="offer_detail.php" class="arrow-cta">More details</a>
+                      </div>
+
                       <div class="row">
                         <div class="col-xs-6">
                           <a href="javascript:void(0);" class="square-cta">Contact us</a>
@@ -424,83 +424,46 @@
               <div class="col-md-4">
                 <div class="dining-detail-page-item boxlist-item">
 
+                  <div class="dining-detail-page-item-box boxlist-item-box">
 
-                  
-                  <div class="flip-container manic-version">
-                    <div class="flipper">
-                      <div class="front">
+                    <div class="boxlist-item-content-image">
+                      <a href="offer_detail.php" class="manic-image-container">
+                        <img src=""
+                          data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
+                          data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
+                          data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
+                      </a>
+                    </div>
+                    <div class="dining-detail-page-item-content-copy">
+                      <div class="default-copy">
+                        <h5><a href="offer_detail.php">Sage Amour</a></h5>
+                        <p>Why fly to Rome when you can Sage Amour? </p>
+                        <ul>
+                          <li>Night Accommodation in a Sage Room</li>
+                          <li>Continental Buffet Breakfast for 2</li>
+                          <li>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</li>
+                          <li>Bottle of  Prosecco and Chocolates on arrival</li>
+                          <li>Late Check out</li>
+                        </ul>
 
-                        <div class="dining-detail-page-item-box boxlist-item-box">
+                      </div>
+                    </div> <!-- dining-detail-page-item-content-copy -->
+                    <div class="boxlist-item-content-cta">
+                      <div class="dining-detail-page-item-arrow-cta-container">
+                        <a href="offer_detail.php" class="arrow-cta">More details</a>
+                      </div>
 
-                          <div class="boxlist-item-content-image">
-                            <div class="manic-image-container">
-                              <img src=""
-                                data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
-                                data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
-                                data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
-                            </div>
-                          </div>
-                          <div class="dining-detail-page-item-content-copy">
-                            <div class="default-copy">
-                              <h5>Sage Amour</h5>
-                              <p>Why fly to Rome when you can Sage Amour? </p>
-                              <ul>
-                                <li>Night Accommodation in a Sage Room</li>
-                                <li>Continental Buffet Breakfast for 2</li>
-                                <li>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</li>
-                                <li>Bottle of  Prosecco and Chocolates on arrival</li>
-                                <li>Late Check out</li>
-                              </ul>
-                              <h6>valid from now – 1st april 2017</h6>
-
-                              <div class="underline-cta-container">
-                                <a href="javascript:void(0);" class="underline-cta flipper-front-btn">View terms & conditions</a>
-                              </div>
-
-                            </div>
-                          </div> <!-- dining-detail-page-item-content-copy -->
-                          <div class="boxlist-item-content-cta">
-                            <div class="row">
-                              <div class="col-xs-6">
-                                <a href="javascript:void(0);" class="square-cta">Contact us</a>
-                              </div>
-                              <div class="col-xs-6">
-                                <!-- no price -->
-                              </div>
-                            </div>
-                          </div>
-                        </div> <!-- boxlist-item-content-box -->
-                        
-                      </div> <!-- front -->
-                      <div class="back">
-
-                        <div class="dining-detail-page-item-box boxlist-item-box">
-                          <div class="dining-detail-page-item-content-copy">
-                            <div class="default-copy">
-
-                              <h5>Sage Amour</h5>
-                              <h6>terms & conditions</h6>
-                              <ul>
-                                  <li>Guests must be 18 years old and above to enter the racecourse</li>
-                                  <li>Tickets are non-transferrable</li>
-                                  <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                                  <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                                  <li>Complimentary shuttle to Ascot Race Track</li>
-                              </ul>
-
-                              <div class="underline-cta-container">
-                                <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
-                              </div>
-
-
-
-                            </div>
-                          </div> <!-- dining-detail-page-item-content-copy -->
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <a href="javascript:void(0);" class="square-cta">Contact us</a>
                         </div>
-                      </div> <!-- back -->
-                    </div> <!-- flipper -->
-                  </div> <!-- flip-container -->
-                  
+                        <div class="col-xs-6">
+                          <!-- no price -->
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- boxlist-item-content-box -->
+
                 </div> <!-- dining-detail-page-item -->
               </div>
 
@@ -519,16 +482,16 @@
                   <div class="dining-detail-page-item-box boxlist-item-box">
 
                     <div class="boxlist-item-content-image">
-                      <div class="manic-image-container">
+                      <a href="offer_detail.php" class="manic-image-container">
                         <img src=""
                           data-image-desktop="images_cms/dining/dining-detail-promotion-03.jpg"
                           data-image-tablet="images_cms/dining/dining-detail-promotion-03-mobile.jpg"
                           data-image-mobile="images_cms/dining/dining-detail-promotion-03-mobile.jpg">
-                      </div>
+                      </a>
                     </div>
                     <div class="dining-detail-page-item-content-copy">
                       <div class="default-copy">
-                        <h5>Valentine’s Day</h5>
+                        <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
                         <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                         <ul>
                           <li>Arrival rose for your significant other</li>
@@ -536,10 +499,14 @@
                           <li>Complimentary bottle of red or white wine</li>
                           <li>Live jazz singer duo</li>
                         </ul>
-                        <h6>Also open for a la carte bookings with valentine’s day dessert specials</h6>
                       </div>
                     </div>
                     <div class="boxlist-item-content-cta">
+
+                      <div class="dining-detail-page-item-arrow-cta-container">
+                        <a href="offer_detail.php" class="arrow-cta">More details</a>
+                      </div>
+
                       <div class="row">
                         <div class="col-xs-6">
                           <a href="javascript:void(0);" class="square-cta">Contact us</a>
@@ -731,7 +698,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="dining-detail-page-item boxlist-item">
 
                     <div class="dining-detail-page-item-box boxlist-item-box">
@@ -746,7 +713,7 @@
                       </div>
                       <div class="dining-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>1-for-1 Tapas</h5>
+                          <h5><a href="">1-for-1 Tapas</a></h5>
                           <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                         </div>
                       </div>
@@ -761,7 +728,7 @@
                     </div> <!-- boxlist-item-content-box -->
 
                   </div> <!-- dining-detail-page-item -->
-                </div> <!-- col-md-4 -->
+                </div>
 
                 <!--
                     ___ ____
@@ -772,7 +739,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="dining-detail-page-item boxlist-item">
 
                     <div class="dining-detail-page-item-box boxlist-item-box">
@@ -787,7 +754,7 @@
                       </div>
                       <div class="dining-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Sage Amour</h5>
+                          <h5><a href="">Sage Amour</a></h5>
                           <p>Why fly to Rome when you can Sage Amour? </p>
                         </div>
                       </div> <!-- dining-detail-page-item-content-copy -->
@@ -812,7 +779,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="dining-detail-page-item boxlist-item">
 
                     <div class="dining-detail-page-item-box boxlist-item-box">
@@ -827,7 +794,7 @@
                       </div>
                       <div class="dining-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5>Valentine’s Day</h5>
+                          <h5><a href="">Valentine’s Day</a></h5>
                           <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                         </div>
                       </div>

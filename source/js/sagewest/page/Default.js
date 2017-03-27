@@ -564,7 +564,7 @@ sagewest.page.Default.prototype.create_detail_page = function(){
 
 
   // CREATE ALL flipper containers
-
+  /*
   if ($('.flip-container.manic-version').length != 0) {
 
     var arr = $('.flip-container.manic-version');
@@ -598,14 +598,15 @@ sagewest.page.Default.prototype.create_detail_page = function(){
   } // .flip-container
 
   $(".tnc").on("click", function(e){
-      e.preventDefault();
-      $(this).closest('.flip-container').addClass("hover");
-    });
+    e.preventDefault();
+    $(this).closest('.flip-container').addClass("hover");
+  });
 
-    $(".back-to-offer").on("click", function(e){
-      e.preventDefault();
-      $(this).closest('.flip-container').removeClass("hover");
-    });
+  $(".back-to-offer").on("click", function(e){
+    e.preventDefault();
+    $(this).closest('.flip-container').removeClass("hover");
+  });
+  */
 
   
 };

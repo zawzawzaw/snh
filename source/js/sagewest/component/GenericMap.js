@@ -116,21 +116,28 @@ sagewest.component.GenericMap.prototype.create_map = function() {
 
 
   this.map = new google.maps.Map(this.map_element[0], {
-    mapTypeControlOptions: {  
-      mapTypeIds: ['Styled']
-    },  
+
+    // remove styling
+    // mapTypeControlOptions: {  
+    //   mapTypeIds: ['Styled']
+    // },  
+    // mapTypeId: 'Styled',
+
+    
     zoom: this.zoom,
     center: this.center_point,
     disableDefaultUI: true,   
-    mapTypeId: 'Styled',
     scrollwheel: false,
     // zoomControl: true
     /// zoomControl: false
     zoomControl: true
   });
 
-  var styledMapType = new google.maps.StyledMapType(this.google_style_array, { name: 'Styled' });  
-  this.map.mapTypes.set('Styled', styledMapType);
+
+
+  // remove styling
+  // var styledMapType = new google.maps.StyledMapType(this.google_style_array, { name: 'Styled' });  
+  // this.map.mapTypes.set('Styled', styledMapType);
 
   
 

@@ -28,6 +28,7 @@
         <div id="desktop-header-nav">
           <nav>
             <ul>
+              <li><a href="hotel.php">Home</a></li>
               <li><a href="room_index.php">Rooms</a></li>
               <li><a href="offer_index.php">Offers</a></li>
               <li><a href="dining_index.php">Dining</a></li>
