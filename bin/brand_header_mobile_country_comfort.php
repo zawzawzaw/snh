@@ -7,12 +7,12 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="hotel.php" id="mobile-header-logo">
-      <img src="images/logo/sage-west-logo.svg">
+    <a href="brand_alternative.php" id="mobile-header-logo">
+      <img src="images/logo/country-comfort-logo.png">
     </a>  
   
-    <a href="index.php" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
-    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+    <a href="javascript:void(0);" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="javascript:void(0);" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
   </div>
 
 </header> <!-- #mobile-header -->
@@ -20,29 +20,35 @@
 <header id="mobile-header-expanded">
 
   <div id="mobile-header-menu-container">
-    <div id="destination-indicator" class="link-to-location">
-      <a href="brand_location.php"><p>Select another location:</p></a>
+    <div id="destination-indicator">
+      <p>Select a destination:</p>
     </div>
-    <nav id="mobile-menu" class="has-mobile-sub-menu">
-      <span>sage west perth</span>
+    <div id="country-indicator">
+      <p>Australia</p>
+    </div>
+
+    <nav id="mobile-menu">
       <ul>
-        <li><a href="room_index.php">rooms</a></li>
-        <li><a href="offer_index.php">offers</a></li>
-        <li><a href="dining_index.php">dining</a></li>
-        <li class="has-subnav">
-          <a href="facilities.php">facilities</a>
-          <ul class="mobile-sub-menu">
-            <li><a href="facilities.php#lounge">Lounge</a></li>
-            <li><a href="facilities.php#gym">Gym</a></li>
-            <li><a href="facilities.php#spa">Spa</a></li>
-          </ul>
-          <div class="expand-btn"></div>
-        </li>
-        <li><a href="gallery.php">gallery</a></li>
-        <li><a href="activities.php">activities</a></li>
-        <li><a href="#">reviews</a></li>
-        <li><a href="events.php">events</a></li>
-        <li><a href="contact.php">Location</a></li>
+        <li><a href="hotel.php">Adelaide</a></li>
+        <li><a href="hotel.php">brisbane</a></li>
+        <li><a href="hotel.php">west perth</a></li>
+        <li><a href="hotel.php">wollongong</a></li>
+        
+        <!-- 
+        <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
+        <li><a href="hotel.php">Country Comfort Adelaide Manor</a></li>
+        <li><a href="hotel.php">Country Comfort Amity Motel Albany</a></li>
+        <li><a href="hotel.php">Country Comfort Armidale</a></li>
+        <li><a href="hotel.php">Country Comfort Bundaberg International</a></li>
+        <li><a href="hotel.php">Country Comfort Coffs Harbour</a></li>
+        <li><a href="hotel.php">Country Comfort gin gin</a></li>
+        <li><a href="hotel.php">Country Comfort hunts liverpool</a></li>   
+        <li><a href="hotel.php">Country Comfort Inter City Perth</a></li>   
+        <li><a href="hotel.php">Country Comfort Inter Mt Gambier</a></li>   
+        <li><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></li>   
+        <li><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
+        <li><a href="hotel.php">Country Comfort Toowoomba</a></li>   
+        -->
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">

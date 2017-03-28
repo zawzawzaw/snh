@@ -685,9 +685,8 @@
         <div class="row">
           <div class="col-xs-12">
 
-            <div id="dining-detail-page-item-container" class="boxlist-item-container">
+            <div id="dining-detail-page-item-container" class="boxlist-item-container mobile-height-version">
               <div class="row">
-
 
                 <!--
                     ___  _
@@ -704,27 +703,24 @@
                     <div class="dining-detail-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
+                        <a href="offer_detail.php" class="manic-image-container">
                           <img src=""
                             data-image-desktop="images_cms/dining/dining-detail-promotion-01.jpg"
                             data-image-tablet="images_cms/dining/dining-detail-promotion-01-mobile.jpg"
                             data-image-mobile="images_cms/dining/dining-detail-promotion-01-mobile.jpg">
-                        </div>
+                        </a>
                       </div>
                       <div class="dining-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5><a href="">1-for-1 Tapas</a></h5>
+                          <h5><a href="offer_detail.php">1-for-1 Tapas</a></h5>
                           <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                         </div>
                       </div>
 
-                      <div class="boxlist-item-content-cta">
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <a href="#" class="arrow-cta">more details</a>
-                          </div>                          
-                        </div>
+                      <div class="dining-detail-page-item-arrow-cta-container-mobile">
+                        <a href="offer_detail.php" class="arrow-cta">More details</a>
                       </div>
+
                     </div> <!-- boxlist-item-content-box -->
 
                   </div> <!-- dining-detail-page-item -->
@@ -745,26 +741,24 @@
                     <div class="dining-detail-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
+                        <a href="offer_detail.php" class="manic-image-container">
                           <img src=""
                             data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg"
                             data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
                             data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
-                        </div>
+                        </a>
                       </div>
                       <div class="dining-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5><a href="">Sage Amour</a></h5>
+                          <h5><a href="offer_detail.php">Sage Amour</a></h5>
                           <p>Why fly to Rome when you can Sage Amour? </p>
                         </div>
                       </div> <!-- dining-detail-page-item-content-copy -->
-                      <div class="boxlist-item-content-cta">
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <a href="#" class="arrow-cta">more details</a>
-                          </div>                          
-                        </div>
+                      
+                      <div class="dining-detail-page-item-arrow-cta-container-mobile">
+                        <a href="offer_detail.php" class="arrow-cta">More details</a>
                       </div>
+
                     </div> <!-- boxlist-item-content-box -->
                     
                   </div> <!-- dining-detail-page-item -->
@@ -785,26 +779,24 @@
                     <div class="dining-detail-page-item-box boxlist-item-box">
 
                       <div class="boxlist-item-content-image">
-                        <div class="manic-image-container">
+                        <a href="offer_detail.php" class="manic-image-container">
                           <img src=""
                             data-image-desktop="images_cms/dining/dining-detail-promotion-03.jpg"
                             data-image-tablet="images_cms/dining/dining-detail-promotion-03-mobile.jpg"
                             data-image-mobile="images_cms/dining/dining-detail-promotion-03-mobile.jpg">
-                        </div>
+                        </a>
                       </div>
                       <div class="dining-detail-page-item-content-copy">
                         <div class="default-copy">
-                          <h5><a href="">Valentine’s Day</a></h5>
+                          <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
                           <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                         </div>
                       </div>
-                      <div class="boxlist-item-content-cta">
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <a href="#" class="arrow-cta">more details</a>
-                          </div>                          
-                        </div>
+                      
+                      <div class="dining-detail-page-item-arrow-cta-container-mobile">
+                        <a href="offer_detail.php" class="arrow-cta">More details</a>
                       </div>
+
                     </div> <!-- dining-detail-page-item-box -->
 
                   </div> <!-- dining-detail-page-item -->

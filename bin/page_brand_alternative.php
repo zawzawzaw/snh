@@ -623,8 +623,8 @@
                     </div>
                   </div>
 
-                  <div class="boxlist-item-content-cta">
-                    <a href="javascript:void(0);" class="square-cta highlight-version book-now">Book now</a>
+                  <div class="default-promotion-content-item-arrow-cta-container-mobile">
+                    <a href="offer_detail.php" class="arrow-cta">More details</a>
                   </div>
 
                 </div>
@@ -638,10 +638,10 @@
                   <div class="boxlist-item-tag">Dining</div>
 
                   <div class="boxlist-item-content-image">
-                    <div class="manic-image-container">
+                    <a href="offer_detail.php" class="manic-image-container">
                       <img src=""
                         data-image-mobile="images_cms/brand/brand-promotion-01.png">
-                    </div>
+                    </a>
                   </div>
 
                   <div class="default-promotion-content-item-copy">
@@ -652,8 +652,8 @@
                     </div>
                   </div>
 
-                  <div class="boxlist-item-content-cta">
-                    <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                  <div class="default-promotion-content-item-arrow-cta-container-mobile">
+                    <a href="offer_detail.php" class="arrow-cta">More details</a>
                   </div>
 
                 </div>
@@ -667,9 +667,9 @@
                   <div class="boxlist-item-tag">Dining</div>
 
                   <div class="boxlist-item-content-image">
-                    <div class="manic-image-container">
+                    <a href="offer_detail.php" class="manic-image-container">
                       <img src="" data-image-mobile="images_cms/brand/brand-promotion-01.png">
-                    </div>
+                    </a>
                   </div>
 
                   <div class="default-promotion-content-item-copy">
@@ -680,8 +680,8 @@
                     </div>
                   </div>
 
-                  <div class="boxlist-item-content-cta">
-                    <a href="javascript:void(0);" class="square-cta highlight-version book-now">Book now</a>
+                  <div class="default-promotion-content-item-arrow-cta-container-mobile">
+                    <a href="offer_detail.php" class="arrow-cta">More details</a>
                   </div>
 
                 </div>

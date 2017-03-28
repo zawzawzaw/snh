@@ -1475,6 +1475,17 @@ body.is-tablet.is-tablet-portrait{
   .default-promotion-content-item-arrow-cta-container{
     padding-bottom: 21px;
   }
+  .default-promotion-content-item-arrow-cta-container-mobile{
+    position: absolute;     // same as .room-detail-page-item .room-detail-page-item-cta-container
+    bottom: 22px;
+    left: 20px;
+    right: 20px;
+  }
+
+
+  
+
+
 
   .boxlist-item-box.default-promotion-content-box {
     // padding-bottom: 70px;
@@ -1488,7 +1499,10 @@ body.is-tablet.is-tablet-portrait{
     padding-bottom: 30px + 65px + 32px; // same as .hotel-page-item
 
     @media all and (max-width: 991px) {
-      padding-bottom: 93px;   // cause it doesn't have the arrow cta on mobile
+      /// padding-bottom: 93px;   // cause it doesn't have the arrow cta on mobile
+      //// padding-bottom: 80px; // same as .room-detail-page-item .room-detail-page-item-cta-container
+      
+      padding-bottom: 61px;   // only has the arrow at the bottom
     }
 
 
@@ -2287,6 +2301,9 @@ div.default-promotion-cta-container{
   @media all and (max-width: 991px) {
     margin-bottom: 20px;
     height: auto!important;
+
+    min-height: 200px; // no box will be lower than 200 px on mobile 
+
   }
 
   .add-flipper-function;

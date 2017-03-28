@@ -1,16 +1,35 @@
+
+
 .offer-detail-page-item{
 
+
+  .offer-detail-page-item-arrow-cta-container{
+    padding-bottom: 21px;
+  }
+  .offer-detail-page-item-arrow-cta-container-mobile{
+    position: absolute;     // same as .room-detail-page-item .room-detail-page-item-cta-container
+    bottom: 22px;
+    left: 20px;
+    right: 20px;
+  }
+
   .offer-detail-page-item-box{
-    padding-bottom: 30px + 65px;    // 65 = cta container
+    // padding-bottom: 30px + 65px;    // 65 = cta container
+    padding-bottom: 30px + 65px + 32px; // same as .hotel-page-item
+
     @media all and (max-width: 991px) {
-      padding-bottom: 55px;
+      // padding-bottom: 55px;
+      padding-bottom: 61px;   // only has the arrow at the bottom
     }
   }
 
   .offer-detail-page-item-content-copy{
-    @media all and (max-width: 991px) {
-      padding-bottom: 20px;
-    }
+
+    
+    // @media all and (max-width: 991px) {
+    //   padding-bottom: 20px;
+    // }
+
     .default-copy{
 
     }

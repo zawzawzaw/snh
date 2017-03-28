@@ -8129,13 +8129,19 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 .default-promotion-content-item .default-promotion-content-item-arrow-cta-container {
   padding-bottom: 21px;
 }
+.default-promotion-content-item .default-promotion-content-item-arrow-cta-container-mobile {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
+  right: 20px;
+}
 .default-promotion-content-item .boxlist-item-box.default-promotion-content-box {
   padding-bottom: 127px;
   position: relative;
 }
 @media all and (max-width: 991px) {
   .default-promotion-content-item .boxlist-item-box.default-promotion-content-box {
-    padding-bottom: 93px;
+    padding-bottom: 61px;
   }
 }
 .default-promotion-content-item .boxlist-item-box.default-promotion-content-box .boxlist-item-content-price h6,
@@ -8705,6 +8711,7 @@ div.default-promotion-cta-container {
   .boxlist-item {
     margin-bottom: 20px;
     height: auto!important;
+    min-height: 200px;
   }
 }
 .boxlist-item .flip-container {
@@ -12776,17 +12783,18 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
 .dining-detail-page-item .dining-detail-page-item-arrow-cta-container {
   padding-bottom: 21px;
 }
+.dining-detail-page-item .dining-detail-page-item-arrow-cta-container-mobile {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
+  right: 20px;
+}
 .dining-detail-page-item .dining-detail-page-item-box {
   padding-bottom: 127px;
 }
 @media all and (max-width: 991px) {
   .dining-detail-page-item .dining-detail-page-item-box {
-    padding-bottom: 55px;
-  }
-}
-@media all and (max-width: 991px) {
-  .dining-detail-page-item .dining-detail-page-item-content-copy {
-    padding-bottom: 20px;
+    padding-bottom: 61px;
   }
 }
 .dining-detail-page-item .dining-detail-page-item-content-copy .underline-cta-container {
@@ -12808,24 +12816,31 @@ body.brand-alternative-page #desktop-header-booking-calendar .daterangepicker .c
   #offer-index-page-list-section {
     padding-bottom: 0px;
   }
-  #offer-index-page-item-container .offer-index-page-item .offer-index-page-item-box {
-    padding-bottom: 75px;
+  #offer-index-page-item-container .offer-index-page-item .offer-index-page-item-arrow-cta-container-mobile {
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+    right: 20px;
   }
-  #offer-index-page-item-container .offer-index-page-item .offer-index-page-item-box .offer-index-page-item-content-copy {
-    padding-bottom: 20px;
+  #offer-index-page-item-container .offer-index-page-item .offer-index-page-item-box {
+    padding-bottom: 61px;
   }
 }
+.offer-detail-page-item .offer-detail-page-item-arrow-cta-container {
+  padding-bottom: 21px;
+}
+.offer-detail-page-item .offer-detail-page-item-arrow-cta-container-mobile {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
+  right: 20px;
+}
 .offer-detail-page-item .offer-detail-page-item-box {
-  padding-bottom: 95px;
+  padding-bottom: 127px;
 }
 @media all and (max-width: 991px) {
   .offer-detail-page-item .offer-detail-page-item-box {
-    padding-bottom: 55px;
-  }
-}
-@media all and (max-width: 991px) {
-  .offer-detail-page-item .offer-detail-page-item-content-copy {
-    padding-bottom: 20px;
+    padding-bottom: 61px;
   }
 }
 .offer-detail-page-item .offer-detail-page-item-content-copy .underline-cta-container {
