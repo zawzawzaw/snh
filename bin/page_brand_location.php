@@ -423,7 +423,7 @@
 
 
 
-
+<div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
 
 
 

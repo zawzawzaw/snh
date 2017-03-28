@@ -395,6 +395,10 @@ sagewest.page.Default.prototype.on_expand_container_expand = function(event) {
 
   }
 
+
+
+  this.update_page_layout();
+
 };
 
 

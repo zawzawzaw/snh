@@ -426,7 +426,7 @@
 
 
 
-
+<div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
 
 
 
@@ -561,7 +561,7 @@
         <div class="col-sm-6 col-xs-12">
           <div id="armidale" class="brand-all-location-content-box">
             <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hotel-adelaide.jpg">
             </div>
             <div class="row box-title">
               <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
@@ -578,7 +578,7 @@
         <div class="col-sm-6 col-xs-12">
           <div id="huntsliverpool" class="brand-all-location-content-box">
             <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hunts-liverpool.jpg">
             </div>
             <div class="row box-title">
               <div class="col-md-12"><h4>Country Comfort Hunts Liverpool</h4></div>              
@@ -595,7 +595,7 @@
         <div class="col-sm-6 col-xs-12">
           <div id="cowra" class="brand-all-location-content-box">
             <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-cowra.jpg">
             </div>
             <div class="row box-title">
               <div class="col-md-12"><h4>Country Comfort Cowra</h4></div>              
@@ -612,7 +612,7 @@
         <div class="col-sm-6 col-xs-12">
           <div id="newcastleairport" class="brand-all-location-content-box">
             <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-newcastle-airport-convention-centre.jpg">
             </div>
             <div class="row box-title">
               <div class="col-md-12"><h4>Country Comfort Newcastle Airport & Convention Centre</h4></div>              
@@ -630,7 +630,7 @@
         <div class="col-sm-6 col-xs-12">
           <div id="coffsharbour" class="brand-all-location-content-box">
             <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-coffs-harbour.jpg">
             </div>
             <div class="row box-title">
               <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
@@ -647,7 +647,7 @@
         <div class="col-sm-6 col-xs-12">
           <div id="portmacquarie" class="brand-all-location-content-box mobile-default-location">
             <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-port-macquarie-water-edge-boutique.jpg">
             </div>
             <div class="row box-title">
               <div class="col-md-12"><h4>Country Comfort Port Macquarie Water Edge Boutique</h4></div>              

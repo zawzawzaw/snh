@@ -82,15 +82,15 @@
         <div id="hotel-footer-menu-container">
           <h1>Quick Links</h1>
           <ul>
-            <li><a href="javascript:void(0);">Rooms</a></li>
-            <li><a href="javascript:void(0);">Offers</a></li>
-            <li><a href="javascript:void(0);">Dining</a></li>
-            <li><a href="javascript:void(0);">Facilities</a></li>
-            <li><a href="javascript:void(0);">Gallery</a></li>
-            <li><a href="javascript:void(0);">Activities</a></li>
+            <li><a href="room_index.php">Rooms</a></li>
+            <li><a href="offer_index.php">Offers</a></li>
+            <li><a href="dining_index.php">Dining</a></li>
+            <li><a href="facilities.php">Facilities</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="activities.php">Activities</a></li>
             <li><a href="javascript:void(0);">Reviews</a></li>
-            <li><a href="javascript:void(0);">Events</a></li>
-            <li><a href="javascript:void(0);">Contact</a></li>
+            <li><a href="events.php">Events</a></li>
+            <li><a href="contact.php">Location</a></li>
           </ul>
         </div>
 
