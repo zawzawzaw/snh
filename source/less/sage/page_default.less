@@ -112,6 +112,12 @@
   h4 + p {
     padding-top: 20px;
   }
+  h4 + ul {
+    padding-top: 20px;
+  }
+  h4 + ol {
+    padding-top: 20px;
+  }
 
   h5 + h6{
     padding-top: 23px;
@@ -714,6 +720,10 @@ body.is-tablet.is-tablet-portrait{
       }
     }
 
+    @media only screen and (max-width: 1199px) {
+      right: 40px;
+    }
+
     @media all and (max-width: 991px) {
       right: -25px;
       top: -25px; 
@@ -831,6 +841,32 @@ body.is-tablet.is-tablet-portrait{
       height: 670px;
     }
   }
+
+
+
+} // .detail-banner-slider-section
+
+// TABLET LANDSCAPE & LAPTOPS
+@media only screen and (max-width: 1199px) {
+  .detail-banner-slider-section{
+    .detail-banner-slider-container{
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+    .detail-banner-slider{
+      .slick-prev{
+        left: 40px;
+      }
+      .slick-next{
+        right: 40px;
+      }
+    }
+    .detail-banner-slider-item{
+      .manic-image-container{
+        height: 540px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -898,14 +934,32 @@ body.is-tablet.is-tablet-portrait{
         }
       }
     }
+
+    .detail-banner-slider-item{
+      .manic-image-container{
+        height: 490px;
+      }
+    }
+  }  
+}
+@media only screen and (max-width: 767px) {
+  .detail-banner-slider-section{
+    .detail-banner-slider-item{
+      .manic-image-container{
+        height: 260px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .detail-banner-slider-section{
     .detail-banner-slider-item{
       .manic-image-container{
         height: 200px;
       }
     }
-  }  
+  }
 }
-
 
 
 //    _____ _     ___ ____  ____  _____ ____    _____ _   _ _   _  ____ _____ ___ ___  _   _
@@ -1417,12 +1471,28 @@ body.is-tablet.is-tablet-portrait{
 
 .default-promotion-content-item {
   margin-bottom: 25px;
+
+  .default-promotion-content-item-arrow-cta-container{
+    padding-bottom: 21px;
+  }
+
   .boxlist-item-box.default-promotion-content-box {
     // padding-bottom: 70px;
-    padding-bottom: 90px;
+    
+    
+    // padding-bottom: 90px;
+    // @media all and (max-width: 991px) {
+    //   padding-bottom: 93px;
+    // }
+    
+    padding-bottom: 30px + 65px + 32px; // same as .hotel-page-item
+
     @media all and (max-width: 991px) {
-      padding-bottom: 93px;
+      padding-bottom: 93px;   // cause it doesn't have the arrow cta on mobile
     }
+
+
+
     // .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
 
 
@@ -1440,21 +1510,24 @@ body.is-tablet.is-tablet-portrait{
     position: relative;
 
 
-    .default-promotion-content-item-copy{
-      .arrow-cta-container{
-        padding-top: 20px;
-      }
-      .underline-cta-container{
-        // padding-top: 3px;
-        padding-top: 20px;
-      }
-    }
+    //    .default-promotion-content-item-copy{
+    //      .arrow-cta-container{
+    //        padding-top: 20px;
+    //      }
+    //
+    //      .underline-cta-container{
+    //        // padding-top: 3px;
+    //        padding-top: 20px;
+    //      }
+    //    }
+    //
+    //    .back{
+    //      .boxlist-item-box{
+    //        background: @off-white;
+    //      }
+    //    }
 
-    .back{
-      .boxlist-item-box{
-        background: @off-white;
-      }
-    }
+
     .boxlist-item-content-price{
       h6, p, span{
         color: @grey;
@@ -1462,27 +1535,30 @@ body.is-tablet.is-tablet-portrait{
     }
 
 
-    .box-title {       
-      position: absolute;
-      top: 0px;       
-      left: 0px;  
-      z-index: 1;     
-      background: @violet;
-      // width: 168px;
-      padding: 0 20px;
-      height: 35px;
-      display: table;
-      .tag {         
-        display: table-cell; 
-        vertical-align: middle;
-        text-align: center;
-        color: @white;
-        text-transform: uppercase;
-        text-align: center;
-        .header-h6-style;
-        font-size: 12.5px;
-      }
-    }
+    // .box-title {       
+    //   position: absolute;
+    //   top: 0px;       
+    //   left: 0px;  
+    //   z-index: 1;     
+    //   background: @violet;
+    //   // width: 168px;
+    //   padding: 0 20px;
+    //   height: 35px;
+    //   display: table;
+    //   .tag {         
+    //     display: table-cell; 
+    //     vertical-align: middle;
+    //     text-align: center;
+    //     color: @white;
+    //     text-transform: uppercase;
+    //     text-align: center;
+    //     .header-h6-style;
+    //     font-size: 12.5px;
+    //   }
+    // }
+
+
+
   }    
 }
 
@@ -2289,21 +2365,44 @@ div.default-promotion-cta-container{
     display: block;
   }
 
-  &.short-version{
+  &.short-version{                // not used..
     .manic-image-container{
       height: 230px;
     }
   }
+
+  // TABLET LANDSCAPE
+  @media only screen and (max-width: 1199px) {
+    .manic-image-container{
+      height: 220px;
+    }
+  }
+
+
+
+  // TABLET PORTRAIT & MOBILE LAYOUT
   @media all and (max-width: 991px) {
     .manic-image-container{
-      height: 205px;
+      height: 260px;                  // height if there are 2 columns in tablet portrait
     }
-    &.short-version{
+    &.single-col-version{
       .manic-image-container{
-        height: 205px;
+        height: 490px;
       }
     }
   }
+  @media only screen and (max-width: 767px) {
+    .manic-image-container{
+      height: 265px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .manic-image-container{
+      height: 205px;
+    }
+  }
+
+
 }
   
 // link version

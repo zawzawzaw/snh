@@ -213,76 +213,38 @@
 
           <div class="default-promotion-content-item boxlist-item">
 
-            <div class="flip-container manic-version">
-              <div class="flipper">
-                <div class="front">
+            <div class="default-promotion-content-box boxlist-item-box">
 
-                  <div class="default-promotion-content-box boxlist-item-box">
+              <div class="boxlist-item-tag">weekend special</div>
 
-                    <div class="boxlist-item-tag">weekend special</div>
-
-                    <div class="boxlist-item-content-image">
-                      <div class="manic-image-container">
-                        <img src=""
-                          data-image-desktop="images_cms/brand/brand-promotion-03.png">
-                      </div>
-                    </div>
-
-                    <div class="default-promotion-content-item-copy">
-                      <div class="default-copy">
-                        <h5>Ascot Horse Racing</h5>
-                        <ul>
-                          <li><p>Complimentary upgrade to Executive Wing</p></li>
-                          <li><p>General admission ticket for 2 to Ascot Races</p></li>
-                          <li><p>Early Check-in</p></li>
-                          <li><p>Bottle of Sparkling Wine on arrival</p></li>
-                          <li><p>Complimentary shuttle to Ascot Race Track</p></li>
-                          <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
-                        </ul>
-                        <div class="underline-cta-container">
-                          <a href="javascript:void(0);" class="underline-cta flipper-front-btn">View terms & conditions</a>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="boxlist-item-content-cta">
-                      <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
-                    </div>
-
-                  </div> <!-- default-promotion-content-box -->
-
-                </div>
-                <div class="back">
-
-                  <div class="default-promotion-content-box boxlist-item-box">
-                    <div class="default-promotion-content-item-copy">
-                      <div class="default-copy">
-                        <h5>Ascot Horse Racing</h5>
-                        <h6>terms & conditions</h6>
-                        <ul>
-                            <li>Guests must be 18 years old and above to enter the racecourse</li>
-                            <li>Tickets are non-transferrable</li>
-                            <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                            <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                            <li>Complimentary shuttle to Ascot Race Track</li>
-                            <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
-                            <li>Guests must be 18 years old and above to enter the racecourse</li>
-                            <li>Tickets are non-transferrable</li>
-                        </ul>
-                      </div>
-                      <div class="underline-cta-container">
-                        <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
-                      </div>
-                    </div>
-
-                  </div>
-
-
+              <div class="boxlist-item-content-image">
+                <div class="manic-image-container">
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-03.png">
                 </div>
               </div>
-            </div>
 
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5>Ascot Horse Racing</h5>
+                  <ul>
+                    <li><p>Complimentary upgrade to Executive Wing</p></li>
+                    <li><p>General admission ticket for 2 to Ascot Races</p></li>
+                    <li><p>Early Check-in</p></li>
+                    <li><p>Bottle of Sparkling Wine on arrival</p></li>
+                    <li><p>Complimentary shuttle to Ascot Race Track</p></li>
+                    <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
+                  </ul>
+                  
+                </div>
+              </div>
+
+              <div class="boxlist-item-content-cta">
+                <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+              </div>
+
+            </div> <!-- default-promotion-content-box -->
+            
           </div>
 
         </div>
@@ -350,77 +312,37 @@
           
 
           <div class="default-promotion-content-item boxlist-item">
-            <div class="flip-container manic-version">
-              <div class="flipper">
-                <div class="front">
+            <div class="default-promotion-content-box boxlist-item-box">
 
-                  <div class="default-promotion-content-box boxlist-item-box">
+              <div class="boxlist-item-tag">Dining</div>
 
-                    <div class="boxlist-item-tag">Dining</div>
-
-                    <div class="boxlist-item-content-image">
-                      <div class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/home/home-promotion-03.png" alt="">
-                      </div>
-                    </div>
-
-                    <div class="default-promotion-content-item-copy">
-                      <div class="default-copy">
-                        <h5>Sage Amour</h5>
-                        <p>Why fly to Rome when you can Sage Amour? </p>
-                        <ul> 
-                          <li><p>Night Accommodation in a Sage Room</p></li>
-                          <li><p>Continental Buffet Breakfast for 2</p></li>
-                          <li><p>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</p></li>
-                          <li><p>Bottle of  Prosecco and Chocolates on arrival</p></li>
-                          <li><p>Late Check out</p></li>
-                        </ul>
-                        <h6>valid from now – 1st april 2017</h6>
-
-                        <div class="underline-cta-container">
-                          <a href="javascript:void(0);" class="underline-cta flipper-front-btn">View terms & conditions</a>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="boxlist-item-content-cta">
-                      <a href="mailto:enquiry@sagehotels.com" class="square-cta">Contact us</a>
-                    </div>
-
-                  </div> <!-- default-promotion-content-box -->
-
+              <div class="boxlist-item-content-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/home-promotion-03.png" alt="">
                 </div>
-                <div class="back">
+              </div>
 
-                  <div class="default-promotion-content-box boxlist-item-box">
-                    <div class="default-promotion-content-item-copy">
-                      <div class="default-copy">
-                        <h5>Sage Amour</h5>
-                        <h6>terms & conditions</h6>
-                        <ul>
-                            <li>Guests must be 18 years old and above to enter the racecourse</li>
-                            <li>Tickets are non-transferrable</li>
-                            <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                            <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                            <li>Complimentary shuttle to Ascot Race Track</li>
-                            <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
-                            <li>Guests must be 18 years old and above to enter the racecourse</li>
-                            <li>Tickets are non-transferrable</li>
-                        </ul>
-                      </div>
-                      <div class="underline-cta-container">
-                        <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
-                      </div>
-                    </div>
-
-                  </div>
-
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5>Sage Amour</h5>
+                  <p>Why fly to Rome when you can Sage Amour? </p>
+                  <ul> 
+                    <li><p>Night Accommodation in a Sage Room</p></li>
+                    <li><p>Continental Buffet Breakfast for 2</p></li>
+                    <li><p>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</p></li>
+                    <li><p>Bottle of  Prosecco and Chocolates on arrival</p></li>
+                    <li><p>Late Check out</p></li>
+                  </ul>
+                  <h6>valid from now – 1st april 2017</h6>
 
                 </div>
               </div>
-            </div>
 
+              <div class="boxlist-item-content-cta">
+                <a href="mailto:enquiry@sagehotels.com" class="square-cta">Contact us</a>
+              </div>
+
+            </div> <!-- default-promotion-content-box -->
           </div>
 
         </div>
@@ -518,7 +440,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="offer-index-page-item boxlist-item">
 
                     <div class="offer-index-page-item-box boxlist-item-box">
@@ -561,7 +483,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="offer-index-page-item boxlist-item">
 
                     <div class="offer-index-page-item-box boxlist-item-box">
@@ -639,7 +561,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="offer-index-page-item boxlist-item">
 
                     <div class="offer-index-page-item-box boxlist-item-box">
@@ -682,7 +604,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="offer-index-page-item boxlist-item">
 
                     <div class="offer-index-page-item-box boxlist-item-box">
@@ -795,7 +717,7 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="offer-index-page-item boxlist-item">
 
                     <div class="offer-index-page-item-box boxlist-item-box">
@@ -828,6 +750,8 @@
 
                   </div> <!-- dining-detail-page-item -->
                 </div> <!-- col-md-4 -->
+
+                
               </div>
             </div>
 

@@ -41,8 +41,20 @@
           letter-spacing: 0.08em;
           color: @white;
           text-transform: uppercase;
+
+
           &:hover {
             color: @violet;
+          }
+        }
+
+        @media only screen and (max-width: 1299px) {
+          padding: 0 15px;
+        }
+        @media only screen and (max-width: 1199px) {
+          padding: 0 10px;
+          a{
+            font-size: 11px;
           }
         }
       }
@@ -110,7 +122,10 @@
   }
 
   #hotel-introduction-copy {   
-  padding-right: 50px; 
+    padding-right: 50px;
+    @media only screen and (max-width: 1199px) {
+      padding-right: 0px;
+    }
     
     #hotel-introduction-copy-title {
       h1 {

@@ -366,15 +366,24 @@
       font-size: 13px;
       line-height: 16px;
     }
-    .main-title-bar, .sub-title-bar {
+    .main-title-bar, .territory-title-bar, .sub-title-bar {
       background: #998e8b;
       padding: 10px 0px;
       height: 35px;
-      margin: 0px -25px;
+      // margin: 0px -25px;
+      
       h4 {
         color: @white;
-        padding: 0 25px;
+        padding: 0 40px;
+
+        @media only screen and (max-width: 991px) {
+          padding: 0 25px;
+        }
+
       }
+    }
+    .territory-title-bar{
+      background-color: #aea19e;    // a color in between
     }
     .sub-title-bar {
       background-color: #c2b4b0;
@@ -385,7 +394,14 @@
       margin-bottom: 18px;
       
       .manic-image-container {
-        height: 200px;
+        height: 250px;
+
+        @media only screen and (max-width: 767px) {
+          height: 270px;
+        }
+        @media only screen and (max-width: 320px) {
+          height: 200px;
+        }
       }
       .box-title {
         padding: 20px 15px;      
@@ -393,6 +409,18 @@
     }
   }
 }
+
+
+body.is-tablet{
+  #brand-all-location-section #brand-all-location-content-box {
+    .main-title-bar, .territory-title-bar, .sub-title-bar {
+      h4{
+        padding: 0 40px;
+      }
+    }
+  }
+}
+
 
 //     __  _______  __  __________   ________
 //    /  |/  / __ \/  |/  / ____/ | / /_  __/
@@ -866,6 +894,11 @@
   .brand-location-page-item{
     width: 33.33%;
     height: 380px;
+
+    // TABLET LANDSCAPE & LAPTOPS
+    @media only screen and (max-width: 1199px) {
+      height: 325px;
+    }
 
     margin-bottom: 30px;
   }

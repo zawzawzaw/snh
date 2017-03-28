@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 col-tablet-landscape-md-6 col-sm-12">
 
 
         <div id="default-introduction-mobile-video" class="visible-sm visible-xs">
@@ -119,7 +119,7 @@
 
 
       </div>
-      <div class="col-md-7">
+      <div class="col-md-7 col-tablet-landscape-md-6 col-sm-12">
 
         <div id="default-introduction-video-container" class="visible-md visible-lg">
           <div id="default-introduction-video">
@@ -437,6 +437,7 @@
         </div>
       </div>
     </div>
+
     <div class="row">
       <div id="default-promotion-content" class="boxlist-item-container">
         <div class="col-md-4">
@@ -446,15 +447,14 @@
               <div class="boxlist-item-tag">Accommodation</div>
 
               <div class="boxlist-item-content-image">
-                <div class="manic-image-container">
-                  <img src=""
-                    data-image-desktop="images_cms/brand/brand-promotion-01.png">
-                </div>
+                <a href="offer_detail.php" class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-01.png">
+                </a>
               </div>
 
               <div class="default-promotion-content-item-copy">
                 <div class="default-copy">
-                  <h5>City Escape</h5>
+                  <h5><a href="offer_detail.php">City Escape</a></h5>
                   <h4>Sage Hotel Adelaide</h4>
                   <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                   <ul>
@@ -462,12 +462,14 @@
                     <li><p>Continental Buffet Breakfast for 2</p></li>
                     <li><p>Late Check out at 12 noon</p></li>
                   </ul>
-                  <h6>valid from now – 1st april 2017</h6>
                 </div>
               </div>
 
               <div class="boxlist-item-content-cta">
-                <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                <div class="default-promotion-content-item-arrow-cta-container">
+                  <a href="offer_detail.php" class="arrow-cta">More details</a>
+                </div>
+                <a href="javascript:void(0);" class="square-cta highlight-version book-now">Book now</a>
               </div>
 
             </div>
@@ -481,15 +483,14 @@
               <div class="boxlist-item-tag">Dining</div>
 
               <div class="boxlist-item-content-image">
-                <div class="manic-image-container">
-                  <img src=""
-                    data-image-desktop="images_cms/brand/brand-promotion-02.png">
-                </div>
+                <a href="offer_detail.php" class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-02.png">
+                </a>
               </div>
 
               <div class="default-promotion-content-item-copy">
                 <div class="default-copy">
-                  <h5>Valentine’s Day</h5>
+                  <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
                   <h4>Country comfort newcastle airport & convention centre</h4>
                   <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                   <ul>
@@ -498,14 +499,16 @@
                     <li><p>Complimentary bottle of red or white wine</p></li>
                     <li><p>Live jazz singer duo</p></li>
                   </ul>
-                  <div class="arrow-cta-container">
-                    <a href="javascript:void(0);" class="arrow-cta">More details</a>
-                  </div>
+                  
 
                 </div>
               </div>
 
               <div class="boxlist-item-content-cta">
+                <div class="default-promotion-content-item-arrow-cta-container">
+                  <a href="offer_detail.php" class="arrow-cta">More details</a>
+                </div>
+
                 <div class="row">
                   <div class="col-xs-6">
                     <a href="javascript:void(0);" class="square-cta">Contact us</a>
@@ -532,76 +535,41 @@
 
           <div class="default-promotion-content-item boxlist-item">
 
-            <div class="flip-container manic-version">
-              <div class="flipper">
-                <div class="front">
+            <div class="default-promotion-content-box boxlist-item-box">
 
-                  <div class="default-promotion-content-box boxlist-item-box">
+              <div class="boxlist-item-tag">Dining</div>
 
-                    <div class="boxlist-item-tag">Dining</div>
+              <div class="boxlist-item-content-image">
+                <a href="offer_detail.php" class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-03.png">
+                </a>
+              </div>
 
-                    <div class="boxlist-item-content-image">
-                      <div class="manic-image-container">
-                        <img src=""
-                          data-image-desktop="images_cms/brand/brand-promotion-03.png">
-                      </div>
-                    </div>
-
-                    <div class="default-promotion-content-item-copy">
-                      <div class="default-copy">
-                        <h5>Ascot Horse Racing</h5>
-                        <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>             
-                        <ul>
-                          <li><p>Complimentary upgrade to Executive Wing</p></li>
-                          <li><p>General admission ticket for 2 to Ascot Races</p></li>
-                          <li><p>Early Check-in</p></li>
-                          <li><p>Bottle of Sparkling Wine on arrival</p></li>
-                          <li><p>Complimentary shuttle to Ascot Race Track</p></li>
-                          <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
-                        </ul>
-                        <div class="underline-cta-container">
-                          <a href="javascript:void(0);" class="underline-cta flipper-front-btn">View terms & conditions</a>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="boxlist-item-content-cta">
-                      <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
-                    </div>
-
-                  </div> <!-- default-promotion-content-box -->
-
-                </div>
-                <div class="back">
-
-                  <div class="default-promotion-content-box boxlist-item-box">
-                    <div class="default-promotion-content-item-copy">
-                      <div class="default-copy">
-                        <h5>Ascot Horse Racing</h5>
-                        <h6>terms & conditions</h6>
-                        <ul>
-                            <li>Guests must be 18 years old and above to enter the racecourse</li>
-                            <li>Tickets are non-transferrable</li>
-                            <li>There will be no refunds in the event that the race is cancelled due to bad weather</li>
-                            <li>Ascot Horse Racing will not be responsible for any injuries or lost items at the racecourse</li>
-                            <li>Complimentary shuttle to Ascot Race Track</li>
-                            <li>Ladies and gents are required to be neatly dressed and groomed, with shoes and a shirt to be worn at all times. Management reserves the right to refuse entry to any patrons that do not meet these standards.</li>
-                            <li>Guests must be 18 years old and above to enter the racecourse</li>
-                            <li>Tickets are non-transferrable</li>
-                        </ul>
-                      </div>
-                      <div class="underline-cta-container">
-                        <a href="javascript:void(0);" class="underline-cta flipper-back-btn">Back</a>
-                      </div>
-                    </div>
-
-                  </div>
-
-
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5><a href="offer_detail.php">Ascot Horse Racing</a></h5>
+                  <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>             
+                  <ul>
+                    <li><p>Complimentary upgrade to Executive Wing</p></li>
+                    <li><p>General admission ticket for 2 to Ascot Races</p></li>
+                    <li><p>Early Check-in</p></li>
+                    <li><p>Bottle of Sparkling Wine on arrival</p></li>
+                    <li><p>Complimentary shuttle to Ascot Race Track</p></li>
+                    <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
+                  </ul>
+                  
                 </div>
               </div>
-            </div>
+
+              <div class="boxlist-item-content-cta">
+                <div class="default-promotion-content-item-arrow-cta-container">
+                  <a href="offer_detail.php" class="arrow-cta">More details</a>
+                </div>
+                <a href="javascript:void(0);" class="square-cta highlight-version book-now">Book now</a>
+              </div>
+
+            </div> <!-- default-promotion-content-box -->
+            
 
           </div>
 
@@ -642,21 +610,21 @@
                   <div class="boxlist-item-tag">Accommodation</div>
 
                   <div class="boxlist-item-content-image">
-                    <div class="manic-image-container">
-                      <img src=""
-                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
-                    </div>
+                    <a href="offer_detail.php" class="manic-image-container">
+                      <img src="" data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </a>
                   </div>
 
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
-                      <h5>City Escape</h5>
+                      <h5><a href="offer_detail.php">City Escape</a></h5>
                       <h4>Sage Hotel Adelaide</h4>
+                      <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                     </div>
                   </div>
 
                   <div class="boxlist-item-content-cta">
-                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                    <a href="javascript:void(0);" class="square-cta highlight-version book-now">Book now</a>
                   </div>
 
                 </div>
@@ -678,8 +646,9 @@
 
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
-                      <h5>Valentine’s Day</h5>
+                      <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
                       <h4>Country comfort newcastle airport & convention centre</h4>
+                      <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                     </div>
                   </div>
 
@@ -699,8 +668,7 @@
 
                   <div class="boxlist-item-content-image">
                     <div class="manic-image-container">
-                      <img src=""
-                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                      <img src="" data-image-mobile="images_cms/brand/brand-promotion-01.png">
                     </div>
                   </div>
 
@@ -708,11 +676,12 @@
                     <div class="default-copy">
                       <h5>Ascot Horse Racing</h5>
                       <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>
+                      <p>Complimentary upgrade to Executive Wing</p>
                     </div>
                   </div>
 
                   <div class="boxlist-item-content-cta">
-                    <a href="javascript:void(0);" class="square-cta highlight-version">Book now</a>
+                    <a href="javascript:void(0);" class="square-cta highlight-version book-now">Book now</a>
                   </div>
 
                 </div>

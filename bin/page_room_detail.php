@@ -86,7 +86,8 @@
     <div class="row">
       <div class="col-md-12">
 
-        <div class="detail-banner-slider-container">
+        <!-- add the class 'slider-with-price' if has price -->
+        <div class="detail-banner-slider-container slider-with-price">
           <div class="detail-banner-slider">
 
             <div class="detail-banner-slider-item">
@@ -166,10 +167,10 @@
             <div class="room-details">
               <div class="row">
                 <div class="col-md-5"><h4 class="room-size-sqft room-detail">25 SQM</h4></div>
-                <div class="col-md-7"><h4 class="room-bed-size room-detail">1 KING SIZE BED, 2 TWIN BEDs</h4></div>
+                <div class="col-md-7"><h4 class="room-bed-size room-detail">2 TWIN BEDs</h4></div>
               </div>
               <div class="row">
-                <div class="col-md-5"><h4 class="room-size-person room-detail">2 adults, 2 children</h4></div>
+                <div class="col-md-5"><h4 class="room-size-person room-detail">2 adults, 2 children (max)</h4></div>
                 <div class="col-md-7"><h4 class="room-view room-detail">PARTIAL MOUNTAIN AND CITY VIEW</h4></div>
               </div>
             </div>
@@ -469,7 +470,7 @@
                 <div class="room-detail-page-item boxlist-item">
                   <div class="room-detail-page-item-box boxlist-item-box">
 
-                    <div class="boxlist-item-content-image short-version">
+                    <div class="boxlist-item-content-image">
                       <a href="room_detail.php" class="manic-image-container">
                         <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
                       </a>
@@ -481,9 +482,9 @@
                     </div>
                     <div class="room-detail-page-item-content-detail">
                       <div class="boxlist-item-content-room-detail">
-                        <p class="detail-person">2 adults, 2 children</p>
+                        <p class="detail-person">2 adults, 2 children (max)</p>
                         <p class="detail-size">25 SQM</p>
-                        <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                        <p class="detail-bed">1 KING SIZE BED</p>
                       </div>
                     </div> <!-- room-detail-page-item-content-detail -->
 
@@ -524,7 +525,7 @@
                 <div class="room-detail-page-item boxlist-item">
                   <div class="room-detail-page-item-box boxlist-item-box">
 
-                    <div class="boxlist-item-content-image short-version">
+                    <div class="boxlist-item-content-image">
                       <a href="room_detail.php" class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
                       </a>
@@ -536,9 +537,9 @@
                     </div> <!-- room-detail-page-item-content-copy -->
                     <div class="room-detail-page-item-content-detail">
                       <div class="boxlist-item-content-room-detail">
-                        <p class="detail-person">2 adults, 2 children</p>
+                        <p class="detail-person">2 adults, 2 children (max)</p>
                         <p class="detail-size">25 SQM</p>
-                        <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                        <p class="detail-bed">1 KING SIZE BED</p>
                       </div>
                     </div>
 
@@ -579,7 +580,7 @@
 
                   <div class="room-detail-page-item-box boxlist-item-box">
 
-                    <div class="boxlist-item-content-image short-version">
+                    <div class="boxlist-item-content-image">
                       <a href="room_detail.php" class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
                       </a>
@@ -591,9 +592,9 @@
                     </div>
                     <div class="room-detail-page-item-content-detail">
                       <div class="boxlist-item-content-room-detail">
-                        <p class="detail-person">2 adults, 2 children</p>
+                        <p class="detail-person">2 adults, 2 children (max)</p>
                         <p class="detail-size">25 SQM</p>
-                        <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                        <p class="detail-bed">1 KING SIZE BED</p>
                       </div>
                       
                     </div>
@@ -652,8 +653,8 @@
           <div class="detail-page-contact-info">
             <ul>
               <li><p class="room-size-sqft"><span>25 SQM</span></p></li>
-              <li><p class="room-size-person"><span>2 adults, 2 children</span></p></li>
-              <li><p class="room-bed-size">1 KING SIZE BED, 2 TWIN BEDs</p></li>
+              <li><p class="room-size-person"><span>2 adults, 2 children (Max)</span></p></li>
+              <li><p class="room-bed-size">2 TWIN BEDs</p></li>
               <li><p class="room-view">PARTIAL MOUNTAIN AND CITY VIEW</p></li>
             </ul>
 
@@ -783,11 +784,11 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="room-detail-page-item boxlist-item">
                     <div class="room-detail-page-item-box boxlist-item-box">
 
-                      <div class="boxlist-item-content-image short-version">
+                      <div class="boxlist-item-content-image">
                         <div class="manic-image-container">
                           <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
                         </div>
@@ -802,9 +803,9 @@
                           <div class="col-xs-12">
 
                             <div class="boxlist-item-content-room-detail">
-                              <p class="detail-person">2 adults, 2 children</p>
+                              <p class="detail-person">2 adults, 2 children (max)</p>
                               <p class="detail-size">25 SQM</p>
-                              <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                              <p class="detail-bed">1 KING SIZE BED</p>
                             </div>
 
                           </div>
@@ -831,7 +832,7 @@
                     </div> <!-- boxlist-item-box -->
 
                   </div> <!-- room-detail-page-item -->
-                </div> <!-- col-md-4 -->
+                </div>
 
                 <!--
                     ___ ____
@@ -842,11 +843,11 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="room-detail-page-item boxlist-item">
                     <div class="room-detail-page-item-box boxlist-item-box">
 
-                      <div class="boxlist-item-content-image short-version">
+                      <div class="boxlist-item-content-image">
                         <div class="manic-image-container">
                           <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
                         </div>
@@ -861,9 +862,9 @@
                           <div class="col-xs-12">
 
                             <div class="boxlist-item-content-room-detail">
-                              <p class="detail-person">2 adults, 2 children</p>
+                              <p class="detail-person">2 adults, 2 children (max)</p>
                               <p class="detail-size">25 SQM</p>
-                              <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                              <p class="detail-bed">1 KING SIZE BED</p>
                             </div>
 
                           </div>
@@ -900,12 +901,12 @@
 
                 -->
 
-                <div class="col-md-4">
+                <div class="col-sm-6 col-xs-12">
                   <div class="room-detail-page-item boxlist-item">
 
                     <div class="room-detail-page-item-box boxlist-item-box">
 
-                      <div class="boxlist-item-content-image short-version">
+                      <div class="boxlist-item-content-image">
                         <div class="manic-image-container">
                           <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
                         </div>
@@ -920,9 +921,9 @@
                           <div class="col-xs-12">
 
                             <div class="boxlist-item-content-room-detail">
-                              <p class="detail-person">2 adults, 2 children</p>
+                              <p class="detail-person">2 adults, 2 children (max)</p>
                               <p class="detail-size">25 SQM</p>
-                              <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                              <p class="detail-bed">1 KING SIZE BED</p>
                             </div>
 
                           </div>                          

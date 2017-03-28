@@ -104,13 +104,13 @@
     <div class="row">
       <div class="col-md-12">
 
-      <div id="room-index-page-item-container" class="boxlist-item-container">
+      <div id="room-index-page-item-container" class="boxlist-item-container mobile-height-version">
 
 
 
         <div class="row">
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
@@ -126,9 +126,9 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-person">2 adults, 2 children (max)</p>
                   <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                  <p class="detail-bed">1 KING SIZE BED</p>
                 </div>
 
                 
@@ -186,7 +186,7 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
@@ -202,9 +202,9 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-person">2 adults, 2 children (max)</p>
                   <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                  <p class="detail-bed">2 TWIN BEDs</p>
                 </div>
 
                 
@@ -262,7 +262,7 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
@@ -278,9 +278,9 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-person">2 adults, 2 children (max)</p>
                   <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                  <p class="detail-bed">1 KING SIZE BED</p>
                 </div>
 
                 
@@ -338,11 +338,8 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
-        </div> <!-- row -->
 
-        <div class="row">
-
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
@@ -358,9 +355,9 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children</p>
+                  <p class="detail-person">2 adults, 2 children (max)</p>
                   <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                  <p class="detail-bed">1 KING SIZE BED</p>
                 </div>
 
                 
@@ -418,7 +415,7 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
@@ -434,9 +431,9 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">3 adults, 2 children</p>
+                  <p class="detail-person">3 adults, 2 children (max)</p>
                   <p class="detail-size">35 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                  <p class="detail-bed">1 KING SIZE BED</p>
                 </div>
 
                 
@@ -494,7 +491,7 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
                 <div class="boxlist-item-content-image">
@@ -510,9 +507,9 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">3 adults, 2 children</p>
+                  <p class="detail-person">3 adults, 2 children (max)</p>
                   <p class="detail-size">35 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED, 2 TWIN BEDs</p>
+                  <p class="detail-bed">2 TWIN BEDs</p>
                 </div>
 
                 

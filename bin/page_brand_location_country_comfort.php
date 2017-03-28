@@ -390,8 +390,7 @@
 
 -->
 
-
-
+<!-- 
 <div class="scroll-target" data-value="banner"></div>
 <article id="brand-banner-section" class="visible-sm visible-xs">
   <div id="brand-banner" class="default-page-banner">
@@ -413,23 +412,14 @@
     <div class="default-page-banner-text">   
       <div class="banner-text">
         <h2>Stays made special</h2>
-        <!-- <img src="images/logo/brand-banner-text.svg" class="visible-md visible-lg">       -->
         <h1>Experience Local At <br class="visible-xs"> Sage Hotels</h1>
         <h3>What you want to do, see, eat & experience.</h3>
       </div>
-      <!-- <div class="scroll-down-cta visible-md visible-lg"></div> -->
       <div class="scroll-down-cta"></div>
-      
     </div>
   </div>
-  
-  <div class="default-page-banner-mobile-text">
-    <div class="visible-sm visible-xs">
-      <!-- <img src="images/logo/brand-banner-text.svg"> -->
-    </div>
-  </div>
-  
 </article>
+-->
 
 
 
@@ -463,12 +453,20 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div id="brand-all-location-content-box">
+  
+
+
+  <div id="brand-all-location-content-box">
+
+    <div class="main-title-bar"><h4>Australia</h4></div>
+
+    <div class="territory-title-bar"><h4>South Australia</h4></div>
+
+    <div class="sub-title-bar"><h4>Adelaide</h4></div>
+
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
-          <div class="main-title-bar"><h4>Australia</h4></div>
-          <div class="sub-title-bar"><h4>Adelaide</h4></div>
+        <div class="col-sm-6 col-xs-12">
           <div id="hoteladelaide" class="brand-all-location-content-box active">
             <div class="manic-image-container">
               <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
@@ -477,6 +475,9 @@
               <div class="col-md-12"><h4>Country Comfort Hotel Adelaide</h4></div>              
             </div>
           </div>          
+
+        </div>
+        <div class="col-sm-6 col-xs-12">
           <div id="adelaidemanor" class="brand-all-location-content-box">
             <div class="manic-image-container">
               <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
@@ -485,79 +486,15 @@
               <div class="col-md-12"><h4>Country Comfort Adelaide Manor</h4></div>              
             </div>
           </div>
-          <div class="sub-title-bar"><h4>Albany</h4></div>
-          <div id="amitymotelalbany" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>Armidale</h4></div>
-          <div id="armidale" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>Bundaberg</h4></div>
-          <div id="bundaberginternational" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Bundaberg International</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>North Coffs Harbour</h4></div>
-          <div id="coffsharbour" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>Cowra</h4></div>
-          <div id="cowra" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Cowra</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>Gin Gin</h4></div>
-          <div id="gingin" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Gin Gin</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>Casula</h4></div>
-          <div id="huntsliverpool" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Hunts Liverpool</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>Belmont</h4></div>          
-          <div id="intercityperth" class="brand-all-location-content-box">
-            <div class="manic-image-container">
-              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-            </div>
-            <div class="row box-title">
-              <div class="col-md-12"><h4>Country Comfort Inter City Perth</h4></div>              
-            </div>
-          </div>
-          <div class="sub-title-bar"><h4>Mt Gambier</h4></div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title-bar"><h4>Mt Gambier</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
           <div id="intermtgambier" class="brand-all-location-content-box">
             <div class="manic-image-container">
               <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
@@ -566,7 +503,113 @@
               <div class="col-md-12"><h4>Country Comfort Inter Mt Gambier</h4></div>              
             </div>
           </div>
-          <div class="sub-title-bar"><h4>Heatherbrae</h4></div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="territory-title-bar"><h4>Western Australia</h4></div>
+
+    <div class="sub-title-bar"><h4>Albany</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-6 col-xs-12">
+          <div id="amitymotelalbany" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title-bar"><h4>Belmont</h4></div>          
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div id="intercityperth" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Inter City Perth</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="territory-title-bar"><h4>New South Wales</h4></div>
+
+    <div class="sub-title-bar"><h4>Armidale</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div id="armidale" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="sub-title-bar"><h4>Casula</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div id="huntsliverpool" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Hunts Liverpool</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title-bar"><h4>Cowra</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div id="cowra" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Cowra</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title-bar"><h4>Heatherbrae</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
           <div id="newcastleairport" class="brand-all-location-content-box">
             <div class="manic-image-container">
               <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
@@ -575,7 +618,33 @@
               <div class="col-md-12"><h4>Country Comfort Newcastle Airport & Convention Centre</h4></div>              
             </div>
           </div>
-          <div class="sub-title-bar"><h4>Port Macquarie</h4></div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="sub-title-bar"><h4>North Coffs Harbour</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div id="coffsharbour" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title-bar"><h4>Port Macquarie</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
           <div id="portmacquarie" class="brand-all-location-content-box mobile-default-location">
             <div class="manic-image-container">
               <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
@@ -584,7 +653,58 @@
               <div class="col-md-12"><h4>Country Comfort Port Macquarie Water Edge Boutique</h4></div>              
             </div>
           </div>
-          <div class="sub-title-bar"><h4>Highfields</h4></div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="territory-title-bar"><h4>Queensland</h4></div>
+
+    <div class="sub-title-bar"><h4>Bundaberg</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div id="bundaberginternational" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Bundaberg International</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title-bar"><h4>Gin Gin</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
+          <div id="gingin" class="brand-all-location-content-box">
+            <div class="manic-image-container">
+              <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+            </div>
+            <div class="row box-title">
+              <div class="col-md-12"><h4>Country Comfort Gin Gin</h4></div>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-title-bar"><h4>Highfields</h4></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12">
           <div id="toowoomba" class="brand-all-location-content-box">
             <div class="manic-image-container">
               <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
@@ -597,5 +717,10 @@
         </div>
       </div>
     </div>
-  </div>  
+
+        
+
+
+  </div> <!-- brand-all-location-content-box -->
+
 </article>

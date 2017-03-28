@@ -387,6 +387,7 @@ sagewest.page.Hotel.prototype.others = function(){
     //   $("#home-location-content-carousel-text-"+nextSlide).addClass("active");
     // });        
 
+    /*
     $(".tnc").on("click", function(e){
       e.preventDefault();
       $(this).closest('.flip-container').addClass("hover");
@@ -396,6 +397,7 @@ sagewest.page.Hotel.prototype.others = function(){
       e.preventDefault();
       $(this).closest('.flip-container').removeClass("hover");
     });
+    */
 
     function myScroller()  {
         var scrollPos = $(window).scrollTop();
