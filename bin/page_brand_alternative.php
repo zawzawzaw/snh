@@ -590,6 +590,15 @@
 </article>
 
 
+<!--
+   ____  ____   ___  __  __  ___ _____ ___ ___  _   _   __  __  ___  ____ ___ _     _____
+  |  _ \|  _ \ / _ \|  \/  |/ _ \_   _|_ _/ _ \| \ | | |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |_) | |_) | | | | |\/| | | | || |  | | | | |  \| | | |\/| | | | |  _ \| || |   |  _|
+  |  __/|  _ <| |_| | |  | | |_| || |  | | |_| | |\  | | |  | | |_| | |_) | || |___| |___
+  |_|   |_| \_\\___/|_|  |_|\___/ |_| |___\___/|_| \_| |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
 <article id="page-brand-promotion-mobile-section" class="visible-sm visible-xs">
   <div class="container-fluid">
     <div class="row">
@@ -619,7 +628,7 @@
                     <div class="default-copy">
                       <h5><a href="offer_detail.php">City Escape</a></h5>
                       <h4>Sage Hotel Adelaide</h4>
-                      <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
+                      <p class="minimize" data-length="60">Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                     </div>
                   </div>
 
@@ -648,7 +657,7 @@
                     <div class="default-copy">
                       <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
                       <h4>Country comfort newcastle airport & convention centre</h4>
-                      <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                      <p class="minimize" data-length="60">Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                     </div>
                   </div>
 
@@ -676,7 +685,7 @@
                     <div class="default-copy">
                       <h5>Ascot Horse Racing</h5>
                       <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>
-                      <p>Complimentary upgrade to Executive Wing</p>
+                      <p class="minimize" data-length="60">Complimentary upgrade to Executive Wing</p>
                     </div>
                   </div>
 
@@ -687,9 +696,6 @@
                 </div>
               </div>
             </div>
-
-
-
 
           </div>
         </div>
@@ -790,10 +796,33 @@
   </div>
   <div id="page-brand-map" class="default-version"></div>
   <div class="default_marker" data-zoom="4" data-location="Australia" data-lat="-25.783190" data-lng="133.583079"></div>
-  <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="Sage West Perth" data-lat="-31.947888" data-lng="115.8364702" data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
-  <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="James Street" data-lat="-33.3220933" data-lng="116.4979821" data-place-id="EihKYW1lcyBTdCwgTm9ydGhicmlkZ2UgV0EgNjAwMywgQXVzdHJhbGlh" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
-  <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="Wollongong" data-lat="-34.4282346" data-lng="150.8842032" data-place-id="ChIJe1YLH6UZE2sRIOcyFmh9AQU" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
-  <div class="markers" data-pin-icon="images/icons/map-pin.png" data-location="Adelaide" data-lat="-34.9256023" data-lng="138.583259" data-place-id="ChIJ56QDo9fOsGoRUz4cTlhwjbM" data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='#'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='#'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-pin-icon="images/icons/map-pin.png" 
+    data-location="SAGE WEST PERTH" 
+    data-lat="-31.947794" 
+    data-lng="115.8364702" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-pin-icon="images/icons/map-pin.png" 
+    data-location="SAGE HOTEL ADELAIDE" 
+    data-lat="-34.935157" 
+    data-lng="138.604256" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=208 South Terrace, Adelaide, SA 5000, Australia'><h4>SAGE HOTEL ADELAIDE</h4><p>208 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.adelaide@sage-hotels.com'>reservations.adelaide@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-pin-icon="images/icons/map-pin.png" 
+    data-location="SAGE HOTEL JAMES STREET" 
+    data-lat="-27.457871" 
+    data-lng="153.041832" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=70 James Street, Fortitude Valley, QLD 4006, Australia'><h4>SAGE HOTEL JAMES STREET</h4><p>70 James Street, Fortitude Valley, QLD 4006, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.jamesst@sage-hotels.com'>reservations.jamesst@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" 
+    data-pin-icon="images/icons/map-pin.png" 
+    data-location="SAGE HOTEL WOLLONGONG" 
+    data-lat="-34.428922" 
+    data-lng="150.901022" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=60-62 Harbour St, Wollongong, NSW 2500, Australia'><h4>SAGE HOTEL WOLLONGONG</h4><p>60-62 Harbour St, Wollongong, NSW 2500, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4201 2111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.wollongong@sage-hotels.com'>reservations.wollongong@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 </article>
 
 <!--

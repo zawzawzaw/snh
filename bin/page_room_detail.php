@@ -170,7 +170,7 @@
                 <div class="col-md-7"><h4 class="room-bed-size room-detail">2 TWIN BEDs</h4></div>
               </div>
               <div class="row">
-                <div class="col-md-5"><h4 class="room-size-person room-detail">2 adults, 2 children (max)</h4></div>
+                <div class="col-md-5"><h4 class="room-size-person room-detail">2 adults, 2 children (max.)</h4></div>
                 <div class="col-md-7"><h4 class="room-view room-detail">PARTIAL MOUNTAIN AND CITY VIEW</h4></div>
               </div>
             </div>
@@ -482,7 +482,7 @@
                     </div>
                     <div class="room-detail-page-item-content-detail">
                       <div class="boxlist-item-content-room-detail">
-                        <p class="detail-person">2 adults, 2 children (max)</p>
+                        <p class="detail-person">2 adults, 2 children (max.)</p>
                         <p class="detail-size">25 SQM</p>
                         <p class="detail-bed">1 KING SIZE BED</p>
                       </div>
@@ -537,7 +537,7 @@
                     </div> <!-- room-detail-page-item-content-copy -->
                     <div class="room-detail-page-item-content-detail">
                       <div class="boxlist-item-content-room-detail">
-                        <p class="detail-person">2 adults, 2 children (max)</p>
+                        <p class="detail-person">2 adults, 2 children (max.)</p>
                         <p class="detail-size">25 SQM</p>
                         <p class="detail-bed">1 KING SIZE BED</p>
                       </div>
@@ -592,7 +592,7 @@
                     </div>
                     <div class="room-detail-page-item-content-detail">
                       <div class="boxlist-item-content-room-detail">
-                        <p class="detail-person">2 adults, 2 children (max)</p>
+                        <p class="detail-person">2 adults, 2 children (max.)</p>
                         <p class="detail-size">25 SQM</p>
                         <p class="detail-bed">1 KING SIZE BED</p>
                       </div>
@@ -653,7 +653,7 @@
           <div class="detail-page-contact-info">
             <ul>
               <li><p class="room-size-sqft"><span>25 SQM</span></p></li>
-              <li><p class="room-size-person"><span>2 adults, 2 children (Max)</span></p></li>
+              <li><p class="room-size-person"><span>2 adults, 2 children (Max.)</span></p></li>
               <li><p class="room-bed-size">2 TWIN BEDs</p></li>
               <li><p class="room-view">PARTIAL MOUNTAIN AND CITY VIEW</p></li>
             </ul>
@@ -803,7 +803,7 @@
                           <div class="col-xs-12">
 
                             <div class="boxlist-item-content-room-detail">
-                              <p class="detail-person">2 adults, 2 children (max)</p>
+                              <p class="detail-person">2 adults, 2 children (max.)</p>
                               <p class="detail-size">25 SQM</p>
                               <p class="detail-bed">1 KING SIZE BED</p>
                             </div>
@@ -862,7 +862,7 @@
                           <div class="col-xs-12">
 
                             <div class="boxlist-item-content-room-detail">
-                              <p class="detail-person">2 adults, 2 children (max)</p>
+                              <p class="detail-person">2 adults, 2 children (max.)</p>
                               <p class="detail-size">25 SQM</p>
                               <p class="detail-bed">1 KING SIZE BED</p>
                             </div>
@@ -921,7 +921,7 @@
                           <div class="col-xs-12">
 
                             <div class="boxlist-item-content-room-detail">
-                              <p class="detail-person">2 adults, 2 children (max)</p>
+                              <p class="detail-person">2 adults, 2 children (max.)</p>
                               <p class="detail-size">25 SQM</p>
                               <p class="detail-bed">1 KING SIZE BED</p>
                             </div>

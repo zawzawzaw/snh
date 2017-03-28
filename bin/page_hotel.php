@@ -209,7 +209,7 @@
               </div>
 
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
-                <p class="detail-person">2 adults, 2 children (max)</p>
+                <p class="detail-person">2 adults, 2 children (max.)</p>
                 <p class="detail-size">25 SQM</p>
                 <p class="detail-bed">1 King size</p>
               </div>
@@ -265,7 +265,7 @@
               </div>
 
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
-                <p class="detail-person">2 adults, 2 children (max)</p>
+                <p class="detail-person">2 adults, 2 children (max.)</p>
                 <p class="detail-size">25 SQM</p>
                 <p class="detail-bed">2 Twin Beds</p>
               </div>
@@ -321,7 +321,7 @@
               </div>
 
               <div class="hotel-page-item-detail boxlist-item-content-room-detail">
-                <p class="detail-person">2 adults, 2 children (max)</p>
+                <p class="detail-person">2 adults, 2 children (max.)</p>
                 <p class="detail-size">25 SQM</p>
                 <p class="detail-bed">1 King size</p>
               </div>
@@ -982,7 +982,7 @@
               <div class="hotel-attraction-content-copy">
                 <div class="default-copy">
                   <h5><a href="javascript:void(0);">Subiaco Farmers Market</a></h5>
-                  <p>Opens every Saturday from 8am – 12:30pm, you can find specialty local produce, seafood...</p>
+                  <p>Sabiaco is best known for its unique old village charm with cafes, restaurants, boutique fashion shopping and jewellery. The market opens every Saturday from 8am – 12:30pm, you can find specialty local produce, seafood, meats, breads and many more delicious items.</p>
                 </div>
               </div>
 
@@ -1031,7 +1031,7 @@
               <div class="hotel-attraction-content-copy">
                 <div class="default-copy">
                   <h5><a href="javascript:void(0);">Leederville Farmers Market</a></h5>
-                  <p>Boasting a rich café, restaurant and pub culture, stop by Leederville, Highgate and Mount...</p>
+                  <p>Opens every Sunday from 8am – 12:30pm, here is a celebration of West Australian produce. You can sample and buy the finest food farmers and local producers have to offer.</p>
                 </div>
               </div>
 
@@ -1056,7 +1056,7 @@
               <div class="hotel-attraction-content-copy">
                 <div class="default-copy">
                   <h5><a href="javascript:void(0);">High St Dispensary</a></h5>
-                  <p>Dispensing all kinds of yummy items, this is THE place to go to in Freo. For those who don’t...</p>
+                  <p>Dispensing all kinds of yummy items, this is THE place to go to in Freo. For those who don’t drink coffee, a Turmeric Chai is highly recommended.</p>
                 </div>
               </div>
 
@@ -1082,7 +1082,7 @@
               <div class="hotel-attraction-content-copy">
                 <div class="default-copy">
                   <h5><a href="javascript:void(0);">Linton & Kay</a></h5>
-                  <p>Check out the highly recommended Linton & Kay art galleries at Mandoon Estate...</p>
+                  <p>Check out the highly recommended Linton & Kay art galleries at Mandoon Estate.</p>
                 </div>
               </div>
 
@@ -1107,7 +1107,7 @@
               <div class="hotel-attraction-content-copy">
                 <div class="default-copy">
                   <h5><a href="javascript:void(0);">Yelo</a></h5>
-                  <p>If you’re exploring the North Beach and are on the go, pop in and grab a quick takeaway...</p>
+                  <p>If you’re exploring the North Beach and are on the go, pop in and grab a quick takeaway. This rustic surf shack is packed with locals and tourists alike and has fantastic views of the Indian Ocean.</p>
                 </div>
               </div>
 

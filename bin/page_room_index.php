@@ -110,6 +110,16 @@
 
         <div class="row">
 
+
+          <!--
+              ___  _
+             / _ \/ |
+            | | | | |
+            | |_| | |
+             \___/|_|
+
+          -->
+
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
@@ -126,7 +136,7 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children (max)</p>
+                  <p class="detail-person">2 adults, 2 children (max.)</p>
                   <p class="detail-size">25 SQM</p>
                   <p class="detail-bed">1 KING SIZE BED</p>
                 </div>
@@ -186,6 +196,15 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
+          <!--
+              ___ ____
+             / _ \___ \
+            | | | |__) |
+            | |_| / __/
+             \___/_____|
+
+          -->
+
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
@@ -202,7 +221,7 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children (max)</p>
+                  <p class="detail-person">2 adults, 2 children (max.)</p>
                   <p class="detail-size">25 SQM</p>
                   <p class="detail-bed">2 TWIN BEDs</p>
                 </div>
@@ -262,6 +281,15 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
+          <!--
+              ___ _____
+             / _ \___ /
+            | | | ||_ \
+            | |_| |__) |
+             \___/____/
+
+          -->
+
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
@@ -278,7 +306,7 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children (max)</p>
+                  <p class="detail-person">2 adults, 2 children (max.)</p>
                   <p class="detail-size">25 SQM</p>
                   <p class="detail-bed">1 KING SIZE BED</p>
                 </div>
@@ -338,6 +366,14 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
+          <!--
+              ___  _  _
+             / _ \| || |
+            | | | | || |_
+            | |_| |__   _|
+             \___/   |_|
+
+          -->
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
@@ -355,9 +391,9 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">2 adults, 2 children (max)</p>
+                  <p class="detail-person">2 adults, 2 children (max.)</p>
                   <p class="detail-size">25 SQM</p>
-                  <p class="detail-bed">1 KING SIZE BED</p>
+                  <p class="detail-bed">2 TWIN BEDs</p>
                 </div>
 
                 
@@ -415,6 +451,15 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
+          <!--
+              ___  ____
+             / _ \| ___|
+            | | | |___ \
+            | |_| |___) |
+             \___/|____/
+
+          -->
+
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
@@ -431,7 +476,7 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">3 adults, 2 children (max)</p>
+                  <p class="detail-person">3 adults, 2 children (max.)</p>
                   <p class="detail-size">35 SQM</p>
                   <p class="detail-bed">1 KING SIZE BED</p>
                 </div>
@@ -491,6 +536,15 @@
             </div> <!-- room-index-page-item -->
           </div> <!-- col-md-4 -->
 
+          <!--
+              ___   __
+             / _ \ / /_
+            | | | | '_ \
+            | |_| | (_) |
+             \___/ \___/
+
+          -->
+
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="room-index-page-item boxlist-item">
               <div class="room-index-page-item-box boxlist-item-box">
@@ -507,7 +561,7 @@
                 </div>
 
                 <div class="room-index-page-item-detail boxlist-item-content-room-detail">
-                  <p class="detail-person">3 adults, 2 children (max)</p>
+                  <p class="detail-person">3 adults, 2 children (max.)</p>
                   <p class="detail-size">35 SQM</p>
                   <p class="detail-bed">2 TWIN BEDs</p>
                 </div>
@@ -580,201 +634,6 @@
 </article>
 
 
-
-
-<!-- 
-<article id="detail-list-section">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div id="default-room-content">
-        <div class="col-md-4">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
-              </div>
-              <div class="box-content-text">
-                <h1>Standard Room</h1>
-                <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-                <h4 class="room-size-sqft room-size">25 SQM</h4>
-
-                <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-                
-                <div class="cta-and-price-container">
-                  <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                  <div class="book-now-container">
-                    <a href="#" class="square-cta book-now">Book now</a>
-                  </div>
-                  <div class="price-container">
-                    <span>per night</span>
-                    <div class="price">
-                      <span class="currency">AUD</span><span class="price">$119</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
-              </div>
-              <h1>Standard Twin Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
-
-              <p>Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$119</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
-              </div>
-              <h1>Superior Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-04.png" alt="">
-              </div>
-              <h1>Superior Twin Room</h1>
-              <h4 class="room-size-person room-size">2 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">25 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$135</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-05.png" alt="">
-              </div>
-              <h1>Deluxe Room</h1>
-              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">35 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 hidden-sm hidden-xs">
-          <div class="default-room-content-box">
-            <div class="box-content">
-              <div class="manic-image-container">
-                <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-06.png" alt="">
-              </div>
-              <h1>Deluxe Twin Room</h1>
-              <h4 class="room-size-person room-size">3 adults, 2 children</h4>
-              <h4 class="room-size-sqft room-size">35 SQM</h4>
-
-              <p>These rooms offer amazing views of the Perth Skyline or Kings Park. Refresh yourself under the dual shower heads and revitalizing SOAK amenities, then drift away on a king size custom mattress to drift off on.</p>
-              
-              <div class="cta-and-price-container">
-                <a href="room_detail.php" class="arrow-cta view-room-details">View room details</a>
-                <div class="book-now-container">
-                  <a href="#" class="square-cta book-now">Book now</a>
-                </div>
-                <div class="price-container">
-                  <span>per night</span>
-                  <div class="price">
-                    <span class="currency">AUD</span><span class="price">$235</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
--->
-
-
-
-
-
-
-
-<!-- images_cms/room/room-index-standard-room.jpg
-images_cms/room/room-index-standard-twin-room.jpg
-images_cms/room/room-index-superior-room.jpg
-images_cms/room/room-index-superior-twin-room.jpg
-images_cms/room/room-index-deluxe-room.jpg
-images_cms/room/room-index-deluxe-twin-room.jpg
-images_cms/room/room-index-standard-room-mobile.jpg
-images_cms/room/room-index-standard-twin-room-mobile.jpg
-images_cms/room/room-index-superior-room-mobile.jpg
-images_cms/room/room-index-superior-twin-room-mobile.jpg
-images_cms/room/room-index-deluxe-room-mobile.jpg
-images_cms/room/room-index-deluxe-twin-room-mobile.jpg -->
 
 
 <div id="default-footer-spacer"></div>
