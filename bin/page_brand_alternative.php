@@ -179,8 +179,8 @@
     </div>
 
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
 
         <div id="brand-all-location-slider-container-version-02">
           <div id="brand-all-location-slider-version-02">
@@ -188,40 +188,26 @@
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_02.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <div class="white-bg"></div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <h4>Newcastle</h4>
-                    <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                  </div>
-                  <div class="col-md-7">
-                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  </div>
-                </div>
+                <h4>Newcastle</h4>
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
               </div>
             </div>
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_03.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <div class="white-bg"></div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <h4>wollongong</h4>
-                    <h2><a href="hotel.php">Sage hotel Wollongong</a></h2>
-                  </div>
-                  <div class="col-md-7">
-                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  </div>
-                </div>
+                <h4>wollongong</h4>
+                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
               </div>
             </div>
 
@@ -232,80 +218,52 @@
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_04.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <div class="white-bg"></div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <h4>Newcastle</h4>
-                    <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                  </div>
-                  <div class="col-md-7">
-                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  </div>
-                </div>
+                <h4>Newcastle</h4>
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
               </div>
             </div>
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_02.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <div class="white-bg"></div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <h4>wollongong</h4>
-                    <h2><a href="hotel.php">Sage hotel Wollongong</a></h2>
-                  </div>
-                  <div class="col-md-7">
-                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  </div>
-                </div>
+                <h4>wollongong</h4>
+                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
               </div>
             </div>
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_03.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <div class="white-bg"></div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <h4>Newcastle</h4>
-                    <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                  </div>
-                  <div class="col-md-7">
-                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  </div>
-                </div>
+                <h4>Newcastle</h4>
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
               </div>
             </div>
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_01.jpg">
+                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_04.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <div class="white-bg"></div>
-                <div class="row">
-                  <div class="col-md-5">
-                    <h4>wollongong</h4>
-                    <h2><a href="hotel.php">Sage hotel Wollongong</a></h2>
-                  </div>
-                  <div class="col-md-7">
-                    <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
-                  </div>
-                </div>
+                <h4>wollongong</h4>
+                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
               </div>
             </div>
 
@@ -326,10 +284,10 @@
     </div>
 
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
         <div id="brand-all-location-cta-container-version-02">
-          <a href="javascript:void(0);" class="square-cta">View all hotels</a>
+          <a href="javascript:void(0);" class="square-cta">View all Locations</a>
         </div>
       </div>
     </div>
@@ -362,28 +320,9 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
                 <h4>Newcastle</h4>
-              </div>
-            </div>
-
-            <div class="brand-location-slider-item-mobile">
-              <a href="hotel.php" class="manic-image-container">
-                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
-              </a>
-              <div class="brand-location-slider-item-copy-mobile">
-                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
-                <h4>Wollongong</h4>
-              </div>
-            </div>
-
-            <div class="brand-location-slider-item-mobile">
-              <a href="hotel.php" class="manic-image-container">
-                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
-              </a>
-              <div class="brand-location-slider-item-copy-mobile">
                 <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <h4>Newcastle</h4>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
               </div>
             </div>
 
@@ -392,8 +331,31 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
                 <h4>Wollongong</h4>
+                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h4>Newcastle</h4>
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h4>Wollongong</h4>
+                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
               </div>
             </div>
 
@@ -403,7 +365,7 @@
         </div>
         
         <div id="brand-all-location-cta-container-version-02-mobile">
-          <a href="brand_location.php" class="square-cta">View all hotels</a>
+          <a href="brand_location.php" class="square-cta">View all Locations</a>
         </div>
 
 
@@ -628,7 +590,7 @@
                     <div class="default-copy">
                       <h5><a href="offer_detail.php">City Escape</a></h5>
                       <h4>Sage Hotel Adelaide</h4>
-                      <p class="minimize" data-length="60">Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
+                      <p class="minimize" data-length="80">Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                     </div>
                   </div>
 
@@ -657,7 +619,7 @@
                     <div class="default-copy">
                       <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
                       <h4>Country comfort newcastle airport & convention centre</h4>
-                      <p class="minimize" data-length="60">Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                      <p class="minimize" data-length="80">Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                     </div>
                   </div>
 
@@ -685,7 +647,7 @@
                     <div class="default-copy">
                       <h5>Ascot Horse Racing</h5>
                       <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>
-                      <p class="minimize" data-length="60">Complimentary upgrade to Executive Wing</p>
+                      <p class="minimize" data-length="80">Complimentary upgrade to Executive Wing</p>
                     </div>
                   </div>
 

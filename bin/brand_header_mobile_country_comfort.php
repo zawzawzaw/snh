@@ -29,10 +29,12 @@
 
     <nav id="mobile-menu">
       <ul>
-        <li><a href="hotel.php">Adelaide</a></li>
-        <li><a href="hotel.php">brisbane</a></li>
-        <li><a href="hotel.php">west perth</a></li>
-        <li><a href="hotel.php">wollongong</a></li>
+        <li><a href="hotel.php">Western Australia </a></li>
+        <li><a href="hotel.php">Northern Australia </a></li>
+        <li><a href="hotel.php">South Australia</a></li>
+        <li><a href="hotel.php">Queensland</a></li>
+        <li><a href="hotel.php">New South Wales </a></li>
+        <li><a href="hotel.php">Victoria</a></li>
         
         <!-- 
         <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>

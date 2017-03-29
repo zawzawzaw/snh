@@ -678,7 +678,7 @@
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
                       <h5><a href="offer_detail.php">City Escape</a></h5>
-                      <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
+                      <p class="minimize" data-length="80">Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
                     </div>
                   </div>
 
@@ -706,7 +706,7 @@
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
                       <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
-                      <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                      <p class="minimize" data-length="80">Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
                     </div>
                   </div>
 
@@ -734,7 +734,7 @@
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
                       <h5><a href="offer_detail.php">Ascot Horse Racing</a></h5>
-                      <p>Complimentary upgrade to Executive Wing</p>
+                      <p class="minimize" data-length="80">Complimentary upgrade to Executive Wing</p>
                     </div>
                   </div>
 
