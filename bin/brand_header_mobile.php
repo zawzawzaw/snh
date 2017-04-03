@@ -113,6 +113,11 @@
               <option value="10">10</option>
             </select>
           </div>
+          
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+
         </div>
       </div>
       <div class="input-box">

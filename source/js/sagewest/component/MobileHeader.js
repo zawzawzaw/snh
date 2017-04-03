@@ -163,7 +163,8 @@ sagewest.component.MobileHeader.prototype.create_menu = function() {
           this.calendar_close_menu();
       }        
   }.bind(this));
-
+  
+  /*
   $(".hotel-dropdown").on("mouseup change", function(e){
     var selectedVal = $(this).val();
 
@@ -171,6 +172,7 @@ sagewest.component.MobileHeader.prototype.create_menu = function() {
       $("#hotel option[value='"+selectedVal+"']").html(selectedVal.substring(0, 24) + "...");
     }
   });
+  */
 
 
 

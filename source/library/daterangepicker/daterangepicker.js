@@ -415,6 +415,7 @@
             .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))
             .on('mousedown.daterangepicker', 'td.available', $.proxy(this.clickDate, this))
             .on('mouseenter.daterangepicker', 'td.available', $.proxy(this.hoverDate, this))
+            .on('mouseleave.daterangepicker', $.proxy(this.unHoverDate, this))
             .on('mouseleave.daterangepicker', 'td.available', $.proxy(this.updateFormInputs, this))
             .on('change.daterangepicker', 'select.yearselect', $.proxy(this.monthOrYearChanged, this))
             .on('change.daterangepicker', 'select.monthselect', $.proxy(this.monthOrYearChanged, this))
@@ -746,7 +747,7 @@
                 dateHtml = monthHtml + yearHtml;
             }
 
-            html += '<th colspan="5" class="month">' + dateHtml + '</th>';
+            html += '<th colspan="5" class="month" id="hover-month">' + dateHtml + '</th>';
             // if ((!maxDate || maxDate.isAfter(calendar.lastDay)) && (!this.linkedCalendars || side == 'right' || this.singleDatePicker)) {
                 html += '<th class="next available"><i class="fa fa-' + arrow.right + ' glyphicon glyphicon-' + arrow.right + '"></i></th>';
             // } else {
@@ -1252,6 +1253,14 @@
             this.updateCalendars();
         },
 
+        unHoverDate: function(e){
+            var date = moment();
+
+            this.container.find('#hover-month').html(date.format('MMMM'));
+            this.container.find('#hover-day').html(date.format('DD'));
+            this.container.find('#hover-weekname').html(date.format('dddd'));
+        }, 
+
         hoverDate: function(e) {            
 
             //ignore mouse movements while an above-calendar text input has focus
@@ -1274,6 +1283,7 @@
                 this.container.find('input[name=daterangepicker_end]').val(date.format(this.locale.format));
             }
 
+            this.container.find('#hover-month').html(date.format('MMMM'));
             this.container.find('#hover-day').html(date.format('DD'));
             this.container.find('#hover-weekname').html(date.format('dddd'));
 

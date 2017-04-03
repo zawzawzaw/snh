@@ -119,4 +119,22 @@
       </div>
     </div>
   </div>
+
+  <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-bottom-bar">
+            <ul>
+              <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
+              <li><p>0800 480 274 (Within New Zealand)</p></li>
+            </ul>
+          </div> <!-- #hotel-footer-bottom-bar -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 </footer> <!-- #desktop-footer

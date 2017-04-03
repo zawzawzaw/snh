@@ -79,10 +79,8 @@
             <div class="row">
               <div class="col-md-7 col-sm-5">
                 <div class="detail-list-item-image">
-                  <a href="javascript:void(0);">
-                    <div class="manic-image-container">
-                      <img src="" data-image-desktop="images_cms/events/events-wedding.jpg">
-                    </div>
+                  <a href="javascript:void(0);" class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/events/events-wedding.jpg">
                   </a>
                 </div>
               </div>
@@ -118,13 +116,34 @@
           <div class="detail-list-item last-version">
             <div class="row">
               <div class="col-md-7 col-sm-5">
+
+                <!-- this is the regular image -->
+                <!-- 
                 <div class="detail-list-item-image">
-                  <a href="javascript:void(0);">
-                    <div class="manic-image-container">
-                      <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
-                    </div>
+                  <a href="javascript:void(0);" class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
                   </a>
                 </div>
+                -->
+                
+                <!-- this is a slider image -->
+                <div class="detail-list-item-image-slider">
+                  <a href="javascript:void(0);" class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
+                  </a>
+                  <a href="javascript:void(0);" class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
+                  </a>
+                  <a href="javascript:void(0);" class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
+                  </a>
+                  <a href="javascript:void(0);" class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
+                  </a>
+                </div>
+
+
+
               </div>
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">

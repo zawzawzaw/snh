@@ -1,0 +1,1398 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    
+<title>Sage</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
+
+<link rel="icon" href="images/icons/favicon.png">
+
+<!-- Critical Css -->
+<link rel="stylesheet" type="text/css" href="css/critical_style.css">
+
+<!-- Social Tags -->
+<!-- <meta content="Sage West Perth" property="og:title"/>
+<meta content="http://sg.sagewestperth.com/images/facebook-share-image.png" property="og:image"/>
+<meta content="Sage West Perth" property="og:site_name"/>
+<meta content="http://sg.sagewestperth.com" property="og:url"/>
+<meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
+
+  <!-- move these to the at the bottom of the body -->
+  
+
+  <!-- Web Fonts -->
+
+  <!-- open-sans -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet">
+  
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
+  </head>
+
+
+  <body class="hotel reviews-page permanent-scrolled">
+
+    <div id="page-preloader">
+      <div id="page-preloader-line-01"></div>
+      <div id="page-preloader-line-02">
+        <div class="line-a"></div>
+        <div class="line-b"></div>
+      </div>
+    </div>
+
+    <!-- mobile header is outside the page wrapper -->
+    <!-- <div id="mobile-header-spacer"></div> -->
+<header id="mobile-header">
+
+  <div class="mobile-header-bg"></div>
+
+  <div id="mobile-header-content-container">
+    <div id="mobile-header-close-btn"><span>Menu</span></div>
+    <div id="mobile-header-open-btn"></div>
+
+    <a href="hotel.php" id="mobile-header-logo">
+      <img src="images/logo/sage-west-logo.svg">
+    </a>  
+  
+    <a href="index.php" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+  </div>
+
+</header> <!-- #mobile-header -->
+
+<header id="mobile-header-expanded">
+
+  <div id="mobile-header-menu-container">
+    <div id="destination-indicator" class="link-to-location">
+      <a href="brand_location.php"><p>Select another location:</p></a>
+    </div>
+    <nav id="mobile-menu" class="has-mobile-sub-menu">
+      <span>sage west perth</span>
+      <ul>
+        <li><a href="room_index.php">rooms</a></li>
+        <li><a href="offer_index.php">offers</a></li>
+        <li><a href="dining_index.php">dining</a></li>
+        <li class="has-subnav">
+          <a href="facilities.php">facilities</a>
+          <ul class="mobile-sub-menu">
+            <li><a href="facilities.php#lounge">Lounge</a></li>
+            <li><a href="facilities.php#gym">Gym</a></li>
+            <li><a href="facilities.php#spa">Spa</a></li>
+          </ul>
+          <div class="expand-btn"></div>
+        </li>
+        <li><a href="gallery.php">gallery</a></li>
+        <li><a href="activities.php">activities</a></li>
+        <li><a href="#">reviews</a></li>
+        <li><a href="events.php">events</a></li>
+        <li><a href="contact.php">Location</a></li>
+      </ul>
+    </nav>
+    <div id="brand-link" class="menu-link">
+      <a href="#"><span>Our Brands</span></a>
+    </div>
+    <div id="group-link" class="menu-link">
+      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    </div>
+  </div> <!-- #mobile-header-menu-container -->
+
+  <div id="mobile-header-booking-form">
+    <form action="">
+      <div class="input-box">
+        <label for="hotel">Select Hotel</label>
+        <div class="dropdown">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
+            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+        <div class="date-input">
+          <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
+        </div>
+      </div>
+      <div class="input-box row">
+        <div class="input-box-col-1 col-sm-6 col-xs-6">
+          <label for="">Adults</label>
+          <div class="dropdown">
+            <select name="adults" id="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box-col-2 col-sm-6 col-xs-6">
+          <label for="">Children</label>
+          <div class="dropdown">
+            <select name="children" id="children">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="">Promotion Code</label>
+        <input type="text" name="promo_code">
+      </div>
+      <div class="input-box">
+        <input type="submit" class="check-availability square-cta" value="check availability">
+      </div>
+    </form>
+  </div>
+  <div id="mobile-header-booking-calendar"></div>
+
+</header> <!-- #mobile-header-expanded -->        
+    <div id="page-wrapper">
+      <div id="page-wrapper-content">
+
+        <!-- 
+   ____  _____ ____  _  _______ ___  ____    _   _ _____    _    ____  _____ ____  
+  |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \  | | | | ____|  / \  |  _ \| ____|  _ \ 
+  | | | |  _| \___ \| ' /  | || | | | |_) | | |_| |  _|   / _ \ | | | |  _| | |_) |
+  | |_| | |___ ___) | . \  | || |_| |  __/  |  _  | |___ / ___ \| |_| | |___|  _ < 
+  |____/|_____|____/|_|\_\ |_| \___/|_|     |_| |_|_____/_/   \_\____/|_____|_| \_\
+                                           
+-->
+
+<header id="desktop-header">
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div id="desktop-header-menu-logo-container">
+          <div id="desktop-header-logo-container">
+            <a href="#" id="desktop-menu-bar" class="open">
+              <img src="images/icons/menu-bar.svg" alt="">     
+              <span>Menu</span>       
+            </a>
+            <a href="hotel.php" id="desktop-header-logo">
+              <img src="images/logo/sage-west-logo.svg">            
+            </a>
+          </div>          
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div id="desktop-header-nav">
+          <nav>
+            <ul>
+              <li><a href="hotel.php">Home</a></li>
+              <li><a href="room_index.php">Rooms</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="activities.php">Activities</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="contact.php">Location</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>  
+      <div class="col-md-2">
+        <div id="weather-container">
+          <div class="current-location-container">
+            <h6 class="current-country">Australia</h6>
+            <span class="current-location">West Perth</span>
+          </div>
+          <div class="seperator"></div>
+          <div class="time-weather-container">
+            <ul>
+              <li><span class="time">2:24<sup class="ampm">pm</sup></span></li>
+              <li><span class="temperature">23°C</span></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" id="book-now"><span>Book Now</span></a>        
+      </div>
+    </div>
+  </div>
+
+  <div id="desktop-header-booking-form">
+      <form action="">
+        <div class="input-box">
+          <label for="hotel">Select Hotel</label>
+          <div class="dropdown">
+            <select name="hotel" id="hotel" class="hotel-dropdown">
+              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+          <div class="date-input">
+            <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
+          </div>
+        </div>
+        <div class="input-box row">
+          <div class="input-box-col-1 col-md-6">
+            <label for="">Adults</label>
+            <div class="dropdown">
+              <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-box-col-2 col-md-6">
+            <label for="">Children</label>
+            <div class="dropdown">
+              <select name="children" id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="">Promotion Code</label>
+          <input type="text" name="promo_code">
+        </div>
+        <div class="input-box">
+          <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
+        </div>
+      </form>
+  </div>
+  <div id="desktop-header-booking-calendar">
+    
+  </div>
+</header> <!-- #desktop-header -->
+
+<div id="desktop-header-menu">          
+
+  <div id="destination-indicator">
+    <p>Select a destination:</p>
+  </div>
+  <div id="country-indicator">
+    <p>Australia</p>
+  </div>
+
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">Adelaide</a></li>
+      <li><a href="hotel.php">brisbane</a></li>
+      <li><a href="hotel.php">west perth</a></li>
+      <li><a href="hotel.php">wollongong</a></li>
+    </ul>    
+  </div>
+
+  <!-- 
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">sage adelaide</a></li>
+      <li><a href="hotel.php">Sage James Street Brisbane</a></li>
+      <li><a href="hotel.php">sage west perth</a></li>
+      <li><a href="hotel.php">sage wollongong</a></li>
+    </ul>
+  </div>
+  -->
+  
+  <div id="brand-link" class="menu-link">
+    <a href="#"><span>Our Brands</span></a>
+  </div>
+  <div id="group-link" class="menu-link">
+    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+  </div>
+</div>
+        <!--
+           ____ _____  _    ____ _____
+          / ___|_   _|/ \  |  _ \_   _|
+          \___ \ | | / _ \ | |_) || |
+           ___) || |/ ___ \|  _ < | |
+          |____/ |_/_/   \_\_| \_\|_|
+
+        -->
+
+
+
+
+        page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
+<div id="page-wrapper-content-min-height">
+
+
+  <div id="default-header-spacer" class="visible-md visible-lg"></div>
+  <div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
+
+
+
+  <!-- this will select the header link with the following value -->
+  <div id="desktop-header-selector" data-value="reviews.php"></div>
+
+
+  <!--
+     ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
+    | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
+    |  _ \| |_) |  _|   / _ \ | | | | |   | |_) | | | | |\/| |  _ \
+    | |_) |  _ <| |___ / ___ \| |_| | |___|  _ <| |_| | |  | | |_) |
+    |____/|_| \_\_____/_/   \_\____/ \____|_| \_\\___/|_|  |_|____/
+
+  -->
+
+  <!-- used in index & inner pages -->
+
+  <article class="default-breadcrumb-section visible-md visible-lg">
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="default-breadcrumb">
+            <ul>
+              <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
+              <li><a href="brand_alternative.php">sage hotels</a></li>
+              <li><a href="hotel.php">sage west perth</a></li>
+              <li>Reviews</li>
+            </ul>
+          </div> <!-- default-breadcrumb -->
+
+        </div>
+      </div>
+    </div>
+  </article> <!-- default-breadcrumb-container -->
+
+  <article id="page-reviews-intro-section">
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-6">
+
+          <div id="page-reviews-intro-text">
+            <div class="default-copy">
+              <h1>Guest Reviews</h1>
+              <p>See what real guests think about our hotel. These hotel reviews of Sage Hotel West Perth will be helpful when planning your next trip to Perth, whether you are traveling for business or pleasure.</p>
+              <p>If you’d like to share your experience at Sage Hotel West Perth as well, we’ll appreciate if you post a review to Facebook, Google or TripAdvisor. Thank you for taking the time to share your opinion!</p>
+            </div>
+          </div> <!-- page-reviews-intro-text -->
+
+        </div>
+        <div class="col-md-6 hidden-sm hidden-xs">
+
+          <div id="page-reviews-intro-image">
+            <div class="manic-image-container">
+              <img src="" data-image-desktop="images_cms/reviews/intro.jpg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- line -->
+  <div class="container-fluid has-breakpoint visible-md visible-lg">
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="scroll-target" data-value="content"></div>
+  <article id="page-reviews-content-section">
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-3">
+
+          <!--
+             ____ ___ ____  _____ ____    _    ____
+            / ___|_ _|  _ \| ____| __ )  / \  |  _ \
+            \___ \| || | | |  _| |  _ \ / _ \ | |_) |
+             ___) | || |_| | |___| |_) / ___ \|  _ <
+            |____/___|____/|_____|____/_/   \_\_| \_\
+
+          -->
+
+
+          <!-- event listener is in source\js\sagewest\component\ReviewContent.js -->
+
+          <div id="page-reviews-sidebar">
+            <div class="manic-dropdown" id="page-review-language-dropdown">
+              <select id="page-review-language-select">
+                <option value="">Please Select</option>
+                <option value="english" selected>English</option>
+                <option value="french">French</option>
+                <option value="italian">Italian</option>
+                <option value="all">All</option>
+              </select>
+            </div>
+            <div class="manic-dropdown not-selected-version" id="page-review-travel-type-dropdown">
+              <select id="page-review-travel-type-select">
+                <option value="">Please Select</option>
+                <option value="business">Business</option>
+                <option value="couple">Couple</option>
+                <option value="friends">Friends</option>
+                <option value="solo">Solo</option>
+                <option value="all">All</option>
+              </select>
+            </div>
+          </div> <!-- page-reviews-sidebar -->
+
+        </div>
+        <div class="col-md-9">
+
+          <!--
+              ____ ___  _   _ _____ _____ _   _ _____
+             / ___/ _ \| \ | |_   _| ____| \ | |_   _|
+            | |  | | | |  \| | | | |  _| |  \| | | |
+            | |__| |_| | |\  | | | | |___| |\  | | |
+             \____\___/|_| \_| |_| |_____|_| \_| |_|
+
+          -->
+
+          <div id="page-reviews-content">
+
+
+            <div id="page-reviews-item-container">
+
+              <div id="page-reviews-no-reviews">
+                <h5>No Reviews</h5>
+                <p>Sorry, no reviews match those parameters</p>
+              </div>
+
+              
+              <div class="page-reviews-item" data-language="english" data-travel-type="friends" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“A nice hotel, easy to get to.”</h5>
+                      <p>Our room was nice, the bed comfy and the shower was perfect. The coffee machine is a nice bonus. Our only let down was the breakfast which was cold. We would definitely stay again. A nice hotel, easy to get to, but not in the middle of the city, which suited us perfectly.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">loopy_lou_6530</div>
+                      <div class="page-reviews-item-location">Geraldton, Australia</div>
+                      <div class="page-reviews-item-travel-type">Friends</div>
+                      <div class="page-reviews-item-date">27 march 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="couple" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Very quiet.”</h5>
+                      <p>Wonderful place to stay very quiet, staff and facilities are excellent. Restaurant is superb. Have stayed here before several times and will definitely be staying again.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">PArrie</div>
+                      <div class="page-reviews-item-travel-type">Couple</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="solo" data-rating="4">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Restaurant is superb.”</h5>
+                      <p>Wonderful place to stay very quiet, staff and facilities are excellent. Restaurant is superb. Have stayed here before several times and will definitely be staying again.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Traveler</div>
+                      <div class="page-reviews-item-travel-type">Solo</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="business" data-rating="4.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Great location, comfortable stay.”</h5>
+
+                      <p class="desktop-minimize-read-more" data-length="250">Just stayed here for the night overall it was a really nice getaway and for the price we paid I can't really fault it, the room was clean, neat, modern and spacious the only down falls would be that parking is a few minutes walk away. Just stayed here for the night overall it was a really nice getaway and for the price we paid I can't really fault it, the room was clean, neat, modern and spacious the only down falls would be that parking is a few minutes walk away.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Lisa braithwaite</div>
+                      <div class="page-reviews-item-location">New Zealand</div>
+                      <div class="page-reviews-item-travel-type">Business</div>
+                      <div class="page-reviews-item-date">26 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="solo" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Basic hotel with very good restaurant.”</h5>
+                      <p>Pretty basic hotel, but with very good restaurant.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Traveler</div>
+                      <div class="page-reviews-item-location">Morocco</div>
+                      <div class="page-reviews-item-travel-type">Solo</div>
+                      <div class="page-reviews-item-date">23 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="solo" data-rating="4">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Restaurant is superbb.”</h5>
+                      <p>02 Wonderful place to stay very quiet, staff and facilities are excellent. Restaurant is superb. Have stayed here before several times and will definitely be staying again.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Traveler</div>
+                      <div class="page-reviews-item-travel-type">Solo</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="friends" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“A nice hotel, easy to get too.”</h5>
+                      <p>02 Our room was nice, the bed comfy and the shower was perfect. The coffee machine is a nice bonus. Our only let down was the breakfast which was cold. We would definitely stay again. A nice hotel, easy to get to, but not in the middle of the city, which suited us perfectly.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">loopy_lou_6530</div>
+                      <div class="page-reviews-item-location">Geraldton, Australia</div>
+                      <div class="page-reviews-item-travel-type">Friends</div>
+                      <div class="page-reviews-item-date">27 march 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="couple" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Very quiettt.”</h5>
+                      <p>02 Wonderful place to stay very quiet, staff and facilities are excellent. Restaurant is superb. Have stayed here before several times and will definitely be staying again.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">PArrie</div>
+                      <div class="page-reviews-item-travel-type">Couple</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="business" data-rating="4.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Great location, comfortable stayyy.”</h5>
+                      <p class="desktop-minimize-read-more" data-length="250">02 Just stayed here for the night overall it was a really nice getaway and for the price we paid I can't really fault it, the room was clean, neat, modern and spacious the only down falls would be that parking is a few minutes walk away. Just stayed here for the night overall it was a really nice getaway and for the price we paid I can't really fault it, the room was clean, neat, modern and spacious the only down falls would be that parking is a few minutes walk away.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Lisa braithwaite</div>
+                      <div class="page-reviews-item-location">New Zealand</div>
+                      <div class="page-reviews-item-travel-type">Business</div>
+                      <div class="page-reviews-item-date">26 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="english" data-travel-type="solo" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Basic hotel with very good restauranttt.”</h5>
+                      <p>02 Pretty basic hotel, but with very good restaurant.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Traveler</div>
+                      <div class="page-reviews-item-location">Morocco</div>
+                      <div class="page-reviews-item-travel-type">Solo</div>
+                      <div class="page-reviews-item-date">23 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+              <div class="page-reviews-item" data-language="french" data-travel-type="friends" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>"Un bon hôtel, facile d'accès."</h5>
+                      <p>Notre chambre était agréable, le lit confortable et la douche était parfait. La machine à café est un bon bonus. Notre seul inconvénient était le petit déjeuner qui était froid. Nous reviendrons certainement. Un bel hôtel, facile d'accès, mais pas au milieu de la ville, ce qui nous convenait parfaitement.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">loopy_lou_6530</div>
+                      <div class="page-reviews-item-location">Geraldton, Australia</div>
+                      <div class="page-reviews-item-travel-type">Friends</div>
+                      <div class="page-reviews-item-date">27 march 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="french" data-travel-type="couple" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>"Très calme."</h5>
+                      <p>Endroit merveilleux pour rester très calme, le personnel et les installations sont excellents. Le restaurant est superbe. J'ai séjourné ici avant plusieurs fois et je reviendrai certainement dans cet hôtel.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">PArrie</div>
+                      <div class="page-reviews-item-travel-type">Couple</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="french" data-travel-type="solo" data-rating="4">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>"Le restaurant est superbe."</h5>
+                      <p>Endroit merveilleux pour rester très calme, le personnel et les installations sont excellents. Le restaurant est superbe. J'ai séjourné ici avant plusieurs fois et je reviendrai certainement dans cet hôtel.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Traveler</div>
+                      <div class="page-reviews-item-travel-type">Solo</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="french" data-travel-type="business" data-rating="4.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>"Très bien situé, confortable séjour."</h5>
+                      <p class="desktop-minimize-read-more" data-length="250">J'ai séjourné dans cet hôtel pour la nuit dans l'ensemble, c'était vraiment une belle escapade et pour le prix que nous avons payé je ne peux pas vraiment la faute, la chambre était propre, soignée, moderne et spacieuse la seule chute serait que le parking est à quelques minutes à pied un moyen. J'ai séjourné dans cet hôtel pour la nuit dans l'ensemble, c'était vraiment une belle escapade et pour le prix que nous avons payé je ne peux pas vraiment la faute, la chambre était propre, soignée, moderne et spacieuse la seule chute serait que le parking est à quelques minutes à pied un moyen.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Lisa braithwaite</div>
+                      <div class="page-reviews-item-location">New Zealand</div>
+                      <div class="page-reviews-item-travel-type">Business</div>
+                      <div class="page-reviews-item-date">26 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="page-reviews-item" data-language="italian" data-travel-type="friends" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Un bell'albergo, facile da raggiungere.”</h5>
+                      <p>La nostra camera era bello, il letto comodo e la doccia era perfetto. La macchina da caffè è un bel bonus. La nostra unica delusione è stata la colazione che era freddo. Ci tornerei volentieri. Un hotel piacevole, facile da raggiungere, ma non nel centro della città, che noi andava benissimo.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">loopy_lou_6530</div>
+                      <div class="page-reviews-item-location">Geraldton, Australia</div>
+                      <div class="page-reviews-item-travel-type">Friends</div>
+                      <div class="page-reviews-item-date">27 march 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="italian" data-travel-type="couple" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>"Molto tranquilla."</h5>
+                      <p>Luogo di soggiorno meraviglioso molto tranquillo, il personale e le strutture sono eccellenti. Il ristorante è superba. Siamo stati qui prima diverse volte e sicuramente tornerò anche.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">PArrie</div>
+                      <div class="page-reviews-item-travel-type">Couple</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="italian" data-travel-type="solo" data-rating="4">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Il ristorante è eccellente.”</h5>
+                      <p>Luogo di soggiorno meraviglioso molto tranquillo, il personale e le strutture sono eccellenti. Il ristorante è superba. Siamo stati qui prima diverse volte e sicuramente tornerò anche.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Traveler</div>
+                      <div class="page-reviews-item-travel-type">Solo</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="italian" data-travel-type="business" data-rating="4.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Ottima posizione, soggiorno confortevole.”</h5>
+                      <p class="desktop-minimize-read-more" data-length="250">Siamo appena stati qui per la notte nel complesso è stata una vacanza davvero bella e per il prezzo che abbiamo pagato non posso davvero lamentarmi, la camera era pulita, ordinata, moderna e spaziosa l'unico verso il basso cade sarebbe che il parcheggio è a pochi minuti a piedi lontano. Siamo appena stati qui per la notte nel complesso è stata una vacanza davvero bella e per il prezzo che abbiamo pagato non posso davvero lamentarmi, la camera era pulita, ordinata, moderna e spaziosa l'unico verso il basso cade sarebbe che il parcheggio è a pochi minuti a piedi lontano.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Lisa braithwaite</div>
+                      <div class="page-reviews-item-location">New Zealand</div>
+                      <div class="page-reviews-item-travel-type">Business</div>
+                      <div class="page-reviews-item-date">26 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="italian" data-travel-type="solo" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>“Albergo essenziale con ottimo ristorante.”</h5>
+                      <p>hotel semplice abbastanza, ma con ottimo ristorante.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">Traveler</div>
+                      <div class="page-reviews-item-location">Morocco</div>
+                      <div class="page-reviews-item-travel-type">Solo</div>
+                      <div class="page-reviews-item-date">23 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-reviews-item" data-language="italian" data-travel-type="couple" data-rating="3.5">
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="default-copy">
+                      <h5>"Molto tranquilla."</h5>
+                      <p>Luogo di soggiorno meraviglioso molto tranquillo, il personale e le strutture sono eccellenti. Il ristorante è superba. Siamo stati qui prima diverse volte e sicuramente tornerò anche.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+
+                    <div class="page-reviews-item-details">
+                      <div class="page-reviews-item-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-empty" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="page-reviews-item-username">PArrie</div>
+                      <div class="page-reviews-item-travel-type">Couple</div>
+                      <div class="page-reviews-item-date">27 March 2017</div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div> <!-- page-reviews-item-container -->
+
+            <div id="page-reviews-pagination">
+
+              
+              <div id="page-reviews-pagination-prev-btn"></div>
+              <ul>
+                <!-- this will be populated by the JS dynamically -->
+                <li data-index="0">1</li>
+                <li data-index="1">2</li>
+                <li data-index="2">3</li>
+              </ul>
+              <div id="page-reviews-pagination-next-btn"></div>
+              
+            </div>
+
+
+          </div> <!-- page-reviews-content -->
+
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+
+
+  <div id="default-footer-spacer"></div>
+
+</div> <!-- page-wrapper-content-min-height
+
+
+
+        <!--
+           _____ _   _ ____
+          | ____| \ | |  _ \
+          |  _| |  \| | | | |
+          | |___| |\  | |_| |
+          |_____|_| \_|____/
+
+        -->
+        
+        
+<!-- 
+         _   ___     ___    ____   ____ ____  ___ ____ _____ 
+        | | / \ \   / / \  / ___| / ___|  _ \|_ _|  _ \_   _|
+     _  | |/ _ \ \ / / _ \ \___ \| |   | |_) || || |_) || |  
+    | |_| / ___ \ V / ___ \ ___) | |___|  _ < | ||  __/ | |  
+     \___/_/   \_\_/_/   \_\____/ \____|_| \_\___|_|    |_|  
+                                                             
+-->
+
+
+  <!-- Development Version -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Page Library -->
+  <script type="text/javascript" src="../source/js/all.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
+  <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/jquery.gsap.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/easing/EasePack.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/plugins/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/ScrollMagic.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/debug.addIndicators.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
+  <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
+  <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
+  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
+  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
+
+  <!-- Google Closure -->
+  <script src="../source/library/closure-library/closure/goog/base.js"></script>
+  <script src="../source/js/goog-custom-dependencies.js"></script>
+  <script type="text/javascript">
+    goog.require('sagewest.page.Default');
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      page = new sagewest.page.Default({});
+    });
+  </script>
+
+        <!--
+   _____ ___   ___ _____ _____ ____  
+  |  ___/ _ \ / _ \_   _| ____|  _ \ 
+  | |_ | | | | | | || | |  _| | |_) |
+  |  _|| |_| | |_| || | | |___|  _ < 
+  |_|   \___/ \___/ |_| |_____|_| \_\
+                                     
+-->
+
+
+<!-- <footer id="mobile-footer" class="visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-7">
+        <p class="mobile-footer-hashtag">#Sagewestperth</p>
+      </div>
+      <div class="col-xs-5">
+        <div id="mobile-social-container">
+          <ul>
+            <li><a href="https://www.facebook.com/SageHotelPerth/" target="_blank" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/sagewestperth/" target="_blank" class="fa fa-instagram"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>-->
+
+
+
+
+<footer id="desktop-footer" class="hotel-version">
+  <!-- 
+  <div id="hotel-footer-top-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-top-bar">
+
+            <ul>
+              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
+              <li><p>+61865009100</p></li>
+              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div> 
+  -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        
+        <div id="footer-logo">
+          <img src="images/logo/footer-snh-logo.png" alt="">
+        </div>
+
+        <div id="footer-subscribe-form">
+          <h1>Subscribe to us</h1>
+          <div class="input-box">
+            <input type="text" name="email" placeholder="Enter your email">
+          </div>
+        </div>
+        
+        <div id="footer-copyright-info" class="visible-md visible-lg">
+          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div id="footer-copyright-info" class="visible-sm visible-xs">
+          <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+      </div>
+
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <div class="footer-seperator left-version">
+        </div>
+      </div>
+
+      <div class="col-md-5 hidden-sm hidden-xs">
+
+        <div id="hotel-footer-menu-container">
+          <h1>Quick Links</h1>
+          <ul>
+            <li><a href="room_index.php">Rooms</a></li>
+            <li><a href="offer_index.php">Offers</a></li>
+            <li><a href="dining_index.php">Dining</a></li>
+            <li><a href="facilities.php">Facilities</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="activities.php">Activities</a></li>
+            <li><a href="javascript:void(0);">Reviews</a></li>
+            <li><a href="events.php">Events</a></li>
+            <li><a href="contact.php">Location</a></li>
+          </ul>
+        </div>
+
+        <div id="footer-social-media">
+          <ul>
+            <li><a href="#" class="fa fa-facebook-square"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-youtube-square"></a></li>
+            <li><a href="#" class="fa fa-twitter-square"></a></li>
+            <li><a href="#" class="fa fa-google-plus-square"></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <div class="footer-seperator right-version">
+        </div>
+      </div>
+      <div class="col-md-2 hidden-xs hidden-sm">
+
+        <div id="footer-snh-group-logos-container">
+          <div id="footer-snh-group-logos">
+            <h1>Our Brands</h1>
+            <ul>
+              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-bottom-bar">
+            <ul>
+              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
+              <li><p>+61865009100</p></li>
+              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
+            </ul>
+            <ul>
+              <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
+              <li><p>0800 480 274 (Within New Zealand)</p></li>
+            </ul>
+          </div> <!-- #hotel-footer-bottom-bar -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer> <!-- #desktop-footer
+      </div> <!-- #page-wrapper-content -->
+    </div> <!-- #page-wrapper -->
+    
+    <div id="mobile-page-hitarea"></div>
+
+  </body>
+</html>

@@ -21,10 +21,10 @@ goog.require('manic.ui.ExpandContainer');
 
 
 goog.require('sagewest.component.MobileHeader');
-goog.require('sagewest.component.PackagesPopup');
 goog.require('sagewest.component.GenericMap');
 goog.require('sagewest.component.BoxList');
 goog.require('sagewest.component.HomeMap');
+goog.require('sagewest.component.ReviewContent');
 
 
 /**
@@ -112,25 +112,21 @@ sagewest.page.Default = function(options) {
 
 
 
-  this.is_home_page = this.body.hasClass('home-page');
-  this.is_packages_page = this.body.hasClass('packages-page');
-  this.is_contact_page = this.body.hasClass('contact-page');
-  this.is_experience_page = this.body.hasClass('experience-page');
+  
 
-  this.packages_offer_item_image_array = [];
-  this.packages_offer_item_text_array = [];
 
   /**
-   * @type {sagewest.component.PackagesPopup}
+   * @type {sagewest.component.ReviewContent}
    */
-  this.packages_popup = null;
+  this.review_content = null;
 
-  this.contact_form = null;
 
-  /**
-   * @type {manic.ui.FormCheck}
-   */
-  this.contact_form_check = null;
+
+
+
+
+
+
 
   
   this.controller = null;
@@ -208,19 +204,7 @@ sagewest.page.Default.prototype.init = function() {
   this.create_scroll_down_cta();
 
 
-
-  // for packages only
-  if (this.is_packages_page) {
-    this.create_packages_offer();
-    this.create_packages_popup();
-  }
   
-
-
-  // for contact only
-  if (this.is_contact_page) {
-    this.create_contact_form();
-  }
 
 
   this.highlight_header_link();
@@ -230,6 +214,11 @@ sagewest.page.Default.prototype.init = function() {
   this.create_box_list();
 
   this.promo_filter();
+
+
+
+  this.create_review_content();
+  this.create_page_detail_list_image_sliders();
 
 
 
@@ -561,7 +550,7 @@ sagewest.page.Default.prototype.create_detail_page = function(){
 
     });
 
-    this.detail_banner_carousel
+    // this.detail_banner_carousel
 
   } // .detail-banner-slider
   
@@ -666,162 +655,85 @@ sagewest.page.Default.prototype.create_box_list = function(){
 };
 
 
-//    ____   _    ____ _  __    _    ____ _____ ____
-//   |  _ \ / \  / ___| |/ /   / \  / ___| ____/ ___|
-//   | |_) / _ \| |   | ' /   / _ \| |  _|  _| \___ \
-//   |  __/ ___ \ |___| . \  / ___ \ |_| | |___ ___) |
-//   |_| /_/   \_\____|_|\_\/_/   \_\____|_____|____/
+
+
+
+
+//    ____  _______     _____ _______        __
+//   |  _ \| ____\ \   / /_ _| ____\ \      / /
+//   | |_) |  _|  \ \ / / | ||  _|  \ \ /\ / /
+//   |  _ <| |___  \ V /  | || |___  \ V  V /
+//   |_| \_\_____|  \_/  |___|_____|  \_/\_/
 //
 
-sagewest.page.Default.prototype.create_packages_offer = function(){
-  this.packages_offer_item_image_array = [];
-  this.packages_offer_item_text_array = [];
+sagewest.page.Default.prototype.create_review_content = function(){
 
-  if($('#packages-offer-item-container').length != 0){
-    var arr = $('#packages-offer-item-container .packages-offer-item');
-    var image = null;
-    var copy = null;
-    var num = 0;
 
-    for (var i = 0, l=arr.length; i < l; i++) {
-      item = $(arr[i]);
+  
 
-      image = item.find('.packages-offer-item-image');
-      copy = item.find('.packages-offer-item-copy');
-      
-      if (image.length != 0 && copy.length != 0) {
-        num = this.packages_offer_item_image_array.length;
-        this.packages_offer_item_image_array[num] = image;
-        this.packages_offer_item_text_array[num] = copy;
-      }
+  if ($('#page-reviews-content-section').length != 0 ) {
 
-    }
+    this.review_content = new sagewest.component.ReviewContent({}, $('#page-reviews-content-section'));
+
+
+    goog.events.listen(this.review_content, sagewest.component.ReviewContent.ON_UPDATE_PAGINATION, function(event){
+
+      this.scroll_to_target('content');
+
+    }.bind(this));
+    goog.events.listen(this.review_content, sagewest.component.ReviewContent.ON_UPDATE_PAGE, function(event){
+
+      this.scroll_to_target('content');
+
+    }.bind(this));
+    
+
   }
+  
+  
 };
 
-sagewest.page.Default.prototype.create_packages_popup = function(){
-  if ($('#packages-popup-container').length != 0) {
-    this.packages_popup = new sagewest.component.PackagesPopup({}, $('#packages-popup-container'));
 
-    var arr = $('.package-popup-btn');
+sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function(){
+
+  if ($('.detail-list-item-image-slider').length != 0) {
+
+    var arr = $('.detail-list-item-image-slider');
     var item = null;
+    var carousel = null;
 
     for (var i = 0, l=arr.length; i < l; i++) {
       item = $(arr[i]);
-      item.click(this.on_package_popup_btn_click.bind(this));
-    }
-    
 
-  }
-};
 
-sagewest.page.Default.prototype.on_package_popup_btn_click = function(event) {
-  event.preventDefault();
-  event.stopPropagation();
+
+      item.on('init', function(event, slick){
+        this.create_image_container();
+      }.bind(this));
+
+      item.on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+        this.update_page_layout();
+      }.bind(this));
+
+      carousel = item.slick({
+        'speed': 350,
+        'dots': true,
+        'arrows': false,
+        'infinite': true,
+        'slidesToShow': 1,
+        'slidesToScroll': 1,
+        'pauseOnHover': true,
+        'autoplay': true,
+        'autoplaySpeed': 4000
+      });
+
+    } // end for
+
+  } // end if
   
-  var target = $(event.currentTarget);
-  var value = target.attr('data-value');
-
-
-  if (goog.isDefAndNotNull(value) == true) {
-    this.packages_popup.open_fullscreen();
-    this.packages_popup.display_content(value);
-  }
-};
-
-
-///////////
-
-sagewest.page.Default.prototype.update_packages_offer = function(){
-
-  var num = this.packages_offer_item_image_array.length;
-
-  for (var i = 0; i < num; i++) {
-    image = this.packages_offer_item_image_array[i];
-    copy = this.packages_offer_item_text_array[i];
-
-    image.css({
-      'height': copy.height() + 'px'
-    });
-  }
   
 };
 
-
-
-//     ____ ___  _   _ _____  _    ____ _____
-//    / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
-//   | |  | | | |  \| | | | / _ \| |     | |
-//   | |__| |_| | |\  | | |/ ___ \ |___  | |
-//    \____\___/|_| \_| |_/_/   \_\____| |_|
-//
-
-
-sagewest.page.Default.prototype.create_contact_form = function(){
-  if ($('#contact-form').length != 0) {
-    this.contact_form = $('#contact-form');
-
-    this.contact_form_check = this.form_check_dictionary['contact-form'];
-
-    goog.events.listen(this.contact_form_check, manic.ui.FormCheck.ON_SUCCESS, this.on_contact_form_check_success.bind(this));
-    
-    console.log('this.contact_form_check: ');
-    console.log(this.contact_form_check);
-
-    $('#contact-form-submit-btn').click(this.on_contact_form_submit_click.bind(this));
-  }
-
-};
-
-/**
- * @param  {object} event
- */
-sagewest.page.Default.prototype.on_contact_form_submit_click = function(event) {
-  event.preventDefault();
-  this.contact_form.submit();
-};
-
-/**
- * @param  {object} event
- */
-sagewest.page.Default.prototype.on_contact_form_check_success = function(event) {
-  console.log('on success');
-
-
-  var form_data = new FormData(this.contact_form_check.element[0]);
-
-  $.ajax({
-    type: 'POST',
-    data: form_data,
-    url: this.contact_form_check.action_url,
-
-    async: false,
-    cache: false,
-    contentType: false,
-    processData: false,
-
-    error: this.on_contact_form_submit_form_error.bind(this),
-    complete: this.on_contact_form_submit_form_complete.bind(this)
-  });
-
-};
-
-/**
- * @param  {object} event
- */
-sagewest.page.Default.prototype.on_contact_form_submit_form_error = function(event) {
-  alert('error on submit');
-};
-
-/**
- * @param  {object} event
- */
-sagewest.page.Default.prototype.on_contact_form_submit_form_complete = function(event) {
-
-  $('#contact-form-thankyou').show(0);
-  $('#contact-form').hide(0);
-
-};
 
 
 //    ____  _   _ ____  _     ___ ____
@@ -913,9 +825,7 @@ sagewest.page.Default.prototype.update_page_layout = function() {
 
 
 
-  if (this.is_packages_page) {
-    this.update_packages_offer();
-  }
+  
 
 
 
@@ -1424,12 +1334,33 @@ sagewest.page.Default.prototype.expandable_text = function() {
         );
     }); 
     
-    $('a.read-more', minimized_read_more_elements).click(function(event){
-        event.preventDefault();
-        $(this).parent().hide().prev().hide();
-        $(this).parent().next().show();        
-    });
+    
   }
+
+
+
+  //  FOR DESKTOP
+  var minimized_read_more_elements = $('p.desktop-minimize-read-more');
+  minimized_read_more_elements.each(function(){    
+      var t = $(this).text();       
+      var length = $(this).data('length');
+       
+      if(t.length < length) return;
+      
+      $(this).html(
+          t.slice(0,length)+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
+          '<span style="display:none;">'+ t.slice(length,t.length)+'</span>'
+      );
+  }); 
+
+
+
+  $('a.read-more', minimized_read_more_elements).click(function(event){
+      event.preventDefault();
+      $(this).parent().hide().prev().hide();
+      $(this).parent().next().show();        
+  });
+
 
 };
 

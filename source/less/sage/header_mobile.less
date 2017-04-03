@@ -85,8 +85,13 @@ body.body-sticky-version{
   position: absolute;
   // top: -7px;
   // left: 16px;
-  top: -5px;
-  left: 55px;
+  top: 0;
+  // left: 55px;
+  left: 63px;
+
+  width: 63px;
+  height: 63px;
+  overflow: hidden;
 
   display: block;
   .transition-in(0.3s);
@@ -96,6 +101,10 @@ body.body-sticky-version{
     // height: 95px;
     width: 73px;
     height: 73px;
+
+    position: relative;
+    top: -5px;
+    left: -5px;
   }
 }
 
@@ -559,6 +568,22 @@ html#brand-page, html#hotel-page {
       display: block;
       padding-bottom: 10px;
     }
+
+    .input-box-disclaimer{
+      position: relative;
+      p{
+        .open-sans-light-italic;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #a8a4a3;
+
+        position: absolute;
+        top: 1px;
+        right: 0;
+      }
+    }
+    
     .dropdown {
       display: block;
       position: relative;
@@ -711,6 +736,10 @@ html#brand-page, html#hotel-page {
           font-size: 46px;
           line-height: 38px;
           margin-top: -15px;
+
+          @media only screen and (max-width: 991px) {
+            margin-top: 3px;
+          }
           color: @violet;
         }
         #hover-weekname {

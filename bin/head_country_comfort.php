@@ -10,7 +10,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
 
-<link rel="icon" href="images/icons/favicon-cc.png">
+<link rel="icon" href="images/icons/favicon-country-comfort.png">
 
 <!-- Critical Css -->
 <link rel="stylesheet" type="text/css" href="css/critical_style_country_comfort.css">
@@ -31,7 +31,7 @@
   <!-- open-sans -->
   <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600|Patua+One" rel="stylesheet">
   
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
   
