@@ -46,10 +46,22 @@
           <label for="hotel">Select Hotel</label>
           <div class="dropdown">
             <select name="hotel" id="hotel" class="hotel-dropdown">
-              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
-              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
-              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+
+              <option value="Country Comfort Adelaide">Country Comfort Adelaide</option>
+              <option value="Country Comfort Adelaide Manor">Country Comfort Adelaide Manor</option>
+              <option value="Country Comfort Amity Motel Albany">Country Comfort Amity Motel Albany</option>
+              <option value="Country Comfort Armidale">Country Comfort Armidale</option>
+              <option value="Country Comfort Bundaberg International">Country Comfort Bundaberg International</option>
+              <option value="Country Comfort Coffs Harbour">Country Comfort Coffs Harbour</option>
+              <option value="Country Comfort Cowra">Country Comfort Cowra</option>
+              <option value="Country Comfort Gin Gin">Country Comfort Gin Gin</option>
+              <option value="Country Comfort Hunts Liverpool">Country Comfort Hunts Liverpool</option>
+              <option value="Country Comfort Inter City Perth">Country Comfort Inter City Perth</option>
+              <option value="Country Comfort Mt Gambier">Country Comfort Mt Gambier</option>
+              <option value="Country Comfort Newcastle Airport & Convention Centre">Country Comfort Newcastle Airport & Convention Centre</option>
+              <option value="Country Comfort Port Macquarie Waters Edge Boutique">Country Comfort Port Macquarie Waters Edge Boutique</option>
+              <option value="Country Comfort Toowoomba">Country Comfort Toowoomba</option>
+
             </select>
           </div>
         </div>
@@ -94,6 +106,11 @@
                 <option value="10">10</option>
               </select>
             </div>
+            
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+
           </div>
         </div>
         <div class="input-box">
@@ -122,12 +139,10 @@
   <div id="sage-links">
     <ul>
       
-      <li><a href="hotel.php">Western Australia </a></li>
-      <li><a href="hotel.php">Northern Australia </a></li>
-      <li><a href="hotel.php">South Australia</a></li>
-      <li><a href="hotel.php">Queensland</a></li>
-      <li><a href="hotel.php">New South Wales </a></li>
-      <li><a href="hotel.php">Victoria</a></li>
+      <li><a href="javascript:void(0);">South Australia</a></li>
+      <li><a href="javascript:void(0);">Western Australia</a></li>
+      <li><a href="javascript:void(0);">New South Wales</a></li>
+      <li><a href="javascript:void(0);">Queensland</a></li>
       
     </ul>    
   </div>

@@ -18,7 +18,7 @@
               <img src="images/icons/menu-bar.svg" alt="">     
               <span>Menu</span>
             </a>
-            <a href="page_brand_chifley.php" id="desktop-header-logo">
+            <a href="brand_chifley.php" id="desktop-header-logo">
               <img src="images/logo/chifley-logo.png">
             </a>
           </div>          
@@ -27,10 +27,10 @@
       <div class="col-md-6">
         <div id="desktop-header-nav">
           <ul>
-            <li><a href="page_brand_chifley.php#about">About</a></li>
-            <li><a href="page_brand_chifley.php#location">Our Locations</a></li>
-            <li><a href="page_brand_chifley.php#offers">Offers</a></li>
-            <li><a href="page_brand_chifley.php#map">Map</a></li>
+            <li><a href="brand_chifley.php#about">About</a></li>
+            <li><a href="brand_chifley.php#location">Our Locations</a></li>
+            <li><a href="brand_chifley.php#offers">Offers</a></li>
+            <li><a href="brand_chifley.php#map">Map</a></li>
           </ul>
         </div>
       </div>  
@@ -46,10 +46,13 @@
           <label for="hotel">Select Hotel</label>
           <div class="dropdown">
             <select name="hotel" id="hotel" class="hotel-dropdown">
-              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
-              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
-              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+
+              <option value="Chifley Alice Springs Resort">Chifley Alice Springs Resort</option>
+              <option value="Chifley Apartments Newcastle">Chifley Apartments Newcastle</option>
+              <option value="Chifley Executive Suites Newcastle">Chifley Executive Suites Newcastle</option>
+              <option value="Chifley Plaza Townsville">Chifley Plaza Townsville</option>
+              <option value="The Chifley On South Terrace">The Chifley On South Terrace</option>
+              
             </select>
           </div>
         </div>
@@ -94,6 +97,11 @@
                 <option value="10">10</option>
               </select>
             </div>
+            
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+
           </div>
         </div>
         <div class="input-box">
@@ -122,12 +130,10 @@
   <div id="sage-links">
     <ul>
       
-      <li><a href="hotel.php">Western Australia </a></li>
-      <li><a href="hotel.php">Northern Australia </a></li>
-      <li><a href="hotel.php">South Australia</a></li>
-      <li><a href="hotel.php">Queensland</a></li>
-      <li><a href="hotel.php">New South Wales </a></li>
-      <li><a href="hotel.php">Victoria</a></li>
+      <li><a href="hotel.php">Adelaide</a></li>
+      <li><a href="hotel.php">Alice Springs</a></li>
+      <li><a href="hotel.php">Newcastle</a></li>
+      <li><a href="hotel.php">Townsville</a></li>
       
     </ul>    
   </div>

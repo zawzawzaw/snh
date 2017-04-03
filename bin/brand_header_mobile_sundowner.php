@@ -29,28 +29,15 @@
 
     <nav id="mobile-menu">
       <ul>
-        <li><a href="hotel.php">Western Australia </a></li>
-        <li><a href="hotel.php">Northern Australia </a></li>
-        <li><a href="hotel.php">South Australia</a></li>
-        <li><a href="hotel.php">Queensland</a></li>
-        <li><a href="hotel.php">New South Wales </a></li>
-        <li><a href="hotel.php">Victoria</a></li>
+
+        <li><a href="javascript:void(0);">Victoria</a></li>
+        <li><a href="javascript:void(0);">Queensland</a></li>
+        <li><a href="javascript:void(0);">New South Wales</a></li>
+
+
+
         
-        <!-- 
-        <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
-        <li><a href="hotel.php">Country Comfort Adelaide Manor</a></li>
-        <li><a href="hotel.php">Country Comfort Amity Motel Albany</a></li>
-        <li><a href="hotel.php">Country Comfort Armidale</a></li>
-        <li><a href="hotel.php">Country Comfort Bundaberg International</a></li>
-        <li><a href="hotel.php">Country Comfort Coffs Harbour</a></li>
-        <li><a href="hotel.php">Country Comfort gin gin</a></li>
-        <li><a href="hotel.php">Country Comfort hunts liverpool</a></li>   
-        <li><a href="hotel.php">Country Comfort Inter City Perth</a></li>   
-        <li><a href="hotel.php">Country Comfort Inter Mt Gambier</a></li>   
-        <li><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></li>   
-        <li><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
-        <li><a href="hotel.php">Country Comfort Toowoomba</a></li>   
-        -->
+        
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -67,10 +54,17 @@
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
           <select name="hotel" id="hotel" class="hotel-dropdown">
-            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
-            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
-            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+            <option value="Sundowner Bendigo Golden Reef">Sundowner Bendigo Golden Reef</option>
+            <option value="Sundowner Dubbo Aberdeen Motor Inn">Sundowner Dubbo Aberdeen Motor Inn</option>
+            <option value="Sundowner Echuca Nirebo">Sundowner Echuca Nirebo</option>
+            <option value="Sundowner Gardenia Motor Inn Bass Hill">Sundowner Gardenia Motor Inn Bass Hill</option>
+            <option value="Sundowner Horsham Westlander">Sundowner Horsham Westlander</option>
+            <option value="Sundowner Hume Country Motor Inn">Sundowner Hume Country Motor Inn</option>
+            <option value="Sundowner Huckisson - Jervis Bay">Sundowner Huckisson - Jervis Bay</option>
+            <option value="Sundowner Oriana Orange">Sundowner Oriana Orange</option>
+            <option value="Sundowner Rockhampton Gladstone">Sundowner Rockhampton Gladstone</option>
+            <option value="Sundowner Townhouse Goondiwindi">Sundowner Townhouse Goondiwindi</option>
+            <option value="Sundowner Twin Towns Motel">Sundowner Twin Towns Motel</option>
           </select>
         </div>
       </div>
@@ -115,6 +109,11 @@
               <option value="10">10</option>
             </select>
           </div>
+
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+          
         </div>
       </div>
       <div class="input-box">

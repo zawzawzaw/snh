@@ -219,10 +219,12 @@
     text-align: center;
 
     .banner-text {
-      margin-bottom: 143px;
+      // margin-bottom: 143px;
+      margin-bottom: 120px;
       padding-left: 100px;
       text-align: left;
       h2 {
+
         &:before {
           content: "";
           background-color: @white;
@@ -231,8 +233,15 @@
           display: inline-block;
           vertical-align: middle;
           margin-right: 30px;
+
+          position: relative;
+          top: -2px;
         }
+
+
         margin-bottom: 15px;
+
+
         color: @white;
       }      
       h3 {
@@ -249,15 +258,68 @@
       }
     }
 
+    .banner-text when (@is_country_comfort){
+      h2{
+        margin-bottom: 9px;
+      }
+      h1{
+        margin-bottom: 13px;
+      }
+    }
+    .banner-text when (@is_sundowner){
+      h2{
+        margin-bottom: 8px;
+      }
+      h1{
+        margin-bottom: 14px;
+      }
+    }
+
+    .banner-text when (@is_next){
+      h2{
+        margin-bottom: 11px;
+      }
+      h1{
+        margin-bottom: 11px;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    .banner-text when (@is_chifley){
+      h2{
+        margin-bottom: 13px;
+      }
+      h1{
+        font-size: 54px;
+        margin-bottom: 9px;
+        letter-spacing: -0.01em;
+      }
+    }
+
+
+    
+
+
+
     .scroll-down-cta{
       position: absolute;
-      bottom: 28px;
+      // bottom: 28px;
+      bottom: 37px;
       left: 50%;
       margin-left: -25px;
     }
 
   }
 }
+
+
+
+
+
+
+
+
+
 
 /*
 .default-page-banner-mobile-text{
@@ -1298,7 +1360,8 @@ body.is-tablet.is-tablet-portrait{
     font-size: 17px;
     line-height: 25px;
     letter-spacing: 0em;
-    color: @dark-violet-2;
+    // color: @dark-violet-2;
+    color: @violet;
     text-transform: none;
   }
   h1{
@@ -1355,7 +1418,8 @@ body.is-tablet.is-tablet-portrait{
     line-height: 42px;
     letter-spacing: 0.025em;
 
-    color: @dark-violet-2;
+    // color: @dark-violet-2;
+    color: @violet;
 
 
     .display-inline-block;
@@ -1989,13 +2053,21 @@ div.default-promotion-cta-container{
 
   .infoBox-text {
     background: #fbf9f5;
-    width: 347px;
+
+    // width: 347px;
+    width: 347px + 27px;
+
     height: auto;
     position: relative;
     // padding: 30px 0px;
 
     .address {      
-      padding: 30px 20px 35px;
+      // padding: 30px 20px 35px;
+      padding-top: 20px;
+      padding-left: 23px;
+      padding-right: 20px;
+      padding-bottom: 16px;
+
       border-bottom: 1px solid #ccc;
       .address-icon {
         display: inline-block;
@@ -2003,7 +2075,8 @@ div.default-promotion-cta-container{
         background: url(../images/icons/pin-icon.png) no-repeat;
         width: 17px;
         height: 34px;
-        margin-right: 30px;        
+        // margin-right: 30px;
+        margin-right: 13px;
       }
       .address-content {
         display: inline-block;
@@ -2011,9 +2084,12 @@ div.default-promotion-cta-container{
         h4 {
           color: #57514b;
           text-transform: uppercase;
-          padding-bottom: 5px;
+          // padding-bottom: 5px;
+          padding-bottom: 7px;
         }
         p {
+          font-size: 13px;
+          line-height: 18px;
           color: #57514b;
         }
       }   
@@ -2027,7 +2103,14 @@ div.default-promotion-cta-container{
       }   
     }
     .telephone {
-      padding: 30px 20px 30px;
+      // padding: 30px 20px 30px;
+      // padding-top: 30px;
+      // padding-bottom: 30px;
+      padding-top: 15px;
+      padding-left: 19px;
+      padding-right: 20px;
+      padding-bottom: 17px;
+
       border-bottom: 1px solid #ccc;
       
       .telephone-icon {
@@ -2036,13 +2119,20 @@ div.default-promotion-cta-container{
         background: url(../images/icons/phone-icon.png) no-repeat;
         width: 26px;
         height: 16px;
-        margin-right: 30px;        
+
+        // margin-right: 30px;
+        margin-right: 16px;
+
+        position: relative;
+        top: 2px;
       }
       .telephone-content {
         display: inline-block;
         vertical-align: top;        
         p {
-          line-height: 15px;
+          // line-height: 15px;
+          font-size: 13px;
+          line-height: 18px;
         }
       }  
       &:hover {
@@ -2055,8 +2145,18 @@ div.default-promotion-cta-container{
       }
     }
     .mail {
-      padding: 25px 20px 25px;      
+      // padding: 25px 20px 25px;
+      // padding-top: 25px;
+      // padding-bottom: 25px;
+      padding-top: 15px;
+      padding-left: 22px;
+      padding-right: 20px;
+      padding-bottom: 21px;
+
       border-bottom: 1px solid #ccc;
+      word-break: break-all;
+      // white-space: nowrap;
+
       
       .mail-icon {
         display: inline-block;
@@ -2064,14 +2164,22 @@ div.default-promotion-cta-container{
         background: url(../images/icons/mail-icon.png) no-repeat;
         width: 24px;
         height: 16px;
-        margin-right: 30px;        
+        // margin-right: 30px;        
+        margin-right: 15px;        
+
+        position: relative;
+        top: 3px;
       }
       .mail-content {
         display: inline-block;
         vertical-align: top;
-        width: 80%;        
+        // width: 90%;
+        width: 85%;
         p {
-          line-height: 15px;
+          // line-height: 15px;
+          
+          font-size: 13px;
+          line-height: 18px;
         }
       }
       &:hover {
@@ -2334,11 +2442,10 @@ div.default-promotion-cta-container{
     height: auto!important;
 
     min-height: 200px; // no box will be lower than 200 px on mobile 
-
   }
 
   .add-flipper-function;
-
+  
 
   .boxlist-item-box{
 

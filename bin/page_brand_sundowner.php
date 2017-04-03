@@ -158,85 +158,54 @@
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_02.jpg">
+                  <img src="" data-image-desktop="images_cms/brand_sundowner/brand_location_slider_01.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Goondiwindi</h4>
+                <h2><a href="hotel.php">Sundowner Townhouse Goondiwindi</a></h2>
+                <p>Sundowner Inn Goondiwindi Town House prides itself as a premium accommodation and dining destination in Goondiwindi, Queensland. Positioned ideally on the Newell Highway, the inn is an ideal choice for weary interstate and intrastate travellers.</p>
               </div>
             </div>
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_03.jpg">
+                  <img src="" data-image-desktop="images_cms/brand_sundowner/brand_location_slider_02.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
-              </div>
-            </div>
-
-
-
-
-
-            <div class="brand-location-slider-item">
-              <a href="hotel.php" class="brand-location-slider-item-image">
-                <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_04.jpg">
-                </div>
-              </a>
-              <div class="brand-location-slider-item-copy">
-                <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Albury</h4>
+                <h2><a href="hotel.php">Sundowner Hume Country Motor Inn</a></h2>
+                <p>Overlooking scenic parklands and ideally located just a 5-minute drive away from the Albury Central Business District and 10 minutes from Wodonga, Sundowner Inn Hume Country provides a comfortable base from which to explore the peaceful surrounding. </p>
               </div>
             </div>
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_02.jpg">
+                  <img src="" data-image-desktop="images_cms/brand_sundowner/brand_location_slider_01.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Goondiwindi</h4>
+                <h2><a href="hotel.php">Sundowner Townhouse Goondiwindi</a></h2>
+                <p>Sundowner Inn Goondiwindi Town House prides itself as a premium accommodation and dining destination in Goondiwindi, Queensland. Positioned ideally on the Newell Highway, the inn is an ideal choice for weary interstate and intrastate travellers.</p>
               </div>
             </div>
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_03.jpg">
+                  <img src="" data-image-desktop="images_cms/brand_sundowner/brand_location_slider_02.jpg">
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Albury</h4>
+                <h2><a href="hotel.php">Sundowner Hume Country Motor Inn</a></h2>
+                <p>Overlooking scenic parklands and ideally located just a 5-minute drive away from the Albury Central Business District and 10 minutes from Wodonga, Sundowner Inn Hume Country provides a comfortable base from which to explore the peaceful surrounding. </p>
               </div>
             </div>
-
-            <div class="brand-location-slider-item">
-              <a href="hotel.php" class="brand-location-slider-item-image">
-                <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/home/brand_location_slider_04.jpg">
-                </div>
-              </a>
-              <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
-              </div>
-            </div>
-
 
             
 

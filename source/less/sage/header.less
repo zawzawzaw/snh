@@ -567,6 +567,9 @@ body.hotel {
 
   .input-box {
     margin-bottom: 15px;
+
+
+
     label {
       .playfair-regular;
       font-size: 16px;
@@ -575,6 +578,24 @@ body.hotel {
       display: block;
       padding-bottom: 10px;
     }
+
+    .input-box-disclaimer{
+      position: relative;
+      p{
+        .open-sans-light-italic;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        // color: #a8a4a3;
+        color: @grey;
+
+        position: absolute;
+        top: 1px;
+        right: 0;
+      }
+    }
+
+
     .dropdown {
       display: block;
       position: relative;
@@ -591,8 +612,23 @@ body.hotel {
         appearance: none;
         .round(0px);  
         .body-font;  
+        .open-sans-regular;
         padding-left: 15px;     
         // color: @input-grey;     
+        
+        padding-right: 37px;
+
+        overflow: hidden !important;
+
+
+        // white-space: nowrap;
+        // text-overflow: ellipsis;
+        // option{
+        //   overflow: hidden !important;
+        //   white-space: nowrap;
+        //   text-overflow: ellipsis;
+        // }
+
       }
 
       &:after{
@@ -613,6 +649,7 @@ body.hotel {
     }
     input[type=text] {
       .body-font;
+      .open-sans-regular;
       font-size: 14px;
       background-color: transparent;
       border: 1px solid @input-grey;

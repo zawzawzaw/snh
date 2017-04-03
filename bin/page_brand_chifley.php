@@ -14,24 +14,23 @@
 
     <div class="default-page-banner-image visible-md visible-lg">
       <div class="manic-image-container has-window-height">
-        <img src=""
-          data-image-desktop="images_cms/brand/brand-banner.jpg">
+        <img src="" data-image-desktop="images_cms/brand_chifley/brand-banner.jpg">
       </div>
     </div>
     <div class="default-page-banner-mobile-image visible-sm visible-xs">
       <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
         <img src=""
-          data-image-tablet="images_cms/brand/brand-banner-tablet.jpg"
-          data-image-mobile="images_cms/brand/brand-banner-mobile.jpg">
+          data-image-tablet="images_cms/brand_chifley/brand-banner-tablet.jpg"
+          data-image-mobile="images_cms/brand_chifley/brand-banner-mobile.jpg">
       </div>
     </div>
 
     <div class="default-page-banner-text">   
       <div class="banner-text">
-        <h2>Stays made special</h2>
+        <h2>Delivering traditional comfort</h2>
         <!-- <img src="images/logo/brand-banner-text.svg" class="visible-md visible-lg">       -->
-        <h1>Experience Local At <br class="visible-xs"> Sage Hotels</h1>
-        <h3>What you want to do, see, eat & experience.</h3>
+        <h1>Classic Comforts,<br class="visible-xs"> Heartfelt Quality</h1>
+        <h3>Ensuring that every stay is reassuringly Chifley</h3>
       </div>
       <!-- <div class="scroll-down-cta visible-md visible-lg"></div> -->
       <div class="scroll-down-cta"></div>
@@ -63,49 +62,41 @@
     <div class="row">
       <div class="col-md-12">
         <div id="default-introduction-breadcrumb">
-          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>sage hotels</span>
+          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Chifley Hotels</span>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-5 col-tablet-landscape-md-6 col-sm-12">
 
-
-        <div id="default-introduction-mobile-video" class="visible-sm visible-xs">
-          <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=0&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe>
+        <div id="default-introduction-image-mobile" class="visible-sm visible-xs">
+          <div class="manic-image-container">
+            <img src="" 
+              data-image-tablet="images_cms/brand_chifley/brand-introduction-tablet.jpg"
+              data-image-mobile="images_cms/brand_chifley/brand-introduction-mobile.jpg">
+          </div>
         </div>
-
-
+        
         <div id="brand-page-introduction-copy">
           <div id="brand-page-introduction-title">
             <h4>Stay with us</h4>
-            <h1>Why Sage Hotels?</h1>
+            <h1>Why Chifley Hotels?</h1>
           </div>
           <div id="brand-page-introduction-item-container">
             <div class="brand-page-introduction-item">
               <h1>01.</h1>
-              <h4>Brand new hotel building</h4>
-              <p>A modern gateway to the City of Light</p>
+              <h4>Great value </h4>
+              <p>Quality accommodation at a quality price. </p>
             </div>
             <div class="brand-page-introduction-item">
               <h1>02.</h1>
-              <h4>Julio’s restaurant</h4>
-              <p>Fine Italian & Mediterranean Cuisine since 1985</p>
+              <h4>Rest and recharge</h4>
+              <p>A warm welcome with a delicious meal, a hot shower plus a comfortable bed. </p>
             </div>
             <div class="brand-page-introduction-item">
               <h1>03.</h1>
-              <h4>Free wifi on all devices</h4>
-              <p>Great for sharing moments with friends back home</p>
-            </div>
-            <div class="brand-page-introduction-item">
-              <h1>04.</h1>
-              <h4>Great weekend getaway</h4>
-              <p>Only 5 hours from Singapore</p>
-            </div>
-            <div class="brand-page-introduction-item">
-              <h1>05.</h1>
-              <h4>Central location</h4>
-              <p>Minutes to Kings Park, major shopping & boutique alfresco dining precincts and free bus services</p>
+              <h4>Your home on the road</h4>
+              <p>When the sun goes down and you look back at the road that you’ve travelled. You’ll be glad that you stayed and wake up refreshed and recharged for the new day ahead.</p>
             </div>
 
           </div>
@@ -121,33 +112,12 @@
       </div>
       <div class="col-md-7 col-tablet-landscape-md-6 col-sm-12">
 
-        <div id="default-introduction-video-container" class="visible-md visible-lg">
-          <div id="default-introduction-video">
-            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="1049" height="590" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="1049" height="590" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
-
-
-            <!-- <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=1&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
-
-            <iframe width="809" height="475" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=0&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe>
-
-            
-
-
-          </div>
-        </div>
-
-
-        <!--
         <div id="default-introduction-image" class="visible-md visible-lg">
           <div class="manic-image-container">
-            <img src=""
-              data-image-desktop="images_cms/brand/brand-introduction.jpg">
+            <img src="" data-image-desktop="images_cms/brand_chifley/brand-introduction.jpg">
           </div>
         </div>
-        -->
+
       </div>
     </div>
   </div>
@@ -171,7 +141,7 @@
       <div class="col-md-12">
 
         <div id="brand-all-location-title-version-02">
-          <h4>SAGE HOTELS</h4>
+          <h4>Chifley Hotels</h4>
           <h1>Our Locations</h1>
         </div> <!-- brand-all-location-title-version-02 -->
 
@@ -193,8 +163,8 @@
               </a>
               <div class="brand-location-slider-item-copy">
                 <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h2><a href="hotel.php">Chifley Apartments Newcastle</a></h2>
+                <p>Chifley Apartments Newcastle provides both short and long-term self-catering style accommodation. Feel at home in one of 51 air-conditioned apartments featuring fully equipped kitchen and laundry facilities, with own private balcony. </p>
               </div>
             </div>
 
@@ -205,15 +175,11 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Alice Springs</h4>
+                <h2><a href="hotel.php">Chifley Alice Springs Resort</a></h2>
+                <p>Situated on the banks of the famous Todd River, Chifley Alice Springs Resort offers spectacular views of the towering River Red Gum, while the well-manicured lush green lawns of the Resort create a relaxing atmosphere as you soak in the Australian Outback charm of the Northern Territory.</p>
               </div>
             </div>
-
-
-
-
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
@@ -222,11 +188,12 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Adelaide</h4>
+                <h2><a href="hotel.php">Chifley On South Terrace </a></h2>
+                <p>The Chifley On South Terrace puts you in the heart of Adelaide, within a 20-minute stroll of popular places like Adelaide Central Market and Victoria Square. The hotel stands across from the South Parklands and makes an ideal base for business and leisure travellers alike.</p>
               </div>
             </div>
+
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
@@ -235,9 +202,9 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Newcastle</h4>
+                <h2><a href="hotel.php">Chifley Apartments Newcastle</a></h2>
+                <p>Chifley Apartments Newcastle provides both short and long-term self-catering style accommodation. Feel at home in one of 51 air-conditioned apartments featuring fully equipped kitchen and laundry facilities, with own private balcony. </p>
               </div>
             </div>
 
@@ -248,9 +215,9 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Alice Springs</h4>
+                <h2><a href="hotel.php">Chifley Alice Springs Resort</a></h2>
+                <p>Situated on the banks of the famous Todd River, Chifley Alice Springs Resort offers spectacular views of the towering River Red Gum, while the well-manicured lush green lawns of the Resort create a relaxing atmosphere as you soak in the Australian Outback charm of the Northern Territory.</p>
               </div>
             </div>
 
@@ -261,13 +228,11 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Adelaide</h4>
+                <h2><a href="hotel.php">Chifley On South Terrace </a></h2>
+                <p>The Chifley On South Terrace puts you in the heart of Adelaide, within a 20-minute stroll of popular places like Adelaide Central Market and Victoria Square. The hotel stands across from the South Parklands and makes an ideal base for business and leisure travellers alike.</p>
               </div>
             </div>
-
-
             
 
 
@@ -307,7 +272,7 @@
       <div class="col-xs-12">
 
         <div id="brand-all-location-title-version-02-mobile">
-          <h4>SAGE HOTELS</h4>
+          <h4>Chifley Hotels</h4>
           <h1>Our Locations</h1>
         </div>
 
@@ -410,20 +375,15 @@
 
               <div class="boxlist-item-content-image">
                 <a href="offer_detail.php" class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-01.png">
+                  <img src="" data-image-desktop="images_cms/brand_chifley/brand-promotion-01.jpg">
                 </a>
               </div>
 
               <div class="default-promotion-content-item-copy">
                 <div class="default-copy">
-                  <h5><a href="offer_detail.php">City Escape</a></h5>
-                  <h4>Sage Hotel Adelaide</h4>
-                  <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
-                  <ul>
-                    <li><p>Newly Constructed Sage Rooms</p></li>
-                    <li><p>Continental Buffet Breakfast for 2</p></li>
-                    <li><p>Late Check out at 12 noon</p></li>
-                  </ul>
+                  <h5><a href="offer_detail.php">Lorem Ipsum Dolor</a></h5>
+                  <h4>COUNTRY COMFORT INTER CITY PERTH</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiar.</p>
                 </div>
               </div>
 
@@ -446,22 +406,15 @@
 
               <div class="boxlist-item-content-image">
                 <a href="offer_detail.php" class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-02.png">
+                  <img src="" data-image-desktop="images_cms/brand_chifley/brand-promotion-02.jpg">
                 </a>
               </div>
 
               <div class="default-promotion-content-item-copy">
                 <div class="default-copy">
-                  <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
-                  <h4>Country comfort newcastle airport & convention centre</h4>
-                  <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
-                  <ul>
-                    <li><p>Arrival rose for your significant other</p></li>
-                    <li><p>3-course dinner with choice of dish</p></li>
-                    <li><p>Complimentary bottle of red or white wine</p></li>
-                    <li><p>Live jazz singer duo</p></li>
-                  </ul>
-                  
+                  <h5><a href="offer_detail.php">Consectetur Adipiscing</a></h5>
+                  <h4>COUNTRY COMFORT MT GAMBIER</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 
                 </div>
               </div>
@@ -503,22 +456,15 @@
 
               <div class="boxlist-item-content-image">
                 <a href="offer_detail.php" class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-promotion-03.png">
+                  <img src="" data-image-desktop="images_cms/brand_chifley/brand-promotion-03.jpg">
                 </a>
               </div>
 
               <div class="default-promotion-content-item-copy">
                 <div class="default-copy">
-                  <h5><a href="offer_detail.php">Ascot Horse Racing</a></h5>
-                  <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>             
-                  <ul>
-                    <li><p>Complimentary upgrade to Executive Wing</p></li>
-                    <li><p>General admission ticket for 2 to Ascot Races</p></li>
-                    <li><p>Early Check-in</p></li>
-                    <li><p>Bottle of Sparkling Wine on arrival</p></li>
-                    <li><p>Complimentary shuttle to Ascot Race Track</p></li>
-                    <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
-                  </ul>
+                  <h5><a href="offer_detail.php">Eiusmod Tempor</a></h5>
+                  <h4>COUNTRY COMFORT ADELAIDE</h4>             
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiar.</p>
                   
                 </div>
               </div>
@@ -582,15 +528,15 @@
 
                   <div class="boxlist-item-content-image">
                     <a href="offer_detail.php" class="manic-image-container">
-                      <img src="" data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                      <img src="" data-image-mobile="images_cms/brand_chifley/brand-promotion-01.jpg">
                     </a>
                   </div>
 
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
-                      <h5><a href="offer_detail.php">City Escape</a></h5>
-                      <h4>Sage Hotel Adelaide</h4>
-                      <p class="minimize" data-length="80">Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
+                      <h5><a href="offer_detail.php">Lorem Ipsum Dolor</a></h5>
+                      <h4>COUNTRY COMFORT INTER CITY PERTH</h4>
+                      <p class="minimize" data-length="80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiar.</p>
                     </div>
                   </div>
 
@@ -611,15 +557,15 @@
                   <div class="boxlist-item-content-image">
                     <a href="offer_detail.php" class="manic-image-container">
                       <img src=""
-                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                        data-image-mobile="images_cms/brand_chifley/brand-promotion-02.jpg">
                     </a>
                   </div>
 
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
-                      <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
-                      <h4>Country comfort newcastle airport & convention centre</h4>
-                      <p class="minimize" data-length="80">Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                      <h5><a href="offer_detail.php">Consectetur Adipiscing</a></h5>
+                      <h4>COUNTRY COMFORT MT GAMBIER</h4>
+                      <p class="minimize" data-length="80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                     </div>
                   </div>
 
@@ -639,15 +585,15 @@
 
                   <div class="boxlist-item-content-image">
                     <a href="offer_detail.php" class="manic-image-container">
-                      <img src="" data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                      <img src="" data-image-mobile="images_cms/brand_chifley/brand-promotion-03.jpg">
                     </a>
                   </div>
 
                   <div class="default-promotion-content-item-copy">
                     <div class="default-copy">
-                      <h5>Ascot Horse Racing</h5>
-                      <h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4>
-                      <p class="minimize" data-length="80">Complimentary upgrade to Executive Wing</p>
+                      <h5>Eiusmod Tempor</h5>
+                      <h4>COUNTRY COMFORT ADELAIDE</h4>
+                      <p class="minimize" data-length="80">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiar.</p>
                     </div>
                   </div>
 
@@ -693,7 +639,7 @@
       <div class="col-md-4 hidden-sm hidden-xs">
         <div id="default-moment-content">
           <h4>Capture the best moments</h4>
-          <h1>#SageHotel</h1>
+          <h1>#ChifleyHotels</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <ul id="social-buttons">
             <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -704,26 +650,26 @@
       <div class="col-md-7 col-md-offset-1">
         <div id="default-moment-instagram-feed-container-container">
           <div id="default-moment-instagram-feed-container">
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-01.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-02.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-03.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-04.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-05.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-06.jpg" alt=""></div>
             
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-01.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-02.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-03.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-04.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-05.jpg" alt=""></div>
+            <div class="instagram-feed"><img src="images_cms/brand_chifley/brand-instagram-06.jpg" alt=""></div>
           </div>
         </div>
       </div>
       <div class="col-md-4 visible-sm visible-xs">
         <div id="default-moment-content">
           <h4>Capture the best moments</h4>
-          <h1><span>#</span>SageHotel</h1>
+          <h1><span>#</span>CountryComfortHotels</h1>
           <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           <ul id="social-buttons">
             <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -750,7 +696,7 @@
     <div class="row">
       <div class="col-md-12">
         <div id="default-map-title">
-          <h4>sage hotels</h4>
+          <h4>Chifley Hotels</h4>
           <h1>Our locations</h1>
         </div>
       </div>
@@ -759,32 +705,44 @@
   <div id="page-brand-map" class="default-version"></div>
   <div class="default_marker" data-zoom="4" data-location="Australia" data-lat="-25.783190" data-lng="133.583079"></div>
 
+  
   <div class="markers" 
-    data-pin-icon="images/icons/map-pin.png" 
-    data-location="SAGE WEST PERTH" 
-    data-lat="-31.947794" 
-    data-lng="115.8364702" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-pin-icon="images/icons/map-pin-chifley.svg" 
+      data-location="CHIFLEY ALICE SPRINGS RESORT" 
+      data-lat="-23.702922" 
+      data-lng="133.886493" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=34 Stott Terrace, Alice Springs, Northern Territory 0870, Australia'><h4>CHIFLEY ALICE SPRINGS RESORT</h4><p>34 Stott Terrace, Alice Springs, Northern Territory 0870, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8951 4545</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.alicesprings@chifleyhotels.com'>reservations.alicesprings@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
-    data-pin-icon="images/icons/map-pin.png" 
-    data-location="SAGE HOTEL ADELAIDE" 
-    data-lat="-34.935157" 
-    data-lng="138.604256" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=208 South Terrace, Adelaide, SA 5000, Australia'><h4>SAGE HOTEL ADELAIDE</h4><p>208 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.adelaide@sage-hotels.com'>reservations.adelaide@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-pin-icon="images/icons/map-pin-chifley.svg" 
+      data-location="CHIFLEY APARTMENTS NEWCASTLE" 
+      data-lat="-32.926286" 
+      data-lng="151.770029" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Wright & Settlement Lanes, Newcastle, NSW 2300, Australia'><h4>CHIFLEY APARTMENTS NEWCASTLE</h4><p>Cnr Wright & Settlement Lanes, Newcastle, NSW 2300, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4910 4910</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.newcastle@chifleyhotels.com'>reservations.newcastle@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
-    data-pin-icon="images/icons/map-pin.png" 
-    data-location="SAGE HOTEL JAMES STREET" 
-    data-lat="-27.457871" 
-    data-lng="153.041832" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=70 James Street, Fortitude Valley, QLD 4006, Australia'><h4>SAGE HOTEL JAMES STREET</h4><p>70 James Street, Fortitude Valley, QLD 4006, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.jamesst@sage-hotels.com'>reservations.jamesst@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-pin-icon="images/icons/map-pin-chifley.svg" 
+      data-location="CHIFLEY EXECUTIVE SUITES NEWCASTLE" 
+      data-lat="-32.927231" 
+      data-lng="151.783761" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=111 Scott St Newcastle, Newcastle, New South Wales 2300'><h4>CHIFLEY EXECUTIVE SUITES NEWCASTLE</h4><p>111 Scott St Newcastle, Newcastle, New South Wales 2300</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4040 1200</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:res.ces@optusnet.com.au'>res.ces@optusnet.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
   <div class="markers" 
-    data-pin-icon="images/icons/map-pin.png" 
-    data-location="SAGE HOTEL WOLLONGONG" 
-    data-lat="-34.428922" 
-    data-lng="150.901022" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=60-62 Harbour St, Wollongong, NSW 2500, Australia'><h4>SAGE HOTEL WOLLONGONG</h4><p>60-62 Harbour St, Wollongong, NSW 2500, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4201 2111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.wollongong@sage-hotels.com'>reservations.wollongong@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-pin-icon="images/icons/map-pin-chifley.svg" 
+      data-location="CHIFLEY PLAZA TOWNSVILLE" 
+      data-lat="-19.261410" 
+      data-lng="146.815561" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Flinders and Stanley Streets, Townsville, Queensland 4810'><h4>CHIFLEY PLAZA TOWNSVILLE</h4><p>Cnr Flinders and Stanley Streets, Townsville, Queensland 4810</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4772 1888</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@theplazahotel.com.au'>info@theplazahotel.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin-chifley.svg" 
+      data-location="THE CHIFLEY ON SOUTH TERRACE" 
+      data-lat="-34.935021" 
+      data-lng="138.605591" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=226 South Terrace, Adelaide, SA 5000, Australia'><h4>THE CHIFLEY ON SOUTH TERRACE</h4><p>226 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 4355</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:frontoffice.southterrace@chifleyhotels.com'>frontoffice.southterrace@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  
+  
 </article>
 
 <!--

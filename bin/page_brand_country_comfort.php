@@ -85,28 +85,18 @@
           <div id="brand-page-introduction-item-container">
             <div class="brand-page-introduction-item">
               <h1>01.</h1>
-              <h4>Brand new hotel building</h4>
-              <p>A modern gateway to the City of Light</p>
+              <h4>Great value </h4>
+              <p>Quality accommodation at a quality price. </p>
             </div>
             <div class="brand-page-introduction-item">
               <h1>02.</h1>
-              <h4>Julio’s restaurant</h4>
-              <p>Fine Italian & Mediterranean Cuisine since 1985</p>
+              <h4>Rest and recharge</h4>
+              <p>A warm welcome with a delicious meal, a hot shower plus a comfortable bed. </p>
             </div>
             <div class="brand-page-introduction-item">
               <h1>03.</h1>
-              <h4>Free wifi on all devices</h4>
-              <p>Great for sharing moments with friends back home</p>
-            </div>
-            <div class="brand-page-introduction-item">
-              <h1>04.</h1>
-              <h4>Great weekend getaway</h4>
-              <p>Only 5 hours from Singapore</p>
-            </div>
-            <div class="brand-page-introduction-item">
-              <h1>05.</h1>
-              <h4>Central location</h4>
-              <p>Minutes to Kings Park, major shopping & boutique alfresco dining precincts and free bus services</p>
+              <h4>Your home on the road</h4>
+              <p>When the sun goes down and you look back at the road that you’ve travelled. You’ll be glad that you stayed and wake up refreshed and recharged for the new day ahead.</p>
             </div>
 
           </div>
@@ -174,7 +164,7 @@
               <div class="brand-location-slider-item-copy">
                 <h4>Newcastle</h4>
                 <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <p>Country Comfort Hotel Newcastle Airport and Convention Centre is located only 15 minutes from Newcastle Airport and just 1km from the center of Heatherbrae. It is home to a versatile event space that provides a modern venue in which to host all your corporate or social functions. </p>
               </div>
             </div>
 
@@ -185,9 +175,9 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Belmont</h4>
+                <h2><a href="hotel.php">Country Comfort Inter City Perth</a></h2>
+                <p>Well suited for business and leisure travellers heading to Western Australia, Country Comfort Hotel Inter City Perth is ideally located in the City of Belmont, just 15 minutes from the city’s Central Business District.</p>
               </div>
             </div>
 
@@ -204,7 +194,7 @@
               <div class="brand-location-slider-item-copy">
                 <h4>Newcastle</h4>
                 <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <p>Country Comfort Hotel Newcastle Airport and Convention Centre is located only 15 minutes from Newcastle Airport and just 1km from the center of Heatherbrae. It is home to a versatile event space that provides a modern venue in which to host all your corporate or social functions. </p>
               </div>
             </div>
 
@@ -215,9 +205,9 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Belmont</h4>
+                <h2><a href="hotel.php">Country Comfort Inter City Perth</a></h2>
+                <p>Well suited for business and leisure travellers heading to Western Australia, Country Comfort Hotel Inter City Perth is ideally located in the City of Belmont, just 15 minutes from the city’s Central Business District.</p>
               </div>
             </div>
 
@@ -230,7 +220,7 @@
               <div class="brand-location-slider-item-copy">
                 <h4>Newcastle</h4>
                 <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <p>Country Comfort Hotel Newcastle Airport and Convention Centre is located only 15 minutes from Newcastle Airport and just 1km from the center of Heatherbrae. It is home to a versatile event space that provides a modern venue in which to host all your corporate or social functions. </p>
               </div>
             </div>
 
@@ -241,9 +231,9 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>wollongong</h4>
-                <h2><a href="hotel.php">Country Comfort Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+                <h4>Belmont</h4>
+                <h2><a href="hotel.php">Country Comfort Inter City Perth</a></h2>
+                <p>Well suited for business and leisure travellers heading to Western Australia, Country Comfort Hotel Inter City Perth is ideally located in the City of Belmont, just 15 minutes from the city’s Central Business District.</p>
               </div>
             </div>
 
@@ -302,7 +292,7 @@
               <div class="brand-location-slider-item-copy-mobile">
                 <h4>Newcastle</h4>
                 <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <p>Country Comfort Hotel Newcastle Airport and Convention Centre is located only 15 minutes from Newcastle Airport and just 1km from the center of Heatherbrae. It is home to a versatile event space that provides a modern venue in which to host all your corporate or social functions. </p>
               </div>
             </div>
 
@@ -311,9 +301,9 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h4>Wollongong</h4>
-                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <h4>Belmont</h4>
+                <h2><a href="hotel.php">Country Comfort Inter City Perth</a></h2>
+                <p>Well suited for business and leisure travellers heading to Western Australia, Country Comfort Hotel Inter City Perth is ideally located in the City of Belmont, just 15 minutes from the city’s Central Business District.</p>
               </div>
             </div>
 
@@ -324,7 +314,7 @@
               <div class="brand-location-slider-item-copy-mobile">
                 <h4>Newcastle</h4>
                 <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <p>Country Comfort Hotel Newcastle Airport and Convention Centre is located only 15 minutes from Newcastle Airport and just 1km from the center of Heatherbrae. It is home to a versatile event space that provides a modern venue in which to host all your corporate or social functions. </p>
               </div>
             </div>
 
@@ -333,9 +323,9 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h4>Wollongong</h4>
-                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <h4>Belmont</h4>
+                <h2><a href="hotel.php">Country Comfort Inter City Perth</a></h2>
+                <p>Well suited for business and leisure travellers heading to Western Australia, Country Comfort Hotel Inter City Perth is ideally located in the City of Belmont, just 15 minutes from the city’s Central Business District.</p>
               </div>
             </div>
 

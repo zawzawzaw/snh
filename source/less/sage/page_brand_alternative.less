@@ -142,6 +142,20 @@ body.brand-alternative-page{
 
   position: relative;
 
+  .transition-single(opacity, 0.3s,  cubic-bezier(0.645, 0.045, 0.355, 1));
+
+
+  &.slick-slide{
+    .opacity(0.5);
+
+  }
+
+  &.slick-active{
+    .opacity(1.0);
+  }
+  
+
+
   .brand-location-slider-item-image{
     display: block;
 
@@ -517,7 +531,8 @@ body.brand-alternative-page{
   .default-promotion-content-item-copy{
     h5{
       // .poppins-medium;
-      .lato-regular;
+      // .lato-regular;
+      .lato-bold;
     }
   }
 }
