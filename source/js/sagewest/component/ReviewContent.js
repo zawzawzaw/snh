@@ -456,6 +456,8 @@ sagewest.component.ReviewContent.prototype.public_method_06 = function() {};
 sagewest.component.ReviewContent.prototype.on_language_dropdown_change = function(event) {
   //console.log('on_language_dropdown_change: ' + this.language_dropdown.current_value);
 
+  this.language_dropdown.element.removeClass('not-selected-version');
+  
 
   if (this.current_language != this.language_dropdown.current_value) {
     this.current_language = this.language_dropdown.current_value;
@@ -477,6 +479,8 @@ sagewest.component.ReviewContent.prototype.on_language_dropdown_change = functio
  */
 sagewest.component.ReviewContent.prototype.on_travel_type_dropdown_change = function(event) {
   //console.log('on_travel_type_dropdown_change: ' + this.travel_type_dropdown.current_value);
+  
+  this.travel_type_dropdown.element.removeClass('not-selected-version');
 
   if (this.current_travel_type != this.travel_type_dropdown.current_value) {
     

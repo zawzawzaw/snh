@@ -1158,6 +1158,13 @@ body.is-tablet.is-tablet-portrait{
     }
   }
 
+
+  #default-introduction-image{
+    .manic-image-container{
+      height: 475px;
+    }
+  }
+
   #default-introduction-video-container{
     // height: 475px;
     /// height: 475px - 20px;
@@ -1223,7 +1230,11 @@ body.is-tablet.is-tablet-portrait{
       display: none;
     }
 
-
+    #default-introduction-image-mobile{
+      .manic-image-container{
+        height: 392px;
+      }
+    }
     #default-introduction-mobile-video {
       width: 100%;
       height: 392px;
@@ -1249,6 +1260,11 @@ body.is-tablet.is-tablet-portrait{
 
 @media only screen and (max-width: 480px) {
   #default-introduction-section{
+    #default-introduction-image-mobile{
+      .manic-image-container{
+        height: 192px;
+      }
+    }
     #default-introduction-mobile-video {
       height: 192px;
       iframe {
@@ -1286,7 +1302,8 @@ body.is-tablet.is-tablet-portrait{
     text-transform: none;
   }
   h1{
-    .poppins-regular;
+    // .poppins-regular;
+    .lato-regular;
     color: @grey;
     font-size: 30px;
     line-height: 36px;
@@ -1327,29 +1344,37 @@ body.is-tablet.is-tablet-portrait{
 
   border-bottom: 1px solid @border-grey-2;
 
-  padding-top: 20px;
+  // padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 19px;
 
   h1{
-    .poppins-light;
+    // .poppins-light;
+    .lato-light;
     font-size: 38px;
     line-height: 42px;
+    letter-spacing: 0.025em;
+
     color: @dark-violet-2;
 
 
     .display-inline-block;
     position: absolute;
-    top: 20px;
+    // top: 20px;
+    top: 14px;
     left: 0;
   }
   h4{
-    .poppins-medium;
-    font-size: 18px;
+    // .poppins-medium;
+    .lato-bold;
+    // font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
-    letter-spacing: 0.05em;
+    // letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     color: @grey;
 
-    margin-bottom: -2px;
+    margin-bottom: -1px;
   }
   p{
     font-size: 15px;
@@ -1934,6 +1959,12 @@ div.default-promotion-cta-container{
   }
 }
 
+
+
+
+
+
+
 //     __  ______    ____
 //    /  |/  /   |  / __ \
 //   / /|_/ / /| | / /_/ /
@@ -1991,7 +2022,7 @@ div.default-promotion-cta-container{
           color: @violet;
         }
         .address-icon {
-          background: url(../images/icons/pin-icon-hover.png) no-repeat;
+          background: url('../images/icons/pin-icon-hover@{brand-suffix}.png') no-repeat;   // needs the quotes
         }
       }   
     }
@@ -2019,7 +2050,7 @@ div.default-promotion-cta-container{
           color: @violet;
         }
         .telephone-icon {
-          background: url(../images/icons/phone-icon-hover.png) no-repeat;
+          background: url('../images/icons/phone-icon-hover@{brand-suffix}.png') no-repeat;   // needs the quotes
         }
       }
     }
@@ -2044,11 +2075,11 @@ div.default-promotion-cta-container{
         }
       }
       &:hover {
-        h4, p {
+        h4, p , a{
           color: @violet;
         }
         .mail-icon {
-          background: url(../images/icons/mail-icon-hover.png) no-repeat;
+          background: url('../images/icons/mail-icon-hover@{brand-suffix}.png') no-repeat;   // needs the quotes
         }
       }
     }

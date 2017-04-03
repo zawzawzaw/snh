@@ -16,9 +16,9 @@
           <div id="desktop-header-logo-container">
             <a href="#" id="desktop-menu-bar" class="open">
               <img src="images/icons/menu-bar.svg" alt="">     
-              <span>Menu</span>       
+              <span>Menu</span>
             </a>
-            <a href="brand_alternative.php" id="desktop-header-logo">
+            <a href="brand_country_comfort.php" id="desktop-header-logo">
               <img src="images/logo/country-comfort-logo.png">
             </a>
           </div>          
@@ -27,10 +27,10 @@
       <div class="col-md-6">
         <div id="desktop-header-nav">
           <ul>
-            <li><a href="brand_alternative.php#about">About</a></li>
-            <li><a href="brand_alternative.php#location">Our Locations</a></li>
-            <li><a href="brand_alternative.php#offers">Offers</a></li>
-            <li><a href="brand_alternative.php#map">Map</a></li>
+            <li><a href="brand_country_comfort.php#about">About</a></li>
+            <li><a href="brand_country_comfort.php#location">Our Locations</a></li>
+            <li><a href="brand_country_comfort.php#offers">Offers</a></li>
+            <li><a href="brand_country_comfort.php#map">Map</a></li>
           </ul>
         </div>
       </div>  

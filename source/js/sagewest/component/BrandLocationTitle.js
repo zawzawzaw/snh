@@ -285,6 +285,8 @@ sagewest.component.BrandLocationTitle.prototype.set_country = function(country_p
     
     this.territory_dropdown.set_option_array(territory_array);
 
+    this.country_dropdown.element.removeClass('not-selected-version');
+
     this.dispatchEvent(new goog.events.Event(sagewest.component.BrandLocationTitle.ON_CHANGE));
 
   } else {
@@ -324,6 +326,9 @@ sagewest.component.BrandLocationTitle.prototype.set_territory = function(territo
     
     this.city_dropdown.set_option_array(city_array);
 
+
+    this.territory_dropdown.element.removeClass('not-selected-version');
+
     this.dispatchEvent(new goog.events.Event(sagewest.component.BrandLocationTitle.ON_CHANGE));
 
   } else {
@@ -349,6 +354,8 @@ sagewest.component.BrandLocationTitle.prototype.set_city = function(city_param) 
   if (city_param != ''){
     this.current_city = city_param;
     this.dispatchEvent(new goog.events.Event(sagewest.component.BrandLocationTitle.ON_CHANGE));
+
+    this.city_dropdown.element.removeClass('not-selected-version');
 
   } else {
     this.set_no_city();
@@ -376,6 +383,13 @@ sagewest.component.BrandLocationTitle.prototype.set_no_country = function() {
   this.current_country = 'none';
   this.current_territory = 'none';
   this.current_city = 'none';
+
+
+  this.country_dropdown.element.addClass('not-selected-version');
+  this.territory_dropdown.element.addClass('not-selected-version');
+  this.city_dropdown.element.addClass('not-selected-version');
+
+  
 };
 sagewest.component.BrandLocationTitle.prototype.set_no_territory = function() {
   console.log('set_no_territory');
@@ -384,10 +398,15 @@ sagewest.component.BrandLocationTitle.prototype.set_no_territory = function() {
 
   this.current_territory = 'none';
   this.current_city = 'none';
+
+  this.territory_dropdown.element.addClass('not-selected-version');
+  this.city_dropdown.element.addClass('not-selected-version');
 };
 sagewest.component.BrandLocationTitle.prototype.set_no_city = function() {
   console.log('set_no_city'); // do nothing :D
   this.current_city = 'none';
+
+  this.city_dropdown.element.addClass('not-selected-version');
 };
 
 

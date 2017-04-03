@@ -7,7 +7,7 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="brand_alternative.php" id="mobile-header-logo">
+    <a href="brand_country_comfort.php" id="mobile-header-logo">
       <img src="images/logo/country-comfort-logo.png">
     </a>  
   

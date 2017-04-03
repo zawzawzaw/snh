@@ -470,12 +470,12 @@
                 <option value="all">All</option>
               </select>
             </div>
-            <div class="manic-dropdown" id="page-review-travel-type-dropdown">
+            <div class="manic-dropdown not-selected-version" id="page-review-travel-type-dropdown">
               <select id="page-review-travel-type-select">
                 <option value="">Please Select</option>
                 <option value="business">Business</option>
-                <option value="friends">Friends</option>
                 <option value="couple">Couple</option>
+                <option value="friends">Friends</option>
                 <option value="solo">Solo</option>
                 <option value="all">All</option>
               </select>
@@ -1254,7 +1254,8 @@
 
 
 
-<footer id="desktop-footer">
+<footer id="desktop-footer" class="hotel-version">
+  <!-- 
   <div id="hotel-footer-top-bar-container" class="hidden-sm hidden-xs">
     <div class="container-fluid">
       <div class="row">
@@ -1268,12 +1269,13 @@
               <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
             </ul>
 
-          </div> <!-- #hotel-footer-top-bar -->
+          </div>
 
         </div>
       </div>
     </div>
-  </div>
+  </div> 
+  -->
 
   <div class="container-fluid">
     <div class="row">
@@ -1289,11 +1291,17 @@
             <input type="text" name="email" placeholder="Enter your email">
           </div>
         </div>
-
-        <div id="footer-copyright-info">
+        
+        <div id="footer-copyright-info" class="visible-md visible-lg">
           <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
           <a href="#">Privacy Policy</a>
         </div>
+
+        <div id="footer-copyright-info" class="visible-sm visible-xs">
+          <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
       </div>
 
       <div class="col-md-1 hidden-sm hidden-xs">
@@ -1356,6 +1364,30 @@
       </div>
     </div>
   </div>
+
+
+  <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-bottom-bar">
+            <ul>
+              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
+              <li><p>+61865009100</p></li>
+              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
+            </ul>
+            <ul>
+              <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
+              <li><p>0800 480 274 (Within New Zealand)</p></li>
+            </ul>
+          </div> <!-- #hotel-footer-bottom-bar -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 </footer> <!-- #desktop-footer
       </div> <!-- #page-wrapper-content -->
     </div> <!-- #page-wrapper -->

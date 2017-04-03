@@ -110,12 +110,12 @@ page-wrapper-content-min-height for short pages, long pages will have a scrollba
                 <option value="all">All</option>
               </select>
             </div>
-            <div class="manic-dropdown" id="page-review-travel-type-dropdown">
+            <div class="manic-dropdown not-selected-version" id="page-review-travel-type-dropdown">
               <select id="page-review-travel-type-select">
                 <option value="">Please Select</option>
                 <option value="business">Business</option>
-                <option value="friends">Friends</option>
                 <option value="couple">Couple</option>
+                <option value="friends">Friends</option>
                 <option value="solo">Solo</option>
                 <option value="all">All</option>
               </select>
