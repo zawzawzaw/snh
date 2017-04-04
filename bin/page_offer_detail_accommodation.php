@@ -28,7 +28,7 @@
             <li><a href="brand_alternative.php">sage hotels</a></li>
             <li><a href="hotel.php">sage west perth</a></li>
             <li><a href="offer_index.php">Offers</a></li>
-            <li>Valentine's Day</li>
+            <li>Stay Two Nights And Save</li>
           </ul>
         </div> <!-- default-breadcrumb -->
 
@@ -36,28 +36,6 @@
     </div>
   </div>
 </article> <!-- default-breadcrumb-container -->
-
-<!-- <article class="default-breadcrumb-section-mobile visible-sm visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="default-breadcrumb-mobile">
-          <ul>
-            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
-            <li><a href="index.php">sage hotels</a></li>
-            <li><a href="hotel.php">sage west perth</a></li>
-            <li><a href="dining_index.php">Dining</a></li>
-            <li>The Pool Terrace & Bar</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</article> --> <!-- default-breadcrumb-container -->
-
-
 
 <!--
    ____  _     ___ ____  _____ ____
@@ -77,7 +55,7 @@
       <div class="col-md-8 col-sm-10 col-xs-12">
 
         <div class="detail-banner-slider-title">
-          <h1>Valentine’s Day</h1>
+          <h1>Stay Two Nights And Save</h1>
         </div> <!-- detail-banner-slider-title -->
 
       </div>
@@ -86,45 +64,49 @@
       <div class="col-md-12">
 
         <!-- add the class 'slider-with-price' if has price -->
-        <div class="detail-banner-slider-container slider-with-price">
+        <div class="detail-banner-slider-container">
           <div class="detail-banner-slider">
 
             <div class="detail-banner-slider-item">
               <div class="manic-image-container">
                 <img src="" 
-                  data-image-desktop="images_cms/offer/offer-detail-banner.jpg"
-                  data-image-tablet="images_cms/offer/offer-detail-banner-mobile.jpg"
-                  data-image-mobile="images_cms/offer/offer-detail-banner-mobile.jpg">
+                  data-image-desktop="images_cms/offer/offer-detail-accommodation-banner.jpg"
+                  data-image-tablet="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg"
+                  data-image-mobile="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg">
               </div>
             </div>
 
             <div class="detail-banner-slider-item">
               <div class="manic-image-container">
                 <img src="" 
-                  data-image-desktop="images_cms/offer/offer-detail-banner.jpg"
-                  data-image-tablet="images_cms/offer/offer-detail-banner-mobile.jpg"
-                  data-image-mobile="images_cms/offer/offer-detail-banner-mobile.jpg">
+                  data-image-desktop="images_cms/offer/offer-detail-accommodation-banner.jpg"
+                  data-image-tablet="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg"
+                  data-image-mobile="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg">
               </div>
             </div>
 
             <div class="detail-banner-slider-item">
               <div class="manic-image-container">
                 <img src="" 
-                  data-image-desktop="images_cms/offer/offer-detail-banner.jpg"
-                  data-image-tablet="images_cms/offer/offer-detail-banner-mobile.jpg"
-                  data-image-mobile="images_cms/offer/offer-detail-banner-mobile.jpg">
+                  data-image-desktop="images_cms/offer/offer-detail-accommodation-banner.jpg"
+                  data-image-tablet="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg"
+                  data-image-mobile="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg">
               </div>
             </div>
 
           </div> <!-- detail-banner-slider -->
 
+
+          <!-- 
           <div class="detail-banner-slider-price-container">
             <h6>per pax</h6>
             <div class="content-price">
               <span class="currency">aud</span>
               <span class="number">$79.90</span>
             </div>
-          </div> <!-- detail-banner-slider-price-container -->
+          </div>
+          -->
+          <!-- detail-banner-slider-price-container -->
 
         </div> <!-- detail-banner-slider-container -->
         
@@ -161,45 +143,39 @@
 
           
           <div class="detail-page-content-title">
-            <h5>Romantic dining at Lennons</h5>
+            <h5>Get Egg-Cited Cityside </h5>
           </div>
 
           <div class="detail-page-content-description">
             <div class="default-copy">
-              <p>This Valentine's Day, treat your loved one to a few Spanish specials thoughtfully developed by our talented younger chefs as a dedication to their own significant others.</p>           
+              <p>Family friendly fun in the CBD this Easter! Stay two nights and get 15% off the daily rate!</p>           
             </div>
           </div>
 
           <div class="detail-page-menu-info">
+            <div class="detail-page-menu-info-item">
+              <div class="default-copy">
+                <h4>This great deal includes:</h4>
+                <ul>
+                  <li>Tasting platter in the lounge consisting of marinated olives, spiced nuts, cheese, lavosh, quince paste and two-cheese aranchini.</li>
+                  <li>Easter treat on arrival.</li>
+                  <li>Early check-in at 1.00pm. Late check-out to 12.00pm.</li>
+                  <li>Discounted valet car parking for economy size cars for $30 per night.</li>
+                  <li>Staying over Easter Sunday? Extra free bonus $20 voucher to use towards upgrading your room or a later checkout.</li>
+                  <li>Need a rollaway? Pay $30 per night instead of $60.</li>
+                  <li>FREE unlimited wifi. </li>
+                  <li>Four FREE mini bar Items per night. </li>
+                </ul>
+              </div>
+            </div> <!-- detail-page-menu-info-item -->
 
             <div class="detail-page-menu-info-item">
-              <h4>Package includes</h4>
-              <ul>
-                <li>Arrival rose for your significant other</li>
-                <li>3-course special set menu</li>
-                <li>Complimentary bottle of red or white wine</li>
-                <li>Live jazz singer duo</li>                  
-              </ul>
-            </div> <!-- detail-page-menu-info-item -->
-            <div class="detail-page-menu-info-item set-menu">
-              <h4>Special set menu</h4>
-              
-              
-              <h6>Vieiras con Samfaina</h6>
-              <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
+              <div class="default-copy">
+                <p>For the first 10 bookings that are made on our Egg-Cited Easter package (for all bookings made between 10th April and the 17th April) guests will receive a free family pass to the Queensland Museum Science Centre. </p>
+                <p>The Science Centre is home to the Queensland Museum Network, and a brilliant place to take the family for hours of Science-y entertainment. Enjoy their latest exhibition (all hands-on FUN) called ‘MATHAMAZING’. As well as the Science Centre, the Museum itself has a number of fantastic (and free) exhibitions to enjoy. Enjoy that final weekend of the school holidays (yep … you may need it!) and enjoy 48 hours in Brisbane. </p>
+                <p>We can almost guarantee sunny skies and warm weather – all the better to float around in our roof top pool terrace with a cocktail in hand!</p>
+              </div>
             </div>
-
-            <div class="detail-page-menu-info-item set-menu">
-              <h6>Vieiras con Samfaina</h6>
-              <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-            </div>
-
-            <div class="detail-page-menu-info-item set-menu">
-              <h6>Vieiras con Samfaina</h6>
-              <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-            </div>
-
-            <span class="note">Complimentary bottle of House Red or White Wine</span>
 
           </div> <!-- detail-page-menu-info -->
 
@@ -229,31 +205,18 @@
 
             <div class="detail-page-contact-info-item">
               <h6>Address</h6>
-              <p>Firehouse Restaurant Perth, <br>249 Great Eastern Highway Belmont WA 6104</p>
+              <p>NEXT Hotel Brisbane <br>72 Queen Street, Brisbane, <br>QLD 4000, Australia</p>
             </div>
 
             <div class="detail-page-contact-info-item last-version">
               <h6>Contact us</h6>
-              <p>F&B Manager: Aleysha Campbell <br>Contact: 08-94780899 <br>Email: <a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+              <p>Phone: +61 7 3222 3222 <br>Email: <a href="mailto:info.brisbane@nexthotels.com">info.brisbane@nexthotels.com</a></p>
             </div>
 
-            <div class="cta-container">
-              <a href="" class="arrow-cta">Visit Restaurant Website</a>
-              <!-- <a href="javascript:void(0);" class="dimmi-book-cta"></a> -->
-
-              <div class="dimmi-book-cta-container">
-
-                <!-- https://www.dimmi.com.au/widget-embed-code/33719?key=5rDmNrPfQhrTDVAYeXXs3nWdtMdbD4ybvk1NU9vZEUA%3D -->
-                <!-- code from dimmi -->
-                <a href="https://www.dimmi.com.au/make-booking/kirrabelle-kitchen?mode=Widget" target="_blank" rel="nofollow" class="dimmi-button">
-                  <img src="https://widget.dimmi.com.au/Shared/RestaurantButtons/33719-dp.gif" alt="Book Online - Free, Instant, Guaranteed." />
-                </a>
-                <script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33719"></script>
-                <!-- end code from dimmi -->
-
-              </div>
-
+            <div class="square-cta-container">
+              <a href="" class="square-cta highlight-version">Book Now</a>
             </div>
+
           </div> <!-- detail-page-contact-info -->
 
 
@@ -505,27 +468,16 @@
 
         <div class="detail-page-contact-info">
           <ul>
-            <li><p class="address"><span>Firehouse Restaurant Perth, <br>249 Great Eastern Highway Belmont WA 6104</span></p></li>
-            <li><p class="phoneno"><span>08-94780899</span></p></li>
-            <li><a class="email" href="mailto:firehouse.intercityperth@snhgroup.com"><span>firehouse.intercityperth@snhgroup.com</span></a></li>
+            <li><p class="address"><span>NEXT Hotel Brisbane <br>72 Queen Street, Brisbane, <br>QLD 4000, Australia</span></p></li>
+            <li><p class="phoneno"><span>+61 7 3222 3222</span></p></li>
+            <li><a class="email" href="mailto:info.brisbane@nexthotels.com"><span>info.brisbane@nexthotels.com</span></a></li>
+
           </ul>
-          <div class="cta-container">
-            <a href="" class="arrow-cta">Visit Restaurant Website</a>
-            <!-- <a href="javascript:void(0);" class="dimmi-book-cta"></a> -->
 
-            <div class="dimmi-book-cta-container">
-
-              <!-- https://www.dimmi.com.au/widget-embed-code/33719?key=5rDmNrPfQhrTDVAYeXXs3nWdtMdbD4ybvk1NU9vZEUA%3D -->
-              <!-- code from dimmi -->
-              <a href="https://www.dimmi.com.au/make-booking/kirrabelle-kitchen?mode=Widget" target="_blank" rel="nofollow" class="dimmi-button">
-                <img src="https://widget.dimmi.com.au/Shared/RestaurantButtons/33719-dp.gif" alt="Book Online - Free, Instant, Guaranteed." />
-              </a>
-              <script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33719"></script>
-              <!-- end code from dimmi -->
-
-            </div>
-
+          <div class="square-cta-container">
+            <a href="" class="square-cta highlight-version">Book Now</a>
           </div>
+
         </div> <!-- detail-page-contact-info -->
 
 
@@ -538,28 +490,32 @@
 
   <div id="detail-page-content">
     <div class="detail-page-content-title">
-      <h5>Romantic Dining at Lennons</h5>
+      <h5>Get Egg-Cited Cityside </h5>
     </div>
 
     <div class="detail-page-content-description">
       <div class="default-copy">
-        <p class="minimize-read-more" data-length="165">This Valentine's Day, treat your loved one to a few Spanish specials thoughtfully developed by our talented younger chefs as a dedication to their own significant others.</p>
+        <p class="minimize-read-more" data-length="165">Family friendly fun in the CBD this Easter! Stay two nights and get 15% off the daily rate!</p>
       </div>      
     </div>
   </div> <!-- detail-page-content -->
 
   <div id="detail-page-content" class="no-background">
     <div class="detail-page-content-title">
-      <h5>Package Includes</h5>
+      <h5>This great deal includes:</h5>
     </div>
 
     <div class="detail-page-content-description">
       <div class="default-copy">
         <ul>
-          <li>Arrival rose for your significant other</li>
-          <li>3-course special set menu</li>
-          <li>Complimentary bottle of red or white wine</li>
-          <li>Live jazz singer duo</li>
+          <li>Tasting platter in the lounge consisting of marinated olives, spiced nuts, cheese, lavosh, quince paste and two-cheese aranchini.</li>
+          <li>Easter treat on arrival.</li>
+          <li>Early check-in at 1.00pm. Late check-out to 12.00pm.</li>
+          <li>Discounted valet car parking for economy size cars for $30 per night.</li>
+          <li>Staying over Easter Sunday? Extra free bonus $20 voucher to use towards upgrading your room or a later checkout.</li>
+          <li>Need a rollaway? Pay $30 per night instead of $60.</li>
+          <li>FREE unlimited wifi. </li>
+          <li>Four FREE mini bar Items per night. </li>
         </ul>
       </div>      
     </div>
@@ -570,15 +526,15 @@
 
 
 <article id="detail-page-expanding-content-section" class="visible-sm visible-xs">
-
+  
   <div class="manic-expand-container" data-group="mobile-offer-detail-page">
-    <div class="scroll-target" data-value="title-01"></div>
+    <div class="scroll-target" data-value="title-02"></div>
     <div class="manic-expand-container-title">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
 
-            <h4>special set menu</h4>
+            <h4>More Details</h4>
 
           </div>
         </div>
@@ -590,27 +546,14 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
-            <div class="detail-page-menu-info">              
-              <div class="detail-page-menu-info-item set-menu">
-                <h6>Vieiras con Samfaina</h6>
-                <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-              </div>
-
-              <div class="detail-page-menu-info-item set-menu">
-                <h6>Vieiras con Samfaina</h6>
-                <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-              </div>
-
-              <div class="detail-page-menu-info-item set-menu">
-                <h6>Vieiras con Samfaina</h6>
-                <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-              </div>
-
-              <span class="note">Complimentary bottle of House Red or White Wine</span>
-            
+              
+            <div class="default-copy">
+              <p>For the first 10 bookings that are made on our Egg-Cited Easter package (for all bookings made between 10th April and the 17th April) guests will receive a free family pass to the Queensland Museum Science Centre. </p>
+              <p>The Science Centre is home to the Queensland Museum Network, and a brilliant place to take the family for hours of Science-y entertainment. Enjoy their latest exhibition (all hands-on FUN) called ‘MATHAMAZING’. As well as the Science Centre, the Museum itself has a number of fantastic (and free) exhibitions to enjoy. Enjoy that final weekend of the school holidays (yep … you may need it!) and enjoy 48 hours in Brisbane. </p>
+              <p>We can almost guarantee sunny skies and warm weather – all the better to float around in our roof top pool terrace with a cocktail in hand!</p>
             </div>
-
-
+            
+        
           </div>
         </div>
       </div>
@@ -637,7 +580,14 @@
         <div class="row">
           <div class="col-xs-12">
               
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quas repellat ipsum. Repudiandae optio laboriosam atque odit laborum rerum quam...</p>
+            <div class="default-copy">
+              <ul>
+                <li>The offer Get Egg-Cited CitySide. Stay 2 nights & Save is bookable for stays now until 17-04-2017</li>
+                <li>Blackouts apply</li>
+                <li>Bookings must be prepaid and non refundable</li>
+              </ul>
+            </div>
+
         
           </div>
         </div>

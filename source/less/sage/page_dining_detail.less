@@ -45,7 +45,9 @@
   }
 
   .detail-page-content-description{
-    margin-bottom: 45px;
+    // margin-bottom: 45px;
+    margin-bottom: 23px;
+
     .room-details {
       padding-bottom: 25px;
     }
@@ -219,8 +221,10 @@
   
   margin-bottom: 45px;
 
-  padding-top: 27px;
-  padding-bottom: 26px;
+  // padding-top: 27px;
+  padding-top: 20px;
+  // padding-bottom: 26px;
+  padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -234,7 +238,9 @@
 
 
   .detail-page-contact-info-title{
-    margin-bottom: 29px;
+    // margin-bottom: 29px;
+    margin-bottom: 28px;
+
     text-align: center;
 
     h5{
@@ -245,13 +251,16 @@
     }
   }
   .detail-page-contact-info-item{
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    margin-bottom: 18px;
+
     &.last-version{
       margin-bottom: 0px;
     }
     h6{
       //.playfair-regular;
-      .lato-regular;
+      // .lato-regular;
+      .lato-bold;
       letter-spacing: 0;
       font-size: 16px;
       line-height: 20px;
@@ -262,11 +271,17 @@
     
 
     h6 + p{
-      padding-top: 3px;
+      // padding-top: 3px;
+      padding-top: 4px;
     }
+
+    
 
   }
 
+  .square-cta-container{
+    padding-top: 24px;
+  }
   .cta-container{
     padding-top: 16px;
 
@@ -342,10 +357,15 @@
         }  
       }
       a.email {
+
+        white-space: nowrap;
+        margin-right: -10px;
+
         &:before {          
           content: "\f0e0"; // .fa-long-arrow-right
           font-size: 16px;          
-          vertical-align: top;
+          // vertical-align: top;
+          vertical-align: middle;
           word-wrap: break-word;
         }
       }
@@ -436,6 +456,13 @@
     .cta-container{
       padding-top: 6px;
     }
+
+    .default-copy{
+      h4 + ul {
+        padding-top: 9px;
+      }
+    }
+
     
   } // .detail-page-menu-info-item
   span.note {
