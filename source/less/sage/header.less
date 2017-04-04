@@ -271,6 +271,8 @@ body.hotel {
   .menu-link {
     background-color: #998e8b;
     padding: 10px 0px 10px 30px;
+    
+
     height: 74px;
     display: table;
     width: 100%;
@@ -284,9 +286,14 @@ body.hotel {
       vertical-align: middle;      
       span {        
         vertical-align: middle;
-        .playfair-regular;
-        font-size: 16px;
-        line-height: 27px;
+        // .playfair-regular;
+        // font-size: 16px;
+        // line-height: 27px;
+
+        .lato-regular;
+        font-size: 18px;
+        line-height: 22px;
+
         letter-spacing: 0.01em;
         display: inline-block;
         width: 80%;
@@ -297,6 +304,12 @@ body.hotel {
     height: 80px;
     padding-top: 12px;
 
+    // span{
+    //   .lato-regular;
+    //   font-size: 18px;
+    //   line-height: 22px;
+    // }
+
     &:hover {
       background-color: @violet;
     }
@@ -305,6 +318,13 @@ body.hotel {
     height: 80px;
     padding-top: 14px;
     background-color: #787372;
+
+    // span{
+    //   .lato-regular;
+    //   font-size: 18px;
+    //   line-height: 22px;
+    // }
+
     &:hover {
       background-color: @violet;
     }
@@ -383,22 +403,30 @@ body.hotel {
       }
     }
   }
-}
+
+
+
+} // #desktop-header-menu
 
 
 
 #destination-indicator{
   background: @violet;
   padding-left: 30px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+
+  // padding-top: 21px;
+  // padding-bottom: 21px;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
 
   @media all and (max-width: 991px) {
     padding-left: 20px;
   }
 
   p{
-    .playfair-regular;
+    // .playfair-regular;
+    .lato-regular;
     font-size: 16px;
     line-height: 18px;
     color: @white;
@@ -453,9 +481,14 @@ body.hotel {
   background-color: @white;
   position: absolute;
   right: 151px;
-  width: 290px;
+  // width: 290px;
   height: 83px;
   padding: 16px 30px 22px 30px;
+
+  .display-inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+
   .transition(.3s);
   .current-location-container {
     display: inline-block;
@@ -465,7 +498,8 @@ body.hotel {
       text-transform: uppercase;
     }
     span.current-location {
-      .playfair-regular;
+      // .playfair-regular;
+      .lato-bold;
       font-size: 20px;
       line-height: 30px;
       color: @grey-2;
@@ -566,17 +600,24 @@ body.hotel {
   top: 83px;
 
   .input-box {
-    margin-bottom: 15px;
-
+    // margin-bottom: 15px;
+    margin-bottom: 18px;
 
 
     label {
-      .playfair-regular;
-      font-size: 16px;
-      line-height: 16px;
+      // .playfair-regular;
+      // font-size: 16px;
+      // line-height: 16px;
+      .lato-bold;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.015em;
+
+
       color: #555;
       display: block;
-      padding-bottom: 10px;
+      // padding-bottom: 10px;
+      padding-bottom: 4px;
     }
 
     .input-box-disclaimer{
@@ -700,6 +741,15 @@ body.hotel {
       border: none;
     }
   }
+
+  .cta-container{
+    padding-top: 2px;
+    .square-cta{
+      display: block;
+      width: 100%;
+    }
+  }
+
 }
 #desktop-header-booking-calendar {
   // position: relative;
@@ -714,7 +764,15 @@ body.hotel {
     border-radius: 0px;
     height: 370px;
     background-color: #f1f2f2;
-    padding: 5px 9px;    
+    padding: 5px 9px;
+
+
+
+    padding-top: 10px;
+    padding-left: 17px;
+    padding-right: 12px;
+
+
     &:after, &:before {
       display: none;
     }
@@ -735,11 +793,18 @@ body.hotel {
         .open-sans-bold;
         font-size: 13px;
         line-height: 20px;
+
         text-transform: uppercase;
+
         &.month {
-          .playfair-regular;
-          font-size: 16px;
+          // .playfair-regular;
+          // font-size: 16px;
           text-transform: none;
+
+          .lato-regular;
+          font-size: 18px;
+          line-height: 20px;
+          color: @grey;
         }
         &.available {
           &:hover {
@@ -747,18 +812,34 @@ body.hotel {
           }
         }
         #hover-day {
-          .playfair-bold;
-          font-size: 46px;
-          line-height: 38px;
+          // .playfair-bold;
+          // font-size: 46px;
+          // line-height: 38px;
           margin-top: -15px;
           color: @violet;
+
+          .lato-bold;
+          font-size: 44px;
+          line-height: 40px;
+          color: @grey-2;
+
+          margin-top: -4px;
+          margin-bottom: -7px;
         }
         #hover-weekname {
           color: #555;
-          font-size: 11px;
+          // font-size: 11px;
           letter-spacing: 0.1em;
           .open-sans-bold;
           text-transform: uppercase;
+
+
+          font-size: 11px;
+          line-height: 20px;
+
+          //padding-bottom: 11px;
+          padding-bottom: 6px;
+
         }
       }
       td {
@@ -804,4 +885,98 @@ body.hotel {
       }
     }
   }
+}
+
+
+
+
+
+//       _    ____  ____ ___ _____ ___ ___  _   _    _    _
+//      / \  |  _ \|  _ \_ _|_   _|_ _/ _ \| \ | |  / \  | |
+//     / _ \ | | | | | | | |  | |  | | | | |  \| | / _ \ | |
+//    / ___ \| |_| | |_| | |  | |  | | |_| | |\  |/ ___ \| |___
+//   /_/   \_\____/|____/___| |_| |___\___/|_| \_/_/   \_\_____|
+//
+
+#desktop-header-booking-calendar{
+  .daterangepicker {
+
+    .calendar {
+      th{
+        font-size: 13px;
+        color: @grey;
+
+        .fa{
+          font-size: 17px;
+          line-height: 20px;
+          color: @grey;
+
+          &:hover{
+            color: @violet;
+          }
+        }
+
+//        &.month {
+//          // .poppins-light;
+//          .lato-regular;
+//          font-size: 18px;
+//          line-height: 20px;
+//          color: @grey;
+//        }
+
+//        #hover-day {
+//          // .poppins-medium;
+//          .lato-bold;
+//          font-size: 44px;
+//          line-height: 40px;
+//          color: @grey-2;
+//
+//          margin-top: -4px;
+//          margin-bottom: -7px;
+//        }
+//        #hover-weekname {
+//          font-size: 11px;
+//          line-height: 20px;
+//
+//          //padding-bottom: 11px;
+//          padding-bottom: 6px;
+//        }
+
+      }
+
+
+      td{
+        color: #3b3b3b;
+      }
+      td.off{
+        color: #969696;
+        &:hover{
+          color: @white;
+        }
+      }
+      td.available{
+
+      }
+      td.available:hover{
+        color: @white; 
+      }
+
+
+      tbody{
+        td{
+          padding-top: 3px;
+          padding-bottom: 3px;
+        }
+        tr{
+          border-bottom: 5px solid @grey-6;
+
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      } // tbody
+
+    } // .calendar
+
+  } // .daterangepicker
 }
