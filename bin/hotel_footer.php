@@ -96,7 +96,7 @@
             <li><a href="facilities.php">Facilities</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="activities.php">Activities</a></li>
-            <li><a href="javascript:void(0);">Reviews</a></li>
+            <li><a href="reviews.php">Reviews</a></li>
             <li><a href="events.php">Events</a></li>
             <li><a href="contact.php">Location</a></li>
           </ul>

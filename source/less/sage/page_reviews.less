@@ -14,11 +14,15 @@
   padding-right: 54px;
   .default-copy{
   }
+}
 
-  @media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
+  #page-reviews-intro-section{
+    padding-bottom: 0px;
+  }
+  #page-reviews-intro-text{
     padding-right: 0px;
   }
-
 }
 
 
@@ -29,6 +33,8 @@
     height: 380px;
   }
 }
+
+
 
 
 
@@ -50,6 +56,13 @@
   // padding-bottom: 50px;
   padding-bottom: 43px;
 }
+@media only screen and (max-width: 991px) {
+  #page-reviews-content-section{
+    padding-top: 0px;
+  }
+}
+
+
 
 #page-reviews-sidebar{
 
@@ -130,9 +143,20 @@
   padding-left: 41px;
   padding-right: 41px;
 
+  
+  @media only screen and (max-width: 991px) {
+    
+  }
+
+  
+
+
   .default-copy{
     padding-right: 20px;
   }
+
+
+
 
   .page-reviews-item-details{
 
@@ -244,18 +268,64 @@
 
 
 @media only screen and (max-width: 991px) {
+
   .page-reviews-item{
+    padding-top: 19px + 6px;
+    padding-bottom: 28px - 3px;
+
     .default-copy{
       padding-right: 0px;
+
+      h5{
+        font-size: 25px;
+        line-height: 30px;
+      }
+
+      h5 + p{
+        padding-top: 14px + 5px;
+      }
     }
 
     .page-reviews-item-details{
+      padding-top: 14px + 19px;
       padding-left: 0px;
-    }    
+    }
+
+    .page-reviews-item-rating{
+      margin-bottom: -2px;
+
+      .fa{
+        font-size: 14px;
+      }
+    }
+    .page-reviews-item-username{
+      font-size: 10px;
+    }
+
+    .page-reviews-item-date{
+      font-size: 10px;
+
+      padding-top: 0px;
+      margin-top: -1px;
+    }
+
+
+    .read-more-cta-container{
+      text-align: left;
+    }
 
   }
 }
 
+// MOBILE
+@media only screen and (max-width: 767px) {
+
+  .page-reviews-item{
+    padding-left: 24px;
+    padding-right: 24px;
+
+  }
+}
 
 
 #page-reviews-no-reviews{
@@ -374,3 +444,151 @@
     } // li
   }
 } // #page-reviews-pagination
+
+
+
+//    __  __  ___  ____ ___ _     _____   ___ _   _ _____ ____   ___
+//   |  \/  |/ _ \| __ )_ _| |   | ____| |_ _| \ | |_   _|  _ \ / _ \
+//   | |\/| | | | |  _ \| || |   |  _|    | ||  \| | | | | |_) | | | |
+//   | |  | | |_| | |_) | || |___| |___   | || |\  | | | |  _ <| |_| |
+//   |_|  |_|\___/|____/___|_____|_____| |___|_| \_| |_| |_| \_\\___/
+//
+
+
+#page-reviews-intro-section-mobile{
+  padding-top: 71px;
+  padding-bottom: 35px;
+}
+
+#page-reviews-intro-title-mobile{
+  margin-bottom: 20px;
+}
+
+#page-reviews-intro-image-mobile{
+  margin-bottom: 23px;
+  .manic-image-container{
+    height: 392px;
+
+    @media only screen and (max-width: 767px) {
+      height: 192px;
+    }
+  }
+}
+
+
+
+
+#page-reviews-intro-text-mobile{
+
+  .read-more-cta-container{
+    padding-top: 23px;
+    text-align: left;
+
+    .read-more{
+      .open-sans-semi-bold;
+      font-size: 11px;
+      line-height: 10px;
+      letter-spacing: 0.08em;
+      color: #707070;
+      text-transform: uppercase;
+
+      position: relative;
+      .display-inline-block;
+
+      &:after {
+        .fa;
+        content: "\f107"; // .fa-long-arrow-right
+        font-size: 13px;
+        line-height: 12px;
+        color: #707070;
+
+        .display-inline-block;
+        padding-left: 10px;
+      }
+
+      &:hover{
+        color: @violet;
+
+        &:after {
+          color: @violet;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+//    __  __  ___  ____ ___ _     _____   _____ ___ _   _____ _____ ____
+//   |  \/  |/ _ \| __ )_ _| |   | ____| |  ___|_ _| | |_   _| ____|  _ \
+//   | |\/| | | | |  _ \| || |   |  _|   | |_   | || |   | | |  _| | |_) |
+//   | |  | | |_| | |_) | || |___| |___  |  _|  | || |___| | | |___|  _ <
+//   |_|  |_|\___/|____/___|_____|_____| |_|   |___|_____|_| |_____|_| \_\
+//
+
+
+
+
+
+
+
+
+
+
+#page-reviews-filter-mobile{
+  position: fixed;
+  z-index: 100000 - 10;
+  top: 63px;  
+  left: 0;
+  width: 100%;
+  height: auto;
+
+  background: @off-white;
+
+  padding-top: 9px;
+  padding-bottom: 17px;
+}
+#page-reviews-filter-title-mobile{
+  font-size: 0;
+
+  h4, i{
+    .display-inline-block;
+    vertical-align: bottom;
+  }
+
+  h4{
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 9px;
+  }
+  i{
+    .open-sans-regular-italic;
+    font-size: 12px;
+    line-height: 17px;
+    color: @grey-8;
+
+    position: relative;
+    top: 1px;
+
+  }
+
+}
+#page-reviews-filter-btn-mobile{
+  position: absolute;
+  top: 11px;
+  right: 13px;
+  width: 30px;
+  height: 30px;
+
+  &:before{
+    display: block;
+    content: '';
+
+    .filter-icon;
+
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+}

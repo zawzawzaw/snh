@@ -111,7 +111,9 @@
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="detail-list-item-title"><h5>Lounge</h5></a>
+                    <div class="detail-list-item-title">
+                      <h5>Lounge</h5>
+                    </div>
                     <p class="minimize-read-more" data-length="145">A lounge on steroids, our NEXT Lounge offers boardroom meeting space, a pantry, a library and a  fully equipped gym for you to pump those pecs before strolling over to the Pool bar to show them off. And did we mention free tea and coffee?</p>
                     <div class="more-details">
                       <ul>
@@ -149,7 +151,9 @@
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="detail-list-item-title"><h5>Gym</h5></a>
+                    <div class="detail-list-item-title">
+                      <h5>Gym</h5>
+                    </div>
                     <p class="minimize-read-more" data-length="145">Check out doesn’t mean kick out. Check in and out times don’t always fit your travel plans. Refresh before your work day starts at no extra charge.</p>
                     <div class="more-details">
                       <div class="operating-hours">
@@ -179,7 +183,9 @@
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="detail-list-item-title"><h5>Spa</h5></a>
+                    <div class="detail-list-item-title">
+                      <h5>Spa</h5>
+                    </div>
                     <p class="" data-length="145">The SPA at Kiridara is a boutique spa, tucked amidst dense teak forests. Serene and blissful, the aroma of essential oils and the breezy surrounds of the teak forest truly make the small and petite Kiridara Spa a unique place that demands undivided attention.</p>
 
                     <div class="more-details">

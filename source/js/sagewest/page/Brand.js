@@ -73,6 +73,7 @@ sagewest.page.Brand.prototype.init = function() {
 
   this.creage_brand_slider();
   this.create_brand_location_title();
+  this.create_brand_location_expanding_mobile();
 
 
   this.update_page_layout();    // this is called after the initial create to update the layout
@@ -225,6 +226,73 @@ sagewest.page.Brand.prototype.create_brand_location_title = function() {
   }
   
 };
+
+
+
+sagewest.page.Brand.prototype.create_brand_location_expanding_mobile = function(){
+
+
+
+  var arr = $('.territory-expanding-container');
+  var item = null;
+
+  var title = null;
+  var content = null;
+  var index = 0;
+  var value = '';
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+
+    title = item.find('.territory-title-bar');
+    title.data('item', item);
+    content = item.find('.territory-expanded-content');
+
+    index = 0;
+
+    title.click(function(event){
+      var target = $(event.currentTarget);
+
+      var item = target.data('item');
+      var title = item.find('.territory-title-bar');
+      var content = item.find('.territory-expanded-content');
+      var value = item.attr('data-value');
+
+      var other_content = $('.territory-expanding-container[data-value!=' + value + '] .territory-expanded-content')
+
+      //console.log('value: ' + value);
+
+      if (title.hasClass('expand-version') == false) {
+
+        title.addClass('expand-version');
+        content.slideDown(500);
+        other_content.slideUp(500);
+
+        this.update_page_layout();
+        this.util_scroll_to(value);
+
+      } else {
+
+        title.removeClass('expand-version');
+        content.slideUp(500);
+
+        this.update_page_layout();
+        this.util_scroll_to(value);
+
+      }
+      
+
+    }.bind(this));
+
+
+
+  }
+
+
+}; // create_brand_location_expanding_mobile
+
+
+
 
 
 

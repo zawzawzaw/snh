@@ -95,7 +95,7 @@
         </li>
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="activities.php">activities</a></li>
-        <li><a href="#">reviews</a></li>
+        <li><a href="reviews.php">reviews</a></li>
         <li><a href="events.php">events</a></li>
         <li><a href="contact.php">Location</a></li>
       </ul>
@@ -216,7 +216,7 @@
               <li><a href="facilities.php">Facilities</a></li>
               <li><a href="gallery.php">Gallery</a></li>
               <li><a href="activities.php">Activities</a></li>
-              <li><a href="#">Reviews</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
               <li><a href="events.php">Events</a></li>
               <li><a href="contact.php">Location</a></li>
             </ul>
@@ -296,6 +296,11 @@
                 <option value="10">10</option>
               </select>
             </div>
+
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+            
           </div>
         </div>
         <div class="input-box">
@@ -431,8 +436,7 @@
               <li><a href="facilities.php">Facilities</a></li>
               <li><a href="gallery.php">Gallery</a></li>
               <li><a href="activities.php">Activities</a></li>
-              <!-- <li><a href="#">Location</a></li> -->
-              <li><a href="#">Reviews</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
               <li><a href="events.php">Events</a></li>
               <li><a href="contact.php">Location</a></li>
             </ul>
@@ -750,7 +754,7 @@
 
         <div id="page-hotel-accommodation-title-mobile">
           <h4>our accommodations</h4>
-          <h1>West Perth Hotel Rooms</h1>
+          <h1>Room Types</h1>
         </div>
         <div id="page-hotel-accommodation-image-mobile">
           <div class="manic-image-container">
@@ -1491,13 +1495,67 @@
     </div>
   </div>
   <div id="page-brand-map" class="default-version"></div>
+
+
+  <!-- 
+  <div class="default_marker" data-zoom="4" data-location="Australia" data-lat="-25.783190" data-lng="133.583079"></div>
+  
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="1309 Hay Street, West Perth, WA 6005, Australia" 
+      data-lat="-31.947794" 
+      data-lng="115.838702" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="60-62 Harbour St, Wollongong, NSW 2500, Australia" 
+      data-lat="-34.428887" 
+      data-lng="150.901011" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=60-62 Harbour St, Wollongong, NSW 2500, Australia'><h4>SAGE HOTEL WOLLONGONG</h4><p>60-62 Harbour St, Wollongong, NSW 2500, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4201 2111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.wollongong@sage-hotels.com'>reservations.wollongong@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="70 James Street, Fortitude Valley, QLD 4006, Australia" 
+      data-lat="-27.457880" 
+      data-lng="153.041811" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=70 James Street, Fortitude Valley, QLD 4006, Australia'><h4>Accommodation Fortitude Valley</h4><p>70 James Street, Fortitude Valley, QLD 4006, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.jamesst@sage-hotels.com'>reservations.jamesst@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="208 South Terrace, Adelaide, SA 5000, Australia" 
+      data-lat="-34.935166" 
+      data-lng="138.604266" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=208 South Terrace, Adelaide, SA 5000, Australia'><h4>SAGE HOTEL ADELAIDE</h4><p>208 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.adelaide@sage-hotels.com'>reservations.adelaide@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  -->
+
+  
+  <!-- 
   <div class="default_marker" data-zoom="15" data-location="Australia" data-lat="-31.946899" data-lng="115.8524116"></div>
   <div class="markers no-hover" data-pin-icon="images/icons/map-pin.png" data-location="James Street" data-lat="-31.946899" data-lng="115.8524116" data-place-id="ChIJe1YLH6UZE2sRIOcyFmh9AQU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>  
+
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Sage West Perth" data-lat="-31.947888" data-lng="115.8362825" data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Ord Street" data-lat="-31.948616" data-lng="115.835907" data-place-id="EihKYW1lcyBTdCwgTm9ydGhicmlkZ2UgV0EgNjAwMywgQXVzdHJhbGlh" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>  
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Fielder Street" data-lat="-31.9509356" data-lng="115.8708259" data-place-id="ChIJ56QDo9fOsGoRUz4cTlhwjbM" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Sterling Street" data-lat="-31.9468795" data-lng="115.8635481" data-place-id="ChIJ56QDo9fOsGoRUz4cTlhwjbM" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  -->
+  
 
+
+
+  
+  <div class="default_marker" data-zoom="15" data-location="Australia" data-lat="-31.947794" data-lng="115.838702"></div>
+
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin-sage.svg" 
+      data-location="1309 Hay Street, West Perth, WA 6005, Australia" 
+      data-lat="-31.947794" 
+      data-lng="115.838702" 
+      data-html="<div class='infoBox-text hotel-version'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location A" data-lat="-31.947888" data-lng="115.8362825" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location A 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location A</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location B" data-lat="-31.948616" data-lng="115.835907" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location B 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location B</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location C" data-lat="-31.9509356" data-lng="115.8708259" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location C 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location C</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location D" data-lat="-31.9468795" data-lng="115.8635481" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location D 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location D</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+
+  
   <div class="container-fluid has-breakpoint">
     <div class="row">
 
@@ -1986,7 +2044,7 @@
             <li><a href="facilities.php">Facilities</a></li>
             <li><a href="gallery.php">Gallery</a></li>
             <li><a href="activities.php">Activities</a></li>
-            <li><a href="javascript:void(0);">Reviews</a></li>
+            <li><a href="reviews.php">Reviews</a></li>
             <li><a href="events.php">Events</a></li>
             <li><a href="contact.php">Location</a></li>
           </ul>

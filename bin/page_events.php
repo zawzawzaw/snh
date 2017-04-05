@@ -87,7 +87,9 @@
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="detail-list-item-title"><h5>Weddings & Celebrations</h5></a>
+                    <div class="detail-list-item-title">
+                      <h5>Weddings & Celebrations</h5>
+                    </div>
                     <p class="minimize" data-length="85">A dream wedding, a birthday celebration, a social function – whatever your reason for gathering, Sage West Perth sets the stage for a truly memorable occasion.</p>
                     <ul>
                       <li>Spacious conference room</li>
@@ -148,7 +150,9 @@
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="detail-list-item-title"><h5>Meetings & Conferences</h5></a>
+                    <div class="detail-list-item-title">
+                      <h5>Meetings & Conferences</h5>
+                    </div>
                     <p class="minimize" data-length="85">Host your next conference, meeting or event at Chifley Alice Springs Resort in the heart of Australia’s Red Centre.</p>
                     <ul>
                       <li>2 purpose built function rooms:10 – 60 pax (theatre style)</li>
@@ -343,7 +347,7 @@
       <div class="detail-list-item-expanding-container">
 
         <div class="manic-expand-container" data-group="mobile-events-landing">
-          <div class="scroll-target" data-value="mobile-events-01"></div>
+          <div class="scroll-target" data-value="mobile-events-02"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">
@@ -380,7 +384,7 @@
         </div> <!-- manic-expand-container -->
 
         <div class="manic-expand-container" data-group="mobile-events-landing">
-          <div class="scroll-target" data-value="mobile-events-02"></div>
+          <div class="scroll-target" data-value="mobile-events-03"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">
@@ -413,7 +417,7 @@
         </div> <!-- manic-expand-container -->
 
         <div class="manic-expand-container" data-group="mobile-events-landing">
-          <div class="scroll-target" data-value="mobile-events-03"></div>
+          <div class="scroll-target" data-value="mobile-events-04"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">

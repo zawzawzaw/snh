@@ -40,7 +40,7 @@
         </li>
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="activities.php">activities</a></li>
-        <li><a href="#">reviews</a></li>
+        <li><a href="reviews.php">reviews</a></li>
         <li><a href="events.php">events</a></li>
         <li><a href="contact.php">Location</a></li>
       </ul>

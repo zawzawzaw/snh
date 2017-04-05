@@ -1654,7 +1654,14 @@ body.is-tablet.is-tablet-portrait{
 
     .default-promotion-content-item-copy{
       h5{
-        .lato-bold;
+
+        a{
+          color: @grey;
+          &:hover{
+            color: @violet;
+          }
+        }
+        // .lato-bold;
       }
     }
 
@@ -1754,7 +1761,8 @@ div.default-promotion-cta-container{
 #page-brand-promotion-title-mobile{
   margin-bottom: 18px;
   h4{
-    margin-bottom: 3px;
+    // margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
   h1{
@@ -2501,6 +2509,11 @@ div.default-promotion-cta-container{
 
   h5{
     .lato-bold;
+
+    @media all and (max-width: 991px) {
+      .lato-regular;
+    }
+
   }
 
 

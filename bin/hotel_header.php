@@ -35,7 +35,7 @@
               <li><a href="facilities.php">Facilities</a></li>
               <li><a href="gallery.php">Gallery</a></li>
               <li><a href="activities.php">Activities</a></li>
-              <li><a href="#">Reviews</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
               <li><a href="events.php">Events</a></li>
               <li><a href="contact.php">Location</a></li>
             </ul>
@@ -115,6 +115,11 @@
                 <option value="10">10</option>
               </select>
             </div>
+
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+            
           </div>
         </div>
         <div class="input-box">

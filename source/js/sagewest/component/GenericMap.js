@@ -169,6 +169,11 @@ sagewest.component.GenericMap.prototype.create_map = function() {
 
 
 
+  // http://stackoverflow.com/questions/10022873/closing-info-windows-in-google-maps-by-clicking-the-map
+  google.maps.event.addListener(this.map, "click", function(event) {
+    this.infobox.close();
+  }.bind(this));
+
 
 
 };

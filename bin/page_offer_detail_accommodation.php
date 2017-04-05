@@ -220,6 +220,18 @@
           </div> <!-- detail-page-contact-info -->
 
 
+          <div class="detail-page-terms-and-conditions">
+            <div class="default-copy">
+              <h4>Terms & Conditions</h4>
+              <ul>
+                <li>The offer Get Egg-Cited CitySide. Stay 2 nights & Save is bookable for stays now until 17-04-2017</li>
+                <li>Blackouts apply</li>
+                <li>Bookings must be prepaid and non refundable</li>
+              </ul>
+            </div>
+          </div> <!-- detail-page-terms-and-conditions -->
+
+
         </div> <!-- detail-page-content-sidebar -->
 
       </div>

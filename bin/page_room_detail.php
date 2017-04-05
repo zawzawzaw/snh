@@ -166,12 +166,28 @@
           <div class="detail-page-content-description">
             <div class="room-details">
               <div class="row">
-                <div class="col-md-5"><h4 class="room-size-sqft room-detail">25 SQM</h4></div>
-                <div class="col-md-7"><h4 class="room-bed-size room-detail">2 TWIN BEDs</h4></div>
+                <div class="col-md-5">
+                  <div class="room-details-column-01">
+                    <h4 class="room-size-sqft room-detail">25 SQM</h4>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="room-details-column-02">
+                    <h4 class="room-bed-size room-detail">2 TWIN BEDs</h4>
+                  </div>
+                </div>
               </div>
               <div class="row">
-                <div class="col-md-5"><h4 class="room-size-person room-detail">2 adults, 2 children (max.)</h4></div>
-                <div class="col-md-7"><h4 class="room-view room-detail">PARTIAL MOUNTAIN AND CITY VIEW</h4></div>
+                <div class="col-md-5">
+                  <div class="room-details-column-01">
+                    <h4 class="room-size-person room-detail">2 adults, 2 children (max.)</h4>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="room-details-column-02">
+                    <h4 class="room-view room-detail">PARTIAL MOUNTAIN AND CITY VIEW</h4>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="default-copy">
@@ -286,6 +302,11 @@
                         <option value="10">10</option>
                       </select>
                     </div>
+                    
+                    <div class="input-box-disclaimer">
+                      <p>11 years & below</p>
+                    </div>
+
                   </div>
                 </div>
                 <div class="input-box">
@@ -673,7 +694,13 @@
 
       <div class="detail-page-content-description">
         <div class="default-copy">
-          <p class="minimize-read-more" data-length="160">Superior Sage Twin Room located in our Levels 10 - 13 is superior in every sense of the word these rooms offer amazing views of the Perth Skyline or Kings Park. <br> Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring two single beds you will have no problems drifting off on our custom mattresses for the two of you. After a long day out refresh yourself under the duel shower heads and revitalizing SOAK amenities. Equipped with free and fast WiFi you can surf the net or work though those emails. Alternatively, kick back and enjoy the 48” flat screen TV with a cold drink and snack from the mini bar. <br> One child under the age of 12 using existing bedding is free. No rollaway available in this room.</p>          
+          
+          <p class="minimize-read-more" data-length="160">
+            Superior Sage Twin Room located in our Levels 10 - 13 is superior in every sense of the word these rooms offer amazing views of the Perth Skyline or Kings Park.<br><br>
+            Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring two single beds you will have no problems drifting off on our custom mattresses for the two of you. After a long day out refresh yourself under the duel shower heads and revitalizing SOAK amenities. Equipped with free and fast WiFi you can surf the net or work though those emails. Alternatively, kick back and enjoy the 48” flat screen TV with a cold drink and snack from the mini bar. <br><br>
+            One child under the age of 12 using existing bedding is free. No rollaway available in this room.
+          </p>
+
         </div>      
       </div>
     </div>

@@ -1099,8 +1099,24 @@ sagewest.page.Default.prototype.promo_filter = function() {
     $(".default-promo-box.all").addClass("hide");
     $(".default-promo-box."+href).removeClass("hide");
 
+    
+    if ($(".default-promo-box."+href).length == 0) {
+
+      $('#offer-index-page-no-offers-copy-container').addClass('visible-version');
+
+    } else {
+
+      $('#offer-index-page-no-offers-copy-container').removeClass('visible-version');
+
+    }
+
+
     $("#default-promotion-filters a").removeClass('selected');
     target.addClass('selected');
+
+
+
+
 
     this.update_page_layout();
 
@@ -1312,25 +1328,61 @@ sagewest.page.Default.prototype.expandable_text = function() {
     var minimized_elements = $('p.minimize');
     
     minimized_read_more_elements.each(function(){    
-        var t = $(this).text();       
+        // var t = $(this).text();                          // this is just TEXT !!!!!
+        var t = $(this).html();
         var length = $(this).data('length');
          
         if(t.length < length) return;
+
+
+        // http://stackoverflow.com/questions/18087416/split-string-in-half-by-word
+        var middle = length;
+        var before = t.lastIndexOf(' ', middle);
+        var after = t.indexOf(' ', middle + 1);
+
+        if (middle - before < after - middle) {
+            middle = before;
+        } else {
+            middle = after;
+        }
+
+        var s1 = t.substr(0, middle);
+        var s2 = t.substr(middle + 1);
+
+
         
         $(this).html(
-            t.slice(0,length)+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
-            '<span style="display:none;">'+ t.slice(length,t.length)+'</span>'
+            s1+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
+            '<span style="display:none;">'+ s2+'</span>'
         );
     }); 
 
+
+
+
     minimized_elements.each(function(){    
-        var t = $(this).text();       
+        // var t = $(this).text();                          // this is just TEXT !!!!!
+        var t = $(this).html();
         var length = $(this).data('length');
 
         if(t.length < length) return;
+
+        // http://stackoverflow.com/questions/18087416/split-string-in-half-by-word
+        var middle = length;
+        var before = t.lastIndexOf(' ', middle);
+        var after = t.indexOf(' ', middle + 1);
+
+        if (middle - before < after - middle) {
+            middle = before;
+        } else {
+            middle = after;
+        }
+
+        var s1 = t.substr(0, middle);
+        var s2 = t.substr(middle + 1);
         
         $(this).html(
-            t.slice(0,length)+'<span>... </span>'
+            s1+'<span>... </span>'
         );
     }); 
     
@@ -1338,24 +1390,43 @@ sagewest.page.Default.prototype.expandable_text = function() {
   }
 
 
-
   //  FOR DESKTOP
   var minimized_read_more_elements = $('p.desktop-minimize-read-more');
   minimized_read_more_elements.each(function(){    
-      var t = $(this).text();       
+      // var t = $(this).text();                          // this is just TEXT !!!!!
+        var t = $(this).html();
+
       var length = $(this).data('length');
+      
        
       if(t.length < length) return;
+
+      // http://stackoverflow.com/questions/18087416/split-string-in-half-by-word
+      var middle = length;
+      var before = t.lastIndexOf(' ', middle);
+      var after = t.indexOf(' ', middle + 1);
+
+      if (middle - before < after - middle) {
+          middle = before;
+      } else {
+          middle = after;
+      }
+
+      var s1 = t.substr(0, middle);
+      var s2 = t.substr(middle + 1);
+
+
       
       $(this).html(
-          t.slice(0,length)+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
-          '<span style="display:none;">'+ t.slice(length,t.length)+'</span>'
+          s1+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
+          '<span style="display:none;">'+ s2 +'</span>'
       );
   }); 
 
 
 
-  $('a.read-more', minimized_read_more_elements).click(function(event){
+  // $('a.read-more', minimized_read_more_elements).click(function(event){
+  $('a.read-more').click(function(event){
       event.preventDefault();
       $(this).parent().hide().prev().hide();
       $(this).parent().next().show();        

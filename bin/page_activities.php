@@ -110,7 +110,9 @@
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="detail-list-item-title"><h5>Rooftop Yoga & Dance Party</h5></a>
+                    <div class="detail-list-item-title">
+                      <h5>Rooftop Yoga & Dance Party</h5>
+                    </div>
                     <p class="" data-length="85">As daylight fades across the city, we gather on a rooftop oasis; summer’s energy at its peak, city lights glowing, blissful beats pulsing, community spirit flowing.</p>
                     
                     <div class="more-details">
@@ -129,7 +131,7 @@
                     </div>
 
                     <div class="cta-container">
-                      <a href="#" class="square-cta">Contact us</a>
+                      <a href="mailto:SAMPLE@EMAIL.COM" class="square-cta">Contact us</a>
                     </div>                  
                   </div>
                 </div>
@@ -152,7 +154,9 @@
               <div class="col-md-5 col-sm-7">
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="detail-list-item-title"><h5>Flow & Frolic</h5></a>
+                    <div class="detail-list-item-title">
+                      <h5>Flow & Frolic</h5>
+                    </div>
                     <p class="" data-length="85">Flow in a 60 minute class led by Julie Smerdon with soul-stirring tracks laid down by Andy Dub. Enjoy a post class frolic on the dance floor after class, or just hang around for a drink or a nibble.</p>
 
                     <div class="more-details">
@@ -176,7 +180,7 @@
                     </div>
 
                     <div class="cta-container">
-                      <a href="#" class="square-cta">Contact us</a>
+                      <a href="mailto:SAMPLE@EMAIL.COM" class="square-cta">Contact us</a>
                     </div> 
                   </div>
                 </div>

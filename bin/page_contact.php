@@ -227,7 +227,7 @@
         </div>
         
       </div>
-      <div class="col-md-4">
+      <div class="col-md-5">
 
         <div id="contact-page-map-copy-container">
           <div id="contact-page-map-copy">
@@ -236,9 +236,12 @@
               <p>
                 1309 Hay Street, West Perth, <br>
                 WA 6005, Australia <br>
-                P: +61865009100 <br>
-                F: +61 8 6500 9101 <br>
-                E: <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a>
+                Phone: +61865009100 <br>
+                Fax: +61 8 6500 9101 <br>
+                Reservations: <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a><br>
+                Email 1: <a href="mailto:TEST1.westperth@sage-hotels.com">TEST1.westperth@sage-hotels.com</a><br>
+                Email 2: <a href="mailto:TEST2.westperth@sage-hotels.com">TEST2.westperth@sage-hotels.com</a>
+
               </p>
               <p>
                 Reception Hours: 24 hours <br>
@@ -304,9 +307,11 @@
               <p>
                 1309 Hay Street, West Perth, <br>
                 WA 6005, Australia <br>
-                P: +61865009100 <br>
-                F: +61 8 6500 9101 <br>
-                E: <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a>
+                Phone: +61865009100 <br>
+                Fax: +61 8 6500 9101 <br>
+                Reservations: <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a><br>
+                Email 1: <a href="mailto:TEST1.westperth@sage-hotels.com">TEST1.westperth@sage-hotels.com</a><br>
+                Email 2: <a href="mailto:TEST2.westperth@sage-hotels.com">TEST2.westperth@sage-hotels.com</a>
               </p>
               <p>
                 Reception Hours: 24 hours <br>
@@ -469,7 +474,7 @@
     -->
 
     <div class="manic-expand-container" data-group="mobile-contact">
-      <div class="scroll-target" data-value="mobile-a"></div>
+      <div class="scroll-target" data-value="mobile-by-metro-bus"></div>
       <div class="manic-expand-container-title">
         <div class="container-fluid">
           <div class="row">
@@ -534,7 +539,7 @@
     -->
 
     <div class="manic-expand-container" data-group="mobile-contact">
-      <div class="scroll-target" data-value="mobile-a"></div>
+      <div class="scroll-target" data-value="mobile-by-car-taxi"></div>
       <div class="manic-expand-container-title">
         <div class="container-fluid">
           <div class="row">

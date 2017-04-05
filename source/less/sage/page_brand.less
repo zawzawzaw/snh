@@ -359,6 +359,12 @@
   #brand-all-location-title{
     text-align: left;
     padding-bottom: 35px;
+
+    @media only screen and (max-width: 991px) {
+      h4{
+        margin-bottom: 2px;
+      }
+    }
   }
 
   #brand-all-location-content-box {
@@ -382,12 +388,89 @@
 
       }
     }
+
+
+
+
+
     .territory-title-bar{
-      background-color: #aea19e;    // a color in between
+      // background-color: #aea19e;    // a color in between
+      
+      background-color: @off-white;
+      border-top: 1px solid @border-grey;
+      border-bottom: 1px solid @border-grey;
+      position: relative;
+      margin-bottom: -1px;
+
+      h4{
+        color: @grey;
+      }
+
+
+
+      &:before{
+        position: absolute;
+        content: "\f107"; // .fa-angle-down
+
+        .fa;
+        font-size: 16px;
+        line-height: 24px;
+        color: @grey;
+
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 12px;
+
+        width: 24px;
+        height: 24px;
+        text-align: center;
+
+        .transition-in(0.3s);
+
+
+      }
+
+      &.expand-version{
+        &:before{
+          .rotation(180deg);
+        }
+      }
+
     }
+
+
+    .territory-expanding-container{
+
+    }
+    .territory-expanded-content{
+      position: relative;
+      display: none;
+
+      &:before{
+        content: '';
+        display: block;
+        height: 12px;
+      }
+      &:after{
+        content: '';
+        display: block;
+        height: 10px;
+      }
+    } // .territory-expanded-content
+
     .sub-title-bar {
-      background-color: #c2b4b0;
-      margin-bottom: 20px;
+      // background-color: #c2b4b0;
+      background: transparent;
+      // margin-bottom: 20px;
+      
+      height: auto;
+      // padding-top: 10px + 12px;
+      margin-bottom: -1px;
+
+      h4{
+        color: @violet;
+      }
     }
     .brand-all-location-content-box {
       .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
@@ -1266,7 +1349,8 @@ body.is-tablet{
 
   h4{
     // margin-bottom: 2px;
-    margin-bottom: -2px;
+    /// margin-bottom: -2px;
+    margin-bottom: 2px;
   }
   h1{
     // .poppins-regular;
@@ -1275,6 +1359,8 @@ body.is-tablet{
     line-height: 44px;
     text-transform: none;
   }
+
+
   
 }
 

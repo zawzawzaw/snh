@@ -315,6 +315,11 @@ sagewest.component.HomeMap.prototype.create_map = function() {
 
   }
 
+
+
+
+
+
 };
 
 sagewest.component.HomeMap.prototype.create_infobox = function() {
@@ -328,6 +333,19 @@ sagewest.component.HomeMap.prototype.create_infobox = function() {
     },              
     infoBoxClearance: new google.maps.Size(1, 1)
   });
+
+  // http://stackoverflow.com/questions/10022873/closing-info-windows-in-google-maps-by-clicking-the-map
+  google.maps.event.addListener(this.map, "click", function(event) {
+    this.infobox.close();
+    
+    /*
+    for (var i = 0; i < ibArray.length; i++ ) {  //I assume you have your infoboxes in some array
+      ibArray[i].close();
+    }
+    */
+   
+  }.bind(this));
+
 };
 
 sagewest.component.HomeMap.prototype.set_lat_lng = function(lat, lng) {

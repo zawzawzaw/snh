@@ -88,6 +88,12 @@
 
     <div class="row hidden-xs hidden-sm">
 
+      <div id="offer-index-page-no-offers-copy-container">
+        <div class="default-copy">
+          <p>There are currently no offers here. Please check back later.</p>
+        </div>
+      </div>
+
       <div id="default-promotion-content" class="boxlist-item-container">
         <div class="col-md-4 default-promo-box all accomodation">
 
