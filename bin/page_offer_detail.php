@@ -168,40 +168,40 @@
             <div class="default-copy">
               <p>This Valentine's Day, treat your loved one to a few Spanish specials thoughtfully developed by our talented younger chefs as a dedication to their own significant others.</p>           
             </div>
-            
-            <div class="detail-page-menu-info">
-
-              <div class="detail-page-menu-info-item">
-                <h4>Package includes</h4>
-                <ul>
-                  <li>Arrival rose for your significant other</li>
-                  <li>3-course special set menu</li>
-                  <li>Complimentary bottle of red or white wine</li>
-                  <li>Live jazz singer duo</li>                  
-                </ul>
-              </div> <!-- detail-page-menu-info-item -->
-              <div class="detail-page-menu-info-item set-menu">
-                <h4>Special set menu</h4>
-                
-                
-                <h6>Vieiras con Samfaina</h6>
-                <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-              </div>
-
-              <div class="detail-page-menu-info-item set-menu">
-                <h6>Vieiras con Samfaina</h6>
-                <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-              </div>
-
-              <div class="detail-page-menu-info-item set-menu">
-                <h6>Vieiras con Samfaina</h6>
-                <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
-              </div>
-
-              <span class="note">Complimentary bottle of House Red or White Wine</span>
-
-            </div> <!-- detail-page-menu-info -->
           </div>
+
+          <div class="detail-page-menu-info">
+
+            <div class="detail-page-menu-info-item">
+              <h4>Package includes</h4>
+              <ul>
+                <li>Arrival rose for your significant other</li>
+                <li>3-course special set menu</li>
+                <li>Complimentary bottle of red or white wine</li>
+                <li>Live jazz singer duo</li>                  
+              </ul>
+            </div> <!-- detail-page-menu-info-item -->
+            <div class="detail-page-menu-info-item set-menu">
+              <h4>Special set menu</h4>
+              
+              
+              <h6>Vieiras con Samfaina</h6>
+              <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
+            </div>
+
+            <div class="detail-page-menu-info-item set-menu">
+              <h6>Vieiras con Samfaina</h6>
+              <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
+            </div>
+
+            <div class="detail-page-menu-info-item set-menu">
+              <h6>Vieiras con Samfaina</h6>
+              <p>A harmony of complementary flavours is brought forth by the marriage of fresh, juicy Atlantic scallops hugged lovingly by savory Jamon strips, set on a soft bed of Samfaina - a colourful and flavourful combination of diced vegetables.</p>                
+            </div>
+
+            <span class="note">Complimentary bottle of House Red or White Wine</span>
+
+          </div> <!-- detail-page-menu-info -->
 
 
           <!--
@@ -255,6 +255,19 @@
 
             </div>
           </div> <!-- detail-page-contact-info -->
+
+
+
+          <div class="detail-page-terms-and-conditions">
+            <div class="default-copy">
+              <h4>Terms & Conditions</h4>
+              <ul>
+                <li>The offer Get Egg-Cited CitySide. Stay 2 nights & Save is bookable for stays now until 17-04-2017</li>
+                <li>Blackouts apply</li>
+                <li>Bookings must be prepaid and non refundable</li>
+              </ul>
+            </div>
+          </div> <!-- detail-page-terms-and-conditions -->
 
 
         </div> <!-- detail-page-content-sidebar -->
@@ -543,7 +556,7 @@
 
     <div class="detail-page-content-description">
       <div class="default-copy">
-        <p class="minimize-read-more" data-length="165">This Valentine's Day, treat your loved one to a few Spanish specials thoughtfully developed by our talented younger chefs as a dedication to their own significant others.</p>
+        <p>This Valentine's Day, treat your loved one to a few Spanish specials thoughtfully developed by our talented younger chefs as a dedication to their own significant others.</p>
       </div>      
     </div>
   </div> <!-- detail-page-content -->
@@ -636,8 +649,14 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12">
-              
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quas repellat ipsum. Repudiandae optio laboriosam atque odit laborum rerum quam...</p>
+            
+            <div class="default-copy">
+              <ul>
+                <li>The offer Get Egg-Cited CitySide. Stay 2 nights & Save is bookable for stays now until 17-04-2017</li>
+                <li>Blackouts apply</li>
+                <li>Bookings must be prepaid and non refundable</li>
+              </ul>
+            </div>
         
           </div>
         </div>

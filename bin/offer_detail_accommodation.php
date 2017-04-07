@@ -5,10 +5,10 @@ ob_start();
   global $is_debug;
   global $body_class;
 
-  // $is_debug = false;
-  $is_debug = true;
+  $is_debug = false;
+  // $is_debug = true;
 
-  $body_class = "hotel contact-page permanent-scrolled";
+  $body_class = "hotel offer-detail-page permanent-scrolled";
 ?>
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -51,7 +51,7 @@ ob_start();
 
 
 
-        <?php include('page_contact.php'); ?>
+        <?php include('page_offer_detail_accommodation.php'); ?>
 
 
 
@@ -65,7 +65,7 @@ ob_start();
 
         -->
         
-        <?php include('js_contact.php'); ?>
+        <?php include('js_default.php'); ?>
         <?php include('hotel_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
@@ -77,7 +77,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('contact.html', ob_get_contents());
+file_put_contents('offer_detail_accommodation.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>

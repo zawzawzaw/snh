@@ -5,8 +5,8 @@ ob_start();
   global $is_debug;
   global $body_class;
 
-  // $is_debug = false;
-  $is_debug = true;
+  $is_debug = false;
+  // $is_debug = true;
 
   $body_class = "hotel activities-page permanent-scrolled";
 ?>
@@ -50,12 +50,10 @@ ob_start();
 
 
 
-
         <?php include('page_activities.php'); ?>
 
 
-
-
+        
         <!--
            _____ _   _ ____
           | ____| \ | |  _ \

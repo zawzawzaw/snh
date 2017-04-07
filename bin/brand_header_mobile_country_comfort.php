@@ -29,11 +29,10 @@
 
     <nav id="mobile-menu">
       <ul>
-        <li><a href="javascript:void(0);">South Australia</a></li>
-        <li><a href="javascript:void(0);">Western Australia</a></li>
-        <li><a href="javascript:void(0);">New South Wales</a></li>
-        <li><a href="javascript:void(0);">Queensland</a></li>
-        
+        <li><a href="brand_location_country_comfort.php#australia/south-australia">South Australia</a></li>
+        <li><a href="brand_location_country_comfort.php#australia/western-australia">Western Australia</a></li>
+        <li><a href="brand_location_country_comfort.php#australia/new-south-wales">New South Wales</a></li>
+        <li><a href="brand_location_country_comfort.php#australia/queensland">Queensland</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -122,7 +121,7 @@
         <input type="text" name="promo_code">
       </div>
       <div class="input-box">
-        <input type="submit" class="check-availability square-cta" value="check availability">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
       </div>
     </form>
   </div>

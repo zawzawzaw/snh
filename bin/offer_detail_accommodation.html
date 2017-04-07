@@ -1,0 +1,1337 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    
+<title>Sage</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
+
+<link rel="icon" href="images/icons/favicon.png">
+
+<!-- Critical Css -->
+<link rel="stylesheet" type="text/css" href="css/critical_style.css">
+
+<!-- Social Tags -->
+<!-- <meta content="Sage West Perth" property="og:title"/>
+<meta content="http://sg.sagewestperth.com/images/facebook-share-image.png" property="og:image"/>
+<meta content="Sage West Perth" property="og:site_name"/>
+<meta content="http://sg.sagewestperth.com" property="og:url"/>
+<meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
+
+  </head>
+
+
+  <body class="hotel offer-detail-page permanent-scrolled">
+
+    <div id="page-preloader">
+      <div id="page-preloader-line-01"></div>
+      <div id="page-preloader-line-02">
+        <div class="line-a"></div>
+        <div class="line-b"></div>
+      </div>
+    </div>
+
+
+    <!-- mobile header is outside the page wrapper -->
+    <!-- <div id="mobile-header-spacer"></div> -->
+<header id="mobile-header">
+
+  <div class="mobile-header-bg"></div>
+
+  <div id="mobile-header-content-container">
+    <div id="mobile-header-close-btn"><span>Menu</span></div>
+    <div id="mobile-header-open-btn"></div>
+
+    <a href="hotel.php" id="mobile-header-logo">
+      <img src="images/logo/sage-west-logo.svg">
+    </a>  
+  
+    <a href="index.php" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+  </div>
+
+</header> <!-- #mobile-header -->
+
+<header id="mobile-header-expanded">
+
+  <div id="mobile-header-menu-container">
+    <div id="destination-indicator" class="link-to-location">
+      <a href="brand_location.php"><p>Select another location:</p></a>
+    </div>
+    <nav id="mobile-menu" class="has-mobile-sub-menu">
+      <span>sage west perth</span>
+      <ul>
+        <li><a href="room_index.php">rooms</a></li>
+        <li><a href="offer_index.php">offers</a></li>
+        <li><a href="dining_index.php">dining</a></li>
+        <li class="has-subnav">
+          <a href="facilities.php">facilities</a>
+          <ul class="mobile-sub-menu">
+            <li><a href="facilities.php#lounge">Lounge</a></li>
+            <li><a href="facilities.php#gym">Gym</a></li>
+            <li><a href="facilities.php#spa">Spa</a></li>
+          </ul>
+          <div class="expand-btn"></div>
+        </li>
+        <li><a href="gallery.php">gallery</a></li>
+        <li><a href="activities.php">activities</a></li>
+        <li><a href="reviews.php">reviews</a></li>
+        <li><a href="events.php">events</a></li>
+        <li><a href="location.php">Location</a></li>
+      </ul>
+    </nav>
+    <div id="brand-link" class="menu-link">
+      <a href="#"><span>Our Brands</span></a>
+    </div>
+    <div id="group-link" class="menu-link">
+      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    </div>
+  </div> <!-- #mobile-header-menu-container -->
+
+  <div id="mobile-header-booking-form">
+    <form action="">
+      <div class="input-box">
+        <label for="hotel">Select Hotel</label>
+        <div class="dropdown">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
+            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+        <div class="date-input">
+          <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
+        </div>
+      </div>
+      <div class="input-box row">
+        <div class="input-box-col-1 col-sm-6 col-xs-6">
+          <label for="">Adults</label>
+          <div class="dropdown">
+            <select name="adults" id="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box-col-2 col-sm-6 col-xs-6">
+          <label for="">Children</label>
+          <div class="dropdown">
+            <select name="children" id="children">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="">Promotion Code</label>
+        <input type="text" name="promo_code">
+      </div>
+      <div class="input-box">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
+      </div>
+    </form>
+  </div>
+  <div id="mobile-header-booking-calendar"></div>
+
+</header> <!-- #mobile-header-expanded -->        
+    <div id="page-wrapper">
+      <div id="page-wrapper-content">
+
+        <!-- 
+   ____  _____ ____  _  _______ ___  ____    _   _ _____    _    ____  _____ ____  
+  |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \  | | | | ____|  / \  |  _ \| ____|  _ \ 
+  | | | |  _| \___ \| ' /  | || | | | |_) | | |_| |  _|   / _ \ | | | |  _| | |_) |
+  | |_| | |___ ___) | . \  | || |_| |  __/  |  _  | |___ / ___ \| |_| | |___|  _ < 
+  |____/|_____|____/|_|\_\ |_| \___/|_|     |_| |_|_____/_/   \_\____/|_____|_| \_\
+                                           
+-->
+
+<header id="desktop-header">
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div id="desktop-header-menu-logo-container">
+          <div id="desktop-header-logo-container">
+            <a href="#" id="desktop-menu-bar" class="open">
+              <img src="images/icons/menu-bar.svg" alt="">     
+              <span>Menu</span>       
+            </a>
+            <a href="hotel.php" id="desktop-header-logo">
+              <img src="images/logo/sage-west-logo.svg">            
+            </a>
+          </div>          
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div id="desktop-header-nav">
+          <nav>
+            <ul>
+              <li><a href="hotel.php">Home</a></li>
+              <li><a href="room_index.php">Rooms</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="activities.php">Activities</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="location.php">Location</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>  
+      <div class="col-md-2">
+        <div id="weather-container">
+          <div class="current-location-container">
+            <h6 class="current-country">Australia</h6>
+            <span class="current-location">West Perth</span>
+          </div>
+          <div class="seperator"></div>
+          <div class="time-weather-container">
+            <ul>
+              <li><span class="time">2:24<sup class="ampm">pm</sup></span></li>
+              <li><span class="temperature">23°C</span></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" id="book-now"><span>Book Now</span></a>        
+      </div>
+    </div>
+  </div>
+
+  <div id="desktop-header-booking-form">
+      <form action="">
+        <div class="input-box">
+          <label for="hotel">Select Hotel</label>
+          <div class="dropdown">
+            <select name="hotel" id="hotel" class="hotel-dropdown">
+              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+          <div class="date-input">
+            <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
+          </div>
+        </div>
+        <div class="input-box row">
+          <div class="input-box-col-1 col-md-6">
+            <label for="">Adults</label>
+            <div class="dropdown">
+              <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-box-col-2 col-md-6">
+            <label for="">Children</label>
+            <div class="dropdown">
+              <select name="children" id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="">Promotion Code</label>
+          <input type="text" name="promo_code">
+        </div>
+        <div class="input-box">
+          <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
+        </div>
+      </form>
+  </div>
+  <div id="desktop-header-booking-calendar">
+    
+  </div>
+</header> <!-- #desktop-header -->
+
+<div id="desktop-header-menu">          
+
+  <div id="destination-indicator">
+    <p>Select a destination:</p>
+  </div>
+  <div id="country-indicator">
+    <p>Australia</p>
+  </div>
+
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">Adelaide</a></li>
+      <li><a href="hotel.php">brisbane</a></li>
+      <li><a href="hotel.php">west perth</a></li>
+      <li><a href="hotel.php">wollongong</a></li>
+    </ul>    
+  </div>
+
+  <!-- 
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">sage adelaide</a></li>
+      <li><a href="hotel.php">Sage James Street Brisbane</a></li>
+      <li><a href="hotel.php">sage west perth</a></li>
+      <li><a href="hotel.php">sage wollongong</a></li>
+    </ul>
+  </div>
+  -->
+  
+  <div id="brand-link" class="menu-link">
+    <a href="#"><span>Our Brands</span></a>
+  </div>
+  <div id="group-link" class="menu-link">
+    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+  </div>
+</div>
+        <!--
+           ____ _____  _    ____ _____
+          / ___|_   _|/ \  |  _ \_   _|
+          \___ \ | | / _ \ | |_) || |
+           ___) || |/ ___ \|  _ < | |
+          |____/ |_/_/   \_\_| \_\|_|
+
+        -->
+
+
+
+
+        
+<!-- this will select the header link with the following value -->
+<div id="desktop-header-selector" data-value="offer_index.php"></div>
+
+
+<div id="default-header-spacer"></div>
+
+
+<!--
+   ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
+  | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
+  |  _ \| |_) |  _|   / _ \ | | | | |   | |_) | | | | |\/| |  _ \
+  | |_) |  _ <| |___ / ___ \| |_| | |___|  _ <| |_| | |  | | |_) |
+  |____/|_| \_\_____/_/   \_\____/ \____|_| \_\\___/|_|  |_|____/
+
+-->
+
+<!-- used in index & inner pages -->
+
+<article class="default-breadcrumb-section visible-md visible-lg">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="default-breadcrumb">
+          <ul>
+            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
+            <li><a href="brand_alternative.php">sage hotels</a></li>
+            <li><a href="hotel.php">sage west perth</a></li>
+            <li><a href="offer_index.php">Offers</a></li>
+            <li>Stay Two Nights And Save</li>
+          </ul>
+        </div> <!-- default-breadcrumb -->
+
+      </div>
+    </div>
+  </div>
+</article> <!-- default-breadcrumb-container -->
+
+<!--
+   ____  _     ___ ____  _____ ____
+  / ___|| |   |_ _|  _ \| ____|  _ \
+  \___ \| |    | || | | |  _| | |_) |
+   ___) | |___ | || |_| | |___|  _ <
+  |____/|_____|___|____/|_____|_| \_\
+
+-->
+
+<!-- used as a banner in detail pages -->
+
+<article class="detail-banner-slider-section">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-2 col-sm-1 col-xs-0"></div>
+      <div class="col-md-8 col-sm-10 col-xs-12">
+
+        <div class="detail-banner-slider-title">
+          <h1>Stay Two Nights And Save</h1>
+        </div> <!-- detail-banner-slider-title -->
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        <!-- add the class 'slider-with-price' if has price -->
+        <div class="detail-banner-slider-container">
+          <div class="detail-banner-slider">
+
+            <div class="detail-banner-slider-item">
+              <div class="manic-image-container">
+                <img src="" 
+                  data-image-desktop="images_cms/offer/offer-detail-accommodation-banner.jpg"
+                  data-image-tablet="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg"
+                  data-image-mobile="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg">
+              </div>
+            </div>
+
+            <div class="detail-banner-slider-item">
+              <div class="manic-image-container">
+                <img src="" 
+                  data-image-desktop="images_cms/offer/offer-detail-accommodation-banner.jpg"
+                  data-image-tablet="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg"
+                  data-image-mobile="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg">
+              </div>
+            </div>
+
+            <div class="detail-banner-slider-item">
+              <div class="manic-image-container">
+                <img src="" 
+                  data-image-desktop="images_cms/offer/offer-detail-accommodation-banner.jpg"
+                  data-image-tablet="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg"
+                  data-image-mobile="images_cms/offer/offer-detail-accommodation-banner-mobile.jpg">
+              </div>
+            </div>
+
+          </div> <!-- detail-banner-slider -->
+
+
+          <!-- 
+          <div class="detail-banner-slider-price-container">
+            <h6>per pax</h6>
+            <div class="content-price">
+              <span class="currency">aud</span>
+              <span class="number">$79.90</span>
+            </div>
+          </div>
+          -->
+          <!-- detail-banner-slider-price-container -->
+
+        </div> <!-- detail-banner-slider-container -->
+        
+      </div>
+    </div>
+  </div>
+</article> <!-- detail-banner-slider-section -->
+
+
+<!--
+    ____ ___  _   _ _____ _____ _   _ _____
+   / ___/ _ \| \ | |_   _| ____| \ | |_   _|
+  | |  | | | |  \| | | | |  _| |  \| | | |
+  | |__| |_| | |\  | | | | |___| |\  | | |
+   \____\___/|_| \_| |_| |_____|_| \_| |_|
+
+-->
+
+
+
+<article id="detail-page-content-section" class="hidden-xs hidden-sm">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+
+        <div id="detail-page-content">
+
+          <!--
+              ___ ___  _  _ _____ ___ _  _ _____   ___ _____ _   ___ _____
+             / __/ _ \| \| |_   _| __| \| |_   _| / __|_   _/_\ | _ \_   _|
+            | (_| (_) | .` | | | | _|| .` | | |   \__ \ | |/ _ \|   / | |
+             \___\___/|_|\_| |_| |___|_|\_| |_|   |___/ |_/_/ \_\_|_\ |_|
+          -->
+
+          
+          <div class="detail-page-content-title">
+            <h5>Get Egg-Cited Cityside </h5>
+          </div>
+
+          <div class="detail-page-content-description">
+            <div class="default-copy">
+              <p>Family friendly fun in the CBD this Easter! Stay two nights and get 15% off the daily rate!</p>           
+            </div>
+          </div>
+
+          <div class="detail-page-menu-info">
+            <div class="detail-page-menu-info-item">
+              <div class="default-copy">
+                <h4>This great deal includes:</h4>
+                <ul>
+                  <li>Tasting platter in the lounge consisting of marinated olives, spiced nuts, cheese, lavosh, quince paste and two-cheese aranchini.</li>
+                  <li>Easter treat on arrival.</li>
+                  <li>Early check-in at 1.00pm. Late check-out to 12.00pm.</li>
+                  <li>Discounted valet car parking for economy size cars for $30 per night.</li>
+                  <li>Staying over Easter Sunday? Extra free bonus $20 voucher to use towards upgrading your room or a later checkout.</li>
+                  <li>Need a rollaway? Pay $30 per night instead of $60.</li>
+                  <li>FREE unlimited wifi. </li>
+                  <li>Four FREE mini bar Items per night. </li>
+                </ul>
+              </div>
+            </div> <!-- detail-page-menu-info-item -->
+
+            <div class="detail-page-menu-info-item">
+              <div class="default-copy">
+                <p>For the first 10 bookings that are made on our Egg-Cited Easter package (for all bookings made between 10th April and the 17th April) guests will receive a free family pass to the Queensland Museum Science Centre. </p>
+                <p>The Science Centre is home to the Queensland Museum Network, and a brilliant place to take the family for hours of Science-y entertainment. Enjoy their latest exhibition (all hands-on FUN) called ‘MATHAMAZING’. As well as the Science Centre, the Museum itself has a number of fantastic (and free) exhibitions to enjoy. Enjoy that final weekend of the school holidays (yep … you may need it!) and enjoy 48 hours in Brisbane. </p>
+                <p>We can almost guarantee sunny skies and warm weather – all the better to float around in our roof top pool terrace with a cocktail in hand!</p>
+              </div>
+            </div>
+
+          </div> <!-- detail-page-menu-info -->
+
+
+          <!--
+              ___ ___  _  _ _____ ___ _  _ _____   ___ _  _ ___
+             / __/ _ \| \| |_   _| __| \| |_   _| | __| \| |   \
+            | (_| (_) | .` | | | | _|| .` | | |   | _|| .` | |) |
+             \___\___/|_|\_| |_| |___|_|\_| |_|   |___|_|\_|___/
+          -->
+
+        </div> <!-- detail-page-content -->
+
+      </div>
+      <div class="col-md-1 col-sm-0"></div>
+      <div class="col-md-4 col-sm-12">
+
+        <div id="detail-page-content-sidebar">
+
+
+
+          <div class="detail-page-contact-info">
+
+            <div class="detail-page-contact-info-title">
+              <h5>Contact Information</h5>
+            </div>
+
+            <div class="detail-page-contact-info-item">
+              <h6>Address</h6>
+              <p>NEXT Hotel Brisbane <br>72 Queen Street, Brisbane, <br>QLD 4000, Australia</p>
+            </div>
+
+            <div class="detail-page-contact-info-item last-version">
+              <h6>Contact us</h6>
+              <p>Phone: +61 7 3222 3222 <br>Email: <a href="mailto:info.brisbane@nexthotels.com">info.brisbane@nexthotels.com</a></p>
+            </div>
+
+            <div class="square-cta-container">
+              <a href="" class="square-cta highlight-version">Book Now</a>
+            </div>
+
+          </div> <!-- detail-page-contact-info -->
+
+
+          <div class="detail-page-terms-and-conditions">
+            <div class="default-copy">
+              <h4>Terms & Conditions</h4>
+              <ul>
+                <li>The offer Get Egg-Cited CitySide. Stay 2 nights & Save is bookable for stays now until 17-04-2017</li>
+                <li>Blackouts apply</li>
+                <li>Bookings must be prepaid and non refundable</li>
+              </ul>
+            </div>
+          </div> <!-- detail-page-terms-and-conditions -->
+
+
+        </div> <!-- detail-page-content-sidebar -->
+
+      </div>
+    </div> <!-- row -->
+
+
+  </div> <!-- container-fluid -->
+</article> <!-- detail-page-content-section -->
+
+<div class="container-fluid has-breakpoint hidden-sm hidden-xs">
+  <div class="row">
+    <div class="col-md-12">
+      <hr>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+   __  __  ___  ____  _____
+  |  \/  |/ _ \|  _ \| ____|
+  | |\/| | | | | |_) |  _|
+  | |  | | |_| |  _ <| |___
+  |_|  |_|\___/|_| \_\_____|
+
+-->
+
+<article id="detail-page-more-section" class="hidden-xs hidden-sm">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="detail-page-more">
+
+          <div class="detail-page-more-title">
+            <h4>More offers</h4>
+          </div>
+
+          <div id="offer-detail-page-item-container" class="boxlist-item-container">
+            <div class="row">
+
+
+              <!--
+                  ___  _
+                 / _ \/ |
+                | | | | |
+                | |_| | |
+                 \___/|_|
+
+              -->
+
+              <div class="col-md-4">
+                <div class="offer-detail-page-item boxlist-item">
+
+                  <div class="offer-detail-page-item-box boxlist-item-box">
+
+                    <div class="boxlist-item-content-image">
+                      <a href="offer_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/dining/dining-detail-promotion-01.jpg">
+                      </a>
+                    </div>
+                    <div class="offer-detail-page-item-content-copy">
+                      <div class="default-copy">
+                        <h5><a href="offer_detail.php">1-for-1 Tapas</a></h5>
+                        <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                        <ul>
+                          <li>Arrival rose for your significant other</li>
+                          <li>3-course dinner with choice of dish</li>
+                          <li>Complimentary bottle of red or white wine</li>
+                          <li>Live jazz singer duo</li>
+                        </ul>
+                        <h6>Also open for a la carte bookings with valentine’s day dessert specials</h6>
+                      </div>
+                    </div>
+
+                    <div class="boxlist-item-content-cta">
+
+                      <div class="offer-detail-page-item-arrow-cta-container">
+                        <a href="offer_detail.php" class="arrow-cta">more details</a>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                        </div>
+                        <div class="col-xs-6">
+
+                          <div class="boxlist-item-content-price">
+                            <h6>Min. Spend/pax</h6>
+                            <p class="content-price">
+                              <span class="currency">aud</span>
+                              <span class="number">$10</span>
+                            </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- boxlist-item-content-box -->
+
+                </div> <!-- offer-detail-page-item -->
+              </div> <!-- col-md-4 -->
+
+              <!--
+                  ___ ____
+                 / _ \___ \
+                | | | |__) |
+                | |_| / __/
+                 \___/_____|
+
+              -->
+
+              <div class="col-md-4">
+                <div class="offer-detail-page-item boxlist-item">
+                  <div class="offer-detail-page-item-box boxlist-item-box">
+
+                    <div class="boxlist-item-content-image">
+                      <a href="offer_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/dining/dining-detail-promotion-02.jpg">
+                      </a>
+                    </div>
+                    <div class="offer-detail-page-item-content-copy">
+                      <div class="default-copy">
+                        <h5><a href="offer_detail.php">Sage Amour</a></h5>
+                        <p>Why fly to Rome when you can Sage Amour? </p>
+                        <ul>
+                          <li>Night Accommodation in a Sage Room</li>
+                          <li>Continental Buffet Breakfast for 2</li>
+                          <li>2 Course Dinner for 2 at Julio’s Itlaian Restaurant</li>
+                          <li>Bottle of  Prosecco and Chocolates on arrival</li>
+                          <li>Late Check out</li>
+                        </ul>
+                        
+                      </div>
+                    </div> <!-- offer-detail-page-item-content-copy -->
+
+                    <div class="boxlist-item-content-cta">
+
+                      <div class="offer-detail-page-item-arrow-cta-container">
+                        <a href="offer_detail.php" class="arrow-cta">more details</a>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                        </div>
+                        <div class="col-xs-6">
+                          <!-- no price -->
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- boxlist-item-content-box -->
+                  
+                </div> <!-- offer-detail-page-item -->
+              </div>
+
+              <!--
+                  ___ _____
+                 / _ \___ /
+                | | | ||_ \
+                | |_| |__) |
+                 \___/____/
+
+              -->
+
+              <div class="col-md-4">
+                <div class="offer-detail-page-item boxlist-item">
+
+                  <div class="offer-detail-page-item-box boxlist-item-box">
+
+                    <div class="boxlist-item-content-image">
+                      <a href="offer_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/dining/dining-detail-promotion-03.jpg">
+                      </a>
+                    </div>
+                    <div class="offer-detail-page-item-content-copy">
+                      <div class="default-copy">
+                        <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
+                        <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                        <ul>
+                          <li>Arrival rose for your significant other</li>
+                          <li>3-course dinner with choice of dish</li>
+                          <li>Complimentary bottle of red or white wine</li>
+                          <li>Live jazz singer duo</li>
+                        </ul>
+                        <h6>Also open for a la carte bookings with valentine’s day dessert specials</h6>
+                      </div>
+                    </div>
+
+                    <div class="boxlist-item-content-cta">
+
+                      <div class="offer-detail-page-item-arrow-cta-container">
+                        <a href="offer_detail.php" class="arrow-cta">more details</a>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                        </div>
+                        <div class="col-xs-6">
+
+                          <div class="boxlist-item-content-price">
+                            <h6>per pax</h6>
+                            <p class="content-price">
+                              <span class="currency">aud</span>
+                              <span class="number">$79.90</span>
+                            </p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- offer-detail-page-item-box -->
+
+                </div> <!-- offer-detail-page-item -->
+              </div>
+
+
+
+            </div> <!-- row -->
+          </div> <!-- offer-detail-page-item-container -->
+          
+        </div> <!-- detail-page-more -->
+        
+
+      </div>
+    </div>
+  </div>
+</article> <!-- detail-page-more-section -->
+
+<!--
+   __  __  ___  ____ ___ _     _____
+  |  \/  |/ _ \| __ )_ _| |   | ____|
+  | |\/| | | | |  _ \| || |   |  _|
+  | |  | | |_| | |_) | || |___| |___
+  |_|  |_|\___/|____/___|_____|_____|
+
+-->
+
+<article id="detail-page-content-section-mobile" class="visible-sm visible-xs">
+
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-sm-12">
+
+        <div class="detail-page-contact-info">
+          <ul>
+            <li><p class="address"><span>NEXT Hotel Brisbane <br>72 Queen Street, Brisbane, <br>QLD 4000, Australia</span></p></li>
+            <li>
+              <p class="phoneno">
+                <span>+61 7 3222 3222</span>
+              </p>
+            </li>
+            <li><a class="email" href="mailto:info.brisbane@nexthotels.com"><span>info.brisbane@nexthotels.com</span></a></li>
+
+          </ul>
+
+          <div class="square-cta-container">
+            <a href="" class="square-cta highlight-version">Book Now</a>
+          </div>
+
+        </div> <!-- detail-page-contact-info -->
+
+
+      </div>
+    </div> <!-- row -->
+
+  </div> <!-- container-fluid -->
+
+
+
+  <div id="detail-page-content">
+    <div class="detail-page-content-title">
+      <h5>Get Egg-Cited Cityside </h5>
+    </div>
+
+    <div class="detail-page-content-description">
+      <div class="default-copy">
+        <p class="minimize-read-more" data-length="165">Family friendly fun in the CBD this Easter! Stay two nights and get 15% off the daily rate!</p>
+      </div>      
+    </div>
+  </div> <!-- detail-page-content -->
+
+  <div id="detail-page-content" class="no-background">
+    <div class="detail-page-content-title">
+      <h5>This great deal includes:</h5>
+    </div>
+
+    <div class="detail-page-content-description">
+      <div class="default-copy">
+        <ul>
+          <li>Tasting platter in the lounge consisting of marinated olives, spiced nuts, cheese, lavosh, quince paste and two-cheese aranchini.</li>
+          <li>Easter treat on arrival.</li>
+          <li>Early check-in at 1.00pm. Late check-out to 12.00pm.</li>
+          <li>Discounted valet car parking for economy size cars for $30 per night.</li>
+          <li>Staying over Easter Sunday? Extra free bonus $20 voucher to use towards upgrading your room or a later checkout.</li>
+          <li>Need a rollaway? Pay $30 per night instead of $60.</li>
+          <li>FREE unlimited wifi. </li>
+          <li>Four FREE mini bar Items per night. </li>
+        </ul>
+      </div>      
+    </div>
+  </div> <!-- detail-page-content -->
+
+</article> <!-- detail-page-content-section-mobile -->
+
+
+
+<article id="detail-page-expanding-content-section" class="visible-sm visible-xs">
+  
+  <div class="manic-expand-container" data-group="mobile-offer-detail-page">
+    <div class="scroll-target" data-value="title-02"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>More Details</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+              
+            <div class="default-copy">
+              <p>For the first 10 bookings that are made on our Egg-Cited Easter package (for all bookings made between 10th April and the 17th April) guests will receive a free family pass to the Queensland Museum Science Centre. </p>
+              <p>The Science Centre is home to the Queensland Museum Network, and a brilliant place to take the family for hours of Science-y entertainment. Enjoy their latest exhibition (all hands-on FUN) called ‘MATHAMAZING’. As well as the Science Centre, the Museum itself has a number of fantastic (and free) exhibitions to enjoy. Enjoy that final weekend of the school holidays (yep … you may need it!) and enjoy 48 hours in Brisbane. </p>
+              <p>We can almost guarantee sunny skies and warm weather – all the better to float around in our roof top pool terrace with a cocktail in hand!</p>
+            </div>
+            
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="manic-expand-container" data-group="mobile-offer-detail-page">
+    <div class="scroll-target" data-value="title-02"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>terms & conditions</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+              
+            <div class="default-copy">
+              <ul>
+                <li>The offer Get Egg-Cited CitySide. Stay 2 nights & Save is bookable for stays now until 17-04-2017</li>
+                <li>Blackouts apply</li>
+                <li>Bookings must be prepaid and non refundable</li>
+              </ul>
+            </div>
+
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="manic-expand-container" data-group="mobile-offer-detail-page">
+    <div class="scroll-target" data-value="title-03"></div>
+    <div class="manic-expand-container-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <h4>more offers</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manic-expand-container-btn"></div>
+    <div class="manic-expand-container-content">
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div id="offer-detail-page-item-container" class="boxlist-item-container mobile-height-version">
+              <div class="row">
+
+
+                <!--
+                    ___  _
+                   / _ \/ |
+                  | | | | |
+                  | |_| | |
+                   \___/|_|
+
+                -->
+
+                <div class="col-sm-6 col-xs-12">
+                  <div class="offer-detail-page-item boxlist-item">
+
+                    <div class="offer-detail-page-item-box boxlist-item-box">
+
+                      <div class="boxlist-item-content-image">
+                        <div class="manic-image-container">
+                          <img src=""
+                            data-image-tablet="images_cms/dining/dining-detail-promotion-01-mobile.jpg"
+                            data-image-mobile="images_cms/dining/dining-detail-promotion-01-mobile.jpg">
+                        </div>
+                      </div>
+                      <div class="offer-detail-page-item-content-copy">
+                        <div class="default-copy">
+                          <h5>1-for-1 Tapas</h5>
+                          <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                        </div>
+                      </div>
+
+                      <div class="offer-detail-page-item-arrow-cta-container-mobile">
+                        <a href="offer_detail.php" class="arrow-cta">more details</a>
+                      </div>
+                      
+                    </div> <!-- boxlist-item-content-box -->
+
+                  </div> <!-- offer-detail-page-item -->
+                </div>
+
+                <!--
+                    ___ ____
+                   / _ \___ \
+                  | | | |__) |
+                  | |_| / __/
+                   \___/_____|
+
+                -->
+
+                <div class="col-sm-6 col-xs-12">
+                  <div class="offer-detail-page-item boxlist-item">
+
+                    <div class="offer-detail-page-item-box boxlist-item-box">
+
+                      <div class="boxlist-item-content-image">
+                        <div class="manic-image-container">
+                          <img src=""
+                            data-image-tablet="images_cms/dining/dining-detail-promotion-02-mobile.jpg"
+                            data-image-mobile="images_cms/dining/dining-detail-promotion-02-mobile.jpg">
+                        </div>
+                      </div>
+                      <div class="offer-detail-page-item-content-copy">
+                        <div class="default-copy">
+                          <h5>Sage Amour</h5>
+                          <p>Why fly to Rome when you can Sage Amour? </p>
+                        </div>
+                      </div> <!-- offer-detail-page-item-content-copy -->
+
+                      <div class="offer-detail-page-item-arrow-cta-container-mobile">
+                        <a href="offer_detail.php" class="arrow-cta">more details</a>
+                      </div>
+
+                    </div> <!-- boxlist-item-content-box -->
+                    
+                  </div> <!-- offer-detail-page-item -->
+                </div>
+
+              </div> <!-- row -->
+            </div> <!-- offer-detail-page-item-container -->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</article>
+
+
+<div id="default-footer-spacer"></div>
+
+
+
+        <!--
+           _____ _   _ ____
+          | ____| \ | |  _ \
+          |  _| |  \| | | | |
+          | |___| |\  | |_| |
+          |_____|_| \_|____/
+
+        -->
+        
+        
+<!-- 
+         _   ___     ___    ____   ____ ____  ___ ____ _____ 
+        | | / \ \   / / \  / ___| / ___|  _ \|_ _|  _ \_   _|
+     _  | |/ _ \ \ / / _ \ \___ \| |   | |_) || || |_) || |  
+    | |_| / ___ \ V / ___ \ ___) | |___|  _ < | ||  __/ | |  
+     \___/_/   \_\_/_/   \_\____/ \____|_| \_\___|_|    |_|  
+                                                             
+-->
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
+  <!-- Optimized Version -->
+  <script type="text/javascript">
+    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
+    var PAGE_JS                   = "js/page-default.min.js";
+    var PAGE_CSS                  = "css/style.css";
+
+    head.load(PAGE_CSS);
+    head.load(PAGE_LIBRARY, function() {
+      head.load(PAGE_JS, function() {
+          
+        page = new sagewest.page.Default({});
+
+      });
+    });
+
+    // start preload
+  </script>
+
+        <!--
+   _____ ___   ___ _____ _____ ____  
+  |  ___/ _ \ / _ \_   _| ____|  _ \ 
+  | |_ | | | | | | || | |  _| | |_) |
+  |  _|| |_| | |_| || | | |___|  _ < 
+  |_|   \___/ \___/ |_| |_____|_| \_\
+                                     
+-->
+
+
+<!-- <footer id="mobile-footer" class="visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-7">
+        <p class="mobile-footer-hashtag">#Sagewestperth</p>
+      </div>
+      <div class="col-xs-5">
+        <div id="mobile-social-container">
+          <ul>
+            <li><a href="https://www.facebook.com/SageHotelPerth/" target="_blank" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/sagewestperth/" target="_blank" class="fa fa-instagram"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>-->
+
+
+
+
+<footer id="desktop-footer" class="hotel-version">
+  <!-- 
+  <div id="hotel-footer-top-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-top-bar">
+
+            <ul>
+              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
+              <li><p>+61865009100</p></li>
+              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div> 
+  -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        
+        <div id="footer-logo">
+          <img src="images/logo/footer-snh-logo.png" alt="">
+        </div>
+
+        <div id="footer-subscribe-form">
+          <h1>Subscribe to us</h1>
+          <div class="input-box">
+            <input type="text" name="email" placeholder="Enter your email">
+          </div>
+        </div>
+        
+        <div id="footer-copyright-info" class="visible-md visible-lg">
+          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div id="footer-copyright-info" class="visible-sm visible-xs">
+          <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+      </div>
+
+      <!--
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <div class="footer-seperator left-version">
+        </div>
+      </div> 
+      -->
+
+      <div class="col-md-3 hidden-sm hidden-xs">
+
+        <div id="hotel-middle-footer-container">
+          <div id="hotel-footer-menu-container">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="room_index.php">Rooms</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="activities.php">Activities</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="location.php">Location</a></li>
+            </ul>
+          </div>
+
+          <div id="footer-social-media">
+            <ul>
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-youtube-square"></a></li>
+              <li><a href="#" class="fa fa-twitter-square"></a></li>
+              <li><a href="#" class="fa fa-google-plus-square"></a></li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="col-md-3 hidden-sm hidden-xs">
+        <div id="hotel-footer-contact-item-container">
+          <div class="footer-contact-item">
+            <h4>Contact Information</h4>
+            <p>
+              1309 Hay Street, West Perth, WA 6005, Australia <br>
+              +618 6500 9100 <br>
+              reservations.westperth@sage-hotels.com
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <h4>Central Reservations</h4>
+            <p>
+              1800 303 186 (Within Australia) <br>
+              0800 480 274 (Within New Zealand)
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <!-- 
+        <div class="footer-seperator right-version">
+        </div>
+        -->
+
+      </div>
+      <div class="col-md-2 hidden-xs hidden-sm">
+
+        <div id="footer-snh-group-logos-container">
+          <div id="footer-snh-group-logos">
+            <h1>Our Brands</h1>
+            <ul>
+              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- removed by client -->
+  <!-- 
+  <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-bottom-bar">
+            <ul>
+              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
+              <li><p>+61865009100</p></li>
+              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
+            </ul>
+            <ul>
+              <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
+              <li><p>0800 480 274 (Within New Zealand)</p></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+</footer> <!-- #desktop-footer
+      </div> <!-- #page-wrapper-content -->
+    </div> <!-- #page-wrapper -->
+    
+    <div id="mobile-page-hitarea"></div>
+
+  </body>
+</html>

@@ -24,13 +24,31 @@
     .input-box {
       margin-bottom: 15px;
       label {
-        .playfair-regular;
+        // .playfair-regular;
+        .lato-bold;
         font-size: 16px;
         line-height: 16px;
         color: #555;
         display: block;
         padding-bottom: 10px;
       }
+
+      .input-box-disclaimer{
+        position: relative;
+        p{
+          .open-sans-light-italic;
+          font-size: 12px;
+          line-height: 20px;
+          letter-spacing: 0.01em;
+          // color: #a8a4a3;
+          color: @grey;
+
+          position: absolute;
+          top: 1px;
+          right: 0;
+        }
+      }
+    
       .dropdown {
         display: block;
         position: relative;
@@ -39,12 +57,21 @@
         select {
           background-color: transparent;
           background-image: none!important;
+          border: none;
+          outline: none;
           border: 1px solid @input-grey;
           height: 30px;        
-          width: 100%;              
+          width: 100%;
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none;
+
+
+          // http://stackoverflow.com/questions/20163079/remove-select-arrow-on-ie
+          &::-ms-expand {
+            display: none;
+          }
+
           .round(0px);  
           .body-font;  
           padding-left: 15px;     
@@ -160,9 +187,14 @@
           line-height: 20px;
           text-transform: uppercase;
           &.month {
-            .playfair-regular;
-            font-size: 16px;
+            // .playfair-regular;
+            // font-size: 16px;
             text-transform: none;
+
+            .lato-regular;
+            font-size: 18px;
+            line-height: 20px;
+            color: @grey;
           }
           &.available {
             &:hover {
@@ -170,11 +202,19 @@
             }
           }
           #hover-day {
-            .playfair-bold;
-            font-size: 46px;
-            line-height: 38px;
-            margin-top: -15px;
-            color: @violet;
+            // .playfair-bold;
+            // font-size: 46px;
+            // line-height: 38px;
+            // margin-top: -15px;
+            // color: @violet;
+
+            .lato-bold;
+            font-size: 44px;
+            line-height: 40px;
+            color: @grey-2;
+
+            margin-top: -4px;
+            margin-bottom: -7px;
           }
           #hover-weekname {
             color: #555;
@@ -182,6 +222,9 @@
             letter-spacing: 0.1em;
             .open-sans-bold;
             text-transform: uppercase;
+
+            line-height: 20px;
+            padding-bottom: 6px;
           }
         }
         td {
@@ -281,7 +324,24 @@
     // padding-bottom: 30px + 65px;
     padding-bottom: 70px + 25px;
     @media all and (max-width: 991px) {
-      padding-bottom: 80px;
+      // padding-bottom: 80px;
+      /// padding-bottom: 67px;
+      padding-bottom: 82px;
+    }
+  }
+
+
+  .room-detail-page-item-title{
+    @media all and (max-width: 991px) {
+      padding-bottom: 11px;
+    }
+
+    h5{
+      color: @violet;
+
+      a{
+        color: @violet;
+      }
     }
   }
 
@@ -303,6 +363,7 @@
     @media all and (max-width: 991px) {
       // padding-left: 20px;
       // padding-right: 20px;
+      padding-top: 0px;
     }
 
     .boxlist-item-content-room-detail{
@@ -325,6 +386,10 @@
     bottom: 30px - 8px;     // due to line height of an arrow cta
     left: 20px;
     right: 20px;
+
+    @media only screen and (max-width: 1180px){
+      bottom: 23px;
+    }
 
     .arrow-cta{
       white-space: nowrap;

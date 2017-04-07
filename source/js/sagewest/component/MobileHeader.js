@@ -75,7 +75,7 @@ sagewest.component.MobileHeader = function(options, element) {
   }
   */
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(sagewest.component.MobileHeader, goog.events.EventTarget);
 
@@ -183,7 +183,7 @@ sagewest.component.MobileHeader.prototype.create_menu = function() {
     var target = $(event.currentTarget);
     var target_href = '' + target.attr('href');
 
-    console.log('target_href: ' + target_href);
+    // console.log('target_href: ' + target_href);
     
     if (target_href.indexOf(this.current_page) != -1) {
 
@@ -214,12 +214,12 @@ sagewest.component.MobileHeader.prototype.create_menu = function() {
 
 sagewest.component.MobileHeader.prototype.open_menu = function() {
 
-  console.log('MobileHeader: open_menu');
+  // console.log('MobileHeader: open_menu');
 
   if (this.is_open == false) {
     this.is_open = true;
     this.is_calendar_open = false;
-    console.log('MobileHeader: open_menu: inside');
+    // console.log('MobileHeader: open_menu: inside');
 
     this.body.removeClass('mobile-calendar-open');
 
@@ -269,7 +269,7 @@ sagewest.component.MobileHeader.prototype.close_menu = function() {
 };
 sagewest.component.MobileHeader.prototype.calendar_open_menu = function() {
 
-  console.log('MobileHeader: open_calendar');
+  // console.log('MobileHeader: open_calendar');
   
   if (this.is_calendar_open == false) {
     this.is_calendar_open = true;
@@ -373,7 +373,7 @@ sagewest.component.MobileHeader.prototype.on_menu_a_click = function(event) {
 
 
 
-  console.log("on_menu_a_click")
+  // console.log("on_menu_a_click")
 
   var is_subnav = target_parent.hasClass('has-subnav');
   var is_expanded = target_parent.hasClass('expand-version');
@@ -408,7 +408,7 @@ sagewest.component.MobileHeader.prototype.on_menu_expand_btn_click = function(ev
   event['preventDefault']();
   event.stopPropagation();
 
-  console.log("on_menu_expand_btn_click");
+  // console.log("on_menu_expand_btn_click");
 
   var target = $(event.currentTarget);
   var target_parent = target.parent();
@@ -416,10 +416,10 @@ sagewest.component.MobileHeader.prototype.on_menu_expand_btn_click = function(ev
   // var is_subnav = target_parent.hasClass('has-subnav');
   var is_expanded = target_parent.hasClass('expand-version');
 
-  console.log('is_expanded: '+ is_expanded)
+  // console.log('is_expanded: '+ is_expanded)
 
   if (is_expanded) {
-    console.log(this.menu_li_elements);
+    // console.log(this.menu_li_elements);
     this.menu_li_elements.removeClass('expand-version');
   } else {
     this.menu_li_elements.removeClass('expand-version');

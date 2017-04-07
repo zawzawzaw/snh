@@ -9,7 +9,7 @@
 
 
 <div class="scroll-target" data-value="banner"></div>
-<article id="brand-banner-section">
+<article id="brand-banner-section"> 
   <div id="brand-banner" class="default-page-banner">
 
     <div class="default-page-banner-image visible-md visible-lg">
@@ -71,9 +71,7 @@
 
         <div id="default-introduction-image-mobile" class="visible-sm visible-xs">
           <div class="manic-image-container">
-            <img src="" 
-              data-image-tablet="images_cms/brand_sundowner/brand-introduction-tablet.jpg"
-              data-image-mobile="images_cms/brand_sundowner/brand-introduction-mobile.jpg">
+            <img src="" data-image-mobile="images_cms/brand_sundowner/brand-introduction-mobile.jpg">
           </div>
         </div>
         

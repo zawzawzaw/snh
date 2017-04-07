@@ -156,7 +156,7 @@ sagewest.page.Default = function(options) {
   this.desktop_footer = $('#desktop-footer');
 
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(sagewest.page.Default, manic.page.Page);
 
@@ -364,7 +364,7 @@ sagewest.page.Default.prototype.on_expand_container_expand = function(event) {
     
   }
 
-  console.log('expand_container.group_value: ' + expand_container.group_value);
+  // console.log('expand_container.group_value: ' + expand_container.group_value);
 
   if(expand_container.group_value != 'none') {
 
@@ -374,7 +374,7 @@ sagewest.page.Default.prototype.on_expand_container_expand = function(event) {
 
       expand_container_02 = this.expand_container_array[i];
 
-      console.log(expand_container_02.group_value);
+      // console.log(expand_container_02.group_value);
 
       if(expand_container_02.group_value == expand_container.group_value && expand_container_02 !== expand_container){
         expand_container_02.collapse();
@@ -425,7 +425,7 @@ sagewest.page.Default.prototype.add_lazy_load = function(image_container_param) 
 
 
 sagewest.page.Default.prototype.create_dropdown = function() {
-  var arr = $('.manic-dropdown');
+  var arr = $('.manic-dropdown').not('.manic-dropdown-instanciated');
   var item = null;
   var item_id = "";
 
@@ -436,6 +436,8 @@ sagewest.page.Default.prototype.create_dropdown = function() {
 
   for (var i = 0, l = arr.length ; i < l; i++) {
     item = $(arr[i]);
+    item.addClass('manic-dropdown-instanciated');
+
     item_id = '' + item.find('select').attr('id');
 
     dropdown = new manic.ui.Dropdown({}, item);
@@ -678,14 +680,36 @@ sagewest.page.Default.prototype.create_review_content = function(){
 
     goog.events.listen(this.review_content, sagewest.component.ReviewContent.ON_UPDATE_PAGINATION, function(event){
 
-      this.scroll_to_target('content');
+      if(manic.IS_MOBILE == false) {
+        this.scroll_to_target('content');
+      }
 
     }.bind(this));
     goog.events.listen(this.review_content, sagewest.component.ReviewContent.ON_UPDATE_PAGE, function(event){
 
-      this.scroll_to_target('content');
+      if(manic.IS_MOBILE == false) {
+        this.scroll_to_target('content');
+      }
 
     }.bind(this));
+
+    goog.events.listen(this.review_content, sagewest.component.ReviewContent.ON_OPEN_FILTER, function(event){
+
+      if(manic.IS_MOBILE == true) {
+        this.util_scroll_to('content');
+      }
+
+    }.bind(this));
+
+    goog.events.listen(this.review_content, sagewest.component.ReviewContent.ON_CLOSE_FILTER, function(event){
+
+      if(manic.IS_MOBILE == true) {
+        this.util_scroll_to('content');
+      }
+
+    }.bind(this));
+
+    
     
 
   }
@@ -747,7 +771,7 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
 
 sagewest.page.Default.prototype.update_page_layout = function() {
 
-  console.log('default update_page_layout');
+  // console.log('default update_page_layout');
 
 
   
@@ -936,7 +960,7 @@ sagewest.page.Default.prototype.on_mobile_menu_close = function(event) {
  * @param  {object} event
  */
 sagewest.page.Default.prototype.on_mobile_menu_hash_click = function(event) {
-  console.log('on_mobile_menu_hash_click');
+  // console.log('on_mobile_menu_hash_click');
   this.on_window_hash_change();
   // this.on_scroll_target_
 
@@ -1074,8 +1098,8 @@ sagewest.page.Default.prototype.scroll_to_target = function(str_param, str_param
 
 
       
-      console.log('sagewest.page.Default: scroll_to_target: ');
-      console.log(scroll_target);
+      // console.log('sagewest.page.Default: scroll_to_target: ');
+      // console.log(scroll_target);
       this.controller.scrollTo(scroll_target[0]);
 
     }
@@ -1087,9 +1111,10 @@ sagewest.page.Default.prototype.scroll_to_target = function(str_param, str_param
 
 sagewest.page.Default.prototype.promo_filter = function() {
 
-  //
-  $("#default-promotion-filters a").on("click", function(event){
 
+  $("#default-promotion-filters a").on("click touchstart", function(event){
+  
+    event.stopPropagation();
     event.preventDefault();
 
     var target = $(event.currentTarget);
@@ -1099,8 +1124,24 @@ sagewest.page.Default.prototype.promo_filter = function() {
     $(".default-promo-box.all").addClass("hide");
     $(".default-promo-box."+href).removeClass("hide");
 
+    
+    if ($(".default-promo-box."+href).length == 0) {
+
+      $('#offer-index-page-no-offers-copy-container').addClass('visible-version');
+
+    } else {
+
+      $('#offer-index-page-no-offers-copy-container').removeClass('visible-version');
+
+    }
+
+
     $("#default-promotion-filters a").removeClass('selected');
     target.addClass('selected');
+
+
+
+
 
     this.update_page_layout();
 
@@ -1140,7 +1181,7 @@ sagewest.page.Default.prototype.common_menu = function() {
     var date = new Date();
         formatted_current_date = ("0" + (date.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + date.getDate().toString()).substr(-2)  + "/" + (date.getFullYear().toString());        
 
-        console.log(formatted_current_date);
+        // console.log(formatted_current_date);
 
     $('#sidebar-date-picker').daterangepicker({
         "autoApply": true,
@@ -1280,7 +1321,7 @@ sagewest.page.Default.prototype.common_menu = function() {
     */
     
     $(".book-now").on("click", function(e){
-      console.log('this is the book now class')
+      // console.log('this is the book now class')
       $("#mobile-header-calendar-open-btn").trigger("click");
     });
 
@@ -1312,25 +1353,61 @@ sagewest.page.Default.prototype.expandable_text = function() {
     var minimized_elements = $('p.minimize');
     
     minimized_read_more_elements.each(function(){    
-        var t = $(this).text();       
+        // var t = $(this).text();                          // this is just TEXT !!!!!
+        var t = $(this).html();
         var length = $(this).data('length');
          
         if(t.length < length) return;
+
+
+        // http://stackoverflow.com/questions/18087416/split-string-in-half-by-word
+        var middle = length;
+        var before = t.lastIndexOf(' ', middle);
+        var after = t.indexOf(' ', middle + 1);
+
+        if (middle - before < after - middle) {
+            middle = before;
+        } else {
+            middle = after;
+        }
+
+        var s1 = t.substr(0, middle);
+        var s2 = t.substr(middle + 1);
+
+
         
         $(this).html(
-            t.slice(0,length)+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
-            '<span style="display:none;">'+ t.slice(length,t.length)+'</span>'
+            s1+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
+            '<span style="display:none;">'+ s2+'</span>'
         );
     }); 
 
+
+
+
     minimized_elements.each(function(){    
-        var t = $(this).text();       
+        // var t = $(this).text();                          // this is just TEXT !!!!!
+        var t = $(this).html();
         var length = $(this).data('length');
 
         if(t.length < length) return;
+
+        // http://stackoverflow.com/questions/18087416/split-string-in-half-by-word
+        var middle = length;
+        var before = t.lastIndexOf(' ', middle);
+        var after = t.indexOf(' ', middle + 1);
+
+        if (middle - before < after - middle) {
+            middle = before;
+        } else {
+            middle = after;
+        }
+
+        var s1 = t.substr(0, middle);
+        var s2 = t.substr(middle + 1);
         
         $(this).html(
-            t.slice(0,length)+'<span>... </span>'
+            s1+'<span>... </span>'
         );
     }); 
     
@@ -1338,24 +1415,43 @@ sagewest.page.Default.prototype.expandable_text = function() {
   }
 
 
-
   //  FOR DESKTOP
   var minimized_read_more_elements = $('p.desktop-minimize-read-more');
   minimized_read_more_elements.each(function(){    
-      var t = $(this).text();       
+      // var t = $(this).text();                          // this is just TEXT !!!!!
+        var t = $(this).html();
+
       var length = $(this).data('length');
+      
        
       if(t.length < length) return;
+
+      // http://stackoverflow.com/questions/18087416/split-string-in-half-by-word
+      var middle = length;
+      var before = t.lastIndexOf(' ', middle);
+      var after = t.indexOf(' ', middle + 1);
+
+      if (middle - before < after - middle) {
+          middle = before;
+      } else {
+          middle = after;
+      }
+
+      var s1 = t.substr(0, middle);
+      var s2 = t.substr(middle + 1);
+
+
       
       $(this).html(
-          t.slice(0,length)+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
-          '<span style="display:none;">'+ t.slice(length,t.length)+'</span>'
+          s1+'<span>... </span><div class="read-more-cta-container"><a href="#" class="read-more">Read more</a></div>'+
+          '<span style="display:none;">'+ s2 +'</span>'
       );
   }); 
 
 
 
-  $('a.read-more', minimized_read_more_elements).click(function(event){
+  // $('a.read-more', minimized_read_more_elements).click(function(event){
+  $('a.read-more').click(function(event){
       event.preventDefault();
       $(this).parent().hide().prev().hide();
       $(this).parent().next().show();        
@@ -1413,11 +1509,11 @@ sagewest.page.Default.prototype.scroll_to_after_the_fold = function(){
     if(manic.IS_TABLET_LANDSCAPE == true) {
       target_y = this.window_height - ($('#mobile-header').height() * 0.9) + 20;
       
-      console.log('here lies something')
-      console.log('target_y: ' + target_y);
+      // console.log('here lies something')
+      // console.log('target_y: ' + target_y);
     } else {      
-      console.log(this.window_height);
-      console.log($('.mobile-header-bg').height());
+      // console.log(this.window_height);
+      // console.log($('.mobile-header-bg').height());
       // 108px different from mobile simulator and actual device
       target_y = (this.window_height - $('.mobile-header-bg').height()) + 108;
       return false;

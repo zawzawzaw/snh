@@ -100,7 +100,7 @@ sagewest.component.GalleryDetailTab = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(sagewest.component.GalleryDetailTab, goog.events.EventTarget);
 
@@ -171,7 +171,7 @@ sagewest.component.GalleryDetailTab.prototype.sample_method_calls = function() {
  */
 sagewest.component.GalleryDetailTab.prototype.set_category_and_id = function(category_param, id_param) {
 
-  console.log('set_category_and_id: ' + category_param + " " + id_param);
+  // console.log('set_category_and_id: ' + category_param + " " + id_param);
 
 
 

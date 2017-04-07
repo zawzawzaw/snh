@@ -25,18 +25,6 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
-  <!-- move these to the at the bottom of the body -->
-  
-
-  <!-- Web Fonts -->
-
-  <!-- open-sans -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet">
-  
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
-
   </head>
 
 
@@ -93,9 +81,9 @@
         </li>
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="activities.php">activities</a></li>
-        <li><a href="#">reviews</a></li>
+        <li><a href="reviews.php">reviews</a></li>
         <li><a href="events.php">events</a></li>
-        <li><a href="contact.php">Location</a></li>
+        <li><a href="location.php">Location</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -160,6 +148,11 @@
               <option value="10">10</option>
             </select>
           </div>
+
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+          
         </div>
       </div>
       <div class="input-box">
@@ -167,7 +160,7 @@
         <input type="text" name="promo_code">
       </div>
       <div class="input-box">
-        <input type="submit" class="check-availability square-cta" value="check availability">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
       </div>
     </form>
   </div>
@@ -214,9 +207,9 @@
               <li><a href="facilities.php">Facilities</a></li>
               <li><a href="gallery.php">Gallery</a></li>
               <li><a href="activities.php">Activities</a></li>
-              <li><a href="#">Reviews</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
               <li><a href="events.php">Events</a></li>
-              <li><a href="contact.php">Location</a></li>
+              <li><a href="location.php">Location</a></li>
             </ul>
           </nav>
         </div>
@@ -294,6 +287,11 @@
                 <option value="10">10</option>
               </select>
             </div>
+
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+            
           </div>
         </div>
         <div class="input-box">
@@ -358,7 +356,7 @@
 
 
 
-        page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
+        <!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
 <div id="page-wrapper-content-min-height">
 
 
@@ -401,7 +399,12 @@
     </div>
   </article> <!-- default-breadcrumb-container -->
 
-  <article id="page-reviews-intro-section">
+
+
+
+
+  <article id="page-reviews-intro-section" class="visible-md visible-lg">
+
     <div class="container-fluid has-breakpoint">
       <div class="row">
         <div class="col-md-6">
@@ -428,6 +431,46 @@
     </div>
   </article>
 
+
+  <article id="page-reviews-intro-section-mobile" class="visible-sm visible-xs">
+
+    <div id="page-reviews-intro-title-mobile">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-1 col-xs-0"></div>
+          <div class="col-md-10 col-xs-12">
+            <h1>Guest Reviews</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-reviews-intro-image-mobile">
+      <div class="manic-image-container">
+        <img src="" data-image-mobile="images_cms/reviews/intro-mobile.jpg">
+      </div>
+    </div>
+
+    <div id="page-reviews-intro-text-mobile">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-1 col-xs-0"></div>
+          <div class="col-md-10 col-xs-12">
+            <div class="default-copy">
+              <p class="minimize-read-more" data-length="105">See what real guests think about our hotel. These hotel reviews of Sage Hotel West Perth will be helpful when planning your next trip to Perth, whether you are traveling for business or pleasure. <br><br>If you’d like to share your experience at Sage Hotel West Perth as well, we’ll appreciate if you post a review to Facebook, Google or TripAdvisor. Thank you for taking the time to share your opinion!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- page-reviews-intro-text -->
+
+    
+
+  </article>
+
+
+
   <!-- line -->
   <div class="container-fluid has-breakpoint visible-md visible-lg">
     <div class="row">
@@ -441,12 +484,97 @@
 
 
 
+   
 
+
+
+
+  
+  
   <div class="scroll-target" data-value="content"></div>
   <article id="page-reviews-content-section">
+
+
+    <div id="page-reviews-filter-mobile" class="visible-sm visible-xs">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div id="page-reviews-filter-title-mobile">
+              <h4>FILTER:</h4>
+              <i>English, All travel types</i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="page-reviews-filter-btn-mobile"></div>
+    </div> <!-- page-reviews-filter-mobile -->
+
+
+    <div id="page-reviews-filter-expanded-container-mobile">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-sm-1 col-xs-0"></div>
+          <div class="col-sm-10 col-xs-12">
+
+            <div class="manic-dropdown" id="page-review-language-dropdown-mobile">
+              <select id="page-review-language-select-mobile">
+                <option value="">Please Select</option>
+                <option value="all">All</option>
+                <option value="english" selected>English</option>
+                <option value="french">French</option>
+                <option value="italian">Italian</option>
+              </select>
+            </div>
+            <div class="manic-dropdown" id="page-review-travel-type-dropdown-mobile">
+              <select id="page-review-travel-type-select-mobile">
+                <option value="">Please Select</option>
+                <option value="all" selected>All</option>
+                <option value="business">Business</option>
+                <option value="couple">Couple</option>
+                <option value="friends">Friends</option>
+                <option value="solo">Solo</option>
+              </select>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <div class="row">
+                <div class="col-xs-6">
+
+                  <a href="javascript:void(0);" class="square-cta full-width-version" id="page-review-filter-cancel-btn">Cancel</a>
+                  
+                </div>
+                <div class="col-xs-6">
+
+                  <a href="javascript:void(0);" class="square-cta full-width-version" id="page-review-filter-apply-btn">Apply</a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- page-reviews-filter-expanded-container-mobile -->
+
+
+
     <div class="container-fluid has-breakpoint">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 hidden-sm hidden-xs">
 
           <!--
              ____ ___ ____  _____ ____    _    ____
@@ -464,20 +592,20 @@
             <div class="manic-dropdown" id="page-review-language-dropdown">
               <select id="page-review-language-select">
                 <option value="">Please Select</option>
+                <option value="all">All</option>
                 <option value="english" selected>English</option>
                 <option value="french">French</option>
                 <option value="italian">Italian</option>
-                <option value="all">All</option>
               </select>
             </div>
-            <div class="manic-dropdown not-selected-version" id="page-review-travel-type-dropdown">
+            <div class="manic-dropdown" id="page-review-travel-type-dropdown">
               <select id="page-review-travel-type-select">
                 <option value="">Please Select</option>
+                <option value="all" selected>All</option>
                 <option value="business">Business</option>
                 <option value="couple">Couple</option>
                 <option value="friends">Friends</option>
                 <option value="solo">Solo</option>
-                <option value="all">All</option>
               </select>
             </div>
           </div> <!-- page-reviews-sidebar -->
@@ -511,7 +639,7 @@
 
                     <div class="default-copy">
                       <h5>“A nice hotel, easy to get to.”</h5>
-                      <p>Our room was nice, the bed comfy and the shower was perfect. The coffee machine is a nice bonus. Our only let down was the breakfast which was cold. We would definitely stay again. A nice hotel, easy to get to, but not in the middle of the city, which suited us perfectly.</p>
+                      <p class="minimize-read-more" data-length="105">Our room was nice, the bed comfy and the shower was perfect. The coffee machine is a nice bonus. Our only let down was the breakfast which was cold. We would definitely stay again. A nice hotel, easy to get to, but not in the middle of the city, which suited us perfectly.</p>
                     </div>
 
                   </div>
@@ -1188,38 +1316,26 @@
 -->
 
 
-  <!-- Development Version -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- Page Library -->
-  <script type="text/javascript" src="../source/js/all.js"></script>
-  <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
-  <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
-  <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/TweenMax.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/jquery.gsap.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/easing/EasePack.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/plugins/ScrollToPlugin.min.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/ScrollMagic.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/plugins/animation.gsap.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/plugins/debug.addIndicators.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
-  <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
-  <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
-  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
-  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
 
-  <!-- Google Closure -->
-  <script src="../source/library/closure-library/closure/goog/base.js"></script>
-  <script src="../source/js/goog-custom-dependencies.js"></script>
+  <!-- Optimized Version -->
   <script type="text/javascript">
-    goog.require('sagewest.page.Default');
-  </script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      page = new sagewest.page.Default({});
+    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
+    var PAGE_JS                   = "js/page-default.min.js";
+    var PAGE_CSS                  = "css/style.css";
+
+    head.load(PAGE_CSS);
+    head.load(PAGE_LIBRARY, function() {
+      head.load(PAGE_JS, function() {
+          
+        page = new sagewest.page.Default({});
+
+      });
     });
+
+    // start preload
   </script>
 
         <!--
@@ -1304,44 +1420,75 @@
 
       </div>
 
+      <!--
       <div class="col-md-1 hidden-sm hidden-xs">
         <div class="footer-seperator left-version">
         </div>
-      </div>
+      </div> 
+      -->
 
-      <div class="col-md-5 hidden-sm hidden-xs">
+      <div class="col-md-3 hidden-sm hidden-xs">
 
-        <div id="hotel-footer-menu-container">
-          <h1>Quick Links</h1>
-          <ul>
-            <li><a href="room_index.php">Rooms</a></li>
-            <li><a href="offer_index.php">Offers</a></li>
-            <li><a href="dining_index.php">Dining</a></li>
-            <li><a href="facilities.php">Facilities</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-            <li><a href="activities.php">Activities</a></li>
-            <li><a href="javascript:void(0);">Reviews</a></li>
-            <li><a href="events.php">Events</a></li>
-            <li><a href="contact.php">Location</a></li>
-          </ul>
+        <div id="hotel-middle-footer-container">
+          <div id="hotel-footer-menu-container">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="room_index.php">Rooms</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="activities.php">Activities</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="location.php">Location</a></li>
+            </ul>
+          </div>
+
+          <div id="footer-social-media">
+            <ul>
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-youtube-square"></a></li>
+              <li><a href="#" class="fa fa-twitter-square"></a></li>
+              <li><a href="#" class="fa fa-google-plus-square"></a></li>
+            </ul>
+          </div>
         </div>
 
-        <div id="footer-social-media">
-          <ul>
-            <li><a href="#" class="fa fa-facebook-square"></a></li>
-            <li><a href="#" class="fa fa-instagram"></a></li>
-            <li><a href="#" class="fa fa-youtube-square"></a></li>
-            <li><a href="#" class="fa fa-twitter-square"></a></li>
-            <li><a href="#" class="fa fa-google-plus-square"></a></li>
-          </ul>
-        </div>
 
       </div>
+
+
+
+      <div class="col-md-3 hidden-sm hidden-xs">
+        <div id="hotel-footer-contact-item-container">
+          <div class="footer-contact-item">
+            <h4>Contact Information</h4>
+            <p>
+              1309 Hay Street, West Perth, WA 6005, Australia <br>
+              +618 6500 9100 <br>
+              reservations.westperth@sage-hotels.com
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <h4>Central Reservations</h4>
+            <p>
+              1800 303 186 (Within Australia) <br>
+              0800 480 274 (Within New Zealand)
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       
       <div class="col-md-1 hidden-sm hidden-xs">
+        <!-- 
         <div class="footer-seperator right-version">
         </div>
+        -->
+
       </div>
       <div class="col-md-2 hidden-xs hidden-sm">
 
@@ -1366,6 +1513,8 @@
   </div>
 
 
+  <!-- removed by client -->
+  <!-- 
   <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
     <div class="container-fluid">
       <div class="row">
@@ -1381,12 +1530,13 @@
               <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
               <li><p>0800 480 274 (Within New Zealand)</p></li>
             </ul>
-          </div> <!-- #hotel-footer-bottom-bar -->
+          </div>
 
         </div>
       </div>
     </div>
   </div>
+  -->
 
 </footer> <!-- #desktop-footer
       </div> <!-- #page-wrapper-content -->

@@ -61,7 +61,7 @@ sagewest.component.GenericMap = function(options, element) {
   }
 
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(sagewest.component.GenericMap, goog.events.EventTarget);
 
@@ -169,6 +169,11 @@ sagewest.component.GenericMap.prototype.create_map = function() {
 
 
 
+  // http://stackoverflow.com/questions/10022873/closing-info-windows-in-google-maps-by-clicking-the-map
+  google.maps.event.addListener(this.map, "click", function(event) {
+    this.infobox.close();
+  }.bind(this));
+
 
 
 };
@@ -197,8 +202,8 @@ sagewest.component.GenericMap.prototype.create_markers = function() {
     pinIcon = item.data('pin-icon');
     marker_html = item.data('html');
 
-    console.log(item);
-    console.log(pinIcon);
+    // console.log(item);
+    // console.log(pinIcon);
 
     lat = item.data('lat')
     lat = parseFloat(lat);
@@ -220,8 +225,8 @@ sagewest.component.GenericMap.prototype.create_markers = function() {
 
     google.maps.event.addListener(marker, 'click', function(event) {
 
-      console.log('marker click');
-      console.log(event);
+      // console.log('marker click');
+      // console.log(event);
 
       var marker_html = this.data('html');
       var lat_lng = item.data('lat_lng');

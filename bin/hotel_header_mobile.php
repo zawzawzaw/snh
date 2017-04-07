@@ -40,9 +40,9 @@
         </li>
         <li><a href="gallery.php">gallery</a></li>
         <li><a href="activities.php">activities</a></li>
-        <li><a href="#">reviews</a></li>
+        <li><a href="reviews.php">reviews</a></li>
         <li><a href="events.php">events</a></li>
-        <li><a href="contact.php">Location</a></li>
+        <li><a href="location.php">Location</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -107,6 +107,11 @@
               <option value="10">10</option>
             </select>
           </div>
+
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+          
         </div>
       </div>
       <div class="input-box">
@@ -114,7 +119,7 @@
         <input type="text" name="promo_code">
       </div>
       <div class="input-box">
-        <input type="submit" class="check-availability square-cta" value="check availability">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
       </div>
     </form>
   </div>

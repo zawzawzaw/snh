@@ -45,9 +45,22 @@
   }
 
   .detail-page-content-description{
-    margin-bottom: 45px;
+    // margin-bottom: 45px;
+    margin-bottom: 23px;
+
     .room-details {
       padding-bottom: 25px;
+    }
+    .room-details-column-01{
+      @media all and (max-width: 1300px) {
+        margin-right: -30px;
+      }
+    }
+    .room-details-column-02{
+      @media all and (max-width: 1300px) {
+        margin-left: 30px;
+        margin-right: -30px;
+      }
     }
     .room-detail {
       position: relative;
@@ -63,6 +76,8 @@
         font-size: 19px;
         letter-spacing: 0.08em;
       }
+
+
     }
     .room-size-person {          
       &:before {
@@ -219,8 +234,10 @@
   
   margin-bottom: 45px;
 
-  padding-top: 27px;
-  padding-bottom: 26px;
+  // padding-top: 27px;
+  padding-top: 20px;
+  // padding-bottom: 26px;
+  padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -234,7 +251,9 @@
 
 
   .detail-page-contact-info-title{
-    margin-bottom: 29px;
+    // margin-bottom: 29px;
+    margin-bottom: 28px;
+
     text-align: center;
 
     h5{
@@ -245,12 +264,18 @@
     }
   }
   .detail-page-contact-info-item{
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    margin-bottom: 18px;
+
+    word-break: break-all;
+
     &.last-version{
       margin-bottom: 0px;
     }
     h6{
-      .playfair-regular;
+      //.playfair-regular;
+      // .lato-regular;
+      .lato-bold;
       letter-spacing: 0;
       font-size: 16px;
       line-height: 20px;
@@ -261,11 +286,17 @@
     
 
     h6 + p{
-      padding-top: 3px;
+      // padding-top: 3px;
+      padding-top: 4px;
     }
+
+    
 
   }
 
+  .square-cta-container{
+    padding-top: 24px;
+  }
   .cta-container{
     padding-top: 16px;
 
@@ -314,6 +345,19 @@
           word-wrap: break-word;       
         }
 
+        
+        span {
+          vertical-align: middle;
+        } 
+      }
+
+      p.address,
+      p.phoneno,
+      a.email,
+      p.room-size-sqft,
+      p.room-bed-size,
+      p.room-size-person,
+      p.room-view {  
         &:before {
           .fa;
           content: "\f041";
@@ -323,10 +367,9 @@
           .display-inline-block;
           padding-right: 10px;
         }
-        span {
-          vertical-align: middle;
-        } 
       }
+
+
       p.address {
         &:before {          
           content: "\f041"; // .fa-long-arrow-right
@@ -341,11 +384,26 @@
         }  
       }
       a.email {
+
+        // white-space: nowrap;
+        margin-right: -5px;
+
+        position: relative;
+
+        padding-left: 26px;
+        display: block;
+
+
         &:before {          
           content: "\f0e0"; // .fa-long-arrow-right
           font-size: 16px;          
-          vertical-align: top;
+          // vertical-align: top;
+          /// vertical-align: middle;
+          
           word-wrap: break-word;
+          position: absolute;
+          top: 1px;
+          left: 0px;
         }
       }
       p.room-size-sqft {
@@ -430,11 +488,19 @@
       color: #7d7d7d;
     }
     p{
-
+      // white-space: nowrap;
+      margin-right: -20px;
     }
     .cta-container{
       padding-top: 6px;
     }
+
+    .default-copy{
+      h4 + ul {
+        padding-top: 9px;
+      }
+    }
+
     
   } // .detail-page-menu-info-item
   span.note {
@@ -446,6 +512,32 @@
 }
 
 
+
+
+
+
+.detail-page-terms-and-conditions{
+  .default-copy{
+
+    h4{
+      font-size: 11px;
+
+      @media all and (max-width: 991px) {
+        font-size: 15px;
+      }
+    }
+    ul{
+      li{
+        font-size: 13px;
+      }
+    }
+
+    h4 + ul {
+      padding-top: 4px;
+    }
+
+  }
+}
 
 
 
@@ -517,6 +609,16 @@
   }
 
   .dining-detail-page-item-content-copy{
+
+    h5{
+      a{
+        color: @grey;
+        &:hover{
+          color: @violet;
+        }
+      }
+    }
+
     @media all and (max-width: 991px) {
       // padding-bottom: 20px;
     }

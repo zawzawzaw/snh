@@ -71,10 +71,19 @@
 
     .detail-list-item-title{
       color: @grey;
+
+      
+    }
+
+    a.detail-list-item-title{
+      color: @grey;
+      display: block;
+      
       &:hover{
         color: @violet;
       }
     }
+
     /*
     a{
       color: @grey;
@@ -117,9 +126,24 @@
 
       .detail-list-item-copy{
         // padding-left: 0px;    
-        padding: 20px 20px 30px 20px;  
+        // padding: 20px 20px 30px 20px;
+        
+        padding-top: 15px;
+        padding-bottom: 21px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .detail-list-item-title{
+          margin-bottom: 18px;
+        }
 
         .default-copy{
+
+
+          .cta-container{
+            // padding-top: 25px;
+            padding-top: 13px;
+          }
           h5 {
             color: @violet;
           }
@@ -263,6 +287,11 @@
   .detail-list-item-cta-container-mobile{
     text-align: center;
     padding-top: 30px;
+
+    .square-cta{
+      padding-left: 57px;
+      padding-right: 57px;
+    }
   }
 
 

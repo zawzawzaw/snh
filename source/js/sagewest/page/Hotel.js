@@ -115,7 +115,47 @@ sagewest.page.Hotel.prototype.create_sliders = function(){
         }
       ]
     });
-  }
+  } // ENDIF 
+
+
+
+
+  if ($('#page-hotel-accommodation-02-slider-mobile').length != 0) {
+
+    
+
+    $('#page-hotel-accommodation-02-slider-mobile').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#page-hotel-accommodation-02-slider-mobile').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.hotel_accommodation_slider_mobile_02 = $('#page-hotel-accommodation-02-slider-mobile').slick({
+      'speed': 350,
+      'dots': true,
+      'arrows': false,
+      // 'infinite': true,
+      'infinite': false,
+      'slidesToShow': 2,
+      'slidesToScroll': 2,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000,
+      'responsive': [
+        {
+          'breakpoint': 767,
+          'settings':{
+            'slidesToShow': 1,
+            'slidesToScroll': 1
+          }
+        }
+      ]
+    });
+  } // ENDIF 
+
+
+
 
 
   if ($('#hotel-attraction-slider-mobile').length != 0) {
@@ -150,7 +190,81 @@ sagewest.page.Hotel.prototype.create_sliders = function(){
       ]
     });
 
-  }
+  } // ENDIF 
+
+
+
+
+
+
+  if ($('#page-hotel-facilities-slider').length != 0) {
+
+    $('#page-hotel-facilities-slider').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#page-hotel-facilities-slider').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.hotel_facilities_slider = $('#page-hotel-facilities-slider').slick({
+      'speed': 350,
+      'dots': true,
+      'arrows': false,
+      // 'infinite': true,
+      'infinite': false,
+      'slidesToShow': 6,
+      'slidesToScroll': 6,
+      // 'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000,
+      'responsive': [
+        {
+          'breakpoint': 1280,
+          'settings':{
+            'slidesToShow': 4,
+            'slidesToScroll': 4
+          }
+        }
+      ]
+    });
+
+  } // ENDIF 
+
+  
+
+  if ($('#page-hotel-facilities-slider-mobile').length != 0) {
+    
+    $('#page-hotel-facilities-slider-mobile').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('#page-hotel-facilities-slider-mobile').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
+
+    this.hotel_facilities_slider_mobile = $('#page-hotel-facilities-slider-mobile').slick({
+      'speed': 350,
+      'dots': true,
+      'arrows': false,
+      // 'infinite': true,
+      'infinite': false,
+
+      'slidesToShow': 1,
+      'slidesToScroll': 1,
+      'pauseOnHover': true,
+      'autoplay': true,
+      'autoplaySpeed': 4000
+
+
+    });
+    
+  } // ENDIF 
+
+
+
+
+  
+  
+
   
 
 
@@ -307,7 +421,7 @@ sagewest.page.Hotel.prototype.update_page_layout = function() {
  * @inheritDoc
  */
 sagewest.page.Hotel.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
-  sagewest.page.Hotel.superClass_.scroll_to_target.call(this, str_param);
+  sagewest.page.Hotel.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
 
   /*
   // Mice venue landing - on hash change

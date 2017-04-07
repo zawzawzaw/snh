@@ -138,11 +138,11 @@
 
   <div id="sage-links">
     <ul>
-      
-      <li><a href="javascript:void(0);">South Australia</a></li>
-      <li><a href="javascript:void(0);">Western Australia</a></li>
-      <li><a href="javascript:void(0);">New South Wales</a></li>
-      <li><a href="javascript:void(0);">Queensland</a></li>
+
+      <li><a href="brand_location_country_comfort.php#australia/south-australia">South Australia</a></li>
+      <li><a href="brand_location_country_comfort.php#australia/western-australia">Western Australia</a></li>
+      <li><a href="brand_location_country_comfort.php#australia/new-south-wales">New South Wales</a></li>
+      <li><a href="brand_location_country_comfort.php#australia/queensland">Queensland</a></li>
       
     </ul>    
   </div>

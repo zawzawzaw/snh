@@ -69,10 +69,9 @@
               <li><a href="facilities.php">Facilities</a></li>
               <li><a href="gallery.php">Gallery</a></li>
               <li><a href="activities.php">Activities</a></li>
-              <!-- <li><a href="#">Location</a></li> -->
-              <li><a href="#">Reviews</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
               <li><a href="events.php">Events</a></li>
-              <li><a href="contact.php">Location</a></li>
+              <li><a href="location.php">Location</a></li>
             </ul>
           </nav>
       </div>
@@ -380,7 +379,7 @@
   </div>
 </article>
 
-
+<!-- 
 <article id="page-hotel-accommodation-section-mobile" class="visible-sm visible-xs">
   <div class="container-fluid">
     <div class="row">
@@ -388,7 +387,7 @@
 
         <div id="page-hotel-accommodation-title-mobile">
           <h4>our accommodations</h4>
-          <h1>West Perth Hotel Rooms</h1>
+          <h1>Room Types</h1>
         </div>
         <div id="page-hotel-accommodation-image-mobile">
           <div class="manic-image-container">
@@ -411,7 +410,355 @@
   </div>
 
   
-</article> <!-- page-hotel-accommodation-section-mobile -->
+</article> 
+ -->
+<!-- page-hotel-accommodation-section-mobile -->
+
+
+
+<!--
+      _    ____ ____ ___  __  __ __  __  ___  ____    _  _____ ___ ___  _   _   __  __  ___  ____ ___ _     _____    ___ ____
+     / \  / ___/ ___/ _ \|  \/  |  \/  |/ _ \|  _ \  / \|_   _|_ _/ _ \| \ | | |  \/  |/ _ \| __ )_ _| |   | ____|  / _ \___ \
+    / _ \| |  | |  | | | | |\/| | |\/| | | | | | | |/ _ \ | |  | | | | |  \| | | |\/| | | | |  _ \| || |   |  _|   | | | |__) |
+   / ___ \ |__| |__| |_| | |  | | |  | | |_| | |_| / ___ \| |  | | |_| | |\  | | |  | | |_| | |_) | || |___| |___  | |_| / __/
+  /_/   \_\____\____\___/|_|  |_|_|  |_|\___/|____/_/   \_\_| |___\___/|_| \_| |_|  |_|\___/|____/___|_____|_____|  \___/_____|
+
+-->
+
+<article id="page-hotel-accommodation-02-mobile-section" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-hotel-accommodation-02-title-mobile">
+          <h4>our accommodation</h4>
+          <h1>Room Types</h1>
+        </div>
+        <div id="page-hotel-accommodation-02-slider-container-mobile">
+          <div id="page-hotel-accommodation-02-slider-mobile" class="boxlist-item-container mobile-height-version">
+
+
+            <div class="page-hotel-accommodation-02-slider-item-mobile">
+              <div class="page-hotel-accommodation-02-item-mobile boxlist-item">
+                <div class="page-hotel-accommodation-02-item-mobile-box boxlist-item-box">
+
+                  <div class="boxlist-item-content-image">
+                    <a href="room_detail.php" class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </a>
+                  </div>
+
+                  <div class="page-hotel-accommodation-02-item-mobile-title">
+                    <h5><a href="room_detail.php">Standard Room</a></h5>
+                  </div>
+
+                  <div class="boxlist-item-content-room-detail">
+                    <p class="detail-person">2 adults, 2 children (max.)</p>
+                    <p class="detail-size">25 SQM</p>
+                    <p class="detail-bed">1 KING SIZE BED</p>
+                  </div>
+                  
+                  <div class="page-hotel-accommodation-02-item-mobile-cta-container boxlist-item-content-cta-mobile">
+                    <div class="row">
+                      <div class="col-xs-7 v-align-bottom">
+                          <a href="room_detail.php" class="arrow-cta">View room</a>
+                      </div>
+                      <div class="col-xs-5 v-align-bottom">
+                        <div class="boxlist-item-content-price">
+                          <h6>Prices from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$119</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-hotel-accommodation-02-slider-item-mobile">
+              <div class="page-hotel-accommodation-02-item-mobile boxlist-item">
+                <div class="page-hotel-accommodation-02-item-mobile-box boxlist-item-box">
+
+                  <div class="boxlist-item-content-image">
+                    <a href="room_detail.php" class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </a>
+                  </div>
+
+                  <div class="page-hotel-accommodation-02-item-mobile-title">
+                    <h5><a href="room_detail.php">Standard Room</a></h5>
+                  </div>
+                  <div class="boxlist-item-content-room-detail">
+                    <p class="detail-person">2 adults, 2 children (max.)</p>
+                    <p class="detail-size">25 SQM</p>
+                    <p class="detail-bed">1 KING SIZE BED</p>
+                  </div>
+                  
+                  <div class="page-hotel-accommodation-02-item-mobile-cta-container boxlist-item-content-cta-mobile">
+                    <div class="row">
+                      <div class="col-xs-7 v-align-bottom">
+                        <a href="room_detail.php" class="arrow-cta">View room</a>
+                      </div>
+                      <div class="col-xs-5 v-align-bottom">
+                        <div class="boxlist-item-content-price">
+                          <h6>Prices from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$235</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>                        
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-hotel-accommodation-02-slider-item-mobile">
+              <div class="page-hotel-accommodation-02-item-mobile boxlist-item">
+                <div class="page-hotel-accommodation-02-item-mobile-box boxlist-item-box">
+
+                  <div class="boxlist-item-content-image">
+                    <a href="room_detail.php" class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </a>
+                  </div>
+
+                  <div class="page-hotel-accommodation-02-item-mobile-title">
+                    <h5><a href="room_detail.php">Standard Room</a></h5>
+                  </div>
+                  <div class="room-detail-page-item-content-detail">
+                    <div class="row">
+                      <div class="col-xs-12">
+
+                        <div class="boxlist-item-content-room-detail">
+                          <p class="detail-person">2 adults, 2 children (max.)</p>
+                          <p class="detail-size">25 SQM</p>
+                          <p class="detail-bed">1 KING SIZE BED</p>
+                        </div>
+
+                      </div>                          
+                    </div>
+                  </div>
+                  <div class="page-hotel-accommodation-02-item-mobile-cta-container boxlist-item-content-cta-mobile">
+                    <div class="row">
+                      <div class="col-xs-7 v-align-bottom">
+                        <a href="room_detail.php" class="arrow-cta">View room</a>
+                      </div>
+                      <div class="col-xs-5 v-align-bottom">
+
+                        <div class="boxlist-item-content-price">
+                          <h6>Prices from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$135</span>
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>                        
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <div id="page-hotel-accommodation-02-cta-container-mobile">
+          <a href="room_index.php" class="square-cta">View all Room Types</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</article> <!-- page-hotel-accommodation-02-mobile-section -->
+
+
+
+
+
+
+<!--
+   _____ _    ____ ___ _     ___ _____ ___ _____ ____
+  |  ___/ \  / ___|_ _| |   |_ _|_   _|_ _| ____/ ___|
+  | |_ / _ \| |    | || |    | |  | |  | ||  _| \___ \
+  |  _/ ___ \ |___ | || |___ | |  | |  | || |___ ___) |
+  |_|/_/   \_\____|___|_____|___| |_| |___|_____|____/
+
+-->
+
+<article id="page-hotel-facilities-section" class="visible-md visible-lg">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-hotel-facilities-title">
+          <h4>Hotel Facilities</h4>
+          <h1>Comfort & Convenience</h1>
+        </div> <!-- page-hotel-facilities-title -->
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-hotel-facilities-slider-container">
+          <div id="page-hotel-facilities-slider">
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-wifi'></span>
+              <h4>WiFi</h4>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-suitcase'></span>
+              <h4>Luggage Storage</h4>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-cutlery'></span>
+              <h4>Restaurant</h4>
+              <i>Julio’s Italian</i>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-bell'></span>
+              <h4>Room Service</h4>
+              <i>24/7</i>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-wheelchair'></span>
+              <h4>Wheelchair Access</h4>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-automobile'></span>
+              <h4>Parking</h4>
+              <i>Indoor & Outdoor</i>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-beer'></span>
+              <h4>Socialize</h4>
+              <i>Bar & Lounge</i>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-newspaper-o'></span>
+              <h4>Newspaper</h4>
+            </div>
+
+            <div class="page-hotel-facilities-slider-item">
+              <span class='fa fa-fax'></span>
+              <h4>Fax Service</h4>
+            </div>
+            
+          </div> <!-- page-hotel-facilities-slider -->
+        </div> <!-- page-hotel-facilities-slider-container -->
+
+      </div>
+    </div>
+  </div>
+  
+
+</article>
+
+
+
+<article id="page-hotel-facilities-section-mobile" class="visible-sm visible-xs">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-hotel-facilities-title-mobile">
+          <h4>Hotel Facilities</h4>
+          <h1>Comfort & Convenience</h1>
+        </div> <!-- page-hotel-facilities-title-mobile -->
+
+        <div id="page-hotel-facilities-slider-container-mobile">
+          <div id="page-hotel-facilities-slider-mobile">
+
+            <div class="page-hotel-facilities-slider-item-group-mobile">
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-wifi'></span>
+                <h4>WiFi</h4>
+              </div>
+
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-suitcase'></span>
+                <h4>Luggage Storage</h4>
+              </div>
+
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-cutlery'></span>
+                <h4>Restaurant</h4>
+                <i>Julio’s Italian</i>
+              </div>
+
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-bell'></span>
+                <h4>Room Service</h4>
+                <i>24/7</i>
+              </div>
+            </div> <!-- page-hotel-facilities-slider-item-group-mobile -->
+
+            <div class="page-hotel-facilities-slider-item-group-mobile">
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-wheelchair'></span>
+                <h4>Wheelchair Access</h4>
+              </div>
+
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-automobile'></span>
+                <h4>Parking</h4>
+                <i>Indoor & Outdoor</i>
+              </div>
+
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-beer'></span>
+                <h4>Socialize</h4>
+                <i>Bar & Lounge</i>
+              </div>
+
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-newspaper-o'></span>
+                <h4>Newspaper</h4>
+              </div>
+            </div> <!-- page-hotel-facilities-slider-item-group-mobile -->
+
+            <div class="page-hotel-facilities-slider-item-group-mobile">
+              <div class="page-hotel-facilities-slider-item-mobile">
+                <span class='fa fa-fax'></span>
+                <h4>Fax Service</h4>
+              </div>
+            </div> <!-- page-hotel-facilities-slider-item-group-mobile -->
+
+
+
+
+          </div> <!-- page-hotel-facilities-slider-mobile -->
+        </div> <!-- page-hotel-facilities-slider-container-mobile -->
+
+      </div>
+    </div>
+  </div>
+  
+</article>
+
 
 
 
@@ -957,13 +1304,67 @@
     </div>
   </div>
   <div id="page-brand-map" class="default-version"></div>
+
+
+  <!-- 
+  <div class="default_marker" data-zoom="4" data-location="Australia" data-lat="-25.783190" data-lng="133.583079"></div>
+  
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="1309 Hay Street, West Perth, WA 6005, Australia" 
+      data-lat="-31.947794" 
+      data-lng="115.838702" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="60-62 Harbour St, Wollongong, NSW 2500, Australia" 
+      data-lat="-34.428887" 
+      data-lng="150.901011" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=60-62 Harbour St, Wollongong, NSW 2500, Australia'><h4>SAGE HOTEL WOLLONGONG</h4><p>60-62 Harbour St, Wollongong, NSW 2500, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4201 2111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.wollongong@sage-hotels.com'>reservations.wollongong@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="70 James Street, Fortitude Valley, QLD 4006, Australia" 
+      data-lat="-27.457880" 
+      data-lng="153.041811" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=70 James Street, Fortitude Valley, QLD 4006, Australia'><h4>Accommodation Fortitude Valley</h4><p>70 James Street, Fortitude Valley, QLD 4006, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.jamesst@sage-hotels.com'>reservations.jamesst@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin.svg" 
+      data-location="208 South Terrace, Adelaide, SA 5000, Australia" 
+      data-lat="-34.935166" 
+      data-lng="138.604266" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=208 South Terrace, Adelaide, SA 5000, Australia'><h4>SAGE HOTEL ADELAIDE</h4><p>208 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.adelaide@sage-hotels.com'>reservations.adelaide@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  -->
+
+  
+  <!-- 
   <div class="default_marker" data-zoom="15" data-location="Australia" data-lat="-31.946899" data-lng="115.8524116"></div>
   <div class="markers no-hover" data-pin-icon="images/icons/map-pin.png" data-location="James Street" data-lat="-31.946899" data-lng="115.8524116" data-place-id="ChIJe1YLH6UZE2sRIOcyFmh9AQU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>  
+
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Sage West Perth" data-lat="-31.947888" data-lng="115.8362825" data-place-id="ChIJufd18zGlMioRIFTfNbXwBAU" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Ord Street" data-lat="-31.948616" data-lng="115.835907" data-place-id="EihKYW1lcyBTdCwgTm9ydGhicmlkZ2UgV0EgNjAwMywgQXVzdHJhbGlh" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>  
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Fielder Street" data-lat="-31.9509356" data-lng="115.8708259" data-place-id="ChIJ56QDo9fOsGoRUz4cTlhwjbM" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
   <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Sterling Street" data-lat="-31.9468795" data-lng="115.8635481" data-place-id="ChIJ56QDo9fOsGoRUz4cTlhwjbM" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Sage West Perth 1309 Hay Street, West Perth WA 6005, Australia'><h4>Sage West Perth</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  -->
+  
 
+
+
+  
+  <div class="default_marker" data-zoom="15" data-location="Australia" data-lat="-31.947794" data-lng="115.838702"></div>
+
+  <div class="markers" 
+      data-pin-icon="images/icons/map-pin-sage.svg" 
+      data-location="1309 Hay Street, West Perth, WA 6005, Australia" 
+      data-lat="-31.947794" 
+      data-lng="115.838702" 
+      data-html="<div class='infoBox-text hotel-version'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location A" data-lat="-31.947888" data-lng="115.8362825" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location A 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location A</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location B" data-lat="-31.948616" data-lng="115.835907" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location B 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location B</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location C" data-lat="-31.9509356" data-lng="115.8708259" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location C 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location C</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+  <div class="markers" data-pin-icon="images/icons/map-pin-grey.png" data-location="Location D" data-lat="-31.9468795" data-lng="115.8635481" data-html="<div class='infoBox-text'><div class='address'><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Location D 1309 Hay Street, West Perth WA 6005, Australia'><h4>Location D</h4><p>1309 Hay Street, West Perth WA 6005, Australia</p></a></div></div><div class='arrow-left'></div></div>"></div>
+
+  
   <div class="container-fluid has-breakpoint">
     <div class="row">
 

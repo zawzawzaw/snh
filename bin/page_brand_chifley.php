@@ -71,9 +71,7 @@
 
         <div id="default-introduction-image-mobile" class="visible-sm visible-xs">
           <div class="manic-image-container">
-            <img src="" 
-              data-image-tablet="images_cms/brand_chifley/brand-introduction-tablet.jpg"
-              data-image-mobile="images_cms/brand_chifley/brand-introduction-mobile.jpg">
+            <img src="" data-image-mobile="images_cms/brand_chifley/brand-introduction-mobile.jpg">
           </div>
         </div>
         

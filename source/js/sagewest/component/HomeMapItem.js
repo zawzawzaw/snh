@@ -40,15 +40,15 @@ sagewest.component.HomeMapItem = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init map item');
+  // console.log('init map item');
 
   this.latLng = null;
 
   // this.set_lat_lng();  
 
-  console.log("this.lat")
-  console.log(this.lat)
-  console.log(this.lng)
+  // console.log("this.lat")
+  // console.log(this.lat)
+  // console.log(this.lng)
 
 
 };

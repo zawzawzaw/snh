@@ -126,7 +126,7 @@ sagewest.page.Gallery.prototype.init = function() {
 
     goog.events.listen(this.category_dropdown_mobile, manic.ui.Dropdown.ON_CHANGE, function(event){
 
-      console.log('this.category_dropdown_mobile.current_value: ' + this.category_dropdown_mobile.current_value)
+      // console.log('this.category_dropdown_mobile.current_value: ' + this.category_dropdown_mobile.current_value)
       window.location.hash = this.category_dropdown_mobile.current_value;
 
     }.bind(this));
@@ -175,7 +175,7 @@ sagewest.page.Gallery.prototype.init = function() {
 
 sagewest.page.Gallery.prototype.create_gallery = function() {
 
-  console.log('create_gallery');
+  // console.log('create_gallery');
 
   this.parse_data();
 
@@ -214,6 +214,21 @@ sagewest.page.Gallery.prototype.create_gallery = function() {
   goog.events.listen(this.gallery_detail_tab, sagewest.component.GalleryDetailTab.UPDATE_IMAGE, function(){
     this.update_page_layout();
   }.bind(this));
+
+
+
+  $('#gallery-page-tab-container ul li a').on('touchstart', function(event){
+
+    event.stopPropagation();
+    event.preventDefault();
+
+    var target = $(event.currentTarget);
+
+    var href = target.attr('href').substring(1);
+    window.location.hash = href;
+
+  });
+
 
 };
 

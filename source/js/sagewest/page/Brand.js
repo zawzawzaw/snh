@@ -20,6 +20,28 @@ sagewest.page.Brand = function(options, element) {
 
   this.map = null;
 
+
+  this.is_brand_location_page = false;
+
+  /**
+   * @type {sagewest.component.BrandLocationTitle}
+   */
+  this.brand_location_title = null;
+
+  if (this.body.hasClass('brand-location-page')) {
+    this.is_brand_location_page = true;
+  }
+
+
+  this.create_dropdown();
+  this.create_brand_location_title();     // needs to be here because init is slow
+
+
+
+
+
+
+
   /**
    * @type {jQuery}
    */
@@ -30,11 +52,10 @@ sagewest.page.Brand = function(options, element) {
    */
   this.contact_map = null;
 
+  this.has_all_location_slider_update = false;
 
-  /**
-   * @type {sagewest.component.BrandLocationTitle}
-   */
-  this.brand_location_title = null;
+
+  
 
 
 
@@ -72,7 +93,8 @@ sagewest.page.Brand.prototype.init = function() {
   this.map_initialize();
 
   this.creage_brand_slider();
-  this.create_brand_location_title();
+  
+  this.create_brand_location_expanding_mobile();
 
 
   this.update_page_layout();    // this is called after the initial create to update the layout
@@ -96,6 +118,46 @@ sagewest.page.Brand.prototype.init = function() {
 
 
 
+
+
+sagewest.page.Brand.prototype.update_brand_slider_layout = function(){
+
+  if (this.has_all_location_slider_update == true) {
+
+    var copy_elements = $('#brand-all-location-slider-version-02 .brand-location-slider-item-copy')
+
+    copy_elements.css({
+      'height': ''
+    });
+
+
+    var arr = $('#brand-all-location-slider-version-02 .brand-location-slider-item-copy');
+    var item = null;
+
+    var height = 0;
+    var max_height = 0;
+
+    for (var i = 0, l=arr.length; i < l; i++) {
+      item = $(arr[i]);
+
+      height = item.innerHeight();
+
+      if (max_height <= height) {
+        max_height = height;
+      }
+    }
+    
+    copy_elements.css({
+      'height': max_height + 'px'
+    });
+
+
+    
+  }
+  
+
+
+};
 
 sagewest.page.Brand.prototype.creage_brand_slider = function(){
 
@@ -135,6 +197,12 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
       $('#brand-all-location-slider-version-02').slick('slickNext');
 
     }.bind(this));
+
+
+
+    if ($('#brand-all-location-slider-version-02').hasClass('no-location-cta-version')) {
+      this.has_all_location_slider_update = true;
+    }
 
 
   } // if
@@ -225,6 +293,140 @@ sagewest.page.Brand.prototype.create_brand_location_title = function() {
   }
   
 };
+
+
+
+sagewest.page.Brand.prototype.create_brand_location_expanding_mobile = function(){
+
+
+
+  var arr = $('.territory-expanding-container');
+  var item = null;
+
+  var title = null;
+  var content = null;
+  var index = 0;
+  var value = '';
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+
+    title = item.find('.territory-title-bar');
+    title.data('item', item);
+    content = item.find('.territory-expanded-content');
+
+    index = 0;
+
+    title.click(function(event){
+      var target = $(event.currentTarget);
+
+      var item = target.data('item');
+      var title = item.find('.territory-title-bar');
+      var content = item.find('.territory-expanded-content');
+      var value = item.attr('data-value');
+
+      var other_content = $('.territory-expanding-container[data-value!=' + value + '] .territory-expanded-content')
+
+      //console.log('value: ' + value);
+
+      if (title.hasClass('expand-version') == false) {
+
+        $('.territory-expanding-container .territory-title-bar').removeClass('expand-version');
+        other_content.slideUp(500);
+
+        title.addClass('expand-version');
+        content.slideDown(500);
+
+        this.update_page_layout();
+        this.util_scroll_to(value);
+
+      } else {
+
+        title.removeClass('expand-version');
+        content.slideUp(500);
+
+        this.update_page_layout();
+        this.util_scroll_to(value);
+
+      }
+      
+
+    }.bind(this));
+
+
+
+  }
+
+
+}; // create_brand_location_expanding_mobile
+
+
+
+/**
+ * @param  {String} str_param   [description]
+ * @param  {String} str_param_2 [description]
+ * @param  {String} str_param_3 [description]
+ */
+sagewest.page.Brand.prototype.select_brand_expanding_mobile = function(str_param, str_param_2, str_param_3){
+
+  var target_str = '';
+
+  if (goog.isDefAndNotNull(str_param) == true) {
+    target_str = str_param;
+    if (goog.isDefAndNotNull(str_param_2) == true) {
+      target_str = str_param  + '-' + str_param_2;
+      if (goog.isDefAndNotNull(str_param_3) == true) {
+        target_str = str_param  + '-' + str_param_2 + '-' + str_param_3;
+      }
+    }
+  }
+  
+  
+
+  if (target_str != '') {
+
+    var item = $('.territory-expanding-container[data-hash-value=' + target_str + ']');
+    var title = $('.territory-expanding-container[data-hash-value=' + target_str + '] .territory-title-bar');
+    var content = $('.territory-expanding-container[data-hash-value=' + target_str + '] .territory-expanded-content');
+    var other_content = $('.territory-expanding-container[data-hash-value!=' + target_str + '] .territory-expanded-content');
+
+    if (content.length != 0) {
+
+
+      // close menu
+      this.mobile_menu.close_menu();
+
+      $('.territory-expanding-container .territory-title-bar').removeClass('expand-version');
+      other_content.slideUp(500);
+
+
+      title.addClass('expand-version');
+      content.slideDown(500);
+
+
+
+      var scroll_value = item.attr('data-value');
+
+      // console.log('scroll_value: ' + scroll_value);
+      // console.log(item);
+
+
+      this.update_page_layout();
+      this.util_scroll_to(scroll_value);     // infinite loop
+
+
+    }
+
+  }
+
+};
+
+sagewest.page.Brand.prototype.close_all_brand_expanding_mobile = function(){
+  $('.territory-expanding-container .territory-title-bar').removeClass('expand-version');
+  $('.territory-expanding-container .territory-expanded-content').slideUp(500);
+};
+
+
 
 
 
@@ -362,6 +564,10 @@ sagewest.page.Brand.prototype.update_page_layout = function() {
   this.window_width = this.window.width();
   this.window_height = this.window.height();
 
+
+  this.update_brand_slider_layout();
+
+
   /*
   // zoom check
   if (this.window_width <= 1280 && manic.IS_ACTUAL_MOBILE == false ||
@@ -380,7 +586,29 @@ sagewest.page.Brand.prototype.update_page_layout = function() {
  * @inheritDoc
  */
 sagewest.page.Brand.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
-  sagewest.page.Brand.superClass_.scroll_to_target.call(this, str_param);
+  sagewest.page.Brand.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
+
+  // console.log('Brand scroll_to_target');
+  // console.log('!!!!!!!!!!!!!!!!');
+  // console.log('!!!!!!!!!!!!!!!!!');
+  // console.log('!!!!!!!!!!!!!!!!!!');
+  // console.log('!!!!!!!!!!!!!!!!!!!');
+  // console.log(str_param, str_param_2, str_param_3);
+
+
+  if (this.is_brand_location_page) {
+    if (manic.IS_MOBILE == true) {
+
+      this.select_brand_expanding_mobile(str_param, str_param_2, str_param_3);
+
+    } else {
+
+      this.brand_location_title.select_title(str_param, str_param_2, str_param_3);
+      this.on_brand_location_title_filter_change();
+
+    }
+  }
+  
 
   /*
   // Mice venue landing - on hash change
@@ -406,6 +634,19 @@ sagewest.page.Brand.prototype.scroll_to_target = function(str_param, str_param_2
  * @inheritDoc
  */
 sagewest.page.Brand.prototype.on_scroll_to_no_target = function(){
+
+  if (this.is_brand_location_page) {
+    if (manic.IS_MOBILE == true) {
+
+      this.close_all_brand_expanding_mobile();
+
+    } else {
+      
+      this.brand_location_title.select_title(null);
+      this.on_brand_location_title_filter_change();
+      
+    }
+  }
 
   // Mice venue landing
   /*
@@ -593,11 +834,10 @@ sagewest.page.Brand.prototype.others = function(){
 sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(event){
 
   
-  console.log('on_brand_location_title_filter_change');
-
-  console.log(this.brand_location_title.current_country);
-  console.log(this.brand_location_title.current_territory);
-  console.log(this.brand_location_title.current_city);
+  // console.log('on_brand_location_title_filter_change');
+  // console.log(this.brand_location_title.current_country);
+  // console.log(this.brand_location_title.current_territory);
+  // console.log(this.brand_location_title.current_city);
 
   /*
   this.brand_location_title.current_country = 'none';
@@ -653,6 +893,7 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
 
 
   this.update_page_layout();
+  // TweenMax.delayedCall(0.2, this.update_page_layout, [], this);
 
 
 };

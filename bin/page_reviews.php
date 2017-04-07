@@ -1,4 +1,4 @@
-page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
+<!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
 <div id="page-wrapper-content-min-height">
 
 
@@ -41,7 +41,12 @@ page-wrapper-content-min-height for short pages, long pages will have a scrollba
     </div>
   </article> <!-- default-breadcrumb-container -->
 
-  <article id="page-reviews-intro-section">
+
+
+
+
+  <article id="page-reviews-intro-section" class="visible-md visible-lg">
+
     <div class="container-fluid has-breakpoint">
       <div class="row">
         <div class="col-md-6">
@@ -68,6 +73,46 @@ page-wrapper-content-min-height for short pages, long pages will have a scrollba
     </div>
   </article>
 
+
+  <article id="page-reviews-intro-section-mobile" class="visible-sm visible-xs">
+
+    <div id="page-reviews-intro-title-mobile">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-1 col-xs-0"></div>
+          <div class="col-md-10 col-xs-12">
+            <h1>Guest Reviews</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-reviews-intro-image-mobile">
+      <div class="manic-image-container">
+        <img src="" data-image-mobile="images_cms/reviews/intro-mobile.jpg">
+      </div>
+    </div>
+
+    <div id="page-reviews-intro-text-mobile">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-1 col-xs-0"></div>
+          <div class="col-md-10 col-xs-12">
+            <div class="default-copy">
+              <p class="minimize-read-more" data-length="105">See what real guests think about our hotel. These hotel reviews of Sage Hotel West Perth will be helpful when planning your next trip to Perth, whether you are traveling for business or pleasure. <br><br>If you’d like to share your experience at Sage Hotel West Perth as well, we’ll appreciate if you post a review to Facebook, Google or TripAdvisor. Thank you for taking the time to share your opinion!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- page-reviews-intro-text -->
+
+    
+
+  </article>
+
+
+
   <!-- line -->
   <div class="container-fluid has-breakpoint visible-md visible-lg">
     <div class="row">
@@ -81,12 +126,97 @@ page-wrapper-content-min-height for short pages, long pages will have a scrollba
 
 
 
+   
 
+
+
+
+  
+  
   <div class="scroll-target" data-value="content"></div>
   <article id="page-reviews-content-section">
+
+
+    <div id="page-reviews-filter-mobile" class="visible-sm visible-xs">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+
+            <div id="page-reviews-filter-title-mobile">
+              <h4>FILTER:</h4>
+              <i>English, All travel types</i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="page-reviews-filter-btn-mobile"></div>
+    </div> <!-- page-reviews-filter-mobile -->
+
+
+    <div id="page-reviews-filter-expanded-container-mobile">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-sm-1 col-xs-0"></div>
+          <div class="col-sm-10 col-xs-12">
+
+            <div class="manic-dropdown" id="page-review-language-dropdown-mobile">
+              <select id="page-review-language-select-mobile">
+                <option value="">Please Select</option>
+                <option value="all">All</option>
+                <option value="english" selected>English</option>
+                <option value="french">French</option>
+                <option value="italian">Italian</option>
+              </select>
+            </div>
+            <div class="manic-dropdown" id="page-review-travel-type-dropdown-mobile">
+              <select id="page-review-travel-type-select-mobile">
+                <option value="">Please Select</option>
+                <option value="all" selected>All</option>
+                <option value="business">Business</option>
+                <option value="couple">Couple</option>
+                <option value="friends">Friends</option>
+                <option value="solo">Solo</option>
+              </select>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <div class="row">
+                <div class="col-xs-6">
+
+                  <a href="javascript:void(0);" class="square-cta full-width-version" id="page-review-filter-cancel-btn">Cancel</a>
+                  
+                </div>
+                <div class="col-xs-6">
+
+                  <a href="javascript:void(0);" class="square-cta full-width-version" id="page-review-filter-apply-btn">Apply</a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- page-reviews-filter-expanded-container-mobile -->
+
+
+
     <div class="container-fluid has-breakpoint">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 hidden-sm hidden-xs">
 
           <!--
              ____ ___ ____  _____ ____    _    ____
@@ -104,20 +234,20 @@ page-wrapper-content-min-height for short pages, long pages will have a scrollba
             <div class="manic-dropdown" id="page-review-language-dropdown">
               <select id="page-review-language-select">
                 <option value="">Please Select</option>
+                <option value="all">All</option>
                 <option value="english" selected>English</option>
                 <option value="french">French</option>
                 <option value="italian">Italian</option>
-                <option value="all">All</option>
               </select>
             </div>
-            <div class="manic-dropdown not-selected-version" id="page-review-travel-type-dropdown">
+            <div class="manic-dropdown" id="page-review-travel-type-dropdown">
               <select id="page-review-travel-type-select">
                 <option value="">Please Select</option>
+                <option value="all" selected>All</option>
                 <option value="business">Business</option>
                 <option value="couple">Couple</option>
                 <option value="friends">Friends</option>
                 <option value="solo">Solo</option>
-                <option value="all">All</option>
               </select>
             </div>
           </div> <!-- page-reviews-sidebar -->
@@ -151,7 +281,7 @@ page-wrapper-content-min-height for short pages, long pages will have a scrollba
 
                     <div class="default-copy">
                       <h5>“A nice hotel, easy to get to.”</h5>
-                      <p>Our room was nice, the bed comfy and the shower was perfect. The coffee machine is a nice bonus. Our only let down was the breakfast which was cold. We would definitely stay again. A nice hotel, easy to get to, but not in the middle of the city, which suited us perfectly.</p>
+                      <p class="minimize-read-more" data-length="105">Our room was nice, the bed comfy and the shower was perfect. The coffee machine is a nice bonus. Our only let down was the breakfast which was cold. We would definitely stay again. A nice hotel, easy to get to, but not in the middle of the city, which suited us perfectly.</p>
                     </div>
 
                   </div>
