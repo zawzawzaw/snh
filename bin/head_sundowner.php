@@ -26,7 +26,7 @@
   <!-- move these to the at the bottom of the body -->
 
 
-  <!-- Web Fonts -->
+  <!-- Web Fonts (in js_PAGENAME.php for optimized version) -->
 
   <!-- open-sans -->
   <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->

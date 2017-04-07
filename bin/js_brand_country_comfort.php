@@ -52,6 +52,8 @@
 
 <?php else: ?>
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600|Patua+One" rel="stylesheet">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
 
   <!-- Optimized Version -->
   <script type="text/javascript">

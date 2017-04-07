@@ -96,6 +96,7 @@ body.scrolled {
   #desktop-header-nav {
     display: block;
     margin-top: 0px;
+    white-space: nowrap;
   }
 
   #desktop-menu-bar {
@@ -660,6 +661,10 @@ body.hotel {
         padding-right: 37px;
 
         overflow: hidden !important;
+
+        &::-ms-expand {
+          display: none;
+        }
 
 
         // white-space: nowrap;

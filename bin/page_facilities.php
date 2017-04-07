@@ -154,7 +154,7 @@
                     <div class="detail-list-item-title">
                       <h5>Gym</h5>
                     </div>
-                    <p class="minimize-read-more" data-length="145">Check out doesn’t mean kick out. Check in and out times don’t always fit your travel plans. Refresh before your work day starts at no extra charge.</p>
+                    <p>Check out doesn’t mean kick out. Check in and out times don’t always fit your travel plans. Refresh before your work day starts at no extra charge.</p>
                     <div class="more-details">
                       <div class="operating-hours">
                         <h6>Operating hours</h6>

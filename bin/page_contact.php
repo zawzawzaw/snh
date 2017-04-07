@@ -1,5 +1,5 @@
 <!-- this will select the header link with the following value -->
-<div id="desktop-header-selector" data-value="contact.php"></div>
+<div id="desktop-header-selector" data-value="location.php"></div>
 
 
 
@@ -28,7 +28,7 @@
             <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
             <li><a href="brand_alternative.php">Sage Hotels</a></li>
             <li><a href="hotel.php">Sage West Perth</a></li>
-            <li>Contact</li>
+            <li>Location</li>
           </ul>
         </div> <!-- default-breadcrumb -->
 
@@ -53,9 +53,9 @@
     <div class="row">
       <div class="col-md-2 col-sm-1 col-xs-0"></div>
       <div class="col-md-8 col-sm-10 col-xs-12">
-
+        
         <div class="index-page-title">
-          <h1>Contact Us</h1>
+          <h1>Contact & Location</h1>
           <p>Please fill in the details below to submit your request. <br>We will be in touch with you in a short time to follow up with your request.</p>
         </div> <!-- default-index-page-title -->
 
@@ -203,7 +203,8 @@
 
       <div id="contact-page-map-title">
         <!-- <h1>Getting Here</h1> -->
-        <h1>Contact Us</h1>
+        <!-- <h1>Contact Us</h1> -->
+        <h1>Contact & Location</h1>
       </div> <!-- contact-page-map-title -->
 
     </div> <!-- row -->
@@ -275,6 +276,20 @@
 -->
 
 <article id="contact-page-map-section-mobile" class="visible-sm visible-xs">
+
+
+  <div id="contact-page-map-title-mobile">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1 col-xs-0"></div>
+        <div class="col-sm-10 col-xs-12">
+
+          <h1>Contact Us</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div id="contact-page-map-container-mobile">
 
@@ -297,21 +312,19 @@
         <div class="col-sm-1 col-xs-0"></div>
         <div class="col-sm-10 col-xs-12">
 
-          <div id="contact-page-map-title-mobile">
-            <h1>Contact Us</h1>
-          </div>
+          
 
           <div id="contact-page-map-copy-mobile">
             <div class="default-copy">
-              <h3>Sage West Perth</h3>
+              <div class="contact-page-map-copy-title">Sage West Perth</div>
               <p>
                 1309 Hay Street, West Perth, <br>
                 WA 6005, Australia <br>
                 Phone: +61865009100 <br>
                 Fax: +61 8 6500 9101 <br>
-                Reservations: <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a><br>
-                Email 1: <a href="mailto:TEST1.westperth@sage-hotels.com">TEST1.westperth@sage-hotels.com</a><br>
-                Email 2: <a href="mailto:TEST2.westperth@sage-hotels.com">TEST2.westperth@sage-hotels.com</a>
+                Reservations: <br><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a><br>
+                Email 1: <br><a href="mailto:TEST1.westperth@sage-hotels.com">TEST1.westperth@sage-hotels.com</a><br>
+                Email 2: <br><a href="mailto:TEST2.westperth@sage-hotels.com">TEST2.westperth@sage-hotels.com</a>
               </p>
               <p>
                 Reception Hours: 24 hours <br>
@@ -461,6 +474,20 @@
 
 
 <div id="contact-page-copy-section-mobile" class="visible-sm visible-xs">
+
+  <div id="contact-page-copy-section-title">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1 col-xs-0"></div>
+        <div class="col-sm-10 col-xs-12">
+
+          <h1>Getting Here</h1>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
   <div id="contact-page-copy-expanding-container-mobile">
 

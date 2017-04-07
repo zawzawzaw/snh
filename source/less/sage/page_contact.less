@@ -99,7 +99,8 @@
 
 #contact-page-map-section-mobile{
   // padding-top: 30px;
-  padding-bottom: 44px;
+  /// padding-bottom: 44px;
+  padding-bottom: 34px;
 }
 
 
@@ -110,17 +111,34 @@
 
 #contact-page-map-mobile{
   height: 410px;
+
   @media only screen and (max-width: 991px) {
-    height: 360px;
+    // height: 360px;
+    height: 300px;
   }
   @media only screen and (max-width: 767px) {
-    height: 210px;
+    // height: 210px;
+    height: 200px;
   }  
 }
 
 #contact-page-map-title-mobile{
-  padding-top: 28px;
-  margin-bottom: 21px;
+  // padding-top: 28px;
+  // margin-bottom: 21px;
+  padding-top: 27px;
+  margin-bottom: 24px;
+}
+
+#contact-page-map-copy-mobile{
+  padding-top: 23px;
+}
+
+.contact-page-map-copy-title{
+  .open-sans-semi-bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 7px;
+  color: @grey;
 }
 
 
@@ -144,7 +162,8 @@
   margin-bottom: 56px;
   
   @media only screen and (max-width: 991px) {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
+    text-align: left;
   }
 }
 
@@ -185,6 +204,25 @@
 
     }
   }
+
+
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 24px;
+
+    &:last-child{
+      margin-bottom: 0px;
+    }
+
+    h3{
+      .open-sans-semi-bold;
+      font-size: 15px !important;
+      line-height: 24px !important;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+  }
+
+
 } // .contact-page-copy-section
 
 
@@ -206,8 +244,6 @@
 #contact-page-copy-expanding-container-mobile{
 
 }
-
-
 
 
 

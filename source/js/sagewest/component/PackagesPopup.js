@@ -41,7 +41,7 @@ sagewest.component.PackagesPopup = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(sagewest.component.PackagesPopup, goog.events.EventTarget);
 
@@ -123,7 +123,7 @@ sagewest.component.PackagesPopup.prototype.open_fullscreen = function() {
 
     // http://jsfiddle.net/Allendar/TeQdb/          (idea from)
 
-    console.log('offset: ' + offset);
+    // console.log('offset: ' + offset);
 
 
 
@@ -219,7 +219,7 @@ sagewest.component.PackagesPopup.prototype.public_method_06 = function() {};
  * @param  {object} event
  */
 sagewest.component.PackagesPopup.prototype.on_black_bg_click = function(event) {
-  console.log('on_black_bg_click');
+  // console.log('on_black_bg_click');
   this.close_fullscreen();
 };
 

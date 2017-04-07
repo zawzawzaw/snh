@@ -80,44 +80,75 @@
 
       </div>
 
+      <!--
       <div class="col-md-1 hidden-sm hidden-xs">
         <div class="footer-seperator left-version">
         </div>
-      </div>
+      </div> 
+      -->
 
-      <div class="col-md-5 hidden-sm hidden-xs">
+      <div class="col-md-3 hidden-sm hidden-xs">
 
-        <div id="hotel-footer-menu-container">
-          <h1>Quick Links</h1>
-          <ul>
-            <li><a href="room_index.php">Rooms</a></li>
-            <li><a href="offer_index.php">Offers</a></li>
-            <li><a href="dining_index.php">Dining</a></li>
-            <li><a href="facilities.php">Facilities</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-            <li><a href="activities.php">Activities</a></li>
-            <li><a href="reviews.php">Reviews</a></li>
-            <li><a href="events.php">Events</a></li>
-            <li><a href="contact.php">Location</a></li>
-          </ul>
+        <div id="hotel-middle-footer-container">
+          <div id="hotel-footer-menu-container">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="room_index.php">Rooms</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="activities.php">Activities</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="location.php">Location</a></li>
+            </ul>
+          </div>
+
+          <div id="footer-social-media">
+            <ul>
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-youtube-square"></a></li>
+              <li><a href="#" class="fa fa-twitter-square"></a></li>
+              <li><a href="#" class="fa fa-google-plus-square"></a></li>
+            </ul>
+          </div>
         </div>
 
-        <div id="footer-social-media">
-          <ul>
-            <li><a href="#" class="fa fa-facebook-square"></a></li>
-            <li><a href="#" class="fa fa-instagram"></a></li>
-            <li><a href="#" class="fa fa-youtube-square"></a></li>
-            <li><a href="#" class="fa fa-twitter-square"></a></li>
-            <li><a href="#" class="fa fa-google-plus-square"></a></li>
-          </ul>
-        </div>
 
       </div>
+
+
+
+      <div class="col-md-3 hidden-sm hidden-xs">
+        <div id="hotel-footer-contact-item-container">
+          <div class="footer-contact-item">
+            <h4>Contact Information</h4>
+            <p>
+              1309 Hay Street, West Perth, WA 6005, Australia <br>
+              +618 6500 9100 <br>
+              reservations.westperth@sage-hotels.com
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <h4>Central Reservations</h4>
+            <p>
+              1800 303 186 (Within Australia) <br>
+              0800 480 274 (Within New Zealand)
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       
       <div class="col-md-1 hidden-sm hidden-xs">
+        <!-- 
         <div class="footer-seperator right-version">
         </div>
+        -->
+
       </div>
       <div class="col-md-2 hidden-xs hidden-sm">
 
@@ -142,6 +173,8 @@
   </div>
 
 
+  <!-- removed by client -->
+  <!-- 
   <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
     <div class="container-fluid">
       <div class="row">
@@ -157,11 +190,12 @@
               <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
               <li><p>0800 480 274 (Within New Zealand)</p></li>
             </ul>
-          </div> <!-- #hotel-footer-bottom-bar -->
+          </div>
 
         </div>
       </div>
     </div>
   </div>
+  -->
 
 </footer> <!-- #desktop-footer

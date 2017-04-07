@@ -71,7 +71,7 @@
               <li><a href="activities.php">Activities</a></li>
               <li><a href="reviews.php">Reviews</a></li>
               <li><a href="events.php">Events</a></li>
-              <li><a href="contact.php">Location</a></li>
+              <li><a href="location.php">Location</a></li>
             </ul>
           </nav>
       </div>
@@ -379,7 +379,7 @@
   </div>
 </article>
 
-
+<!-- 
 <article id="page-hotel-accommodation-section-mobile" class="visible-sm visible-xs">
   <div class="container-fluid">
     <div class="row">
@@ -410,7 +410,183 @@
   </div>
 
   
-</article> <!-- page-hotel-accommodation-section-mobile -->
+</article> 
+ -->
+<!-- page-hotel-accommodation-section-mobile -->
+
+
+
+<!--
+      _    ____ ____ ___  __  __ __  __  ___  ____    _  _____ ___ ___  _   _   __  __  ___  ____ ___ _     _____    ___ ____
+     / \  / ___/ ___/ _ \|  \/  |  \/  |/ _ \|  _ \  / \|_   _|_ _/ _ \| \ | | |  \/  |/ _ \| __ )_ _| |   | ____|  / _ \___ \
+    / _ \| |  | |  | | | | |\/| | |\/| | | | | | | |/ _ \ | |  | | | | |  \| | | |\/| | | | |  _ \| || |   |  _|   | | | |__) |
+   / ___ \ |__| |__| |_| | |  | | |  | | |_| | |_| / ___ \| |  | | |_| | |\  | | |  | | |_| | |_) | || |___| |___  | |_| / __/
+  /_/   \_\____\____\___/|_|  |_|_|  |_|\___/|____/_/   \_\_| |___\___/|_| \_| |_|  |_|\___/|____/___|_____|_____|  \___/_____|
+
+-->
+
+<article id="page-hotel-accommodation-02-mobile-section" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="page-hotel-accommodation-02-title-mobile">
+          <h4>our accommodation</h4>
+          <h1>Room Types</h1>
+        </div>
+        <div id="page-hotel-accommodation-02-slider-container-mobile">
+          <div id="page-hotel-accommodation-02-slider-mobile" class="boxlist-item-container mobile-height-version">
+
+
+            <div class="page-hotel-accommodation-02-slider-item-mobile">
+              <div class="page-hotel-accommodation-02-item-mobile boxlist-item">
+                <div class="page-hotel-accommodation-02-item-mobile-box boxlist-item-box">
+
+                  <div class="boxlist-item-content-image">
+                    <a href="room_detail.php" class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </a>
+                  </div>
+
+                  <div class="page-hotel-accommodation-02-item-mobile-title">
+                    <h5><a href="room_detail.php">Standard Room</a></h5>
+                  </div>
+
+                  <div class="boxlist-item-content-room-detail">
+                    <p class="detail-person">2 adults, 2 children (max.)</p>
+                    <p class="detail-size">25 SQM</p>
+                    <p class="detail-bed">1 KING SIZE BED</p>
+                  </div>
+                  
+                  <div class="page-hotel-accommodation-02-item-mobile-cta-container boxlist-item-content-cta-mobile">
+                    <div class="row">
+                      <div class="col-xs-7 v-align-bottom">
+                          <a href="room_detail.php" class="arrow-cta">View room</a>
+                      </div>
+                      <div class="col-xs-5 v-align-bottom">
+                        <div class="boxlist-item-content-price">
+                          <h6>Prices from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$119</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-hotel-accommodation-02-slider-item-mobile">
+              <div class="page-hotel-accommodation-02-item-mobile boxlist-item">
+                <div class="page-hotel-accommodation-02-item-mobile-box boxlist-item-box">
+
+                  <div class="boxlist-item-content-image">
+                    <a href="room_detail.php" class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </a>
+                  </div>
+
+                  <div class="page-hotel-accommodation-02-item-mobile-title">
+                    <h5><a href="room_detail.php">Standard Room</a></h5>
+                  </div>
+                  <div class="boxlist-item-content-room-detail">
+                    <p class="detail-person">2 adults, 2 children (max.)</p>
+                    <p class="detail-size">25 SQM</p>
+                    <p class="detail-bed">1 KING SIZE BED</p>
+                  </div>
+                  
+                  <div class="page-hotel-accommodation-02-item-mobile-cta-container boxlist-item-content-cta-mobile">
+                    <div class="row">
+                      <div class="col-xs-7 v-align-bottom">
+                        <a href="room_detail.php" class="arrow-cta">View room</a>
+                      </div>
+                      <div class="col-xs-5 v-align-bottom">
+                        <div class="boxlist-item-content-price">
+                          <h6>Prices from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$235</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>                        
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="page-hotel-accommodation-02-slider-item-mobile">
+              <div class="page-hotel-accommodation-02-item-mobile boxlist-item">
+                <div class="page-hotel-accommodation-02-item-mobile-box boxlist-item-box">
+
+                  <div class="boxlist-item-content-image">
+                    <a href="room_detail.php" class="manic-image-container">
+                      <img src=""
+                        data-image-mobile="images_cms/brand/brand-promotion-01.png">
+                    </a>
+                  </div>
+
+                  <div class="page-hotel-accommodation-02-item-mobile-title">
+                    <h5><a href="room_detail.php">Standard Room</a></h5>
+                  </div>
+                  <div class="room-detail-page-item-content-detail">
+                    <div class="row">
+                      <div class="col-xs-12">
+
+                        <div class="boxlist-item-content-room-detail">
+                          <p class="detail-person">2 adults, 2 children (max.)</p>
+                          <p class="detail-size">25 SQM</p>
+                          <p class="detail-bed">1 KING SIZE BED</p>
+                        </div>
+
+                      </div>                          
+                    </div>
+                  </div>
+                  <div class="page-hotel-accommodation-02-item-mobile-cta-container boxlist-item-content-cta-mobile">
+                    <div class="row">
+                      <div class="col-xs-7 v-align-bottom">
+                        <a href="room_detail.php" class="arrow-cta">View room</a>
+                      </div>
+                      <div class="col-xs-5 v-align-bottom">
+
+                        <div class="boxlist-item-content-price">
+                          <h6>Prices from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$135</span>
+                          </p>
+                        </div>
+                        
+                      </div>
+                    </div>                        
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <div id="page-hotel-accommodation-02-cta-container-mobile">
+          <a href="room_index.php" class="square-cta">View all Room Types</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</article> <!-- page-hotel-accommodation-02-mobile-section -->
+
+
+
 
 
 

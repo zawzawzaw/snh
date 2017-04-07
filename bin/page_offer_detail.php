@@ -556,7 +556,7 @@
 
     <div class="detail-page-content-description">
       <div class="default-copy">
-        <p class="minimize-read-more" data-length="165">This Valentine's Day, treat your loved one to a few Spanish specials thoughtfully developed by our talented younger chefs as a dedication to their own significant others.</p>
+        <p>This Valentine's Day, treat your loved one to a few Spanish specials thoughtfully developed by our talented younger chefs as a dedication to their own significant others.</p>
       </div>      
     </div>
   </div> <!-- detail-page-content -->

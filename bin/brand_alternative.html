@@ -25,19 +25,6 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
-  <!-- move these to the at the bottom of the body -->
-  
-
-  <!-- Web Fonts -->
-
-  <!-- open-sans -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600|Allan" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
-  
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
-
   </head>
 
 
@@ -180,7 +167,7 @@
         <input type="text" name="promo_code">
       </div>
       <div class="input-box">
-        <input type="submit" class="check-availability square-cta" value="check availability">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
       </div>
     </form>
   </div>
@@ -1223,42 +1210,33 @@
 -->
 
 
-  <!-- Development Version -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- Page Library -->
-  <script type="text/javascript" src="../source/js/all.js"></script>
-  <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
-  <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
-  <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/TweenMax.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/jquery.gsap.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/easing/EasePack.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/plugins/ScrollToPlugin.min.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/ScrollMagic.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/plugins/animation.gsap.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/plugins/debug.addIndicators.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
-  <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
-  <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>  
-  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>  
-  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
-  
-  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp&libraries=places"></script>
-  <script type="text/javascript" src="../source/library/infobox/infobox.js"></script>  
 
-  <!-- Google Closure -->
-  <script src="../source/library/closure-library/closure/goog/base.js"></script>
-  <script src="../source/js/goog-custom-dependencies.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
+  <!-- Optimized Version -->
   <script type="text/javascript">
-    goog.require('sagewest.page.Brand');
-  </script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      page = new sagewest.page.Brand({});    
+    var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
+    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
+    var PAGE_JS                   = "js/page-brand.min.js";
+    var PAGE_CSS                  = "css/style.css";
+    
+    head.load(PAGE_CSS);
+    head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
+
+      head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {
+          
+        page = new sagewest.page.Brand({});
+        $('body').addClass('preload-start');
+
+      });
     });
+
+    // start preload
+
   </script>
+  
 
         <!--
    _____ ___   ___ _____ _____ ____  
@@ -1289,7 +1267,7 @@
   </div>
 </footer>-->
 
-<footer id="desktop-footer">
+<footer id="desktop-footer" class="brand-version">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-3 col-sm-12 col-xs-12">
@@ -1322,7 +1300,7 @@
         </div>
       </div>
 
-      <div class="col-md-5 hidden-sm hidden-xs">
+      <div class="col-md-3 hidden-sm hidden-xs">
 
         <div id="footer-menu-container">
           <div id="footer-menu-1" class="footer-menu">
@@ -1331,8 +1309,14 @@
               <li><a href="#">SilverNeedle® Hospitality Group</a></li>
               <li><a href="#">Press Room</a></li>
               <li><a href="#">Careers</a></li>
+
+              <li><a href="#">SilverNeedle Select</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Events</a></li>
             </ul>
           </div>
+
+          <!-- 
           <div id="footer-menu-2" class="footer-menu">
             <h1>&nbsp;</h1>
             <ul>
@@ -1341,19 +1325,40 @@
               <li><a href="#">Events</a></li>
             </ul>
           </div>
+          -->
+
         </div> <!-- footer-menu-container -->
 
-        <div id="footer-social-media">
-          <ul>
-            <li><a href="#" class="fa fa-facebook-square"></a></li>
-            <li><a href="#" class="fa fa-instagram"></a></li>
-            <li><a href="#" class="fa fa-youtube-square"></a></li>
-            <li><a href="#" class="fa fa-twitter-square"></a></li>
-            <li><a href="#" class="fa fa-google-plus-square"></a></li>
-          </ul>
-        </div>
+        
 
       </div>
+
+      <div class="col-md-2 hidden-sm hidden-xs">
+
+        <div id="brand-middle-footer-container">
+          <div id="brand-footer-contact-item-container">
+            <div class="footer-contact-item">
+              <h4>Central Reservations</h4>
+              <p>
+                1800 303 186 (Within Australia) <br>
+                0800 480 274 (Within New Zealand)
+              </p>
+            </div>
+          </div>
+
+          <div id="footer-social-media">
+            <ul>
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-youtube-square"></a></li>
+              <li><a href="#" class="fa fa-twitter-square"></a></li>
+              <li><a href="#" class="fa fa-google-plus-square"></a></li>
+            </ul>
+          </div>
+        </div> <!-- brand-middle-footer-container -->
+        
+      </div>
+
 
       
       <div class="col-md-1 hidden-sm hidden-xs">
@@ -1382,6 +1387,9 @@
     </div>
   </div>
 
+
+  <!-- removed by client -->
+  <!-- 
   <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
     <div class="container-fluid">
       <div class="row">
@@ -1392,12 +1400,13 @@
               <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
               <li><p>0800 480 274 (Within New Zealand)</p></li>
             </ul>
-          </div> <!-- #hotel-footer-bottom-bar -->
+          </div>
 
         </div>
       </div>
     </div>
   </div>
+  -->
 
 </footer> <!-- #desktop-footer
       </div> <!-- #page-wrapper-content -->

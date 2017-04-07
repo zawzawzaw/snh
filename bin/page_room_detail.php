@@ -820,11 +820,11 @@
                           <img src="" data-image="images_cms/hotel/hotel-accommodation-room-01.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-01.png" alt="">
                         </div>
                       </div>
-                      <div class="room-detail-page-item-content-copy">
-                        <div class="default-copy">
-                          <h5>Standard Room</h5>
-                        </div>
+
+                      <div class="room-detail-page-item-title">
+                        <h5><a href="room_detail.php">Standard Room</a></h5>
                       </div>
+                      
                       <div class="room-detail-page-item-content-detail">
                         <div class="row">
                           <div class="col-xs-12">
@@ -879,11 +879,9 @@
                           <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-02.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-02.png" alt="">
                         </div>
                       </div>
-                      <div class="room-detail-page-item-content-copy">
-                        <div class="default-copy">
-                          <h5>Deluxe Room</h5>
-                        </div>
-                      </div> <!-- room-detail-page-item-content-copy -->
+                      <div class="room-detail-page-item-title">
+                        <h5><a href="room_detail.php">Standard Room</a></h5>
+                      </div>
                       <div class="room-detail-page-item-content-detail">
                         <div class="row">
                           <div class="col-xs-12">
@@ -938,10 +936,8 @@
                           <img src="" data-image-desktop="images_cms/hotel/hotel-accommodation-room-03.png" data-image-mobile="images_cms/hotel/hotel-accommodation-room-03.png" alt="">
                         </div>
                       </div>
-                      <div class="room-detail-page-item-content-copy">
-                        <div class="default-copy">
-                          <h5>Superior Room</h5>
-                        </div>
+                      <div class="room-detail-page-item-title">
+                        <h5><a href="room_detail.php">Standard Room</a></h5>
                       </div>
                       <div class="room-detail-page-item-content-detail">
                         <div class="row">

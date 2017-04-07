@@ -35,7 +35,7 @@ sagewest.component.GalleryIndexTab = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init');
+  // console.log('init');
 
   // this.create_isotope();
 
@@ -199,7 +199,7 @@ sagewest.component.GalleryIndexTab.prototype.set_data_array = function(arr_param
  * @param {String} category_param [description]
  */
 sagewest.component.GalleryIndexTab.prototype.set_category = function(category_param) {
-  console.log('set_category: ' + category_param);
+  // console.log('set_category: ' + category_param);
     
   // handle no category
   

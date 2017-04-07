@@ -481,7 +481,11 @@
         <div class="detail-page-contact-info">
           <ul>
             <li><p class="address"><span>NEXT Hotel Brisbane <br>72 Queen Street, Brisbane, <br>QLD 4000, Australia</span></p></li>
-            <li><p class="phoneno"><span>+61 7 3222 3222</span></p></li>
+            <li>
+              <p class="phoneno">
+                <span>+61 7 3222 3222</span>
+              </p>
+            </li>
             <li><a class="email" href="mailto:info.brisbane@nexthotels.com"><span>info.brisbane@nexthotels.com</span></a></li>
 
           </ul>

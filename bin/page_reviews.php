@@ -53,6 +53,7 @@
 
           <div id="page-reviews-intro-text">
             <div class="default-copy">
+              <h1>Guest Reviews</h1>
               <p>See what real guests think about our hotel. These hotel reviews of Sage Hotel West Perth will be helpful when planning your next trip to Perth, whether you are traveling for business or pleasure.</p>
               <p>If you’d like to share your experience at Sage Hotel West Perth as well, we’ll appreciate if you post a review to Facebook, Google or TripAdvisor. Thank you for taking the time to share your opinion!</p>
             </div>
@@ -131,10 +132,7 @@
 
 
   
-
   
-
-
   <div class="scroll-target" data-value="content"></div>
   <article id="page-reviews-content-section">
 
@@ -147,7 +145,7 @@
 
             <div id="page-reviews-filter-title-mobile">
               <h4>FILTER:</h4>
-              <i>All languages, All travel types</i>
+              <i>English, All travel types</i>
             </div>
 
           </div>
@@ -156,6 +154,64 @@
 
       <div id="page-reviews-filter-btn-mobile"></div>
     </div> <!-- page-reviews-filter-mobile -->
+
+
+    <div id="page-reviews-filter-expanded-container-mobile">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-sm-1 col-xs-0"></div>
+          <div class="col-sm-10 col-xs-12">
+
+            <div class="manic-dropdown" id="page-review-language-dropdown-mobile">
+              <select id="page-review-language-select-mobile">
+                <option value="">Please Select</option>
+                <option value="all">All</option>
+                <option value="english" selected>English</option>
+                <option value="french">French</option>
+                <option value="italian">Italian</option>
+              </select>
+            </div>
+            <div class="manic-dropdown" id="page-review-travel-type-dropdown-mobile">
+              <select id="page-review-travel-type-select-mobile">
+                <option value="">Please Select</option>
+                <option value="all" selected>All</option>
+                <option value="business">Business</option>
+                <option value="couple">Couple</option>
+                <option value="friends">Friends</option>
+                <option value="solo">Solo</option>
+              </select>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <div class="row">
+                <div class="col-xs-6">
+
+                  <a href="javascript:void(0);" class="square-cta full-width-version" id="page-review-filter-cancel-btn">Cancel</a>
+                  
+                </div>
+                <div class="col-xs-6">
+
+                  <a href="javascript:void(0);" class="square-cta full-width-version" id="page-review-filter-apply-btn">Apply</a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- page-reviews-filter-expanded-container-mobile -->
+
 
 
     <div class="container-fluid has-breakpoint">
@@ -184,7 +240,7 @@
                 <option value="italian">Italian</option>
               </select>
             </div>
-            <div class="manic-dropdown not-selected-version" id="page-review-travel-type-dropdown">
+            <div class="manic-dropdown" id="page-review-travel-type-dropdown">
               <select id="page-review-travel-type-select">
                 <option value="">Please Select</option>
                 <option value="all" selected>All</option>

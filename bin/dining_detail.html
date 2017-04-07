@@ -25,19 +25,6 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
-  <!-- move these to the at the bottom of the body -->
-  
-
-  <!-- Web Fonts -->
-
-  <!-- open-sans -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600|Allan" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
-  
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
-
   </head>
 
 
@@ -97,7 +84,7 @@
         <li><a href="activities.php">activities</a></li>
         <li><a href="reviews.php">reviews</a></li>
         <li><a href="events.php">events</a></li>
-        <li><a href="contact.php">Location</a></li>
+        <li><a href="location.php">Location</a></li>
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -162,6 +149,11 @@
               <option value="10">10</option>
             </select>
           </div>
+
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+          
         </div>
       </div>
       <div class="input-box">
@@ -169,7 +161,7 @@
         <input type="text" name="promo_code">
       </div>
       <div class="input-box">
-        <input type="submit" class="check-availability square-cta" value="check availability">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
       </div>
     </form>
   </div>
@@ -218,7 +210,7 @@
               <li><a href="activities.php">Activities</a></li>
               <li><a href="reviews.php">Reviews</a></li>
               <li><a href="events.php">Events</a></li>
-              <li><a href="contact.php">Location</a></li>
+              <li><a href="location.php">Location</a></li>
             </ul>
           </nav>
         </div>
@@ -628,7 +620,7 @@
                 </a>
                 <script src="https://www.dimmi.com.au/embed/button-script?restaurantId=33719"></script>
                 <!-- end code from dimmi -->
-
+                
               </div>
 
             </div>
@@ -1213,38 +1205,26 @@
 -->
 
 
-  <!-- Development Version -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- Page Library -->
-  <script type="text/javascript" src="../source/js/all.js"></script>
-  <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
-  <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
-  <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/TweenMax.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/jquery.gsap.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/easing/EasePack.min.js"></script>
-  <script type="text/javascript" src="../source/library/gsap/plugins/ScrollToPlugin.min.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/ScrollMagic.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/plugins/animation.gsap.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/plugins/debug.addIndicators.js"></script>
-  <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
-  <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
-  <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
-  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
-  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
 
-  <!-- Google Closure -->
-  <script src="../source/library/closure-library/closure/goog/base.js"></script>
-  <script src="../source/js/goog-custom-dependencies.js"></script>
+  <!-- Optimized Version -->
   <script type="text/javascript">
-    goog.require('sagewest.page.Default');
-  </script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {
-      page = new sagewest.page.Default({});
+    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
+    var PAGE_JS                   = "js/page-default.min.js";
+    var PAGE_CSS                  = "css/style.css";
+
+    head.load(PAGE_CSS);
+    head.load(PAGE_LIBRARY, function() {
+      head.load(PAGE_JS, function() {
+          
+        page = new sagewest.page.Default({});
+
+      });
     });
+
+    // start preload
   </script>
 
         <!--
@@ -1329,44 +1309,75 @@
 
       </div>
 
+      <!--
       <div class="col-md-1 hidden-sm hidden-xs">
         <div class="footer-seperator left-version">
         </div>
-      </div>
+      </div> 
+      -->
 
-      <div class="col-md-5 hidden-sm hidden-xs">
+      <div class="col-md-3 hidden-sm hidden-xs">
 
-        <div id="hotel-footer-menu-container">
-          <h1>Quick Links</h1>
-          <ul>
-            <li><a href="room_index.php">Rooms</a></li>
-            <li><a href="offer_index.php">Offers</a></li>
-            <li><a href="dining_index.php">Dining</a></li>
-            <li><a href="facilities.php">Facilities</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-            <li><a href="activities.php">Activities</a></li>
-            <li><a href="reviews.php">Reviews</a></li>
-            <li><a href="events.php">Events</a></li>
-            <li><a href="contact.php">Location</a></li>
-          </ul>
+        <div id="hotel-middle-footer-container">
+          <div id="hotel-footer-menu-container">
+            <h1>Quick Links</h1>
+            <ul>
+              <li><a href="room_index.php">Rooms</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="activities.php">Activities</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="location.php">Location</a></li>
+            </ul>
+          </div>
+
+          <div id="footer-social-media">
+            <ul>
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-youtube-square"></a></li>
+              <li><a href="#" class="fa fa-twitter-square"></a></li>
+              <li><a href="#" class="fa fa-google-plus-square"></a></li>
+            </ul>
+          </div>
         </div>
 
-        <div id="footer-social-media">
-          <ul>
-            <li><a href="#" class="fa fa-facebook-square"></a></li>
-            <li><a href="#" class="fa fa-instagram"></a></li>
-            <li><a href="#" class="fa fa-youtube-square"></a></li>
-            <li><a href="#" class="fa fa-twitter-square"></a></li>
-            <li><a href="#" class="fa fa-google-plus-square"></a></li>
-          </ul>
-        </div>
 
       </div>
+
+
+
+      <div class="col-md-3 hidden-sm hidden-xs">
+        <div id="hotel-footer-contact-item-container">
+          <div class="footer-contact-item">
+            <h4>Contact Information</h4>
+            <p>
+              1309 Hay Street, West Perth, WA 6005, Australia <br>
+              +618 6500 9100 <br>
+              reservations.westperth@sage-hotels.com
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <h4>Central Reservations</h4>
+            <p>
+              1800 303 186 (Within Australia) <br>
+              0800 480 274 (Within New Zealand)
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       
       <div class="col-md-1 hidden-sm hidden-xs">
+        <!-- 
         <div class="footer-seperator right-version">
         </div>
+        -->
+
       </div>
       <div class="col-md-2 hidden-xs hidden-sm">
 
@@ -1391,6 +1402,8 @@
   </div>
 
 
+  <!-- removed by client -->
+  <!-- 
   <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
     <div class="container-fluid">
       <div class="row">
@@ -1406,12 +1419,13 @@
               <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
               <li><p>0800 480 274 (Within New Zealand)</p></li>
             </ul>
-          </div> <!-- #hotel-footer-bottom-bar -->
+          </div>
 
         </div>
       </div>
     </div>
   </div>
+  -->
 
 </footer> <!-- #desktop-footer
       </div> <!-- #page-wrapper-content -->

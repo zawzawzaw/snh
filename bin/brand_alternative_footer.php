@@ -27,7 +27,7 @@
   </div>
 </footer>-->
 
-<footer id="desktop-footer">
+<footer id="desktop-footer" class="brand-version">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-3 col-sm-12 col-xs-12">
@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <div class="col-md-5 hidden-sm hidden-xs">
+      <div class="col-md-3 hidden-sm hidden-xs">
 
         <div id="footer-menu-container">
           <div id="footer-menu-1" class="footer-menu">
@@ -69,8 +69,14 @@
               <li><a href="#">SilverNeedle® Hospitality Group</a></li>
               <li><a href="#">Press Room</a></li>
               <li><a href="#">Careers</a></li>
+
+              <li><a href="#">SilverNeedle Select</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Events</a></li>
             </ul>
           </div>
+
+          <!-- 
           <div id="footer-menu-2" class="footer-menu">
             <h1>&nbsp;</h1>
             <ul>
@@ -79,19 +85,40 @@
               <li><a href="#">Events</a></li>
             </ul>
           </div>
+          -->
+
         </div> <!-- footer-menu-container -->
 
-        <div id="footer-social-media">
-          <ul>
-            <li><a href="#" class="fa fa-facebook-square"></a></li>
-            <li><a href="#" class="fa fa-instagram"></a></li>
-            <li><a href="#" class="fa fa-youtube-square"></a></li>
-            <li><a href="#" class="fa fa-twitter-square"></a></li>
-            <li><a href="#" class="fa fa-google-plus-square"></a></li>
-          </ul>
-        </div>
+        
 
       </div>
+
+      <div class="col-md-2 hidden-sm hidden-xs">
+
+        <div id="brand-middle-footer-container">
+          <div id="brand-footer-contact-item-container">
+            <div class="footer-contact-item">
+              <h4>Central Reservations</h4>
+              <p>
+                1800 303 186 (Within Australia) <br>
+                0800 480 274 (Within New Zealand)
+              </p>
+            </div>
+          </div>
+
+          <div id="footer-social-media">
+            <ul>
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-youtube-square"></a></li>
+              <li><a href="#" class="fa fa-twitter-square"></a></li>
+              <li><a href="#" class="fa fa-google-plus-square"></a></li>
+            </ul>
+          </div>
+        </div> <!-- brand-middle-footer-container -->
+        
+      </div>
+
 
       
       <div class="col-md-1 hidden-sm hidden-xs">
@@ -120,6 +147,9 @@
     </div>
   </div>
 
+
+  <!-- removed by client -->
+  <!-- 
   <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
     <div class="container-fluid">
       <div class="row">
@@ -130,11 +160,12 @@
               <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
               <li><p>0800 480 274 (Within New Zealand)</p></li>
             </ul>
-          </div> <!-- #hotel-footer-bottom-bar -->
+          </div>
 
         </div>
       </div>
     </div>
   </div>
+  -->
 
 </footer> <!-- #desktop-footer

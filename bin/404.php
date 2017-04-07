@@ -5,8 +5,8 @@ ob_start();
   global $is_debug;
   global $body_class;
 
-  // $is_debug = false;
-  $is_debug = true;
+  $is_debug = false;
+  // $is_debug = true;
 
   $body_class = "hotel error-404-page permanent-scrolled";
 ?>
@@ -50,7 +50,6 @@ ob_start();
 
 
 
-
         <!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
         <div id="page-wrapper-content-min-height">
 
@@ -80,12 +79,7 @@ ob_start();
 
         </div> <!-- page-wrapper-content-min-height -->
 
-
-
         
-
-
-
 
         <!--
            _____ _   _ ____

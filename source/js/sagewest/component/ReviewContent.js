@@ -68,10 +68,39 @@ sagewest.component.ReviewContent = function(options, element) {
 
 
 
+  // MOBILE VARIABLES
+  
+  this.body_element = $('body');
+  this.is_filter_mobile_open = false;
+
+
+  this.filter_title_mobile = null;
+  this.filter_title_copy_mobile = null;
+  this.filter_expand_container_mobile = null;
+  this.filter_cancel_btn_mobile = null;
+  this.filter_apply_btn_mobile = null;
+
+
+  /**
+   * @type {manic.ui.Dropdown}
+   */
+  this.language_dropdown_mobile = null;
+
+  /**
+   * @type {manic.ui.Dropdown}
+   */
+  this.travel_type_dropdown_mobile = null;
+
+
+  
+
+
+
 
   this.create_items();
   this.create_dropdown();
   this.create_pagination();
+  this.create_mobile_filter();
 
 
   this.update_item_list();
@@ -107,6 +136,22 @@ sagewest.component.ReviewContent.ON_UPDATE_PAGINATION = 'on_update_pagination';
  * @type {string}
  */
 sagewest.component.ReviewContent.ON_UPDATE_PAGE = 'on_update_page';
+
+
+
+/**
+ * CLASSNAME Event Constant
+ * @const
+ * @type {string}
+ */
+sagewest.component.ReviewContent.ON_OPEN_FILTER = 'on_open_filter';
+/**
+ * CLASSNAME Event Constant
+ * @const
+ * @type {string}
+ */
+sagewest.component.ReviewContent.ON_CLOSE_FILTER = 'on_close_filter';
+
 
 
 
@@ -219,7 +264,7 @@ sagewest.component.ReviewContent.prototype.create_pagination = function() {
       target_index = parseInt(target_index);
     }
 
-    console.log('target_index: ' + target_index);
+    // console.log('target_index: ' + target_index);
 
     this.goto_page(target_index);
     
@@ -251,9 +296,9 @@ sagewest.component.ReviewContent.prototype.sample_method_calls = function() {
 
 sagewest.component.ReviewContent.prototype.update_item_list = function() {
 
-  console.log('update_item_list:');
-  console.log('this.current_language:' + this.current_language)
-  console.log('this.current_travel_type:' + this.current_travel_type)
+  // console.log('update_item_list:');
+  // console.log('this.current_language:' + this.current_language)
+  // console.log('this.current_travel_type:' + this.current_travel_type)
 
   this.item_visible_array = [];
 
@@ -310,38 +355,50 @@ sagewest.component.ReviewContent.prototype.update_item_list = function() {
 };
 sagewest.component.ReviewContent.prototype.update_pagination_layout = function() {
 
+  if(manic.IS_MOBILE == true) {
 
-  this.current_max_page = Math.ceil(this.item_visible_array.length / sagewest.component.ReviewContent.ITEMS_IN_PAGE);
-
-
-
-  $('#page-reviews-pagination ul').empty();
-
-
-  var page_item = null;
-  var page_number = 0;
-
-  for (var i = 0, l=this.current_max_page; i < l; i++) {
-    page_number = (i + 1);
-    page_item = $('<li data-index="' + i + '">' + page_number + '</li>');
-    $('#page-reviews-pagination ul').append(page_item);
-  }
+    // MOBILE
+    
+    // console.log('did i get here');
+    $('#page-reviews-pagination').addClass('hidden-version');   // always hidden :))
+    this.show_all();
 
 
-
-  // don't show pagination on 1 or 0
-  if (this.current_max_page <= 1) {
-
-    $('#page-reviews-pagination').addClass('hidden-version');
 
   } else {
 
-    $('#page-reviews-pagination').removeClass('hidden-version');
+
+    // DESKTOP
+
+    this.current_max_page = Math.ceil(this.item_visible_array.length / sagewest.component.ReviewContent.ITEMS_IN_PAGE);
+
+    $('#page-reviews-pagination ul').empty();
+
+
+    var page_item = null;
+    var page_number = 0;
+
+    for (var i = 0, l=this.current_max_page; i < l; i++) {
+      page_number = (i + 1);
+      page_item = $('<li data-index="' + i + '">' + page_number + '</li>');
+      $('#page-reviews-pagination ul').append(page_item);
+    }
+
+    // don't show pagination on 1 or 0
+    if (this.current_max_page <= 1) {
+
+      $('#page-reviews-pagination').addClass('hidden-version');
+
+    } else {
+
+      $('#page-reviews-pagination').removeClass('hidden-version');
+
+    }
+
+    this.goto_page(0);
 
   }
-  
 
-  this.goto_page(0);
 
 
   this.dispatchEvent(new goog.events.Event(sagewest.component.ReviewContent.ON_UPDATE_PAGINATION));
@@ -396,7 +453,7 @@ sagewest.component.ReviewContent.prototype.goto_page = function(num_param) {
   if (goog.isDefAndNotNull(num_param) && 
       num_param >= 0) {
 
-    console.log('goto_page: ' + num_param);
+    // console.log('goto_page: ' + num_param);
 
     this.current_page = num_param;
 
@@ -432,14 +489,172 @@ sagewest.component.ReviewContent.prototype.goto_page = function(num_param) {
 
 
     this.dispatchEvent(new goog.events.Event(sagewest.component.ReviewContent.ON_UPDATE_PAGE));
-
-    
-
   }
-  
 };
 
-sagewest.component.ReviewContent.prototype.public_method_06 = function() {};
+sagewest.component.ReviewContent.prototype.show_all = function(){
+
+  this.item_elements.css({
+    'display': 'none'
+  });
+  
+  var item = null;
+  for (var i = 0, l=this.item_visible_array.length; i < l; i++) {
+    item = this.item_visible_array[i];
+    item.css({
+      'display': 'block'
+    });
+
+  } // end for
+
+  this.dispatchEvent(new goog.events.Event(sagewest.component.ReviewContent.ON_UPDATE_PAGE));
+};
+
+
+
+
+//    __  __  ___  ____ ___ _     _____   _____ ___ _   _____ _____ ____
+//   |  \/  |/ _ \| __ )_ _| |   | ____| |  ___|_ _| | |_   _| ____|  _ \
+//   | |\/| | | | |  _ \| || |   |  _|   | |_   | || |   | | |  _| | |_) |
+//   | |  | | |_| | |_) | || |___| |___  |  _|  | || |___| | | |___|  _ <
+//   |_|  |_|\___/|____/___|_____|_____| |_|   |___|_____|_| |_____|_| \_\
+//
+
+
+sagewest.component.ReviewContent.prototype.create_mobile_filter = function() {
+
+
+
+  if ($('#page-review-language-dropdown-mobile').length != 0) {
+    this.language_dropdown_mobile = $('#page-review-language-dropdown-mobile').data('manic.ui.Dropdown');
+    goog.events.listen(this.language_dropdown_mobile, manic.ui.Dropdown.ON_CHANGE, this.on_language_dropdown_mobile_change.bind(this));
+  }
+  
+  if ($('#page-review-travel-type-dropdown-mobile').length != 0) {
+    this.travel_type_dropdown_mobile = $('#page-review-travel-type-dropdown-mobile').data('manic.ui.Dropdown');
+    goog.events.listen(this.travel_type_dropdown_mobile, manic.ui.Dropdown.ON_CHANGE, this.on_travel_type_dropdown_mobile_change.bind(this));  
+  }
+
+  // this.filter_title_mobile = this.element.find('#page-reviews-filter-title-mobile');
+  this.filter_title_mobile = this.element.find('#page-reviews-filter-mobile');
+
+  this.filter_title_copy_mobile = this.element.find('#page-reviews-filter-title-mobile i');
+  this.filter_expand_container_mobile = this.element.find('#page-reviews-filter-expanded-container-mobile');
+  this.filter_cancel_btn_mobile = this.element.find('#page-review-filter-cancel-btn');
+  this.filter_apply_btn_mobile = this.element.find('#page-review-filter-apply-btn');
+
+  this.filter_title_mobile.click(function(event){
+
+    event.preventDefault();
+
+    if (this.is_filter_mobile_open==true) {
+
+      this.reset_filter_mobile();
+      this.close_filter_mobile();
+
+    } else {
+      this.open_filter_mobile();
+    }
+
+  }.bind(this));
+
+
+
+  this.filter_cancel_btn_mobile.click(function(event){
+
+    event.preventDefault();
+    this.reset_filter_mobile();
+    this.close_filter_mobile();
+
+  }.bind(this));
+
+  this.filter_apply_btn_mobile.click(function(event){
+
+    event.preventDefault();
+    this.apply_filter_mobile();
+    this.close_filter_mobile();
+
+  }.bind(this));
+
+};
+
+
+sagewest.component.ReviewContent.prototype.open_filter_mobile = function() {
+
+  if (this.is_filter_mobile_open == false) {
+    this.is_filter_mobile_open = true;
+
+    this.body_element.addClass('review-page-filter-mobile-open-version');
+
+    this.dispatchEvent(new goog.events.Event(sagewest.component.ReviewContent.ON_OPEN_FILTER));
+
+  }
+
+};
+sagewest.component.ReviewContent.prototype.close_filter_mobile = function() {
+
+  if (this.is_filter_mobile_open == true) {
+    this.is_filter_mobile_open = false;
+
+    this.body_element.removeClass('review-page-filter-mobile-open-version');
+
+    this.dispatchEvent(new goog.events.Event(sagewest.component.ReviewContent.ON_CLOSE_FILTER));
+
+  }
+
+};
+
+
+sagewest.component.ReviewContent.prototype.reset_filter_mobile = function() {
+
+
+  this.language_dropdown_mobile.set_value(this.current_language);
+  this.travel_type_dropdown_mobile.set_value(this.current_travel_type);
+};
+
+
+
+
+
+sagewest.component.ReviewContent.prototype.apply_filter_mobile = function() {
+
+  this.current_language = this.language_dropdown_mobile.current_value;
+  if (this.language_dropdown_mobile.current_value == '') {
+    this.current_language = 'all';
+  }
+
+  this.current_travel_type = this.travel_type_dropdown_mobile.current_value;
+  if (this.travel_type_dropdown_mobile.current_value == '') {
+    this.travel_type_dropdown_mobile.current_value = 'all';
+  }
+
+
+  // All languages, All travel types
+  var filter_title_str = '';
+
+  var language_label_str = $('#page-review-language-select-mobile option[value="' +  this.current_language + '"]').text();
+  var travel_type_label_str = $('#page-review-travel-type-select-mobile option[value="' + this.current_travel_type + '"]').text();
+  
+  
+  language_label_str = this.current_language == 'all' ? 'All languages' : language_label_str;
+  travel_type_label_str = this.current_travel_type == 'all' ? 'All travel types' : travel_type_label_str;
+  
+  filter_title_str = language_label_str + ', ' + travel_type_label_str;
+
+
+  this.filter_title_copy_mobile.html(filter_title_str);
+
+
+  this.update_item_list();
+  this.update_pagination_layout();
+
+};
+
+  
+
+
+
+
 
 
 //    _______     _______ _   _ _____ ____
@@ -495,6 +710,12 @@ sagewest.component.ReviewContent.prototype.on_travel_type_dropdown_change = func
 
 };
 
+
+
+
+
+
+
 /**
  * event handler
  * @param  {object} event
@@ -509,3 +730,64 @@ sagewest.component.ReviewContent.prototype.on_event_handler_03 = function(event)
 sagewest.component.ReviewContent.prototype.on_event_handler_04 = function(event) {
 };
 
+
+
+//    __  __  ___  ____ ___ _     _____   _______     _______ _   _ _____ ____
+//   |  \/  |/ _ \| __ )_ _| |   | ____| | ____\ \   / / ____| \ | |_   _/ ___|
+//   | |\/| | | | |  _ \| || |   |  _|   |  _|  \ \ / /|  _| |  \| | | | \___ \
+//   | |  | | |_| | |_) | || |___| |___  | |___  \ V / | |___| |\  | | |  ___) |
+//   |_|  |_|\___/|____/___|_____|_____| |_____|  \_/  |_____|_| \_| |_| |____/
+//
+
+
+/**
+ * event handler
+ * @param  {object} event
+ */
+sagewest.component.ReviewContent.prototype.on_language_dropdown_mobile_change = function(event) {
+  //console.log('on_language_dropdown_mobile_change: ' + this.language_dropdown_mobile.current_value);
+
+  this.language_dropdown_mobile.element.removeClass('not-selected-version');
+
+  /*
+  this.language_dropdown_mobile.element.removeClass('not-selected-version');
+  
+  if (this.current_language != this.language_dropdown_mobile.current_value) {
+    this.current_language = this.language_dropdown_mobile.current_value;
+
+    if (this.language_dropdown_mobile.current_value == '') {
+      this.current_language = 'all';
+    }
+
+    this.update_item_list();
+    this.update_pagination_layout();
+  }
+  */
+
+};
+
+/**
+ * event handler
+ * @param  {object} event
+ */
+sagewest.component.ReviewContent.prototype.on_travel_type_dropdown_mobile_change = function(event) {
+  //console.log('on_travel_type_dropdown_mobile_change: ' + this.travel_type_dropdown_mobile.current_value);
+  
+  this.travel_type_dropdown_mobile.element.removeClass('not-selected-version');
+
+  /*
+  this.travel_type_dropdown_mobile.element.removeClass('not-selected-version');
+
+  if (this.current_travel_type != this.travel_type_dropdown_mobile.current_value) {
+    
+    this.current_travel_type = this.travel_type_dropdown_mobile.current_value;
+    if (this.travel_type_dropdown_mobile.current_value == '') {
+      this.travel_type_dropdown_mobile.current_value = 'all';
+    }
+
+    this.update_item_list();
+    this.update_pagination_layout();
+  }
+  */
+
+};

@@ -72,9 +72,7 @@
 
         <div id="default-introduction-image-mobile" class="visible-sm visible-xs">
           <div class="manic-image-container">
-            <img src="" 
-              data-image-tablet="images_cms/brand_next/brand-introduction-tablet.jpg"
-              data-image-mobile="images_cms/brand_next/brand-introduction-mobile.jpg">
+            <img src="" data-image-mobile="images_cms/brand_next/brand-introduction-mobile.jpg">
           </div>
         </div>
         
@@ -154,7 +152,7 @@
       <div class="col-md-6">
 
         <div id="brand-all-location-slider-container-version-02">
-          <div id="brand-all-location-slider-version-02">
+          <div id="brand-all-location-slider-version-02" class="no-location-cta-version">
 
             <div class="brand-location-slider-item">
               <a href="hotel.php" class="brand-location-slider-item-image">
@@ -164,8 +162,12 @@
               </a>
               <div class="brand-location-slider-item-copy">
                 <h4>Brisbane</h4>
-                <h2><a href="hotel.php">Next Hotels Brisbane </a></h2>
+                <h2><a href="hotel.php">NEXT Hotels Brisbane </a></h2>
                 <p>NEXT Hotel Brisbane is located right in the middle of Queen Street mall, with shopping at the door steps and short walk across to South Bank. When returning after your eventful day, relax at the amazing rooftop pool, work-out in our 24hrs gym or treat yourself to one of the four free minibar items.</p>
+              </div>
+
+              <div class="brand-location-cta-container-version-02">
+                <a href="hotel.php" class="square-cta">Visit Hotel</a>
               </div>
             </div>
 
@@ -176,9 +178,13 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>Brisbane</h4>
-                <h2><a href="hotel.php">Next Hotels Brisbane </a></h2>
-                <p>NEXT Hotel Brisbane is located right in the middle of Queen Street mall, with shopping at the door steps and short walk across to South Bank. When returning after your eventful day, relax at the amazing rooftop pool, work-out in our 24hrs gym or treat yourself to one of the four free minibar items.</p>
+                <h4>Colombo</h4>
+                <h2><a href="hotel.php">NEXT Hote​l​​ Colom​bo</a></h2>
+                <p>Situated across from the Sima Malakaya Temple, a famous landmark in Colombo, and overlooking the scenic Biera Lake,​​ t​he Colombo City Centre will be home to a 200-room NEXT Hotel in 2017​.</p>
+              </div>
+
+              <div class="brand-location-cta-container-version-02">
+                <a href="javascript:void(0);" class="square-cta">Coming Soon</a>
               </div>
             </div>
 
@@ -194,8 +200,12 @@
               </a>
               <div class="brand-location-slider-item-copy">
                 <h4>Brisbane</h4>
-                <h2><a href="hotel.php">Next Hotels Brisbane </a></h2>
+                <h2><a href="hotel.php">NEXT Hotels Brisbane </a></h2>
                 <p>NEXT Hotel Brisbane is located right in the middle of Queen Street mall, with shopping at the door steps and short walk across to South Bank. When returning after your eventful day, relax at the amazing rooftop pool, work-out in our 24hrs gym or treat yourself to one of the four free minibar items.</p>
+              </div>
+
+              <div class="brand-location-cta-container-version-02">
+                <a href="hotel.php" class="square-cta">Visit Hotel</a>
               </div>
             </div>
 
@@ -206,9 +216,13 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>Brisbane</h4>
-                <h2><a href="hotel.php">Next Hotels Brisbane </a></h2>
-                <p>NEXT Hotel Brisbane is located right in the middle of Queen Street mall, with shopping at the door steps and short walk across to South Bank. When returning after your eventful day, relax at the amazing rooftop pool, work-out in our 24hrs gym or treat yourself to one of the four free minibar items.</p>
+                <h4>Colombo</h4>
+                <h2><a href="hotel.php">NEXT Hote​l​​ Colom​bo</a></h2>
+                <p>Situated across from the Sima Malakaya Temple, a famous landmark in Colombo, and overlooking the scenic Biera Lake,​​ t​he Colombo City Centre will be home to a 200-room NEXT Hotel in 2017​.</p>
+              </div>
+
+              <div class="brand-location-cta-container-version-02">
+                <a href="javascript:void(0);" class="square-cta">Coming Soon</a>
               </div>
             </div>
 
@@ -220,8 +234,12 @@
               </a>
               <div class="brand-location-slider-item-copy">
                 <h4>Brisbane</h4>
-                <h2><a href="hotel.php">Next Hotels Brisbane </a></h2>
+                <h2><a href="hotel.php">NEXT Hotels Brisbane </a></h2>
                 <p>NEXT Hotel Brisbane is located right in the middle of Queen Street mall, with shopping at the door steps and short walk across to South Bank. When returning after your eventful day, relax at the amazing rooftop pool, work-out in our 24hrs gym or treat yourself to one of the four free minibar items.</p>
+              </div>
+
+              <div class="brand-location-cta-container-version-02">
+                <a href="hotel.php" class="square-cta">Visit Hotel</a>
               </div>
             </div>
 
@@ -232,9 +250,13 @@
                 </div>
               </a>
               <div class="brand-location-slider-item-copy">
-                <h4>Brisbane</h4>
-                <h2><a href="hotel.php">Next Hotels Brisbane </a></h2>
-                <p>NEXT Hotel Brisbane is located right in the middle of Queen Street mall, with shopping at the door steps and short walk across to South Bank. When returning after your eventful day, relax at the amazing rooftop pool, work-out in our 24hrs gym or treat yourself to one of the four free minibar items.</p>
+                <h4>Colombo</h4>
+                <h2><a href="hotel.php">NEXT Hote​l​​ Colom​bo</a></h2>
+                <p>Situated across from the Sima Malakaya Temple, a famous landmark in Colombo, and overlooking the scenic Biera Lake,​​ t​he Colombo City Centre will be home to a 200-room NEXT Hotel in 2017​.</p>
+              </div>
+
+              <div class="brand-location-cta-container-version-02">
+                <a href="javascript:void(0);" class="square-cta">Coming Soon</a>
               </div>
             </div>
 
@@ -254,6 +276,8 @@
       </div>
     </div>
 
+
+    <!-- 
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -262,6 +286,7 @@
         </div>
       </div>
     </div>
+    -->
 
   </div>
 </article>
