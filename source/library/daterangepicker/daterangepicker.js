@@ -1257,7 +1257,7 @@
             var date = moment();
 
             this.container.find('#hover-month').html(date.format('MMMM'));
-            this.container.find('#hover-day').html(date.format('DD'));
+            this.container.find('#hover-day').html(this.endDate.format('DD'));
             this.container.find('#hover-weekname').html(date.format('dddd'));
         }, 
 
@@ -1381,6 +1381,9 @@
             }
 
             this.updateView();
+
+            // zaw
+            this.element.trigger("click");
 
             //This is to cancel the blur event handler if the mouse was in one of the inputs
             e.stopPropagation();

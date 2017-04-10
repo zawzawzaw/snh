@@ -83,6 +83,10 @@ body.scrolled {
 
       /// .box-shadow (1px -1px 10px #000);
 
+      &.violet-bg {
+        background-color: @violet;
+      }
+
     }  
   }
   
@@ -130,11 +134,11 @@ body.permanent-scrolled{
 
 
 
-  #desktop-header {
-    .container-fluid {
-      .transition(.3s);
-    }
+#desktop-header {
+  .container-fluid {
+    .transition(.3s);
   }
+}
 
 #desktop-header-logo-container{
   position: relative;
@@ -145,6 +149,7 @@ body.permanent-scrolled{
 
   .box-shadow (0px, 0px, 8px, #333);
 }
+
 #desktop-header-logo{
   .display-inline-block; 
   width: 83px;
@@ -158,6 +163,7 @@ body.permanent-scrolled{
     width: 97px;
   }
 }
+
 #desktop-header-nav {
   display: none;
   padding-top: 28px;
@@ -984,4 +990,49 @@ body.hotel {
     } // .calendar
 
   } // .daterangepicker
+}
+
+
+//     ____  ____  ____  __ __ _____   ________   _______   _____________   ________
+//    / __ )/ __ \/ __ \/ //_//  _/ | / / ____/  / ____/ | / / ____/  _/ | / / ____/
+//   / __  / / / / / / / ,<   / //  |/ / / __   / __/ /  |/ / / __ / //  |/ / __/
+//  / /_/ / /_/ / /_/ / /| |_/ // /|  / /_/ /  / /___/ /|  / /_/ // // /|  / /___
+// /_____/\____/\____/_/ |_/___/_/ |_/\____/  /_____/_/ |_/\____/___/_/ |_/_____/
+//
+
+// overwrite current header
+.booking-engine-header {
+  #desktop-header-logo {
+    width: 100%;
+    img {
+      margin: 0 auto;
+      margin-top: -7px;
+    }
+  }
+  #desktop-menu-bar {
+    background: none;    
+  }
+  #desktop-header-contact-us {
+    text-align: right;
+    color: @white;
+    .open-sans-semi-bold;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-right: 30px;    
+    a {
+      color: @white;
+      position: relative;
+      &:after {
+        content: "";
+        border-bottom: 1px solid @off-white;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        left: 0px;
+      }
+    }
+  }
 }

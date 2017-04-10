@@ -4561,7 +4561,8 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   }
 }
 .arrow-cta,
-.download-cta {
+.download-cta,
+.collapsable-arrow-cta {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -4571,18 +4572,21 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   text-transform: uppercase;
 }
 .arrow-cta:after,
-.download-cta:after {
+.download-cta:after,
+.collapsable-arrow-cta:after {
   font-family: FontAwesome;
   font-size: 13px;
   padding-left: 5px;
 }
 @media all and (max-width: 375px) {
   .arrow-cta,
-  .download-cta {
+  .download-cta,
+  .collapsable-arrow-cta {
     font-size: 12px;
   }
   .arrow-cta:after,
-  .download-cta:after {
+  .download-cta:after,
+  .collapsable-arrow-cta:after {
     font-size: 12px;
   }
 }
@@ -4594,6 +4598,9 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
 }
 .download-cta:after {
   content: "\f019";
+}
+.down-arrow-cta:after {
+  content: "\f107";
 }
 html.actual-mobile .square-cta:focus,
 html.actual-mobile .square-cta:hover {
@@ -4865,6 +4872,10 @@ body.scrolled #desktop-header .container-fluid {
   background-color: #747474;
   -webkit-box-shadow: 0px 0px 8px #333333;
   box-shadow: 0px 0px 8px #333333;
+}
+body.permanent-scrolled #desktop-header .container-fluid.violet-bg,
+body.scrolled #desktop-header .container-fluid.violet-bg {
+  background-color: #7d0052;
 }
 body.permanent-scrolled #desktop-header-menu,
 body.scrolled #desktop-header-menu {
@@ -5634,6 +5645,41 @@ body.hotel #desktop-header-nav ul li {
 }
 #desktop-header-booking-calendar .daterangepicker .calendar tbody tr:last-child {
   border-bottom: none;
+}
+.booking-engine-header #desktop-header-logo {
+  width: 100%;
+}
+.booking-engine-header #desktop-header-logo img {
+  margin: 0 auto;
+  margin-top: -7px;
+}
+.booking-engine-header #desktop-menu-bar {
+  background: none;
+}
+.booking-engine-header #desktop-header-contact-us {
+  text-align: right;
+  color: #ffffff;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-right: 30px;
+}
+.booking-engine-header #desktop-header-contact-us a {
+  color: #ffffff;
+  position: relative;
+}
+.booking-engine-header #desktop-header-contact-us a:after {
+  content: "";
+  border-bottom: 1px solid #fcf8f7;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
 }
 #mobile-header-spacer {
   height: 63px;
@@ -15960,4 +16006,421 @@ body.review-page-filter-mobile-open-version #page-reviews-intro-section-mobile {
 }
 body.review-page-filter-mobile-open-version #page-reviews-content {
   display: none !important;
+}
+#booking-engine-form h3 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+}
+#booking-engine-form h5 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+#booking-engine-step-0-header {
+  background: #929090;
+  text-align: center;
+  padding: 30px 0 25px 0;
+}
+#booking-engine-step-0-header h3,
+#booking-engine-step-0-header h5 {
+  color: #ffffff;
+}
+#booking-engine-step-0-content {
+  margin-top: 80px;
+  margin-bottom: 170px;
+}
+#booking-engine-step-0-content .booking-engine-booking-form {
+  text-align: center;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form {
+  position: relative;
+  padding: 27px 30px 26px 30px;
+  margin-right: 30px;
+  width: 306px;
+  background: #fcf8f7;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-shadow: 2px 2px 7px #e5e5e5;
+  box-shadow: 2px 2px 7px #e5e5e5;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box {
+  margin-bottom: 15px;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box label {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #555;
+  display: block;
+  padding-bottom: 10px;
+  text-align: left;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .input-box-disclaimer {
+  position: relative;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .input-box-disclaimer p {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #747474;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .dropdown {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .dropdown select {
+  background-color: transparent;
+  background-image: none!important;
+  border: none;
+  outline: none;
+  border: 1px solid #cccccc;
+  height: 30px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 15px;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .dropdown select::-ms-expand {
+  display: none;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .dropdown:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f107";
+  font-size: 20px;
+  line-height: 41px;
+  text-align: center;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  color: #767676;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box input[type=text] {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .date-input {
+  position: relative;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .date-input:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f073";
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  color: #7d0052;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  pointer-events: none;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .input-box-col-1,
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .input-box-col-2 {
+  display: inline-block;
+}
+#booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box .check-availability {
+  width: 100%;
+  height: 35px;
+  color: #ffffff;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 17px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: none;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar {
+  width: 285px;
+  display: inline-block;
+  vertical-align: top;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker {
+  display: block!important;
+  position: static!important;
+  border: none;
+  border-radius: 0px;
+  height: 388px;
+  background-color: #fcf8f7;
+  padding: 9px;
+  width: 100%;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker:after,
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker:before {
+  display: none;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .daterangepicker_input {
+  display: none;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar {
+  margin-top: -4px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar .calendar-table {
+  background-color: #fcf8f7;
+  padding-bottom: 0px;
+  padding-right: 4px!important;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar.right {
+  display: none;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar th {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar th.month {
+  text-transform: none;
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #747474;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar th.available:hover {
+  background: none!important;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar th #hover-day {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 40px;
+  color: #555555;
+  margin-top: -4px;
+  margin-bottom: -7px;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar th #hover-weekname {
+  color: #555;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding-bottom: 6px;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar td {
+  border-radius: 0px!important;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar td.active {
+  background-color: #7d0052;
+  color: #ffffff !important;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar td.active:hover {
+  background-color: #7d0052;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar td.disabled {
+  background-color: #b9b9b9;
+  text-decoration: none!important;
+  color: #ffffff !important;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar td.in-range {
+  background-color: #7d0052;
+  color: #ffffff !important;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar td.off {
+  color: #b9b9b9;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar td.available:hover {
+  color: #ffffff;
+  background-color: #4a0031;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar tbody tr {
+  border-bottom: 5px solid #fcf8f7;
+}
+#booking-engine-step-0-content .booking-engine-booking-form #booking-calendar .daterangepicker .calendar tbody tr:last-child {
+  border-bottom: 0px;
+}
+#booking-engine-steps {
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 7px #e5e5e5;
+  box-shadow: 2px 2px 7px #e5e5e5;
+}
+#booking-engine-steps .col-md-3:first-child .active-step:before {
+  width: calc(100% + 80px);
+  left: -100px;
+}
+#booking-engine-steps .col-md-3:nth-of-type(2) .active-step:before {
+  width: calc(100% + 35px);
+  left: -35px;
+}
+#booking-engine-steps .col-md-3:last-child .active-step:before {
+  width: calc(100% + 140px);
+  left: -40px;
+}
+#booking-engine-steps .step {
+  display: block;
+  height: 113px;
+  padding-top: 28px;
+}
+#booking-engine-steps .active-step {
+  position: relative;
+}
+#booking-engine-steps .active-step:before {
+  content: "";
+  background: #929090;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -20px;
+  top: 0px;
+  z-index: 1;
+}
+#booking-engine-steps .active-step a {
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+#booking-engine-steps .active-step a h5,
+#booking-engine-steps .active-step a h3 {
+  color: #ffffff;
+}
+#booking-engine-steps h3 {
+  font-size: 19px;
+}
+#booking-engine-steps h5 {
+  font-size: 12px;
+}
+#booking-engine-steps h5 {
+  color: #b1a5a0;
+}
+#booking-engine-step-1 #booking-engine-step-1-header {
+  padding: 30px 0;
+  background: #fcf8f7;
+}
+#booking-engine-step-1 #booking-engine-step-1-header .form-group {
+  margin-bottom: 0px;
+}
+#booking-engine-step-1 #booking-engine-step-1-header label {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+#booking-engine-step-1 #booking-engine-step-1-header label span {
+  font-size: 12px;
+  color: #929090;
+}
+#booking-engine-step-1 #booking-engine-step-1-header #promotion_code {
+  width: 220px;
+}
+#booking-engine-step-1 #booking-engine-step-1-header #arrival_departure {
+  width: 240px;
+}
+#booking-engine-step-1 #booking-engine-step-1-header .date-input {
+  position: relative;
+}
+#booking-engine-step-1 #booking-engine-step-1-header .date-input:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f073";
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  color: #7d0052;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  cursor: pointer;
+  pointer-events: none;
+}
+#booking-engine-step-1 #booking-engine-step-1-header .manic-dropdown {
+  width: 140px;
+}
+#booking-engine-step-1 #booking-engine-step-1-header .cta-container {
+  padding-top: 25px;
+}
+#booking-engine-step-1 #booking-engine-step-1-header .cta-container button {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-result-room-box {
+  -webkit-box-shadow: 2px 2px 7px #e5e5e5;
+  box-shadow: 2px 2px 7px #e5e5e5;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-result-room-box .booking-result-room-content-image .manic-image-container {
+  width: 340px;
+  height: 270px;
+  display: block;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-result-room-box .booking-result-room-title-and-price {
+  clear: both;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-result-room-box .booking-result-room-title-and-price .booking-result-room-title {
+  float: left;
+  display: table;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-result-room-box .booking-result-room-title-and-price .booking-result-room-price {
+  float: right;
+  display: table;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-result-room-box .booking-result-room-title-and-price:after {
+  content: "";
+  clear: both;
 }

@@ -1181,7 +1181,7 @@ sagewest.page.Default.prototype.common_menu = function() {
     var date = new Date();
         formatted_current_date = ("0" + (date.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + date.getDate().toString()).substr(-2)  + "/" + (date.getFullYear().toString());        
 
-        // console.log(formatted_current_date);
+        // console.log(formatted_current_date);    
 
     $('#sidebar-date-picker').daterangepicker({
         "autoApply": true,
@@ -1215,6 +1215,41 @@ sagewest.page.Default.prototype.common_menu = function() {
             ]
         }
     });
+
+    $('#booking-engine-date-picker').daterangepicker({
+        "autoApply": true,
+        "opens": "right",
+        "parentEl": "#booking-calendar",
+        "minDate": formatted_current_date,
+        "alwaysShowCalendars": true,
+        "locale": {
+            "separator": " to ",
+            "daysOfWeek": [
+                "S",
+                "M",
+                "T",
+                "W",
+                "T",
+                "F",
+                "S"
+            ],
+            "monthNames": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ]
+        }
+    });
+    $('#booking-engine-date-picker').trigger("click");
 
     /*
     $('#sidebar-date-picker').click(function(event){
