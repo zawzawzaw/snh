@@ -23,7 +23,8 @@ body.events-page {
   h5 {
     .lato-regular;
     font-size: 26px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+    padding-bottom: 25px;
     line-height: 18px;
     @media all and (max-width: 991px) {
       line-height: 28px;
@@ -44,17 +45,51 @@ body.events-page {
     .cta-container {      
       padding-top: 45px;
     }
-    .default-copy-special-description {
-      background-color: @off-white-2;
-      padding: 20px 30px;
-      .box-shadow (-1px 1px 10px #d2cfcf);
-      h4 {
-        .open-sans-semi-bold;
-        font-size: 15px;
-        line-height: 24px;
-        text-transform: none;
-        color: #7d7d7d;
+  }
+
+  .download-cta-container{
+    .download-cta{
+      margin-bottom: 4px;
+      &:last-child{
+        margin-bottom: 4px;
       }
     }
+
+  }
+
+  .default-copy-special-description {
+    background-color: @off-white-2;
+
+    // padding: 20px 30px;
+    padding-top: 27px;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .box-shadow (-1px 1px 10px #d2cfcf);
+
+    h6 {
+      font-size: 14px;
+      margin-bottom: 11px;
+    }
+
+    h4 {
+      .open-sans-semi-bold;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-transform: none;
+      color: #7d7d7d;
+    }
+
+    h4 + ul{
+      padding-top: 6px;
+    }
+    ul + p {
+      padding-top: 24px
+    }
+
+
+
   }
 }

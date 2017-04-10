@@ -739,6 +739,31 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
         this.update_page_layout();
       }.bind(this));
 
+      item.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log('before change');
+        // console.log(event, slick, currentSlide, nextSlide);
+        this.current_index = nextSlide;
+        // this.current_slide = slick.$slider.find('.slick-slide:nth-child('+ (this.current_index) +')');
+        this.current_slide = slick.$slider.find('.slick-slide[data-slick-index='+ (this.current_index) +']');
+
+        // currentSlide = $('.your-element').slick('slickCurrentSlide');
+
+        // console.log('this.current_slide');
+        // console.log(this.current_slide);
+          
+        var caption = this.current_slide.attr('data-caption');
+
+        if (goog.isDefAndNotNull(caption)) {
+          slick.$slider.attr('data-caption-text', caption);
+        }
+      }.bind(this));
+
+
+      // initial caption
+      var caption = item.find('.manic-image-container').attr('data-caption');
+      item.attr('data-caption-text', caption);
+
+
       carousel = item.slick({
         'speed': 350,
         'dots': true,
@@ -751,10 +776,79 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
         'autoplaySpeed': 4000
       });
 
+
+      
+      
+
+
     } // end for
 
   } // end if
   
+
+
+  if ($('.detail-list-item-slider-mobile').length != 0) {
+    var arr = $('.detail-list-item-slider-mobile');
+    var item = null;
+    var carousel = null;
+
+    for (var i = 0, l=arr.length; i < l; i++) {
+      item = $(arr[i]);
+
+
+
+      item.on('init', function(event, slick){
+        this.create_image_container();
+      }.bind(this));
+
+      item.on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+        this.update_page_layout();
+      }.bind(this));
+
+      item.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log('before change');
+        // console.log(event, slick, currentSlide, nextSlide);
+        this.current_index = nextSlide;
+        // this.current_slide = slick.$slider.find('.slick-slide:nth-child('+ (this.current_index) +')');
+        this.current_slide = slick.$slider.find('.slick-slide[data-slick-index='+ (this.current_index) +']');
+
+        // currentSlide = $('.your-element').slick('slickCurrentSlide');
+
+        // console.log('this.current_slide');
+        // console.log(this.current_slide);
+          
+        var caption = this.current_slide.attr('data-caption');
+
+        if (goog.isDefAndNotNull(caption)) {
+          slick.$slider.attr('data-caption-text', caption);
+        }
+      }.bind(this));
+
+
+      // initial caption
+      var caption = item.find('.manic-image-container').attr('data-caption');
+      item.attr('data-caption-text', caption);
+
+
+      carousel = item.slick({
+        'speed': 350,
+        'dots': true,
+        'arrows': false,
+        'infinite': true,
+        'slidesToShow': 1,
+        'slidesToScroll': 1,
+        'pauseOnHover': true,
+        'autoplay': true,
+        'autoplaySpeed': 4000
+      });
+
+
+      
+      
+
+
+    } // end for
+  } // end if
   
 };
 
