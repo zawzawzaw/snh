@@ -130,9 +130,25 @@
                       </div>                      
                     </div>
 
+                    <!-- 
                     <div class="cta-container">
                       <a href="mailto:SAMPLE@EMAIL.COM" class="square-cta">Contact us</a>
-                    </div>                  
+                    </div>
+                    -->
+
+                    <div class="space40"></div>
+                    
+                    <div class="detail-page-contact-info-version-2">
+                      <h5>Contact Information</h5>
+
+                      <div class="detail-page-contact-info-version-2-item last-version">
+                        <h4>F&B, Meetings, Events</h4>
+                        <p>Phone: 08-94780899 <br>Email: <a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                      </div>
+
+                    </div> <!-- detail-page-contact-info -->
+
+
                   </div>
                 </div>
               </div>
@@ -179,9 +195,24 @@
                       </div>
                     </div>
 
+                    <!-- 
                     <div class="cta-container">
                       <a href="mailto:SAMPLE@EMAIL.COM" class="square-cta">Contact us</a>
-                    </div> 
+                    </div>
+                    -->
+
+                    <div class="space40"></div>
+                    
+                    <div class="detail-page-contact-info-version-2">
+                      <h5>Contact Information</h5>
+
+                      <div class="detail-page-contact-info-version-2-item last-version">
+                        <h4>F&B, Meetings, Events</h4>
+                        <p>Phone: 08-94780899 <br>Email: <a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                      </div>
+
+                    </div> <!-- detail-page-contact-info -->
+
                   </div>
                 </div>
               </div>
@@ -222,6 +253,18 @@
 
     <div class="scroll-target" data-value="roof-top"></div>
     <div class="detail-list-item-mobile first-version">
+
+      <div class="detail-list-item-title-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <h2>Rooftop Yoga & Dance Party</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
           <img src=""
@@ -236,10 +279,6 @@
           <div class="row">
             <div class="col-sm-1 col-xs-0"></div>
             <div class="col-sm-10 col-xs-12">
-
-              <div class="detail-list-item-title-mobile">
-                Rooftop Yoga & Dance Party
-              </div>
 
               <div class="default-copy">
                 <p>As daylight fades across the city, we gather on a rooftop oasis; summer’s energy at its peak, city lights glowing, blissful beats pulsing, community spirit flowing.</p>
@@ -298,11 +337,49 @@
           </div>
         </div> <!-- manic-expand-container -->
 
+
+        <div class="manic-expand-container" data-group="mobile-activities-landing">
+          <div class="scroll-target" data-value="mobile-activities-02"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>Contact Information</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="detail-page-contact-info-version-2">
+                    <div class="detail-page-contact-info-version-2-item last-version">
+                      <h4>F&B, Meetings, Events</h4>
+                      <p>08-94780899 <br><a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
       </div> <!-- detail-list-item-expanding-container -->
 
+      <!-- 
       <div class="detail-list-item-cta-container-mobile">
         <a href="javascript:void(0);" class="square-cta">Contact us</a>
       </div>
+      -->
 
     </div> <!-- detail-list-item-mobile -->
 
@@ -323,6 +400,18 @@
 
     <div class="scroll-target" data-value="flow"></div>
     <div class="detail-list-item-mobile last-version">
+
+      <div class="detail-list-item-title-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <h2>Flow & Frolic</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
           <img src=""
@@ -338,10 +427,6 @@
             <div class="col-sm-1 col-xs-0"></div>
             <div class="col-sm-10 col-xs-12">
 
-              <div class="detail-list-item-title-mobile">
-                Flow & Frolic
-              </div>
-
               <div class="default-copy">
                 <p>Flow in a 60 minute class led by Julie Smerdon with soul-stirring tracks laid down by Andy Dub. Enjoy a post class frolic on the dance floor after class, or just hang around for a drink or a nibble.</p>
               </div> <!-- default-copy -->
@@ -355,7 +440,7 @@
       <div class="detail-list-item-expanding-container">
 
         <div class="manic-expand-container" data-group="mobile-activities-landing">
-          <div class="scroll-target" data-value="mobile-activities-02"></div>
+          <div class="scroll-target" data-value="mobile-activities-03"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">
@@ -392,7 +477,7 @@
         </div> <!-- manic-expand-container -->
 
         <div class="manic-expand-container" data-group="mobile-activities-landing">
-          <div class="scroll-target" data-value="mobile-activities-03"></div>
+          <div class="scroll-target" data-value="mobile-activities-04"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">
@@ -436,11 +521,48 @@
           </div>
         </div> <!-- manic-expand-container -->
 
+        <div class="manic-expand-container" data-group="mobile-activities-landing">
+          <div class="scroll-target" data-value="mobile-activities-01"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>Contact Information</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="detail-page-contact-info-version-2">
+                    <div class="detail-page-contact-info-version-2-item last-version">
+                      <h4>F&B, Meetings, Events</h4>
+                      <p>08-94780899 <br><a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
       </div> <!-- detail-list-item-expanding-container -->
 
+      <!-- 
       <div class="detail-list-item-cta-container-mobile">
         <a href="javascript:void(0);" class="square-cta">Contact us</a>
       </div>
+      -->
 
     </div> <!-- detail-list-item-mobile -->
 

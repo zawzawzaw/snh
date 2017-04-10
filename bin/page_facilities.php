@@ -128,7 +128,22 @@
                         <h6>Operating hours</h6>
                         <p>24 hours</p>
                       </div>
-                    </div>                  
+                    </div>
+
+                    <div class="space40"></div>
+
+                    <div class="detail-page-contact-info-version-2">
+                      <h5>Contact Information</h5>
+
+                      <div class="detail-page-contact-info-version-2-item last-version">
+                        <h4>F&B, Meetings, Events</h4>
+                        <p>Phone: 08-94780899 <br>Email: <a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                      </div>
+
+                    </div> <!-- detail-page-contact-info -->
+
+
+
                   </div>
                 </div>
               </div>
@@ -161,6 +176,20 @@
                         <p>24 hours</p>
                       </div>
                     </div>
+
+
+                    <div class="space40"></div>
+                    
+                    <div class="detail-page-contact-info-version-2">
+                      <h5>Contact Information</h5>
+
+                      <div class="detail-page-contact-info-version-2-item last-version">
+                        <h4>F&B, Meetings, Events</h4>
+                        <p>Phone: 08-94780899 <br>Email: <a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                      </div>
+
+                    </div> <!-- detail-page-contact-info -->
+
                   </div>
                 </div>
               </div>
@@ -197,71 +226,26 @@
                       <a href="javascript:void(0);" class="download-cta">Download spa menu</a>
                     </div>
 
-                    <div class="more-details visible-xs visible-sm">
-                      <div class="manic-expand-container" data-group="mobile-facilities-page-spa">
-                        <div class="scroll-target" data-value="spa-title-01"></div>
-                        <div class="manic-expand-container-title">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
 
-                                <h4>more Details</h4>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="manic-expand-container-btn"></div>
-                        <div class="manic-expand-container-content">
-
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <ul>
-                                  <li>3 Treatment rooms, 2 steam rooms</li> 
-                                  <li>Signature Treament: Laotian Herbal Steam</li>
-                                  <li>Free Pick-up and Drop-off in Luang Prabang</li>
-                                </ul>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="manic-expand-container" data-group="mobile-facilities-page-spa">
-                        <div class="scroll-target" data-value="spa-title-02"></div>
-                        <div class="manic-expand-container-title">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <h4>Downloads</h4>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="manic-expand-container-btn"></div>
-                        <div class="manic-expand-container-content">
-
-                          <div class="container-fluid">
-                            <div class="row">
-                              <div class="col-xs-12">
-
-                                <a href="javascript:void(0);" class="download-cta">Download spa menu</a>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
+                    <!--
                     <div class="cta-container">
                       <a href="javascript:void(0);" class="square-cta">Contact us</a>
                     </div>                    
+                     -->
+
+                    <div class="space40"></div>
+                    
+                    <div class="detail-page-contact-info-version-2">
+                      <h5>Contact Information</h5>
+
+                      <div class="detail-page-contact-info-version-2-item last-version">
+                        <h4>F&B, Meetings, Events</h4>
+                        <p>Phone: 08-94780899 <br>Email: <a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                      </div>
+
+                    </div> <!-- detail-page-contact-info -->
+
+
                   </div>
                 </div>
               </div>
@@ -303,6 +287,18 @@
 
     <div class="scroll-target" data-value="lounge"></div>
     <div class="detail-list-item-mobile first-version">
+
+      <div class="detail-list-item-title-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <h2>Lounge</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
           <img src=""
@@ -317,10 +313,6 @@
           <div class="row">
             <div class="col-sm-1 col-xs-0"></div>
             <div class="col-sm-10 col-xs-12">
-
-              <div class="detail-list-item-title-mobile">
-                Lounge
-              </div>
 
               <div class="default-copy">
                 <p class="minimize-read-more" data-length="145">A lounge on steroids, our NEXT Lounge offers boardroom meeting space, a pantry, a library and a  fully equipped gym for you to pump those pecs before strolling over to the Pool bar to show them off. And did we mention free tea and coffee?</p>
@@ -406,6 +398,41 @@
           </div>
         </div> <!-- manic-expand-container -->
 
+        <div class="manic-expand-container" data-group="mobile-facilities-landing">
+          <div class="scroll-target" data-value="mobile-facilities-03"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>Contact Information</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="detail-page-contact-info-version-2">
+                    <div class="detail-page-contact-info-version-2-item last-version">
+                      <h4>F&B, Meetings, Events</h4>
+                      <p>08-94780899 <br><a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
       </div> <!-- detail-list-item-expanding-container -->
 
     </div> <!-- detail-list-item-mobile -->
@@ -421,6 +448,18 @@
 
     <div class="scroll-target" data-value="gym"></div>
     <div class="detail-list-item-mobile">
+
+      <div class="detail-list-item-title-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <h2>Gym</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
           <img src=""
@@ -436,10 +475,6 @@
             <div class="col-sm-1 col-xs-0"></div>
             <div class="col-sm-10 col-xs-12">
 
-              <div class="detail-list-item-title-mobile">
-                Gym
-              </div>
-
               <div class="default-copy">
                 <p>Check out doesn’t mean kick out. Check in and out times don’t always fit your travel plans. Refresh before your work day starts at no extra charge.</p>
               </div> <!-- default-copy -->
@@ -453,7 +488,7 @@
       <div class="detail-list-item-expanding-container">
 
         <div class="manic-expand-container" data-group="mobile-facilities-landing">
-          <div class="scroll-target" data-value="mobile-facilities-03"></div>
+          <div class="scroll-target" data-value="mobile-facilities-04"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">
@@ -484,6 +519,41 @@
           </div>
         </div> <!-- manic-expand-container -->
 
+        <div class="manic-expand-container" data-group="mobile-facilities-landing">
+          <div class="scroll-target" data-value="mobile-facilities-05"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>Contact Information</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="detail-page-contact-info-version-2">
+                    <div class="detail-page-contact-info-version-2-item last-version">
+                      <h4>F&B, Meetings, Events</h4>
+                      <p>08-94780899 <br><a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
       </div> <!-- detail-list-item-expanding-container -->
 
     </div> <!-- detail-list-item-mobile -->
@@ -500,6 +570,18 @@
 
     <div class="scroll-target" data-value="spa"></div>
     <div class="detail-list-item-mobile last-version">
+
+      <div class="detail-list-item-title-mobile">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1 col-xs-0"></div>
+            <div class="col-sm-10 col-xs-12">
+              <h2>Spa</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="detail-list-item-image-mobile">
         <div class="manic-image-container">
           <img src=""
@@ -515,10 +597,6 @@
             <div class="col-sm-1 col-xs-0"></div>
             <div class="col-sm-10 col-xs-12">
 
-              <div class="detail-list-item-title-mobile">
-                Spa
-              </div>
-
               <div class="default-copy">
                 <p class="minimize-read-more" data-length="145">The SPA at Kiridara is a boutique spa, tucked amidst dense teak forests. Serene and blissful, the aroma of essential oils and the breezy surrounds of the teak forest truly make the small and petite Kiridara Spa a unique place that demands undivided attention.</p>
               </div> <!-- default-copy -->
@@ -532,7 +610,7 @@
       <div class="detail-list-item-expanding-container">
 
         <div class="manic-expand-container" data-group="mobile-facilities-landing">
-          <div class="scroll-target" data-value="mobile-facilities-04"></div>
+          <div class="scroll-target" data-value="mobile-facilities-06"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">
@@ -568,7 +646,7 @@
         </div> <!-- manic-expand-container -->
 
         <div class="manic-expand-container" data-group="mobile-facilities-landing">
-          <div class="scroll-target" data-value="mobile-facilities-05"></div>
+          <div class="scroll-target" data-value="mobile-facilities-07"></div>
           <div class="manic-expand-container-title">
             <div class="container-fluid">
               <div class="row">
@@ -590,7 +668,42 @@
                 <div class="col-sm-10 col-xs-12">
 
                   <div class="default-copy">
-                    <a href="javascript:void(0);" class="download-cta">Download spa menu</a>
+                    <a href="javascript:void(0);" class="download-cta">spa menu</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- manic-expand-container -->
+
+        <div class="manic-expand-container" data-group="mobile-facilities-landing">
+          <div class="scroll-target" data-value="mobile-facilities-08"></div>
+          <div class="manic-expand-container-title">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <h4>Contact Information</h4>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-10 col-xs-12">
+
+                  <div class="detail-page-contact-info-version-2">
+                    <div class="detail-page-contact-info-version-2-item last-version">
+                      <h4>F&B, Meetings, Events</h4>
+                      <p>08-94780899 <br><a href="mailto:firehouse.intercityperth@snhgroup.com">firehouse.intercityperth@snhgroup.com</a></p>
+                    </div>
                   </div>
 
                 </div>
@@ -601,9 +714,12 @@
 
       </div> <!-- detail-list-item-expanding-container -->
 
+
+      <!-- 
       <div class="detail-list-item-cta-container-mobile">
         <a href="javascript:void(0);" class="square-cta">Contact us</a>
       </div>
+      -->
 
     </div> <!-- detail-list-item-mobile -->
 
