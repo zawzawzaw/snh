@@ -179,3 +179,67 @@
     margin-bottom: -20px;
   }
 }
+
+
+//////// OVERRIDE FOR COLORS 
+
+
+
+
+@kafnu-grey: #606468;
+
+
+.square-cta{
+  &:focus,
+  &:hover{
+    background-color: @violet;
+    color: @kafnu-grey;
+  }
+
+  &.highlight-version{
+    color: @kafnu-grey;
+    &:focus,
+    &:hover{
+      background-color: @dark-violet;
+      color: @white;
+    }
+
+  }
+}
+
+
+
+
+.arrow-cta, .download-cta {
+  color: #747474;
+
+
+  
+  &:focus, 
+  &:hover{
+    color: @violet;
+  }
+}
+
+
+
+#book-now {
+  color: @kafnu-grey;
+  box-shadow: none!important;
+}
+body.permanent-scrolled,
+body.scrolled {
+  #book-now {
+    box-shadow: none!important;
+  }
+}
+.boxlist-item-tag{
+  color: @kafnu-grey;
+}
+
+
+#destination-indicator{
+  p{
+    color: @kafnu-grey;
+  }
+}
