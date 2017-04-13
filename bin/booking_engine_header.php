@@ -11,7 +11,7 @@
   
   <div class="container-fluid violet-bg">
     <div class="row">
-      <div class="col-md-2">
+      <!-- <div class="col-md-2">
         <div id="desktop-header-menu-logo-container">
           <div id="desktop-header-logo-container">
             <a href="#" id="desktop-menu-bar" class="open">
@@ -20,8 +20,8 @@
             </a>            
           </div>          
         </div>
-      </div>
-      <div class="col-md-8">
+      </div> -->
+      <div class="col-md-10">
         <a href="hotel.php" id="desktop-header-logo">
           <img src="images/logo/sage-west-logo.svg">            
         </a>

@@ -82,6 +82,16 @@ manic.ui.ExpandContainer = function(options, element) {
   if (this.element.hasClass('tablet-fixed-open-version')) {
     this.is_tablet_fixed_open_version = true;
   }
+
+  this.is_desktop_open_version = false;
+  if (this.element.hasClass('desktop-open-version')) {
+    this.is_desktop_open_version = true;
+  }
+
+  this.is_desktop_fixed_open_version = false;
+  if (this.element.hasClass('desktop-fixed-open-version')) {
+    this.is_desktop_fixed_open_version = true;
+  }
   
   this.is_mobile_open_version = false;
   if (this.element.hasClass('mobile-open-version')) {
@@ -114,7 +124,9 @@ manic.ui.ExpandContainer = function(options, element) {
     }
   }
 
-  
+  if (manic.IS_MOBILE == false && this.is_desktop_open_version == true) {
+    this.instant_expand();
+  }
 
   if (manic.IS_TABLET_PORTRAIT == true && this.is_tablet_open_version == true) {
     this.instant_expand();

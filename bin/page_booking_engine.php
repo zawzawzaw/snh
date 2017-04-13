@@ -1,7 +1,7 @@
 <div id="default-header-spacer"></div>
 
 <div id="booking-engine-form">         
-  <div id="booking-engine-step-0">
+  <div id="booking-engine-step-0" data-step="0" class="booking-steps active-step">
       <div id="booking-engine-step-0-header">
         <h3>Please select the dates to see the available rooms for your stay.</h3>
         <h5>date & number of guest</h5>
@@ -126,7 +126,7 @@
     </div>
   </div>
 
-  <div id="booking-engine-step-1">   
+  <div id="booking-engine-step-1" data-step="1" class="booking-steps">   
 
     <div id="booking-engine-step-1-header">      
       <div class="container-fluid">
@@ -151,6 +151,7 @@
                 <label for="adults">Adults</label>
                 <div class="manic-dropdown">
                   <select name="adults" id="adults">
+                    <option value="">Please Select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -170,6 +171,7 @@
                 <label for="children">Children <span>≤ 11 years old</span></label>
                 <div class="manic-dropdown">
                   <select name="children" id="children">
+                    <option value="">Please Select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -309,7 +311,7 @@
               </div>            
             </div><!-- end booking-room-content-info-->
 
-            <div class="booking-room-rates collapsable-content booking-room-rates">
+            <div class="booking-room-rates booking-room-rates">
 
               <div class="booking-room-rate">
 
@@ -318,7 +320,7 @@
                     <div class="col-md-12">
                       <div class="booking-room-rates-title">
                         <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
-                        <a href="#" class="more-details-cta collapsable-arrow-cta show-rate-cta">More details</a>
+                        <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                       </div>
                       <div class="price-and-cta-container">
                         <div class="col-md-6">
@@ -338,7 +340,7 @@
                   </div>
                 </div><!-- end booking-room-rate-content -->
 
-                <div class="booking-room-rate-more-content collapsable-content">
+                <div class="booking-room-rate-more-content">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="booking-room-rate-more-content-copy">
@@ -358,7 +360,7 @@
                         </div>
                         
                         <div class="col-md-12 cancellation-policies">
-                          <h5>Cancellation Policies</h5>  
+                          <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                           <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
                         </div>                    
                       </div>
@@ -375,7 +377,7 @@
                     <div class="col-md-12">
                       <div class="booking-room-rates-title">
                         <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
-                        <a href="#" class="more-details-cta collapsable-arrow-cta show-rate-cta">More details</a>
+                        <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                       </div>
                       <div class="price-and-cta-container">
                         <div class="col-md-6">
@@ -395,7 +397,7 @@
                   </div>
                 </div><!-- end booking-room-rate-content -->
 
-                <div class="booking-room-rate-more-content collapsable-content">
+                <div class="booking-room-rate-more-content">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="booking-room-rate-more-content-copy">
@@ -415,7 +417,7 @@
                         </div>
                         
                         <div class="col-md-12 cancellation-policies">
-                          <h5>Cancellation Policies</h5>  
+                          <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                           <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
                         </div>                    
                       </div>
@@ -473,7 +475,7 @@
               </div>            
             </div><!-- end booking-room-content-info-->
 
-            <div class="booking-room-rates collapsable-content booking-room-rates">
+            <div class="booking-room-rates booking-room-rates">
 
               <div class="booking-room-rate">
 
@@ -482,7 +484,7 @@
                     <div class="col-md-12">
                       <div class="booking-room-rates-title">
                         <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
-                        <a href="#" class="more-details-cta collapsable-arrow-cta show-rate-cta">More details</a>
+                        <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                       </div>
                       <div class="price-and-cta-container">
                         <div class="col-md-6">
@@ -502,7 +504,7 @@
                   </div>
                 </div><!-- end booking-room-rate-content -->
 
-                <div class="booking-room-rate-more-content collapsable-content">
+                <div class="booking-room-rate-more-content">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="booking-room-rate-more-content-copy">
@@ -522,7 +524,7 @@
                         </div>
                         
                         <div class="col-md-12 cancellation-policies">
-                          <h5>Cancellation Policies</h5>  
+                          <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                           <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
                         </div>                    
                       </div>
@@ -539,7 +541,7 @@
                     <div class="col-md-12">
                       <div class="booking-room-rates-title">
                         <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
-                        <a href="#" class="more-details-cta collapsable-arrow-cta show-rate-cta">More details</a>
+                        <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                       </div>
                       <div class="price-and-cta-container">
                         <div class="col-md-6">
@@ -559,7 +561,7 @@
                   </div>
                 </div><!-- end booking-room-rate-content -->
 
-                <div class="booking-room-rate-more-content collapsable-content">
+                <div class="booking-room-rate-more-content">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="booking-room-rate-more-content-copy">
@@ -579,7 +581,7 @@
                         </div>
                         
                         <div class="col-md-12 cancellation-policies">
-                          <h5>Cancellation Policies</h5>  
+                          <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                           <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
                         </div>                    
                       </div>
@@ -611,138 +613,140 @@
               </div>
             </div>
             
-            <div class="reservation-summary-expandable-content">
-              <div class="manic-expand-container">
-                <div class="scroll-target" data-value="title-01"></div>
-                <div class="manic-expand-container-title">                
-                  <h6>Room 1</h6>
-                </div>
-                <div class="manic-expand-container-btn"></div>
-                <div class="manic-expand-container-content">
-                  
-                  <div class="selected-room">
-                    <div class="selected-room-title">
-                      <h5>Standard Room</h5>
-                      <a href="#" class="delete-btn"><i class="fa fa-times"></i></a>
-                    </div>
-                    <div class="selected-room-content">
-                      <div class="selected-room-content-details">
-                        <p>7 days advance purchase</p>
-                        <p>2 Adults, 0 Children</p>
-                      </div>
-                      <div class="selected-room-content-price">
-                        <span class="price">$626.00</span>
-                      </div>
-                    </div>
+            <div class="reservation-summary-selected-rooms-container">
+<!--               <div class="reservation-summary-expandable-content selected-rooms">
+                <div class="manic-expand-container">
+                  <div class="scroll-target" data-value="title-01"></div>
+                  <div class="manic-expand-container-title">                
+                    <h6>Room 1</h6>
                   </div>
-                  <div class="selected-room-nightly-rates">
-                    <div class="selected-room-nightly-rates-title">
-                      <a href="#" class="collapsable-arrow-cta"><h6>Nightly Rates</h6></a>
-                    </div>
-                    <div class="selected-room-nightly-rates-content">
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Sun, 26 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$133.00</p>
-                        </div>
-                      </div>
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Mon, 27 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$142.00</p>
-                        </div>
-                      </div>
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Tue, 28 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$142.00</p>
-                        </div>
-                      </div>
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Wed, 29 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$209.00</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="manic-expand-container-btn"></div>
+                  <div class="manic-expand-container-content">
                     
+                    <div class="selected-room">
+                      <div class="selected-room-title">
+                        <h5>Standard Room</h5>
+                        <a href="#" class="delete-btn"><i class="fa fa-times"></i></a>
+                      </div>
+                      <div class="selected-room-content">
+                        <div class="selected-room-content-details">
+                          <p>7 days advance purchase</p>
+                          <p>2 Adults, 0 Children</p>
+                        </div>
+                        <div class="selected-room-content-price">
+                          <span class="price">$626.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="selected-room-nightly-rates">
+                      <div class="selected-room-nightly-rates-title">
+                        <a href="#" class="collapsable-arrow-cta"><h6>Nightly Rates</h6></a>
+                      </div>
+                      <div class="selected-room-nightly-rates-content">
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Sun, 26 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$133.00</p>
+                          </div>
+                        </div>
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Mon, 27 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$142.00</p>
+                          </div>
+                        </div>
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Tue, 28 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$142.00</p>
+                          </div>
+                        </div>
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Wed, 29 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$209.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="reservation-summary-expandable-content">
-              <div class="manic-expand-container">
-                <div class="scroll-target" data-value="title-01"></div>
-                <div class="manic-expand-container-title">
-                  <h6>Room 1</h6>                  
-                </div>
-                <div class="manic-expand-container-btn"></div>
-                <div class="manic-expand-container-content">
-                  <div class="selected-room">
-                    <div class="selected-room-title">
-                      <h5>Standard Room</h5>
-                      <a href="#" class="delete-btn"><i class="fa fa-times"></i></a>
-                    </div>
-                    <div class="selected-room-content">
-                      <div class="selected-room-content-details">
-                        <p>7 days advance purchase</p>
-                        <p>2 Adults, 0 Children</p>
+              <div class="reservation-summary-expandable-content selected-rooms">
+                <div class="manic-expand-container">
+                  <div class="scroll-target" data-value="title-01"></div>
+                  <div class="manic-expand-container-title">
+                    <h6>Room 1</h6>                  
+                  </div>
+                  <div class="manic-expand-container-btn"></div>
+                  <div class="manic-expand-container-content">
+                    <div class="selected-room">
+                      <div class="selected-room-title">
+                        <h5>Standard Room</h5>
+                        <a href="#" class="delete-btn"><i class="fa fa-times"></i></a>
                       </div>
-                      <div class="selected-room-content-price">
-                        <span class="price">$626.00</span>
+                      <div class="selected-room-content">
+                        <div class="selected-room-content-details">
+                          <p>7 days advance purchase</p>
+                          <p>2 Adults, 0 Children</p>
+                        </div>
+                        <div class="selected-room-content-price">
+                          <span class="price">$626.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="selected-room-nightly-rates">
+                      <div class="selected-room-nightly-rates-title">
+                        <a href="#" class="collapsable-arrow-cta"><h6>Nightly Rates</h6></a>
+                      </div>
+                      <div class="selected-room-nightly-rates-content">
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Sun, 26 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$133.00</p>
+                          </div>
+                        </div>
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Mon, 27 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$142.00</p>
+                          </div>
+                        </div>
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Tue, 28 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$142.00</p>
+                          </div>
+                        </div>
+                        <div class="selected-room-nightly-rate">
+                          <div class="selected-room-nightly-rate-content-date">
+                            <p>Wed, 29 Mar</p>
+                          </div>
+                          <div class="selected-room-nightly-rate-content-price">
+                            <p class="price">$209.00</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="selected-room-nightly-rates">
-                    <div class="selected-room-nightly-rates-title">
-                      <a href="#" class="collapsable-arrow-cta"><h6>Nightly Rates</h6></a>
-                    </div>
-                    <div class="selected-room-nightly-rates-content">
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Sun, 26 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$133.00</p>
-                        </div>
-                      </div>
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Mon, 27 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$142.00</p>
-                        </div>
-                      </div>
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Tue, 28 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$142.00</p>
-                        </div>
-                      </div>
-                      <div class="selected-room-nightly-rate">
-                        <div class="selected-room-nightly-rate-content-date">
-                          <p>Wed, 29 Mar</p>
-                        </div>
-                        <div class="selected-room-nightly-rate-content-price">
-                          <p class="price">$209.00</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div class="reservation-summary">
@@ -757,7 +761,7 @@
                 </div>
 
                 <div class="reservation-summary-content-selected-rooms">
-                  <div class="reservation-summary-content-selected-room">
+<!--                   <div class="reservation-summary-content-selected-room">
                     <div class="reservation-summary-content-selected-room-title">
                       <h5>Room 1</h5>
                       <p>Total Room Rates</p>
@@ -774,7 +778,7 @@
                     <div class="reservation-summary-content-selected-room-price">                    
                       <p>$816.00</p>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 
                 <div class="reservation-summary-content-totals">
@@ -783,15 +787,15 @@
                       <p>Total Charges</p>
                     </div>
                     <div class="reservation-summary-content-total-price">
-                      <p>$1442.00</p>
+                      <p>$0.00</p>
                     </div>
                   </div>
                   <div class="reservation-summary-content-total">
                     <div class="reservation-summary-content-total-title">
                       <p>Tax</p>
                     </div>
-                    <div class="reservation-summary-content-total-price">
-                      <p>$100.94</p>
+                    <div class="reservation-summary-content-total-tax">
+                      <p>$0.00</p>
                     </div>
                   </div>
                 </div>
@@ -801,7 +805,7 @@
                     <h6>Sub Total</h6>
                   </div>
                   <div class="reservation-summary-content-sub-total-price">
-                    <h6>$1542.94</h6>
+                    <h6>$0.00</h6>
                   </div>
                 </div>
 
@@ -864,6 +868,18 @@
           <p class="price">$133.00</p>
         </div>
       </div>
+    </div> 
+    <a href="#" class="back-arrow-cta back-to-search-btn">Back to see rooms</a>     
+  </div>
+</div>
+
+<div class="cancellation-popup-container">
+  <div class="cancellation-popup">
+    <div class="cancellation-popup-title">
+      <h5>7 days Advanced Purchase <span>Rate Breakdown</span></h5>
+    </div>
+    <div class="cancellation-popup-content">
+      <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
     </div> 
     <a href="#" class="back-arrow-cta back-to-search-btn">Back to see rooms</a>     
   </div>

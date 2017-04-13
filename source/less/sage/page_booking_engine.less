@@ -4,6 +4,7 @@
     .lato-bold;
     font-size: 21px;
     line-height: 27px;
+    letter-spacing: 0px;
   }
   h5 {
     .open-sans-semi-bold;
@@ -12,8 +13,11 @@
     text-transform: uppercase;
   }
 }
-#booking-engine-step-0 {
-  // display: none;
+.booking-steps {
+  display: none;
+  &.active-step {
+    display: block;
+  }
 }
 
 #booking-engine-step-0-header {
@@ -27,7 +31,7 @@
 
 #booking-engine-step-0-content {
   margin-top: 80px;
-  margin-bottom: 170px;
+  // margin-bottom: 80px;
 
   .booking-engine-booking-form {    
     text-align: center;
@@ -40,7 +44,7 @@
       display: inline-block;
       vertical-align: top;
 
-      .box-shadow (2px, 2px, 7px, #e5e5e5);
+      .box-shadow (0px, 2px, 7px, #e5e5e5);
 
       .input-box {
         margin-bottom: 15px;
@@ -126,7 +130,7 @@
           padding-left: 15px;        
         }
         .date-input {
-          position: relative;
+          position: relative;          
           &:after {
             .fa;
             content: "\f073";
@@ -296,8 +300,12 @@
 }
 
 #booking-engine-steps {
+  display: none;
+  &.active {
+    display: block;
+  }
   background: @white;
-  .box-shadow (2px, 2px, 7px, #e5e5e5);
+  .box-shadow (0px, 2px, 7px, #e5e5e5);
   .col-md-3 {
     &:first-child {
       .active-step {
@@ -386,6 +394,7 @@
     }
     .date-input {
       position: relative;
+      width: 240px;
       &:after {
         .fa;
         content: "\f073";
@@ -394,7 +403,7 @@
         color: @violet;        
         position: absolute;
         top: 5px;
-        right: 25px;
+        right: 15px;
         cursor: pointer;
         pointer-events: none;
       }
@@ -425,6 +434,8 @@
       }
     }
     .booking-no-room {
+
+      display: none;//hide
 
       margin-bottom: 50px;
 
@@ -513,6 +524,9 @@
       background: @grey-6;
       padding: 50px 60px;
       margin-bottom: 30px;
+      
+      display: none; //hide
+
       h1 {
         font-size: 26px;
         line-height: 35px;
@@ -528,7 +542,7 @@
       padding-top: 15px;
       margin-bottom: 15px;
       // padding-bottom: 15px;
-      .box-shadow (2px, 2px, 7px, #e5e5e5); 
+      .box-shadow (0px, 2px, 7px, #e5e5e5); 
     }
     
     .booking-room-content-info {      
@@ -604,8 +618,16 @@
           .lato-bold;
           font-size: 20px;
           line-height: 23px;
+          letter-spacing: 0px;
           color: @grey;
           text-transform: none;
+        }
+        .show-rate-detail-cta {
+          &.expanded-version {
+            &:after {
+              content: "\f106"!important;
+            }  
+          }          
         }
       }
 
@@ -616,7 +638,7 @@
         padding-left: 0px;
         padding-right: 0px;
         position: absolute;
-        left: 0px;
+        right: 0px;
       }
 
       .price-and-cta-container {
@@ -634,7 +656,7 @@
     .booking-room-rate-more-content {
       display: none;
       position: relative;
-      padding-bottom: 60px;
+      padding-bottom: 100px;
     }
     
     .booking-room-rate-more-content-copy {
@@ -679,15 +701,31 @@
       }
 
       .cancellation-policies {
+        &:before {
+          content: "";
+          border-top: 1px solid rgba(116, 116, 116, 0.4);
+          position: absolute;
+          top: -20px;
+          left: 0px;
+          width: 100%;
+          display: block;
+        }
         margin-top: 60px;
         padding-top: 30px;
-        display: block;
-        border-top: 1px solid rgba(116, 116, 116, 0.4);
+        display: block;        
+        background: @grey-6;
+        padding: 20px;
+
         h5 {
           .open-sans-semi-bold;
           font-size: 14px;
-          line-height: 24px;
+          line-height: 17px;
+          padding-bottom: 10px;
           text-transform: none;
+          span {
+            color: @violet;
+            display: block;
+          }
         }
       }
 
@@ -701,7 +739,7 @@
     //
 
     .reservation-summary-sidebar {
-      .box-shadow (2px, 2px, 7px, #e5e5e5); 
+      .box-shadow (0px, 2px, 7px, #e5e5e5); 
 
       h5 {
         .open-sans-bold;
@@ -775,6 +813,7 @@
                 font-size: 15px;
                 line-height: 24px;
                 text-transform: none;
+                color: @violet;
               }
               .delete-btn {
                 position: absolute;
@@ -786,6 +825,12 @@
               position: relative;
               .selected-room-content-details {
                 width: 70%;
+                h5 {
+                  .lato-bold;
+                  font-size: 15px;
+                  line-height: 20px;
+                  text-transform: none;
+                }
               }
               .selected-room-content-price {
                 position: absolute;
@@ -794,19 +839,12 @@
               }
             }
           }
-          .selected-room-nightly-rates {
+          .selected-room-nightly-rates, .selected-room-cancellation-policies {
             padding-top: 10px;
-            padding-left: 10px;
-            .collapsable-arrow-cta {
-              position: relative;
-              display: inline-block;
-              &:after {
-                position: absolute;
-                top: -3px;
-                right: -15px;
-                color: @grey;
-              }
-            }
+            padding-left: 10px;     
+            h6 {
+              color: @dark-violet;
+            }       
           }
           .selected-room-nightly-rate {
             position: relative;
@@ -862,15 +900,15 @@
         }
 
         .reservation-summary-content-selected-rooms {
-          padding-top: 20px;          
-          &:after {
-            content: "";
-            display: block;
-            border-bottom: 1px solid rgba(85, 85, 85, 0.5);
-            padding-top: 15px;
-            margin-left: -10px;
-            margin-right: -10px;
-          }
+          // padding-top: 20px;          
+          // &:after {
+          //   content: "";
+          //   display: block;
+          //   border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+          //   padding-top: 15px;
+          //   margin-left: -10px;
+          //   margin-right: -10px;
+          // }
 
           h5 {
             font-size: 11px;
@@ -881,12 +919,21 @@
         .reservation-summary-content-selected-room {
           position: relative;
           margin-bottom: 20px;
+          margin-top: 17px;
           &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: 0px;      
+            &:after {
+              content: "";
+              display: block;
+              border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+              padding-top: 15px;
+              margin-left: -10px;
+              margin-right: -10px;
+            }
           }
           .reservation-summary-content-selected-room-price {
             position: absolute;
-            bottom: 0px;
+            top: 0px;
             right: 0px;
           }
         }
@@ -905,7 +952,7 @@
         .reservation-summary-content-total {
           position: relative;
         }
-        .reservation-summary-content-total-price {
+        .reservation-summary-content-total-price, .reservation-summary-content-total-tax {
           position: absolute;
           bottom: 0px;
           right: 0px;
@@ -958,7 +1005,7 @@
 // /_/    \____/_/    \____/_/
 
 /* The Modal (background) */
-.rates-breakdown-popup-container {
+.rates-breakdown-popup-container, .cancellation-popup-container {
     visibility: hidden;
     .opacity(0);
     &.show {
@@ -977,12 +1024,12 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.rates-breakdown-popup {
+.rates-breakdown-popup, .cancellation-popup {
   width: 360px;
   background: @white;
   padding: 30px;
   margin: 15% auto; /* 15% from the top and centered */
-  .rates-breakdown-popup-title {
+  .rates-breakdown-popup-title, .cancellation-popup-title {
     position: relative;
     margin-bottom: 20px;
     &:after {
@@ -1013,7 +1060,12 @@
       }        
     }
   }
-  .rates-breakdown-popup-content {
+  .cancellation-popup-title {
+    h5 {
+      width: 100%;
+    }
+  }
+  .rates-breakdown-popup-content, .cancellation-popup-content {
     padding-top: 20px;
     .rates-breakdown-popup-rate {
       position: relative;

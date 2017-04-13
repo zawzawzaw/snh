@@ -5674,7 +5674,7 @@ body.hotel #desktop-header-nav ul li {
   width: 100%;
 }
 .booking-engine-header #desktop-header-logo img {
-  margin: 0 auto;
+  margin-left: 10px;
   margin-top: -7px;
 }
 .booking-engine-header #desktop-menu-bar {
@@ -16216,6 +16216,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   font-weight: 600;
   font-size: 21px;
   line-height: 27px;
+  letter-spacing: 0px;
 }
 #booking-engine-form h5 {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -16224,6 +16225,12 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+.booking-steps {
+  display: none;
+}
+.booking-steps.active-step {
+  display: block;
 }
 #booking-engine-step-0-header {
   background: #929090;
@@ -16236,7 +16243,6 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
 }
 #booking-engine-step-0-content {
   margin-top: 80px;
-  margin-bottom: 170px;
 }
 #booking-engine-step-0-content .booking-engine-booking-form {
   text-align: center;
@@ -16249,8 +16255,8 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   background: #fcf8f7;
   display: inline-block;
   vertical-align: top;
-  -webkit-box-shadow: 2px 2px 7px #e5e5e5;
-  box-shadow: 2px 2px 7px #e5e5e5;
+  -webkit-box-shadow: 0px 2px 7px #e5e5e5;
+  box-shadow: 0px 2px 7px #e5e5e5;
 }
 #booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box {
   margin-bottom: 15px;
@@ -16499,9 +16505,13 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   border-bottom: 0px;
 }
 #booking-engine-steps {
+  display: none;
   background: #ffffff;
-  -webkit-box-shadow: 2px 2px 7px #e5e5e5;
-  box-shadow: 2px 2px 7px #e5e5e5;
+  -webkit-box-shadow: 0px 2px 7px #e5e5e5;
+  box-shadow: 0px 2px 7px #e5e5e5;
+}
+#booking-engine-steps.active {
+  display: block;
 }
 #booking-engine-steps .col-md-3:first-child .active-step:before {
   width: calc(100% + 80px);
@@ -16574,6 +16584,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
 }
 #booking-engine-step-1 #booking-engine-step-1-header .date-input {
   position: relative;
+  width: 240px;
 }
 #booking-engine-step-1 #booking-engine-step-1-header .date-input:after {
   display: inline-block;
@@ -16588,7 +16599,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   color: #7d0052;
   position: absolute;
   top: 5px;
-  right: 25px;
+  right: 15px;
   cursor: pointer;
   pointer-events: none;
 }
@@ -16616,6 +16627,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   color: #747474;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-no-room {
+  display: none;
   margin-bottom: 50px;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-no-room .booking-no-room-content {
@@ -16694,6 +16706,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   background: #f1f2f2;
   padding: 50px 60px;
   margin-bottom: 30px;
+  display: none;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-booked-content h1 {
   font-size: 26px;
@@ -16707,8 +16720,8 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-content {
   padding-top: 15px;
   margin-bottom: 15px;
-  -webkit-box-shadow: 2px 2px 7px #e5e5e5;
-  box-shadow: 2px 2px 7px #e5e5e5;
+  -webkit-box-shadow: 0px 2px 7px #e5e5e5;
+  box-shadow: 0px 2px 7px #e5e5e5;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-content-info {
   padding-bottom: 30px;
@@ -16778,8 +16791,12 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
+  letter-spacing: 0px;
   color: #747474;
   text-transform: none;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-content .booking-room-rates-title .show-rate-detail-cta.expanded-version:after {
+  content: "\f106" !important;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-content .select-room-cta {
   width: 140px;
@@ -16788,7 +16805,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   padding-left: 0px;
   padding-right: 0px;
   position: absolute;
-  left: 0px;
+  right: 0px;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-content .price-and-cta-container {
   position: absolute;
@@ -16803,7 +16820,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-more-content {
   display: none;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-more-content-copy {
   padding-top: 10px;
@@ -16850,19 +16867,34 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   margin-top: 60px;
   padding-top: 30px;
   display: block;
+  background: #f1f2f2;
+  padding: 20px;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-more-content-extra-info .cancellation-policies:before {
+  content: "";
   border-top: 1px solid rgba(116, 116, 116, 0.4);
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 100%;
+  display: block;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-more-content-extra-info .cancellation-policies h5 {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 17px;
+  padding-bottom: 10px;
   text-transform: none;
 }
+#booking-engine-step-1 #booking-engine-step-1-content .booking-room-rate-more-content-extra-info .cancellation-policies h5 span {
+  color: #7d0052;
+  display: block;
+}
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-sidebar {
-  -webkit-box-shadow: 2px 2px 7px #e5e5e5;
-  box-shadow: 2px 2px 7px #e5e5e5;
+  -webkit-box-shadow: 0px 2px 7px #e5e5e5;
+  box-shadow: 0px 2px 7px #e5e5e5;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-sidebar h5 {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -16939,6 +16971,7 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   font-size: 15px;
   line-height: 24px;
   text-transform: none;
+  color: #7d0052;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room .selected-room-title .delete-btn {
   position: absolute;
@@ -16951,24 +16984,27 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room .selected-room-content .selected-room-content-details {
   width: 70%;
 }
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room .selected-room-content .selected-room-content-details h5 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: none;
+}
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room .selected-room-content .selected-room-content-price {
   position: absolute;
   right: 0px;
   top: 0px;
 }
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-nightly-rates {
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-nightly-rates,
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-cancellation-policies {
   padding-top: 10px;
   padding-left: 10px;
 }
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-nightly-rates .collapsable-arrow-cta {
-  position: relative;
-  display: inline-block;
-}
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-nightly-rates .collapsable-arrow-cta:after {
-  position: absolute;
-  top: -3px;
-  right: -15px;
-  color: #747474;
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-nightly-rates h6,
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-cancellation-policies h6 {
+  color: #b2a4a0;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .selected-room-nightly-rate {
   position: relative;
@@ -17014,10 +17050,18 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   color: #6a6a6b;
   text-transform: none;
 }
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-rooms {
-  padding-top: 20px;
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-rooms h5 {
+  font-size: 11px;
 }
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-rooms:after {
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-room {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 17px;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-room:last-child {
+  margin-bottom: 0px;
+}
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-room:last-child:after {
   content: "";
   display: block;
   border-bottom: 1px solid rgba(85, 85, 85, 0.5);
@@ -17025,19 +17069,9 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   margin-left: -10px;
   margin-right: -10px;
 }
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-rooms h5 {
-  font-size: 11px;
-}
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-room {
-  position: relative;
-  margin-bottom: 20px;
-}
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-room:last-child {
-  margin-bottom: 0px;
-}
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-selected-room .reservation-summary-content-selected-room-price {
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   right: 0px;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-totals {
@@ -17054,7 +17088,8 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
 #booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-total {
   position: relative;
 }
-#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-total-price {
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-total-price,
+#booking-engine-step-1 #booking-engine-step-1-content .reservation-summary .reservation-summary-content .reservation-summary-content-total-tax {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -17087,7 +17122,8 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   text-align: center;
 }
 /* The Modal (background) */
-.rates-breakdown-popup-container {
+.rates-breakdown-popup-container,
+.cancellation-popup-container {
   visibility: hidden;
   -moz-opacity: 0;
   -khtml-opacity: 0;
@@ -17116,7 +17152,8 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
 }
-.rates-breakdown-popup-container.show {
+.rates-breakdown-popup-container.show,
+.cancellation-popup-container.show {
   visibility: visible;
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -17125,18 +17162,25 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   filter: alpha(opacity=100);
 }
-.rates-breakdown-popup {
+.rates-breakdown-popup,
+.cancellation-popup {
   width: 360px;
   background: #ffffff;
   padding: 30px;
   margin: 15% auto;
   /* 15% from the top and centered */
 }
-.rates-breakdown-popup .rates-breakdown-popup-title {
+.rates-breakdown-popup .rates-breakdown-popup-title,
+.cancellation-popup .rates-breakdown-popup-title,
+.rates-breakdown-popup .cancellation-popup-title,
+.cancellation-popup .cancellation-popup-title {
   position: relative;
   margin-bottom: 20px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-title:after {
+.rates-breakdown-popup .rates-breakdown-popup-title:after,
+.cancellation-popup .rates-breakdown-popup-title:after,
+.rates-breakdown-popup .cancellation-popup-title:after,
+.cancellation-popup .cancellation-popup-title:after {
   content: "";
   border-bottom: 1px solid rgba(146, 144, 144, 0.6);
   display: block;
@@ -17144,7 +17188,10 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   width: 100%;
   bottom: -20px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-title h5 {
+.rates-breakdown-popup .rates-breakdown-popup-title h5,
+.cancellation-popup .rates-breakdown-popup-title h5,
+.rates-breakdown-popup .cancellation-popup-title h5,
+.cancellation-popup .cancellation-popup-title h5 {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -17153,32 +17200,61 @@ body.review-page-filter-mobile-open-version #page-reviews-content {
   text-transform: none;
   width: 70%;
 }
-.rates-breakdown-popup .rates-breakdown-popup-title h5 span {
+.rates-breakdown-popup .rates-breakdown-popup-title h5 span,
+.cancellation-popup .rates-breakdown-popup-title h5 span,
+.rates-breakdown-popup .cancellation-popup-title h5 span,
+.cancellation-popup .cancellation-popup-title h5 span {
   color: #7d0052;
   display: block;
 }
-.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price {
+.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price,
+.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price,
+.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price,
+.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price {
   position: absolute;
   bottom: 8px;
   right: 0px;
 }
 .rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price h6,
+.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price h6,
+.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price h6,
+.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price h6,
 .rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price p,
-.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price span {
+.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price p,
+.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price p,
+.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price p,
+.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price span,
+.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price span,
+.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price span,
+.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price span {
   color: #747474;
 }
-.rates-breakdown-popup .rates-breakdown-popup-content {
+.rates-breakdown-popup .cancellation-popup-title h5,
+.cancellation-popup .cancellation-popup-title h5 {
+  width: 100%;
+}
+.rates-breakdown-popup .rates-breakdown-popup-content,
+.cancellation-popup .rates-breakdown-popup-content,
+.rates-breakdown-popup .cancellation-popup-content,
+.cancellation-popup .cancellation-popup-content {
   padding-top: 20px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate {
+.rates-breakdown-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate,
+.cancellation-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate,
+.rates-breakdown-popup .cancellation-popup-content .rates-breakdown-popup-rate,
+.cancellation-popup .cancellation-popup-content .rates-breakdown-popup-rate {
   position: relative;
   padding-bottom: 10px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price {
+.rates-breakdown-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
+.cancellation-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
+.rates-breakdown-popup .cancellation-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
+.cancellation-popup .cancellation-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price {
   position: absolute;
   right: 0px;
   top: 0px;
 }
-.rates-breakdown-popup .back-to-search-btn {
+.rates-breakdown-popup .back-to-search-btn,
+.cancellation-popup .back-to-search-btn {
   padding-top: 70px;
 }

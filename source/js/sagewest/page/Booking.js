@@ -1,6 +1,7 @@
 goog.provide('sagewest.page.Booking');
 goog.require('sagewest.page.Default');
 
+goog.require('sagewest.component.BookingStep');
 goog.require('sagewest.component.BookingRoom');
 
 /**
@@ -44,22 +45,25 @@ sagewest.page.Booking.prototype.init = function() {
 
   this.update_page_layout();    // this is called after the initial create to update the layout
 
-  // this.is_expanded = false;
-  // this.is_rate_expanded = false;
-  // this.is_popup_open = false;
-
   this.create_booking_rooms();
+  this.create_no_room_carousel();
 
-  // this.create_collapsable_arrow_cta();
-  // this.create_show_rate_cta();
-  // this.create_rate_breakdown_popup();
-  // this.create_no_room_carousel();
+  $('.back-to-search-btn').click(function(e){  
+    e.preventDefault();  
+    $(".rates-breakdown-popup-container").removeClass('show');
+  });
 
-  // this.collapsable_arrow_cta.click(this.on_collapsable_arrow_click.bind(this));
-  // this.show_rate_cta.click(this.on_show_rate_click.bind(this));
+  $(document).click(function(e){    
+    e.preventDefault();  
+    $(".rates-breakdown-popup-container").removeClass('show');
+    $(".cancellation-popup-container").removeClass('show');
+  });
 
-  // this.view_rate_breakdown_cta.click(this.on_rate_breakdown_click.bind(this));
-  // this.back_to_search_btn.click(this.on_rate_breakdown_click.bind(this));
+  this.create_booking_steps();
+
+  $('body').on("booking-summary-room-added", function(e){
+      this.create_expand_container();
+  }.bind(this));
 
 };
 
@@ -82,8 +86,25 @@ sagewest.page.Booking.prototype.create_booking_rooms = function(){
 
   for (var i = 0; i < arr.length; i++) {
     var item = $(arr[i]);
-    var room_item = new sagewest.component.BookingRoom({}, item);
+    var room_item = new sagewest.component.BookingRoom({}, item);    
+  }
+}
+
+
+sagewest.page.Booking.prototype.create_booking_steps = function(){
+  var arr = $('.booking-steps');
+  var item = null;
+  var step_item = null;
+
+  for (var i = 0; i < arr.length; i++) {
+    var item = $(arr[i]);
+    var step_item = new sagewest.component.BookingStep({}, item);
     
+
+    goog.events.listen(step_item, sagewest.component.BookingStep.ON_STEP_2_START, function(event){
+      this.update_page_layout();
+    }.bind(this));
+
   }
 }
 
@@ -98,21 +119,21 @@ sagewest.page.Booking.prototype.create_collapsable_arrow_cta = function(){
 
 }
 
-sagewest.page.Booking.prototype.create_show_rate_cta = function(){
+// sagewest.page.Booking.prototype.create_show_rate_cta = function(){
 
-  this.show_rate_cta = $(".show-rates-cta");
-  this.rate_collapsable_parent = $(".booking-room-box-content");
-  this.rate_collapsable_content = $(".booking-room-rates");
+//   this.show_rate_cta = $(".show-rates-cta");
+//   this.rate_collapsable_parent = $(".booking-room-box-content");
+//   this.rate_collapsable_content = $(".booking-room-rates");
 
-}
+// }
 
-sagewest.page.Booking.prototype.create_rate_breakdown_popup = function(){
+// sagewest.page.Booking.prototype.create_rate_breakdown_popup = function(){
 
-  this.view_rate_breakdown_cta = $(".view-rate-breakdown-cta");  
-  this.rates_breakdown_popup_container = $(".rates-breakdown-popup-container");  
-  this.back_to_search_btn = $(".back-to-search-btn");  
+//   this.view_rate_breakdown_cta = $(".view-rate-breakdown-cta");  
+//   this.rates_breakdown_popup_container = $(".rates-breakdown-popup-container");  
+//   this.back_to_search_btn = $(".back-to-search-btn");  
 
-}
+// }
 
 sagewest.page.Booking.prototype.create_no_room_carousel = function() {
   $('#booking-no-room-suggestion-carousel').slick({
@@ -207,6 +228,8 @@ sagewest.page.Booking.prototype.update_page_layout = function() {
 sagewest.page.Booking.prototype.on_scroll_to_no_target = function(str_param, str_param_2, str_param_3) {
   sagewest.page.Booking.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
 
+  console.log('scroll to target');
+
   /*
   // Mice venue landing - on hash change
   if(manic.IS_MOBILE == true && this.is_mice_venue_landing == true){
@@ -248,23 +271,23 @@ sagewest.page.Booking.prototype.others = function(){
 
 };
 
-sagewest.page.Booking.prototype.collapse = function(){
-  if (this.is_expanded == true) {
-    this.is_expanded = false;
+// sagewest.page.Booking.prototype.collapse = function(){
+//   if (this.is_expanded == true) {
+//     this.is_expanded = false;
 
-    this.collapsable_parent.removeClass('expand-version');
-    this.collapsable_content.slideUp(500);
-  }
-};
+//     this.collapsable_parent.removeClass('expand-version');
+//     this.collapsable_content.slideUp(500);
+//   }
+// };
 
-sagewest.page.Booking.prototype.expand = function() {
-  if (this.is_expanded == false) {
-    this.is_expanded = true;
+// sagewest.page.Booking.prototype.expand = function() {
+//   if (this.is_expanded == false) {
+//     this.is_expanded = true;
 
-    this.collapsable_parent.addClass('expand-version');
-    this.collapsable_content.slideDown(500);
-  }
-};
+//     this.collapsable_parent.addClass('expand-version');
+//     this.collapsable_content.slideDown(500);
+//   }
+// };
 
 // sagewest.page.Booking.prototype.rate_collapse = function(){
 //   if (this.is_rate_expanded == true) {
@@ -309,20 +332,20 @@ sagewest.page.Booking.prototype.pop_up_open = function() {
 //   |_____|  \_/  |_____|_| \_| |_| |____/
 //
 
-/**
- * @param {object} event
- */
-sagewest.page.Booking.prototype.on_collapsable_arrow_click = function(event) {  
-  event.preventDefault();
-  this.collapsable_content = $(event.currentTarget).parent().parent().parent().parent().parent().find(".collapsable-content");
+// /**
+//  * @param {object} event
+//  */
+// sagewest.page.Booking.prototype.on_collapsable_arrow_click = function(event) {  
+//   event.preventDefault();
+//   this.collapsable_content = $(event.currentTarget).parent().parent().parent().parent().parent().find(".collapsable-content");
 
-  if(this.is_expanded == true){
-    this.collapse();
-  } else {
-    this.expand();
-  }
+//   if(this.is_expanded == true){
+//     this.collapse();
+//   } else {
+//     this.expand();
+//   }
 
-};
+// };
 
 // /**
 //  * @param {object} event

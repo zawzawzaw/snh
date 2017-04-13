@@ -2,6 +2,7 @@ goog.provide('sagewest.component.BookingRoom');
 
 goog.require('goog.events.Event');
 goog.require('goog.events.EventTarget');
+goog.require('sagewest.component.BookingRoomRate');
 
 /**
  * The CLASSNAME constructor
@@ -18,9 +19,7 @@ sagewest.component.BookingRoom = function(options, element) {
   // else
   goog.events.EventTarget.call(this);
   this.options = $.extend({}, sagewest.component.BookingRoom.DEFAULT, options);
-  this.element = element;
-
-  this.is_rate_expanded = false;
+  this.element = element;  
 
   //    ___ _   _ ___ _____
   //   |_ _| \ | |_ _|_   _|
@@ -31,14 +30,18 @@ sagewest.component.BookingRoom = function(options, element) {
 
   // console.log('init booking room js');
 
-  this.show_rates_cta = this.element.find('.show-rates-cta');
+  this.room_rate_item_array = [];
 
-  this.show_rates_cta.click(this.on_show_rate_click.bind(this));
+  this.is_rate_expanded = false;
+
+  this.show_rates_cta = this.element.find('.show-rates-cta');
+  this.show_rates_cta.click(this.on_show_rates_click.bind(this));
 
   this.booking_room_rates = this.element.find('.booking-room-rates');
+  this.booking_room_rate = this.element.find('.booking-room-rate');
 
 
-  this.create_room_rates();
+  this.create_booking_room_rate();
 
 
 };
@@ -80,14 +83,16 @@ sagewest.component.BookingRoom.EVENT_02 = '';
 //    \____|_| \_\_____/_/   \_\_| |_____|
 //
 
-sagewest.page.Booking.prototype.create_room_rates = function(){
-  var arr = $('.create_room_rates');
+sagewest.component.BookingRoom.prototype.create_booking_room_rate = function(){
+  var arr = this.booking_room_rate;
   var item = null;
-  var room_item = null;
+  var room_rate_item = null;
 
   for (var i = 0; i < arr.length; i++) {
     var item = $(arr[i]);
-    var room_item = new sagewest.component.BookingRoom({}, item);
+    var room_rate_item = new sagewest.component.BookingRoomRate({}, item);
+
+    this.room_rate_item_array[i] = room_rate_item;
     
   }
 }
@@ -104,6 +109,10 @@ sagewest.component.BookingRoom.prototype.rate_collapse = function(){
     this.is_rate_expanded = false;
 
     this.show_rates_cta.text('Show rates');
+
+    for (var i = 0; i < this.room_rate_item_array.length; i++) {
+      this.room_rate_item_array[i].collapse();
+    }
 
     this.booking_room_rates.slideUp(500);
   }
@@ -160,7 +169,7 @@ sagewest.component.BookingRoom.prototype.public_method_06 = function() {};
  * event handler
  * @param  {object} event
  */
-sagewest.component.BookingRoom.prototype.on_show_rate_click = function(event) {  
+sagewest.component.BookingRoom.prototype.on_show_rates_click = function(event) {  
   event.preventDefault();    
 
   if(this.is_rate_expanded == true){
