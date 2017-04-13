@@ -63,7 +63,7 @@ ob_start();
 
         -->
         
-        <?php include('js_default.php'); ?>
+        <?php include('js_booking.php'); ?>
         <?php include('hotel_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
