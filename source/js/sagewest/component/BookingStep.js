@@ -27,9 +27,11 @@ sagewest.component.BookingStep = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init booking step');
+  // console.log('init booking step');
 
-  this.element.find(".check-availability").click(this.on_check_availability_click.bind(this))
+  this.element.find(".check-availability").click(this.on_check_availability_click.bind(this));
+
+
 
 };
 goog.inherits(sagewest.component.BookingStep, goog.events.EventTarget);
@@ -54,7 +56,7 @@ sagewest.component.BookingStep.DEFAULT = {
  * @type {string}
  */
 sagewest.component.BookingStep.EVENT_01 = '';
-sagewest.component.BookingStep.ON_STEP_2_START = 'on step 2 start';
+sagewest.component.BookingStep.ON_STEP_CHANGE = 'on step change';
 
 /**
  * CLASSNAME Event Constant
@@ -96,7 +98,49 @@ sagewest.component.BookingStep.prototype.sample_method_calls = function() {
 //
 
 
-sagewest.component.BookingStep.prototype.public_method_01 = function() {};
+sagewest.component.BookingStep.prototype.go_next_step = function() {
+
+  this.element.removeClass("active-step");  
+  var currentStep = parseInt(this.element.attr("data-step")) + 1;
+  
+  $("#booking-engine-step-"+currentStep).addClass("active-step");
+  $("#booking-engine-steps-indicator").show();
+  $("#booking-engine-sidebar").show();
+
+  if(currentStep>3) {
+    $("#booking-engine-sidebar").find(".col-md-3.col-md-offset-9").removeClass("col-md-3 col-md-offset-9").addClass("col-md-7 col-md-offset-5");
+    $("#booking-engine-sidebar").find(".reservation-summary-sidebar").addClass("confirmation");
+  }
+
+  if(currentStep>1) {
+    $("#booking-engine-sidebar").css("top", "0");
+  }
+
+  this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStep.ON_STEP_CHANGE));
+
+};
+
+sagewest.component.BookingStep.prototype.go_prev_step = function() {
+
+  this.element.removeClass("active-step");  
+  var currentStep = parseInt(this.element.attr("data-step")) - 1;
+  
+  $("#booking-engine-step-"+currentStep).addClass("active-step");
+  $("#booking-engine-steps-indicator").show();
+  $("#booking-engine-sidebar").show();
+
+  console.log(currentStep);
+
+  if(currentStep>1) {
+    $("#booking-engine-sidebar").css("top", "0");
+  }else {
+    $("#booking-engine-sidebar").css("top", "153px");
+  }
+
+  this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStep.ON_STEP_CHANGE));
+
+};
+
 sagewest.component.BookingStep.prototype.public_method_02 = function() {};
 sagewest.component.BookingStep.prototype.public_method_03 = function() {};
 sagewest.component.BookingStep.prototype.public_method_04 = function() {};
@@ -116,13 +160,7 @@ sagewest.component.BookingStep.prototype.public_method_06 = function() {};
  * @param  {object} event
  */
 sagewest.component.BookingStep.prototype.on_check_availability_click = function(event) {
-  this.element.removeClass("active-step");  
-  var nextStep = parseInt(this.element.attr("data-step")) + 1;
-  
-  $("#booking-engine-step-"+nextStep).addClass("active-step");
-  $("#booking-engine-steps").addClass("active");
-
-  this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStep.ON_STEP_2_START));
+  this.go_next_step();  
 };
 
 /**

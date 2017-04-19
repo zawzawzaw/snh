@@ -67,6 +67,7 @@ sagewest.component.BookingRoom.DEFAULT = {
  * @type {string}
  */
 sagewest.component.BookingRoom.EVENT_01 = '';
+sagewest.component.BookingRoom.ON_ROOM_ADDED = 'on room added';
 
 /**
  * CLASSNAME Event Constant
@@ -93,6 +94,12 @@ sagewest.component.BookingRoom.prototype.create_booking_room_rate = function(){
     var room_rate_item = new sagewest.component.BookingRoomRate({}, item);
 
     this.room_rate_item_array[i] = room_rate_item;
+
+    goog.events.listen(room_rate_item, sagewest.component.BookingRoomRate.ON_ROOM_ADDED, function(event){
+      
+      this.dispatchEvent(new goog.events.Event(sagewest.component.BookingRoom.ON_ROOM_ADDED));
+
+    }.bind(this));
     
   }
 }

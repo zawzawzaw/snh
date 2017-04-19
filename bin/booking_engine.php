@@ -32,7 +32,7 @@ ob_start();
 
 
     <!-- mobile header is outside the page wrapper -->
-    <?php include('booking_header_mobile.php'); ?>
+    <?php //include('booking_header_mobile.php'); ?>
     
     <div id="page-wrapper">
       <div id="page-wrapper-content">
