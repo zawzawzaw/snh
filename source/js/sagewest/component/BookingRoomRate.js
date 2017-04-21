@@ -31,6 +31,8 @@ sagewest.component.BookingRoomRate = function(options, element) {
 
   // console.log('init booking room rate');
 
+  this.rate_package = this.element.find(".booking-room-rates-title h5").text();
+
   this.is_popup_open = false;
   this.is_expanded = false;
 
@@ -39,6 +41,9 @@ sagewest.component.BookingRoomRate = function(options, element) {
 
   this.select_room_cta = this.element.find(".select-room-cta");
   this.select_room_cta.click(this.on_select_room_cta_click.bind(this));
+
+  this.select_room_cta_mobile = this.element.find(".select-room-cta-mobile");
+  this.select_room_cta_mobile.click(this.on_select_room_cta_click.bind(this));
 
   this.rate_breakdown_cta = this.element.find(".view-rate-breakdown-cta");
   this.rate_breakdown_cta.click(this.on_rate_breakdown_cta_click.bind(this));
@@ -65,7 +70,7 @@ sagewest.component.BookingRoomRate.DEFAULT = {
  * @const
  * @type {string}
  */
-sagewest.component.BookingRoomRate.ON_ROOM_ADDED = 'on add room';
+sagewest.component.BookingRoomRate.ON_ROOM_ADDED = 'on room added';
 sagewest.component.BookingRoomRate.EVENT_01 = '';
 
 /**
@@ -160,6 +165,9 @@ sagewest.component.BookingRoomRate.prototype.on_show_rate_detail_click = functio
   } else {
     this.expand();
   }
+
+  $('body').trigger("ON_RATES_EXPAND");
+
 };
 
 /**

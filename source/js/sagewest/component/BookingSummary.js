@@ -21,7 +21,7 @@ sagewest.component.BookingSummary = function(options, element) {
   this.element = element;
 
   this.room_html = '<div class="reservation-summary-expandable-content selected-rooms"> <div class="manic-expand-container desktop-open-version"> <div class="scroll-target" data-value="title-01"></div> <div class="manic-expand-container-title"> <h6>Room 1</h6> </div> <div class="manic-expand-container-btn"></div> <div class="manic-expand-container-content"> <div class="row"> <div class="col-md-5"> <div class="manic-image-container"><img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" alt=""></div> </div> <div class="col-md-7"> <div class="selected-room"> <div class="selected-room-title"> <h5>Standard Room</h5> <a href="#" class="delete-room-btn delete-btn"><i class="fa fa-times"></i></a> </div> <div class="selected-room-content"> <div class="selected-room-content-details"> <h5>7 days advance purchase</h5> <p>2 Adults, 0 Children</p> </div> <div class="selected-room-content-price"> <span class="price">$626.00</span> </div> </div> </div> <div class="selected-room-nightly-rates"> <div class="selected-room-nightly-rates-title"> <a href="#" class="nightly-rates-popup-cta"><h6>Nightly Rates</h6></a> </div> </div> <div class="selected-room-cancellation-policies"> <div class="selected-room-cancellation-policies-title"> <a href="#" class="cancellation-popup-cta"><h6>Cancellation Policies</h6></a> </div> </div> </div> </div> </div> </div></div>';
-  this.room_html_2 = '<div class="reservation-summary-content-selected-room"> <div class="reservation-summary-content-selected-room-title"> <h5>Room 1</h5> <p>Total Room Rates</p> </div> <div class="reservation-summary-content-selected-room-price"> <p class="price">$626.00</p> </div> </div>';
+  this.room_html_2 = '<div class="reservation-summary-content-selected-room"> <div class="reservation-summary-content-selected-room-title"> <h5>Room 1</h5> <p>7 days Advance Purc...</p> </div> <div class="reservation-summary-content-selected-room-price"> <p class="price">$626.00</p> </div> </div>';
 
   this.extra_html = '<div class="selected-extra"> <div class="row"> <div class="col-md-5"><div class="manic-image-container"><img src="" data-image-desktop="images_cms/booking/extra-booking-item-01.jpg" alt=""></div></div> <div class="col-md-7"> <div class="selected-extra-title"> <h5>Tesla transfer</h5> <a href="#" class="delete-extra-btn delete-btn"><i class="fa fa-times"></i></a> </div> <div class="selected-extra-content"> <div class="selected-extra-content-details"> <p>2 Bookings</p> </div> <div class="selected-extra-content-price"> <span class="price">$150.00</span> </div> </div> </div> </div></div>';
   this.extra_html_2 = '<div class="reservation-summary-content-selected-extra"> <div class="reservation-summary-content-selected-extra-title"> <p>Tesla Transfer</p> </div> <div class="reservation-summary-content-selected-extra-price"> <p class="price">$150.00</p> </div></div>';
@@ -39,27 +39,8 @@ sagewest.component.BookingSummary = function(options, element) {
   // temporary delete
   this.element.on("click", ".delete-room-btn", this.on_delete_room_btn_click.bind(this));
 
-    // temporary delete
-  this.element.on("click", ".delete-extra-btn", function(e){
-    var deleteBtn = $(e.currentTarget).parent().parent();
-    var current_index = deleteBtn.index();    
-
-    var arr = $(".reservation-summary-content-selected-extra");
-    var item = null;
-
-    for (var i = 0; i < arr.length; i++) {
-      if(current_index==i) {
-        arr[i].remove();
-      }
-    }
-
-    this.update_summary_total(); 
-
-    this.update_page_height();
-
-    deleteBtn.remove();
-
-  }.bind(this));
+  // temporary delete
+  this.element.on("click", ".delete-extra-btn", this.on_delete_extra_btn_click.bind(this));
 
   // temporary popup
   this.element.on("click", ".nightly-rates-popup-cta", function(e){
@@ -169,8 +150,29 @@ sagewest.component.BookingSummary.prototype.update_summary_total = function() {
 
 sagewest.component.BookingSummary.prototype.update_page_height = function() {
     
-    if($(".booking-steps.active-step").height() < this.element.height()) {
-      $(".booking-steps.active-step").css('height', this.element.height() + 200);
+    console.log("step height: "+$(".booking-steps.active-step").height())
+    console.log("sidebar height: "+this.element.height())
+    // if($(".booking-steps.active-step").height() < this.element.height()) {   
+    // console.log(this.element.find(".selected-rooms").length);
+    if($(".booking-steps.active-step").height() < this.element.height()) {  
+      console.log('sidebar higher');
+      $("#booking-engine-steps-container").css('height', this.element.height() + 200);
+    }else {
+      $("#booking-engine-steps-container").css('height', 'auto');
+    }
+
+}
+
+sagewest.component.BookingSummary.prototype.update_page_height_on_confirmation = function() {
+    
+    // console.log($(".booking-steps.active-step").height())
+    // console.log("element height: "+this.element.height())
+    // if($(".booking-steps.active-step").height() < this.element.height()) {   
+    // console.log(this.element.find(".selected-rooms").length);
+    if($(".booking-steps.active-step").height() < this.element.height()) {  
+      $("#booking-engine-steps-container").css('height', this.element.height());
+    }else {
+      $("#booking-engine-steps-container").css('height', 'auto');
     }
 
 }
@@ -202,7 +204,7 @@ sagewest.component.BookingSummary.prototype.book_extra = function() {
   this.selected_extra_container_2 = this.element.find(".reservation-summary-content-selected-extras-content");
   
 
-  if(this.element.find(".selected-extras").length <= 5) {
+  if(this.element.find(".reservation-summary-content-selected-extra").length <= 5) {
     this.selected_extra_container.append(this.extra_html);
 
     this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.BOOKING_SUMMARY_ROOM_ADDED));
@@ -243,7 +245,9 @@ sagewest.component.BookingSummary.prototype.on_proceed_to_payment_click = functi
  * @param  {object} event
  */
 sagewest.component.BookingSummary.prototype.on_delete_room_btn_click = function(event) {
-  var deleteBtn = $(event.currentTarget).parent().parent().parent().parent().parent();
+  event.preventDefault();
+
+  var deleteBtn = $(event.currentTarget).parent().parent().parent().parent().parent().parent().parent();
   var current_index = deleteBtn.index();    
 
   var arr = $(".reservation-summary-content-selected-room");
@@ -269,7 +273,34 @@ sagewest.component.BookingSummary.prototype.on_delete_room_btn_click = function(
  * event handler
  * @param  {object} event
  */
-sagewest.component.BookingSummary.prototype.on_event_handler_03 = function(event) {
+sagewest.component.BookingSummary.prototype.on_delete_extra_btn_click = function(event) {
+  event.preventDefault();
+
+  var deleteBtn = $(event.currentTarget).parent().parent().parent().parent();
+  var current_index = deleteBtn.index();
+
+  var arr = $(".reservation-summary-content-selected-extra");
+  var item = null;
+
+  console.log(arr.length);
+
+  for (var i = 0; i < arr.length; i++) {
+    if(current_index==i) {
+      arr[i].remove();
+    }
+  }
+
+  if(arr.length==1) {
+    this.element.find(".reservation-summary-selected-extras-container").hide();
+    this.element.find(".reservation-summary-content-selected-extras").hide();
+  }
+
+  this.update_summary_total(); 
+
+  this.update_page_height();
+
+  deleteBtn.remove();
+
 };
 
 /**

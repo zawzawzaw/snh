@@ -1312,41 +1312,6 @@ sagewest.page.Default.prototype.common_menu = function() {
         }
     });
 
-    $('#booking-engine-date-picker').daterangepicker({
-        "autoApply": true,
-        "opens": "right",
-        "parentEl": "#booking-calendar",
-        "minDate": formatted_current_date,
-        "alwaysShowCalendars": true,
-        "locale": {
-            "separator": " to ",
-            "daysOfWeek": [
-                "S",
-                "M",
-                "T",
-                "W",
-                "T",
-                "F",
-                "S"
-            ],
-            "monthNames": [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
-            ]
-        }
-    });
-    $('#booking-engine-date-picker').trigger("click");
-
     /*
     $('#sidebar-date-picker').click(function(event){
       event.stopPropagation();

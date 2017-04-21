@@ -28,7 +28,7 @@
       </div>  
       <div class="col-md-2">
         <p id="desktop-header-contact-us">do you Need help? <br>
-        please contact us, <a href="#">here</a></p>      
+        please contact us, <a href="http://clients.manic.com.sg/snh/html/bin/location.php">here</a></p>      
       </div>
     </div>
   </div>

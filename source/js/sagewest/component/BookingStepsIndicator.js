@@ -28,6 +28,8 @@ sagewest.component.BookingStepsIndicator = function(options, element) {
   //
 
   // console.log(this.element);
+
+  this.element.find(".go-to-step").click(this.on_go_to_step_click.bind(this));
   
 };
 goog.inherits(sagewest.component.BookingStepsIndicator, goog.events.EventTarget);
@@ -51,6 +53,8 @@ sagewest.component.BookingStepsIndicator.DEFAULT = {
  * @const
  * @type {string}
  */
+sagewest.component.BookingStepsIndicator.ON_INDICATOR_STEP_CLICK = 'ON_INDICATOR_STEP_CLICK';
+sagewest.component.BookingStepsIndicator.ON_STEP_INDICATOR_CHANGE = 'ON_STEP_INDICATOR_CHANGE';
 sagewest.component.BookingStepsIndicator.EVENT_01 = '';
 
 /**
@@ -98,14 +102,24 @@ sagewest.component.BookingStepsIndicator.prototype.change_next_step = function()
   var currentStep = parseInt(this.element.attr("data-step")) + 1;
 
   $("#step-indicator-"+currentStep).addClass("active-step");
+
+  // this.enable_disable_cursor_pointer();
+  this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStepsIndicator.ON_STEP_INDICATOR_CHANGE));
 };
 sagewest.component.BookingStepsIndicator.prototype.change_prev_step = function() {
   this.element.removeClass("active-step");  
   var currentStep = parseInt(this.element.attr("data-step")) - 1;
 
   $("#step-indicator-"+currentStep).addClass("active-step");
+
+  // this.enable_disable_cursor_pointer();
+  this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStepsIndicator.ON_STEP_INDICATOR_CHANGE));
 };
-sagewest.component.BookingStepsIndicator.prototype.public_method_03 = function() {};
+// sagewest.component.BookingStepsIndicator.prototype.enable_disable_cursor_pointer = function() {
+//   // $("#booking-engine-steps-indicator .clickable").removeClass("clickable");
+//   if()
+//   this.element.find('a').addClass("clickable");
+// };
 sagewest.component.BookingStepsIndicator.prototype.public_method_04 = function() {};
 sagewest.component.BookingStepsIndicator.prototype.public_method_05 = function() {};
 sagewest.component.BookingStepsIndicator.prototype.public_method_06 = function() {};
@@ -122,7 +136,14 @@ sagewest.component.BookingStepsIndicator.prototype.public_method_06 = function()
  * event handler
  * @param  {object} event
  */
-sagewest.component.BookingStepsIndicator.prototype.on_event_handler_01 = function(event) {
+sagewest.component.BookingStepsIndicator.prototype.on_go_to_step_click = function(event) {
+  var currentStep = parseInt(this.element.attr("data-step"));
+
+  if(currentStep < 4) {
+    this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStepsIndicator.ON_INDICATOR_STEP_CLICK));
+    this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStepsIndicator.ON_STEP_INDICATOR_CHANGE));
+  }  
+  
 };
 
 /**

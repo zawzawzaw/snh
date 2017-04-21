@@ -266,13 +266,13 @@
 
           <div class="col-md-9">
 
-            <!-- <div class="booking-room-booked-content">
-              <h1>“Superior Room” not available for the selected search, here are some other rooms for you.</h1>      
+            <div class="booking-room-booked-content">
+              <h1>The “Superior Room” is not available for your selected search, here are our other rooms that might interest you</h1>      
               <p>Aliquam vel elit sit amet sem congue dignissim. Nunc mattis tempus varius. Cras nisi massa, egestas in consectetur id, tempor et leo. Curabitur quam elit, varius vitae.</p>
-            </div> -->
+            </div>
             
             <div class="booking-room-content booking-rooms">            
-              <div class="room-qty-tag">3 rooms left</div>
+
               <div class="booking-room-content-info">
                 <div class="row">
                   <div class="col-md-5">
@@ -359,7 +359,7 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="booking-room-rates-title">
-                          <h5>Lorem Ipsum Room Rate 1</h5>
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
                           <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                         </div>
                         <div class="price-and-cta-container">
@@ -418,7 +418,7 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="booking-room-rates-title">
-                          <h5>Lorem Ipsum Room Rate 2</h5>
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
                           <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                         </div>
                         <div class="price-and-cta-container">
@@ -476,7 +476,7 @@
             </div><!-- end booking-room-content -->
 
             <div class="booking-room-content booking-rooms">            
-              <div class="room-qty-tag">4 rooms left</div>
+
               <div class="booking-room-content-info">
                 <div class="row">
                   <div class="col-md-5">
@@ -562,7 +562,7 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="booking-room-rates-title">
-                          <h5>Lorem Ipsum Room Rate 1</h5>
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
                           <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                         </div>
                         <div class="price-and-cta-container">
@@ -619,7 +619,7 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="booking-room-rates-title">
-                          <h5>Lorem Ipsum Room Rate 2</h5>
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
                           <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
                         </div>
                         <div class="price-and-cta-container">
@@ -955,23 +955,23 @@
                 <li><a href="#" data-tab="book-for-someone">Booking for someone else</a></li>
               </ul>
 
-              <div id="book-for-myself" class="personal-detail active-tab">
+              <div id="book-for-myself" class="active-tab">
                 <div class="your-details">
                   <div class="row">
-                    <div class="col-md-4"><h5>Your Details</h5></div>
-                    <div class="col-md-8">
-                      <div id="personal_info" class="default-form simple-form-check">
+                    <div class="col-md-5"><h5>Your Details</h5></div>
+                    <div class="col-md-7">
+                      <div id="personal_info" class="default-form">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="first_name">First Name*</label>
-                              <input type="text" name="first_name" class="required">
+                              <input type="text" name="first_name">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="last_name">Last Name*</label>
-                              <input type="text" name="last_name" class="required">
+                              <input type="text" name="last_name">
                             </div>
                           </div>
                         </div>
@@ -979,7 +979,7 @@
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="email">Email*</label>
-                              <input type="text" name="email" class="required">
+                              <input type="text" name="email">
                             </div>
                           </div>
                           <div class="col-md-6">
@@ -1000,7 +1000,7 @@
                         <div class="row">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <label for="address">Address</label>
+                              <label for="address">Address*</label>
                               <input type="text" name="address">
                             </div>
                           </div>
@@ -1008,13 +1008,13 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="city">City</label>
+                              <label for="city">City*</label>
                               <input type="text" name="city">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="state">State</label>
+                              <label for="state">State*</label>
                               <input type="text" name="state">
                             </div>
                           </div>
@@ -1022,13 +1022,13 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="country">Country</label>
+                              <label for="country">Country*</label>
                               <input type="text" name="country">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="post_code">Postcode</label>
+                              <label for="post_code">Postcode*</label>
                               <input type="text" name="post_code">
                             </div>
                           </div>
@@ -1036,7 +1036,7 @@
                         <div class="row">
                           <div class="col-md-12">
                             <div class="form-group">
-                              <label for="special_requests">Special Requests</label>
+                              <label for="special_requests">Special Requests*</label>
                               <textarea name="special_requests"></textarea>
                             </div>
                           </div>                    
@@ -1044,116 +1044,24 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="estimated_check_in_time">Estimated Check In Time</label>
+                              <label for="estimated_check_in_time">Estimated Check In Time*</label>
                               <div class="manic-dropdown">
                                 <select name="estimated_check_in_time" id="estimated_check_in_time">
                                   <option value="">Please select</option>
-                                  <option value="00:00" selected>00:00</option>
-                                  <option value="00:30">00:30</option>
-                                  <option value="01:00">01:00</option>
-                                  <option value="01:30">01:30</option>
-                                  <option value="02:00">02:00</option>
-                                  <option value="02:30">02:30</option>
-                                  <option value="03:00">03:00</option>
-                                  <option value="03:30">03:30</option>
-                                  <option value="04:00">04:00</option>
-                                  <option value="04:30">04:30</option>
-                                  <option value="05:00">05:00</option>
-                                  <option value="05:30">05:30</option>
-                                  <option value="06:00">06:00</option>
-                                  <option value="06:30">06:30</option>
-                                  <option value="07:00">07:00</option>
-                                  <option value="07:30">07:30</option>
-                                  <option value="08:00">08:00</option>
-                                  <option value="08:30">08:30</option>
-                                  <option value="09:00">09:00</option>
-                                  <option value="09:30">09:30</option>
-                                  <option value="10:00">10:00</option>
-                                  <option value="10:30">10:30</option>
-                                  <option value="11:00">11:00</option>
-                                  <option value="11:30">11:30</option>
-                                  <option value="12:00">12:00</option>
-                                  <option value="12:30">12:30</option>
-                                  <option value="13:00">13:00</option>
-                                  <option value="13:30">13:30</option>
-                                  <option value="14:00">14:00</option>
-                                  <option value="14:30">14:30</option>
-                                  <option value="15:00">15:00</option>
-                                  <option value="15:30">15:30</option>
-                                  <option value="16:00">16:00</option>
-                                  <option value="16:30">16:30</option>
-                                  <option value="17:00">17:00</option>
-                                  <option value="17:30">17:30</option>
-                                  <option value="18:00">18:00</option>
-                                  <option value="18:30">18:30</option>
-                                  <option value="19:00">19:00</option>
-                                  <option value="19:30">19:30</option>
-                                  <option value="20:00">20:00</option>
-                                  <option value="20:30">20:30</option>
-                                  <option value="21:00">21:00</option>
-                                  <option value="21:30">21:30</option>
-                                  <option value="22:00">22:00</option>
-                                  <option value="22:30">22:30</option>
-                                  <option value="23:00">23:00</option>
-                                  <option value="23:30">23:30</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
                                 </select>
                               </div>
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="estimated_check_out_time">Estimated Check Out Time</label>
+                              <label for="estimated_check_out_time">Estimated Check Out Time*</label>
                               <div class="manic-dropdown">
                                 <select name="estimated_check_out_time" id="estimated_check_out_time">
                                   <option value="">Please select</option>
-                                  <option value="00:00" selected>00:00</option>
-                                  <option value="00:30">00:30</option>
-                                  <option value="01:00">01:00</option>
-                                  <option value="01:30">01:30</option>
-                                  <option value="02:00">02:00</option>
-                                  <option value="02:30">02:30</option>
-                                  <option value="03:00">03:00</option>
-                                  <option value="03:30">03:30</option>
-                                  <option value="04:00">04:00</option>
-                                  <option value="04:30">04:30</option>
-                                  <option value="05:00">05:00</option>
-                                  <option value="05:30">05:30</option>
-                                  <option value="06:00">06:00</option>
-                                  <option value="06:30">06:30</option>
-                                  <option value="07:00">07:00</option>
-                                  <option value="07:30">07:30</option>
-                                  <option value="08:00">08:00</option>
-                                  <option value="08:30">08:30</option>
-                                  <option value="09:00">09:00</option>
-                                  <option value="09:30">09:30</option>
-                                  <option value="10:00">10:00</option>
-                                  <option value="10:30">10:30</option>
-                                  <option value="11:00">11:00</option>
-                                  <option value="11:30">11:30</option>
-                                  <option value="12:00">12:00</option>
-                                  <option value="12:30">12:30</option>
-                                  <option value="13:00">13:00</option>
-                                  <option value="13:30">13:30</option>
-                                  <option value="14:00">14:00</option>
-                                  <option value="14:30">14:30</option>
-                                  <option value="15:00">15:00</option>
-                                  <option value="15:30">15:30</option>
-                                  <option value="16:00">16:00</option>
-                                  <option value="16:30">16:30</option>
-                                  <option value="17:00">17:00</option>
-                                  <option value="17:30">17:30</option>
-                                  <option value="18:00">18:00</option>
-                                  <option value="18:30">18:30</option>
-                                  <option value="19:00">19:00</option>
-                                  <option value="19:30">19:30</option>
-                                  <option value="20:00">20:00</option>
-                                  <option value="20:30">20:30</option>
-                                  <option value="21:00">21:00</option>
-                                  <option value="21:30">21:30</option>
-                                  <option value="22:00">22:00</option>
-                                  <option value="22:30">22:30</option>
-                                  <option value="23:00">23:00</option>
-                                  <option value="23:30">23:30</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
                                 </select>
                               </div>
                             </div>
@@ -1165,23 +1073,23 @@
                 </div>
               </div>
 
-              <div id="book-for-someone" class="personal-details">
+              <div id="book-for-someone">
                 <div class="your-details">
                   <div class="row">
-                    <div class="col-md-4"><h5>Your Details</h5></div>
-                    <div class="col-md-8">
+                    <div class="col-md-5"><h5>Your Details</h5></div>
+                    <div class="col-md-7">
                       <div id="personal_info" class="default-form">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="first_name">First Name*</label>
-                              <input type="text" name="first_name" class="required">
+                              <input type="text" name="first_name">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="last_name">Last Name*</label>
-                              <input type="text" name="last_name" class="required">
+                              <input type="text" name="last_name">
                             </div>
                           </div>
                         </div>
@@ -1189,7 +1097,7 @@
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="email">Email*</label>
-                              <input type="text" name="email" class="required">
+                              <input type="text" name="email">
                             </div>
                           </div>
                           <div class="col-md-6">
@@ -1204,14 +1112,253 @@
                   </div>
                 </div>
                 <div class="guest-details">
-                  <!-- dynamic element from js -->                  
+                  <!-- dynamic element from js -->
+
+                  <!-- <div class="guest-for-each-room">
+                    <div class="row">
+                      <div class="col-md-5"><span class="room-title">Room 1</span><h5>Guest Details</h5></div>
+                      <div class="col-md-7">
+                        <div id="personal_info" class="default-form">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="first_name">First Name*</label>
+                                <input type="text" name="first_name">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="last_name">Last Name*</label>
+                                <input type="text" name="last_name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="text" name="email">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="telephone">Telephone</label>
+                                <input type="text" name="telephone">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <a href="#" class="collapsable-arrow-cta optional-info">Optional Information</a>
+                            </div>
+                          </div>              
+                        </div>
+                        <div id="optional_info" class="default-form">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h6 class="optional_info_header">optional information</h6>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="address">Address*</label>
+                              <input type="text" name="address">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="city">City*</label>
+                              <input type="text" name="city">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="state">State*</label>
+                              <input type="text" name="state">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="country">Country*</label>
+                              <input type="text" name="country">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="post_code">Postcode*</label>
+                              <input type="text" name="post_code">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="special_requests">Special Requests*</label>
+                              <textarea name="special_requests"></textarea>
+                            </div>
+                          </div>                    
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_in_time">Estimated Check In Time*</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_in_time" id="estimated_check_in_time">
+                                  <option value="">Please select</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_out_time">Estimated Check Out Time*</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_out_time" id="estimated_check_out_time">
+                                  <option value="">Please select</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="guest-for-each-room">
+                    <div class="row">
+                      <div class="col-md-5"><span class="room-title">Room 2</span><h5>Guest Details</h5></div>
+                      <div class="col-md-7">
+                        <div id="personal_info" class="default-form">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="first_name">First Name*</label>
+                                <input type="text" name="first_name">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="last_name">Last Name*</label>
+                                <input type="text" name="last_name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="text" name="email">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="telephone">Telephone</label>
+                                <input type="text" name="telephone">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <a href="#" class="collapsable-arrow-cta optional-info">Optional Information</a>
+                            </div>
+                          </div>                
+                        </div>
+                        <div id="optional_info" class="default-form">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h6 class="optional_info_header">optional information</h6>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="address">Address*</label>
+                                <input type="text" name="address">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="city">City*</label>
+                                <input type="text" name="city">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="state">State*</label>
+                                <input type="text" name="state">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="country">Country*</label>
+                                <input type="text" name="country">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="post_code">Postcode*</label>
+                                <input type="text" name="post_code">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="special_requests">Special Requests*</label>
+                                <textarea name="special_requests"></textarea>
+                              </div>
+                            </div>                    
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="estimated_check_in_time">Estimated Check In Time*</label>
+                                <div class="manic-dropdown">
+                                  <select name="estimated_check_in_time" id="estimated_check_in_time">
+                                    <option value="">Please select</option>
+                                    <option value="10:00" selected>10:00</option>
+                                    <option value="10:15">10:15</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="estimated_check_out_time">Estimated Check Out Time*</label>
+                                <div class="manic-dropdown">
+                                  <select name="estimated_check_out_time" id="estimated_check_out_time">
+                                    <option value="">Please select</option>
+                                    <option value="10:00" selected>10:00</option>
+                                    <option value="10:15">10:15</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                 
+                      </div>
+                    </div>
+                  </div> -->
                 </div>
               </div>
 
               <div id="terms-and-conditions">
                 <div class="row">
-                  <div class="col-md-4"><h5>Terms & Conditions</h5></div>
-                  <div class="col-md-8">
+                  <div class="col-md-5"><h5>Terms & Conditions</h5></div>
+                  <div class="col-md-7">
                     <p>On arrival, all guests must provide a credit card with available funds for full payment of booking & a AUD$100 per night pre-authorization swipe, along with a valid current photo identification corresponding to the booking name. Cash bonds will NOT be accepted.</p>
 
                     <p>For security purposes, valid photo identification is required at check-in. Acceptable forms include a drivers license, passport, and/or proof of age card.</p>
@@ -1220,9 +1367,9 @@
 
                     <p>A valid credit card must be provided to secure your reservation. You will not be charged until arrival at the property, unless stated otherwise. You are welcome to pay on departure with CASH, EFPTOS or CREDIT CARD. Guests choosing to settle their account with a credit card will incur a surcharge of 1.5% for Visa/Mastercard and 3% for AMEX/Diners, EFTPOS (Savings or Cheque Account) payments exempt.</p>
                     
-                    <div class="default-form simple-form-check">
-                      <div class="form-group check-box-error">
-                        <input type="checkbox" name="terms_and_conditions" class="required">
+                    <div class="default-form">
+                      <div class="form-group">
+                        <input type="checkbox" name="terms_and_conditions">
                         <label for="terms_and_conditions" class="color-version"><span>I have read and agreed to the terms & conditions governing this booking.</span></label>
                       </div>
                     </div>
@@ -1232,16 +1379,16 @@
 
               <div id="cancellation-policies">
                 <div class="row">
-                  <div class="col-md-4"><h5>Cancellation Policies</h5></div>
-                  <div class="col-md-8">
+                  <div class="col-md-5"><h5>Cancellation Policies</h5></div>
+                  <div class="col-md-7">
                     <p>Cancellations or changes to bookings must be made at least 24 hours prior to the check in date and time or you will be charged the full amount of the first changed or cancelled night. </p>
 
                     <p>Please be aware that promotional room rates have specific cancellation policies. For promotional room rates customer credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
                     
-                    <div class="default-form simple-form-check">
-                      <div class="form-group check-box-error">
-                        <input type="checkbox" name="cancellation_policies" class="required">
-                        <label for="cancellation_policies" class="color-version">I have read and agreed to the cancellation policies.</label>
+                    <div class="default-form">
+                      <div class="form-group">
+                        <input type="checkbox" name="terms_and_conditions">
+                        <label for="terms_and_conditions" class="color-version">I have read and agreed to the cancellation policies.</label>
                       </div>
                     </div>
                   </div>
@@ -1250,20 +1397,20 @@
 
               <div id="card-details">
                 <div class="row">
-                  <div class="col-md-4"><h5>Card Details</h5></div>
-                  <div class="col-md-8">
-                    <div class="default-form simple-form-check">
+                  <div class="col-md-5"><h5>Card Details</h5></div>
+                  <div class="col-md-7">
+                    <div class="default-form">
                       <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="name_on_card">Name on Card*</label>
-                            <input type="text" name="name_on_card" class="required">                            
+                            <input type="text" name="name_on_card">                            
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="card_number">Card Number*</label>
-                            <input type="text" name="card_number" class="required">                            
+                            <input type="text" name="card_number">                            
                           </div>
                         </div>
                       </div>
@@ -1272,10 +1419,10 @@
                           <div class="form-group">
                             <label for="name_on_card">Card Type*</label>
                             <div class="manic-dropdown">
-                              <select name="name_on_card" id="name_on_card" class="required">
+                              <select name="name_on_card" id="name_on_card">
                                 <option value="">Please select</option>
                                 <option value="Visa" selected>Visa</option>
-                                <option value="Mastercard">Mastercard</option>
+                                <option value="Master">Master</option>
                                 <option value="American Express">American Express</option>
                               </select>
                             </div>
@@ -1283,7 +1430,7 @@
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="card_number">We Accept</label>
+                            <label for="card_number">We Accept*</label>
                             <ul class="payment-card">
                               <li><i class="fa fa-cc-visa" aria-hidden="true"></i></li>
                               <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i></li>
@@ -1301,7 +1448,7 @@
                               <div class="form-group">
                                 <label for="expiry_date">Expiry Date*</label>
                                 <div class="manic-dropdown">
-                                  <select name="expiry_date" id="expiry_date" class="required">
+                                  <select name="expiry_date" id="expiry_date">
                                     <option value="">Month</option>
                                     <option value="01">01</option>
                                     <option value="02">02</option>
@@ -1323,7 +1470,7 @@
                               <div class="form-group">
                                 <label for="expiry_date" class="hidden-label">Expiry Date*</label>
                                 <div class="manic-dropdown">
-                                  <select name="expiry_date" id="expiry_date" class="required">
+                                  <select name="expiry_date" id="expiry_date">
                                     <option value="">Year</option>
                                     <option value="2017">2017</option>
                                     <option value="2018">2018</option>
@@ -1343,7 +1490,7 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="cvv">CVV*</label>
-                            <input type="text" name="cvv" class="cvv required">
+                            <input type="text" name="cvv" class="cvv">
                             <a href="#" class="cvv-cta"><i class="fa fa-credit-card" aria-hidden="true"></i></a>
                           </div>
                         </div>
@@ -1425,10 +1572,6 @@
               <h6>Sage west perth</h6>
             </div>
             <div class="reservation-summary-content">
-              <div class="reservation-summary-content-check-in-out-date-02">
-                <h6>Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</h6>
-                <p>29/03/2017 to 26/03/2017</p>                                
-              </div>
               <div class="reservation-summary-content-check-in-out-date">
                 <h6>Check in</h6>
                 <p>Sun, 26 Mar 2017</p>
@@ -1445,7 +1588,7 @@
 
             <div class="reservation-summary-selected-extras-container">
               <div class="reservation-summary-expandable-content selected-extras">
-                  <div class="manic-expand-container desktop-open-version extra-version">
+                  <div class="manic-expand-container desktop-open-version">
                       <div class="scroll-target" data-value="title-01"></div>
                       <div class="manic-expand-container-title extra-version">
                           <h6>Extras</h6> </div>
@@ -1617,7 +1760,7 @@
 <div class="cancellation-popup-container">
   <div class="cancellation-popup">
     <div class="cancellation-popup-title">
-      <h5>7 days Advanced Purchase <span>Cancellation Policies</span></h5>
+      <h5>7 days Advanced Purchase <span>Rate Breakdown</span></h5>
     </div>
     <div class="cancellation-popup-content">
       <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>

@@ -8,7 +8,7 @@ ob_start();
   // $is_debug = false;
   $is_debug = true;
 
-  $body_class = "booking booking-page permanent-scrolled";
+  $body_class = "booking error-404-page permanent-scrolled";
 ?>
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -50,7 +50,7 @@ ob_start();
 
 
 
-        <?php include('page_booking_engine.php'); ?>
+        <?php include('page_booking_engine_no_room.php'); ?>
 
         
 
@@ -75,7 +75,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('booking_engine.html', ob_get_contents());
+file_put_contents('404.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>

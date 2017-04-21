@@ -53,7 +53,26 @@
 
 
     <!-- mobile header is outside the page wrapper -->
-        
+    <!-- <div id="mobile-header-spacer"></div> -->
+<header id="mobile-header">
+
+  <div class="mobile-header-bg violet-version"></div>
+
+  <div id="mobile-header-content-container">
+    <!-- <div id="mobile-header-close-btn"><span>Menu</span></div>
+    <div id="mobile-header-open-btn"></div> -->
+
+    <a href="brand_alternative.php" id="mobile-header-logo" class="booking-engine-logo">
+      <img src="images/logo/sage-west-logo.svg">
+    </a>  
+  
+    <!-- <a href="javascript:void(0);" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="javascript:void(0);" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>           
+    -->
+    <a href="http://clients.manic.com.sg/snh/html/bin/location.php" id="mobile-header-contact-us-btn">Contact</a>
+  </div>
+
+</header> <!-- #mobile-header -->    
     <div id="page-wrapper">
       <div id="page-wrapper-content">
 
@@ -87,7 +106,7 @@
       </div>  
       <div class="col-md-2">
         <p id="desktop-header-contact-us">do you Need help? <br>
-        please contact us, <a href="#">here</a></p>      
+        please contact us, <a href="http://clients.manic.com.sg/snh/html/bin/location.php">here</a></p>      
       </div>
     </div>
   </div>
@@ -141,7 +160,9 @@
 
 
 
-        <div id="default-header-spacer"></div>
+        <div id="default-header-spacer" class="hidden-xs hidden-sm"></div>
+<div id="default-header-mobile-spacer" class="visible-xs visible-sm"></div>
+
 
 <div id="booking-engine-form">   
 
@@ -174,7 +195,7 @@
                     </div>
                   </div>
                   <div class="input-box row">
-                    <div class="input-box-col-1 col-md-6">
+                    <div class="input-box-col-1 col-md-6 col-sm-6 col-xs-6">
                       <label for="">Adults</label>
                       <div class="dropdown">
                         <select name="adults" id="adults">
@@ -191,7 +212,7 @@
                         </select>
                       </div>
                     </div>
-                    <div class="input-box-col-2 col-md-6">
+                    <div class="input-box-col-2 col-md-6 col-sm-6 col-xs-6">
                       <label for="">Children</label>
                       <div class="dropdown">
                         <select name="children" id="children">
@@ -289,6 +310,7 @@
                   <div class="date-input">
                     <input type="text" name="arrival_departure" id="arrival_departure">
                   </div>
+                  <div id="step-1-booking-calendar"></div>
                 </div>
               </div>
               <div class="col-md-2">
@@ -343,7 +365,7 @@
 
       <div id="booking-engine-step-1-content">
         <div class="container-fluid">
-          <div class="col-md-12">
+          <!-- <div class="col-md-12">
             <div class="booking-no-room">
               <div class="booking-no-room-content">
                 <h1>All the Sage hotel rooms are fully booked, here are the alternative hotel you could try.</h1>      
@@ -402,12 +424,12 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-md-9">
 
             <div class="booking-room-booked-content">
-              <h1>“Superior Room” not available for the selected search, here are some other rooms for you.</h1>      
+              <h1>The “Superior Room” is not available for your selected search, here are our other rooms that might interest you</h1>      
               <p>Aliquam vel elit sit amet sem congue dignissim. Nunc mattis tempus varius. Cras nisi massa, egestas in consectetur id, tempor et leo. Curabitur quam elit, varius vitae.</p>
             </div>
             
@@ -418,37 +440,73 @@
                   <div class="col-md-5">
                     <div class="booking-room-content-image">
                       <a href="room_detail.php" class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" alt="">
+                        <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" data-image-mobile="images_cms/room/room-index-standard-room.jpg" alt="">
                       </a>
                     </div>
                   </div>
                   <div class="col-md-7">
                     
-                    <div class="booking-room-content-title">
-                      <a href="room_detail.php"><h5>Standard Room</h5></a>
-                      <div class="boxlist-item-content-price room-price">
-                        <h6>4 nights from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$612</span>
-                        </p>
-                      </div>                 
-                    </div>                                
-                    
-                    <div class="booking-room-content-detail boxlist-item-content-room-detail">
-                      <p class="detail-size">25 SQM</p>
-                      <p class="detail-person">2 adults, 2 children (max.)</p>                  
-                      <p class="detail-bed">1 KING SIZE BED</p>                  
+                    <div class="booking-room-content-text-container-desktop hidden-xs hidden-sm">
+                      <div class="booking-room-content-title">
+                        <a href="room_detail.php"><h5>Standard Room</h5></a>
+                        <div class="boxlist-item-content-price room-price">
+                          <h6>4 nights from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$612</span>
+                          </p>
+                        </div>                 
+                      </div>                                
+                      
+                      <div class="booking-room-content-detail boxlist-item-content-room-detail">
+                        <p class="detail-size">25 SQM</p>
+                        <p class="detail-person">2 adults, 2 children (max.)</p>                  
+                        <p class="detail-bed">1 KING SIZE BED</p>                  
 
-                      <div class="show-rates-cta-container">
-                        <a href="javascript:void(0);" class="show-rates-cta square-cta highlight-version">Show Rates</a>
+                        <div class="show-rates-cta-container">
+                          <a href="javascript:void(0);" class="show-rates-cta square-cta highlight-version">Show Rates</a>
+                        </div>
+                      </div>                                              
+                      
+                      <div class="booking-room-content-copy">
+                        <div class="default-copy">
+                          <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                        </div>
                       </div>
-                    </div>                                              
+                    </div>
                     
-                    <div class="booking-room-content-copy">
-                      <div class="default-copy">
-                        <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                    <div class="booking-room-content-text-container-mobile visible-xs visible-sm">
+                      <div class="booking-room-content-title-mobile">
+                        <a href="room_detail.php"><h5>Standard Room</h5></a>                      
                       </div>
+
+                      <div class="booking-room-content-detail-mobile boxlist-item-content-room-detail">
+                        <p class="detail-size">25 SQM</p>
+                        <p class="detail-person">2 adults, 2 children (max.)</p>                  
+                        <p class="detail-bed">1 KING SIZE BED</p>     
+                      </div>
+
+                      <div class="booking-room-content-cta-and-price-mobile">
+                        <a href="#" class="collapsable-arrow-cta show-room-copy-cta-mobile">More details</a>
+                        <div class="boxlist-item-content-price room-price">
+                          <h6>4 nights from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$612</span>
+                          </p>
+                        </div>
+
+                        <div class="booking-room-content-copy-mobile">
+                          <div class="default-copy">
+                            <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                          </div>
+                        </div>
+
+                        <div class="show-rates-cta-container-mobile">
+                          <a href="javascript:void(0);" class="show-rates-cta-mobile square-cta highlight-version">Show Rates</a>
+                        </div>
+                      </div>
+
                     </div>
 
                   </div>
@@ -506,7 +564,9 @@
                           <div class="col-md-12 cancellation-policies">
                             <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                             <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
-                          </div>                    
+                          </div>
+
+                          <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta-mobile visible-xs visible-sm">Select Room</a>
                         </div>
                       </div>                    
                     </div>
@@ -563,7 +623,9 @@
                           <div class="col-md-12 cancellation-policies">
                             <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                             <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
-                          </div>                    
+                          </div>        
+
+                          <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta-mobile visible-xs visible-sm">Select Room</a>            
                         </div>
                       </div>                    
                     </div>
@@ -582,36 +644,71 @@
                   <div class="col-md-5">
                     <div class="booking-room-content-image">
                       <a href="room_detail.php" class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" alt="">
+                        <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" data-image-mobile="images_cms/room/room-index-standard-room.jpg" alt="">
                       </a>
                     </div>
                   </div>
                   <div class="col-md-7">
                     
-                    <div class="booking-room-content-title">
-                      <a href="room_detail.php"><h5>Standard Room</h5></a>
-                      <div class="boxlist-item-content-price room-price">
-                        <h6>4 nights from</h6>
-                        <p class="content-price">
-                          <span class="currency">aud</span>
-                          <span class="number">$612</span>
-                        </p>
-                      </div>                 
-                    </div>                                
-                    
-                    <div class="booking-room-content-detail boxlist-item-content-room-detail">
-                      <p class="detail-size">25 SQM</p>
-                      <p class="detail-person">2 adults, 2 children (max.)</p>                  
-                      <p class="detail-bed">1 KING SIZE BED</p>                  
+                    <div class="booking-room-content-text-container-desktop hidden-xs hidden-sm">
+                      <div class="booking-room-content-title">
+                        <a href="room_detail.php"><h5>Standard Room</h5></a>
+                        <div class="boxlist-item-content-price room-price">
+                          <h6>4 nights from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$612</span>
+                          </p>
+                        </div>                 
+                      </div>                                
+                      
+                      <div class="booking-room-content-detail boxlist-item-content-room-detail">
+                        <p class="detail-size">25 SQM</p>
+                        <p class="detail-person">2 adults, 2 children (max.)</p>                  
+                        <p class="detail-bed">1 KING SIZE BED</p>                  
 
-                      <div class="show-rates-cta-container">
-                        <a href="javascript:void(0);" class="show-rates-cta square-cta highlight-version">Show Rates</a>
+                        <div class="show-rates-cta-container">
+                          <a href="javascript:void(0);" class="show-rates-cta square-cta highlight-version">Show Rates</a>
+                        </div>
+                      </div>                                              
+                      
+                      <div class="booking-room-content-copy">
+                        <div class="default-copy">
+                          <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                        </div>
                       </div>
-                    </div>                                              
-                    
-                    <div class="booking-room-content-copy">
-                      <div class="default-copy">
-                        <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                    </div>
+
+                    <div class="booking-room-content-text-container-mobile visible-xs visible-sm">
+                      <div class="booking-room-content-title-mobile">
+                        <a href="room_detail.php"><h5>Standard Room</h5></a>                      
+                      </div>
+
+                      <div class="booking-room-content-detail-mobile boxlist-item-content-room-detail">
+                        <p class="detail-size">25 SQM</p>
+                        <p class="detail-person">2 adults, 2 children (max.)</p>                  
+                        <p class="detail-bed">1 KING SIZE BED</p>     
+                      </div>
+
+                      <div class="booking-room-content-cta-and-price-mobile">
+                        <a href="#" class="collapsable-arrow-cta show-room-copy-cta-mobile">More details</a>
+                        <div class="boxlist-item-content-price room-price">
+                          <h6>4 nights from</h6>
+                          <p class="content-price">
+                            <span class="currency">aud</span>
+                            <span class="number">$612</span>
+                          </p>
+                        </div>
+
+                        <div class="booking-room-content-copy-mobile">
+                          <div class="default-copy">
+                            <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                          </div>
+                        </div>
+
+                        <div class="show-rates-cta-container-mobile">
+                          <a href="javascript:void(0);" class="show-rates-cta-mobile square-cta highlight-version">Show Rates</a>
+                        </div>
                       </div>
                     </div>
 
@@ -812,7 +909,7 @@
                   <div class="col-md-5">
                     <div class="booking-extra-content-image">
                       <a href="room_detail.php" class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-01.jpg" alt="">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-02.jpg" alt="">
                       </a>
                     </div>
                   </div>
@@ -854,6 +951,147 @@
                           </select>
                         </div>
                       </div>
+                      <button class="square-cta add-to-booking-cta highlight-version">Add to booking</a>               
+                    </div>     
+
+                  </div>
+                </div>            
+              </div><!-- end booking-extra-content-info-->
+            
+            </div><!-- end booking-extra-content -->
+
+            <div class="booking-extra-content booking-extras">            
+
+              <div class="booking-extra-content-info">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="booking-extra-content-image">
+                      <a href="room_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-03.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    
+                    <div class="booking-extra-content-title">
+                      <h5>Guarantee Your Room for Early Chek In!</h5>
+                      <div class="boxlist-item-content-price room-price">
+                        <h6>per booking</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$50</span>
+                        </p>
+                      </div>                 
+                    </div>                                
+                    
+                    <div class="booking-extra-content-copy">
+                      <div class="default-copy">
+                        <p>Can’t wait to get into your room? Beat the 3pm check-in by guaranteeing your room from midday!</p>
+                      </div>
+                    </div>
+
+                    <div class="booking-extra-content-cta default-form">
+                      <div class="form-group">
+                        <label for="quantity">Quantity</label>                      
+                        <div class="manic-dropdown">
+                          <select name="quantity" id="quantity">
+                            <option value="">Please Select</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button class="square-cta add-to-booking-cta highlight-version">Add to booking</a>               
+                    </div>     
+
+                  </div>
+                </div>            
+              </div><!-- end booking-extra-content-info-->
+            
+            </div><!-- end booking-extra-content -->
+
+            <div class="booking-extra-content booking-extras">            
+
+              <div class="booking-extra-content-info">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="booking-extra-content-image">
+                      <a href="room_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-04.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    
+                    <div class="booking-extra-content-title">
+                      <h5>Sage Hotel Breakfast, Prepay & Save</h5>
+                      <div class="boxlist-item-content-price room-price">
+                        <h6>price from</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$25</span>
+                        </p>
+                      </div>                 
+                    </div>                                
+                    
+                    <div class="booking-extra-content-copy">
+                      <div class="default-copy">
+                        <p>Haven't you heard that breakfast is the most important meal of the day? Kick start your morning by adding on our $25 breakfast. Make up your own healthy cereals with nuts and seeds or head straight to the delectable pastries.</p>
+                      </div>
+                    </div>
+
+                    <div class="booking-extra-content-cta default-form">
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="adult">Adult</label>                      
+                            <div class="manic-dropdown small-version">
+                              <select name="adult" id="adult">
+                                <option value="">Please Select</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="child">Child</label>                      
+                            <div class="manic-dropdown small-version">
+                              <select name="child" id="child">
+                                <option value="">Please Select</option>
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                            </div>
+                            <span class="child-age-notice">≤ 11 years old</span>
+                          </div>
+                        </div>
+                        
+                      </div>                      
                       <button class="square-cta add-to-booking-cta highlight-version">Add to booking</a>               
                     </div>     
 
@@ -1476,9 +1714,9 @@
                 </div>
 
                 <div class="ctas-container">
-                  <button id="download-booking-summary-cta" class="square-cta">download booking summary</button>
-                  <button id="print-booking-summary-cta" class="square-cta">print booking summary</button>
-                  <button id="return-to-homepage-cta" class="square-cta">return to homepage</button>
+                  <button id="download-booking-summary-cta" class="square-cta highlight-version">download booking summary</button>
+                  <button id="print-booking-summary-cta" class="square-cta highlight-version">print booking summary</button>
+                  <button id="return-to-homepage-cta" class="square-cta highlight-version">return to homepage</button>
                 </div>
               </div>
             </div>
@@ -1492,7 +1730,7 @@
         <div class="col-md-3 col-md-offset-9">
           <div class="reservation-summary-sidebar">
             <div class="reservation-summary-title">
-              <h5>Reservation Summary</h5>
+              <h5>Booking Summary</h5>
               <h6>Sage west perth</h6>
             </div>
             <div class="reservation-summary-content">
@@ -1605,7 +1843,7 @@
                   </div>
                 </div>
 
-                <button type="submit" class="square-cta proceed-to-payment highlight-version">proceed to payment</button>
+                <button type="submit" class="square-cta proceed-to-payment highlight-version">proceed to booking</button>
               </div>
             </div>
                 
@@ -1709,7 +1947,7 @@
   </div>
 </div>
 
-<div id="default-footer-spacer"></div>
+<div id="default-footer-spacer" class="hidden-xs hidden-sm"></div>
         
 
         <!--

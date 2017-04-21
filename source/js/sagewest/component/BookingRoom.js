@@ -37,9 +37,15 @@ sagewest.component.BookingRoom = function(options, element) {
   this.show_rates_cta = this.element.find('.show-rates-cta');
   this.show_rates_cta.click(this.on_show_rates_click.bind(this));
 
+  this.show_rates_cta_mobile = this.element.find('.show-rates-cta-mobile');
+  this.show_rates_cta_mobile.click(this.on_show_rates_click.bind(this));
+
   this.booking_room_rates = this.element.find('.booking-room-rates');
   this.booking_room_rate = this.element.find('.booking-room-rate');
 
+
+  this.show_room_copy_cta_mobile = this.element.find('.show-room-copy-cta-mobile');
+  this.show_room_copy_cta_mobile.click(this.on_show_room_copy_cta_mobile_click.bind(this));
 
   this.create_booking_room_rate();
 
@@ -95,7 +101,7 @@ sagewest.component.BookingRoom.prototype.create_booking_room_rate = function(){
 
     this.room_rate_item_array[i] = room_rate_item;
 
-    goog.events.listen(room_rate_item, sagewest.component.BookingRoomRate.ON_ROOM_ADDED, function(event){
+    goog.events.listen(room_rate_item, sagewest.component.BookingRoomRate.ON_ROOM_ADDED, function(event){      
       
       this.dispatchEvent(new goog.events.Event(sagewest.component.BookingRoom.ON_ROOM_ADDED));
 
@@ -185,13 +191,24 @@ sagewest.component.BookingRoom.prototype.on_show_rates_click = function(event) {
     this.rate_expand();
   }
 
+  $('body').trigger("ON_RATES_EXPAND");
+
 };
 
 /**
  * event handler
  * @param  {object} event
  */
-sagewest.component.BookingRoom.prototype.on_event_handler_02 = function(event) {
+sagewest.component.BookingRoom.prototype.on_show_room_copy_cta_mobile_click = function(event) {
+  event.preventDefault();
+  var booking_room_content_copy_mobile_item = $(event.currentTarget).parent().find('.booking-room-content-copy-mobile');
+
+  if(booking_room_content_copy_mobile_item.is(':visible')){
+    booking_room_content_copy_mobile_item.slideUp();
+  }else {
+    booking_room_content_copy_mobile_item.slideDown();
+  }
+
 };
 
 /**

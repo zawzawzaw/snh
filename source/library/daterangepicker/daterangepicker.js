@@ -1382,8 +1382,10 @@
 
             this.updateView();
 
-            // zaw
-            this.element.trigger("click");
+            // zaw // to always open calendar on snh booking engine step 0
+            if(this.alwaysShowCalendars === true) {
+                this.element.trigger("click");
+            }            
 
             //This is to cancel the blur event handler if the mouse was in one of the inputs
             e.stopPropagation();

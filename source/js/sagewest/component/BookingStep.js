@@ -97,6 +97,27 @@ sagewest.component.BookingStep.prototype.sample_method_calls = function() {
 //   |_|    \___/|____/|_____|___\____|
 //
 
+sagewest.component.BookingStep.prototype.go_to_step = function() {
+
+  $(".booking-steps").removeClass("active-step");  
+  var currentStep = parseInt(this.element.attr("data-step"));
+  
+  $("#booking-engine-step-"+currentStep).addClass("active-step");
+
+  if(currentStep>3) {
+    $("#booking-engine-sidebar").find(".col-md-3.col-md-offset-9").removeClass("col-md-3 col-md-offset-9").addClass("col-md-7 col-md-offset-5");
+    $("#booking-engine-sidebar").find(".reservation-summary-sidebar").addClass("confirmation");
+  }
+
+  if(currentStep>1) {
+    $("#booking-engine-sidebar").css("top", "0");
+  }else {
+    $("#booking-engine-sidebar").css("top", "153px");
+  }
+
+  this.dispatchEvent(new goog.events.Event(sagewest.component.BookingStep.ON_STEP_CHANGE));
+
+};
 
 sagewest.component.BookingStep.prototype.go_next_step = function() {
 

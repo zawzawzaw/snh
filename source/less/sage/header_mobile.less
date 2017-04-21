@@ -20,7 +20,6 @@
   left: 0;
   width: 100%;
 
-
   .black-bg{
     position: absolute;
     top: 0;
@@ -43,7 +42,11 @@
     // background: transparent;
     background: @light-grey;    
 
-    .transition-in(0.3s);        
+    .transition-in(0.3s);     
+
+    &.violet-version {
+      background: @violet;
+    }
   }
 
 }
@@ -95,6 +98,11 @@ body.body-sticky-version{
 
   display: block;
   .transition-in(0.3s);
+
+  &.booking-engine-logo {
+    left: 15px;
+  }
+
   img{
     display: block;
     // width: 95px;
@@ -106,6 +114,20 @@ body.body-sticky-version{
     top: -5px;
     left: -5px;
   }
+}
+
+#mobile-header-contact-us-btn {
+  position: absolute;
+  top: 20px;
+  right: 15px;              
+  .open-sans-regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: right;
+  color: @white;
+  .transition-in (0.4s)
 }
 
 #mobile-header-calendar-close-btn {
