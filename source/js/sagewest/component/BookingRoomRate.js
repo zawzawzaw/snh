@@ -3,6 +3,8 @@ goog.provide('sagewest.component.BookingRoomRate');
 goog.require('goog.events.Event');
 goog.require('goog.events.EventTarget');
 
+sagewest.component.BookingRoomRate.CURRENT_RATE_NAME = '';
+
 // goog.require('sagewest.component.BookingSummary');
 
 /**
@@ -31,7 +33,8 @@ sagewest.component.BookingRoomRate = function(options, element) {
 
   // console.log('init booking room rate');
 
-  this.rate_package = this.element.find(".booking-room-rates-title h5").text();
+  this.rate_title = this.element.find(".booking-room-rates-title h5").text();
+  this.price = this.element.find(".price-and-cta-container .content-price .number").text();
 
   this.is_popup_open = false;
   this.is_expanded = false;
@@ -177,7 +180,9 @@ sagewest.component.BookingRoomRate.prototype.on_show_rate_detail_click = functio
 sagewest.component.BookingRoomRate.prototype.on_select_room_cta_click = function(event) {
   event.preventDefault();    
 
-  // console.log(this.element.find(".booking-room-rates-title h5").text());
+  console.log(this.element.find(".booking-room-rates-title h5").text());
+
+  sagewest.component.BookingRoomRate.CURRENT_RATE_NAME = this.element.find(".booking-room-rates-title h5").text();
 
   this.dispatchEvent(new goog.events.Event(sagewest.component.BookingRoomRate.ON_ROOM_ADDED));
 

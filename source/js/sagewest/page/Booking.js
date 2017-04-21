@@ -136,15 +136,11 @@ sagewest.page.Booking.prototype.create_booking_rooms = function(){
     var item = $(arr[i]);
     var room_item = new sagewest.component.BookingRoom({}, item);  
 
-    goog.events.listen(room_item, sagewest.component.BookingRoom.ON_ROOM_ADDED, function(event){
-
-      console.log(room_item)
-
-      // console.log(event);
+    goog.events.listen(room_item, sagewest.component.BookingRoom.ON_ROOM_ADDED, function(event){      
       
-      this.booking_summary_item.book_room(); // add booking room to sidebar
-
       this.no_of_room_booked += 1;
+
+      this.booking_summary_item.book_room(event.currentTarget, this.no_of_room_booked); // add booking room to sidebar      
 
       this.booking_payment_item.add_guest_details_form_per_room_booking();
 

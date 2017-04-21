@@ -107,6 +107,7 @@ sagewest.component.BookingStep.prototype.go_to_step = function() {
   if(currentStep>3) {
     $("#booking-engine-sidebar").find(".col-md-3.col-md-offset-9").removeClass("col-md-3 col-md-offset-9").addClass("col-md-7 col-md-offset-5");
     $("#booking-engine-sidebar").find(".reservation-summary-sidebar").addClass("confirmation");
+    $("#booking-engine-sidebar").addClass("confirmation");
   }
 
   if(currentStep>1) {
@@ -131,6 +132,7 @@ sagewest.component.BookingStep.prototype.go_next_step = function() {
   if(currentStep>3) {
     $("#booking-engine-sidebar").find(".col-md-3.col-md-offset-9").removeClass("col-md-3 col-md-offset-9").addClass("col-md-7 col-md-offset-5");
     $("#booking-engine-sidebar").find(".reservation-summary-sidebar").addClass("confirmation");
+    $("#booking-engine-sidebar").addClass("confirmation");
   }
 
   if(currentStep>1) {

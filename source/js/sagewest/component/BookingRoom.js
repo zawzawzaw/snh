@@ -30,6 +30,9 @@ sagewest.component.BookingRoom = function(options, element) {
 
   // console.log('init booking room js');
 
+  this.selected_rate_package = "";
+  this.room_title = this.element.find(".booking-room-content-title h5").text();
+
   this.room_rate_item_array = [];
 
   this.is_rate_expanded = false;
@@ -102,7 +105,8 @@ sagewest.component.BookingRoom.prototype.create_booking_room_rate = function(){
     this.room_rate_item_array[i] = room_rate_item;
 
     goog.events.listen(room_rate_item, sagewest.component.BookingRoomRate.ON_ROOM_ADDED, function(event){      
-      
+
+      this.selected_rate_package = event.currentTarget;
       this.dispatchEvent(new goog.events.Event(sagewest.component.BookingRoom.ON_ROOM_ADDED));
 
     }.bind(this));

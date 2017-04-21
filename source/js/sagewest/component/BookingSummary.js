@@ -178,9 +178,23 @@ sagewest.component.BookingSummary.prototype.update_page_height_on_confirmation =
 }
 
 // DUMMY ADD
-sagewest.component.BookingSummary.prototype.book_room = function() {
+sagewest.component.BookingSummary.prototype.book_room = function(booking_room, no_of_room_booked) {
+
+  console.log(booking_room.selected_rate_package);
+  console.log(booking_room.room_title);
+
+  var booking_room_data = {
+    'no_of_room_booked' : no_of_room_booked,
+    'room_title' : booking_room.room_title,
+    'rate_title' : booking_room.selected_rate_package.rate_title,
+    'price' : booking_room.selected_rate_package.price,
+  };
+
   this.selected_room_container = this.element.find(".reservation-summary-selected-rooms-container");
   this.selected_room_container_2 = this.element.find(".reservation-summary-content-selected-rooms");
+
+  var template = Handlebars.compile($("#summary-room-template").html());
+  var room_html = template(booking_room_data);
 
   if(this.element.find(".selected-rooms").length <= 5) {
     this.selected_room_container.append(this.room_html);        

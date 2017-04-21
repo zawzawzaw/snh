@@ -1222,7 +1222,7 @@
                     
                     <div class="default-form simple-form-check">
                       <div class="form-group check-box-error">
-                        <input type="checkbox" name="terms_and_conditions" class="required">
+                        <input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" class="required">
                         <label for="terms_and_conditions" class="color-version"><span>I have read and agreed to the terms & conditions governing this booking.</span></label>
                       </div>
                     </div>
@@ -1240,7 +1240,7 @@
                     
                     <div class="default-form simple-form-check">
                       <div class="form-group check-box-error">
-                        <input type="checkbox" name="cancellation_policies" class="required">
+                        <input type="checkbox" name="cancellation_policies" id="cancellation_policies" class="required">
                         <label for="cancellation_policies" class="color-version">I have read and agreed to the cancellation policies.</label>
                       </div>
                     </div>
@@ -1387,7 +1387,7 @@
                   </p>
 
                   <ul class="contact-details">
-                    <li><span>P:</span> <a href="tel:+61 865009100">+61 865009100</a><br></li>
+                    <li><span>T:</span> <a href="tel:+61 865009100">+61 865009100</a><br></li>
                     <li><span>F:</span> <a href="tel:+61 865009101">+61 865009101</a><br></li>
                     <li><span>E:</span> <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></li>
                   </ul>
@@ -1641,5 +1641,42 @@
     <a href="#" class="back-arrow-cta back-to-payment-btn">Back to payment</a>     
   </div>
 </div>
+
+<script id="summary-room-template" type="text/x-handlebars-template">
+  <div class="reservation-summary-expandable-content selected-rooms">
+      <div class="manic-expand-container desktop-open-version">
+          <div class="scroll-target" data-value="title-01"></div>
+          <div class="manic-expand-container-title">
+              <h6>Room {{ no_of_room_booked }}</h6> </div>
+          <div class="manic-expand-container-btn"></div>
+          <div class="manic-expand-container-content">
+              <div class="row">
+                  <div class="col-md-5">
+                      <div class="manic-image-container"><img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" alt=""></div>
+                  </div>
+                  <div class="col-md-7">
+                      <div class="selected-room">
+                          <div class="selected-room-title">
+                              <h5>{{ room_title }}</h5> <a href="#" class="delete-room-btn delete-btn"><i class="fa fa-times"></i></a> </div>
+                          <div class="selected-room-content">
+                              <div class="selected-room-content-details">
+                                  <h5>{{ rate_title }}</h5>
+                                  <p>2 Adults, 0 Children</p>
+                              </div>
+                              <div class="selected-room-content-price"> <span class="price">{{ price }}</span> </div>
+                          </div>
+                      </div>
+                      <div class="selected-room-nightly-rates">
+                          <div class="selected-room-nightly-rates-title"> <a href="#" class="nightly-rates-popup-cta"><h6>Nightly Rates</h6></a> </div>
+                      </div>
+                      <div class="selected-room-cancellation-policies">
+                          <div class="selected-room-cancellation-policies-title"> <a href="#" class="cancellation-popup-cta"><h6>Cancellation Policies</h6></a> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</script>
 
 <div id="default-footer-spacer" class="hidden-xs hidden-sm"></div>
