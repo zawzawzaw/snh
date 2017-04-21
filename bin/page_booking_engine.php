@@ -1,6 +1,8 @@
 <div id="default-header-spacer"></div>
-<div id="booking-engine-form">         
-  <div id="booking-engine-step-0">
+
+<div id="booking-engine-form">   
+
+  <div id="booking-engine-step-0" data-step="0" class="booking-steps active-step">
       <div id="booking-engine-step-0-header">
         <h3>Please select the dates to see the available rooms for your stay.</h3>
         <h5>date & number of guest</h5>
@@ -86,36 +88,36 @@
       </div>
   </div>
 
-  <div id="booking-engine-steps">
+  <div id="booking-engine-steps-indicator">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
-          <div class="step active-step">
-            <a href="#">
+          <div id="step-indicator-1" class="step active-step" data-step="1">
+            <a href="#" class="go-to-step">
               <h3>1. Select your room</h3>
               <h5>accommodation & offers</h5>
             </a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="step">
-            <a href="#">
+          <div id="step-indicator-2" class="step" data-step="2">
+            <a href="#" class="go-to-step">
               <h3>2. Personalise your stay</h3>
               <h5>service experience</h5>
             </a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="step">
-            <a href="#">
+          <div id="step-indicator-3" class="step" data-step="3">
+            <a href="#" class="go-to-step">
               <h3>3. Make payment </h3>
               <h5>guest & payment details</h5>
             </a>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="step">
-            <a href="#">
+          <div id="step-indicator-4" class="step" data-step="4">
+            <a href="#" class="go-to-step">
               <h3>4. Confirmation</h3>
               <h5>enjoy your stay</h5>
             </a>
@@ -124,366 +126,1444 @@
       </div>
     </div>
   </div>
+        
+  <div id="booking-engine-steps-container">
 
-  <div id="booking-engine-step-1">    
-    <div id="booking-engine-step-1-header">      
-      <div class="container-fluid">
-        <div class="row">
-          <form id="booking-engine-search-form" action="" class="default-form">
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="promotion_code">Promotion Code</label>
-                <input type="text" name="promotion_code" id="promotion_code">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="form-group">
-                <label for="arrival_departure">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
-                <div class="date-input">
-                  <input type="text" name="arrival_departure" id="arrival_departure">
+    <div id="booking-engine-step-1" data-step="1" class="booking-steps">
+      <div id="booking-engine-step-1-header">      
+        <div class="container-fluid">
+          <div class="row">
+            <form id="booking-engine-search-form" action="" class="default-form">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="promotion_code">Promotion Code</label>
+                  <input type="text" name="promotion_code" id="promotion_code">
                 </div>
               </div>
-            </div>
-            <div class="col-md-2">
-              <div class="form-group">
-                <label for="adults">Adults</label>
-                <div class="manic-dropdown">
-                  <select name="adults" id="adults">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="arrival_departure">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+                  <div class="date-input">
+                    <input type="text" name="arrival_departure" id="arrival_departure">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-2">
-              <div class="form-group">
-                <label for="children">Children <span>≤ 11 years old</span></label>
-                <div class="manic-dropdown">
-                  <select name="children" id="children">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="adults">Adults</label>
+                  <div class="manic-dropdown">
+                    <select name="adults" id="adults">
+                      <option value="">Please Select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-2">
-              <div class="cta-container">
-                <button type="submit" class="square-cta highlight-version">change search</button>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="children">Children <span>≤ 11 years old</span></label>
+                  <div class="manic-dropdown">
+                    <select name="children" id="children">
+                      <option value="">Please Select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
+              <div class="col-md-2">
+                <div class="cta-container">
+                  <button type="submit" class="square-cta highlight-version">change search</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>      
 
-    <div id="booking-engine-step-1-content">
-      <div class="container-fluid">
-        <div class="col-md-9">
-          <div class="booking-result-room-box">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="booking-result-room-content-image">
-                  <a href="room_detail.php" class="manic-image-container">
-                    <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" alt="">
-                  </a>
+      <div id="booking-engine-step-1-content">
+        <div class="container-fluid">
+          <div class="col-md-12">
+            <div class="booking-no-room">
+              <div class="booking-no-room-content">
+                <h1>All the Sage hotel rooms are fully booked, here are the alternative hotel you could try.</h1>      
+                <p>Aenean a ultrices lectus. Fusce sem elit, malesuada tincidunt aliquam vitae, rutrum id diam. Vivamus cursus egestas ligula in condimentum. Aliquam id pretium orci.</p>
+              </div>
+
+              <div id="booking-no-room-suggestion">
+                <div id="booking-no-room-suggestion-carousel">
+                  <div class="carousel-content">
+                    <img src="images_cms/home/home-location-01.jpg" alt="">                
+                  </div>
+                  <div class="carousel-content">
+                    <img src="images_cms/home/home-location-02.jpg" alt="">                
+                  </div>
+                  <div class="carousel-content">
+                    <img src="images_cms/home/home-location-03.jpg" alt="">                
+                  </div>
+                </div>
+                <div id="booking-no-room-suggestion-carousel-text-1" class="active booking-no-room-suggestion-carousel-text">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="booking-no-room-suggestion-carousel-header-text">
+                        <h4>western perth</h4>
+                        <h3>Country Comfort Inter City Perth</h3>
+                        <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                      <a href="#" class="arrow-cta">Visit Website</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="booking-no-room-suggestion-carousel-text-2" class="booking-no-room-suggestion-carousel-text">
+                  <div class="row">
+                    <div id="booking-no-room-suggestion-carousel-header-text" class="col-md-2">
+                      <h4>Sage Hotels</h4>
+                      <h3>West Perth</h3>
+                    </div>
+                    <div id="booking-no-room-suggestion-carousel-content-text" class="col-md-8 col-md-offset-1">
+                      <h1>Gateway to the City of Light 2</h1>
+                      <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                      <a href="#" class="arrow-cta">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div id="booking-no-room-suggestion-carousel-text-3" class="booking-no-room-suggestion-carousel-text">
+                  <div class="row">
+                    <div id="booking-no-room-suggestion-carousel-header-text" class="col-md-2">
+                      <h4>Sage Hotels</h4>
+                      <h3>West Perth</h3>
+                    </div>
+                    <div id="booking-no-room-suggestion-carousel-content-text" class="col-md-8 col-md-offset-1">
+                      <h1>Gateway to the City of Light 3</h1>
+                      <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better than booking a stay with us.</p>
+                      <a href="#" class="arrow-cta">Read more</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="booking-result-room-title-and-price">
-                  <div class="booking-result-room-title">
-                    <h5><a href="room_detail.php">Standard Room</a></h5>
-                  </div>
-                  <div class="booking-result-room-price">
-                    <h6>4 nights from</h6>
-                    <p class="content-price">
-                      <span class="currency">aud</span>
-                      <span class="number">$612</span>
-                    </p>
-                  </div>
-                </div>
-                
-                <div class="booking-result-room-detail boxlist-item-content-room-detail">
-                  <p class="detail-size">25 SQM</p>
-                  <p class="detail-person">2 adults, 2 children (max.)</p>                  
-                  <p class="detail-bed">1 KING SIZE BED</p>
-
-                  <a href="javascript:void(0);" class="square-cta highlight-version">Show Rates</a>
-                </div>                              
-                
-                <div class="room-index-page-item-content-copy">
-                  <div class="default-copy">
-                    <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
-                  </div>
-                </div>
-              </div>
-            </div>            
-          
-            <div class="booking-result-room-rates">
-              <div class="booking-result-room-rate">
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="booking-result-room-rates-title">
-                      <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
-                      <a href="#" class="more-details-cta collapsable-arrow-cta">More details</a>
-                    </div>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="booking-result-room-price">
-                      <h6>4 nights from</h6>
-                      <p class="content-price">
-                        <span class="currency">aud</span>
-                        <span class="number">$612</span>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-2">
-                    <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta">Select Room</a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="booking-result-room-rate-content-copy">
-                      <p>Book 7 days in advance and enjoy 5% savings on our Sage Flexible Rate. Te qui putant saperet consequat, at per habeo populo. Quot scaevola vis. Te quod zril oporteat mel, has tota postulant suavitate.</p>
-                      <ul>
-                        <li>Free Hotel Bicycles</li>
-                        <li>Free local calls</li>
-                        <li>Free Parking</li>
-                        <li>Free unlimited WIFI</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <a href="#" class="view-rate-breakdown">view rate breakdown</a>
-                    
-                    <div class="room-rate-cancellation-policies">
-                      <h5>Cancellation Policies</h5>  
-                      <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>         
             </div>
-          </div> 
+          </div>
+
+          <div class="col-md-9">
+
+            <div class="booking-room-booked-content">
+              <h1>“Superior Room” not available for the selected search, here are some other rooms for you.</h1>      
+              <p>Aliquam vel elit sit amet sem congue dignissim. Nunc mattis tempus varius. Cras nisi massa, egestas in consectetur id, tempor et leo. Curabitur quam elit, varius vitae.</p>
+            </div>
+            
+            <div class="booking-room-content booking-rooms">            
+
+              <div class="booking-room-content-info">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="booking-room-content-image">
+                      <a href="room_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    
+                    <div class="booking-room-content-title">
+                      <a href="room_detail.php"><h5>Standard Room</h5></a>
+                      <div class="boxlist-item-content-price room-price">
+                        <h6>4 nights from</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$612</span>
+                        </p>
+                      </div>                 
+                    </div>                                
+                    
+                    <div class="booking-room-content-detail boxlist-item-content-room-detail">
+                      <p class="detail-size">25 SQM</p>
+                      <p class="detail-person">2 adults, 2 children (max.)</p>                  
+                      <p class="detail-bed">1 KING SIZE BED</p>                  
+
+                      <div class="show-rates-cta-container">
+                        <a href="javascript:void(0);" class="show-rates-cta square-cta highlight-version">Show Rates</a>
+                      </div>
+                    </div>                                              
+                    
+                    <div class="booking-room-content-copy">
+                      <div class="default-copy">
+                        <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>            
+              </div><!-- end booking-room-content-info-->
+
+              <div class="booking-room-rates booking-room-rates">
+
+                <div class="booking-room-rate">
+
+                  <div class="booking-room-rate-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rates-title">
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
+                          <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
+                        </div>
+                        <div class="price-and-cta-container">
+                          <div class="col-md-6">
+                            <div class="boxlist-item-content-price booking-room-price">
+                              <h6>4 nights</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$612</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta">Select Room</a>
+                          </div>
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-content -->
+
+                  <div class="booking-room-rate-more-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rate-more-content-copy">
+                          <p>Book 7 days in advance and enjoy 5% savings on our Sage Flexible Rate. Te qui putant saperet consequat, at per habeo populo. Quot scaevola vis. Te quod zril oporteat mel, has tota postulant suavitate.</p>
+                          <ul>
+                            <li>Free Hotel Bicycles</li>
+                            <li>Free local calls</li>
+                            <li>Free Parking</li>
+                            <li>Free unlimited WIFI</li>
+                          </ul>
+                        </div>
+                        <div class="booking-room-rate-more-content-extra-info">
+                          <div class="col-md-6">
+                            <div class="view-rate-breakdown-cta-container">
+                              <a href="#" class="view-rate-breakdown-cta">view rate breakdown</a>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-12 cancellation-policies">
+                            <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
+                            <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
+                          </div>                    
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-more-content -->
+
+                </div><!-- end booking-room-rate -->
+
+                <div class="booking-room-rate">
+
+                  <div class="booking-room-rate-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rates-title">
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
+                          <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
+                        </div>
+                        <div class="price-and-cta-container">
+                          <div class="col-md-6">
+                            <div class="boxlist-item-content-price booking-room-price">
+                              <h6>4 nights</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$612</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta">Select Room</a>
+                          </div>
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-content -->
+
+                  <div class="booking-room-rate-more-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rate-more-content-copy">
+                          <p>Book 7 days in advance and enjoy 5% savings on our Sage Flexible Rate. Te qui putant saperet consequat, at per habeo populo. Quot scaevola vis. Te quod zril oporteat mel, has tota postulant suavitate.</p>
+                          <ul>
+                            <li>Free Hotel Bicycles</li>
+                            <li>Free local calls</li>
+                            <li>Free Parking</li>
+                            <li>Free unlimited WIFI</li>
+                          </ul>
+                        </div>
+                        <div class="booking-room-rate-more-content-extra-info">
+                          <div class="col-md-6">
+                            <div class="view-rate-breakdown-cta-container">
+                              <a href="#" class="view-rate-breakdown-cta">view rate breakdown</a>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-12 cancellation-policies">
+                            <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
+                            <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
+                          </div>                    
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-more-content -->
+
+                </div><!-- end booking-room-rate -->
+
+              </div><!-- end booking-room-rates -->
+            
+            </div><!-- end booking-room-content -->
+
+            <div class="booking-room-content booking-rooms">            
+
+              <div class="booking-room-content-info">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="booking-room-content-image">
+                      <a href="room_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    
+                    <div class="booking-room-content-title">
+                      <a href="room_detail.php"><h5>Standard Room</h5></a>
+                      <div class="boxlist-item-content-price room-price">
+                        <h6>4 nights from</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$612</span>
+                        </p>
+                      </div>                 
+                    </div>                                
+                    
+                    <div class="booking-room-content-detail boxlist-item-content-room-detail">
+                      <p class="detail-size">25 SQM</p>
+                      <p class="detail-person">2 adults, 2 children (max.)</p>                  
+                      <p class="detail-bed">1 KING SIZE BED</p>                  
+
+                      <div class="show-rates-cta-container">
+                        <a href="javascript:void(0);" class="show-rates-cta square-cta highlight-version">Show Rates</a>
+                      </div>
+                    </div>                                              
+                    
+                    <div class="booking-room-content-copy">
+                      <div class="default-copy">
+                        <p>Sage Hotels raises the bar on every hotel standard you know, and it starts here. Featuring a King or Queen custom mattress to drift off on. After a long day out refresh yourself under the dual shower heads and revitalizing SOAK amenities.</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>            
+              </div><!-- end booking-room-content-info-->
+
+              <div class="booking-room-rates booking-room-rates">
+
+                <div class="booking-room-rate">
+
+                  <div class="booking-room-rate-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rates-title">
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
+                          <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
+                        </div>
+                        <div class="price-and-cta-container">
+                          <div class="col-md-6">
+                            <div class="boxlist-item-content-price booking-room-price">
+                              <h6>4 nights</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$612</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta">Select Room</a>
+                          </div>
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-content -->
+
+                  <div class="booking-room-rate-more-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rate-more-content-copy">
+                          <p>Book 7 days in advance and enjoy 5% savings on our Sage Flexible Rate. Te qui putant saperet consequat, at per habeo populo. Quot scaevola vis. Te quod zril oporteat mel, has tota postulant suavitate.</p>
+                          <ul>
+                            <li>Free Hotel Bicycles</li>
+                            <li>Free local calls</li>
+                            <li>Free Parking</li>
+                            <li>Free unlimited WIFI</li>
+                          </ul>
+                        </div>
+                        <div class="booking-room-rate-more-content-extra-info">
+                          <div class="col-md-6">
+                            <div class="view-rate-breakdown-cta-container">
+                              <a href="#" class="view-rate-breakdown-cta">view rate breakdown</a>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-12 cancellation-policies">
+                            <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
+                            <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
+                          </div>                    
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-more-content -->
+
+                </div><!-- end booking-room-rate -->
+
+                <div class="booking-room-rate">
+
+                  <div class="booking-room-rate-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rates-title">
+                          <a href="#"><h5>Lorem Ipsum Room Rate 1</h5></a>
+                          <a href="#" class="collapsable-arrow-cta show-rate-detail-cta">More details</a>
+                        </div>
+                        <div class="price-and-cta-container">
+                          <div class="col-md-6">
+                            <div class="boxlist-item-content-price booking-room-price">
+                              <h6>4 nights</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$612</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta">Select Room</a>
+                          </div>
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-content -->
+
+                  <div class="booking-room-rate-more-content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="booking-room-rate-more-content-copy">
+                          <p>Book 7 days in advance and enjoy 5% savings on our Sage Flexible Rate. Te qui putant saperet consequat, at per habeo populo. Quot scaevola vis. Te quod zril oporteat mel, has tota postulant suavitate.</p>
+                          <ul>
+                            <li>Free Hotel Bicycles</li>
+                            <li>Free local calls</li>
+                            <li>Free Parking</li>
+                            <li>Free unlimited WIFI</li>
+                          </ul>
+                        </div>
+                        <div class="booking-room-rate-more-content-extra-info">
+                          <div class="col-md-6">
+                            <div class="view-rate-breakdown-cta-container">
+                              <a href="#" class="view-rate-breakdown-cta">view rate breakdown</a>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-12 cancellation-policies">
+                            <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
+                            <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
+                          </div>                    
+                        </div>
+                      </div>                    
+                    </div>
+                  </div><!-- end booking-room-rate-more-content -->
+
+                </div><!-- end booking-room-rate -->
+
+              </div><!-- end booking-room-rates -->
+            
+            </div><!-- end booking-room-content -->
+          </div>
         </div>
-        <div class="col-md-3">
+      </div>
+    </div>
+
+    <div id="booking-engine-step-2" data-step="2" class="booking-steps">
+      <div id="booking-engine-step-2-content">
+        <div class="container-fluid">
+          <div class="col-md-9">
+            <div class="booking-extra-content booking-extras">            
+
+              <div class="booking-extra-content-info">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="booking-extra-content-image">
+                      <a href="room_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-01.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    
+                    <div class="booking-extra-content-title">
+                      <h5>Tesla Transfer</h5>
+                      <div class="boxlist-item-content-price room-price">
+                        <h6>per booking</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$75</span>
+                        </p>
+                      </div>                 
+                    </div>                                
+                    
+                    <div class="booking-extra-content-copy">
+                      <div class="default-copy">
+                        <p>One Way Transfer from/to Brisbane Domestic or International Airport. Please email our NEXT Journey team on journey.brisbane@nexthotels.com and advise Flight Number/s, Arrival/Departure Time, Number of People Travelling and our NEXT Journeyman will be in contact with you to confirm your transfer.</p>
+                      </div>
+                    </div>
+
+                    <div class="booking-extra-content-cta default-form">
+                      <div class="form-group">
+                        <label for="quantity">Quantity</label>                      
+                        <div class="manic-dropdown">
+                          <select name="quantity" id="quantity">
+                            <option value="">Please Select</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button class="square-cta add-to-booking-cta highlight-version">Add to booking</a>               
+                    </div>     
+
+                  </div>
+                </div>            
+              </div><!-- end booking-extra-content-info-->
+            
+            </div><!-- end booking-extra-content -->
+
+            <div class="booking-extra-content booking-extras">            
+
+              <div class="booking-extra-content-info">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="booking-extra-content-image">
+                      <a href="room_detail.php" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-01.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    
+                    <div class="booking-extra-content-title">
+                      <h5>Tesla Journey</h5>
+                      <div class="boxlist-item-content-price room-price">
+                        <h6>per booking</h6>
+                        <p class="content-price">
+                          <span class="currency">aud</span>
+                          <span class="number">$40</span>
+                        </p>
+                      </div>                 
+                    </div>                                
+                    
+                    <div class="booking-extra-content-copy">
+                      <div class="default-copy">
+                        <p>Staying at NEXT Hotel Brisbane and need to get to your office? Locally, or even the Gold Coast? Our Tesla Journey team is at your disposal. Let us know where and when you are wanting your Tesla journey and we can get back to you with a quote..</p>
+                      </div>
+                    </div>
+
+                    <div class="booking-extra-content-cta default-form">
+                      <div class="form-group">
+                        <label for="quantity">Quantity</label>                      
+                        <div class="manic-dropdown">
+                          <select name="quantity" id="quantity">
+                            <option value="">Please Select</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button class="square-cta add-to-booking-cta highlight-version">Add to booking</a>               
+                    </div>     
+
+                  </div>
+                </div>            
+              </div><!-- end booking-extra-content-info-->
+            
+            </div><!-- end booking-extra-content -->
+
+            <a href="#" class="back-arrow-cta back-to-select-your-room">back to select your room</a>     
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="booking-engine-step-3" data-step="3" class="booking-steps">
+      <div id="booking-engine-step-3-content">
+        <div class="container-fluid">
+          <div class="col-md-9">
+              <ul class="payment-tabs">
+                <li><a href="#" data-tab="book-for-myself" class="active">Booking for myself</a></li>
+                <li><a href="#" data-tab="book-for-someone">Booking for someone else</a></li>
+              </ul>
+
+              <div id="book-for-myself" class="active-tab">
+                <div class="your-details">
+                  <div class="row">
+                    <div class="col-md-5"><h5>Your Details</h5></div>
+                    <div class="col-md-7">
+                      <div id="personal_info" class="default-form">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="first_name">First Name*</label>
+                              <input type="text" name="first_name">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="last_name">Last Name*</label>
+                              <input type="text" name="last_name">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="email">Email*</label>
+                              <input type="text" name="email">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="telephone">Telephone</label>
+                              <input type="text" name="telephone">
+                            </div>
+                          </div>
+                        </div> 
+                        <div class="row">
+                          <div class="col-md-12">
+                            <a href="#" class="collapsable-arrow-cta optional-info-cta">Optional Information</a>
+                          </div>
+                        </div>                               
+                      </div>
+
+                      <div id="optional_info" class="default-form">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="address">Address*</label>
+                              <input type="text" name="address">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="city">City*</label>
+                              <input type="text" name="city">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="state">State*</label>
+                              <input type="text" name="state">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="country">Country*</label>
+                              <input type="text" name="country">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="post_code">Postcode*</label>
+                              <input type="text" name="post_code">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="special_requests">Special Requests*</label>
+                              <textarea name="special_requests"></textarea>
+                            </div>
+                          </div>                    
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_in_time">Estimated Check In Time*</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_in_time" id="estimated_check_in_time">
+                                  <option value="">Please select</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_out_time">Estimated Check Out Time*</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_out_time" id="estimated_check_out_time">
+                                  <option value="">Please select</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                
+                </div>
+              </div>
+
+              <div id="book-for-someone">
+                <div class="your-details">
+                  <div class="row">
+                    <div class="col-md-5"><h5>Your Details</h5></div>
+                    <div class="col-md-7">
+                      <div id="personal_info" class="default-form">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="first_name">First Name*</label>
+                              <input type="text" name="first_name">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="last_name">Last Name*</label>
+                              <input type="text" name="last_name">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="email">Email*</label>
+                              <input type="text" name="email">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="telephone">Telephone</label>
+                              <input type="text" name="telephone">
+                            </div>
+                          </div>
+                        </div>                 
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+                <div class="guest-details">
+                  <!-- dynamic element from js -->
+
+                  <!-- <div class="guest-for-each-room">
+                    <div class="row">
+                      <div class="col-md-5"><span class="room-title">Room 1</span><h5>Guest Details</h5></div>
+                      <div class="col-md-7">
+                        <div id="personal_info" class="default-form">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="first_name">First Name*</label>
+                                <input type="text" name="first_name">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="last_name">Last Name*</label>
+                                <input type="text" name="last_name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="text" name="email">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="telephone">Telephone</label>
+                                <input type="text" name="telephone">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <a href="#" class="collapsable-arrow-cta optional-info">Optional Information</a>
+                            </div>
+                          </div>              
+                        </div>
+                        <div id="optional_info" class="default-form">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h6 class="optional_info_header">optional information</h6>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="address">Address*</label>
+                              <input type="text" name="address">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="city">City*</label>
+                              <input type="text" name="city">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="state">State*</label>
+                              <input type="text" name="state">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="country">Country*</label>
+                              <input type="text" name="country">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="post_code">Postcode*</label>
+                              <input type="text" name="post_code">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="special_requests">Special Requests*</label>
+                              <textarea name="special_requests"></textarea>
+                            </div>
+                          </div>                    
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_in_time">Estimated Check In Time*</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_in_time" id="estimated_check_in_time">
+                                  <option value="">Please select</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_out_time">Estimated Check Out Time*</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_out_time" id="estimated_check_out_time">
+                                  <option value="">Please select</option>
+                                  <option value="10:00" selected>10:00</option>
+                                  <option value="10:15">10:15</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                    
+                      </div>
+                    </div>
+                  </div>
+                  <div class="guest-for-each-room">
+                    <div class="row">
+                      <div class="col-md-5"><span class="room-title">Room 2</span><h5>Guest Details</h5></div>
+                      <div class="col-md-7">
+                        <div id="personal_info" class="default-form">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="first_name">First Name*</label>
+                                <input type="text" name="first_name">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="last_name">Last Name*</label>
+                                <input type="text" name="last_name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="text" name="email">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="telephone">Telephone</label>
+                                <input type="text" name="telephone">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <a href="#" class="collapsable-arrow-cta optional-info">Optional Information</a>
+                            </div>
+                          </div>                
+                        </div>
+                        <div id="optional_info" class="default-form">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h6 class="optional_info_header">optional information</h6>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="address">Address*</label>
+                                <input type="text" name="address">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="city">City*</label>
+                                <input type="text" name="city">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="state">State*</label>
+                                <input type="text" name="state">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="country">Country*</label>
+                                <input type="text" name="country">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="post_code">Postcode*</label>
+                                <input type="text" name="post_code">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="special_requests">Special Requests*</label>
+                                <textarea name="special_requests"></textarea>
+                              </div>
+                            </div>                    
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="estimated_check_in_time">Estimated Check In Time*</label>
+                                <div class="manic-dropdown">
+                                  <select name="estimated_check_in_time" id="estimated_check_in_time">
+                                    <option value="">Please select</option>
+                                    <option value="10:00" selected>10:00</option>
+                                    <option value="10:15">10:15</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="estimated_check_out_time">Estimated Check Out Time*</label>
+                                <div class="manic-dropdown">
+                                  <select name="estimated_check_out_time" id="estimated_check_out_time">
+                                    <option value="">Please select</option>
+                                    <option value="10:00" selected>10:00</option>
+                                    <option value="10:15">10:15</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                 
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+
+              <div id="terms-and-conditions">
+                <div class="row">
+                  <div class="col-md-5"><h5>Terms & Conditions</h5></div>
+                  <div class="col-md-7">
+                    <p>On arrival, all guests must provide a credit card with available funds for full payment of booking & a AUD$100 per night pre-authorization swipe, along with a valid current photo identification corresponding to the booking name. Cash bonds will NOT be accepted.</p>
+
+                    <p>For security purposes, valid photo identification is required at check-in. Acceptable forms include a drivers license, passport, and/or proof of age card.</p>
+
+                    <p>The hotels cash/EFTPOS policy requires full payment of accommodation plus $100 per night bond at the time of check in. Valid identification must be provided for all cash bookings.</p>
+
+                    <p>A valid credit card must be provided to secure your reservation. You will not be charged until arrival at the property, unless stated otherwise. You are welcome to pay on departure with CASH, EFPTOS or CREDIT CARD. Guests choosing to settle their account with a credit card will incur a surcharge of 1.5% for Visa/Mastercard and 3% for AMEX/Diners, EFTPOS (Savings or Cheque Account) payments exempt.</p>
+                    
+                    <div class="default-form">
+                      <div class="form-group">
+                        <input type="checkbox" name="terms_and_conditions">
+                        <label for="terms_and_conditions" class="color-version"><span>I have read and agreed to the terms & conditions governing this booking.</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="cancellation-policies">
+                <div class="row">
+                  <div class="col-md-5"><h5>Cancellation Policies</h5></div>
+                  <div class="col-md-7">
+                    <p>Cancellations or changes to bookings must be made at least 24 hours prior to the check in date and time or you will be charged the full amount of the first changed or cancelled night. </p>
+
+                    <p>Please be aware that promotional room rates have specific cancellation policies. For promotional room rates customer credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
+                    
+                    <div class="default-form">
+                      <div class="form-group">
+                        <input type="checkbox" name="terms_and_conditions">
+                        <label for="terms_and_conditions" class="color-version">I have read and agreed to the cancellation policies.</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="card-details">
+                <div class="row">
+                  <div class="col-md-5"><h5>Card Details</h5></div>
+                  <div class="col-md-7">
+                    <div class="default-form">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="name_on_card">Name on Card*</label>
+                            <input type="text" name="name_on_card">                            
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="card_number">Card Number*</label>
+                            <input type="text" name="card_number">                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="name_on_card">Card Type*</label>
+                            <div class="manic-dropdown">
+                              <select name="name_on_card" id="name_on_card">
+                                <option value="">Please select</option>
+                                <option value="Visa" selected>Visa</option>
+                                <option value="Master">Master</option>
+                                <option value="American Express">American Express</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="card_number">We Accept*</label>
+                            <ul class="payment-card">
+                              <li><i class="fa fa-cc-visa" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-cc-amex" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-cc-diners-club" aria-hidden="true"></i></li>
+                              <li><i class="fa fa-cc-diners-club" aria-hidden="true"></i></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="expiry_date">Expiry Date*</label>
+                                <div class="manic-dropdown">
+                                  <select name="expiry_date" id="expiry_date">
+                                    <option value="">Month</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="expiry_date" class="hidden-label">Expiry Date*</label>
+                                <div class="manic-dropdown">
+                                  <select name="expiry_date" id="expiry_date">
+                                    <option value="">Year</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>                                    
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                          
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="cvv">CVV*</label>
+                            <input type="text" name="cvv" class="cvv">
+                            <a href="#" class="cvv-cta"><i class="fa fa-credit-card" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="notice">*Your card will not be charged, it serves as guarantee only unless stated otherwise.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="back-arrow-cta back-to-personalise-your-stay">back to personalise your stay</a>     
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="booking-engine-step-4" data-step="4" class="booking-steps">
+      <div id="booking-engine-step-4-content">
+        <div class="container-fluid">
+          <div class="col-md-5">
+            <div id="thank-you-container">
+              <div id="thank-you-container-title">
+                <h5>Thank you! Booking ID: 123ABC</h5>
+              </div>
+              <div id="thank-you-container-content">
+                <p>Thank you for making your reservation with us! We have sent you the booking summary to the email account you provided to us.</p>
+
+                <p>If you have any questions, please contact us to the details below for further help!</p>
+                
+                <div class="hotel-details">
+                  <p class="hotel-address">
+                  <span>Sage Hotels West Perth</span>
+                  1309 Hay Street, <br>
+                  West Perth, <br>
+                  WA 6005, Australia
+                  </p>
+
+                  <ul class="contact-details">
+                    <li><span>P:</span> <a href="tel:+61 865009100">+61 865009100</a><br></li>
+                    <li><span>F:</span> <a href="tel:+61 865009101">+61 865009101</a><br></li>
+                    <li><span>E:</span> <a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></li>
+                  </ul>
+
+                  <p>Reception hours: 24 hours</p>
+
+                  <p>Check In Time: 14:00 <br>
+                  Check Out Time: 10:00</p>                   
+
+                  <p class="reservation-phone-nos">
+                  <span>Central Reservations</span>
+                  1800 303 186 (Within Australia) <br>
+                  0800 480 274 (Within New Zealand)
+                  </p>
+                </div>
+
+                <div class="ctas-container">
+                  <button id="download-booking-summary-cta" class="square-cta">download booking summary</button>
+                  <button id="print-booking-summary-cta" class="square-cta">print booking summary</button>
+                  <button id="return-to-homepage-cta" class="square-cta">return to homepage</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="booking-engine-sidebar">
+      <div class="container-fluid">
+        <div class="col-md-3 col-md-offset-9">
           <div class="reservation-summary-sidebar">
             <div class="reservation-summary-title">
               <h5>Reservation Summary</h5>
               <h6>Sage west perth</h6>
             </div>
             <div class="reservation-summary-content">
-              <div class="reservation-summary-content-check-in-date">
+              <div class="reservation-summary-content-check-in-out-date">
                 <h6>Check in</h6>
                 <p>Sun, 26 Mar 2017</p>
               </div>
-              <div class="reservation-summary-content-check-out-date">
+              <div class="reservation-summary-content-check-in-out-date">
                 <h6>Check out</h6>
                 <p>Wed, 29 Mar 2017</p>
               </div>
             </div>
             
-            <div class="reservation-summary-expandable-content">
-              <div class="manic-expand-container" data-group="mobile-dining-detail-page">
-                <div class="scroll-target" data-value="title-01"></div>
-                <div class="manic-expand-container-title">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-12">
+            <div class="reservation-summary-selected-rooms-container">
+              <!-- dynamic element from js -->
+            </div>
 
-                        <h6>Room 1</h6>
+            <div class="reservation-summary-selected-extras-container">
+              <div class="reservation-summary-expandable-content selected-extras">
+                  <div class="manic-expand-container desktop-open-version">
+                      <div class="scroll-target" data-value="title-01"></div>
+                      <div class="manic-expand-container-title extra-version">
+                          <h6>Extras</h6> </div>
+                      <div class="manic-expand-container-btn"></div>
+                      <div class="manic-expand-container-content">
+                        <div class="selected-extra-container">
+                          <!-- dynamic element from js -->
+<!--                           <div class="selected-extra">
+                              <div class="selected-extra-title">
+                                  <h5>Tesla transfer</h5> <a href="#" class="delete-btn"><i class="fa fa-times"></i></a> </div>
+                              <div class="selected-extra-content">
+                                  <div class="selected-extra-content-details">
+                                      <p>2 Bookings</p>
+                                  </div>
+                                  <div class="selected-extra-content-price"> <span class="price">$150.00</span> </div>
+                              </div>
+                              <div class="selected-extra-content">
+                                  <div class="selected-extra-content-details">
+                                      <p>2 Bookings</p>
+                                  </div>
+                                  <div class="selected-extra-content-price"> <span class="price">$150.00</span> </div>
+                              </div>
+                          </div>
 
+                          <div class="selected-extra">
+                              <div class="selected-extra-title">
+                                  <h5>Tesla transfer</h5> <a href="#" class="delete-btn"><i class="fa fa-times"></i></a> </div>
+                              <div class="selected-extra-content">
+                                  <div class="selected-extra-content-details">
+                                      <p>2 Bookings</p>
+                                  </div>
+                                  <div class="selected-extra-content-price"> <span class="price">$150.00</span> </div>
+                              </div>
+                          </div>  -->  
+                        </div>                       
                       </div>
-                    </div>
                   </div>
-                </div>
-                <div class="manic-expand-container-btn"></div>
-                <div class="manic-expand-container-content">
-
-                  <div class="container-fluid">
-                    <div class="selected-room">
-                      <div class="selected-room-title">
-                        <h5>Standard Room</h5>
-                        <a href="#" class="delete-btn"></a>
-                      </div>
-                      <div class="selected-room-content">
-                        <div class="selected-room-content-details">
-                          <p>7 days advance purchase</p>
-                          <p>2 Adults, 0 Children</p>
-                        </div>
-                        <div class="selected-room-content-price">
-                          <span class="price">$626.00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="selected-room-nightly-rates">
-                      <div class="selected-room-nightly-rates-title">
-                        <a href="#" class="collapsable-arrow-cta"><h6>Nightly Rates</h6></a>
-                      </div>
-                      <div class="selected-room-nightly-rates-content">
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Sun, 26 Mar</p>
-                          <p>$133.00</p>
-                        </div>
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Mon, 27 Mar</p>
-                          <p>$142.00</p>
-                        </div>
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Tue, 28 Mar</p>
-                          <p>$142.00</p>
-                        </div>
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Wed, 29 Mar</p>
-                          <p>$209.00</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
               </div>
             </div>
 
-            <div class="reservation-summary-expandable-content">
-              <div class="manic-expand-container" data-group="mobile-dining-detail-page">
-                <div class="scroll-target" data-value="title-01"></div>
-                <div class="manic-expand-container-title">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-12">
-
-                        <h6>Room 1</h6>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="manic-expand-container-btn"></div>
-                <div class="manic-expand-container-content">
-
-                  <div class="container-fluid">
-                    <div class="selected-room">
-                      <div class="selected-room-title">
-                        <h5>Standard Room</h5>
-                        <a href="#" class="delete-btn"></a>
-                      </div>
-                      <div class="selected-room-content">
-                        <div class="selected-room-content-details">
-                          <p>7 days advance purchase</p>
-                          <p>2 Adults, 0 Children</p>
-                        </div>
-                        <div class="selected-room-content-price">
-                          <span class="price">$626.00</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="selected-room-nightly-rates">
-                      <div class="selected-room-nightly-rates-title">
-                        <a href="#" class="collapsable-arrow-cta"><h6>Nightly Rates</h6></a>
-                      </div>
-                      <div class="selected-room-nightly-rates-content">
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Sun, 26 Mar</p>
-                          <p>$133.00</p>
-                        </div>
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Mon, 27 Mar</p>
-                          <p>$142.00</p>
-                        </div>
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Tue, 28 Mar</p>
-                          <p>$142.00</p>
-                        </div>
-                        <div class="selected-room-nightly-rates-content-date-and-price">
-                          <p>Wed, 29 Mar</p>
-                          <p>$209.00</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="reservation-summary-cost-content">
-              <div class="reservation-summary-cost-content-promotion-code">
-                <h5>Promotion Code</h5>
-                <p>ABC123</p>
-              </div>
-
-              <div class="reservation-summary-cost-content-selected-rooms">
-                <div class="reservation-summary-cost-content-selected-room">
-                  <div class="reservation-summary-cost-content-selected-room-title">
-                    <h5>Room 1</h5>
-                    <p>Total Room Rates</p>
-                  </div>
-                  <div class="reservation-summary-cost-content-selected-room-price">                    
-                    <p>$626.00</p>
-                  </div>
-                </div>
-                <div class="reservation-summary-cost-content-selected-room">
-                  <div class="reservation-summary-cost-content-selected-room-title">
-                    <h5>Room 2</h5>
-                    <p>Total Room Rates</p>
-                  </div>
-                  <div class="reservation-summary-cost-content-selected-room-price">                    
-                    <p>$816.00</p>
-                  </div>
-                </div>
+            <div class="reservation-summary">
+              <div class="reservation-summary-title">
+                <h6>cost for your stay</h6>
               </div>
               
-              <div class="reservation-summary-cost-content-total-and-tax">
-                <div class="reservation-summary-cost-content-total">
-                  <div class="reservation-summary-cost-content-total-title">
-                    <p>Total Charges</p>
-                  </div>
-                  <div class="reservation-summary-cost-content-total-price">
-                    <p>$1442.00</p>
-                  </div>
+              <div class="reservation-summary-content">
+                <div class="reservation-summary-content-promotion-code">
+                  <h5>Promotion Code</h5>
+                  <p>ABC123</p>
                 </div>
-                <div class="reservation-summary-cost-content-tax">
-                  <div class="reservation-summary-cost-content-tax-title">
-                    <p>Tax</p>
-                  </div>
-                  <div class="reservation-summary-cost-content-tax-price">
-                    <p>$100.94</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="reservation-summary-cost-content-sub-total">
-              <div class="reservation-summary-cost-content-sub-total-title">
-                <p>Sub Total</p>
-              </div>
-              <div class="reservation-summary-cost-content-sub-total-price">
-                <p>$1542.94</p>
-              </div>
-            </div>
 
-            <button type="submit" class="square-cta highlight-version">proceed to payment</button>
+                <div class="reservation-summary-content-selected-rooms">
+                  <!-- dynamic element from js -->
+                </div>
+
+                <div class="reservation-summary-content-selected-extras">                  
+                  <div class="reservation-summary-content-selected-extras-title">
+                    <h5>Extras</h5>
+                  </div>
+                  <div class="reservation-summary-content-selected-extras-content">
+                    <!-- dynamic element from js -->                    
+                  </div>                  
+                </div>
+                
+                <div class="reservation-summary-content-totals">
+                  <div class="reservation-summary-content-total">
+                    <div class="reservation-summary-content-total-title">
+                      <p>Total Charges</p>
+                    </div>
+                    <div class="reservation-summary-content-total-price">
+                      <p>$0.00</p>
+                    </div>
+                  </div>
+                  <div class="reservation-summary-content-total">
+                    <div class="reservation-summary-content-total-title">
+                      <p>Tax</p>
+                    </div>
+                    <div class="reservation-summary-content-total-tax">
+                      <p>$0.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reservation-summary-content-sub-total">
+                  <div class="reservation-summary-content-sub-total-title">
+                    <h6>Sub Total</h6>
+                  </div>
+                  <div class="reservation-summary-content-sub-total-price">
+                    <h6>$0.00</h6>
+                  </div>
+                </div>
+
+                <button type="submit" class="square-cta proceed-to-payment highlight-version">proceed to payment</button>
+              </div>
+            </div>
+                
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-</div
+  </div>
+      
+        
+
+  
+
+</div>
+
+<!-- 
+    ____  ____  ____     __  ______
+   / __ \/ __ \/ __ \   / / / / __ \
+  / /_/ / / / / /_/ /  / / / / /_/ /
+ / ____/ /_/ / ____/  / /_/ / ____/
+/_/    \____/_/       \____/_/
+
+ -->
+
+<div class="rates-breakdown-popup-container">
+  <div class="rates-breakdown-popup">
+    <div class="rates-breakdown-popup-title">
+      <h5>7 days Advanced Purchase <span>Rate Breakdown</span></h5>
+      <div class="boxlist-item-content-price rates-breakdown-popup-price">
+        <h6>4 nights from</h6>
+        <p class="content-price">
+          <span class="currency">aud</span>
+          <span class="number">$626</span>
+        </p>
+      </div>
+    </div>
+    <div class="rates-breakdown-popup-content">
+      <div class="rates-breakdown-popup-rate">
+        <div class="rates-breakdown-popup-rate-content-date">
+          <p>Sun, 26 Mar</p>
+        </div>
+        <div class="rates-breakdown-popup-rate-content-price">
+          <p class="price">$133.00</p>
+        </div>
+      </div>
+      <div class="rates-breakdown-popup-rate">
+        <div class="rates-breakdown-popup-rate-content-date">
+          <p>Sun, 26 Mar</p>
+        </div>
+        <div class="rates-breakdown-popup-rate-content-price">
+          <p class="price">$133.00</p>
+        </div>
+      </div>
+      <div class="rates-breakdown-popup-rate">
+        <div class="rates-breakdown-popup-rate-content-date">
+          <p>Sun, 26 Mar</p>
+        </div>
+        <div class="rates-breakdown-popup-rate-content-price">
+          <p class="price">$133.00</p>
+        </div>
+      </div>
+      <div class="rates-breakdown-popup-rate">
+        <div class="rates-breakdown-popup-rate-content-date">
+          <p>Sun, 26 Mar</p>
+        </div>
+        <div class="rates-breakdown-popup-rate-content-price">
+          <p class="price">$133.00</p>
+        </div>
+      </div>
+    </div> 
+    <a href="#" class="back-arrow-cta back-to-search-btn">Back to see rooms</a>     
+  </div>
+</div>
+
+<div class="cancellation-popup-container">
+  <div class="cancellation-popup">
+    <div class="cancellation-popup-title">
+      <h5>7 days Advanced Purchase <span>Rate Breakdown</span></h5>
+    </div>
+    <div class="cancellation-popup-content">
+      <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
+    </div> 
+    <a href="#" class="back-arrow-cta back-to-search-btn">Back to see rooms</a>     
+  </div>
+</div>
+
+<div class="cvv-popup-container">
+  <div class="cvv-popup">
+    <div class="cvv-popup-title">
+      <h5>Where is CVV?</h5>
+    </div>
+    <div class="cvv-popup-content">
+      <p>For Visa, MasterCard, Diners Club, UnionPay, the 3 digits on the back of your card. (Left)</p>
+      <p>For American Express, the 4 digits on the front of your card. (Right)</p>
+
+      <div class="card-front"></div>
+      <div class="card-back"></div>
+    </div> 
+    <a href="#" class="back-arrow-cta back-to-payment-btn">Back to payment</a>     
+  </div>
+</div>
+
+<div id="default-footer-spacer"></div>

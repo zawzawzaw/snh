@@ -93,7 +93,7 @@
   }
 }
 
-.down-arrow-cta {
+.collapsable-arrow-cta {
   &:after {
     content: "\f107";
   }
@@ -130,7 +130,26 @@ html.actual-mobile{
 
 
 
-
+.back-arrow-cta {
+  .open-sans-semi-bold;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: @violet;
+  text-transform: uppercase;
+  display: block;
+  &:before {    
+    font-family: FontAwesome;
+    font-size: 13px;
+    padding-right: 10px;
+    content: "\f060";
+  }
+  @media all and (max-width: 375px) {
+    font-size: 12px;
+    &:before {
+      font-size: 12px;
+    }
+  }
+}
 
 
 

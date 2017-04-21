@@ -312,7 +312,7 @@ sagewest.page.Default.prototype.create_image_container = function() {
 
 
 sagewest.page.Default.prototype.create_expand_container = function() {
-  var arr = $('.manic-expand-container');
+  var arr = $('.manic-expand-container').not('.instantiated-version');
   var item = null;
 
   /**
@@ -323,6 +323,8 @@ sagewest.page.Default.prototype.create_expand_container = function() {
   for (var i = 0, l=arr.length; i < l; i++) {
     item = $(arr[i]);
     expand_container = new manic.ui.ExpandContainer({}, item);
+
+    item.addClass('instantiated-version');
     goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_EXPAND, this.on_expand_container_expand.bind(this));
 
     this.expand_container_array[this.expand_container_array.length] = expand_container;
