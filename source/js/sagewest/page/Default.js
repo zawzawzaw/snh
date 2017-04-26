@@ -326,6 +326,7 @@ sagewest.page.Default.prototype.create_expand_container = function() {
 
     item.addClass('instantiated-version');
     goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_EXPAND, this.on_expand_container_expand.bind(this));
+    goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_COLLAPSE, this.on_expand_container_collapse.bind(this));
 
     this.expand_container_array[this.expand_container_array.length] = expand_container;
   }
@@ -334,6 +335,14 @@ sagewest.page.Default.prototype.create_expand_container = function() {
 };
 
 
+
+/**
+ * event handler
+ * @param  {goog.events.Event} event
+ */
+sagewest.page.Default.prototype.on_expand_container_collapse = function(event) {
+  $('body').trigger("ON_EXPAND_CONTAINER_COLLAPSE");
+}
 
 /**
  * event handler
@@ -361,9 +370,11 @@ sagewest.page.Default.prototype.on_expand_container_expand = function(event) {
       this.util_scroll_to(expand_container.scroll_value);
     }
 
+    $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
+
 
   } else {
-    
+    $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
   }
 
   // console.log('expand_container.group_value: ' + expand_container.group_value);
@@ -1445,8 +1456,8 @@ sagewest.page.Default.prototype.common_menu = function() {
 sagewest.page.Default.prototype.expandable_text = function() {
 
   if(manic.IS_ACTUAL_MOBILE == true) {
-    var minimized_read_more_elements = $('p.minimize-read-more');
-    var minimized_elements = $('p.minimize');
+    var minimized_read_more_elements = $('.minimize-read-more');
+    var minimized_elements = $('.minimize');
     
     minimized_read_more_elements.each(function(){    
         // var t = $(this).text();                          // this is just TEXT !!!!!

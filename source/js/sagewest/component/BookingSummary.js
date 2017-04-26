@@ -64,6 +64,54 @@ sagewest.component.BookingSummary = function(options, element) {
 
   this.element.find(".proceed-to-payment").click(this.on_proceed_to_payment_click.bind(this));
 
+
+  this.controller = null;
+  this.controller = new ScrollMagic.Controller(); // needed by some components
+
+  var sticky_sidebar = new ScrollMagic.Scene({triggerElement: "#sticky-anchor", offset: 270})
+          .setClassToggle("#sticky-sidebar", "stick") // add class toggle
+          // .addIndicators({name: ("" + Math.random()) }) // add indicators (requires plugin)
+          .addTo(this.controller);
+
+  //     __  _____    _   ______  __    ______   ____  ___    ____     _____________  ______________
+  //    / / / /   |  / | / / __ \/ /   / ____/  / __ )/   |  / __ \   / ___/_  __/ / / / ____/ ____/
+  //   / /_/ / /| | /  |/ / / / / /   / __/    / __  / /| | / /_/ /   \__ \ / / / / / / /_  / /_
+  //  / __  / ___ |/ /|  / /_/ / /___/ /___   / /_/ / ___ |/ _, _/   ___/ // / / /_/ / __/ / __/
+  // /_/ /_/_/  |_/_/ |_/_____/_____/_____/  /_____/_/  |_/_/ |_|   /____//_/  \____/_/   /_/
+
+
+  Handlebars.registerHelper("ifCond", function (v1, operator, v2, options) {
+
+      switch (operator) {
+          case "==":
+              return (v1 == v2) ? options.fn(this) : options.inverse(this);
+          case "===":
+              return (v1 === v2) ? options.fn(this) : options.inverse(this);
+          case "<":
+              return (v1 < v2) ? options.fn(this) : options.inverse(this);
+          case "<=":
+              return (v1 <= v2) ? options.fn(this) : options.inverse(this);
+          case ">":
+              return (v1 > v2) ? options.fn(this) : options.inverse(this);
+          case ">=":
+              return (v1 >= v2) ? options.fn(this) : options.inverse(this);
+          case "&&":
+              return (v1 && v2) ? options.fn(this) : options.inverse(this);
+          case "||":
+              return (v1 || v2) ? options.fn(this) : options.inverse(this);
+          default:
+              return options.inverse(this);
+      }
+  });
+
+  Handlebars.registerHelper("counter", function (index){
+      return index + 1;
+  });
+
+  Handlebars.registerHelper("formatCurrency", function(value) {
+      return parseFloat(value).toLocaleString();
+  });
+
 };
 goog.inherits(sagewest.component.BookingSummary, goog.events.EventTarget);
 
@@ -152,6 +200,7 @@ sagewest.component.BookingSummary.prototype.update_page_height = function() {
     
     console.log("step height: "+$(".booking-steps.active-step").height())
     console.log("sidebar height: "+this.element.height())
+    // console.log("container height: "+$("#booking-engine-steps-container").height())
     // if($(".booking-steps.active-step").height() < this.element.height()) {   
     // console.log(this.element.find(".selected-rooms").length);
     if($(".booking-steps.active-step").height() < this.element.height()) {  
@@ -180,28 +229,36 @@ sagewest.component.BookingSummary.prototype.update_page_height_on_confirmation =
 // DUMMY ADD
 sagewest.component.BookingSummary.prototype.book_room = function(booking_room, no_of_room_booked) {
 
-  console.log(booking_room.selected_rate_package);
-  console.log(booking_room.room_title);
+  var raw_price = booking_room.selected_rate_package.price;
+  var raw_price_arr = raw_price.split('$');
+
+  var price = parseFloat(raw_price_arr[1]).toFixed(2);  
 
   var booking_room_data = {
     'no_of_room_booked' : no_of_room_booked,
     'room_title' : booking_room.room_title,
     'rate_title' : booking_room.selected_rate_package.rate_title,
-    'price' : booking_room.selected_rate_package.price,
+    'rate_title_shorten' : booking_room.selected_rate_package.rate_title.substring(0, 15) + "...",
+    'price' : "$"+price
   };
 
   this.selected_room_container = this.element.find(".reservation-summary-selected-rooms-container");
   this.selected_room_container_2 = this.element.find(".reservation-summary-content-selected-rooms");
 
-  var template = Handlebars.compile($("#summary-room-template").html());
-  var room_html = template(booking_room_data);
+  var room_template = Handlebars.compile($("#summary-room-template").html());
+  var room_html = room_template(booking_room_data);
+
+  var room_template_02 = Handlebars.compile($("#summary-room-template-02").html());
+  var room_html_02 = room_template_02(booking_room_data);
 
   if(this.element.find(".selected-rooms").length <= 5) {
-    this.selected_room_container.append(this.room_html);        
+    // this.selected_room_container.append(this.room_html);        
+    this.selected_room_container.append(room_html);        
 
     this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.BOOKING_SUMMARY_ROOM_ADDED));
 
-    this.selected_room_container_2.append(this.room_html_2);
+    // this.selected_room_container_2.append(this.room_html_2);
+    this.selected_room_container_2.append(room_html_02);
 
     this.update_summary_total();
 
@@ -210,20 +267,51 @@ sagewest.component.BookingSummary.prototype.book_room = function(booking_room, n
   else
     alert("Maximum no of room booking reached");
 };
-sagewest.component.BookingSummary.prototype.book_extra = function() {
+sagewest.component.BookingSummary.prototype.book_extra = function(booking_extra) {
   this.element.find(".reservation-summary-selected-extras-container").show();
   this.element.find(".reservation-summary-content-selected-extras").show();
+
+  var raw_price = booking_extra.price;
+  var raw_price_arr = raw_price.split('$');
+
+  var extra_price = parseFloat(raw_price_arr[1]).toFixed(2);  
+  var extra_title = "";
+  if(booking_extra.extra_title.length > 15)
+    extra_title = booking_extra.extra_title.substring(0, 15) + "...";
+  else
+    extra_title = booking_extra.extra_title;
+
+  var booking_extra_data = {
+    'extra_title' : extra_title,
+    'quantity' : booking_extra.quantity,
+    'adult' : booking_extra.adult,
+    'child' : booking_extra.child,
+    'extra_price' : "$"+extra_price
+  };
+
+  // console.log(booking_extra_data);
+
+  var extra_template = Handlebars.compile($("#summary-extra-template").html());
+  var extra_html = extra_template(booking_extra_data);
+
+  // console.log(this.extra_html);
+  // console.log(extra_html);
+
+  var extra_template_02 = Handlebars.compile($("#summary-extra-template-02").html());
+  var extra_html_02 = extra_template_02(booking_extra_data);
 
   this.selected_extra_container = this.element.find(".selected-extra-container");
   this.selected_extra_container_2 = this.element.find(".reservation-summary-content-selected-extras-content");
   
 
   if(this.element.find(".reservation-summary-content-selected-extra").length <= 5) {
-    this.selected_extra_container.append(this.extra_html);
+    // this.selected_extra_container.append(this.extra_html);
+    this.selected_extra_container.append(extra_html);
 
     this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.BOOKING_SUMMARY_ROOM_ADDED));
 
-    this.selected_extra_container_2.append(this.extra_html_2);
+    // this.selected_extra_container_2.append(this.extra_html_2);
+    this.selected_extra_container_2.append(extra_html_02);
 
     this.update_summary_total();
 
@@ -296,7 +384,7 @@ sagewest.component.BookingSummary.prototype.on_delete_extra_btn_click = function
   var arr = $(".reservation-summary-content-selected-extra");
   var item = null;
 
-  console.log(arr.length);
+  // console.log(arr.length);
 
   for (var i = 0; i < arr.length; i++) {
     if(current_index==i) {

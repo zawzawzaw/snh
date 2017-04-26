@@ -20,7 +20,11 @@ sagewest.component.BookingExtra = function(options, element) {
   this.options = $.extend({}, sagewest.component.BookingExtra.DEFAULT, options);
   this.element = element;
 
-  this.current_quantity = 0;
+  this.extra_title = this.element.find(".booking-extra-content-title h5").text();
+  this.price = this.element.find(".room-price .content-price .number").text();
+  this.quantity = 0;
+  this.adult = 0;
+  this.child = 0;
 
   //    ___ _   _ ___ _____
   //   |_ _| \ | |_ _|_   _|
@@ -33,6 +37,10 @@ sagewest.component.BookingExtra = function(options, element) {
 
   this.add_to_booking_cta = this.element.find(".add-to-booking-cta");
   this.add_to_booking_cta.click(this.on_add_to_booking_cta_click.bind(this));
+
+  this.show_extra_copy_cta_mobile = this.element.find('.show-extra-copy-cta-mobile');
+  this.show_extra_copy_cta_mobile.click(this.on_show_extra_copy_cta_mobile_click.bind(this));
+
 };
 goog.inherits(sagewest.component.BookingExtra, goog.events.EventTarget);
 
@@ -118,8 +126,29 @@ sagewest.component.BookingExtra.prototype.public_method_06 = function() {};
  * @param  {object} event
  */
 sagewest.component.BookingExtra.prototype.on_add_to_booking_cta_click = function(event) {  
-  this.current_quantity = this.element.find("#quantity").val();
+  if(this.element.find("#quantity").val())
+    this.quantity = parseInt(this.element.find("#quantity").val());
+  if(this.element.find("#adult").val())
+    this.adult = parseInt(this.element.find("#adult").val());
+  if(this.element.find("#child").val())
+    this.child = parseInt(this.element.find("#child").val());
   this.dispatchEvent(new goog.events.Event(sagewest.component.BookingExtra.ON_EXTRA_ADDED));
+};
+
+/**
+ * event handler
+ * @param  {object} event
+ */
+sagewest.component.BookingExtra.prototype.on_show_extra_copy_cta_mobile_click = function(event) {
+  event.preventDefault();
+  var booking_extra_content_copy_mobile_item = $(event.currentTarget).parent().find('.default-copy');
+
+  if(booking_extra_content_copy_mobile_item.is(':visible')){
+    booking_extra_content_copy_mobile_item.slideUp();
+  }else {
+    booking_extra_content_copy_mobile_item.slideDown();
+  }
+
 };
 
 /**

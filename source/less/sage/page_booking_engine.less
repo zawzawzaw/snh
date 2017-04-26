@@ -342,9 +342,12 @@
     }
     .booking-engine-booking-form {
       position: relative;
-      .booking-form {        
-        padding-top: 30px;
-        padding-bottom: 300px;
+      .booking-form {     
+        &.open-calendar {
+          padding-bottom: 300px;
+        }   
+        padding-bottom: 100px;
+        padding-top: 30px;        
         width: 100%;
         display: block;
         box-shadow: none;
@@ -811,6 +814,9 @@
 
       .col-md-7 {
         padding: 0 20px;
+        @media all and (max-width: 991px) {
+          padding: 0px 10px;
+        }
       }
     }
 
@@ -1007,6 +1013,8 @@
 
 @media all and (max-width: 991px) {
   #booking-engine-step-1 {    
+    padding-top: 160px;
+
     .container-fluid {
       padding: 0 15px;
     }
@@ -1085,7 +1093,7 @@
 
     }
   }
-
+  
 }
 
 #booking-engine-step-2 {
@@ -1191,6 +1199,75 @@
     .back-to-select-your-room {
       margin-top: 30px;     
       padding-left: 20px;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  #booking-engine-step-2 {    
+    padding-top: 160px;
+
+    .container-fluid {
+      padding: 0 15px;
+    }
+
+    #booking-engine-step-2-content {
+      .booking-extra-content-image {
+        margin-top: -15px;
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .booking-extra-content-info {
+        .col-md-7 {
+          padding: 20px 5px 0px 5px;
+          min-height: auto;
+        }
+      }
+      .booking-extra-content-copy {
+        padding-top: 0px;
+        padding-bottom: 30px;
+        .default-copy {
+          display: none;
+          padding-top: 10px;
+        }
+      }
+      .booking-extra-content-cta {
+        padding: 0px;
+        position: static;
+        .form-group {
+          padding-bottom: 30px;
+          width: 100%;
+          label {
+            width: 40%;
+            display: inline-block;
+          }
+          .manic-dropdown {
+            width: 58%;
+            display: inline-block;
+          }
+          .col-md-6 {
+            .manic-dropdown {
+              width: 100%;
+            }
+          }
+        }
+        button {
+          position: static;
+          right: auto;
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
+      .booking-extra-content-title {        
+        .room-price {
+          top: 10px;
+        }
+      }
+      .back-to-select-your-room {
+        padding-left: 0;
+      }
+      
+      
     }
   }
 }
@@ -1395,10 +1472,10 @@
       }
       span {
         display: inline-block;
-        width: 92%;
+        width: 90%;
         vertical-align: top;
       }
-    }    
+    }   
   }
   #card-details {
     margin-top: 20px;
@@ -1457,6 +1534,77 @@
     margin-top: 30px;
     padding-left: 20px;
     display: inline-block;
+  }
+  .read-more-cta-container {
+    text-transform: uppercase;
+    .open-sans-bold;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    &:after {    
+      content: "\f107";
+      font-family: FontAwesome;
+      font-size: 13px;
+      padding-left: 5px;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  #booking-engine-step-3 {    
+    padding-top: 160px;
+
+    .container-fluid {
+      padding: 0 15px;
+    }
+
+    #booking-engine-step-3-content {
+      .back-to-personalise-your-stay {
+        padding-left: 0;
+      }
+
+      #book-for-myself, #book-for-someone {
+        position: relative;
+        
+        .your-details, .guest-details {
+          padding: 30px 20px;          
+        }
+        
+        h5 {
+          .lato-bold;
+          font-size: 22px!important;
+          line-height: 32px!important;
+          position: static;
+          padding-bottom: 20px;
+        }
+
+      }
+
+      #terms-and-conditions, #cancellation-policies {
+        padding: 30px 20px;
+
+        h5 {
+          .lato-bold;
+          font-size: 22px!important;
+          line-height: 32px!important;
+          position: static;
+          padding-bottom: 20px;
+        }
+      }
+
+      #card-details {
+        padding: 30px 20px;
+
+        h5 {
+          .lato-bold;
+          font-size: 22px!important;
+          line-height: 32px!important;
+          position: static;
+          padding-bottom: 20px;
+        }
+      }
+    }
   }
 }
 
@@ -1520,6 +1668,28 @@
   }
 }
 
+@media all and (max-width: 991px) {
+  #booking-engine-step-4 {  
+    padding-bottom: 160px;  
+
+    .container-fluid {
+      padding: 0 15px;
+    }
+
+    #thank-you-container {
+      padding: 0px;
+      box-shadow: none;
+      h5 {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      button {
+        padding: 0;
+      }
+    }
+  }
+}
+
 
 //    _____ ________  __________  ___    ____
 //   / ___//  _/ __ \/ ____/ __ )/   |  / __ \
@@ -1539,10 +1709,7 @@
 
   &.confirmation {
     width: 97%;
-  }
-
-  @media all and (max-width: 991px) {
-    position: static;
+    display: none!important;
   }
 
   p {
@@ -1550,8 +1717,24 @@
   }
 }
 
+@media all and (max-width: 991px) {
+  #booking-engine-sidebar {
+    top: 0px;
+    .container-fluid {
+      padding: 0px;
+      .col-md-3 {
+        padding: 0px;
+      }
+    }
+  }
+}
+
 .reservation-summary-sidebar {
   .box-shadow (0px, 1px, 8px, #e5e5e5); 
+
+  @media all and (max-width: 991px) {
+    box-shadow: none;
+  }
 
   &.confirmation {
     .reservation-summary-content-check-in-out-date {
@@ -1629,7 +1812,7 @@
   }
 }
 
-.reservation-summary-title {
+.reservation-summary-sidebar-title {
   background-color: @grey-4;
   padding-top: 20px;
   padding-bottom: 20px;      
@@ -1638,8 +1821,17 @@
     color: @white;
     text-align: center;
   }
+
+  @media all and (max-width: 991px) {
+    padding: 20px 25px;
+    .box-shadow (0px, 1px, 8px, #e5e5e5); 
+    h5, h6 {
+      text-align: left;
+    }
+  }
 }
-.reservation-summary-content {
+
+.reservation-summary-sidebar-content {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -1653,6 +1845,17 @@
       margin-bottom: 0px;
     }
   } 
+
+  @media all and (max-width: 991px) {
+    padding: 15px 25px;
+    background: @off-white;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .reservation-summary-sidebar-details {
+    display: none;
+  }
 }
 
 .reservation-summary-selected-extras-container {
@@ -1784,6 +1987,7 @@
 }
 
 .reservation-summary {
+
   .reservation-summary-title {
     background: @violet;        
     padding-left: 20px;
@@ -1794,6 +1998,11 @@
     h6 {
       color: @white;
     }        
+
+    @media all and (max-width: 991px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 
   .reservation-summary-content {
@@ -1801,6 +2010,11 @@
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media all and (max-width: 991px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
     .reservation-summary-content-promotion-code {
       &:after {
@@ -1927,6 +2141,36 @@
       width: 100%;
       text-align: center;
     }
+  }
+}
+
+#sticky-sidebar {
+  &.stick {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .box-shadow (0px, 1px, 8px, #e5e5e5); 
+    position: fixed;
+    top: 63px;
+    width: 247px;
+    margin-left: -21px;
+  }  
+}
+
+//     __  _______  ____  ______    ______   ____  ____  ____  ______________________     ____  __  __________________  _   __
+//    /  |/  / __ \/ __ )/  _/ /   / ____/  / __ \/ __ \/ __ \/ ____/ ____/ ____/ __ \   / __ )/ / / /_  __/_  __/ __ \/ | / /
+//   / /|_/ / / / / __  |/ // /   / __/    / /_/ / /_/ / / / / /   / __/ / __/ / / / /  / __  / / / / / /   / / / / / /  |/ /
+//  / /  / / /_/ / /_/ // // /___/ /___   / ____/ _, _/ /_/ / /___/ /___/ /___/ /_/ /  / /_/ / /_/ / / /   / / / /_/ / /|  /
+// /_/  /_/\____/_____/___/_____/_____/  /_/   /_/ |_|\____/\____/_____/_____/_____/  /_____/\____/ /_/   /_/  \____/_/ |_/
+
+#proceed-btn-container-mobile {
+  padding: 0 25px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  display: none;
+  button {
+    width: 100%;
   }
 }
 

@@ -121,7 +121,9 @@ sagewest.component.BookingRoomRate.prototype.collapse = function(){
 
     
     this.show_rate_detail_cta.text("More details").removeClass("expanded-version");
-    this.element.find(".booking-room-rate-more-content").slideUp(500);
+    this.element.find(".booking-room-rate-more-content").slideUp(500, function(){
+      $('body').trigger("ON_RATES_EXPAND");
+    });
   }
 };
 
@@ -131,7 +133,9 @@ sagewest.component.BookingRoomRate.prototype.expand = function() {
 
     
     this.show_rate_detail_cta.text("Hide details").addClass("expanded-version");
-    this.element.find(".booking-room-rate-more-content").slideDown(500);
+    this.element.find(".booking-room-rate-more-content").slideDown(500, function(){
+      $('body').trigger("ON_RATES_EXPAND");
+    });
   }
 };
 
@@ -169,7 +173,7 @@ sagewest.component.BookingRoomRate.prototype.on_show_rate_detail_click = functio
     this.expand();
   }
 
-  $('body').trigger("ON_RATES_EXPAND");
+  // $('body').trigger("ON_RATES_EXPAND");
 
 };
 
