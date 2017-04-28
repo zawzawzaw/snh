@@ -8851,6 +8851,11 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 #default-header-spacer {
   height: 83px;
 }
+@media all and (max-width: 1024px) {
+  #default-header-spacer {
+    height: 63px;
+  }
+}
 #default-header-mobile-spacer {
   height: 63px;
 }
