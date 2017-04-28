@@ -1,0 +1,183 @@
+// since mpdf only allows ttf
+
+
+
+
+//     ___  ____  _____ _   _   ____    _    _   _ ____
+//    / _ \|  _ \| ____| \ | | / ___|  / \  | \ | / ___|
+//   | | | | |_) |  _| |  \| | \___ \ / _ \ |  \| \___ \
+//   | |_| |  __/| |___| |\  |  ___) / ___ \| |\  |___) |
+//    \___/|_|   |_____|_| \_| |____/_/   \_\_| \_|____/
+//
+
+@font-face {
+  font-family: 'open_sans_light';
+  src: url('../fonts/open_sans/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sans_light_italic';
+  src: url('../fonts/open_sans/OpenSans-LightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sans_regular';
+  src: url('../fonts/open_sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sans_regular_italic';
+  src: url('../fonts/open_sans/OpenSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sans_semi_bold';
+  src: url('../fonts/open_sans/OpenSans-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sans_bold';
+  src: url('../fonts/open_sans/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.open-sans-light{
+  font-family: 'open_sans_light', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.open-sans-light-italic{
+  font-family: 'open_sans_light_italic', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.open-sans-regular{
+  font-family: 'open_sans_regular', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.open-sans-regular-italic{
+  font-family: 'open_sans_regular_italic', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+}
+.open-sans-semibold{
+  font-family: 'open_sans_semi_bold', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.open-sans-bold{
+  font-family: 'open_sans_bold', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+//    _        _  _____ ___
+//   | |      / \|_   _/ _ \
+//   | |     / _ \ | || | | |
+//   | |___ / ___ \| || |_| |
+//   |_____/_/   \_\_| \___/
+//
+
+
+@font-face {
+  font-family: 'lato_light';
+  src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato_regular';
+  src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lato_bold';
+  src: url('../fonts/lato/Lato-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+.lato-light{
+  font-family: 'lato_light', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.lato-regular{
+  font-family: 'lato_regular', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.lato-bold{
+  font-family: 'lato_bold', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+
+//    ____ _______   ___     _____    ____ _   _ ___ ____  _____
+//   / ___|_   _\ \ / / |   | ____|  / ___| | | |_ _|  _ \| ____|
+//   \___ \ | |  \ V /| |   |  _|   | |  _| | | || || | | |  _|
+//    ___) || |   | | | |___| |___  | |_| | |_| || || |_| | |___
+//   |____/ |_|   |_| |_____|_____|  \____|\___/|___|____/|_____|
+//
+
+
+.body-font{
+  .open-sans-light;
+  font-size: 14px;
+  line-height: 25px;
+}
+.body-bold-font{
+  .open-sans-semibold;
+  font-size: 14px;
+  line-height: 25px; 
+}
+
+.h1-font{
+  .lato-regular;
+  font-size: 32px;
+  line-height: 44px;
+}
+.h2-font{
+  .lato-bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.h3-font{
+  .lato-bold;
+  font-size: 17px;
+  line-height: 26px;
+}
+.h4-font{
+  .open-sans-semibold;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.08em;
+}
+.h5-font{
+  .lato-regular;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.h6-font{
+  .body-font;
+}

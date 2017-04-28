@@ -1,0 +1,47 @@
+
+
+
+// STYLE THE IMAGES
+
+.header-logo{
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.icon-moon{
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.icon-person{
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.icon-bed{
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+
+@media print {
+  .header-logo{
+    width: 80pt * @print-multiplier;
+    height: 80pt * @print-multiplier;
+  }
+
+  .icon-moon{
+    width: 25pt * @print-multiplier;
+    height: 25pt * @print-multiplier;
+  }
+  .icon-person{
+    width: 25pt * @print-multiplier;
+    height: 25pt * @print-multiplier;
+  }
+  .icon-bed{
+    width: 25pt * @print-multiplier;
+    height: 25pt * @print-multiplier;
+  }  
+}

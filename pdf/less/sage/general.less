@@ -1,0 +1,216 @@
+body{
+  background: @white;
+  color: @grey;
+
+  .body-font;
+
+}
+
+p{
+  .body-font;
+  strong{
+    .body-bold-font;
+  }
+}
+
+h1{
+  .h1-font;
+}
+h2{
+  .h2-font;
+}
+h3{
+  .h3-font;
+}
+h4{
+  .h4-font;
+}
+h5{
+  .h5-font;
+}
+h6{
+  .h6-font;
+}
+
+@media print {
+  p{
+    font-size: 14pt * @print-multiplier;
+    line-height: 25pt * @print-multiplier;
+
+    strong{
+      font-size: 14pt * @print-multiplier;
+      line-height: 25pt * @print-multiplier;
+    }
+  }
+  h1{
+    font-size: 32pt * @print-multiplier;
+    line-height: 44pt * @print-multiplier;
+  }
+  h2{
+    font-size: 24pt * @print-multiplier;
+    line-height: 30pt * @print-multiplier;
+  }
+  h3{
+    font-size: 17pt * @print-multiplier;
+    line-height: 26pt * @print-multiplier;
+  }
+  h4{
+    font-size: 13pt * @print-multiplier;
+    line-height: 23pt * @print-multiplier;
+  }
+  h5{
+    font-size: 14pt * @print-multiplier;
+    line-height: 25pt * @print-multiplier;
+  }
+  h6{
+    font-size: 15pt * @print-multiplier;
+    line-height: 25pt * @print-multiplier;
+  }
+
+
+
+}
+
+
+hr{
+  border: none;
+  border-top: 1px solid @border-grey;
+}
+
+
+
+.container-fluid{
+  padding-left: 70px;
+  padding-right: 70px;
+
+  @media print {
+    padding-left: 70pt * @print-multiplier;
+    padding-right: 70pt * @print-multiplier;
+    
+  }
+}
+
+
+
+
+ul.dot-version{
+  font-size: 14px;
+  line-height: 25px;
+
+  padding-left: 13px;
+  li {
+    position: relative;
+
+    font-size: 14px;
+    line-height: 25px;
+
+    &:before {
+      display: block;
+      content:"·";
+
+      .open-sans-light;
+      font-size: 35px;
+      line-height: 24px;
+
+      position: absolute;
+      top: 0;
+      left: -14px;
+    }
+  }
+
+  @media print {
+    font-size: 14pt * @print-multiplier;
+    line-height: 25pt * @print-multiplier;
+
+    padding-left: 13pt * @print-multiplier;
+    li {
+      font-size: 14pt * @print-multiplier;
+      line-height: 25pt * @print-multiplier;
+
+      &:before {
+        font-size: 35pt * @print-multiplier;
+        line-height: 24pt * @print-multiplier;
+        left: -14pt * @print-multiplier;
+      }
+    }
+  }
+}
+
+
+
+
+//    ____  _____ _____ _   _   _ _   _____
+//   |  _ \| ____|  ___/ \ | | | | | |_   _|
+//   | | | |  _| | |_ / _ \| | | | |   | |
+//   | |_| | |___|  _/ ___ \ |_| | |___| |
+//   |____/|_____|_|/_/   \_\___/|_____|_|
+//
+
+
+.detail-container{
+
+  border-left: 1px solid @border-grey;
+  border-right: 1px solid @border-grey;
+  border-bottom: 1px solid @border-grey;
+
+  .detail-header{
+    color: @white;
+    background: @border-grey;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    h4{
+      font-size: 14px;
+      color: @white;
+    }
+  }
+  .detail-content{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media print {
+    .detail-header{
+      padding-left: 30pt * @print-multiplier;
+      padding-right: 30pt * @print-multiplier;
+
+      padding-top: 9pt * @print-multiplier;
+      padding-bottom: 9pt * @print-multiplier;
+      h4{
+        font-size: 14pt * @print-multiplier;
+      }
+    }
+    .detail-content{
+      padding-left: 30pt * @print-multiplier;
+      padding-right: 30pt * @print-multiplier;
+    }
+  }
+}
+
+
+
+
+
+//    ____  ____  ___ _   _ _____
+//   |  _ \|  _ \|_ _| \ | |_   _|
+//   | |_) | |_) || ||  \| | | |
+//   |  __/|  _ < | || |\  | | |
+//   |_|   |_| \_\___|_| \_| |_|
+//
+
+
+body{
+  -webkit-print-color-adjust: exact;
+}
+
+
+
+
+@page {
+  size: A4;
+  margin: 0;
+}
