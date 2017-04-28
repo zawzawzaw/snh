@@ -126,12 +126,20 @@ sagewest.component.BookingRoom.prototype.rate_collapse = function(){
     this.is_rate_expanded = false;
 
     this.show_rates_cta.text('Show rates');
+    this.show_rates_cta_mobile.text('Show rates');
 
     for (var i = 0; i < this.room_rate_item_array.length; i++) {
       this.room_rate_item_array[i].collapse();
     }
 
-    this.booking_room_rates.slideUp(500);
+    this.booking_room_rates.slideUp(500, function(){
+      // console.log('slide up done');
+      // console.log($(".booking-steps.active-step").height());
+      $('body').trigger("ON_RATES_EXPAND");
+    });
+
+    // console.log('slide up done 2');
+    // console.log($(".booking-steps.active-step").height());
   }
 };
 sagewest.component.BookingRoom.prototype.rate_expand = function() {
@@ -139,8 +147,16 @@ sagewest.component.BookingRoom.prototype.rate_expand = function() {
     this.is_rate_expanded = true;
 
     this.show_rates_cta.text('Hide rates'); 
+    this.show_rates_cta_mobile.text('Hide rates');
 
-    this.booking_room_rates.slideDown(500);
+    this.booking_room_rates.slideDown(500, function(){
+      // console.log('slide down done');
+      // console.log($(".booking-steps.active-step").height());
+      $('body').trigger("ON_RATES_EXPAND");
+    });
+
+    // console.log('slide down done 2');
+    // console.log($(".booking-steps.active-step").height());
   }
 };
 
@@ -195,7 +211,7 @@ sagewest.component.BookingRoom.prototype.on_show_rates_click = function(event) {
     this.rate_expand();
   }
 
-  $('body').trigger("ON_RATES_EXPAND");
+  // $('body').trigger("ON_RATES_EXPAND");
 
 };
 

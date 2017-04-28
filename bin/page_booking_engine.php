@@ -7,7 +7,7 @@
   <div id="booking-engine-step-0" data-step="0" class="booking-steps active-step">
       <div id="booking-engine-step-0-header">
         <h3>Please select the dates to see the available rooms for your stay.</h3>
-        <h5>date & number of guest</h5>
+        <h5>date & number of guests</h5>
       </div>
       <div id="booking-engine-step-0-content">
         <div class="container-fluid">
@@ -277,7 +277,7 @@
                 <div class="row">
                   <div class="col-md-5">
                     <div class="booking-room-content-image">
-                      <a href="room_detail.php" class="manic-image-container">
+                      <a href="#" class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" data-image-mobile="images_cms/room/room-index-standard-room.jpg" alt="">
                       </a>
                     </div>
@@ -286,7 +286,7 @@
                     
                     <div class="booking-room-content-text-container-desktop hidden-xs hidden-sm">
                       <div class="booking-room-content-title">
-                        <a href="room_detail.php"><h5>Standard Room</h5></a>
+                        <a href="#"><h5>Standard Room</h5></a>
                         <div class="boxlist-item-content-price room-price">
                           <h6>4 nights from</h6>
                           <p class="content-price">
@@ -313,9 +313,10 @@
                       </div>
                     </div>
                     
+                    <!-- mobile only -->
                     <div class="booking-room-content-text-container-mobile visible-xs visible-sm">
                       <div class="booking-room-content-title-mobile">
-                        <a href="room_detail.php"><h5>Standard Room</h5></a>                      
+                        <a href="#"><h5>Standard Room</h5></a>                      
                       </div>
 
                       <div class="booking-room-content-detail-mobile boxlist-item-content-room-detail">
@@ -346,6 +347,7 @@
                       </div>
 
                     </div>
+                    <!-- end mobile only-->
 
                   </div>
                 </div>            
@@ -403,8 +405,11 @@
                             <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                             <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
                           </div>
-
+                          
+                          <!-- mobile only -->
                           <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta-mobile visible-xs visible-sm">Select Room</a>
+                          <!-- end mobile only-->
+
                         </div>
                       </div>                    
                     </div>
@@ -463,7 +468,9 @@
                             <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
                           </div>        
 
-                          <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta-mobile visible-xs visible-sm">Select Room</a>            
+                          <!-- mobile only -->
+                          <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta-mobile visible-xs visible-sm">Select Room</a>
+                          <!-- end mobile only-->
                         </div>
                       </div>                    
                     </div>
@@ -481,7 +488,7 @@
                 <div class="row">
                   <div class="col-md-5">
                     <div class="booking-room-content-image">
-                      <a href="room_detail.php" class="manic-image-container">
+                      <a href="#" class="manic-image-container">
                         <img src="" data-image-desktop="images_cms/room/room-index-standard-room.jpg" data-image-mobile="images_cms/room/room-index-standard-room.jpg" alt="">
                       </a>
                     </div>
@@ -490,7 +497,7 @@
                     
                     <div class="booking-room-content-text-container-desktop hidden-xs hidden-sm">
                       <div class="booking-room-content-title">
-                        <a href="room_detail.php"><h5>Standard Room</h5></a>
+                        <a href="#"><h5>Standard Room</h5></a>
                         <div class="boxlist-item-content-price room-price">
                           <h6>4 nights from</h6>
                           <p class="content-price">
@@ -519,7 +526,7 @@
 
                     <div class="booking-room-content-text-container-mobile visible-xs visible-sm">
                       <div class="booking-room-content-title-mobile">
-                        <a href="room_detail.php"><h5>Standard Room</h5></a>                      
+                        <a href="#"><h5>Standard Room</h5></a>                      
                       </div>
 
                       <div class="booking-room-content-detail-mobile boxlist-item-content-room-detail">
@@ -605,7 +612,11 @@
                           <div class="col-md-12 cancellation-policies">
                             <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                             <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
-                          </div>                    
+                          </div>     
+
+                          <!-- mobile only -->
+                          <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta-mobile visible-xs visible-sm">Select Room</a>
+                          <!-- end mobile only-->               
                         </div>
                       </div>                    
                     </div>
@@ -662,7 +673,11 @@
                           <div class="col-md-12 cancellation-policies">
                             <h5>7 days Advanced Purchase<span>Cancellation Policies</span></h5>  
                             <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
-                          </div>                    
+                          </div>         
+
+                          <!-- mobile only -->
+                          <a href="javascript:void(0);" class="square-cta highlight-version select-room-cta-mobile visible-xs visible-sm">Select Room</a>
+                          <!-- end mobile only-->           
                         </div>
                       </div>                    
                     </div>
@@ -688,8 +703,8 @@
                 <div class="row">
                   <div class="col-md-5">
                     <div class="booking-extra-content-image">
-                      <a href="room_detail.php" class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-01.jpg" alt="">
+                      <a href="#" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-01.jpg" data-image-mobile="images_cms/booking/extra-booking-item-01.jpg" alt="">
                       </a>
                     </div>
                   </div>
@@ -707,6 +722,7 @@
                     </div>                                
                     
                     <div class="booking-extra-content-copy">
+                      <a href="#" class="collapsable-arrow-cta show-extra-copy-cta-mobile visible-xs visible-sm">More details</a>                   
                       <div class="default-copy">
                         <p>One Way Transfer from/to Brisbane Domestic or International Airport. Please email our NEXT Journey team on journey.brisbane@nexthotels.com and advise Flight Number/s, Arrival/Departure Time, Number of People Travelling and our NEXT Journeyman will be in contact with you to confirm your transfer.</p>
                       </div>
@@ -746,8 +762,8 @@
                 <div class="row">
                   <div class="col-md-5">
                     <div class="booking-extra-content-image">
-                      <a href="room_detail.php" class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-02.jpg" alt="">
+                      <a href="#" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-02.jpg" data-image-mobile="images_cms/booking/extra-booking-item-02.jpg" alt="">
                       </a>
                     </div>
                   </div>
@@ -765,6 +781,7 @@
                     </div>                                
                     
                     <div class="booking-extra-content-copy">
+                      <a href="#" class="collapsable-arrow-cta show-extra-copy-cta-mobile visible-xs visible-sm">More details</a>                   
                       <div class="default-copy">
                         <p>Staying at NEXT Hotel Brisbane and need to get to your office? Locally, or even the Gold Coast? Our Tesla Journey team is at your disposal. Let us know where and when you are wanting your Tesla journey and we can get back to you with a quote..</p>
                       </div>
@@ -804,8 +821,8 @@
                 <div class="row">
                   <div class="col-md-5">
                     <div class="booking-extra-content-image">
-                      <a href="room_detail.php" class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-03.jpg" alt="">
+                      <a href="#" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-03.jpg" data-image-mobile="images_cms/booking/extra-booking-item-03.jpg" alt="">
                       </a>
                     </div>
                   </div>
@@ -823,6 +840,7 @@
                     </div>                                
                     
                     <div class="booking-extra-content-copy">
+                      <a href="#" class="collapsable-arrow-cta show-extra-copy-cta-mobile visible-xs visible-sm">More details</a>                   
                       <div class="default-copy">
                         <p>Can’t wait to get into your room? Beat the 3pm check-in by guaranteeing your room from midday!</p>
                       </div>
@@ -862,8 +880,8 @@
                 <div class="row">
                   <div class="col-md-5">
                     <div class="booking-extra-content-image">
-                      <a href="room_detail.php" class="manic-image-container">
-                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-04.jpg" alt="">
+                      <a href="#" class="manic-image-container">
+                        <img src="" data-image-desktop="images_cms/booking/extra-booking-item-04.jpg" data-image-mobile="images_cms/booking/extra-booking-item-04.jpg" alt="">
                       </a>
                     </div>
                   </div>
@@ -881,6 +899,7 @@
                     </div>                                
                     
                     <div class="booking-extra-content-copy">
+                      <a href="#" class="collapsable-arrow-cta show-extra-copy-cta-mobile visible-xs visible-sm">More details</a>                   
                       <div class="default-copy">
                         <p>Haven't you heard that breakfast is the most important meal of the day? Kick start your morning by adding on our $25 breakfast. Make up your own healthy cereals with nuts and seeds or head straight to the delectable pastries.</p>
                       </div>
@@ -889,7 +908,7 @@
                     <div class="booking-extra-content-cta default-form">
                       <div class="form-group">
                         <div class="row">
-                          <div class="col-md-6">
+                          <div class="col-md-6 col-sm-6 col-xs-6">
                             <label for="adult">Adult</label>                      
                             <div class="manic-dropdown small-version">
                               <select name="adult" id="adult">
@@ -907,7 +926,7 @@
                               </select>
                             </div>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-md-6 col-sm-6 col-xs-6">
                             <label for="child">Child</label>                      
                             <div class="manic-dropdown small-version">
                               <select name="child" id="child">
@@ -925,7 +944,7 @@
                                 <option value="10">10</option>
                               </select>
                             </div>
-                            <span class="child-age-notice">≤ 11 years old</span>
+                            <span class="child-age-notice">11 years & below</span>
                           </div>
                         </div>
                         
@@ -950,12 +969,12 @@
       <div id="booking-engine-step-3-content">
         <div class="container-fluid">
           <div class="col-md-9">
-              <ul class="payment-tabs">
+              <!-- <ul class="payment-tabs">
                 <li><a href="#" data-tab="book-for-myself" class="active">Booking for myself</a></li>
                 <li><a href="#" data-tab="book-for-someone">Booking for someone else</a></li>
-              </ul>
+              </ul> -->
 
-              <div id="book-for-myself" class="personal-detail active-tab">
+              <!-- <div id="book-for-myself" class="personal-detail">
                 <div class="your-details">
                   <div class="row">
                     <div class="col-md-4"><h5>Your Details</h5></div>
@@ -1163,14 +1182,14 @@
                     </div>
                   </div>                
                 </div>
-              </div>
+              </div> -->
 
-              <div id="book-for-someone" class="personal-details">
+              <div id="book-for-someone" class="personal-details active-tab">
                 <div class="your-details">
                   <div class="row">
                     <div class="col-md-4"><h5>Your Details</h5></div>
                     <div class="col-md-8">
-                      <div id="personal_info" class="default-form">
+                      <div id="personal_info" class="default-form simple-form-check">
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
@@ -1195,11 +1214,181 @@
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="telephone">Telephone</label>
-                              <input type="text" name="telephone">
+                              <input type="text" name="telephone" class="telephone-inputs">
                             </div>
                           </div>
-                        </div>                 
-                      </div>                    
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <a href="#" class="collapsable-arrow-cta optional-info-cta">Optional Information</a>
+                          </div>
+                        </div>                
+                      </div>
+
+                      <div id="optional_info" class="default-form">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="address">Address</label>
+                              <input type="text" name="address">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="city">City</label>
+                              <input type="text" name="city">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="state">State</label>
+                              <input type="text" name="state">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="country">Country</label>
+                              <input type="text" name="country">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="post_code">Postcode</label>
+                              <input type="text" name="post_code">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="special_requests">Special Requests</label>
+                              <textarea name="special_requests"></textarea>
+                            </div>
+                          </div>                    
+                        </div> -->
+                        <!-- <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_in_time">Estimated Check In Time</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_in_time" id="estimated_check_in_time">
+                                  <option value="">Please select</option>
+                                  <option value="00:00" selected>00:00</option>
+                                  <option value="00:30">00:30</option>
+                                  <option value="01:00">01:00</option>
+                                  <option value="01:30">01:30</option>
+                                  <option value="02:00">02:00</option>
+                                  <option value="02:30">02:30</option>
+                                  <option value="03:00">03:00</option>
+                                  <option value="03:30">03:30</option>
+                                  <option value="04:00">04:00</option>
+                                  <option value="04:30">04:30</option>
+                                  <option value="05:00">05:00</option>
+                                  <option value="05:30">05:30</option>
+                                  <option value="06:00">06:00</option>
+                                  <option value="06:30">06:30</option>
+                                  <option value="07:00">07:00</option>
+                                  <option value="07:30">07:30</option>
+                                  <option value="08:00">08:00</option>
+                                  <option value="08:30">08:30</option>
+                                  <option value="09:00">09:00</option>
+                                  <option value="09:30">09:30</option>
+                                  <option value="10:00">10:00</option>
+                                  <option value="10:30">10:30</option>
+                                  <option value="11:00">11:00</option>
+                                  <option value="11:30">11:30</option>
+                                  <option value="12:00">12:00</option>
+                                  <option value="12:30">12:30</option>
+                                  <option value="13:00">13:00</option>
+                                  <option value="13:30">13:30</option>
+                                  <option value="14:00">14:00</option>
+                                  <option value="14:30">14:30</option>
+                                  <option value="15:00">15:00</option>
+                                  <option value="15:30">15:30</option>
+                                  <option value="16:00">16:00</option>
+                                  <option value="16:30">16:30</option>
+                                  <option value="17:00">17:00</option>
+                                  <option value="17:30">17:30</option>
+                                  <option value="18:00">18:00</option>
+                                  <option value="18:30">18:30</option>
+                                  <option value="19:00">19:00</option>
+                                  <option value="19:30">19:30</option>
+                                  <option value="20:00">20:00</option>
+                                  <option value="20:30">20:30</option>
+                                  <option value="21:00">21:00</option>
+                                  <option value="21:30">21:30</option>
+                                  <option value="22:00">22:00</option>
+                                  <option value="22:30">22:30</option>
+                                  <option value="23:00">23:00</option>
+                                  <option value="23:30">23:30</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="estimated_check_out_time">Estimated Check Out Time</label>
+                              <div class="manic-dropdown">
+                                <select name="estimated_check_out_time" id="estimated_check_out_time">
+                                  <option value="">Please select</option>
+                                  <option value="00:00" selected>00:00</option>
+                                  <option value="00:30">00:30</option>
+                                  <option value="01:00">01:00</option>
+                                  <option value="01:30">01:30</option>
+                                  <option value="02:00">02:00</option>
+                                  <option value="02:30">02:30</option>
+                                  <option value="03:00">03:00</option>
+                                  <option value="03:30">03:30</option>
+                                  <option value="04:00">04:00</option>
+                                  <option value="04:30">04:30</option>
+                                  <option value="05:00">05:00</option>
+                                  <option value="05:30">05:30</option>
+                                  <option value="06:00">06:00</option>
+                                  <option value="06:30">06:30</option>
+                                  <option value="07:00">07:00</option>
+                                  <option value="07:30">07:30</option>
+                                  <option value="08:00">08:00</option>
+                                  <option value="08:30">08:30</option>
+                                  <option value="09:00">09:00</option>
+                                  <option value="09:30">09:30</option>
+                                  <option value="10:00">10:00</option>
+                                  <option value="10:30">10:30</option>
+                                  <option value="11:00">11:00</option>
+                                  <option value="11:30">11:30</option>
+                                  <option value="12:00">12:00</option>
+                                  <option value="12:30">12:30</option>
+                                  <option value="13:00">13:00</option>
+                                  <option value="13:30">13:30</option>
+                                  <option value="14:00">14:00</option>
+                                  <option value="14:30">14:30</option>
+                                  <option value="15:00">15:00</option>
+                                  <option value="15:30">15:30</option>
+                                  <option value="16:00">16:00</option>
+                                  <option value="16:30">16:30</option>
+                                  <option value="17:00">17:00</option>
+                                  <option value="17:30">17:30</option>
+                                  <option value="18:00">18:00</option>
+                                  <option value="18:30">18:30</option>
+                                  <option value="19:00">19:00</option>
+                                  <option value="19:30">19:30</option>
+                                  <option value="20:00">20:00</option>
+                                  <option value="20:30">20:30</option>
+                                  <option value="21:00">21:00</option>
+                                  <option value="21:30">21:30</option>
+                                  <option value="22:00">22:00</option>
+                                  <option value="22:30">22:30</option>
+                                  <option value="23:00">23:00</option>
+                                  <option value="23:30">23:30</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1212,41 +1401,53 @@
                 <div class="row">
                   <div class="col-md-4"><h5>Terms & Conditions</h5></div>
                   <div class="col-md-8">
-                    <p>On arrival, all guests must provide a credit card with available funds for full payment of booking & a AUD$100 per night pre-authorization swipe, along with a valid current photo identification corresponding to the booking name. Cash bonds will NOT be accepted.</p>
+                    <div class="minimize-read-more" data-length="280">
+                      <!-- <p>On arrival, all guests must provide a credit card with available funds for full payment of booking & a AUD$100 per night pre-authorization swipe, along with a valid current photo identification corresponding to the booking name. Cash bonds will NOT be accepted.</p>
 
-                    <p>For security purposes, valid photo identification is required at check-in. Acceptable forms include a drivers license, passport, and/or proof of age card.</p>
+                      <p>For security purposes, valid photo identification is required at check-in. Acceptable forms include a drivers license, passport, and/or proof of age card.</p>
 
-                    <p>The hotels cash/EFTPOS policy requires full payment of accommodation plus $100 per night bond at the time of check in. Valid identification must be provided for all cash bookings.</p>
+                      <p>The hotels cash/EFTPOS policy requires full payment of accommodation plus $100 per night bond at the time of check in. Valid identification must be provided for all cash bookings.</p>
 
-                    <p>A valid credit card must be provided to secure your reservation. You will not be charged until arrival at the property, unless stated otherwise. You are welcome to pay on departure with CASH, EFPTOS or CREDIT CARD. Guests choosing to settle their account with a credit card will incur a surcharge of 1.5% for Visa/Mastercard and 3% for AMEX/Diners, EFTPOS (Savings or Cheque Account) payments exempt.</p>
+                      <p>A valid credit card must be provided to secure your reservation. You will not be charged until arrival at the property, unless stated otherwise. You are welcome to pay on departure with CASH, EFPTOS or CREDIT CARD. Guests choosing to settle their account with a credit card will incur a surcharge of 1.5% for Visa/Mastercard and 3% for AMEX/Diners, EFTPOS (Savings or Cheque Account) payments exempt.</p> -->
+
+                      <p>Cancelation charges apply if a booking is changed or cancelled after the deadline stipulated in the rates cancelation policy, or in the case of a no-show.</p>
+
+                      <p>For certain rates (for example, advanced purchase rates), changes to booking are not permanent once booked and may result in a forfeiture of payment.</p>
+                    </div>
                     
                     <div class="default-form simple-form-check">
                       <div class="form-group check-box-error">
                         <input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" class="required">
                         <label for="terms_and_conditions" class="color-version"><span>I have read and agreed to the terms & conditions governing this booking.</span></label>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div id="cancellation-policies">
-                <div class="row">
-                  <div class="col-md-4"><h5>Cancellation Policies</h5></div>
-                  <div class="col-md-8">
-                    <p>Cancellations or changes to bookings must be made at least 24 hours prior to the check in date and time or you will be charged the full amount of the first changed or cancelled night. </p>
-
-                    <p>Please be aware that promotional room rates have specific cancellation policies. For promotional room rates customer credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
-                    
-                    <div class="default-form simple-form-check">
                       <div class="form-group check-box-error">
                         <input type="checkbox" name="cancellation_policies" id="cancellation_policies" class="required">
-                        <label for="cancellation_policies" class="color-version">I have read and agreed to the cancellation policies.</label>
+                        <label for="cancellation_policies" class="color-version"><span>I have read and agreed to the cancellation policies.</span></label>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- <div id="cancellation-policies">
+                <div class="row">
+                  <div class="col-md-4"><h5>Cancellation Policies</h5></div>
+                  <div class="col-md-8">
+                    <div class="minimize-read-more" data-length="280">
+                      <p>Cancellations or changes to bookings must be made at least 24 hours prior to the check in date and time or you will be charged the full amount of the first changed or cancelled night. </p>
+
+                      <p>Please be aware that promotional room rates have specific cancellation policies. For promotional room rates customer credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
+                    </div>
+                    
+                    <div class="default-form simple-form-check">
+                      <div class="form-group check-box-error">
+                        <input type="checkbox" name="cancellation_policies" id="cancellation_policies" class="required">
+                        <label for="cancellation_policies" class="color-version"><span>I have read and agreed to the cancellation policies.</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
 
               <div id="card-details">
                 <div class="row">
@@ -1289,7 +1490,7 @@
                               <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i></li>
                               <li><i class="fa fa-cc-amex" aria-hidden="true"></i></li>
                               <li><i class="fa fa-cc-diners-club" aria-hidden="true"></i></li>
-                              <li><i class="fa fa-cc-diners-club" aria-hidden="true"></i></li>
+                              <li><i class="union-pay" aria-hidden="true"></i></li>
                             </ul>
                           </div>
                         </div>
@@ -1297,7 +1498,7 @@
                       <div class="row">
                         <div class="col-md-6">
                           <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                               <div class="form-group">
                                 <label for="expiry_date">Expiry Date*</label>
                                 <div class="manic-dropdown">
@@ -1319,7 +1520,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
                               <div class="form-group">
                                 <label for="expiry_date" class="hidden-label">Expiry Date*</label>
                                 <div class="manic-dropdown">
@@ -1350,7 +1551,8 @@
                       </div>
                       <div class="row">
                         <div class="col-md-12">
-                          <span class="notice">*Your card will not be charged, it serves as guarantee only unless stated otherwise.</span>
+                          <!-- <span class="notice">*Your card will not be charged, it serves as guarantee only unless stated otherwise.</span> -->
+                          <span class="notice">A valid credit card is used to guarantee your room and will not be charged until you arrive, unless the rate(s) requires payment in advance. </span>
                         </div>
                       </div>
                     </div>
@@ -1419,12 +1621,17 @@
     <div id="booking-engine-sidebar">
       <div class="container-fluid">
         <div class="col-md-3 col-md-offset-9">
-          <div class="reservation-summary-sidebar">
-            <div class="reservation-summary-title">
+          <div id="sticky-anchor-mobile"></div>
+          <div id="sticky-sidebar-mobile" class="reservation-summary-sidebar">
+            <div class="reservation-summary-sidebar-title see-more-booking-summary-mobile">
               <h5>Booking Summary</h5>
               <h6>Sage west perth</h6>
+              <div class="reservation-summary-sidebar-title-mobile visible-xs visible-sm">
+                <h6 class="reservation-summary-sidebar-total-room-mobile">0 Room</h6>
+                <h6 class="reservation-summary-sidebar-total-amount-mobile">$0.00</h6>
+              </div>              
             </div>
-            <div class="reservation-summary-content">
+            <div class="reservation-summary-sidebar-content">
               <div class="reservation-summary-content-check-in-out-date-02">
                 <h6>Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</h6>
                 <p>29/03/2017 to 26/03/2017</p>                                
@@ -1438,113 +1645,96 @@
                 <p>Wed, 29 Mar 2017</p>
               </div>
             </div>
-            
-            <div class="reservation-summary-selected-rooms-container">
-              <!-- dynamic element from js -->
-            </div>
-
-            <div class="reservation-summary-selected-extras-container">
-              <div class="reservation-summary-expandable-content selected-extras">
-                  <div class="manic-expand-container desktop-open-version extra-version">
-                      <div class="scroll-target" data-value="title-01"></div>
-                      <div class="manic-expand-container-title extra-version">
-                          <h6>Extras</h6> </div>
-                      <div class="manic-expand-container-btn"></div>
-                      <div class="manic-expand-container-content">
-                        <div class="selected-extra-container">
-                          <!-- dynamic element from js -->
-<!--                           <div class="selected-extra">
-                              <div class="selected-extra-title">
-                                  <h5>Tesla transfer</h5> <a href="#" class="delete-btn"><i class="fa fa-times"></i></a> </div>
-                              <div class="selected-extra-content">
-                                  <div class="selected-extra-content-details">
-                                      <p>2 Bookings</p>
-                                  </div>
-                                  <div class="selected-extra-content-price"> <span class="price">$150.00</span> </div>
-                              </div>
-                              <div class="selected-extra-content">
-                                  <div class="selected-extra-content-details">
-                                      <p>2 Bookings</p>
-                                  </div>
-                                  <div class="selected-extra-content-price"> <span class="price">$150.00</span> </div>
-                              </div>
-                          </div>
-
-                          <div class="selected-extra">
-                              <div class="selected-extra-title">
-                                  <h5>Tesla transfer</h5> <a href="#" class="delete-btn"><i class="fa fa-times"></i></a> </div>
-                              <div class="selected-extra-content">
-                                  <div class="selected-extra-content-details">
-                                      <p>2 Bookings</p>
-                                  </div>
-                                  <div class="selected-extra-content-price"> <span class="price">$150.00</span> </div>
-                              </div>
-                          </div>  -->  
-                        </div>                       
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <div class="reservation-summary">
-              <div class="reservation-summary-title">
-                <h6>cost for your stay</h6>
-              </div>
               
-              <div class="reservation-summary-content">
-                <div class="reservation-summary-content-promotion-code">
-                  <h5>Promotion Code</h5>
-                  <p>ABC123</p>
-                </div>
-
-                <div class="reservation-summary-content-selected-rooms">
+            <div class="reservation-summary-sidebar-details">
+              <div id="non-sticky-sidebar">
+                <div class="reservation-summary-selected-rooms-container">
                   <!-- dynamic element from js -->
                 </div>
 
-                <div class="reservation-summary-content-selected-extras">                  
-                  <div class="reservation-summary-content-selected-extras-title">
-                    <h5>Extras</h5>
+                <div class="reservation-summary-selected-extras-container">
+                  <div class="reservation-summary-expandable-content selected-extras">
+                      <div class="manic-expand-container desktop-open-version extra-version">
+                          <div class="scroll-target" data-value="title-extra"></div>
+                          <div class="manic-expand-container-title extra-version">
+                              <h6>Extras</h6> </div>
+                          <div class="manic-expand-container-btn"></div>
+                          <div class="manic-expand-container-content">
+                            <div class="selected-extra-container">
+                              <!-- dynamic element from js -->
+                            </div>                       
+                          </div>
+                      </div>
                   </div>
-                  <div class="reservation-summary-content-selected-extras-content">
-                    <!-- dynamic element from js -->                    
-                  </div>                  
+                </div>
+              </div>
+              
+              <div id="sticky-anchor"></div>              
+              <div id="sticky-sidebar" class="reservation-summary">
+                <div class="reservation-summary-title">
+                  <h6>cost for your stay</h6>
                 </div>
                 
-                <div class="reservation-summary-content-totals">
-                  <div class="reservation-summary-content-total">
-                    <div class="reservation-summary-content-total-title">
-                      <p>Total Charges</p>
-                    </div>
-                    <div class="reservation-summary-content-total-price">
-                      <p>$0.00</p>
-                    </div>
+                <div class="reservation-summary-content">
+                  <div class="reservation-summary-content-promotion-code">
+                    <h5>Promotion Code</h5>
+                    <p>ABC123</p>
                   </div>
-                  <div class="reservation-summary-content-total">
-                    <div class="reservation-summary-content-total-title">
-                      <p>Tax</p>
-                    </div>
-                    <div class="reservation-summary-content-total-tax">
-                      <p>$0.00</p>
-                    </div>
-                  </div>
-                </div>
 
-                <div class="reservation-summary-content-sub-total">
-                  <div class="reservation-summary-content-sub-total-title">
-                    <h6>Sub Total</h6>
+                  <div class="reservation-summary-content-selected-rooms">
+                    <!-- dynamic element from js -->
                   </div>
-                  <div class="reservation-summary-content-sub-total-price">
-                    <h6>$0.00</h6>
-                  </div>
-                </div>
 
-                <button type="submit" class="square-cta proceed-to-payment highlight-version">proceed to booking</button>
+                  <div class="reservation-summary-content-selected-extras">                  
+                    <div class="reservation-summary-content-selected-extras-title">
+                      <h5>Extras</h5>
+                    </div>
+                    <div class="reservation-summary-content-selected-extras-content">
+                      <!-- dynamic element from js -->                    
+                    </div>                  
+                  </div>
+                                    
+                  <div class="reservation-summary-content-totals">
+                    <div class="reservation-summary-content-total">
+                      <div class="reservation-summary-content-total-title">
+                        <p>Total Charges</p>
+                      </div>
+                      <div class="reservation-summary-content-total-price">
+                        <p>$0.00</p>
+                      </div>
+                    </div>
+                    <div class="reservation-summary-content-total">
+                      <div class="reservation-summary-content-total-title">
+                        <p>Tax</p>
+                      </div>
+                      <div class="reservation-summary-content-total-tax">
+                        <p>$0.00</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reservation-summary-content-sub-total">
+                    <div class="reservation-summary-content-sub-total-title">
+                      <h6>Sub Total</h6>
+                    </div>
+                    <div class="reservation-summary-content-sub-total-price">
+                      <h6>$0.00</h6>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="square-cta proceed-to-payment highlight-version">proceed to booking</button>
+                  
+                </div>
               </div>
             </div>
                 
           </div>
         </div>
       </div>
+    </div>
+    
+    <div id="proceed-btn-container-mobile">
+      <button type="submit" class="square-cta proceed-to-payment-mobile highlight-version">proceed to booking</button>
     </div>
 
   </div>
@@ -1610,7 +1800,7 @@
         </div>
       </div>
     </div> 
-    <a href="#" class="back-arrow-cta back-to-search-btn">Back to see rooms</a>     
+    <a href="#" class="back-arrow-cta back-to-search-btn">Close</a>     
   </div>
 </div>
 
@@ -1622,7 +1812,7 @@
     <div class="cancellation-popup-content">
       <p>Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.</p>
     </div> 
-    <a href="#" class="back-arrow-cta back-to-search-btn">Back to see rooms</a>     
+    <a href="#" class="back-arrow-cta back-to-search-btn">Close</a>     
   </div>
 </div>
 
@@ -1638,14 +1828,14 @@
       <div class="card-front"></div>
       <div class="card-back"></div>
     </div> 
-    <a href="#" class="back-arrow-cta back-to-payment-btn">Back to payment</a>     
+    <a href="#" class="back-arrow-cta back-to-payment-btn">Close</a>     
   </div>
 </div>
 
 <script id="summary-room-template" type="text/x-handlebars-template">
   <div class="reservation-summary-expandable-content selected-rooms">
       <div class="manic-expand-container desktop-open-version">
-          <div class="scroll-target" data-value="title-01"></div>
+          <div class="scroll-target" data-value="title-{{ no_of_room_booked }}"></div>
           <div class="manic-expand-container-title">
               <h6>Room {{ no_of_room_booked }}</h6> </div>
           <div class="manic-expand-container-btn"></div>
@@ -1670,13 +1860,130 @@
                           <div class="selected-room-nightly-rates-title"> <a href="#" class="nightly-rates-popup-cta"><h6>Nightly Rates</h6></a> </div>
                       </div>
                       <div class="selected-room-cancellation-policies">
-                          <div class="selected-room-cancellation-policies-title"> <a href="#" class="cancellation-popup-cta"><h6>Cancellation Policies</h6></a> </div>
+                          <div class="selected-room-cancellation-policies-title"> <a href="#" class="cancellation-popup-cta"><h6>Cancellation Policy </h6></a> </div>
                       </div>
                   </div>
               </div>
           </div>
       </div>
   </div>
+</script>
+
+<script id="summary-room-template-02" type="text/x-handlebars-template">
+  <div class="reservation-summary-content-selected-room">
+      <div class="reservation-summary-content-selected-room-title">
+          <h5>Room {{ no_of_room_booked }}</h5>
+          <p>{{ rate_title_shorten }}</p>
+      </div>
+      <div class="reservation-summary-content-selected-room-price">
+          <p class="price">{{ price }}</p>
+      </div>
+  </div>
+</script>
+
+<script id="summary-extra-template" type="text/x-handlebars-template">
+  <div class="selected-extra">
+      <div class="row">
+          <div class="col-md-5">
+              <div class="manic-image-container"><img src="" data-image-desktop="images_cms/booking/extra-booking-item-01.jpg" alt=""></div>
+          </div>
+          <div class="col-md-7">
+              <div class="selected-extra-title">
+                  <h5>{{ extra_title }}</h5> <a href="#" class="delete-extra-btn delete-btn"><i class="fa fa-times"></i></a> </div>
+              <div class="selected-extra-content">
+                  <div class="selected-extra-content-details">
+                      {{#ifCond quantity ">" "0" }}
+                        <p>{{ quantity }} Bookings</p>
+                      {{/ifCond}}
+                      {{#ifCond adult ">" "0" }}
+                        <p>{{ adult }} Adults</p>
+                      {{/ifCond}}
+                      {{#ifCond child ">" "0" }}
+                        <p>{{ child }} Children</p>
+                      {{/ifCond}}
+                  </div>
+                  <div class="selected-extra-content-price"> <span class="price">{{ extra_price }}</span> </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</script>
+
+<script id="summary-extra-template-02" type="text/x-handlebars-template">
+  <div class="reservation-summary-content-selected-extra">
+    <div class="reservation-summary-content-selected-extra-title">
+        <p>{{ extra_title }}</p>
+    </div>
+    <div class="reservation-summary-content-selected-extra-price">
+        <p class="price">{{ extra_price }}</p>
+    </div>
+</div>
+
+</script>
+
+<script id="guest-detail-for-each-room-form" type="text/x-handlebars-template">
+  <div class="guest-for-each-room">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="room-title">Room {{ no_of_room_booked }}</span>
+        <h5 class="room-detail-no">Guest Details</h5>
+        <a href="#" class="visible-xs visible-sm show-hide-guest-detail-form"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-md-8">
+        <div id="personal_info" class="default-form">
+          <div class="row guest-name-inputs">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="first_name">First Name</label>
+                      <input type="text" name="first_name" class="required"> 
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="last_name">Last Name</label>
+                      <input type="text" name="last_name" class="required"> 
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="special_requests">Special Requests</label>
+                      <textarea name="special_requests"></textarea>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="estimated_check_in_time">Estimated Check In Time</label>
+                      <div class="manic-dropdown">
+                          <select name="estimated_check_in_time" id="estimated_check_in_time">
+                              <option value="">Please select</option>
+                              <option value="10:00" selected>10:00</option>
+                              <option value="10:15">10:15</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="estimated_check_out_time">Estimated Check Out Time</label>
+                      <div class="manic-dropdown">
+                          <select name="estimated_check_out_time" id="estimated_check_out_time">
+                              <option value="">Please select</option>
+                              <option value="10:00" selected>10:00</option>
+                              <option value="10:15">10:15</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </script>
 
 <div id="default-footer-spacer" class="hidden-xs hidden-sm"></div>

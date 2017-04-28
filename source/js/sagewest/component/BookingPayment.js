@@ -29,9 +29,9 @@ sagewest.component.BookingPayment = function(options, element) {
 
   // console.log("init booking payment");
 
-  this.guest_detail_html = '<div class="guest-for-each-room"> <div class="row"> <div class="col-md-4"><span class="room-title">Room 1</span> <h5>Guest Details</h5></div> <div class="col-md-8"> <div id="personal_info" class="default-form"> <div class="row"> <div class="col-md-6"> <div class="form-group"> <label for="first_name">First Name*</label> <input type="text" name="first_name" class="required"> </div> </div> <div class="col-md-6"> <div class="form-group"> <label for="last_name">Last Name*</label> <input type="text" name="last_name" class="required"> </div> </div> </div> <div class="row"> <div class="col-md-6"> <div class="form-group"> <label for="email">Email*</label> <input type="text" name="email" class="required"> </div> </div> <div class="col-md-6"> <div class="form-group"> <label for="telephone">Telephone</label> <input type="text" name="telephone"> </div> </div> </div> <div class="row"> <div class="col-md-12"> <a href="#" class="collapsable-arrow-cta optional-info-cta">Optional Information</a> </div> </div> </div> <div id="optional_info" class="default-form"> <div class="row"> <div class="col-md-12"> <div class="form-group"> <label for="address">Address</label> <input type="text" name="address"> </div> </div> </div> <div class="row"> <div class="col-md-6"> <div class="form-group"> <label for="city">City</label> <input type="text" name="city"> </div> </div> <div class="col-md-6"> <div class="form-group"> <label for="state">State</label> <input type="text" name="state"> </div> </div> </div> <div class="row"> <div class="col-md-6"> <div class="form-group"> <label for="country">Country</label> <input type="text" name="country"> </div> </div> <div class="col-md-6"> <div class="form-group"> <label for="post_code">Postcode</label> <input type="text" name="post_code"> </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="form-group"> <label for="special_requests">Special Requests</label> <textarea name="special_requests"></textarea> </div> </div> </div> <div class="row"> <div class="col-md-6"> <div class="form-group"> <label for="estimated_check_in_time">Estimated Check In Time</label> <div class="manic-dropdown"> <select name="estimated_check_in_time" id="estimated_check_in_time"> <option value="">Please select</option> <option value="10:00" selected>10:00</option> <option value="10:15">10:15</option> </select> </div> </div> </div> <div class="col-md-6"> <div class="form-group"> <label for="estimated_check_out_time">Estimated Check Out Time</label> <div class="manic-dropdown"> <select name="estimated_check_out_time" id="estimated_check_out_time"> <option value="">Please select</option> <option value="10:00" selected>10:00</option> <option value="10:15">10:15</option> </select> </div> </div> </div> </div> </div> </div> </div></div>';
+  this.guest_detail_html = '<div class="guest-for-each-room"> <div class="row"> <div class="col-md-4"> <h5 class="room-detail-no">Room Detail</h5></div> <div class="col-md-8"> <div id="personal_info" class="default-form"> <div class="row guest-name-inputs"> <div class="col-md-6"> <div class="form-group"> <label for="first_name">First Name</label> <input type="text" name="first_name" class="required"> </div> </div> <div class="col-md-6"> <div class="form-group"> <label for="last_name">Last Name</label> <input type="text" name="last_name" class="required"> </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="form-group"> <label for="special_requests">Special Requests</label> <textarea name="special_requests"></textarea> </div> </div> </div> <div class="row"> <div class="col-md-6"> <div class="form-group"> <label for="estimated_check_in_time">Estimated Check In Time</label> <div class="manic-dropdown"> <select name="estimated_check_in_time" id="estimated_check_in_time"> <option value="">Please select</option> <option value="10:00" selected>10:00</option> <option value="10:15">10:15</option> </select> </div> </div> </div> <div class="col-md-6"> <div class="form-group"> <label for="estimated_check_out_time">Estimated Check Out Time</label> <div class="manic-dropdown"> <select name="estimated_check_out_time" id="estimated_check_out_time"> <option value="">Please select</option> <option value="10:00" selected>10:00</option> <option value="10:15">10:15</option> </select> </div> </div> </div> </div> </div> </div> </div></div>';
 
-  this.element.find(".payment-tabs li a").click(this.on_payment_tab_click.bind(this));
+  // this.element.find(".payment-tabs li a").click(this.on_payment_tab_click.bind(this));
   this.element.find(".back-to-personalise-your-stay").click(this.on_back_to_personalise_your_stay_click.bind(this));
 
   this.element.on("click", ".optional-info-cta", this.on_optional_info_click.bind(this));
@@ -44,6 +44,26 @@ sagewest.component.BookingPayment = function(options, element) {
     $(".cvv-popup-container").addClass('show');
 
 
+  });
+
+  this.element.on("click", ".show-hide-guest-detail-form", function(e){
+
+    e.preventDefault();
+
+    console.log($(this).parent().parent());
+
+    var guest_detail_form = $(this).parent().parent().find(".default-form");
+
+    console.log(guest_detail_form);
+
+    if(!guest_detail_form.is(':visible')) {
+      guest_detail_form.slideDown();
+      $(this).find("i").removeClass("fa-angle-down").addClass("fa-angle-up");
+    }else {
+      guest_detail_form.slideUp();
+      $(this).find("i").removeClass("fa-angle-up").addClass("fa-angle-down");
+    }
+          
   });
 
 };
@@ -112,13 +132,37 @@ sagewest.component.BookingPayment.prototype.sample_method_calls = function() {
 //
 
 
-sagewest.component.BookingPayment.prototype.add_guest_details_form_per_room_booking = function() {
-  this.element.find(".guest-details").append(this.guest_detail_html);
-  this.dispatchEvent(new goog.events.Event(sagewest.component.BookingPayment.ON_GUEST_DETAIL_FORM_ADDED));
+sagewest.component.BookingPayment.prototype.add_guest_details_form_per_room_booking = function(no_of_room_booked) {
+  
+  var data = {
+    'no_of_room_booked' : no_of_room_booked
+  };
+
+  var guest_detail_template = Handlebars.compile($("#guest-detail-for-each-room-form").html());
+  var guest_detail_html = guest_detail_template(data);
+
+  // this.element.find(".guest-details").append(this.guest_detail_html);
+  this.element.find(".guest-details").append(guest_detail_html);
+
+  if(no_of_room_booked > 1) {
+    this.element.find('.guest-name-inputs').show();
+  }else {
+    this.element.find('.guest-name-inputs').hide();
+  }
+
+  // this.dispatchEvent(new goog.events.Event(sagewest.component.BookingPayment.ON_GUEST_DETAIL_FORM_ADDED));
 };
 
 sagewest.component.BookingPayment.prototype.delete_guest_details_form_per_room_booking = function() {
   this.element.find(".guest-details .guest-for-each-room")[0].remove();
+
+  // re-index room no on guest form
+  var arr = this.element.find(".guest-details .guest-for-each-room");
+  for (var i = 0; i < arr.length; i++) {
+    var index = i + 1;
+    // console.log($(arr[i]).find(".reservation-summary-content-selected-room-title h5"));
+    $(arr[i]).find(".room-title").html("Room "+index);
+  }
 };
 sagewest.component.BookingPayment.prototype.public_method_02 = function() {};
 sagewest.component.BookingPayment.prototype.public_method_03 = function() {};

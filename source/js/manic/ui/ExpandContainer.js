@@ -194,7 +194,9 @@ manic.ui.ExpandContainer.prototype.collapse = function() {
     this.is_expanded = false;
 
     this.element.removeClass('expand-version');
-    this.content_element.slideUp(500);
+    this.content_element.slideUp(500, function(){
+      $('body').trigger("ON_EXPAND_CONTAINER_COLLAPSE");
+    });
 
     this.dispatchEvent(new goog.events.Event(manic.ui.ExpandContainer.ON_COLLAPSE));
   }
@@ -219,7 +221,9 @@ manic.ui.ExpandContainer.prototype.expand = function() {
     this.is_expanded = true;
 
     this.element.addClass('expand-version');
-    this.content_element.slideDown(500);
+    this.content_element.slideDown(500, function(){
+      $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
+    });
     this.element.trigger('expand-container-expand');
 
     this.update_layout();

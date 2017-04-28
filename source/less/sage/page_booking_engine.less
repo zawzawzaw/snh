@@ -1,10 +1,19 @@
+html,body {
+  &.not-scrollable {
+    overflow: hidden!important;
+  }
+}
+
 #booking-engine-form {
   padding-bottom: 100px;
   h3 {
     .lato-bold;
     font-size: 21px;
     line-height: 27px;
-    letter-spacing: 0px;    
+    letter-spacing: 0px; 
+    @media all and (max-width: 991px) {
+      // letter-spacing: -2px; //ios browser got some extra spacing
+    }
   }
   h5 {
     .open-sans-semi-bold;
@@ -188,9 +197,14 @@
       }
     }
     #booking-calendar {      
-      width: 285px;
+      
       display: inline-block;
       vertical-align: top;
+      width: 285px;
+
+      @media all and (max-width: 991px) {
+        width: 100%;
+      }
 
       .daterangepicker {
         @media all and (min-width: 1024px) {
@@ -221,7 +235,10 @@
           float: none;
           margin-left: auto;
           margin-right: auto;
-
+          @media all and (max-width: 991px) {
+            max-width: 100%;  
+          }
+          
           .calendar-table {
             background-color: @off-white;
             padding-bottom: 0px;
@@ -342,9 +359,12 @@
     }
     .booking-engine-booking-form {
       position: relative;
-      .booking-form {        
-        padding-top: 30px;
-        padding-bottom: 300px;
+      .booking-form {     
+        &.open-calendar {
+          padding-bottom: 300px;
+        }   
+        padding-bottom: 100px;
+        padding-top: 30px;        
         width: 100%;
         display: block;
         box-shadow: none;
@@ -352,8 +372,10 @@
       }
       #booking-calendar {
         position: absolute;
-        top: 170px;
-        left: 17px;
+        top: 170px;        
+        left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
@@ -811,6 +833,9 @@
 
       .col-md-7 {
         padding: 0 20px;
+        @media all and (max-width: 991px) {
+          padding: 0px 10px;
+        }
       }
     }
 
@@ -831,6 +856,9 @@
         text-transform: none;
         color: @violet;       
         letter-spacing: 0; 
+        @media all and (max-width: 991px) {
+          // letter-spacing: -2px; //ios browser got some extra spacing
+        }
       }
       .room-price {
         position: absolute;
@@ -883,6 +911,9 @@
           font-size: 20px;
           line-height: 23px;
           letter-spacing: 0px;
+          @media all and (max-width: 991px) {
+            // letter-spacing: -2px; //ios browser got some extra spacing
+          }
           color: @grey;
           text-transform: none;
         }
@@ -913,6 +944,9 @@
         .booking-room-price {
           position: absolute;
           left: 0px;
+          @media all and (max-width: 991px) {
+            right: 0px;
+          }
         }
       }
     }
@@ -979,12 +1013,19 @@
         display: block;        
         background: @grey-6;
         padding: 20px;
+        @media all and (max-width: 991px) {
+          margin-left: 0px!important;
+          margin-right: 0px!important;
+        }
 
         h5 {
           .open-sans-semi-bold;
           font-size: 14px;
           line-height: 17px;
           letter-spacing: 0!important;
+          @media all and (max-width: 991px) {
+            // letter-spacing: -2px!important; //ios browser got some extra spacing
+          }
           padding-bottom: 10px;
           text-transform: none;
           span {
@@ -1007,6 +1048,8 @@
 
 @media all and (max-width: 991px) {
   #booking-engine-step-1 {    
+    padding-top: 160px;
+
     .container-fluid {
       padding: 0 15px;
     }
@@ -1085,7 +1128,7 @@
 
     }
   }
-
+  
 }
 
 #booking-engine-step-2 {
@@ -1131,6 +1174,9 @@
         line-height: 30px;     
         text-transform: none;      
         letter-spacing: 0; 
+        @media all and (max-width: 991px) {
+          // letter-spacing: -2px; //ios browser got some extra spacing
+        }
         width: 70%;
       }
       .room-price {
@@ -1173,10 +1219,16 @@
       }
       .child-age-notice {
         position: absolute;
-        .lato-bold;
+        // .lato-bold;
+        // font-size: 12px;
+        // letter-spacing: 0.01em;
+        // color: @light-grey;
+        .open-sans-light-italic;
         font-size: 12px;
+        line-height: 20px;
         letter-spacing: 0.01em;
-        color: @light-grey;
+        // color: #a8a4a3;
+        color: @grey;
         right: 10px;
         bottom: -20px;
       }
@@ -1191,6 +1243,75 @@
     .back-to-select-your-room {
       margin-top: 30px;     
       padding-left: 20px;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  #booking-engine-step-2 {    
+    padding-top: 160px;
+
+    .container-fluid {
+      padding: 0 15px;
+    }
+
+    #booking-engine-step-2-content {
+      .booking-extra-content-image {
+        margin-top: -15px;
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .booking-extra-content-info {
+        .col-md-7 {
+          padding: 20px 5px 0px 5px;
+          min-height: auto;
+        }
+      }
+      .booking-extra-content-copy {
+        padding-top: 0px;
+        padding-bottom: 30px;
+        .default-copy {
+          display: none;
+          padding-top: 10px;
+        }
+      }
+      .booking-extra-content-cta {
+        padding: 0px;
+        position: static;
+        .form-group {
+          padding-bottom: 30px;
+          width: 100%;
+          label {
+            width: 40%;
+            display: inline-block;
+          }
+          .manic-dropdown {
+            width: 58%;
+            display: inline-block;
+          }
+          .col-md-6 {
+            .manic-dropdown {
+              width: 100%;
+            }
+          }
+        }
+        button {
+          position: static;
+          right: auto;
+          width: 100%;
+          padding: 0 10px;
+        }
+      }
+      .booking-extra-content-title {        
+        .room-price {
+          top: 10px;
+        }
+      }
+      .back-to-select-your-room {
+        padding-left: 0;
+      }
+      
+      
     }
   }
 }
@@ -1275,12 +1396,30 @@
           margin-right: -13px;
           margin-bottom: 55px;
           margin-top: 20px;
+
+          @media all and (max-width: 991px) {
+            margin-bottom: 35px;
+          }
         }    
         &:last-child {
           &:after {
             display: none;
           }
-        }        
+        }  
+
+        .show-hide-guest-detail-form {
+          position: absolute;
+          top: 15px;
+          right: 10px;
+          font-size: 27px;
+        } 
+        
+        @media all and (max-width: 991px) {
+          .default-form {
+            display: none;
+          }       
+        }
+        
       }
     }
 
@@ -1303,6 +1442,9 @@
       color: @grey!important;
       text-transform: none!important;
       letter-spacing: 0px!important;
+      @media all and (max-width: 991px) {
+        // letter-spacing: -2px!important; //ios browser got some extra spacing
+      }
 
       position: absolute;
       left: 0px;
@@ -1317,6 +1459,12 @@
       position: absolute;
       left: 0px;
       top: -20px;
+      @media all and (max-width: 991px) {
+        font-size: 12px;
+        line-height: 12px;
+        left: 10px;
+        position: static;
+      }
     }
     label {
       font-size: 14px;
@@ -1324,7 +1472,13 @@
       &.color-version {
         color: @violet;
       }
-    }    
+    }   
+    .intl-tel-input {
+      width: 100%;
+    } 
+    .telephone-inputs {
+      padding-left: 48px;
+    }
 
     #optional_info {
       padding-top: 20px;
@@ -1371,6 +1525,9 @@
       color: @grey!important;
       text-transform: none!important;
       letter-spacing: 0px!important;
+      @media all and (max-width: 991px) {
+        // letter-spacing: -2px!important; //ios browser got some extra spacing
+      }
 
       position: absolute;
       left: 0px;
@@ -1395,10 +1552,10 @@
       }
       span {
         display: inline-block;
-        width: 92%;
+        width: 90%;
         vertical-align: top;
       }
-    }    
+    }   
   }
   #card-details {
     margin-top: 20px;
@@ -1415,6 +1572,9 @@
       color: @grey!important;
       text-transform: none!important;
       letter-spacing: 0px!important;
+      @media all and (max-width: 991px) {
+        // letter-spacing: -2px!important; //ios browser got some extra spacing
+      }
 
       position: absolute;
       left: 0px;
@@ -1437,6 +1597,16 @@
         i {
           font-size: 23px;
         }
+        .union-pay {
+          background: url("../images/icons/unionpay.png") no-repeat;
+          width: 34px;
+          height: 23px;
+          display: block;
+           background-size: contain; 
+          position: relative;
+          top: 4px;
+          left: -1px;
+        }
       }
     }
     .notice {
@@ -1451,12 +1621,90 @@
       position: absolute;      
       bottom: 4px;
       right: 15px;
+      @media all and (max-width: 991px) {
+        bottom: 2px;
+      }
     }
   }
   .back-to-personalise-your-stay {
     margin-top: 30px;
     padding-left: 20px;
     display: inline-block;
+  }
+  .read-more-cta-container {
+    text-transform: uppercase;
+    .open-sans-bold;
+    font-size: 11px;
+    line-height: 10px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    &:after {    
+      content: "\f107";
+      font-family: FontAwesome;
+      font-size: 13px;
+      padding-left: 5px;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  #booking-engine-step-3 {    
+    padding-top: 160px;
+
+    .container-fluid {
+      padding: 0 15px;
+    }
+
+    #booking-engine-step-3-content {
+      .back-to-personalise-your-stay {
+        padding-left: 0;
+      }
+
+      #book-for-myself, #book-for-someone {
+        position: relative;
+        
+        .your-details, .guest-details {
+          padding: 30px 20px;          
+        }
+        
+        h5 {
+          .lato-bold;
+          font-size: 22px!important;
+          line-height: 32px!important;
+          position: static;
+          // padding-bottom: 20px;
+        }
+
+        #personal_info {
+          padding-top: 20px;
+        }
+
+      }
+
+      #terms-and-conditions, #cancellation-policies {
+        padding: 30px 20px;
+
+        h5 {
+          .lato-bold;
+          font-size: 22px!important;
+          line-height: 32px!important;
+          position: static;
+          padding-bottom: 20px;
+        }
+      }
+
+      #card-details {
+        padding: 30px 20px;
+
+        h5 {
+          .lato-bold;
+          font-size: 22px!important;
+          line-height: 32px!important;
+          position: static;
+          padding-bottom: 20px;
+        }
+      }
+    }
   }
 }
 
@@ -1520,6 +1768,28 @@
   }
 }
 
+@media all and (max-width: 991px) {
+  #booking-engine-step-4 {  
+    padding-bottom: 160px;  
+
+    .container-fluid {
+      padding: 0 15px;
+    }
+
+    #thank-you-container {
+      padding: 0px;
+      box-shadow: none;
+      h5 {
+        font-size: 22px;
+        line-height: 32px;
+      }
+      button {
+        padding: 0;
+      }
+    }
+  }
+}
+
 
 //    _____ ________  __________  ___    ____
 //   / ___//  _/ __ \/ ____/ __ )/   |  / __ \
@@ -1539,10 +1809,7 @@
 
   &.confirmation {
     width: 97%;
-  }
-
-  @media all and (max-width: 991px) {
-    position: static;
+    // display: none!important;
   }
 
   p {
@@ -1550,8 +1817,24 @@
   }
 }
 
+@media all and (max-width: 991px) {
+  #booking-engine-sidebar {
+    top: 0px;
+    .container-fluid {
+      padding: 0px;
+      .col-md-3 {
+        padding: 0px;
+      }
+    }
+  }
+}
+
 .reservation-summary-sidebar {
   .box-shadow (0px, 1px, 8px, #e5e5e5); 
+
+  @media all and (max-width: 991px) {
+    box-shadow: none;
+  }
 
   &.confirmation {
     .reservation-summary-content-check-in-out-date {
@@ -1611,6 +1894,9 @@
         }
       }
     }
+    #sticky-sidebar {
+      width: 100%!important;
+    }
   }
 
   h5 {
@@ -1629,21 +1915,44 @@
   }
 }
 
-.reservation-summary-title {
+.reservation-summary-sidebar-title {
   background-color: @grey-4;
   padding-top: 20px;
-  padding-bottom: 20px;      
+  padding-bottom: 20px;   
+  position: relative;   
 
   h5, h6 {
     color: @white;
     text-align: center;
   }
+
+  @media all and (max-width: 991px) {
+    padding: 20px 25px;
+    .box-shadow (0px, 1px, 8px, #e5e5e5); 
+    cursor: pointer;
+    h5, h6 {
+      text-align: left;
+    }
+  }
+
+  .reservation-summary-sidebar-title-mobile {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: @grey;
+    height: 100%;
+    width: 30%;
+    padding: 20px 15px;
+  }
 }
-.reservation-summary-content {
+
+.reservation-summary-sidebar-content {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  .transition-in(.3s);
   // float: right;
 
   .reservation-summary-content-check-in-out-date {
@@ -1653,6 +1962,19 @@
       margin-bottom: 0px;
     }
   } 
+
+  @media all and (max-width: 991px) {
+    padding: 15px 25px;
+    background: @off-white;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .reservation-summary-sidebar-details {
+    display: none;
+    background: @white;
+    .box-shadow (0px, 1px, 8px, #e5e5e5); 
+  }
 }
 
 .reservation-summary-selected-extras-container {
@@ -1713,6 +2035,9 @@
             font-size: 15px!important;
             line-height: 24px!important;
             letter-spacing: 0!important;
+            @media all and (max-width: 991px) {
+              // letter-spacing: -2px!important; //ios browser got some extra spacing
+            }
             text-transform: none!important;
             color: @violet!important;
           }
@@ -1736,6 +2061,9 @@
               font-size: 15px!important;
               line-height: 20px!important;
               letter-spacing: 0!important;
+              @media all and (max-width: 991px) {
+                // letter-spacing: -2px!important; //ios browser got some extra spacing
+              }
               text-transform: none!important;
             }
           }
@@ -1754,7 +2082,7 @@
           margin-bottom: 10px;
           margin-left: -10px;
           margin-right: -10px;
-          border-bottom: 1px solid #a8a6a6;
+          border-bottom: 1px solid rgba(146, 144, 144, 0.3);
         }        
         &:last-child {
           &:after {
@@ -1784,6 +2112,7 @@
 }
 
 .reservation-summary {
+
   .reservation-summary-title {
     background: @violet;        
     padding-left: 20px;
@@ -1794,6 +2123,11 @@
     h6 {
       color: @white;
     }        
+
+    @media all and (max-width: 991px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 
   .reservation-summary-content {
@@ -1801,6 +2135,11 @@
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
+
+    @media all and (max-width: 991px) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
     .reservation-summary-content-promotion-code {
       &:after {
@@ -1905,6 +2244,9 @@
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0;
+        @media all and (max-width: 991px) {
+          // letter-spacing: -2px; //ios browser got some extra spacing
+        }
         color: @violet; 
         text-transform: none; 
       }          
@@ -1926,7 +2268,86 @@
       padding-right: 0px;
       width: 100%;
       text-align: center;
+      @media all and (max-width: 991px) {
+        margin-top: 20px;
+      }
     }
+  }
+}
+
+#sticky-sidebar-mobile {
+  &.stick {
+    position: fixed;
+    top: 62px;
+    width: 100%;    
+    .reservation-summary-sidebar-title {
+      box-shadow: none;
+    }
+    .reservation-summary-sidebar-content {
+      // display: none;
+      visibility: hidden;
+      // position: absolute;
+      // width: 100%;
+      .opacity(0);
+
+      &.show {
+        visibility: visible!important;
+        // position: static!important;
+        .opacity(1)!important;
+        // width: auto!important;
+      }
+    }
+    .reservation-summary-content-sub-total {
+      padding-bottom: 0px;
+    }
+  }
+  &.scrollable {
+    height: 90%;
+    overflow-y: scroll;
+  }
+}
+
+#sticky-sidebar {
+  width: 100%;
+  &.stick {
+    // padding-top: 20px;
+    // padding-bottom: 30px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    .box-shadow (0px, 1px, 8px, #e5e5e5); 
+    position: fixed;
+    top: 103px;
+    width: 247px;
+    // margin-left: -21px;
+
+    .reservation-summary-content-selected-rooms {
+      display: none;
+    }
+    .reservation-summary-content-promotion-code {
+      // display: none;
+    }
+    .reservation-summary-content-selected-extras {
+      display: none!important;
+    }
+    .reservation-summary-content-sub-total {
+      padding-bottom: 20px;
+    }
+  }  
+}
+
+//     __  _______  ____  ______    ______   ____  ____  ____  ______________________     ____  __  __________________  _   __
+//    /  |/  / __ \/ __ )/  _/ /   / ____/  / __ \/ __ \/ __ \/ ____/ ____/ ____/ __ \   / __ )/ / / /_  __/_  __/ __ \/ | / /
+//   / /|_/ / / / / __  |/ // /   / __/    / /_/ / /_/ / / / / /   / __/ / __/ / / / /  / __  / / / / / /   / / / / / /  |/ /
+//  / /  / / /_/ / /_/ // // /___/ /___   / ____/ _, _/ /_/ / /___/ /___/ /___/ /_/ /  / /_/ / /_/ / / /   / / / /_/ / /|  /
+// /_/  /_/\____/_____/___/_____/_____/  /_/   /_/ |_|\____/\____/_____/_____/_____/  /_____/\____/ /_/   /_/  \____/_/ |_/
+
+#proceed-btn-container-mobile {
+  padding: 0 25px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  display: none;
+  button {
+    width: 100%;
   }
 }
 
@@ -1946,7 +2367,7 @@
     }
     .transition-in(.3s);
     position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
+    z-index: 9999999; /* Sit on top */
     left: 0;
     top: 0px;
     width: 100%; /* Full width */
@@ -1958,6 +2379,9 @@
 
 .rates-breakdown-popup, .cancellation-popup, .cvv-popup {
   width: 360px;
+  @media all and (max-width: 991px) {
+    width: 100%;
+  }
   background: @white;
   padding: 30px;
   margin: 15% auto; /* 15% from the top and centered */
