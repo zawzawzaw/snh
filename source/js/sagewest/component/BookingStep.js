@@ -139,13 +139,6 @@ sagewest.component.BookingStep.prototype.go_next_step = function() {
     $("#booking-engine-sidebar").addClass("confirmation");
   }
 
-  if(manic.IS_MOBILE == true) {      
-    if(currentStep>2) {
-      $(".reservation-summary-sidebar-details").show();
-      $("#booking-engine-step-3").css("padding-top", $("#booking-engine-sidebar").height());
-    }
-  }
-
   if(currentStep>1) {
     $("#booking-engine-sidebar").css("top", "0");    
   }

@@ -341,7 +341,7 @@ sagewest.page.Default.prototype.create_expand_container = function() {
  * @param  {goog.events.Event} event
  */
 sagewest.page.Default.prototype.on_expand_container_collapse = function(event) {
-  $('body').trigger("ON_EXPAND_CONTAINER_COLLAPSE");
+  // $('body').trigger("ON_EXPAND_CONTAINER_COLLAPSE");
 }
 
 /**
@@ -370,11 +370,11 @@ sagewest.page.Default.prototype.on_expand_container_expand = function(event) {
       this.util_scroll_to(expand_container.scroll_value);
     }
 
-    $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
+    // $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
 
 
   } else {
-    $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
+    // $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
   }
 
   // console.log('expand_container.group_value: ' + expand_container.group_value);

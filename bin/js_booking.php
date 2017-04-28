@@ -35,6 +35,7 @@
   <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>  
   <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
   <script type="text/javascript" src="../source/library/handlebars/handlebars.js"></script>
+  <script type="text/javascript" src="../source/library/intl-tel-input/js/intlTelInput.min.js"></script>
 
   <!-- Google Closure -->
   <script src="../source/library/closure-library/closure/goog/base.js"></script>

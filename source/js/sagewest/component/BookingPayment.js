@@ -46,6 +46,26 @@ sagewest.component.BookingPayment = function(options, element) {
 
   });
 
+  this.element.on("click", ".show-hide-guest-detail-form", function(e){
+
+    e.preventDefault();
+
+    console.log($(this).parent().parent());
+
+    var guest_detail_form = $(this).parent().parent().find(".default-form");
+
+    console.log(guest_detail_form);
+
+    if(!guest_detail_form.is(':visible')) {
+      guest_detail_form.slideDown();
+      $(this).find("i").removeClass("fa-angle-down").addClass("fa-angle-up");
+    }else {
+      guest_detail_form.slideUp();
+      $(this).find("i").removeClass("fa-angle-up").addClass("fa-angle-down");
+    }
+          
+  });
+
 };
 goog.inherits(sagewest.component.BookingPayment, goog.events.EventTarget);
 
@@ -135,6 +155,14 @@ sagewest.component.BookingPayment.prototype.add_guest_details_form_per_room_book
 
 sagewest.component.BookingPayment.prototype.delete_guest_details_form_per_room_booking = function() {
   this.element.find(".guest-details .guest-for-each-room")[0].remove();
+
+  // re-index room no on guest form
+  var arr = this.element.find(".guest-details .guest-for-each-room");
+  for (var i = 0; i < arr.length; i++) {
+    var index = i + 1;
+    // console.log($(arr[i]).find(".reservation-summary-content-selected-room-title h5"));
+    $(arr[i]).find(".room-title").html("Room "+index);
+  }
 };
 sagewest.component.BookingPayment.prototype.public_method_02 = function() {};
 sagewest.component.BookingPayment.prototype.public_method_03 = function() {};

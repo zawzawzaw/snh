@@ -46,7 +46,10 @@ sagewest.page.Booking.prototype.init = function() {
   sagewest.page.Booking.superClass_.init.call(this);
 
   this.active_step = 1;
+  this.current_step_no = 1; // use for mobile enable/disable sticky
+
   this.no_of_room_booked = 0;  
+  this.booked_room_counter = 0;  
 
   this.create_datepicker_inputs();
 
@@ -58,8 +61,12 @@ sagewest.page.Booking.prototype.init = function() {
   this.create_booking_rooms();
   this.create_booking_extras();
 
+  this.sticky_sidebar_scence = null;
+  this.sticky_sidebar_scence_mobile = null;
   this.booking_payment_item = null;
   this.create_booking_payment();
+
+  this.create_telephone_inputs();
 
   // this.create_no_room_carousel();  
 
@@ -104,13 +111,25 @@ sagewest.page.Booking.prototype.init = function() {
 
   $('body').on("ON_EXPAND_CONTAINER_EXPAND", function(e){
     this.booking_summary_item.update_page_height();
+    this.give_space_for_sidebar_mobile();
   }.bind(this));
 
   $('body').on("ON_EXPAND_CONTAINER_COLLAPSE", function(e){
     this.booking_summary_item.update_page_height();
+    this.give_space_for_sidebar_mobile();
   }.bind(this));
 
   $(".proceed-to-payment-mobile").click(this.proceed_to_next_step.bind(this));
+
+  $.fn.extend({
+      animateCss: function (animationName) {
+          var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+          this.addClass('animated ' + animationName).one(animationEnd, function() {
+              $(this).removeClass('animated ' + animationName);
+          });
+      }
+  });
+
 
 };
 
@@ -137,11 +156,11 @@ sagewest.page.Booking.prototype.create_booking_rooms = function(){
 
     goog.events.listen(room_item, sagewest.component.BookingRoom.ON_ROOM_ADDED, function(event){      
       
-      this.no_of_room_booked += 1;
+      this.no_of_room_booked += 1;      
 
-      this.booking_summary_item.book_room(event.currentTarget, this.no_of_room_booked); // add booking room to sidebar      
+      this.booking_summary_item.book_room(event.currentTarget, this.booked_room_counter + 1); // add booking room to sidebar      
 
-      this.booking_payment_item.add_guest_details_form_per_room_booking(this.no_of_room_booked);
+      this.booking_payment_item.add_guest_details_form_per_room_booking(this.booked_room_counter);
 
 
       // closing other rooms expander when new room added
@@ -229,7 +248,7 @@ sagewest.page.Booking.prototype.create_booking_steps = function(){
     goog.events.listen(step_item, sagewest.component.BookingStep.ON_STEP_CHANGE, function(event){
       this.create_image_container();
       this.update_page_layout();
-      this.booking_summary_item.update_page_height();
+      this.booking_summary_item.update_page_height();      
 
       if(this.active_step==1) {        // step 1 & 2
         var expand_container = null;
@@ -241,7 +260,11 @@ sagewest.page.Booking.prototype.create_booking_steps = function(){
             expand_container.instant_collapse();
           }
           
-        }          
+        }                          
+
+        this.create_sticky_sidebar_desktop();
+        this.create_sticky_sidebar_mobile();    
+
       }
       if(this.active_step==2) {        // step 3
         var expand_container = null;
@@ -253,22 +276,18 @@ sagewest.page.Booking.prototype.create_booking_steps = function(){
 
         this.create_dropdown();
         this.form_check_array = [];
-        this.create_form_check();
-
-        console.log('create_form_check');
+        this.create_form_check();        
+        
       }      
       if(this.active_step>=3) {        // step 4
         var expand_container = null;
 
         for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
-          console.log('expand')
           expand_container = this.expand_container_array[i];
           expand_container.instant_expand();
         }          
 
-        this.booking_summary_item.update_page_height_on_confirmation();
-
-        $("#proceed-btn-container-mobile").hide();
+        this.booking_summary_item.update_page_height_on_confirmation();        
 
       }      
 
@@ -278,6 +297,89 @@ sagewest.page.Booking.prototype.create_booking_steps = function(){
 
     }.bind(this));
 
+  }
+}
+
+sagewest.page.Booking.prototype.create_sticky_sidebar_desktop = function() {      
+
+    $(window).on('resize', function(){
+      // console.log('resizing');
+      // console.log($(".reservation-summary-sidebar").css("width"));
+      $("#sticky-sidebar").css("width", $(".reservation-summary-sidebar").css("width"));  
+    });
+
+    $("#sticky-sidebar").css("width", $(".reservation-summary-sidebar").css("width"));
+
+    if(manic.IS_MOBILE == false){
+      this.sticky_sidebar_scence = new ScrollMagic.Scene({triggerElement: "#sticky-anchor", triggerHook: 'onLeave', offset: -83 }) //offset: $('#sticky-sidebar').height()
+              .setClassToggle("#sticky-sidebar", "stick") // add class toggle
+              // .setPin("#sticky-sidebar")
+              // .addIndicators({name: ("" + Math.random()) }) // add indicators (requires plugin)
+              .addTo(this.controller);
+
+      // this.sticky_sidebar_scence.on("enter", function (event) {         
+      //   this.booking_summary_item.update_page_height_on_stick();
+      // }.bind(this));
+    }
+
+}
+
+sagewest.page.Booking.prototype.create_sticky_sidebar_mobile = function() {      
+
+    if(manic.IS_MOBILE == true){
+
+      if(this.controller==null){
+        this.controller = new ScrollMagic.Controller(); // needed by some components
+      }
+
+      $(".reservation-summary-sidebar-title").find('h5').text("See Booking Summary");
+
+      this.sticky_sidebar_scence_mobile = new ScrollMagic.Scene({triggerElement: "#sticky-anchor-mobile", triggerHook: 'onLeave', offset: -63 }) //$('.booking-steps.active-step').offset().top + 100
+              .setClassToggle("#sticky-sidebar-mobile", "stick") // add class toggle
+              // .setPin("#sticky-sidebar-mobile")
+              // .addIndicators({name: ("" + Math.random()) }) // add indicators (requires plugin)
+              .addTo(this.controller);
+      
+      this.sticky_sidebar_scence_mobile.on("enter", function (event) {         
+        $("#booking-engine-sidebar").css("z-index", 99999);
+        // $(".booking-steps.active-step").css("cssText", "padding-top: 90px!important");
+      }.bind(this));
+
+      this.sticky_sidebar_scence_mobile.on("leave", function (event) {
+        $("#booking-engine-sidebar").css("z-index", 2);
+        this.give_space_for_sidebar_mobile();
+      }.bind(this));
+    }
+    
+}
+
+sagewest.page.Booking.prototype.destroy_sticky_sidebar_mobile = function() {      
+  if(manic.IS_MOBILE == true){
+    $("#booking-engine-sidebar").addClass("scence-destroyed");
+    this.sticky_sidebar_scence_mobile.destroy(true);
+    this.controller.destroy(true);
+    this.controller = null;
+  }
+}
+
+sagewest.page.Booking.prototype.destroy_sticky_sidebar_desktop = function() {      
+  if(manic.IS_MOBILE == false){
+    $("#booking-engine-sidebar").addClass("scence-destroyed");
+    this.sticky_sidebar_scence.destroy(true);
+    this.controller.destroy(true);
+    this.controller = null;
+  }
+}
+
+sagewest.page.Booking.prototype.show_summary_detail_mobile = function() {      
+  if(manic.IS_MOBILE == true){
+    $(".reservation-summary-sidebar-details").show();
+  }
+}
+
+sagewest.page.Booking.prototype.give_space_for_sidebar_mobile = function() {    
+  if(manic.IS_MOBILE == true){
+    $(".booking-steps.active-step").css("padding-top", $("#booking-engine-sidebar").height());
   }
 }
 
@@ -310,6 +412,47 @@ sagewest.page.Booking.prototype.create_booking_steps_indicator = function(){
     goog.events.listen(step_item, sagewest.component.BookingStepsIndicator.ON_STEP_INDICATOR_CHANGE, function(event){
 
       this.enable_disable_cursor_pointer();
+
+      this.current_step_no = $("#booking-engine-steps-indicator").find(".active-step").data("step");
+
+      if(this.current_step_no==1) {
+
+        this.create_sticky_sidebar_desktop();
+        this.create_sticky_sidebar_mobile();   
+
+        $(".reservation-summary-content .proceed-to-payment").show();   
+
+      } else if(this.current_step_no==2) {
+
+        this.create_sticky_sidebar_desktop();
+        this.create_sticky_sidebar_mobile();    
+
+        $(".reservation-summary-content .proceed-to-payment").show();          
+
+      } else if(this.current_step_no==3) {        
+
+        if(manic.IS_MOBILE == true){
+          var expand_container = null;
+
+          for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
+            expand_container = this.expand_container_array[i];
+            expand_container.instant_expand();
+          }
+
+          $(".reservation-summary-content .proceed-to-payment").hide();
+        }
+
+        this.show_summary_detail_mobile();
+        this.destroy_sticky_sidebar_mobile();
+        this.give_space_for_sidebar_mobile();
+        $(".reservation-summary-sidebar-title").find('h5').text("Booking Summary");
+
+      } else {
+
+        this.destroy_sticky_sidebar_desktop();
+        $("#proceed-btn-container-mobile").hide();
+
+      }
 
     }.bind(this));
 
@@ -348,26 +491,53 @@ sagewest.page.Booking.prototype.create_booking_summary = function(){
 
     this.create_image_container();
     this.create_expand_container();
+
+    this.booked_room_counter += 1;
+
+    if(this.booked_room_counter > 1)
+      $(".reservation-summary-sidebar-total-room-mobile").html(this.booked_room_counter+" Rooms");
+    else
+      $(".reservation-summary-sidebar-total-room-mobile").html(this.booked_room_counter+" Room");
+
+    $(".reservation-summary-sidebar-title-mobile").animateCss('animated fadeIn');
+
     // this.update_page_layout();
+
+  }.bind(this));
+
+  goog.events.listen(this.booking_summary_item, sagewest.component.BookingSummary.BOOKING_SUMMARY_EXTRA_ADDED, function(event){
+
+    this.create_image_container();
+    this.create_expand_container();    
 
   }.bind(this));
 
   goog.events.listen(this.booking_summary_item, sagewest.component.BookingSummary.BOOKING_SUMMARY_ROOM_DELETED, function(event){
     
-    this.no_of_room_booked -= 1;
+    this.booked_room_counter -= 1;
 
-    console.log(this.no_of_room_booked);
-
-    this.booking_payment_item.delete_guest_details_form_per_room_booking();
-
-    // console.log("update_page_height");
+    this.booking_payment_item.delete_guest_details_form_per_room_booking();    
     this.booking_summary_item.update_page_height();
+
+    if(manic.IS_MOBILE == true) 
+      this.give_space_for_sidebar_mobile();
+
+    if(this.booked_room_counter > 1)
+      $(".reservation-summary-sidebar-total-room-mobile").html(this.booked_room_counter+" Rooms");
+    else
+      $(".reservation-summary-sidebar-total-room-mobile").html(this.booked_room_counter+" Room");
 
   }.bind(this));
 
   goog.events.listen(this.booking_summary_item, sagewest.component.BookingSummary.ON_PROCEED_TO_PAYMENT, function(event){
 
     this.proceed_to_next_step();
+
+  }.bind(this));
+
+  goog.events.listen(this.booking_summary_item, sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW_HIDE, function(event){
+
+    this.give_space_for_sidebar_mobile();
 
   }.bind(this));
 }
@@ -385,6 +555,10 @@ sagewest.page.Booking.prototype.proceed_to_next_step = function() {
       form_container = this.form_check_array[i];
       valid = form_container.check_form();
       $('.form-group.has-error').find("input").first().focus();
+
+      if(manic.IS_MOBILE == true){
+        $('.form-group.has-error').find("input").first().blur();
+      }
       
       if(valid === false) {
         pass_all_forms = false;
@@ -506,6 +680,24 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
         }
     });
 }
+
+sagewest.page.Booking.prototype.create_telephone_inputs = function() {  
+  $(".telephone-inputs").intlTelInput({                
+      initialCountry: "auto",
+      geoIpLookup: function(callback) {
+        $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+          var countryCode = (resp && resp.country) ? resp.country : "";
+          callback(countryCode);
+        });
+      },
+      nationalMode: false,
+      autoHideDialCode: false,
+      autoPlaceholder: false,
+      preferredCountries: []                
+  });
+}
+
+
 
 sagewest.page.Booking.prototype.create_no_room_carousel = function() {
   $('#booking-no-room-suggestion-carousel').slick({

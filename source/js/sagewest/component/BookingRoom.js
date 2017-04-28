@@ -126,6 +126,7 @@ sagewest.component.BookingRoom.prototype.rate_collapse = function(){
     this.is_rate_expanded = false;
 
     this.show_rates_cta.text('Show rates');
+    this.show_rates_cta_mobile.text('Show rates');
 
     for (var i = 0; i < this.room_rate_item_array.length; i++) {
       this.room_rate_item_array[i].collapse();
@@ -146,6 +147,7 @@ sagewest.component.BookingRoom.prototype.rate_expand = function() {
     this.is_rate_expanded = true;
 
     this.show_rates_cta.text('Hide rates'); 
+    this.show_rates_cta_mobile.text('Hide rates');
 
     this.booking_room_rates.slideDown(500, function(){
       // console.log('slide down done');
