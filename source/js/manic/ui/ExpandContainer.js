@@ -238,10 +238,13 @@ manic.ui.ExpandContainer.prototype.instant_expand = function(){
     this.is_expanded = true;
 
     this.element.addClass('expand-version');
-    this.content_element.show(0);
-    this.element.trigger('expand-container-expand');
 
     this.update_layout();
+
+    this.content_element.show(0, function(){
+      $('body').trigger("ON_EXPAND_CONTAINER_EXPAND");
+    });
+    this.element.trigger('expand-container-expand');    
 
     // silent
     // this.dispatchEvent(new goog.events.Event(manic.ui.ExpandContainer.ON_EXPAND));

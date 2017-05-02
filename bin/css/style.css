@@ -8428,45 +8428,43 @@ body.scrolled #mobile-header .mobile-header-bg {
   left: 0;
   right: 0;
 }
-@media only screen and (max-width: 991px) {
-  .manic-dropdown select {
-    font-family: 'Open Sans', Verdana, Geneva, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0em;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 13px;
-    padding-right: 13px;
-    display: block;
-    width: 100%;
-    background: transparent;
-    border: 1px solid #cccccc;
-    border-radius: 0px;
-    outline: 0;
-  }
-  .manic-dropdown:after {
-    position: absolute;
-    top: 6px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    content: "\f107";
-  }
-  .manic-dropdown > .goog-menu-button {
-    display: none;
-  }
+html.actual-mobile .manic-dropdown select {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 13px;
+  padding-right: 13px;
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  outline: 0;
+}
+html.actual-mobile .manic-dropdown:after {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  content: "\f107";
+}
+html.actual-mobile .manic-dropdown > .goog-menu-button {
+  display: none;
 }
 .default-form .form-group:after {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -17651,6 +17649,11 @@ body.not-scrollable {
   width: calc(100% + 20px);
   left: -35px;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #booking-engine-steps-indicator .col-md-3:nth-of-type(2) .active-step:before {
+    left: -25px;
+  }
+}
 #booking-engine-steps-indicator .col-md-3:last-child .active-step:before {
   width: calc(100% + 140px);
   left: -40px;
@@ -17678,6 +17681,11 @@ body.not-scrollable {
   left: -35px;
   top: 0px;
   z-index: 1;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #booking-engine-steps-indicator .active-step:before {
+    left: -20px;
+  }
 }
 #booking-engine-steps-indicator .active-step a {
   position: relative;
@@ -17745,6 +17753,11 @@ body.not-scrollable {
 }
 #booking-engine-step-1 #booking-engine-step-1-header #arrival_departure {
   width: 100%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #booking-engine-step-1 #booking-engine-step-1-header #arrival_departure {
+    font-size: 13px;
+  }
 }
 #booking-engine-step-1 #booking-engine-step-1-header .date-input {
   position: relative;
@@ -17961,6 +17974,7 @@ body.not-scrollable {
   height: 12px;
   display: block;
   outline: none;
+  padding: 0px;
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-no-room #booking-no-room-suggestion #booking-no-room-suggestion-carousel .slick-dots li.slick-active button {
   background-color: #7d0052;
@@ -18073,6 +18087,11 @@ body.not-scrollable {
   vertical-align: bottom;
   position: relative;
   margin-top: 15px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #booking-engine-step-1 #booking-engine-step-1-content .booking-room-content-detail .detail-person {
+    width: 60%;
+  }
 }
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-content-detail .show-rates-cta-container {
   position: absolute;
@@ -18398,6 +18417,11 @@ body.not-scrollable {
   right: 20px;
   bottom: 0;
   padding: 0 20px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #booking-engine-step-2 #booking-engine-step-2-content .booking-extra-content-cta button {
+    padding: 0 10px;
+  }
 }
 #booking-engine-step-2 #booking-engine-step-2-content .back-to-select-your-room {
   margin-top: 30px;
@@ -18922,6 +18946,12 @@ body.not-scrollable {
 #booking-engine-step-4 #thank-you-container .ctas-container {
   margin-top: 20px;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #booking-engine-step-4 #thank-you-container .ctas-container #download-booking-summary-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 #booking-engine-step-4 #thank-you-container button {
   width: 100%;
   margin-bottom: 10px;
@@ -18981,7 +19011,7 @@ body.not-scrollable {
 }
 .reservation-summary-sidebar.confirmation .reservation-summary-content-check-in-out-date {
   display: inline-block;
-  width: 40%;
+  width: 44%;
   margin-bottom: 0px;
 }
 .reservation-summary-sidebar.confirmation .reservation-summary-content-check-in-out-date h6,
@@ -19021,8 +19051,8 @@ body.not-scrollable {
   width: 58.33333333%;
 }
 .reservation-summary-sidebar.confirmation .reservation-summary-expandable-content .manic-expand-container .manic-expand-container-content .manic-image-container {
-  width: 201px;
   height: 160px;
+  width: 100%;
 }
 .reservation-summary-sidebar.confirmation #sticky-sidebar {
   width: 100%!important;

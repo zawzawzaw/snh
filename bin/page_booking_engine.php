@@ -10,7 +10,7 @@
         <h5>date & number of guests</h5>
       </div>
       <div id="booking-engine-step-0-content">
-        <div class="container-fluid">
+        <div class="container-fluid has-breakpoint">
           <div class="row">
             <div class="col-md-12">
               <div class="booking-engine-booking-form">              
@@ -91,7 +91,7 @@
   </div>
 
   <div id="booking-engine-steps-indicator">
-    <div class="container-fluid">
+    <div class="container-fluid has-breakpoint">
       <div class="row">
         <div class="col-md-3">
           <div id="step-indicator-1" class="step active-step" data-step="1">
@@ -133,7 +133,7 @@
 
     <div id="booking-engine-step-1" data-step="1" class="booking-steps">
       <div id="booking-engine-step-1-header">      
-        <div class="container-fluid">
+        <div class="container-fluid has-breakpoint">
           <div class="row">
             <form id="booking-engine-search-form" action="" class="default-form">
               <div class="col-md-3">
@@ -146,7 +146,7 @@
                 <div class="form-group">
                   <label for="arrival_departure">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
                   <div class="date-input">
-                    <input type="text" name="arrival_departure" id="arrival_departure">
+                    <input type="text" name="arrival_departure" id="arrival_departure" readonly="true">
                   </div>
                   <div id="step-1-booking-calendar"></div>
                 </div>
@@ -202,11 +202,11 @@
       </div>
 
       <div id="booking-engine-step-1-content">
-        <div class="container-fluid">
+        <div class="container-fluid has-breakpoint">
           <!-- <div class="col-md-12">
             <div class="booking-no-room">
               <div class="booking-no-room-content">
-                <h1>All the Sage hotel rooms are fully booked, here are the alternative hotel you could try.</h1>      
+                <h1>All our Sage Hotels West Perth rooms are fully occupied within your searched date range, here are our alternative hotels you could investigate</h1>      
                 <p>Aenean a ultrices lectus. Fusce sem elit, malesuada tincidunt aliquam vitae, rutrum id diam. Vivamus cursus egestas ligula in condimentum. Aliquam id pretium orci.</p>
               </div>
 
@@ -267,7 +267,7 @@
           <div class="col-md-9">
 
             <!-- <div class="booking-room-booked-content">
-              <h1>“Superior Room” not available for the selected search, here are some other rooms for you.</h1>      
+              <h1>The “Superior Room” is not available for your selected search, here are our other rooms that might interest you</h1>      
               <p>Aliquam vel elit sit amet sem congue dignissim. Nunc mattis tempus varius. Cras nisi massa, egestas in consectetur id, tempor et leo. Curabitur quam elit, varius vitae.</p>
             </div> -->
             
@@ -695,7 +695,7 @@
 
     <div id="booking-engine-step-2" data-step="2" class="booking-steps">
       <div id="booking-engine-step-2-content">
-        <div class="container-fluid">
+        <div class="container-fluid has-breakpoint">
           <div class="col-md-9">
             <div class="booking-extra-content booking-extras">            
 
@@ -967,7 +967,7 @@
 
     <div id="booking-engine-step-3" data-step="3" class="booking-steps">
       <div id="booking-engine-step-3-content">
-        <div class="container-fluid">
+        <div class="container-fluid has-breakpoint">
           <div class="col-md-9">
               <!-- <ul class="payment-tabs">
                 <li><a href="#" data-tab="book-for-myself" class="active">Booking for myself</a></li>
@@ -1412,7 +1412,7 @@
 
                       <p>Cancelation charges apply if a booking is changed or cancelled after the deadline stipulated in the rates cancelation policy, or in the case of a no-show.</p>
 
-                      <p>For certain rates (for example, advanced purchase rates), changes to booking are not permanent once booked and may result in a forfeiture of payment.</p>
+                      <p>For certain rates (for example, advanced purchase rates), changes to booking are not permitted once booked and may result in a forfeiture of payment.</p>
                     </div>
                     
                     <div class="default-form simple-form-check">
@@ -1569,7 +1569,7 @@
 
     <div id="booking-engine-step-4" data-step="4" class="booking-steps">
       <div id="booking-engine-step-4-content">
-        <div class="container-fluid">
+        <div class="container-fluid has-breakpoint">
           <div class="col-md-5">
             <div id="thank-you-container">
               <div id="thank-you-container-title">
@@ -1596,8 +1596,8 @@
 
                   <p>Reception hours: 24 hours</p>
 
-                  <p>Check In Time: 14:00 <br>
-                  Check Out Time: 10:00</p>                   
+                  <p>Check-In Time: 14:00 <br>
+                  Check-Out Time: 10:00</p>                   
 
                   <p class="reservation-phone-nos">
                   <span>Central Reservations</span>
@@ -1619,7 +1619,7 @@
     </div>
     
     <div id="booking-engine-sidebar">
-      <div class="container-fluid">
+      <div class="container-fluid has-breakpoint">
         <div class="col-md-3 col-md-offset-9">
           <div id="sticky-anchor-mobile"></div>
           <div id="sticky-sidebar-mobile" class="reservation-summary-sidebar">
@@ -1637,11 +1637,11 @@
                 <p>29/03/2017 to 26/03/2017</p>                                
               </div>
               <div class="reservation-summary-content-check-in-out-date">
-                <h6>Check in</h6>
+                <h6>Check-In</h6>
                 <p>Sun, 26 Mar 2017</p>
               </div>
               <div class="reservation-summary-content-check-in-out-date">
-                <h6>Check out</h6>
+                <h6>Check-Out</h6>
                 <p>Wed, 29 Mar 2017</p>
               </div>
             </div>
@@ -1956,24 +1956,116 @@
           <div class="row">
               <div class="col-md-6">
                   <div class="form-group">
-                      <label for="estimated_check_in_time">Estimated Check In Time</label>
+                      <label for="estimated_check_in_time">Estimated Check-In Time</label>
                       <div class="manic-dropdown">
                           <select name="estimated_check_in_time" id="estimated_check_in_time">
                               <option value="">Please select</option>
-                              <option value="10:00" selected>10:00</option>
-                              <option value="10:15">10:15</option>
+                              <option value="00:00" selected>00:00</option>
+                              <option value="00:30">00:30</option>
+                              <option value="01:00">01:00</option>
+                              <option value="01:30">01:30</option>
+                              <option value="02:00">02:00</option>
+                              <option value="02:30">02:30</option>
+                              <option value="03:00">03:00</option>
+                              <option value="03:30">03:30</option>
+                              <option value="04:00">04:00</option>
+                              <option value="04:30">04:30</option>
+                              <option value="05:00">05:00</option>
+                              <option value="05:30">05:30</option>
+                              <option value="06:00">06:00</option>
+                              <option value="06:30">06:30</option>
+                              <option value="07:00">07:00</option>
+                              <option value="07:30">07:30</option>
+                              <option value="08:00">08:00</option>
+                              <option value="08:30">08:30</option>
+                              <option value="09:00">09:00</option>
+                              <option value="09:30">09:30</option>
+                              <option value="10:00">10:00</option>
+                              <option value="10:30">10:30</option>
+                              <option value="11:00">11:00</option>
+                              <option value="11:30">11:30</option>
+                              <option value="12:00">12:00</option>
+                              <option value="12:30">12:30</option>
+                              <option value="13:00">13:00</option>
+                              <option value="13:30">13:30</option>
+                              <option value="14:00">14:00</option>
+                              <option value="14:30">14:30</option>
+                              <option value="15:00">15:00</option>
+                              <option value="15:30">15:30</option>
+                              <option value="16:00">16:00</option>
+                              <option value="16:30">16:30</option>
+                              <option value="17:00">17:00</option>
+                              <option value="17:30">17:30</option>
+                              <option value="18:00">18:00</option>
+                              <option value="18:30">18:30</option>
+                              <option value="19:00">19:00</option>
+                              <option value="19:30">19:30</option>
+                              <option value="20:00">20:00</option>
+                              <option value="20:30">20:30</option>
+                              <option value="21:00">21:00</option>
+                              <option value="21:30">21:30</option>
+                              <option value="22:00">22:00</option>
+                              <option value="22:30">22:30</option>
+                              <option value="23:00">23:00</option>
+                              <option value="23:30">23:30</option>
                           </select>
                       </div>
                   </div>
               </div>
               <div class="col-md-6">
                   <div class="form-group">
-                      <label for="estimated_check_out_time">Estimated Check Out Time</label>
+                      <label for="estimated_check_out_time">Estimated Check-Out Time</label>
                       <div class="manic-dropdown">
                           <select name="estimated_check_out_time" id="estimated_check_out_time">
                               <option value="">Please select</option>
-                              <option value="10:00" selected>10:00</option>
-                              <option value="10:15">10:15</option>
+                              <option value="00:00" selected>00:00</option>
+                              <option value="00:30">00:30</option>
+                              <option value="01:00">01:00</option>
+                              <option value="01:30">01:30</option>
+                              <option value="02:00">02:00</option>
+                              <option value="02:30">02:30</option>
+                              <option value="03:00">03:00</option>
+                              <option value="03:30">03:30</option>
+                              <option value="04:00">04:00</option>
+                              <option value="04:30">04:30</option>
+                              <option value="05:00">05:00</option>
+                              <option value="05:30">05:30</option>
+                              <option value="06:00">06:00</option>
+                              <option value="06:30">06:30</option>
+                              <option value="07:00">07:00</option>
+                              <option value="07:30">07:30</option>
+                              <option value="08:00">08:00</option>
+                              <option value="08:30">08:30</option>
+                              <option value="09:00">09:00</option>
+                              <option value="09:30">09:30</option>
+                              <option value="10:00">10:00</option>
+                              <option value="10:30">10:30</option>
+                              <option value="11:00">11:00</option>
+                              <option value="11:30">11:30</option>
+                              <option value="12:00">12:00</option>
+                              <option value="12:30">12:30</option>
+                              <option value="13:00">13:00</option>
+                              <option value="13:30">13:30</option>
+                              <option value="14:00">14:00</option>
+                              <option value="14:30">14:30</option>
+                              <option value="15:00">15:00</option>
+                              <option value="15:30">15:30</option>
+                              <option value="16:00">16:00</option>
+                              <option value="16:30">16:30</option>
+                              <option value="17:00">17:00</option>
+                              <option value="17:30">17:30</option>
+                              <option value="18:00">18:00</option>
+                              <option value="18:30">18:30</option>
+                              <option value="19:00">19:00</option>
+                              <option value="19:30">19:30</option>
+                              <option value="20:00">20:00</option>
+                              <option value="20:30">20:30</option>
+                              <option value="21:00">21:00</option>
+                              <option value="21:30">21:30</option>
+                              <option value="22:00">22:00</option>
+                              <option value="22:30">22:30</option>
+                              <option value="23:00">23:00</option>
+                              <option value="23:30">23:30</option>
                           </select>
                       </div>
                   </div>
