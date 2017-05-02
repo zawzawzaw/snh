@@ -18562,17 +18562,17 @@ body.not-scrollable {
   margin-bottom: 20px;
 }
 #booking-engine-step-3 .form-group.has-error label {
-  color: #7d0052;
+  color: #ff0000 !important;
 }
 #booking-engine-step-3 .form-group.has-error input,
 #booking-engine-step-3 .form-group.has-error select,
 #booking-engine-step-3 .form-group.has-error textarea {
-  background: rgba(125, 0, 82, 0.05);
-  border: 1px solid rgba(125, 0, 82, 0.4);
+  background: rgba(255, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.4);
 }
 #booking-engine-step-3 .form-group.has-error .manic-dropdown > .goog-menu-button {
-  background: rgba(125, 0, 82, 0.05);
-  border: 1px solid rgba(125, 0, 82, 0.4);
+  background: rgba(255, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.4);
 }
 #booking-engine-step-3 .form-group.has-error:after {
   display: none;
@@ -19504,7 +19504,7 @@ body.not-scrollable {
   padding-bottom: 0px;
 }
 #sticky-sidebar-mobile.scrollable {
-  height: 86%;
+  height: 82%;
   overflow-y: scroll;
 }
 #sticky-sidebar-mobile.fixed {
