@@ -370,7 +370,8 @@ sagewest.component.GalleryDetailTab.prototype.create_main_slider = function() {
   this.main_slider.slick({
     'speed': 350,
     'dots': false,
-    'arrows': true,
+    // 'arrows': true,
+    'arrows': false,
     // 'infinite': false,
     'infinite': true,
     'slidesToShow': 1,

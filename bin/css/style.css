@@ -8554,6 +8554,12 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
   top: 0;
   left: -14px;
 }
+.default-copy ul.no-dots-version {
+  padding-left: 0;
+}
+.default-copy ul.no-dots-version li:before {
+  display: none;
+}
 .default-copy ol {
   padding-left: 16px;
   counter-reset: ol-counter;
@@ -15650,10 +15656,19 @@ body.brand-alternative-page{
   }
 }
 #contact-page-copy-column-01 {
-  padding-left: 40px;
+  padding-right: 40px;
 }
 @media only screen and (max-width: 991px) {
   #contact-page-copy-column-01 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+#contact-page-copy-column-02 {
+  padding-left: 40px;
+}
+@media only screen and (max-width: 991px) {
+  #contact-page-copy-column-02 {
     padding-left: 0px;
   }
 }
