@@ -419,8 +419,7 @@
         </div> <!-- contact-page-copy-column-01 -->
 
       </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
+      <div class="col-md-6">
 
         <div id="contact-page-copy-column-02">
           <div class="contact-page-copy-title">
