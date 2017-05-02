@@ -449,9 +449,14 @@ sagewest.page.Booking.prototype.create_booking_steps_indicator = function(){
           $(".reservation-summary-content .proceed-to-payment").hide();
         }
 
+        $("html,body").removeClass("fixed");
+        $("#booking-engine-sidebar").removeClass("sidebar-open-mobile"); // for transparent bg
+        $("#sticky-sidebar-mobile").removeClass("fixed");
+
         this.show_summary_detail_mobile();
         this.destroy_sticky_sidebar_mobile();
         this.give_space_for_sidebar_mobile();
+
         $(".reservation-summary-sidebar-title").find('h5').text("Booking Summary");
 
       } else {
@@ -542,8 +547,15 @@ sagewest.page.Booking.prototype.create_booking_summary = function(){
 
   }.bind(this));
 
-  goog.events.listen(this.booking_summary_item, sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW_HIDE, function(event){
+  goog.events.listen(this.booking_summary_item, sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW, function(event){
 
+    if(this.current_step_no>2)
+      this.give_space_for_sidebar_mobile();
+
+  }.bind(this));
+
+  goog.events.listen(this.booking_summary_item, sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_HIDE, function(event){
+    
     this.give_space_for_sidebar_mobile();
 
   }.bind(this));
@@ -800,6 +812,8 @@ sagewest.page.Booking.prototype.on_scroll_to_no_target = function(str_param, str
   sagewest.page.Booking.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
 
   console.log('scroll to target');
+
+  console.log(str_param);
 
   /*
   // Mice venue landing - on hash change

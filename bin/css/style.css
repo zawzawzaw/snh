@@ -17337,6 +17337,11 @@ body.not-scrollable {
   -webkit-box-shadow: 0px 1px 8px #e5e5e5;
   box-shadow: 0px 1px 8px #e5e5e5;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #booking-engine-step-0-content .booking-engine-booking-form .booking-form {
+    padding-bottom: 300px!important;
+  }
+}
 #booking-engine-step-0-content .booking-engine-booking-form .booking-form .input-box {
   margin-bottom: 15px;
 }
@@ -17652,6 +17657,7 @@ body.not-scrollable {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #booking-engine-steps-indicator .col-md-3:nth-of-type(2) .active-step:before {
     left: -25px;
+    width: calc(100% + 35px);
   }
 }
 #booking-engine-steps-indicator .col-md-3:last-child .active-step:before {
@@ -17684,7 +17690,7 @@ body.not-scrollable {
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #booking-engine-steps-indicator .active-step:before {
-    left: -20px;
+    left: -15px;
   }
 }
 #booking-engine-steps-indicator .active-step a {
@@ -18061,6 +18067,11 @@ body.not-scrollable {
   height: 250px;
   display: block;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #booking-engine-step-1 #booking-engine-step-1-content .booking-room-content-image .manic-image-container {
+    height: 400px;
+  }
+}
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-content-title,
 #booking-engine-step-1 #booking-engine-step-1-content .booking-room-content-title-mobile {
   position: relative;
@@ -18347,6 +18358,11 @@ body.not-scrollable {
   width: 100%;
   height: 250px;
   display: block;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #booking-engine-step-2 #booking-engine-step-2-content .booking-extra-content-image .manic-image-container {
+    height: 400px;
+  }
 }
 #booking-engine-step-2 #booking-engine-step-2-content .booking-extra-content-title {
   position: relative;
@@ -18999,6 +19015,14 @@ body.not-scrollable {
   #booking-engine-sidebar .container-fluid .col-md-3 {
     padding: 0px;
   }
+  #booking-engine-sidebar.sidebar-open-mobile {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    height: 100%;
+  }
+  #booking-engine-sidebar.confirmation {
+    display: none!important;
+  }
 }
 .reservation-summary-sidebar {
   -webkit-box-shadow: 0px 1px 8px #e5e5e5;
@@ -19465,8 +19489,12 @@ body.not-scrollable {
   padding-bottom: 0px;
 }
 #sticky-sidebar-mobile.scrollable {
-  height: 90%;
+  height: 86%;
   overflow-y: scroll;
+}
+#sticky-sidebar-mobile.fixed {
+  position: fixed;
+  top: 148px;
 }
 #sticky-sidebar {
   width: 100%;

@@ -91,7 +91,7 @@
   </div>
 
   <div id="booking-engine-steps-indicator">
-    <div class="container-fluid has-breakpoint">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
           <div id="step-indicator-1" class="step active-step" data-step="1">

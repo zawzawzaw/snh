@@ -91,11 +91,11 @@
   </div>
 
   <div id="booking-engine-steps-indicator">
-    <div class="container-fluid has-breakpoint">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
           <div id="step-indicator-1" class="step active-step" data-step="1">
-            <a href="#" class="go-to-step">
+            <a href="#step-1" class="go-to-step">
               <h3>1. Select your room</h3>
               <h5>accommodation & offers</h5>
             </a>
@@ -103,7 +103,7 @@
         </div>
         <div class="col-md-3">
           <div id="step-indicator-2" class="step" data-step="2">
-            <a href="#" class="go-to-step">
+            <a href="#step-2" class="go-to-step">
               <h3>2. Personalise your stay</h3>
               <h5>service experience</h5>
             </a>
@@ -111,7 +111,7 @@
         </div>
         <div class="col-md-3">
           <div id="step-indicator-3" class="step" data-step="3">
-            <a href="#" class="go-to-step">
+            <a href="#step-3" class="go-to-step">
               <h3>3. Make payment </h3>
               <h5>guest & payment details</h5>
             </a>
@@ -119,7 +119,7 @@
         </div>
         <div class="col-md-3">
           <div id="step-indicator-4" class="step" data-step="4">
-            <a href="#" class="go-to-step">
+            <a href="#step-4" class="go-to-step">
               <h3>4. Confirmation</h3>
               <h5>enjoy your stay</h5>
             </a>

@@ -137,7 +137,8 @@ sagewest.component.BookingSummary.BOOKING_SUMMARY_ROOM_DELETED = 'BOOKING_SUMMAR
 sagewest.component.BookingSummary.BOOKING_SUMMARY_EXTRA_ADDED = 'BOOKING_SUMMARY_EXTRA_ADDED';
 // sagewest.component.BookingSummary.BOOKING_SUMMARY_EXTRA_DELETED = 'BOOKING_SUMMARY_EXTRA_DELETED';
 sagewest.component.BookingSummary.ON_PROCEED_TO_PAYMENT = 'ON_PROCEED_TO_PAYMENT';
-sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW_HIDE = 'ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW_HIDE';
+sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW = 'ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW';
+sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_HIDE = 'ON_BOOKING_SUMMARY_DETAILS_MOBILE_HIDE';
 
 /**
  * CLASSNAME Event Constant
@@ -456,8 +457,16 @@ sagewest.component.BookingSummary.prototype.on_booking_summary_details_mobile_sh
 
     $('.reservation-summary-sidebar-details').show(0, function(){
       $("#sticky-sidebar-mobile").addClass("scrollable");
-      // $("html,body").addClass("not-scrollable");
-      this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW_HIDE));
+      
+      // new change
+      console.log($(".booking-steps.active-step").attr("data-step"));
+      if($(".booking-steps.active-step").attr("data-step")<3) {
+        $("#sticky-sidebar-mobile").addClass("fixed");
+        $("#booking-engine-sidebar").addClass("sidebar-open-mobile");
+        $("html,body").addClass("fixed");  
+      }      
+
+      this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW));
     }.bind(this));  
     
   }else {
@@ -468,8 +477,16 @@ sagewest.component.BookingSummary.prototype.on_booking_summary_details_mobile_sh
 
     $('.reservation-summary-sidebar-details').hide(0, function(){
       $("#sticky-sidebar-mobile").removeClass("scrollable");
-      // $("html,body").removeClass("not-scrollable");
-      this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW_HIDE));
+      
+      // new change
+      console.log($(".booking-steps.active-step").attr("data-step"));
+      if($(".booking-steps.active-step").attr("data-step")<3) {
+        $("#sticky-sidebar-mobile").removeClass("fixed");
+        $("#booking-engine-sidebar").removeClass("sidebar-open-mobile");
+        $("html,body").removeClass("fixed");
+      }
+
+      this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_HIDE));
     }.bind(this));  
   }  
   
