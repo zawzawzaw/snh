@@ -109,7 +109,7 @@ sagewest.page.Booking.prototype.init = function() {
     this.booking_summary_item.update_page_height();
   }.bind(this));
 
-  $('body').on("ON_EXPAND_CONTAINER_EXPAND", function(e){
+  $('body').on("ON_EXPAND_CONTAINER_EXPAND", function(e){    
     this.booking_summary_item.update_page_height();
     this.give_space_for_sidebar_mobile();
   }.bind(this));
@@ -287,7 +287,14 @@ sagewest.page.Booking.prototype.create_booking_steps = function(){
           expand_container.instant_expand();
         }          
 
-        this.booking_summary_item.update_page_height_on_confirmation();        
+        // console.log("SIDEBAR HEIGHT: "+$('.reservation-summary-sidebar').height());
+        // this.booking_summary_item.update_page_height_on_confirmation();        
+        
+        setTimeout(function(){
+          this.booking_summary_item.update_page_height_on_confirmation();
+        }.bind(this), 1000);
+
+        // this.booking_summary_item.update_page_height();
 
       }      
 
