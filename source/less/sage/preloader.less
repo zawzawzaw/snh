@@ -13,6 +13,9 @@
   -webkit-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
   overflow: hidden;
+
+  // .optimize-02;
+
   
 
   // white box
@@ -33,6 +36,22 @@
     
   }
 
+  /*
+  svg{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+
+    .optimize-02;
+  }
+  */
+
   &:after{
     content: "";
     display: block;
@@ -41,19 +60,23 @@
     top: 50%;
     left: 50%;
     width: 200px;
-    height: 160px;
+    height: 200px;
     margin-left: -100px;
-    margin-top: -80px;
-    background: transparent url('../images/icons/preloader.svg') center center no-repeat;
+    margin-top: -100px;
+    // background: transparent url('../images/icons/preloader.svg') center center no-repeat;
+    background: transparent url('../images/icons/animated-preloader.svg') center center no-repeat;
 
-    background-size: unit(200, px) unit(160, px);
-    -webkit-background-size: unit(200, px) unit(160, px);      // i forgot what this was for
+    // .optimize;
+    /// .optimize-02;
 
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    // background-size: unit(200, px) unit(200, px);
+    // -webkit-background-size: unit(200, px) unit(200, px);      // i forgot what this was for
+
+    // -webkit-transform: translateZ(0);
+    // transform: translateZ(0);
     
-    -webkit-animation: alphaScaleIn 1.3s both cubic-bezier(0.7,0,0.3,1);
-    animation: alphaScaleIn 1.3s both cubic-bezier(0.7,0,0.3,1);
+    // -webkit-animation: alphaScaleIn 1.3s both cubic-bezier(0.7,0,0.3,1);
+    // animation: alphaScaleIn 1.3s both cubic-bezier(0.7,0,0.3,1);
   }
   
 } // #page-preloader
@@ -282,11 +305,12 @@
   #page-preloader{
     &:after{
       // background: transparent url('../images/logo/preloader-ayana.svg') center center no-repeat;
-      background: transparent url('../images/icons/preloader.svg') center center no-repeat;
+      /// background: transparent url('../images/icons/preloader.svg') center center no-repeat;
+      background: transparent url('../images/icons/animated-preloader.svg') center center no-repeat;
       
 
-      background-size: unit(200 * 3 / 5, px) unit(160 * 3 / 5, px);
-      -webkit-background-size: unit(200 * 3 / 5, px) unit(160 * 3 / 5, px);      // i forgot what this was for
+      background-size: unit(200 * 3 / 5, px) unit(200 * 3 / 5, px);
+      -webkit-background-size: unit(200 * 3 / 5, px) unit(200 * 3 / 5, px);      // i forgot what this was for
     }
 
   }
