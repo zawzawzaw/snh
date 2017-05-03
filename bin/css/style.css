@@ -17766,8 +17766,12 @@ body.not-scrollable {
   letter-spacing: 0.01em;
 }
 #booking-engine-step-1 #booking-engine-step-1-header label span {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 300;
   font-size: 12px;
-  color: #929090;
+  line-height: 20px;
+  letter-spacing: 0.01em;
 }
 #booking-engine-step-1 #booking-engine-step-1-header #promotion_code {
   width: 90%;
@@ -18562,7 +18566,7 @@ body.not-scrollable {
   margin-bottom: 20px;
 }
 #booking-engine-step-3 .form-group.has-error label {
-  color: #ff0000 !important;
+  color: #d31222 !important;
 }
 #booking-engine-step-3 .form-group.has-error input,
 #booking-engine-step-3 .form-group.has-error select,
@@ -18576,6 +18580,26 @@ body.not-scrollable {
 }
 #booking-engine-step-3 .form-group.has-error:after {
   display: none;
+}
+#booking-engine-step-3 span.required-fields {
+  display: block;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #747474;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+}
+@media all and (max-width: 991px) {
+  #booking-engine-step-3 span.required-fields {
+    left: auto;
+    right: 0;
+    top: 8px;
+  }
 }
 #booking-engine-step-3 #book-for-myself,
 #booking-engine-step-3 #book-for-someone {
@@ -18893,7 +18917,7 @@ body.not-scrollable {
     font-weight: 600;
     font-size: 22px!important;
     line-height: 32px!important;
-    position: static;
+    position: relative;
   }
   #booking-engine-step-3 #booking-engine-step-3-content #book-for-myself #personal_info,
   #booking-engine-step-3 #booking-engine-step-3-content #book-for-someone #personal_info {
@@ -18910,7 +18934,7 @@ body.not-scrollable {
     font-weight: 600;
     font-size: 22px!important;
     line-height: 32px!important;
-    position: static;
+    position: relative;
     padding-bottom: 20px;
   }
   #booking-engine-step-3 #booking-engine-step-3-content #card-details {
@@ -18922,7 +18946,7 @@ body.not-scrollable {
     font-weight: 600;
     font-size: 22px!important;
     line-height: 32px!important;
-    position: static;
+    position: relative;
     padding-bottom: 20px;
   }
 }
@@ -19507,9 +19531,14 @@ body.not-scrollable {
   height: 82%;
   overflow-y: scroll;
 }
+@media all and (max-width: 480px) {
+  #sticky-sidebar-mobile.scrollable {
+    height: 78%;
+  }
+}
 #sticky-sidebar-mobile.fixed {
   position: fixed;
-  top: 148px;
+  top: 145px;
 }
 #sticky-sidebar {
   width: 100%;
