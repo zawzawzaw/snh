@@ -333,7 +333,7 @@
               </p>
               <p>
                 Central Reservations <br>
-                1800 303 186 (Within Australia) <br>
+                1300 346 835 (Within Australia) <br>
                 0800 480 274 (Within New Zealand)
               </p>
 
