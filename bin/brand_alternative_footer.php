@@ -90,6 +90,7 @@
         </div> <!-- footer-menu-container -->
 
         
+        
 
       </div>
 
@@ -100,7 +101,7 @@
             <div class="footer-contact-item">
               <h4>Central Reservations</h4>
               <p>
-                1800 303 186 (Within Australia) <br>
+                1300 346 835 (Within Australia) <br>
                 0800 480 274 (Within New Zealand)
               </p>
             </div>

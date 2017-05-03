@@ -1539,9 +1539,7 @@ strong {
   height: 200px;
   margin-left: -100px;
   margin-top: -100px;
-  background: transparent url('../images/icons/preloader.svg') center center no-repeat;
-  -webkit-animation: alphaScaleIn 1.3s both cubic-bezier(0.7, 0, 0.3, 1);
-  animation: alphaScaleIn 1.3s both cubic-bezier(0.7, 0, 0.3, 1);
+  background: transparent url('../images/icons/animated-preloader.svg') center center no-repeat;
 }
 #page-preloader-line-01 {
   position: absolute;
@@ -1729,7 +1727,7 @@ strong {
 }
 @media only screen and (max-width: 991px) {
   #page-preloader:after {
-    background: transparent url('../images/icons/preloader.svg') center center no-repeat;
+    background: transparent url('../images/icons/animated-preloader.svg') center center no-repeat;
     background-size: 120px 120px;
     -webkit-background-size: 120px 120px;
   }

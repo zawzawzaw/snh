@@ -251,7 +251,7 @@
               </p>
               <p>
                 Central Reservations <br>
-                1800 303 186 (Within Australia) <br>
+                1300 346 835 (Within Australia) <br>
                 0800 480 274 (Within New Zealand)
               </p>
             </div> <!-- default-copy -->
@@ -333,7 +333,7 @@
               </p>
               <p>
                 Central Reservations <br>
-                1800 303 186 (Within Australia) <br>
+                1300 346 835 (Within Australia) <br>
                 0800 480 274 (Within New Zealand)
               </p>
 
@@ -410,7 +410,7 @@
           </div>
 
           <div class="contact-page-copy-section">
-            <div class="default-copy">
+            <div class="default-copy" style="position:relative;">
               <h3>Public Bus</h3>
               <p>Take the Skybus service no. 978 from Terminal 2 of the airport. The journey takes about 2 hours and the bus stops right infront of our hotel.</p>
             </div>
