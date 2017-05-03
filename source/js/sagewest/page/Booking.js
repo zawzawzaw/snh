@@ -386,7 +386,8 @@ sagewest.page.Booking.prototype.show_summary_detail_mobile = function() {
 
 sagewest.page.Booking.prototype.give_space_for_sidebar_mobile = function() {    
   if(manic.IS_MOBILE == true){
-    $(".booking-steps.active-step").css("padding-top", $("#booking-engine-sidebar").height());
+    if(!$("#booking-engine-sidebar").hasClass("sidebar-open-mobile"))
+      $(".booking-steps.active-step").css("padding-top", $("#booking-engine-sidebar").height());
   }
 }
 
