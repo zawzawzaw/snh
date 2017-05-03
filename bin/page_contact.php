@@ -410,7 +410,7 @@
           </div>
 
           <div class="contact-page-copy-section">
-            <div class="default-copy">
+            <div class="default-copy" style="position:relative;">
               <h3>Public Bus</h3>
               <p>Take the Skybus service no. 978 from Terminal 2 of the airport. The journey takes about 2 hours and the bus stops right infront of our hotel.</p>
             </div>
