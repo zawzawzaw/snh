@@ -522,8 +522,13 @@ html,body {
       font-size: 14px;
       letter-spacing: 0.01em;
       span {
+        // font-size: 12px;
+        // color: @grey-4;
+
+        .open-sans-light-italic;
         font-size: 12px;
-        color: @grey-4;
+        line-height: 20px;
+        letter-spacing: 0.01em;
       }
     }
     #promotion_code {
@@ -1418,7 +1423,8 @@ html,body {
     margin-bottom: 20px;
     &.has-error {
       label {
-        color: rgba(255, 0, 0, 1)!important;
+        // color: rgba(255, 0, 0, 1)!important;
+        color: #d31222 !important;
       }
       input, select, textarea {
         background: rgba(255, 0, 0, 0.05);
@@ -1432,6 +1438,24 @@ html,body {
         display: none;
       }
     }
+  }
+  span.required-fields {
+    display: block;
+    .open-sans-light-italic;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    // color: #a8a4a3;
+    color: @grey;   
+    position: absolute;      
+    bottom: -32px;
+    left: 0;
+
+    @media all and (max-width: 991px) {
+      left: auto;
+      right: 0;
+      top: 8px;
+    } 
   }
   #book-for-myself, #book-for-someone {
     position: relative;
@@ -1505,6 +1529,7 @@ html,body {
       position: absolute;
       left: 0px;
     }
+    
     span.room-title {
       .open-sans-semi-bold;
       font-size: 14px;
@@ -1587,7 +1612,7 @@ html,body {
 
       position: absolute;
       left: 0px;
-    }
+    }    
     p {
       padding-bottom: 20px;
     }
@@ -1634,7 +1659,7 @@ html,body {
 
       position: absolute;
       left: 0px;
-    }
+    }  
     label {
       font-size: 14px;
       letter-spacing: 0.01em;
@@ -1727,7 +1752,7 @@ html,body {
           .lato-bold;
           font-size: 22px!important;
           line-height: 32px!important;
-          position: static;
+          position: relative;
           // padding-bottom: 20px;
         }
 
@@ -1744,7 +1769,7 @@ html,body {
           .lato-bold;
           font-size: 22px!important;
           line-height: 32px!important;
-          position: static;
+          position: relative;
           padding-bottom: 20px;
         }
       }
@@ -1756,7 +1781,7 @@ html,body {
           .lato-bold;
           font-size: 22px!important;
           line-height: 32px!important;
-          position: static;
+          position: relative;
           padding-bottom: 20px;
         }
       }
@@ -2379,12 +2404,15 @@ html,body {
   }
   &.scrollable {
     height: 82%;
-    // height: 86%;
+    @media all and (max-width: 480px) {
+      height: 78%;  
+    }
+    
     overflow-y: scroll;    
   }
   &.fixed {
     position: fixed;
-    top: 148px;
+    top: 145px;
   }
 }
 

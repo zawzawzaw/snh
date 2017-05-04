@@ -82,7 +82,6 @@ sagewest.page.Booking.prototype.init = function() {
 
   $(document).click(function(e){    
     // e.preventDefault();  
-    e.stopPropagation();
 
     var target = $(e.target);
 
@@ -247,15 +246,59 @@ sagewest.page.Booking.prototype.create_booking_steps = function(){
     this.booking_step_items_array[i] = step_item;
 
     goog.events.listen(step_item, sagewest.component.BookingStep.ON_STEP_CHANGE, function(event){
-      
-      // common functions for all steps
       this.create_image_container();
       this.update_page_layout();
       this.booking_summary_item.update_page_height();      
-      this.create_no_room_carousel();    
 
-      // specific function for each step
-      this.changes_for_each_step();
+      if(this.active_step==1) {        // step 1 & 2
+        var expand_container = null;
+
+        for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
+          expand_container = this.expand_container_array[i];
+
+          if(!$(expand_container.element[0]).hasClass('extra-version')) {
+            expand_container.instant_collapse();
+          }
+          
+        }                          
+
+        this.create_sticky_sidebar_desktop();
+        this.create_sticky_sidebar_mobile();    
+
+      }
+      if(this.active_step==2) {        // step 3
+        var expand_container = null;
+
+        for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
+          expand_container = this.expand_container_array[i];
+          expand_container.instant_collapse();          
+        }
+
+        this.create_dropdown();
+        this.form_check_array = [];
+        this.create_form_check();        
+        
+      }      
+      if(this.active_step>=3) {        // step 4
+        var expand_container = null;
+
+        for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
+          expand_container = this.expand_container_array[i];
+          expand_container.instant_expand();
+        }          
+
+        // console.log("SIDEBAR HEIGHT: "+$('.reservation-summary-sidebar').height());
+        // this.booking_summary_item.update_page_height_on_confirmation();        
+        
+        setTimeout(function(){
+          this.booking_summary_item.update_page_height_on_confirmation();
+        }.bind(this), 1000);
+
+        // this.booking_summary_item.update_page_height();
+
+      }      
+
+      this.create_no_room_carousel();    
 
       $('html,body').scrollTop(0);
 
@@ -319,23 +362,19 @@ sagewest.page.Booking.prototype.create_sticky_sidebar_mobile = function() {
 
 sagewest.page.Booking.prototype.destroy_sticky_sidebar_mobile = function() {      
   if(manic.IS_MOBILE == true){
-    if(this.controller!=null) {
-      $("#booking-engine-sidebar").addClass("scence-destroyed-mobile");
-      this.sticky_sidebar_scence_mobile.destroy(true);
-      this.controller.destroy(true);
-      this.controller = null;
-    }    
+    $("#booking-engine-sidebar").addClass("scence-destroyed");
+    this.sticky_sidebar_scence_mobile.destroy(true);
+    this.controller.destroy(true);
+    this.controller = null;
   }
 }
 
 sagewest.page.Booking.prototype.destroy_sticky_sidebar_desktop = function() {      
   if(manic.IS_MOBILE == false){
-    if(this.controller!=null) {
-      $("#booking-engine-sidebar").addClass("scence-destroyed");
-      this.sticky_sidebar_scence.destroy(true);
-      this.controller.destroy(true);
-      this.controller = null;
-    }
+    $("#booking-engine-sidebar").addClass("scence-destroyed");
+    this.sticky_sidebar_scence.destroy(true);
+    this.controller.destroy(true);
+    this.controller = null;
   }
 }
 
@@ -380,115 +419,55 @@ sagewest.page.Booking.prototype.create_booking_steps_indicator = function(){
 
     goog.events.listen(step_item, sagewest.component.BookingStepsIndicator.ON_STEP_INDICATOR_CHANGE, function(event){
 
-      this.changes_for_each_step();
+      this.enable_disable_cursor_pointer();
+
+      this.current_step_no = $("#booking-engine-steps-indicator").find(".active-step").data("step");
+
+      if(this.current_step_no==1) {
+
+        this.create_sticky_sidebar_desktop();
+        this.create_sticky_sidebar_mobile();   
+
+        $(".reservation-summary-content .proceed-to-payment").show();   
+
+      } else if(this.current_step_no==2) {
+
+        this.create_sticky_sidebar_desktop();
+        this.create_sticky_sidebar_mobile();    
+
+        $(".reservation-summary-content .proceed-to-payment").show();          
+
+      } else if(this.current_step_no==3) {        
+
+        if(manic.IS_MOBILE == true){
+          var expand_container = null;
+
+          for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
+            expand_container = this.expand_container_array[i];
+            expand_container.instant_expand();
+          }
+
+          $(".reservation-summary-content .proceed-to-payment").hide();
+        }
+
+        $("html,body").removeClass("fixed");
+        $("#booking-engine-sidebar").removeClass("sidebar-open-mobile"); // for transparent bg
+        $("#sticky-sidebar-mobile").removeClass("fixed");
+
+        this.show_summary_detail_mobile();
+        this.destroy_sticky_sidebar_mobile();
+        this.give_space_for_sidebar_mobile();
+
+        $(".reservation-summary-sidebar-title").find('h5').text("Booking Summary");
+
+      } else {
+
+        this.destroy_sticky_sidebar_desktop();
+        $("#proceed-btn-container-mobile").hide();
+
+      }
 
     }.bind(this));
-
-  }
-
-  sagewest.page.Booking.prototype.booking_step_1_2 = function() {    
-
-    var expand_container = null;
-
-    for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
-      expand_container = this.expand_container_array[i];
-
-      if(!$(expand_container.element[0]).hasClass('extra-version')) {
-        expand_container.instant_collapse();
-      }
-      
-    }                          
-
-    this.create_sticky_sidebar_desktop();
-    this.create_sticky_sidebar_mobile();  
-
-    if(manic.IS_MOBILE == true){
-      this.booking_summary_item.hide_booking_summary_detail_mobile(); 
-    }
-
-    $(".reservation-summary-content .proceed-to-payment").show();   
-  }
-
-  sagewest.page.Booking.prototype.booking_step_1 = function() {
-    
-  }
-
-  sagewest.page.Booking.prototype.booking_step_2 = function() {
-    
-  }
-
-  sagewest.page.Booking.prototype.booking_step_3 = function() {
-
-    if(manic.IS_MOBILE == true){
-      var expand_container = null;
-
-      for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
-        expand_container = this.expand_container_array[i];
-        expand_container.instant_expand();
-      }
-
-      $(".reservation-summary-content .proceed-to-payment").hide();
-    
-      $("html,body").removeClass("fixed");
-      $("#booking-engine-sidebar").removeClass("sidebar-open-mobile"); // for transparent bg
-      $("#sticky-sidebar-mobile").removeClass("fixed");
-
-      this.show_summary_detail_mobile();
-      this.destroy_sticky_sidebar_mobile();
-      this.give_space_for_sidebar_mobile();
-
-      $(".reservation-summary-sidebar-title").find('h5').text("Booking Summary");
-
-    }else {
-
-      var expand_container = null;
-
-      for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
-        expand_container = this.expand_container_array[i];
-        expand_container.instant_collapse();          
-      }
-
-    }
-
-    this.create_dropdown();
-    this.form_check_array = [];
-    this.create_form_check();   
-  }
-
-  sagewest.page.Booking.prototype.booking_step_4 = function() {
-    this.destroy_sticky_sidebar_desktop();
-    $("#proceed-btn-container-mobile").hide();
-
-    $("#booking-engine-sidebar").find(".col-md-3.col-md-offset-9").removeClass("col-md-3 col-md-offset-9").addClass("col-md-7 col-md-offset-5");
-    $("#booking-engine-sidebar").find(".reservation-summary-sidebar").addClass("confirmation");
-    $("#booking-engine-sidebar").addClass("confirmation");
-
-    var expand_container = null;
-
-    for (var i = 0, l=this.expand_container_array.length; i < l; i++) {
-      expand_container = this.expand_container_array[i];
-      expand_container.instant_expand();
-    }              
-    
-    setTimeout(function(){
-      this.booking_summary_item.update_page_height_on_confirmation();
-    }.bind(this), 1000);
-
-  }
-
-  sagewest.page.Booking.prototype.changes_for_each_step = function() {
-    this.enable_disable_cursor_pointer();
-
-    this.current_step_no = $("#booking-engine-steps-indicator").find(".active-step").data("step");
-
-    if(this.current_step_no==1)
-      this.booking_step_1_2();
-    else if(this.current_step_no==2)
-      this.booking_step_1_2();
-    else if(this.current_step_no==3)
-      this.booking_step_3();
-    else
-      this.booking_step_4();
 
   }
 
@@ -825,59 +804,17 @@ sagewest.page.Booking.prototype.update_page_layout = function() {
 
 };
 
-sagewest.page.Booking.prototype.getUrlParameter = function(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
-
 
 /**
  * @override
  * @inheritDoc
  */
-sagewest.page.Booking.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
+sagewest.page.Booking.prototype.on_scroll_to_no_target = function(str_param, str_param_2, str_param_3) {
   sagewest.page.Booking.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
 
-  // console.log('scroll to target');
-  // console.log(this.active_step);
+  console.log('scroll to target');
 
-  var str_param = parseInt(str_param);
-
-  if(parseInt(this.getUrlParameter('direct'))===1) {
-    // if(this.active_step > changed_step && this.active_step != 4) {
-    if(this.active_step != str_param && str_param < 4) {
-
-      $("#booking-engine-steps-indicator .step").removeClass("active-step");  
-      $("#step-indicator-"+str_param).addClass("active-step");
-
-      this.booking_step_items_array[str_param].go_to_step(); // include step 0 so no need -1
-      this.active_step = str_param;
-
-      this.changes_for_each_step();
-    }
-  }else {
-    if(this.active_step > str_param && this.active_step < 4) {
-    // if(this.active_step != str_param && this.active_step < 4) {
-
-      $("#booking-engine-steps-indicator .step").removeClass("active-step");  
-      $("#step-indicator-"+str_param).addClass("active-step");
-
-      this.booking_step_items_array[str_param].go_to_step(); // include step 0 so no need -1
-      this.active_step = str_param;
-
-      this.changes_for_each_step();
-    }
-  }
+  console.log(str_param);
 
   /*
   // Mice venue landing - on hash change

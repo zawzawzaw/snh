@@ -66,24 +66,6 @@ sagewest.component.BookingSummary = function(options, element) {
 
   this.element.find(".proceed-to-payment").click(this.on_proceed_to_payment_click.bind(this));
 
-  if(manic.IS_MOBILE == true){
-    $(document).click(function(e){    
-      // e.preventDefault();  
-      e.stopPropagation();
-
-      var target = $(e.target);
-
-      if ($.contains($("#sticky-sidebar-mobile")[0], target[0]) == false && 
-        $.contains($(".rates-breakdown-popup-container")[0], target[0]) == false && 
-        $.contains($(".cancellation-popup-container")[0], target[0]) == false &&
-        $.contains($(".cvv-popup-container")[0], target[0]) == false) {
-        this.hide_booking_summary_detail_mobile();
-      }
-
-      
-    }.bind(this));
-  }
-
 
   this.controller = null;
   this.controller = new ScrollMagic.Controller(); // needed by some components  
@@ -470,51 +452,43 @@ sagewest.component.BookingSummary.prototype.on_booking_summary_details_mobile_sh
   if(!$('.reservation-summary-sidebar-details').is(":visible")) {
 
     $(event.currentTarget).find('h5').text("Booking Summary");
-    this.show_booking_summary_detail_mobile();
+
+    $('.reservation-summary-sidebar-content').addClass("show");
+
+    $('.reservation-summary-sidebar-details').show(0, function(){
+      $("#sticky-sidebar-mobile").addClass("scrollable");
+      
+      // new change
+      console.log($(".booking-steps.active-step").attr("data-step"));
+      if($(".booking-steps.active-step").attr("data-step")<3) {
+        $("#sticky-sidebar-mobile").addClass("fixed");
+        $("#booking-engine-sidebar").addClass("sidebar-open-mobile");
+        $("html,body").addClass("fixed");  
+      }      
+
+      this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW));
+    }.bind(this));  
     
   }else {
 
     $(event.currentTarget).find('h5').text("See Booking Summary");
-    this.hide_booking_summary_detail_mobile();
+
+    $('.reservation-summary-sidebar-content').removeClass("show");
+
+    $('.reservation-summary-sidebar-details').hide(0, function(){
+      $("#sticky-sidebar-mobile").removeClass("scrollable");
+      
+      // new change
+      console.log($(".booking-steps.active-step").attr("data-step"));
+      if($(".booking-steps.active-step").attr("data-step")<3) {
+        $("#sticky-sidebar-mobile").removeClass("fixed");
+        $("#booking-engine-sidebar").removeClass("sidebar-open-mobile");
+        $("html,body").removeClass("fixed");
+      }
+
+      this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_HIDE));
+    }.bind(this));  
   }  
   
-};
-
-sagewest.component.BookingSummary.prototype.show_booking_summary_detail_mobile = function() {
-  $('.reservation-summary-sidebar-content').addClass("show");
-
-  $('.reservation-summary-sidebar-details').show(0, function(){
-    $("#sticky-sidebar-mobile").addClass("scrollable");
-    
-    // new change
-    $('html,body').scrollTop(0);
-
-    if($(".booking-steps.active-step").attr("data-step")<3) {
-      $("#sticky-sidebar-mobile").addClass("fixed");
-      $("#booking-engine-sidebar").addClass("sidebar-open-mobile");
-      $("html,body").addClass("fixed");  
-    }      
-
-    this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_SHOW));
-  }.bind(this));  
-};
-
-sagewest.component.BookingSummary.prototype.hide_booking_summary_detail_mobile = function() {
-  // console.log('hide booking summary detail')  
-
-  $('.reservation-summary-sidebar-content').removeClass("show");
-
-  $('.reservation-summary-sidebar-details').hide(0, function(){
-    $("#sticky-sidebar-mobile").removeClass("scrollable");
-    
-    // new change
-    if($(".booking-steps.active-step").attr("data-step")<3) {
-      $("#sticky-sidebar-mobile").removeClass("fixed");
-      $("#booking-engine-sidebar").removeClass("sidebar-open-mobile");
-      $("html,body").removeClass("fixed");
-    }
-
-    this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_HIDE));
-  }.bind(this));
 };
 

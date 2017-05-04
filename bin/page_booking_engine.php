@@ -95,7 +95,7 @@
       <div class="row">
         <div class="col-md-3">
           <div id="step-indicator-1" class="step active-step" data-step="1">
-            <a href="#step-1" class="go-to-step">
+            <a href="javascript:void(0);" class="go-to-step">
               <h3>1. Select your room</h3>
               <h5>accommodation & offers</h5>
             </a>
@@ -103,7 +103,7 @@
         </div>
         <div class="col-md-3">
           <div id="step-indicator-2" class="step" data-step="2">
-            <a href="#step-2" class="go-to-step">
+            <a href="javascript:void(0);" class="go-to-step">
               <h3>2. Personalise your stay</h3>
               <h5>service experience</h5>
             </a>
@@ -111,7 +111,7 @@
         </div>
         <div class="col-md-3">
           <div id="step-indicator-3" class="step" data-step="3">
-            <a href="#step-3" class="go-to-step">
+            <a href="javascript:void(0);" class="go-to-step">
               <h3>3. Make payment </h3>
               <h5>guest & payment details</h5>
             </a>
@@ -119,7 +119,7 @@
         </div>
         <div class="col-md-3">
           <div id="step-indicator-4" class="step" data-step="4">
-            <a href="#step-4" class="go-to-step">
+            <a href="javascript:void(0);" class="go-to-step">
               <h3>4. Confirmation</h3>
               <h5>enjoy your stay</h5>
             </a>
@@ -173,7 +173,7 @@
               </div>
               <div class="col-md-2">
                 <div class="form-group">
-                  <label for="children">Children <span>≤ 11 years old</span></label>
+                  <label for="children">Children <span>11 years old</span></label>
                   <div class="manic-dropdown">
                     <select name="children" id="children">
                       <option value="">Please Select</option>
@@ -1187,7 +1187,7 @@
               <div id="book-for-someone" class="personal-details active-tab">
                 <div class="your-details">
                   <div class="row">
-                    <div class="col-md-4"><h5>Your Details</h5></div>
+                    <div class="col-md-4"><h5>Your Details <span class="required-fields">*Required fields</span></h5></div>
                     <div class="col-md-8">
                       <div id="personal_info" class="default-form simple-form-check">
                         <div class="row">
@@ -1399,7 +1399,7 @@
 
               <div id="terms-and-conditions">
                 <div class="row">
-                  <div class="col-md-4"><h5>Terms & Conditions</h5></div>
+                  <div class="col-md-4"><h5>Terms & Conditions <span class="required-fields">*Required fields</span></h5></div>
                   <div class="col-md-8">
                     <div class="minimize-read-more" data-length="280">
                       <!-- <p>On arrival, all guests must provide a credit card with available funds for full payment of booking & a AUD$100 per night pre-authorization swipe, along with a valid current photo identification corresponding to the booking name. Cash bonds will NOT be accepted.</p>
@@ -1418,11 +1418,11 @@
                     <div class="default-form simple-form-check">
                       <div class="form-group check-box-error">
                         <input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" class="required">
-                        <label for="terms_and_conditions" class="color-version"><span>I have read and agreed to the terms & conditions governing this booking.</span></label>
+                        <label for="terms_and_conditions" class="color-version"><span>I have read and agreed to the terms & conditions governing this booking.*</span></label>
                       </div>
                       <div class="form-group check-box-error">
                         <input type="checkbox" name="cancellation_policies" id="cancellation_policies" class="required">
-                        <label for="cancellation_policies" class="color-version"><span>I have read and agreed to the cancellation policies.</span></label>
+                        <label for="cancellation_policies" class="color-version"><span>I have read and agreed to the cancellation policies.*</span></label>
                       </div>
                     </div>
                   </div>
@@ -1451,7 +1451,7 @@
 
               <div id="card-details">
                 <div class="row">
-                  <div class="col-md-4"><h5>Card Details</h5></div>
+                  <div class="col-md-4"><h5>Card Details <span class="required-fields">*Required fields</span></h5></div>
                   <div class="col-md-8">
                     <div class="default-form simple-form-check">
                       <div class="row">
