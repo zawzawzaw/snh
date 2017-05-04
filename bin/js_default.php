@@ -58,16 +58,28 @@
     var PAGE_JS                   = "js/page-default.min.js";
     var PAGE_CSS                  = "css/style.css";
 
-    head.load(PAGE_CSS);
+    head.load(PAGE_CSS, function(){
+
+      window.preloader_css = 100;
+
+    });
+
     head.load(PAGE_LIBRARY, function() {
+
+      window.preloader_js = 50;
+
       head.load(PAGE_JS, function() {
+
+        window.preloader_js = 100;
           
         page = new sagewest.page.Default({});
 
       });
+
     });
 
     // start preload
+    
   </script>
 
 <?php endif; ?>

@@ -22,14 +22,19 @@ ob_start();
 
   <body class="<?php echo $body_class; ?>">
 
-    <div id="page-preloader">
-      <div id="page-preloader-line-01"></div>
-      <div id="page-preloader-line-02">
-        <div class="line-a"></div>
-        <div class="line-b"></div>
+    <div id="page-preloader" class="square-version">
+      <div id="page-preloader-logo">
+        <img src="images/icons/preloader-sundowner.png">
       </div>
+
+      <div id="page-preloader-line">
+        <div id="page-preloader-line-a"></div>
+        <div id="page-preloader-line-b"></div>
+      </div>
+      <div id="page-preloader-number">0%</div>
     </div>
 
+    
 
     <!-- mobile header is outside the page wrapper -->
     <?php include('brand_header_mobile_sundowner.php'); ?>
