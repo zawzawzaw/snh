@@ -1209,7 +1209,7 @@
                           <div class="col-md-6">
                             <div class="form-group">
                               <label for="email">Email*</label>
-                              <input type="text" name="email" class="required">
+                              <input type="text" name="email" class="required only-email">
                             </div>
                           </div>
                           <div class="col-md-6">
