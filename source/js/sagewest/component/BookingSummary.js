@@ -43,24 +43,10 @@ sagewest.component.BookingSummary = function(options, element) {
   this.element.on("click", ".delete-extra-btn", this.on_delete_extra_btn_click.bind(this));
 
   // temporary popup
-  this.element.on("click", ".nightly-rates-popup-cta", function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    // console.log("nightly-rates-popup-cta");    
-    $(".rates-breakdown-popup-container").addClass('show');
-
-
-  });
+  this.element.on("click", ".nightly-rates-popup-cta", this.on_nightly_rate_popup_cta_click.bind(this));
 
   // temporary popup
-  this.element.on("click", ".cancellation-popup-cta", function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    // console.log("nightly-rates-popup-cta");    
-    $(".cancellation-popup-container").addClass('show');
-
-
-  });  
+  this.element.on("click", ".cancellation-popup-cta", this.on_cancellation_popup_cta_click.bind(this));  
 
   this.element.find(".see-more-booking-summary-mobile").click(this.on_booking_summary_details_mobile_show_click.bind(this));
 
@@ -364,6 +350,11 @@ sagewest.component.BookingSummary.prototype.book_extra = function(booking_extra)
   else
     alert("Maximum no of add ons reached");
 };
+
+sagewest.component.BookingSummary.prototype.pop_up_open = function() {    
+    $(".popup-container").addClass('show');
+};
+
 sagewest.component.BookingSummary.prototype.public_method_03 = function() {};
 sagewest.component.BookingSummary.prototype.public_method_04 = function() {};
 sagewest.component.BookingSummary.prototype.public_method_05 = function() {};
@@ -516,5 +507,65 @@ sagewest.component.BookingSummary.prototype.hide_booking_summary_detail_mobile =
 
     this.dispatchEvent(new goog.events.Event(sagewest.component.BookingSummary.ON_BOOKING_SUMMARY_DETAILS_MOBILE_HIDE));
   }.bind(this));
+};
+
+sagewest.component.BookingSummary.prototype.on_nightly_rate_popup_cta_click = function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  var data = {
+    'pop_up_version' : "rate-breakdown-version",
+    'pop_up_title' : "7 days Advanced Purchase",
+    'pop_up_subtitle' : "Rate Breakdown",
+    'pop_up_price_title' : "4 nights from",
+    'pop_up_price_currency' : "aud",
+    'pop_up_price' : "$626",
+    'pop_up_rates' : [
+      {
+        'date': "Wed, 25 Mar",
+        'price_per_day': "$133.00"
+      },
+      {
+        'date': "Thur, 26 Mar",
+        'price_per_day': "$133.00"
+      },
+      {
+        'date': "Fri, 27 Mar",
+        'price_per_day': "$150.00"
+      },
+      {
+        'date': "Sat, 28 Mar",
+        'price_per_day': "$170.00"
+      }
+    ],
+    'pop_up_close_cta': true
+  };
+
+  var popup_template = Handlebars.compile($("#popup-template").html());
+  var popup_html = popup_template(data);
+
+  $(".popup").html(popup_html);
+
+  this.pop_up_open();
+};
+
+sagewest.component.BookingSummary.prototype.on_cancellation_popup_cta_click = function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  var data = {
+    'pop_up_version' : "cancellation-policies-version",
+    'pop_up_title' : "7 days Advanced Purchase",
+    'pop_up_subtitle' : "Cancellation Policies",    
+    'pop_up_copy': 'Advance Purchase rates are non-refundable unless stated otherwise. Customers credit cards will be charged immediately upon booking for the full amount of the stay. Cancellations or failure to arrive will result in forfeiture of full payment.',
+    'pop_up_close_cta': true
+  };
+
+  var popup_template = Handlebars.compile($("#popup-template").html());
+  var popup_html = popup_template(data);
+
+  $(".popup").html(popup_html);
+
+  this.pop_up_open();
 };
 

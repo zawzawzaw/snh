@@ -173,7 +173,7 @@
               </div>
               <div class="col-md-2">
                 <div class="form-group">
-                  <label for="children">Children <span>11 years old</span></label>
+                  <label for="children">Children</label>
                   <div class="manic-dropdown">
                     <select name="children" id="children">
                       <option value="">Please Select</option>
@@ -189,6 +189,7 @@
                       <option value="10">10</option>
                     </select>
                   </div>
+                  <span class="child-age-notice">11 years & below</span>
                 </div>
               </div>
               <div class="col-md-2">
@@ -1754,7 +1755,13 @@
 
  -->
 
-<div class="rates-breakdown-popup-container">
+<div class="popup-container">
+  <div class="popup">
+    <!-- dynamic contents from js -->
+  </div>
+</div>
+
+<!-- <div class="rates-breakdown-popup-container">
   <div class="rates-breakdown-popup">
     <div class="rates-breakdown-popup-title">
       <h5>7 days Advanced Purchase <span>Rate Breakdown</span></h5>
@@ -1830,7 +1837,54 @@
     </div> 
     <a href="#" class="back-arrow-cta back-to-payment-btn">Close</a>     
   </div>
-</div>
+</div> -->
+
+<script id="popup-template" type="text/x-handlebars-template">
+  <div class="pop-up-version {{ pop_up_version }}">
+    <div class="popup-title">
+      <h5>{{ pop_up_title }} {{#if pop_up_subtitle}}<span>{{ pop_up_subtitle }}</span>{{/if}}</h5>    
+      
+      {{#if pop_up_price_title}}
+      <div class="boxlist-item-content-price popup-price">
+        <h6>{{ pop_up_price_title }}</h6>
+        <p class="content-price">
+          <span class="currency">{{ pop_up_price_currency }}</span>
+          <span class="number">{{ pop_up_price }}</span>
+        </p>
+      </div>
+      {{/if}}
+
+    </div>
+    <div class="popup-content">
+      <p>{{ pop_up_copy }}</p>
+      {{#if pop_up_copy_2}}
+        <p>{{ pop_up_copy_2 }}</p>
+      {{/if}}
+      
+      {{#if pop_up_rates.length}}
+        {{#pop_up_rates}}
+          <div class="popup-rate">
+            <div class="popup-rate-content-date">
+              <p>{{ date }}</p>
+            </div>
+            <div class="popup-rate-content-price">
+              <p class="price">{{ price_per_day }}</p>
+            </div>
+          </div>
+        {{/pop_up_rates}}
+      {{/if}}
+      
+      {{#if pop_up_image}}
+        <div class="card-front"></div>
+        <div class="card-back"></div>
+      {{/if}}
+    </div>
+    
+    {{#if pop_up_close_cta}}    
+    <a href="#" class="back-arrow-cta back-to-booking-btn">Close</a>
+    {{/if}}
+  </div>
+</script>
 
 <script id="summary-room-template" type="text/x-handlebars-template">
   <div class="reservation-summary-expandable-content selected-rooms">

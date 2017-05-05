@@ -17852,13 +17852,15 @@ body.not-scrollable {
   font-size: 14px;
   letter-spacing: 0.01em;
 }
-#booking-engine-step-1 #booking-engine-step-1-header label span {
+#booking-engine-step-1 #booking-engine-step-1-header span.child-age-notice {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: italic;
   font-weight: 300;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.01em;
+  position: absolute;
+  bottom: -20px;
 }
 #booking-engine-step-1 #booking-engine-step-1-header #promotion_code {
   width: 90%;
@@ -19656,9 +19658,8 @@ body.not-scrollable {
   width: 100%;
 }
 /* The Modal (background) */
-.rates-breakdown-popup-container,
-.cancellation-popup-container,
-.cvv-popup-container {
+/* The Modal (background) */
+.popup-container {
   visibility: hidden;
   -moz-opacity: 0;
   -khtml-opacity: 0;
@@ -19687,9 +19688,7 @@ body.not-scrollable {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
 }
-.rates-breakdown-popup-container.show,
-.cancellation-popup-container.show,
-.cvv-popup-container.show {
+.popup-container.show {
   visibility: visible;
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -19698,43 +19697,78 @@ body.not-scrollable {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   filter: alpha(opacity=100);
 }
-.rates-breakdown-popup,
-.cancellation-popup,
-.cvv-popup {
+.popup {
   width: 360px;
   background: #ffffff;
-  padding: 30px;
+  padding: 25px;
   margin: 15% auto;
   /* 15% from the top and centered */
 }
 @media all and (max-width: 991px) {
-  .rates-breakdown-popup,
-  .cancellation-popup,
-  .cvv-popup {
+  .popup {
     width: 100%;
   }
 }
-.rates-breakdown-popup .rates-breakdown-popup-title,
-.cancellation-popup .rates-breakdown-popup-title,
-.cvv-popup .rates-breakdown-popup-title,
-.rates-breakdown-popup .cancellation-popup-title,
-.cancellation-popup .cancellation-popup-title,
-.cvv-popup .cancellation-popup-title,
-.rates-breakdown-popup .cvv-popup-title,
-.cancellation-popup .cvv-popup-title,
-.cvv-popup .cvv-popup-title {
+.popup .popup-title {
   position: relative;
   margin-bottom: 20px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-title:after,
-.cancellation-popup .rates-breakdown-popup-title:after,
-.cvv-popup .rates-breakdown-popup-title:after,
-.rates-breakdown-popup .cancellation-popup-title:after,
-.cancellation-popup .cancellation-popup-title:after,
-.cvv-popup .cancellation-popup-title:after,
-.rates-breakdown-popup .cvv-popup-title:after,
-.cancellation-popup .cvv-popup-title:after,
-.cvv-popup .cvv-popup-title:after {
+.popup .popup-title h5 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: none;
+}
+.popup .popup-title h5 span {
+  color: #7d0052;
+  display: block;
+}
+.popup .popup-title .popup-price {
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+}
+.popup .popup-title .popup-price h6,
+.popup .popup-title .popup-price p,
+.popup .popup-title .popup-price span {
+  color: #747474;
+}
+.popup .popup-content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.popup .popup-content .popup-rate {
+  position: relative;
+  padding-bottom: 10px;
+}
+.popup .popup-content .popup-rate .popup-rate-content-price {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.popup .popup-ctas {
+  padding-top: 50px;
+}
+.popup .popup-ctas a {
+  width: 100%;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+}
+.popup .popup-ctas a:last-child {
+  margin-bottom: 10px;
+}
+.popup .rate-breakdown-version .popup-title h5,
+.popup .cancellation-policies-version .popup-title h5 {
+  font-size: 17px;
+  line-height: 20px;
+  width: 60%;
+}
+.popup .rate-breakdown-version .popup-title:after,
+.popup .cancellation-policies-version .popup-title:after {
   content: "";
   border-bottom: 1px solid rgba(146, 144, 144, 0.3);
   display: block;
@@ -19742,153 +19776,627 @@ body.not-scrollable {
   width: 100%;
   bottom: -20px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-title h5,
-.cancellation-popup .rates-breakdown-popup-title h5,
-.cvv-popup .rates-breakdown-popup-title h5,
-.rates-breakdown-popup .cancellation-popup-title h5,
-.cancellation-popup .cancellation-popup-title h5,
-.cvv-popup .cancellation-popup-title h5,
-.rates-breakdown-popup .cvv-popup-title h5,
-.cancellation-popup .cvv-popup-title h5,
-.cvv-popup .cvv-popup-title h5 {
-  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 20px;
-  text-transform: none;
-  width: 70%;
+.popup .rate-breakdown-version .popup-content,
+.popup .cancellation-policies-version .popup-content {
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-title h5 span,
-.cancellation-popup .rates-breakdown-popup-title h5 span,
-.cvv-popup .rates-breakdown-popup-title h5 span,
-.rates-breakdown-popup .cancellation-popup-title h5 span,
-.cancellation-popup .cancellation-popup-title h5 span,
-.cvv-popup .cancellation-popup-title h5 span,
-.rates-breakdown-popup .cvv-popup-title h5 span,
-.cancellation-popup .cvv-popup-title h5 span,
-.cvv-popup .cvv-popup-title h5 span {
-  color: #7d0052;
-  display: block;
-}
-.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price,
-.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price,
-.cvv-popup .rates-breakdown-popup-title .rates-breakdown-popup-price,
-.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price,
-.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price,
-.cvv-popup .cancellation-popup-title .rates-breakdown-popup-price,
-.rates-breakdown-popup .cvv-popup-title .rates-breakdown-popup-price,
-.cancellation-popup .cvv-popup-title .rates-breakdown-popup-price,
-.cvv-popup .cvv-popup-title .rates-breakdown-popup-price {
-  position: absolute;
-  bottom: 8px;
-  right: 0px;
-}
-.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price h6,
-.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price h6,
-.cvv-popup .rates-breakdown-popup-title .rates-breakdown-popup-price h6,
-.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price h6,
-.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price h6,
-.cvv-popup .cancellation-popup-title .rates-breakdown-popup-price h6,
-.rates-breakdown-popup .cvv-popup-title .rates-breakdown-popup-price h6,
-.cancellation-popup .cvv-popup-title .rates-breakdown-popup-price h6,
-.cvv-popup .cvv-popup-title .rates-breakdown-popup-price h6,
-.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price p,
-.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price p,
-.cvv-popup .rates-breakdown-popup-title .rates-breakdown-popup-price p,
-.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price p,
-.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price p,
-.cvv-popup .cancellation-popup-title .rates-breakdown-popup-price p,
-.rates-breakdown-popup .cvv-popup-title .rates-breakdown-popup-price p,
-.cancellation-popup .cvv-popup-title .rates-breakdown-popup-price p,
-.cvv-popup .cvv-popup-title .rates-breakdown-popup-price p,
-.rates-breakdown-popup .rates-breakdown-popup-title .rates-breakdown-popup-price span,
-.cancellation-popup .rates-breakdown-popup-title .rates-breakdown-popup-price span,
-.cvv-popup .rates-breakdown-popup-title .rates-breakdown-popup-price span,
-.rates-breakdown-popup .cancellation-popup-title .rates-breakdown-popup-price span,
-.cancellation-popup .cancellation-popup-title .rates-breakdown-popup-price span,
-.cvv-popup .cancellation-popup-title .rates-breakdown-popup-price span,
-.rates-breakdown-popup .cvv-popup-title .rates-breakdown-popup-price span,
-.cancellation-popup .cvv-popup-title .rates-breakdown-popup-price span,
-.cvv-popup .cvv-popup-title .rates-breakdown-popup-price span {
-  color: #747474;
-}
-.rates-breakdown-popup .cvv-popup-title:after,
-.cancellation-popup .cvv-popup-title:after,
-.cvv-popup .cvv-popup-title:after {
-  display: none;
-}
-.rates-breakdown-popup .cancellation-popup-title h5,
-.cancellation-popup .cancellation-popup-title h5,
-.cvv-popup .cancellation-popup-title h5 {
+.popup .cancellation-policies-version .popup-title h5 {
   width: 100%;
 }
-.rates-breakdown-popup .rates-breakdown-popup-content,
-.cancellation-popup .rates-breakdown-popup-content,
-.cvv-popup .rates-breakdown-popup-content,
-.rates-breakdown-popup .cancellation-popup-content,
-.cancellation-popup .cancellation-popup-content,
-.cvv-popup .cancellation-popup-content {
-  padding-top: 20px;
+.popup .cvv-version .popup-title:after {
+  display: none;
 }
-.rates-breakdown-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate,
-.cancellation-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate,
-.cvv-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate,
-.rates-breakdown-popup .cancellation-popup-content .rates-breakdown-popup-rate,
-.cancellation-popup .cancellation-popup-content .rates-breakdown-popup-rate,
-.cvv-popup .cancellation-popup-content .rates-breakdown-popup-rate {
-  position: relative;
-  padding-bottom: 10px;
+.popup .cvv-version .popup-content {
+  padding-bottom: 30px;
 }
-.rates-breakdown-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
-.cancellation-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
-.cvv-popup .rates-breakdown-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
-.rates-breakdown-popup .cancellation-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
-.cancellation-popup .cancellation-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price,
-.cvv-popup .cancellation-popup-content .rates-breakdown-popup-rate .rates-breakdown-popup-rate-content-price {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.rates-breakdown-popup .cvv-popup-content p,
-.cancellation-popup .cvv-popup-content p,
-.cvv-popup .cvv-popup-content p {
+.popup .cvv-version .popup-content p {
   padding-bottom: 20px;
 }
-.rates-breakdown-popup .cvv-popup-content p:last-child,
-.cancellation-popup .cvv-popup-content p:last-child,
-.cvv-popup .cvv-popup-content p:last-child {
+.popup .cvv-version .popup-content p:last-child {
   padding-bottom: 40px;
 }
-.rates-breakdown-popup .cvv-popup-content .card-front,
-.cancellation-popup .cvv-popup-content .card-front,
-.cvv-popup .cvv-popup-content .card-front,
-.rates-breakdown-popup .cvv-popup-content .card-back,
-.cancellation-popup .cvv-popup-content .card-back,
-.cvv-popup .cvv-popup-content .card-back {
+.popup .cvv-version .popup-content .card-front,
+.popup .cvv-version .popup-content .card-back {
   display: inline-block;
   width: 47%;
   height: 90px;
   background-size: contain!important;
 }
-.rates-breakdown-popup .cvv-popup-content .card-front,
-.cancellation-popup .cvv-popup-content .card-front,
-.cvv-popup .cvv-popup-content .card-front {
+.popup .cvv-version .popup-content .card-front {
   background: url("../images/icons/front-cvv.jpg") no-repeat;
   margin-right: 10px;
 }
-.rates-breakdown-popup .cvv-popup-content .card-back,
-.cancellation-popup .cvv-popup-content .card-back,
-.cvv-popup .cvv-popup-content .card-back {
+.popup .cvv-version .popup-content .card-back {
   background: url("../images/icons/back-cvv.jpg") no-repeat;
 }
-.rates-breakdown-popup .back-to-search-btn,
-.cancellation-popup .back-to-search-btn,
-.cvv-popup .back-to-search-btn {
-  padding-top: 70px;
+#booking-engine-modification-form {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.rates-breakdown-popup .back-to-payment-btn,
-.cancellation-popup .back-to-payment-btn,
-.cvv-popup .back-to-payment-btn {
+#booking-engine-modification-form #booking-engine-modification-form-header {
+  text-align: center;
+}
+#booking-engine-modification-form #booking-engine-modification-form-header h3 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0;
+  color: #747474;
+}
+#booking-engine-modification-form #booking-engine-modification-form-header p {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #747474;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 10px;
+  box-shadow: 0px 1px 8px #e5e5e5;
+  margin-top: 40px;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .manic-image-container {
+  width: 360px;
+  height: 265px;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group {
+  margin-bottom: 10px;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group label {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .find-booking {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#booking-engine-modification {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#booking-engine-modification #thank-you-container #thank-you-container-title {
+  margin-bottom: 10px;
+}
+#booking-engine-modification #thank-you-container h5 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  color: #747474;
+}
+#booking-engine-modification #thank-you-container p {
+  padding-bottom: 20px;
+}
+#booking-engine-modification #thank-you-container p span {
+  display: block;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+#booking-engine-modification #thank-you-container p.hotel-address span {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #7d0052;
+  letter-spacing: 0.01em;
+}
+#booking-engine-modification #thank-you-container ul li span {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+#booking-engine-modification #booking-information {
+  box-shadow: 0px 1px 8px #e5e5e5;
+  margin-left: 40px;
+  margin-right: -10px;
+}
+#booking-engine-modification #booking-information-title {
+  padding: 10px 30px;
+  background: #929090;
+  position: relative;
+}
+#booking-engine-modification #booking-information-title h5 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#booking-engine-modification #booking-information-title span {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffff;
+  position: absolute;
+  right: 35px;
+  top: 7px;
+}
+#booking-engine-modification #booking-information-content {
+  padding: 25px 30px;
+}
+#booking-engine-modification #booking-check-in-out-date h6 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555555;
+}
+#booking-engine-modification #booking-check-in-out-date:after {
+  content: "";
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-bottom: 1px solid rgba(146, 144, 144, 0.3);
+}
+#booking-engine-modification #booking-guest-detail {
+  padding-top: 20px;
+}
+#booking-engine-modification #booking-guest-detail .form-group {
+  margin-bottom: 20px;
+}
+#booking-engine-modification #booking-guest-detail label {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+#booking-engine-modification #booking-guest-detail p {
+  font-size: 14px;
+  line-height: 16px;
+}
+#booking-engine-modification #booking-guest-detail .intl-tel-input {
+  width: 100%;
+}
+#booking-engine-modification #booking-guest-detail .telephone-inputs {
+  padding-left: 50px;
+}
+#booking-engine-modification #booking-guest-detail #booking-guest-detail-optional {
+  margin-top: 20px;
+  display: none;
+}
+#booking-engine-modification #booking-guest-detail .optional-info-cta.expanded-version:after {
+  content: "\f106" !important;
+}
+#booking-engine-modification #booking-engine-modification-content {
+  padding-top: 50px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room {
+  -webkit-box-shadow: 0px 1px 8px #e5e5e5;
+  box-shadow: 0px 1px 8px #e5e5e5;
+  margin-bottom: 30px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extras {
+  -webkit-box-shadow: 0px 1px 8px #e5e5e5;
+  box-shadow: 0px 1px 8px #e5e5e5;
+  margin-bottom: 0px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-title,
+#booking-engine-modification #booking-engine-modification-content .booking-extras-title {
+  padding: 10px 40px;
+  background: rgba(146, 144, 144, 0.6);
+  position: relative;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-title h5,
+#booking-engine-modification #booking-engine-modification-content .booking-extras-title h5 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extras-title {
+  background: rgba(178, 164, 160, 0.8);
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content,
+#booking-engine-modification #booking-engine-modification-content .booking-extras-content {
+  position: relative;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-info,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-info {
   padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-info {
+  padding-bottom: 0px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-info:after {
+  content: "";
+  display: block;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-bottom: 1px solid rgba(146, 144, 144, 0.3);
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-image,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-image {
+  padding-right: 20px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-image .manic-image-container,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-image .manic-image-container {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-image .manic-image-container {
+  height: 170px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title,
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title-mobile,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title {
+  position: relative;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title h5,
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title-mobile h5,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title h5 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 29px;
+  text-transform: none;
+  color: #7d0052;
+  letter-spacing: 0;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title .cta-container,
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title-mobile .cta-container,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title .cta-container a,
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title-mobile .cta-container a,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a {
+  display: block;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 220px;
+  margin-bottom: 10px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title .cta-container a:last-child,
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-title-mobile .cta-container a:last-child,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a:last-child {
+  margin-bottom: 0px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title h5 {
+  color: #747474;
+  width: 50%;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a {
+  display: block;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 220px;
+  margin-bottom: 10px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a:last-child {
+  margin-bottom: 0px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-detail,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-detail {
+  display: block;
+  vertical-align: bottom;
+  position: relative;
+  margin-top: 15px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-detail ul li {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-detail ul li label {
+  margin-right: 10px;
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.015px;
+  color: #555555;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-detail ul li label,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-detail ul li p {
+  display: inline-block;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-detail ul li span.child-age-notice {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  position: absolute;
+  bottom: -20px;
+  display: block;
+  width: 100px;
+  left: 0;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy {
+  position: relative;
+  margin-top: 30px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy .room-price {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy .room-price h6 {
+  color: #747474;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy .room-price p span {
+  color: #747474;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy .view-rate-breakdown-cta-container {
+  position: absolute;
+  right: 0px;
+  text-align: right;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy .view-rate-breakdown-cta {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.08em;
+  color: #7d0052;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 88px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy .default-copy {
+  width: 75%;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-content-copy .default-copy h6 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #747474;
+  margin-bottom: 5px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail .manic-dropdown .goog-menu {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail:before {
+  content: "";
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-top: 1px solid rgba(146, 144, 144, 0.3);
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail h5 {
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #555555;
+  padding-bottom: 10px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail p {
+  font-size: 14px;
+  line-height: 24px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail ul li {
+  padding-left: 10px;
+  position: relative;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail ul li:before {
+  content: ".";
+  font-size: 35px;
+  position: absolute;
+  left: -2px;
+  top: -11px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail label {
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail-content-1 {
+  padding-left: 15px;
+  padding-right: 20px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail-content-1 .cancellation-policies {
+  padding-top: 30px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail-content-2 .left-col {
+  padding-right: 30px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail-content-2 .right-col {
+  padding-left: 30px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail-content-2 .form-group {
+  margin-bottom: 18px;
+}
+#booking-engine-modification #booking-engine-modification-content .booking-room-detail-content-2 textarea {
+  height: 131px;
+}
+#booking-engine-modification #booking-engine-modification-ctas {
+  text-align: right;
+  margin-top: 60px;
+}
+#booking-engine-modification #booking-engine-modification-ctas a {
+  margin-left: 20px;
+}
+/* The Modal (background) */
+.modification-popup-container {
+  visibility: hidden;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  position: fixed;
+  /* Stay in place */
+  z-index: 9999999;
+  /* Sit on top */
+  left: 0;
+  top: 0px;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.modification-popup-container.show {
+  visibility: visible;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+.modification-popup {
+  width: 360px;
+  background: #ffffff;
+  padding: 25px;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+}
+@media all and (max-width: 991px) {
+  .modification-popup {
+    width: 100%;
+  }
+}
+.modification-popup .modification-popup-title {
+  position: relative;
+  margin-bottom: 20px;
+}
+.modification-popup .modification-popup-title h5 {
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: none;
+}
+.modification-popup .modification-popup-title h5 span {
+  color: #7d0052;
+  display: block;
+}
+.modification-popup .modification-popup-title .modification-popup-price {
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+}
+.modification-popup .modification-popup-title .modification-popup-price h6,
+.modification-popup .modification-popup-title .modification-popup-price p,
+.modification-popup .modification-popup-title .modification-popup-price span {
+  color: #747474;
+}
+.modification-popup .modification-popup-content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.modification-popup .modification-popup-content .modification-popup-rate {
+  position: relative;
+  padding-bottom: 10px;
+}
+.modification-popup .modification-popup-content .modification-popup-rate .modification-popup-rate-content-price {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.modification-popup .modification-popup-ctas {
+  padding-top: 50px;
+}
+.modification-popup .modification-popup-ctas a {
+  width: 100%;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+}
+.modification-popup .modification-popup-ctas a:last-child {
+  margin-bottom: 10px;
+}
+.modification-popup .rate-breakdown-version .modification-popup-title h5 {
+  font-size: 17px;
+  line-height: 20px;
+  width: 60%;
+}
+.modification-popup .rate-breakdown-version .modification-popup-title:after {
+  content: "";
+  border-bottom: 1px solid rgba(146, 144, 144, 0.3);
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+}
+.modification-popup .rate-breakdown-version .modification-popup-content {
+  padding-top: 20px;
+}
+.modification-popup .rate-breakdown-version .back-to-booking-cta {
+  padding-top: 70px;
 }

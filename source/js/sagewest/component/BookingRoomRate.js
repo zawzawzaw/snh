@@ -142,7 +142,8 @@ sagewest.component.BookingRoomRate.prototype.expand = function() {
 sagewest.component.BookingRoomRate.prototype.pop_up_open = function() {
     // $("html,body").addClass("fixed");
     console.log($(".rates-breakdown-popup-container"));
-    $(".rates-breakdown-popup-container").addClass('show');
+    // $(".rates-breakdown-popup-container").addClass('show');
+    $(".popup-container").addClass('show');
 };
 
 sagewest.component.BookingRoomRate.prototype.public_method_01 = function() {};
@@ -203,6 +204,40 @@ sagewest.component.BookingRoomRate.prototype.on_select_room_cta_click = function
 sagewest.component.BookingRoomRate.prototype.on_rate_breakdown_cta_click = function(event) {
   event.preventDefault();
   event.stopPropagation();
+
+    var data = {
+    'pop_up_version' : "rate-breakdown-version",
+    'pop_up_title' : "7 days Advanced Purchase",
+    'pop_up_subtitle' : "Rate Breakdown",
+    'pop_up_price_title' : "4 nights from",
+    'pop_up_price_currency' : "aud",
+    'pop_up_price' : "$626",
+    'pop_up_rates' : [
+      {
+        'date': "Wed, 25 Mar",
+        'price_per_day': "$133.00"
+      },
+      {
+        'date': "Thur, 26 Mar",
+        'price_per_day': "$133.00"
+      },
+      {
+        'date': "Fri, 27 Mar",
+        'price_per_day': "$150.00"
+      },
+      {
+        'date': "Sat, 28 Mar",
+        'price_per_day': "$170.00"
+      }
+    ],
+    'pop_up_close_cta': true
+  };
+
+  var popup_template = Handlebars.compile($("#popup-template").html());
+  var popup_html = popup_template(data);
+
+  $(".popup").html(popup_html);
+
   this.pop_up_open();
 };
 

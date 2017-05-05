@@ -37,14 +37,7 @@ sagewest.component.BookingPayment = function(options, element) {
   this.element.on("click", ".optional-info-cta", this.on_optional_info_click.bind(this));
 
   // temporary popup
-  this.element.on("click", ".cvv-cta", function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    // console.log("nightly-rates-popup-cta");    
-    $(".cvv-popup-container").addClass('show');
-
-
-  });
+  this.element.on("click", ".cvv-cta", this.on_cvv_popup_cta_click.bind(this));
 
   this.element.on("click", ".show-hide-guest-detail-form", function(e){
 
@@ -164,6 +157,12 @@ sagewest.component.BookingPayment.prototype.delete_guest_details_form_per_room_b
     $(arr[i]).find(".room-title").html("Room "+index);
   }
 };
+
+sagewest.component.BookingPayment.prototype.pop_up_open = function() {
+    
+    $(".popup-container").addClass('show');
+};
+
 sagewest.component.BookingPayment.prototype.public_method_02 = function() {};
 sagewest.component.BookingPayment.prototype.public_method_03 = function() {};
 sagewest.component.BookingPayment.prototype.public_method_04 = function() {};
@@ -229,6 +228,24 @@ sagewest.component.BookingPayment.prototype.on_optional_info_click = function(ev
  * event handler
  * @param  {object} event
  */
-sagewest.component.BookingPayment.prototype.on_event_handler_04 = function(event) {
+sagewest.component.BookingPayment.prototype.on_cvv_popup_cta_click = function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  var data = {
+    'pop_up_version' : "cvv-version",
+    'pop_up_title' : "Where is CVV?",  
+    'pop_up_copy': 'For Visa, MasterCard, Diners Club, UnionPay, the 3 digits on the back of your card. (Left)',
+    'pop_up_copy_2': 'For American Express, the 4 digits on the front of your card. (Right)',
+    'pop_up_image': true,
+    'pop_up_close_cta': true    
+  };
+
+  var popup_template = Handlebars.compile($("#popup-template").html());
+  var popup_html = popup_template(data);
+
+  $(".popup").html(popup_html);
+
+  this.pop_up_open();
 };
 

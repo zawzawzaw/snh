@@ -34,6 +34,8 @@ goog.addDependency('../../../../js/manic/util/JsonParser.js', ['manic.util.JsonP
 goog.addDependency('../../../../js/manic/util/StringUtil.js', ['manic.util.StringUtil'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/manic/video/VideoJSPlayer.js', ['manic.video.VideoJSPlayer'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/BookingExtra.js', ['sagewest.component.BookingExtra'], ['goog.events.Event', 'goog.events.EventTarget']);
+goog.addDependency('../../../../js/sagewest/component/BookingModificationExtra.js', ['sagewest.component.BookingModificationExtra'], ['goog.events.Event', 'goog.events.EventTarget']);
+goog.addDependency('../../../../js/sagewest/component/BookingModificationRoom.js', ['sagewest.component.BookingModificationRoom'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/BookingPayment.js', ['sagewest.component.BookingPayment'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/BookingRoom.js', ['sagewest.component.BookingRoom'], ['goog.events.Event', 'goog.events.EventTarget', 'sagewest.component.BookingRoomRate']);
 goog.addDependency('../../../../js/sagewest/component/BookingRoomRate.js', ['sagewest.component.BookingRoomRate'], ['goog.events.Event', 'goog.events.EventTarget']);
@@ -52,6 +54,7 @@ goog.addDependency('../../../../js/sagewest/component/MobileHeader.js', ['sagewe
 goog.addDependency('../../../../js/sagewest/component/PackagesPopup.js', ['sagewest.component.PackagesPopup'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/ReviewContent.js', ['sagewest.component.ReviewContent'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.ui.Dropdown']);
 goog.addDependency('../../../../js/sagewest/page/Booking.js', ['sagewest.page.Booking'], ['sagewest.component.BookingExtra', 'sagewest.component.BookingPayment', 'sagewest.component.BookingRoom', 'sagewest.component.BookingStep', 'sagewest.component.BookingStepsIndicator', 'sagewest.component.BookingSummary', 'sagewest.page.Default']);
+goog.addDependency('../../../../js/sagewest/page/BookingModification.js', ['sagewest.page.BookingModification'], ['sagewest.component.BookingModificationExtra', 'sagewest.component.BookingModificationRoom', 'sagewest.page.Default']);
 goog.addDependency('../../../../js/sagewest/page/Brand.js', ['sagewest.page.Brand'], ['manic.google.Map', 'sagewest.component.BrandLocationTitle', 'sagewest.page.Default']);
 goog.addDependency('../../../../js/sagewest/page/Default.js', ['sagewest.page.Default'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.page.Page', 'manic.ui.Dropdown', 'manic.ui.ExpandContainer', 'manic.ui.FormCheck', 'manic.ui.ImageContainer', 'manic.ui.ImageContainerPadding', 'manic.ui.TextPadding', 'sagewest.component.BoxList', 'sagewest.component.GenericMap', 'sagewest.component.HomeMap', 'sagewest.component.MobileHeader', 'sagewest.component.ReviewContent']);
 goog.addDependency('../../../../js/sagewest/page/Gallery.js', ['sagewest.page.Gallery'], ['manic.google.Map', 'sagewest.component.GalleryData', 'sagewest.component.GalleryDetailTab', 'sagewest.component.GalleryIndexTab', 'sagewest.page.Default']);

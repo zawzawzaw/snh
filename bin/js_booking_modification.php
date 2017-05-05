@@ -41,11 +41,11 @@
   <script src="../source/library/closure-library/closure/goog/base.js"></script>
   <script src="../source/js/goog-custom-dependencies.js"></script>
   <script type="text/javascript">
-    goog.require('sagewest.page.Booking');
+    goog.require('sagewest.page.BookingModification');
   </script>
   <script type="text/javascript">
     jQuery(document).ready(function($) {
-      page = new sagewest.page.Booking({});    
+      page = new sagewest.page.BookingModification({});    
     });
   </script>
 
@@ -58,7 +58,7 @@
   <script type="text/javascript">
     var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
     var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
-    var PAGE_JS                   = "js/page-booking.min.js";
+    var PAGE_JS                   = "js/page-booking-modification.min.js";
     var PAGE_CSS                  = "css/style.css";
 
     head.load(PAGE_CSS);

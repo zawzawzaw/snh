@@ -68,17 +68,27 @@ sagewest.page.Booking.prototype.init = function() {
 
   this.create_telephone_inputs();
 
+  this.popup_container = $(".popup-container");
+
   // this.create_no_room_carousel();  
 
-  $('.back-to-search-btn').click(function(e){  
-    e.preventDefault();  
-    $(".rates-breakdown-popup-container, .cancellation-popup-container").removeClass('show');
-  });
+  // $('.back-to-search-btn').click(function(e){  
+  //   e.preventDefault();  
+  //   $(".rates-breakdown-popup-container, .cancellation-popup-container").removeClass('show');
+  // });
 
-  $('.back-to-payment-btn').click(function(e){  
+  // $('.back-to-payment-btn').click(function(e){  
+  //   e.preventDefault();  
+  //   $(".cvv-popup-container").removeClass('show');
+  // });
+
+  $('.popup-container').on('click', '.back-to-booking-btn', function(e){  
     e.preventDefault();  
-    $(".cvv-popup-container").removeClass('show');
-  });
+    e.stopPropagation();
+
+    this.pop_up_close();    
+
+  }.bind(this));
 
   $(document).click(function(e){    
     // e.preventDefault();  
@@ -86,12 +96,11 @@ sagewest.page.Booking.prototype.init = function() {
 
     var target = $(e.target);
 
-    if ($.contains($(".rates-breakdown-popup-container")[0], target[0]) == false && 
-        $.contains($(".cancellation-popup-container")[0], target[0]) == false &&
-        $.contains($(".cvv-popup-container")[0], target[0]) == false) {
-      $(".rates-breakdown-popup-container").removeClass('show');
-      $(".cancellation-popup-container").removeClass('show');
-      $(".cvv-popup-container").removeClass('show');
+    if ($.contains($(".popup-container")[0], target[0]) == false) {
+      // $(".rates-breakdown-popup-container").removeClass('show');
+      // $(".cancellation-popup-container").removeClass('show');
+      // $(".cvv-popup-container").removeClass('show');
+      $(".popup-container").removeClass('show');
     }
 
     
@@ -957,22 +966,24 @@ sagewest.page.Booking.prototype.others = function(){
 // };
 
 sagewest.page.Booking.prototype.pop_up_close = function(){
-  if (this.is_popup_open == true) {
+  // if (this.is_popup_open == true) {
     this.is_popup_open = false;
 
     $("html,body").removeClass("fixed");
-    this.rates_breakdown_popup_container.removeClass('show');
-  }
+    // this.rates_breakdown_popup_container.removeClass('show');
+    this.popup_container.removeClass('show');
+  // }
 };
 
-sagewest.page.Booking.prototype.pop_up_open = function() {
-  if (this.is_popup_open == false) {
-    this.is_popup_open = true;
+// sagewest.page.Booking.prototype.pop_up_open = function() {
+//   // if (this.is_popup_open == false) {
+//     this.is_popup_open = true;
 
-    $("html,body").addClass("fixed");
-    this.rates_breakdown_popup_container.addClass('show');
-  }
-};
+//     $("html,body").addClass("fixed");
+//     // this.rates_breakdown_popup_container.addClass('show');
+//     this.popup_container.addClass('show');
+//   // }
+// };
 
 //    _______     _______ _   _ _____ ____
 //   | ____\ \   / / ____| \ | |_   _/ ___|
@@ -1014,15 +1025,15 @@ sagewest.page.Booking.prototype.pop_up_open = function() {
 /**
  * @param {object} event
  */
-sagewest.page.Booking.prototype.on_rate_breakdown_click = function(event) {  
-  event.preventDefault();
-  if(this.is_popup_open == true) {
-    this.pop_up_close();
-  } else {
-    this.pop_up_open();
-  }
+// sagewest.page.Booking.prototype.on_rate_breakdown_click = function(event) {  
+//   event.preventDefault();
+//   if(this.is_popup_open == true) {
+//     this.pop_up_close();
+//   } else {
+//     this.pop_up_open();
+//   }
 
-};
+// };
 
 sagewest.page.Booking.prototype.on_back_to_select_your_room_click = function(event) {
   // console.log('on back to personalise') 
