@@ -19854,6 +19854,22 @@ body.not-scrollable {
   font-size: 14px;
   letter-spacing: 0.01em;
 }
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group.has-error label {
+  color: #d31222 !important;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group.has-error input,
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group.has-error select,
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group.has-error textarea {
+  background: rgba(255, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group.has-error .manic-dropdown > .goog-menu-button {
+  background: rgba(255, 0, 0, 0.05);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form .form-group.has-error:after {
+  display: none;
+}
 #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .vcenter {
   display: inline-block;
   vertical-align: middle;
@@ -19863,6 +19879,19 @@ body.not-scrollable {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+}
+#booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form span.required-fields {
+  display: block;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #747474;
+  position: absolute;
+  left: 0;
+  bottom: -23px;
 }
 #booking-engine-modification {
   padding-top: 80px;
@@ -20037,8 +20066,10 @@ body.not-scrollable {
   padding-left: 40px;
   padding-right: 40px;
 }
-#booking-engine-modification #booking-engine-modification-content .booking-extra:last-child .booking-extra-content-info:after {
-  display: none;
+@media all and (max-width: 991px) {
+  #booking-engine-modification #booking-engine-modification-content .booking-extra:last-child .booking-extra-content-info:after {
+    display: none;
+  }
 }
 #booking-engine-modification #booking-engine-modification-content .booking-extra-content-info {
   padding-bottom: 0px;
@@ -20318,7 +20349,7 @@ body.not-scrollable {
     width: 80%;
   }
   #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form {
-    width: 95%;
+    width: 100%;
   }
   #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .booking-engine-modification-search-form-image {
     margin-left: -20px;

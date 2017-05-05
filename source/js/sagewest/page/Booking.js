@@ -141,6 +141,11 @@ sagewest.page.Booking.prototype.init = function() {
   });
 
 
+  // temp // to skip step 0
+  if($(".booking-steps").length > 1)
+    $('.check-availability').trigger("click");
+
+
 };
 
 

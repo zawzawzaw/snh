@@ -39,6 +39,23 @@
             font-size: 14px;
             letter-spacing: 0.01em;
           }
+          &.has-error {
+            label {
+              // color: rgba(255, 0, 0, 1)!important;
+              color: #d31222 !important;
+            }
+            input, select, textarea {
+              background: rgba(255, 0, 0, 0.05);
+              border: 1px solid rgba(255, 0, 0, 0.4);
+            }
+            .manic-dropdown > .goog-menu-button {
+              background: rgba(255, 0, 0, 0.05);
+              border: 1px solid rgba(255, 0, 0, 0.4);
+            }
+            &:after {
+              display: none;
+            }
+          }
         }
       }
 
@@ -52,6 +69,19 @@
         width: 100%;
         text-align: center;
         margin-top: 30px;
+      }
+
+      span.required-fields {
+        display: block;
+        .open-sans-light-italic;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        // color: #a8a4a3;
+        color: @grey;   
+        position: absolute;      
+        left: 0;
+        bottom: -23px;
       }
 
 
@@ -243,12 +273,14 @@
       padding-left: 40px;
       padding-right: 40px;
     }
-
-    .booking-extra {
-      &:last-child {
-        .booking-extra-content-info {
-          &:after {
-            display: none;
+    
+    @media all and (max-width: 991px) {
+      .booking-extra {
+        &:last-child {
+          .booking-extra-content-info {
+            &:after {
+              display: none;
+            }
           }
         }
       }
@@ -554,7 +586,7 @@
     }
     #booking-engine-modification-form-content {
       #booking-engine-modification-search-form {
-        width: 95%;
+        width: 100%;
 
         .booking-engine-modification-search-form-image {
           margin-left: -20px;

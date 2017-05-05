@@ -22,14 +22,15 @@
                 </div>
               </div><!--
               --><div class="col-md-6 vcenter">
-                <form action="booking_engine_modification.php" class="default-form">
+                <form action="booking_engine_modification.php" class="simple-form-check default-form">
                   <div class="form-group">
                     <label for="">Email Address*</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" class="required only-email">
                   </div>
                   <div class="form-group">
                     <label for="">Booking Confirmation ID*</label>
-                    <input type="text" name="booking_confirmation_id">
+                    <input type="text" name="booking_confirmation_id" class="required">
+                    <span class="required-fields">*Required Fields</span>
                   </div>
                   <div class="form-group">
                     <button class="find-booking square-cta highlight-version">Find your booking</button>
