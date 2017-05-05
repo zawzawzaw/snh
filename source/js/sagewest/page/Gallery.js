@@ -386,6 +386,8 @@ sagewest.page.Gallery.prototype.scroll_to_target = function(str_param, str_param
   }
 
   this.update_page_layout();
+  TweenMax.delayedCall(0.2, this.update_page_layout, [] , this);
+
 
 };
 /**

@@ -212,7 +212,7 @@ sagewest.component.GalleryIndexTab.prototype.set_category = function(category_pa
 
 
 
-  if (this.current_category != category_param) {
+  // if (this.current_category != category_param) {
 
     this.current_category = category_param;
 
@@ -242,7 +242,7 @@ sagewest.component.GalleryIndexTab.prototype.set_category = function(category_pa
 
 
 
-  }
+  // }
 
 
   
@@ -253,6 +253,16 @@ sagewest.component.GalleryIndexTab.prototype.animate_in = function() {
   this.element.css({
     'display': 'block'
   });
+
+
+  /*
+  // update layout
+  if (this.isotope != null) {
+
+    // this.isotope.layout();
+    TweenMax.delayedCall(0.1, this.isotope.layout, [], this.isotope);
+  }
+  */
 };
 sagewest.component.GalleryIndexTab.prototype.animate_out = function() {
   this.element.css({
