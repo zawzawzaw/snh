@@ -14,7 +14,10 @@ sagewest.page.BookingModification = function(options, element) {
   sagewest.page.Default.call(this, options, element);
   this.options = $.extend(this.options, sagewest.page.BookingModification.DEFAULT, options);
 
-  console.log("init booking modification");
+  // console.log("init booking modification");
+
+  this.form_check_array = [];
+  this.create_form_check();  
 
 };
 goog.inherits(sagewest.page.BookingModification, sagewest.page.Default);

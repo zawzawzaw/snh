@@ -45,6 +45,9 @@
   </script>
   <script type="text/javascript">
     jQuery(document).ready(function($) {
+      window.preloader_css = 100;
+      window.preloader_js = 100;
+      
       page = new sagewest.page.BookingModification({});    
     });
   </script>

@@ -54,7 +54,7 @@ ob_start();
 
 
 
-        <?php include('page_booking_engine_modification.php'); ?>
+        <?php include('page_booking_engine_search.php'); ?>
 
         
 
@@ -67,7 +67,7 @@ ob_start();
 
         -->
         
-        <?php include('js_booking_modification.php'); ?>
+        <?php include('js_booking.php'); ?>
         <?php include('hotel_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
@@ -79,7 +79,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('booking_engine.html', ob_get_contents());
+file_put_contents('booking_engine_search.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>

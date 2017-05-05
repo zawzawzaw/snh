@@ -59,10 +59,11 @@ sagewest.component.BookingSummary = function(options, element) {
 
       var target = $(e.target);
 
-      if ($.contains($("#sticky-sidebar-mobile")[0], target[0]) == false && 
-        $.contains($(".rates-breakdown-popup-container")[0], target[0]) == false && 
-        $.contains($(".cancellation-popup-container")[0], target[0]) == false &&
-        $.contains($(".cvv-popup-container")[0], target[0]) == false) {
+      if ($.contains($("#sticky-sidebar-mobile")[0], target[0]) == false) { 
+        // && 
+        // $.contains($(".rates-breakdown-popup-container")[0], target[0]) == false && 
+        // $.contains($(".cancellation-popup-container")[0], target[0]) == false &&
+        // $.contains($(".cvv-popup-container")[0], target[0]) == false) {
         this.hide_booking_summary_detail_mobile();
       }
 

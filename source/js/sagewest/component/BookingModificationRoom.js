@@ -33,15 +33,19 @@ sagewest.component.BookingModificationRoom = function(options, element) {
 
   this.is_popup_open = false;
   this.is_detail_expanded = false;
+  this.is_mobile_copy_show = false;
 
   this.see_details_cta = this.element.find('.see-details-cta');
   this.see_details_cta.click(this.on_see_details_click.bind(this));  
   this.booking_room_detail = this.element.find('.booking-room-detail');
 
   this.cancel_room_cta = this.element.find('.cancel-room-cta');
-  this.cancel_room_cta.click(this.on_cancel_room_click.bind(this));  
+  this.cancel_room_cta.click(this.on_cancel_room_click.bind(this));    
 
   this.element.find(".view-rate-breakdown-cta").click(this.on_view_rate_breakdown_cta_click.bind(this));
+
+  this.booking_room_content_copy_mobile = this.element.find(".booking-room-content-copy-mobile");
+  this.element.find('.show-room-copy-cta-mobile').click(this.on_show_room_copy_cta_mobile_click.bind(this));
 
   $('.modification-popup-container').on('click', '.back-to-booking-cta', function(e){  
     e.preventDefault();  
@@ -183,6 +187,16 @@ sagewest.component.BookingModificationRoom.prototype.pop_up_open = function() {
   }
 };
 
+sagewest.component.BookingModificationRoom.prototype.show_mobile_copy = function(){
+    this.is_mobile_copy_show = true;
+    this.booking_room_content_copy_mobile.slideDown(300);
+};
+
+sagewest.component.BookingModificationRoom.prototype.hide_mobile_copy = function() {
+    this.is_mobile_copy_show = false;
+    this.booking_room_content_copy_mobile.slideUp(300);
+};
+
 
 //    _______     _______ _   _ _____ ____
 //   | ____\ \   / / ____| \ | |_   _/ ___|
@@ -283,6 +297,11 @@ sagewest.component.BookingModificationRoom.prototype.on_view_rate_breakdown_cta_
  * event handler
  * @param  {object} event
  */
-sagewest.component.BookingModificationRoom.prototype.on_event_handler_04 = function(event) {
+sagewest.component.BookingModificationRoom.prototype.on_show_room_copy_cta_mobile_click = function(event) {
+  if(this.is_mobile_copy_show == false) {
+    this.show_mobile_copy();
+  }else {
+    this.hide_mobile_copy();
+  }
 };
 

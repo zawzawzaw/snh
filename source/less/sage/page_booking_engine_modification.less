@@ -39,6 +39,23 @@
             font-size: 14px;
             letter-spacing: 0.01em;
           }
+          &.has-error {
+            label {
+              // color: rgba(255, 0, 0, 1)!important;
+              color: #d31222 !important;
+            }
+            input, select, textarea {
+              background: rgba(255, 0, 0, 0.05);
+              border: 1px solid rgba(255, 0, 0, 0.4);
+            }
+            .manic-dropdown > .goog-menu-button {
+              background: rgba(255, 0, 0, 0.05);
+              border: 1px solid rgba(255, 0, 0, 0.4);
+            }
+            &:after {
+              display: none;
+            }
+          }
         }
       }
 
@@ -52,6 +69,19 @@
         width: 100%;
         text-align: center;
         margin-top: 30px;
+      }
+
+      span.required-fields {
+        display: block;
+        .open-sans-light-italic;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        // color: #a8a4a3;
+        color: @grey;   
+        position: absolute;      
+        left: 0;
+        bottom: -23px;
       }
 
 
@@ -131,6 +161,16 @@
       position: absolute;
       right: 35px;
       top: 7px;
+
+      &:before {
+        content: "";
+        background: url(../images/icons/nightly-rate-moon.svg) no-repeat;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        left: -22px;
+        top: 7px;
+      }
     }  
   }
 
@@ -138,7 +178,7 @@
     padding: 25px 30px;
   }
 
-  #booking-check-in-out-date {
+  #booking-check-in-out-date, #booking-check-in-out-date-02 {
     h6 {
       .open-sans-semi-bold;
       font-size: 11px;
@@ -233,6 +273,18 @@
       padding-left: 40px;
       padding-right: 40px;
     }
+    
+    @media all and (max-width: 991px) {
+      .booking-extra {
+        &:last-child {
+          .booking-extra-content-info {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
 
     .booking-extra-content-info {
       padding-bottom: 0px;
@@ -291,7 +343,7 @@
       }
     }    
 
-    .booking-extra-content-title {
+    .booking-extra-content-title, .booking-extra-content-title-mobile {
       h5 {
         color: @grey;
         width: 50%;
@@ -494,6 +546,198 @@
     }
   }
 
+}
+
+//     __  _______  ____  ______    ______
+//    /  |/  / __ \/ __ )/  _/ /   / ____/
+//   / /|_/ / / / / __  |/ // /   / __/
+//  / /  / / /_/ / /_/ // // /___/ /___
+// /_/  /_/\____/_____/___/_____/_____/
+
+@media all and (max-width: 1024px) {
+  #booking-engine-modification-form {
+    #booking-engine-modification-form-content {
+      #booking-engine-modification-search-form {
+        .manic-image-container {
+          width: 100%;          
+        }
+        form {
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  #booking-engine-modification-form {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    #booking-engine-modification-form-header {
+      h3 {
+        font-size: 38px!important;
+        line-height: 44px!important;
+      }
+      p {
+        width: 80%;
+      }
+    }
+    #booking-engine-modification-form-content {
+      #booking-engine-modification-search-form {
+        width: 100%;
+
+        .booking-engine-modification-search-form-image {
+          margin-left: -20px;
+          margin-right: -20px;
+          margin-top: -20px;
+        }
+        .vcenter {
+          display: block;
+        }
+        .manic-image-container {
+          width: 100%;          
+        }
+
+        form {
+          margin-top: 20px;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+
+
+    }
+  }
+
+  #booking-engine-modification {
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+    .container-fluid {
+      padding: 0 15px;
+    }
+
+    #booking-information {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 30px;
+    }
+
+    #booking-information-title {
+      padding: 10px 20px;
+    }
+
+    #booking-information-content {
+      padding: 25px 20px;
+    }
+
+    #booking-information-title {
+      span {
+        display: none;
+      }
+    }
+
+    #booking-engine-modification-content {
+      .booking-room, .booking-extras {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .booking-room-content-info, .booking-extra-content-info {
+        padding: 0px 20px 20px 20px;        
+      }
+
+      .booking-room-content-image, .booking-extra-content-image {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-right: 0px;
+        .manic-image-container {
+          height: 350px;
+        }
+      }
+
+      .booking-room-content-title-mobile, .booking-extra-content-title-mobile {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h5 {
+          width: 100%;
+        }
+      }
+      .booking-room-content-detail-mobile {
+        padding-bottom: 20px;
+      }
+      .booking-room-content-cta-and-price-mobile {
+        position: relative;
+        .room-price {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+        }
+      }
+      .booking-room-content-copy-mobile {
+        padding-top: 30px;
+        display: none;
+      }
+      .booking-room-cta-container-mobile, .booking-extra-cta-container-mobile {
+        padding-top: 30px;
+        a {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+      .booking-room-detail {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .booking-room-detail-content-1 {
+          padding: 0;
+        }
+        .booking-room-detail-content-2 {
+          padding: 0;
+          padding-top: 30px;
+
+          .left-col, .right-col {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }      
+
+      .booking-extra-content-detail {
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+
+    } 
+
+    #booking-engine-modification-ctas {
+      a.square-cta {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+  }  
+}
+
+@media all and (max-width: 480px) {
+  #booking-engine-modification {
+    #booking-engine-modification-content {
+      .booking-room-content-image, .booking-extra-content-image {
+        .manic-image-container {
+          height: 250px;
+        }
+      }
+    }
+  }
 }
 
 //     ____  ____  ____  __  ______
