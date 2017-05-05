@@ -15,8 +15,10 @@
           <div id="booking-engine-modification-search-form">
             
               <div class="col-md-6 vcenter">
-                <div class="manic-image-container">
-                  <img src="images_cms/booking/booking-modification-search-form.jpg" alt="">
+                <div class="booking-engine-modification-search-form-image">
+                  <div class="manic-image-container">
+                    <img src="images_cms/booking/booking-modification-search-form.jpg" alt="">
+                  </div>
                 </div>
               </div><!--
               --><div class="col-md-6 vcenter">

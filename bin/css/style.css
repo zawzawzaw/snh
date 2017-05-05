@@ -19933,10 +19933,20 @@ body.not-scrollable {
   right: 35px;
   top: 7px;
 }
+#booking-engine-modification #booking-information-title span:before {
+  content: "";
+  background: url(../images/icons/nightly-rate-moon.svg) no-repeat;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: -22px;
+  top: 7px;
+}
 #booking-engine-modification #booking-information-content {
   padding: 25px 30px;
 }
-#booking-engine-modification #booking-check-in-out-date h6 {
+#booking-engine-modification #booking-check-in-out-date h6,
+#booking-engine-modification #booking-check-in-out-date-02 h6 {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -19945,7 +19955,8 @@ body.not-scrollable {
   text-transform: uppercase;
   color: #555555;
 }
-#booking-engine-modification #booking-check-in-out-date:after {
+#booking-engine-modification #booking-check-in-out-date:after,
+#booking-engine-modification #booking-check-in-out-date-02:after {
   content: "";
   display: block;
   padding-bottom: 10px;
@@ -20026,6 +20037,9 @@ body.not-scrollable {
   padding-left: 40px;
   padding-right: 40px;
 }
+#booking-engine-modification #booking-engine-modification-content .booking-extra:last-child .booking-extra-content-info:after {
+  display: none;
+}
 #booking-engine-modification #booking-engine-modification-content .booking-extra-content-info {
   padding-bottom: 0px;
 }
@@ -20091,17 +20105,20 @@ body.not-scrollable {
 #booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a:last-child {
   margin-bottom: 0px;
 }
-#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title h5 {
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title h5,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title-mobile h5 {
   color: #747474;
   width: 50%;
 }
-#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container {
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title-mobile .cta-container {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2;
 }
-#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a {
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title-mobile .cta-container a {
   display: block;
   text-align: center;
   padding-left: 0px;
@@ -20109,7 +20126,8 @@ body.not-scrollable {
   width: 220px;
   margin-bottom: 10px;
 }
-#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a:last-child {
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title .cta-container a:last-child,
+#booking-engine-modification #booking-engine-modification-content .booking-extra-content-title-mobile .cta-container a:last-child {
   margin-bottom: 0px;
 }
 #booking-engine-modification #booking-engine-modification-content .booking-room-content-detail,
@@ -20277,6 +20295,157 @@ body.not-scrollable {
 }
 #booking-engine-modification #booking-engine-modification-ctas a {
   margin-left: 20px;
+}
+@media all and (max-width: 1024px) {
+  #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .manic-image-container {
+    width: 100%;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media all and (max-width: 991px) {
+  #booking-engine-modification-form {
+    padding-top: 30px;
+    padding-bottom: 120px;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-header h3 {
+    font-size: 38px!important;
+    line-height: 44px!important;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-header p {
+    width: 80%;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form {
+    width: 95%;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .booking-engine-modification-search-form-image {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .vcenter {
+    display: block;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form .manic-image-container {
+    width: 100%;
+  }
+  #booking-engine-modification-form #booking-engine-modification-form-content #booking-engine-modification-search-form form {
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #booking-engine-modification {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  #booking-engine-modification .container-fluid {
+    padding: 0 15px;
+  }
+  #booking-engine-modification #booking-information {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  #booking-engine-modification #booking-information-title {
+    padding: 10px 20px;
+  }
+  #booking-engine-modification #booking-information-content {
+    padding: 25px 20px;
+  }
+  #booking-engine-modification #booking-information-title span {
+    display: none;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room,
+  #booking-engine-modification #booking-engine-modification-content .booking-extras {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-info,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-content-info {
+    padding: 0px 20px 20px 20px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-image,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-content-image {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-right: 0px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-image .manic-image-container,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-content-image .manic-image-container {
+    height: 350px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-title-mobile,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-content-title-mobile {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-title-mobile h5,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-content-title-mobile h5 {
+    width: 100%;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-detail-mobile {
+    padding-bottom: 20px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-cta-and-price-mobile {
+    position: relative;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-cta-and-price-mobile .room-price {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-copy-mobile {
+    padding-top: 30px;
+    display: none;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-cta-container-mobile,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-cta-container-mobile {
+    padding-top: 30px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-cta-container-mobile a,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-cta-container-mobile a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-cta-container-mobile a:last-child,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-cta-container-mobile a:last-child {
+    margin-bottom: 0px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-detail {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-detail .booking-room-detail-content-1 {
+    padding: 0;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-detail .booking-room-detail-content-2 {
+    padding: 0;
+    padding-top: 30px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-room-detail .booking-room-detail-content-2 .left-col,
+  #booking-engine-modification #booking-engine-modification-content .booking-room-detail .booking-room-detail-content-2 .right-col {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-content-detail {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  #booking-engine-modification #booking-engine-modification-ctas a.square-cta {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+@media all and (max-width: 480px) {
+  #booking-engine-modification #booking-engine-modification-content .booking-room-content-image .manic-image-container,
+  #booking-engine-modification #booking-engine-modification-content .booking-extra-content-image .manic-image-container {
+    height: 250px;
+  }
 }
 /* The Modal (background) */
 .modification-popup-container {

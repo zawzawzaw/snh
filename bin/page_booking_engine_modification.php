@@ -39,7 +39,7 @@
               <div id="booking-information-title"><h5>Booking Information</h5><span>4 Nights</span></div>
               <div id="booking-information-content">
 
-                <div id="booking-check-in-out-date" class="row">
+                <div id="booking-check-in-out-date" class="row hidden-xs hidden-sm">
                   <div class="col-md-6">
                     <h6>Check-In</h6>
                     <p>Sun, 26 Mar 2017</p>
@@ -47,6 +47,13 @@
                   <div class="col-md-6">
                     <h6>Check-Out</h6>
                     <p>Wed, 29 Mar 2017</p>
+                  </div>
+                </div>
+
+                <div id="booking-check-in-out-date-02" class="row visible-xs visible-sm">
+                  <div class="col-md-12">
+                    <h6>Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</h6>
+                    <p>29/03/2017 to 26/03/2017</p>                                
                   </div>
                 </div> 
                 
@@ -159,13 +166,13 @@
                             <a href="#"><h5>Standard Room</h5></a>                     
                             <div class="cta-container">
                               <a href="javascript:void(0);" class="see-details-cta square-cta highlight-version">See Details</a>
-                              <a href="javascript:void(0);" class="cancel-room-cta square-cta highlight-version">Cancel this room</a>
+                              <a href="javascript:void(0);" class="cancel-room-cta square-cta">Cancel this room</a>
                             </div>                    
                           </div>                                
                           
                           <div class="booking-room-content-detail boxlist-item-content-room-detail">
                             <p class="detail-person">2 adults</p>                  
-                            <p class="detail-bed">1 KING SIZE BED</p>                                          
+                            <p class="detail-bed">1 KING SIZE BED</p> 
                           </div>                                              
                           
                           <div class="booking-room-content-copy">
@@ -184,7 +191,43 @@
                               </div>
                             </div>
                           </div>
-                        </div>                  
+
+
+                        </div>
+
+                        <div class="booking-room-content-text-container-mobile visible-xs visible-sm">
+                          <div class="booking-room-content-title-mobile">
+                            <a href="#"><h5>Standard Room</h5></a>                      
+                          </div>
+
+                          <div class="booking-room-content-detail-mobile boxlist-item-content-room-detail">
+                            <p class="detail-person">2 adults</p>                  
+                            <p class="detail-bed">1 KING SIZE BED</p>     
+                          </div>
+
+                          <div class="booking-room-content-cta-and-price-mobile">
+                            <a href="#" class="collapsable-arrow-cta show-room-copy-cta-mobile">More details</a>
+                            <div class="boxlist-item-content-price room-price">
+                              <h6>4 nights</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$612</span>
+                              </p>
+                            </div>
+
+                            <div class="booking-room-content-copy-mobile">
+                              <div class="default-copy">
+                                <h6>7 days Advanced Purchase</h6>
+                                <p>Book 7 days in advance and enjoy 5% savings on our Sage Flexible Rate. Te qui putant saperet consequat, at per habeo populo. Quot scaevola vis. Te quod zril oporteat mel, has tota postulant suavitate.</p>
+                              </div>
+                            </div>
+
+                            <div class="booking-room-cta-container-mobile">
+                              <a href="javascript:void(0);" class="see-details-cta square-cta highlight-version">See Details</a>
+                              <a href="javascript:void(0);" class="cancel-room-cta square-cta">Cancel this room</a>
+                            </div>
+                          </div>
+                        </div>                
 
                       </div>
                     </div>            
@@ -389,7 +432,7 @@
                             <a href="#"><h5>Deluxe Twin Room</h5></a>                     
                             <div class="cta-container">
                               <a href="javascript:void(0);" class="see-details-cta square-cta highlight-version">See Details</a>
-                              <a href="javascript:void(0);" class="cancel-room-cta square-cta highlight-version">Cancel this room</a>
+                              <a href="javascript:void(0);" class="cancel-room-cta square-cta">Cancel this room</a>
                             </div>                    
                           </div>                                
                           
@@ -414,7 +457,41 @@
                               </div>
                             </div>
                           </div>
-                        </div>                  
+                        </div>         
+
+                        <div class="booking-room-content-text-container-mobile visible-xs visible-sm">
+                          <div class="booking-room-content-title-mobile">
+                            <a href="#"><h5>Deluxe Twin Room</h5></a>                      
+                          </div>
+
+                          <div class="booking-room-content-detail-mobile boxlist-item-content-room-detail">
+                            <p class="detail-person">2 adults</p>                  
+                            <p class="detail-bed">1 KING SIZE BED</p>     
+                          </div>
+
+                          <div class="booking-room-content-cta-and-price-mobile">
+                            <a href="#" class="collapsable-arrow-cta show-room-copy-cta-mobile">More details</a>
+                            <div class="boxlist-item-content-price room-price">
+                              <h6>4 nights</h6>
+                              <p class="content-price">
+                                <span class="currency">aud</span>
+                                <span class="number">$612</span>
+                              </p>
+                            </div>
+
+                            <div class="booking-room-content-copy-mobile">
+                              <div class="default-copy">
+                                <h6>7 days Advanced Purchase</h6>
+                                <p>Book 7 days in advance and enjoy 5% savings on our Sage Flexible Rate. Te qui putant saperet consequat, at per habeo populo. Quot scaevola vis. Te quod zril oporteat mel, has tota postulant suavitate.</p>
+                              </div>
+                            </div>
+
+                            <div class="booking-room-cta-container-mobile">
+                              <a href="javascript:void(0);" class="see-details-cta square-cta highlight-version">See Details</a>
+                              <a href="javascript:void(0);" class="cancel-room-cta square-cta">Cancel this room</a>
+                            </div>
+                          </div>
+                        </div>         
 
                       </div>
                     </div>            
@@ -622,7 +699,7 @@
                             <div class="booking-extra-content-title">
                               <a href="#"><h5>Sage Hotel Breakfast, Prepay & Save</h5></a>                     
                               <div class="cta-container">                          
-                                <a href="javascript:void(0);" class="cancel-extra-cta square-cta highlight-version">Cancel Extra</a>
+                                <a href="javascript:void(0);" class="cancel-extra-cta square-cta">Cancel Extra</a>
                               </div>                    
                             </div>                                
                             
@@ -633,7 +710,25 @@
                               </ul>
                             </div>                                              
                                                     
-                          </div>                  
+                          </div>      
+
+                          <div class="booking-extra-content-text-container-mobile visible-xs visible-sm">
+                            <div class="booking-extra-content-title-mobile">
+                              <a href="#"><h5>Sage Hotel Breakfast, Prepay & Save</h5></a>
+                            </div>                                
+                            
+                            <div class="booking-extra-content-detail">
+                              <ul>
+                                <li><label for="quantity">Adult</label><p class="adult">2</p></li>
+                                <li><label for="quantity">Child</label><p class="child">2</p><span class="child-age-notice">11 years & below</span></li>
+                              </ul>
+                            </div>
+
+                            <div class="booking-extra-cta-container-mobile">                          
+                                <a href="javascript:void(0);" class="cancel-extra-cta square-cta">Cancel Extra</a>
+                            </div>                    
+                                                    
+                          </div>                                            
 
                         </div>
                       </div>            
@@ -656,7 +751,7 @@
                             <div class="booking-extra-content-title">
                               <a href="#"><h5>Sage Hotel Breakfast, Prepay & Save</h5></a>                     
                               <div class="cta-container">                          
-                                <a href="javascript:void(0);" class="cancel-extra-cta square-cta highlight-version">Cancel Extra</a>
+                                <a href="javascript:void(0);" class="cancel-extra-cta square-cta">Cancel Extra</a>
                               </div>                    
                             </div>                                
                             
@@ -667,7 +762,25 @@
                               </ul>
                             </div>                                              
                                                     
-                          </div>                  
+                          </div>    
+
+                          <div class="booking-extra-content-text-container-mobile visible-xs visible-sm">
+                            <div class="booking-extra-content-title-mobile">
+                              <a href="#"><h5>Sage Hotel Breakfast, Prepay & Save</h5></a>
+                            </div>                                
+                            
+                            <div class="booking-extra-content-detail">
+                              <ul>
+                                <li><label for="quantity">Adult</label><p class="adult">2</p></li>
+                                <li><label for="quantity">Child</label><p class="child">2</p><span class="child-age-notice">11 years & below</span></li>
+                              </ul>
+                            </div>
+
+                            <div class="booking-extra-cta-container-mobile">                          
+                                <a href="javascript:void(0);" class="cancel-extra-cta square-cta">Cancel Extra</a>
+                            </div>                    
+                                                    
+                          </div>              
 
                         </div>
                       </div>            
@@ -686,8 +799,8 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <a href="javascript:void(0);" class="cancel-entire-reservation-cta square-cta highlight-version">Cancel Entire Reservation</a>
-              <a href="javascript:void(0);" class="undo-all-changes-cta square-cta highlight-version">Undo All Changes</a>
+              <a href="javascript:void(0);" class="cancel-entire-reservation-cta square-cta">Cancel Entire Reservation</a>
+              <a href="javascript:void(0);" class="undo-all-changes-cta square-cta">Undo All Changes</a>
               <a href="javascript:void(0);" class="save-changes-cta square-cta highlight-version">Save Changes</a>
             </div>
           </div>        
@@ -708,16 +821,7 @@
 
 <div class="modification-popup-container">
   <div class="modification-popup">
-    <div class="modification-popup-title">
-      <h5>Notification Title, Lorem ipsum dolor sit amet, consectetur elit?</h5>
-    </div>
-    <div class="modification-popup-content">
-      <p>Curabitur sed arcu suscipit, cursus odio non, volupat velit. Etiam quam dui, finibus sed mi a, aliquam venenatis ante aliquan venenatis ante.</p>
-    </div> 
-    <div class="modification-popup-ctas">
-      <a href="#" class="yes-cta square-cta highlight-version">Yes, I am sure</a>     
-      <a href="#" class="back-to-booking-cta square-cta highlight-version">Go back to my booking</a>     
-    </div>
+    <!-- dynamic content from js -->
   </div>
 </div>
 
@@ -763,7 +867,7 @@
     {{#if pop_up_yes_cta}}
     <div class="modification-popup-ctas">
       <a href="#" class="{{ pop_up_yes_cta }} square-cta highlight-version">Yes, I am sure</a>     
-      <a href="#" class="back-to-booking-cta square-cta highlight-version">Go back to my booking</a>     
+      <a href="#" class="back-to-booking-cta square-cta">Go back to my booking</a>     
     </div>
     {{/if}}
   </div>
