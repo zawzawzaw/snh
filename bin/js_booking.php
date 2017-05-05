@@ -61,15 +61,24 @@
     var PAGE_JS                   = "js/page-booking.min.js";
     var PAGE_CSS                  = "css/style.css";
 
-    head.load(PAGE_CSS);
+    head.load(PAGE_CSS, function(){
+
+      window.preloader_css = 100;
+
+    });
+
     head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
 
+      window.preloader_js = 50;
+
       head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {
+
+        window.preloader_js = 100;
           
         page = new sagewest.page.Booking({});
-        $('body').addClass('preload-start');
 
       });
+      
     });
 
     // start preload
