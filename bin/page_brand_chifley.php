@@ -62,7 +62,7 @@
     <div class="row">
       <div class="col-md-12">
         <div id="default-introduction-breadcrumb">
-          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Chifley Hotels</span>
+          <a href="brand_landing.php">NEXT Hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span>Chifley Hotels</span>
         </div>
       </div>
     </div>

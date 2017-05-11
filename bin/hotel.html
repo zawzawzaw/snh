@@ -25,17 +25,63 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
-  </head>
+
+
+<script type="text/javascript">
+  
+  // simple preloader script
+  
+  window.preloader_counter = 0;
+  window.preloader_js = 0;
+  window.preloader_css = 0;
+
+  window.preloader_interval = setInterval(function(){
+
+    var counter = window.preloader_counter;
+    var target = (window.preloader_js * 0.75) + (window.preloader_css * 0.25);
+    counter += (target - counter) / 5;
+    window.preloader_counter = counter;
+
+    var display = Math.floor(Math.round(counter * 10) / 10);
+
+    var number_element = document.getElementById('page-preloader-number');
+    if(number_element){
+      number_element.innerHTML = (display + '%');
+    }
+
+    var line_element = document.getElementById('page-preloader-line-b');
+    if (line_element) {
+      line_element.style.width = (display + '%');
+    }
+    
+
+    if (display >= 100) {
+
+      var preloader = document.getElementById('page-preloader');
+      if (preloader) {
+        preloader.className += ' preload-complete';
+      }
+
+      clearInterval(window.preloader_interval);
+    }
+
+  }, 50);
+
+</script>  </head>
 
 
   <body class="hotel">
 
-    <div id="page-preloader">
-      <div id="page-preloader-line-01"></div>
-      <div id="page-preloader-line-02">
-        <div class="line-a"></div>
-        <div class="line-b"></div>
+    <div id="page-preloader" class="square-version">
+      <div id="page-preloader-logo">
+        <img src="images/icons/preloader-sage.png">
       </div>
+
+      <div id="page-preloader-line">
+        <div id="page-preloader-line-a"></div>
+        <div id="page-preloader-line-b"></div>
+      </div>
+      <div id="page-preloader-number">0%</div>
     </div>
 
 
@@ -453,7 +499,7 @@
     <div class="row">
       <div class="col-md-12">
         <div id="hotel-introduction-breadcrumb">
-          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="brand_alternative.php">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
+          <a href="brand_landing.php">NEXT Hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="brand_alternative.php">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
         </div>
         <div id="hotel-introduction-title">
           <h1>We’re so glad to have you stay</h1>
@@ -2088,15 +2134,24 @@
     var PAGE_JS                   = "js/page-hotel.min.js";
     var PAGE_CSS                  = "css/style.css";
 
-    head.load(PAGE_CSS);
+    head.load(PAGE_CSS, function(){
+
+      window.preloader_css = 100;
+
+    });
+
     head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
+
+      window.preloader_js = 50;
 
       head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {
           
-        page = new sagewest.page.Hotel({});
-        $('body').addClass('preload-start');
+        window.preloader_js = 100;
 
+        page = new sagewest.page.Hotel({});
+        
       });
+      
     });
 
     // start preload
@@ -2164,7 +2219,7 @@
       <div class="col-md-3 col-sm-12 col-xs-12">
         
         <div id="footer-logo">
-          <img src="images/logo/footer-snh-logo.png" alt="">
+          <img src="images/logo/footer-next-hotels-logo.png" alt="">
         </div>
 
         <div id="footer-subscribe-form">
@@ -2241,8 +2296,7 @@
           <div class="footer-contact-item">
             <h4>Central Reservations</h4>
             <p>
-              1300 346 835 (Within Australia) <br>
-              0800 480 274 (Within New Zealand)
+              1300 346 835 (Within Australia)
             </p>
           </div>
         </div>
@@ -2263,13 +2317,16 @@
           <div id="footer-snh-group-logos">
             <h1>Our Brands</h1>
             <ul>
-              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+
+              <li><a href="#"><img src="images/icons/kiridara.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/riva-arun.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/riva-surya.png" alt=""></a></li>
               
             </ul>
           </div>

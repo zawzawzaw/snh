@@ -58,7 +58,7 @@
       <div class="col-md-3 col-sm-12 col-xs-12">
         
         <div id="footer-logo">
-          <img src="images/logo/footer-snh-logo.png" alt="">
+          <img src="images/logo/footer-next-hotels-logo.png" alt="">
         </div>
 
         <div id="footer-subscribe-form">
@@ -135,8 +135,7 @@
           <div class="footer-contact-item">
             <h4>Central Reservations</h4>
             <p>
-              1300 346 835 (Within Australia) <br>
-              0800 480 274 (Within New Zealand)
+              1300 346 835 (Within Australia)
             </p>
           </div>
         </div>
@@ -157,13 +156,16 @@
           <div id="footer-snh-group-logos">
             <h1>Our Brands</h1>
             <ul>
-              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
               <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+
+              <li><a href="#"><img src="images/icons/kiridara.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/riva-arun.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/riva-surya.png" alt=""></a></li>
               
             </ul>
           </div>
