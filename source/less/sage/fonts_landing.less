@@ -1,0 +1,216 @@
+//     ___  ____  _____ _   _   ____    _    _   _ ____
+//    / _ \|  _ \| ____| \ | | / ___|  / \  | \ | / ___|
+//   | | | | |_) |  _| |  \| | \___ \ / _ \ |  \| \___ \
+//   | |_| |  __/| |___| |\  |  ___) / ___ \| |\  |___) |
+//    \___/|_|   |_____|_| \_| |____/_/   \_\_| \_|____/
+//
+
+.open-sans-light{
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.open-sans-light-italic{
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+.open-sans-regular{
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.open-sans-regular-italic{
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.open-sans-semi-bold{
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+.open-sans-bold{
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+//    _        _  _____ ___
+//   | |      / \|_   _/ _ \
+//   | |     / _ \ | || | | |
+//   | |___ / ___ \| || |_| |
+//   |_____/_/   \_\_| \___/
+//
+
+.lato-light{
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.lato-regular{
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.lato-bold{
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+//    ____   ____ ____  ___ ____ _____   _____ ___  _   _ _____
+//   / ___| / ___|  _ \|_ _|  _ \_   _| |  ___/ _ \| \ | |_   _|
+//   \___ \| |   | |_) || || |_) || |   | |_ | | | |  \| | | |
+//    ___) | |___|  _ < | ||  __/ | |   |  _|| |_| | |\  | | |
+//   |____/ \____|_| \_\___|_|    |_|   |_|   \___/|_| \_| |_|
+//
+
+@font-face {
+    font-family: 'dear_joehannes_cgregular';
+    src: url('../fonts/joebob_graphics_-_dear_joehannes_cg-webfont.woff2') format('woff2'),
+         url('../fonts/joebob_graphics_-_dear_joehannes_cg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.dear-joehannes {
+  font-family: 'dear_joehannes_cgregular', serif;
+  font-style: normal;
+  font-weight: normal; 
+}
+
+.script-fonts{
+  .dear-joehannes;
+}
+
+
+
+
+
+
+
+
+
+/*
+.playfair-regular {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+*/
+
+/*
+.playfair-bold {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 600;
+}
+*/
+
+/*
+.poppins-light{
+  font-family: 'Poppins', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+*/
+
+/*
+.poppins-regular{
+  font-family: 'Poppins', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+*/
+
+/*
+.poppins-medium{
+  font-family: 'Poppins', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+*/
+
+
+
+
+
+
+
+
+
+//    ____ _______   ___     _____ ____  
+//   / ___|_   _\ \ / / |   | ____/ ___| 
+//   \___ \ | |  \ V /| |   |  _| \___ \ 
+//    ___) || |   | | | |___| |___ ___) |
+//   |____/ |_|   |_| |_____|_____|____/ 
+//                                       
+
+
+ 
+.body-font(@multiplier: 1){
+  .open-sans-light;
+  font-size: 15px * @multiplier;
+  line-height: 24px * @multiplier;
+}
+.body-font-bold(@multiplier: 1){
+  .open-sans-bold;
+  font-size: 15px * @multiplier;
+  line-height: 26px * @multiplier;
+}
+
+
+
+
+
+
+
+.header-h1-style(@multiplier: 1){
+  .lato-regular;
+  font-size: 38px * @multiplier;
+  line-height: 60px * @multiplier;
+  //line-height: 44px * @multiplier;
+}
+.header-h2-style(@multiplier: 1){
+  .open-sans-bold;
+  font-size: 20px * @multiplier;
+  line-height: 20px * @multiplier;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;  
+}
+.header-h3-style(@multiplier: 1){
+  .open-sans-semi-bold;
+  font-size: 21px * @multiplier;
+  line-height: 21px * @multiplier;
+  letter-spacing: 0.08em;
+}
+.header-h4-style(@multiplier: 1){
+  .open-sans-semi-bold;
+  font-size: 14px * @multiplier;
+  line-height: 17px * @multiplier;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.header-h5-style(@multiplier: 1){
+  .open-sans-bold;
+  font-size: 11px * @multiplier;
+  line-height: 11px * @multiplier;
+  letter-spacing: 0.08em;
+}
+
+.header-h6-style(@multiplier: 1){
+  .open-sans-semi-bold;
+  font-size: 11px * @multiplier;
+  line-height: 11px * @multiplier;
+  letter-spacing: 0.08em;
+}

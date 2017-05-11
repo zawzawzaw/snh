@@ -3791,14 +3791,20 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
   font-style: normal;
   font-weight: 600;
 }
-.julius-sans-one {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: normal;
+@font-face {
+  font-family: 'dear_joehannes_cgregular';
+  src: url('../fonts/joebob_graphics_-_dear_joehannes_cg-webfont.woff2') format('woff2'), url('../fonts/joebob_graphics_-_dear_joehannes_cg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.dear-joehannes {
+  font-family: 'dear_joehannes_cgregular', serif;
+  font-style: normal;
   font-weight: normal;
 }
 .script-fonts {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: normal;
+  font-family: 'dear_joehannes_cgregular', serif;
+  font-style: normal;
   font-weight: normal;
 }
 /*
@@ -3807,22 +3813,29 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
   font-style: normal;
   font-weight: 400;
 }
+*/
+/*
 .playfair-bold {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 600;
 }
-
+*/
+/*
 .poppins-light{
   font-family: 'Poppins', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 300;
 }
+*/
+/*
 .poppins-regular{
   font-family: 'Poppins', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+*/
+/*
 .poppins-medium{
   font-family: 'Poppins', Verdana, Geneva, sans-serif;
   font-style: normal;
@@ -4500,7 +4513,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   display: block;
   width: 22px;
   height: 33px;
-  background: transparent url('../images/icons/violet-arrow-left-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-left-landing.svg') center center no-repeat;
   background-size: 22px 33px;
   -webkit-background-size: 22px 33px;
 }
@@ -4508,7 +4521,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   display: block;
   width: 22px;
   height: 33px;
-  background: transparent url('../images/icons/violet-arrow-right-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-right-landing.svg') center center no-repeat;
   background-size: 22px 33px;
   -webkit-background-size: 22px 33px;
 }
@@ -4516,7 +4529,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   display: block;
   width: 30px;
   height: 45px;
-  background: transparent url('../images/icons/violet-arrow-left-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-left-landing.svg') center center no-repeat;
   background-size: 30px 45px;
   -webkit-background-size: 30px 45px;
 }
@@ -4524,7 +4537,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   display: block;
   width: 30px;
   height: 45px;
-  background: transparent url('../images/icons/violet-arrow-right-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-right-landing.svg') center center no-repeat;
   background-size: 30px 45px;
   -webkit-background-size: 30px 45px;
 }
@@ -4532,7 +4545,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   display: block;
   width: 25px;
   height: 37px;
-  background: transparent url('../images/icons/violet-arrow-left-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-left-landing.svg') center center no-repeat;
   background-size: 25px 37px;
   -webkit-background-size: 25px 37px;
 }
@@ -4540,7 +4553,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   display: block;
   width: 25px;
   height: 37px;
-  background: transparent url('../images/icons/violet-arrow-right-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-right-landing.svg') center center no-repeat;
   background-size: 25px 37px;
   -webkit-background-size: 25px 37px;
 }
@@ -4605,7 +4618,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
 }
 .square-cta:focus,
 .square-cta:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff;
 }
 .square-cta.full-width-version {
@@ -4614,7 +4627,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   text-align: center;
 }
 .square-cta.highlight-version {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff;
 }
 .square-cta.highlight-version:hover {
@@ -4641,7 +4654,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   text-transform: uppercase;
 }
 .arrow-cta:after,
@@ -4667,12 +4680,12 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
   .arrow-cta:focus,
   .download-cta:focus,
   .collapsable-arrow-cta:focus {
-    color: #e6b00f;
+    color: #003865;
   }
   .arrow-cta:hover,
   .download-cta:hover,
   .collapsable-arrow-cta:hover {
-    color: #e6b00f;
+    color: #003865;
   }
 }
 .arrow-cta:after {
@@ -4690,7 +4703,7 @@ html.fullscreen-component-open.is-html-mobile body.fullscreen-component-open #pa
 html.actual-mobile .square-cta:focus,
 html.actual-mobile .square-cta:hover {
   color: #ffffff;
-  background: #e6b00f;
+  background: #003865;
 }
 html.actual-mobile .square-cta:focus:after,
 html.actual-mobile .square-cta:hover:after {
@@ -4709,8 +4722,8 @@ html.actual-mobile .square-cta:hover:after {
   padding-bottom: 1px;
 }
 .underline-cta:hover {
-  color: #e6b00f;
-  border-color: #e6b00f;
+  color: #003865;
+  border-color: #003865;
 }
 .back-arrow-cta {
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
@@ -4718,7 +4731,7 @@ html.actual-mobile .square-cta:hover:after {
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   text-transform: uppercase;
   display: block;
 }
@@ -4839,7 +4852,7 @@ html.actual-mobile .square-cta:hover:after {
 }
 .scroll-down-cta:focus:before,
 .scroll-down-cta:hover:before {
-  color: #e6b00f;
+  color: #003865;
 }
 html.actual-mobile .scroll-down-cta:focus:before,
 html.actual-mobile .scroll-down-cta:hover:before {
@@ -4848,7 +4861,7 @@ html.actual-mobile .scroll-down-cta:hover:before {
 .package-popup-btn {
   font-size: 15px;
   line-height: 21px;
-  color: #e6b00f;
+  color: #003865;
   display: inline-block;
   vertical-align: top;
   *display: inline;
@@ -4865,7 +4878,7 @@ html.actual-mobile .scroll-down-cta:hover:before {
   -moz-osx-font-smoothing: grayscale;
   content: "\f138";
   display: block;
-  color: #e6b00f;
+  color: #003865;
   position: absolute;
   top: 1px;
   right: 1px;
@@ -4878,11 +4891,11 @@ html.actual-mobile .scroll-down-cta:hover:before {
 }
 .package-popup-btn:focus,
 .package-popup-btn:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .package-popup-btn:focus:after,
 .package-popup-btn:hover:after {
-  color: #e6b00f;
+  color: #003865;
 }
 /*
 .close-icon-btn{
@@ -4984,7 +4997,7 @@ body.scrolled #desktop-header .container-fluid {
 }
 body.permanent-scrolled #desktop-header .container-fluid.violet-bg,
 body.scrolled #desktop-header .container-fluid.violet-bg {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 body.permanent-scrolled #desktop-header-menu,
 body.scrolled #desktop-header-menu {
@@ -5092,7 +5105,7 @@ body.permanent-scrolled #desktop-menu-bar span {
 }
 #desktop-header-nav ul li a.selected,
 #desktop-header-nav ul li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 body.hotel #desktop-header-menu-logo-container {
   min-width: 280px;
@@ -5213,7 +5226,7 @@ body.hotel #desktop-header-nav ul li {
   padding-top: 12px;
 }
 #desktop-header-menu #brand-link:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #desktop-header-menu #group-link {
   height: 80px;
@@ -5221,7 +5234,7 @@ body.hotel #desktop-header-nav ul li {
   background-color: #787372;
 }
 #desktop-header-menu #group-link:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #desktop-header-menu #sage-links {
   background-color: #f7f1ef;
@@ -5282,10 +5295,10 @@ body.hotel #desktop-header-nav ul li {
   text-transform: uppercase;
 }
 #desktop-header-menu #sage-links ul li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 #destination-indicator {
-  background: #e6b00f;
+  background: #003865;
   padding-left: 30px;
   padding-top: 17px;
   padding-bottom: 17px;
@@ -5446,7 +5459,7 @@ body.hotel #desktop-header-nav ul li {
 #book-now {
   -webkit-box-shadow: 0px 0px 8px #333333;
   box-shadow: 0px 0px 8px #333333;
-  background-color: #e6b00f;
+  background-color: #003865;
   text-transform: uppercase;
   color: #ffffff;
   width: 140px;
@@ -5582,7 +5595,7 @@ body.hotel #desktop-header-nav ul li {
   content: "\f073";
   font-size: 18px;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -5612,6 +5625,9 @@ body.hotel #desktop-header-nav ul li {
 #desktop-header-booking-form .cta-container .square-cta {
   display: block;
   width: 100%;
+}
+#desktop-header-booking-form {
+  height: 447px;
 }
 #desktop-header-booking-calendar {
   position: absolute;
@@ -5647,7 +5663,7 @@ body.hotel #desktop-header-nav ul li {
   display: none;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar th {
-  color: #e6b00f;
+  color: #003865;
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -5669,7 +5685,7 @@ body.hotel #desktop-header-nav ul li {
 }
 #desktop-header-booking-calendar .daterangepicker .calendar th #hover-day {
   margin-top: -15px;
-  color: #e6b00f;
+  color: #003865;
   font-family: 'Lato', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -5699,11 +5715,11 @@ body.hotel #desktop-header-nav ul li {
   letter-spacing: 0.08em;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.active {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff !important;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.active:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.disabled {
   background-color: #b9b9b9;
@@ -5711,7 +5727,7 @@ body.hotel #desktop-header-nav ul li {
   color: #ffffff !important;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.in-range {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff !important;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.off {
@@ -5719,7 +5735,11 @@ body.hotel #desktop-header-nav ul li {
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td.available:hover {
   color: #ffffff;
-  background-color: #b68b0c;
+  background-color: #001c32;
+}
+#desktop-header-booking-calendar .daterangepicker {
+  height: 447px;
+  padding-top: 45px;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar th {
   font-size: 13px;
@@ -5731,7 +5751,7 @@ body.hotel #desktop-header-nav ul li {
   color: #747474;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar th .fa:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 #desktop-header-booking-calendar .daterangepicker .calendar td {
   color: #3b3b3b;
@@ -5830,7 +5850,7 @@ body.hotel #desktop-header-nav ul li {
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 #mobile-header .mobile-header-bg.violet-version {
-  background: #e6b00f;
+  background: #003865;
 }
 #mobile-header-content-container {
   position: relative;
@@ -6130,7 +6150,7 @@ body.scrolled #mobile-header .mobile-header-bg {
 }
 #mobile-header-menu-container #mobile-menu ul li a.selected,
 #mobile-header-menu-container #mobile-menu ul li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 #mobile-header-menu-container #mobile-menu.has-mobile-sub-menu {
   padding: 0px;
@@ -6250,13 +6270,13 @@ body.scrolled #mobile-header .mobile-header-bg {
   width: 80%;
 }
 #mobile-header-menu-container #brand-link:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #mobile-header-menu-container #group-link {
   background-color: #787372;
 }
 #mobile-header-menu-container #group-link:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #mobile-header-booking-form {
   display: none;
@@ -6367,7 +6387,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   content: "\f073";
   font-size: 18px;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -6446,7 +6466,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   display: none;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar th {
-  color: #e6b00f;
+  color: #003865;
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -6474,7 +6494,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   color: #555555;
   margin-top: -4px;
   margin-bottom: -7px;
-  color: #e6b00f;
+  color: #003865;
 }
 @media only screen and (max-width: 991px) {
   #mobile-header-booking-calendar .daterangepicker .calendar th #hover-day {
@@ -6500,11 +6520,11 @@ body.scrolled #mobile-header .mobile-header-bg {
   padding: 0px;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.active {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff !important;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.active:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.start-date {
   border-left: 3px solid #fff;
@@ -6515,7 +6535,7 @@ body.scrolled #mobile-header .mobile-header-bg {
   color: #ffffff !important;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.in-range {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff !important;
 }
 #mobile-header-booking-calendar .daterangepicker .calendar td.off {
@@ -7611,10 +7631,10 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
   line-height: 14px;
 }
 .default-copy p a {
-  color: #e6b00f;
+  color: #003865;
 }
 .default-copy p a:hover {
-  color: #866709;
+  color: #000000;
 }
 .default-copy .cta-container {
   padding-top: 36px;
@@ -7773,20 +7793,54 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
   letter-spacing: 0px;
 }
 .default-page-banner .default-page-banner-text .banner-text h1 {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: normal;
+  font-family: 'dear_joehannes_cgregular', serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 62px;
   line-height: 75px;
   color: #ffffff;
 }
 .default-page-banner .default-page-banner-text .banner-text h2 {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 .default-page-banner .default-page-banner-text .banner-text h1 {
-  font-size: 54px;
-  margin-bottom: 9px;
-  letter-spacing: -0.01em;
+  margin-bottom: 11px;
+  letter-spacing: 0.02em;
+}
+.default-page-banner .default-page-banner-text .banner-text .banner-search-form {
+  margin-top: 10px;
+  position: relative;
+  width: 45%;
+}
+.default-page-banner .default-page-banner-text .banner-text .banner-search-form input {
+  background: #ffffff;
+  width: 100%;
+  height: 50px;
+  color: #003865;
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 35px;
+  border: none;
+  padding-left: 20px;
+}
+.default-page-banner .default-page-banner-text .banner-text .banner-search-form .hotel-search-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #003865;
+  border: none;
+  width: 56px;
+  height: 50px;
+}
+.default-page-banner .default-page-banner-text .banner-text .banner-search-form .hotel-search-btn:before {
+  content: "";
+  background: url(../images/icons/search-icon.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  display: block;
 }
 .default-page-banner .default-page-banner-text .scroll-down-cta {
   position: absolute;
@@ -7975,7 +8029,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   font-size: 11px;
   line-height: 11px;
   text-transform: uppercase;
@@ -8017,7 +8071,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 .default-breadcrumb ul li a:focus,
 .default-breadcrumb ul li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .index-page-title-section {
   padding-bottom: 65px;
@@ -8322,7 +8376,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
     height: 8px;
   }
   .detail-banner-slider-section .detail-banner-slider .slick-dots li.slick-active button:before {
-    background-color: #e6b00f;
+    background-color: #003865;
   }
   .detail-banner-slider-section .detail-banner-slider-item .manic-image-container {
     height: 490px;
@@ -8426,7 +8480,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   height: 9px;
 }
 .add-mobile-slider-dots .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #default-introduction-section {
   padding-top: 35px;
@@ -8457,7 +8511,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   font-weight: 700;
   line-height: 11px;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   font-size: 11px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -8564,7 +8618,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   font-size: 17px;
   line-height: 25px;
   letter-spacing: 0em;
-  color: #e6b00f;
+  color: #003865;
   text-transform: none;
 }
 #brand-page-introduction-title h1 {
@@ -8616,7 +8670,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   font-size: 38px;
   line-height: 42px;
   letter-spacing: 0.025em;
-  color: #e6b00f;
+  color: #003865;
   display: inline-block;
   vertical-align: top;
   *display: inline;
@@ -8683,7 +8737,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 #default-promotion-filters ul li a:after {
   content: "";
-  border-bottom: 2px solid #e6b00f;
+  border-bottom: 2px solid #003865;
   width: 0px;
   position: absolute;
   bottom: -3px;
@@ -8691,7 +8745,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
 }
 #default-promotion-filters ul li a.selected,
 #default-promotion-filters ul li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 #default-promotion-filters ul li a.selected:after,
 #default-promotion-filters ul li a:hover:after {
@@ -8763,7 +8817,7 @@ body.is-tablet.is-tablet-portrait .default-page-banner-short .default-page-banne
   color: #747474;
 }
 .default-promotion-content-item .boxlist-item-box.default-promotion-content-box .default-promotion-content-item-copy h5 a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .default-promotion-content-item .boxlist-item-box.default-promotion-content-box .boxlist-item-content-price h6,
 .default-promotion-content-item .boxlist-item-box.default-promotion-content-box .boxlist-item-content-price p,
@@ -8859,7 +8913,7 @@ div.default-promotion-cta-container {
   height: 9px;
 }
 #page-brand-promotion-slider-mobile .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #page-brand-promotion-slider-mobile .slick-dots {
   padding-top: 20px;
@@ -8925,7 +8979,7 @@ div.default-promotion-cta-container {
   transition: 0.3s;
 }
 #default-moment-section #default-moment-content ul#social-buttons li a:hover i {
-  color: #e6b00f;
+  color: #003865;
 }
 #default-moment-section #default-moment-instagram-feed-container {
   font-size: 0;
@@ -9103,10 +9157,10 @@ div.default-promotion-cta-container {
 }
 #default-map-section .infoBox-text .address:hover h4,
 #default-map-section .infoBox-text .address:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #default-map-section .infoBox-text .address:hover .address-icon {
-  background: url('../images/icons/pin-icon-hover-chifley.png') no-repeat;
+  background: url('../images/icons/pin-icon-hover-landing.png') no-repeat;
 }
 #default-map-section .infoBox-text .telephone {
   padding-top: 15px;
@@ -9135,10 +9189,10 @@ div.default-promotion-cta-container {
 }
 #default-map-section .infoBox-text .telephone:hover h4,
 #default-map-section .infoBox-text .telephone:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #default-map-section .infoBox-text .telephone:hover .telephone-icon {
-  background: url('../images/icons/phone-icon-hover-chifley.png') no-repeat;
+  background: url('../images/icons/phone-icon-hover-landing.png') no-repeat;
 }
 #default-map-section .infoBox-text .mail {
   padding-top: 15px;
@@ -9170,10 +9224,10 @@ div.default-promotion-cta-container {
 #default-map-section .infoBox-text .mail:hover h4,
 #default-map-section .infoBox-text .mail:hover p,
 #default-map-section .infoBox-text .mail:hover a {
-  color: #e6b00f;
+  color: #003865;
 }
 #default-map-section .infoBox-text .mail:hover .mail-icon {
-  background: url('../images/icons/mail-icon-hover-chifley.png') no-repeat;
+  background: url('../images/icons/mail-icon-hover-landing.png') no-repeat;
 }
 #default-map-section .infoBox-text .arrow-left {
   width: 0;
@@ -9238,7 +9292,7 @@ div.default-promotion-cta-container {
   font-size: 27px;
   line-height: 32px;
   padding-bottom: 12px;
-  color: #e6b00f;
+  color: #003865;
 }
 #default-room-content .default-room-content-box .box-content .room-size {
   position: relative;
@@ -9470,7 +9524,7 @@ div.default-promotion-cta-container {
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: #e6b00f;
+  background: #003865;
   padding: 10px 20px;
   height: 35px;
 }
@@ -9634,7 +9688,7 @@ a.boxlist-item-content-image:hover {
 @media only screen and (max-width: 991px) {
   .boxlist-item-content-cta .square-cta.book-now,
   .boxlist-item-content-cta-mobile .square-cta.book-now {
-    background-color: #e6b00f;
+    background-color: #003865;
   }
 }
 .boxlist-item-content-cta-mobile .boxlist-item-content-price {
@@ -9812,7 +9866,7 @@ a.boxlist-item-content-image:hover {
 }
 .manic-expand-container .manic-expand-container-btn:focus,
 .manic-expand-container .manic-expand-container-btn:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .manic-expand-container .manic-expand-container-content {
   display: none;
@@ -10017,7 +10071,7 @@ a.boxlist-item-content-image:hover {
 #home-location-section #home-location-content #home-location-content-carousel .carousel-prev {
   position: absolute;
   background-color: transparent;
-  border: 2px solid #e6b00f;
+  border: 2px solid #003865;
   -webkit-border-radius: 125px;
   border-radius: 125px;
   -moz-background-clip: padding;
@@ -10103,7 +10157,7 @@ a.boxlist-item-content-image:hover {
   cursor: pointer;
 }
 #home-location-section #home-location-content #home-location-content-carousel .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #home-location-section #home-location-content .home-location-content-carousel-text {
   width: 90%;
@@ -10175,7 +10229,7 @@ a.boxlist-item-content-image:hover {
     height: 8px;
   }
   #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li.slick-active button:before {
-    background-color: #e6b00f;
+    background-color: #003865;
   }
   #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content .manic-image-container {
     height: 174px;
@@ -10352,7 +10406,7 @@ a.boxlist-item-content-image:hover {
   text-transform: uppercase;
 }
 #hotel-menu-section nav ul li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 @media only screen and (max-width: 1299px) {
   #hotel-menu-section nav ul li {
@@ -10386,7 +10440,7 @@ a.boxlist-item-content-image:hover {
   vertical-align: middle;
 }
 #hotel-introduction-section #hotel-introduction-breadcrumb a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 #hotel-introduction-section #hotel-introduction-breadcrumb i {
   font-size: 11px;
@@ -10404,7 +10458,7 @@ a.boxlist-item-content-image:hover {
   vertical-align: middle;
 }
 #hotel-introduction-section #hotel-introduction-breadcrumb span.active {
-  color: #e6b00f;
+  color: #003865;
 }
 #hotel-introduction-section #hotel-introduction-title {
   padding-bottom: 75px;
@@ -10693,7 +10747,7 @@ a.boxlist-item-content-image:hover {
 #hotel-reviews-section #hotel-reviews-slider .hotel-reviews-slider-text .stars i {
   font-size: 27px;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   padding: 0 7px;
 }
 #hotel-reviews-section #hotel-reviews-slider .hotel-reviews-slider-text .quote {
@@ -10745,7 +10799,7 @@ a.boxlist-item-content-image:hover {
 #hotel-reviews-section .carousel-prev {
   position: absolute;
   background-color: transparent;
-  border: 2px solid #e6b00f;
+  border: 2px solid #003865;
   -webkit-border-radius: 69px;
   border-radius: 69px;
   -moz-background-clip: padding;
@@ -10892,7 +10946,7 @@ a.boxlist-item-content-image:hover {
   font-size: 15px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #e6b00f;
+  color: #003865;
   text-align: center;
   padding-bottom: 15px;
 }
@@ -10955,7 +11009,7 @@ a.boxlist-item-content-image:hover {
     cursor: pointer;
   }
   #hotel-booking-section #hotel-booking-content ul.slick-dots li.slick-active button:before {
-    background-color: #e6b00f;
+    background-color: #003865;
   }
 }
 #hotel-attraction-section {
@@ -10999,7 +11053,7 @@ a.boxlist-item-content-image:hover {
 }
 #hotel-attraction-section .infoBox-text .address:hover h4,
 #hotel-attraction-section .infoBox-text .address:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #hotel-attraction-section .infoBox-text .arrow-left {
   width: 0;
@@ -11048,10 +11102,10 @@ a.boxlist-item-content-image:hover {
 }
 #hotel-attraction-section .infoBox-text.hotel-version .address:hover h4,
 #hotel-attraction-section .infoBox-text.hotel-version .address:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #hotel-attraction-section .infoBox-text.hotel-version .address:hover .address-icon {
-  background: url('../images/icons/pin-icon-hover-chifley.png') no-repeat;
+  background: url('../images/icons/pin-icon-hover-landing.png') no-repeat;
 }
 #hotel-attraction-section .infoBox-text.hotel-version .telephone {
   padding-top: 15px;
@@ -11080,10 +11134,10 @@ a.boxlist-item-content-image:hover {
 }
 #hotel-attraction-section .infoBox-text.hotel-version .telephone:hover h4,
 #hotel-attraction-section .infoBox-text.hotel-version .telephone:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #hotel-attraction-section .infoBox-text.hotel-version .telephone:hover .telephone-icon {
-  background: url('../images/icons/phone-icon-hover-chifley.png') no-repeat;
+  background: url('../images/icons/phone-icon-hover-landing.png') no-repeat;
 }
 #hotel-attraction-section .infoBox-text.hotel-version .mail {
   padding-top: 15px;
@@ -11115,10 +11169,10 @@ a.boxlist-item-content-image:hover {
 #hotel-attraction-section .infoBox-text.hotel-version .mail:hover h4,
 #hotel-attraction-section .infoBox-text.hotel-version .mail:hover p,
 #hotel-attraction-section .infoBox-text.hotel-version .mail:hover a {
-  color: #e6b00f;
+  color: #003865;
 }
 #hotel-attraction-section .infoBox-text.hotel-version .mail:hover .mail-icon {
-  background: url('../images/icons/mail-icon-hover-chifley.png') no-repeat;
+  background: url('../images/icons/mail-icon-hover-landing.png') no-repeat;
 }
 #hotel-attraction-section .infoBox-text.hotel-version .arrow-left {
   width: 0;
@@ -11222,7 +11276,7 @@ a.boxlist-item-content-image:hover {
   height: 9px;
 }
 #hotel-attraction-slider-mobile .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #hotel-attraction-slider-mobile .slick-dots {
   padding-top: 6px;
@@ -11299,7 +11353,7 @@ a.boxlist-item-content-image:hover {
   height: 9px;
 }
 #page-hotel-facilities-slider .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #page-hotel-facilities-slider .slick-dots {
   padding-top: 62px;
@@ -11315,7 +11369,7 @@ a.boxlist-item-content-image:hover {
 .page-hotel-facilities-slider-item .fa {
   font-size: 27px;
   line-height: 40px;
-  color: #e6b00f;
+  color: #003865;
   display: block;
 }
 .page-hotel-facilities-slider-item h4 {
@@ -11390,7 +11444,7 @@ a.boxlist-item-content-image:hover {
   height: 9px;
 }
 #page-hotel-facilities-slider-mobile .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #page-hotel-facilities-slider-mobile .slick-dots {
   padding-top: 23px;
@@ -11417,7 +11471,7 @@ a.boxlist-item-content-image:hover {
 .page-hotel-facilities-slider-item-mobile .fa {
   font-size: 27px;
   line-height: 40px;
-  color: #e6b00f;
+  color: #003865;
   display: block;
 }
 .page-hotel-facilities-slider-item-mobile h4 {
@@ -11500,7 +11554,7 @@ a.boxlist-item-content-image:hover {
   height: 9px;
 }
 #page-hotel-accommodation-02-slider-mobile .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #page-hotel-accommodation-02-slider-mobile .slick-dots {
   padding-top: 20px;
@@ -11524,10 +11578,10 @@ a.boxlist-item-content-image:hover {
   padding-bottom: 11px;
 }
 .page-hotel-accommodation-02-item-mobile .page-hotel-accommodation-02-item-mobile-title h5 {
-  color: #e6b00f;
+  color: #003865;
 }
 .page-hotel-accommodation-02-item-mobile .page-hotel-accommodation-02-item-mobile-title h5 a {
-  color: #e6b00f;
+  color: #003865;
 }
 .page-hotel-accommodation-02-item-mobile .page-hotel-accommodation-02-item-mobile-cta-container {
   bottom: 23px;
@@ -11560,7 +11614,7 @@ a.boxlist-item-content-image:hover {
   display: inline-block;
 }
 #brand-location-section #brand-location-content ul#brand-location-links li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 #brand-location-section #brand-location-content ul#brand-location-links li a:hover:after {
   display: inline-block;
@@ -11576,7 +11630,7 @@ a.boxlist-item-content-image:hover {
   position: absolute;
   top: -1px;
   right: -20px;
-  color: #e6b00f;
+  color: #003865;
 }
 #brand-location-section #brand-location-content .brand-location-content {
   visibility: hidden;
@@ -11649,7 +11703,7 @@ a.boxlist-item-content-image:hover {
 #home-location-section #home-location-content #home-location-content-carousel .carousel-prev {
   position: absolute;
   background-color: transparent;
-  border: 2px solid #e6b00f;
+  border: 2px solid #003865;
   -webkit-border-radius: 125px;
   border-radius: 125px;
   -moz-background-clip: padding;
@@ -11735,7 +11789,7 @@ a.boxlist-item-content-image:hover {
   cursor: pointer;
 }
 #home-location-section #home-location-content #home-location-content-carousel .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 #home-location-section #home-location-content .home-location-content-carousel-text {
   width: 90%;
@@ -11807,7 +11861,7 @@ a.boxlist-item-content-image:hover {
     height: 8px;
   }
   #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .slick-dots li.slick-active button:before {
-    background-color: #e6b00f;
+    background-color: #003865;
   }
   #home-location-section #home-location-content-mobile #home-location-content-mobile-carousel .carousel-content .manic-image-container {
     height: 374px;
@@ -11927,7 +11981,7 @@ a.boxlist-item-content-image:hover {
   margin-bottom: -1px;
 }
 #brand-all-location-section #brand-all-location-content-box .sub-title-bar h4 {
-  color: #e6b00f;
+  color: #003865;
 }
 #brand-all-location-section #brand-all-location-content-box .brand-all-location-content-box {
   -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
@@ -11997,7 +12051,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   transition: 0.3s;
 }
 #brand-moment-section #brand-moment-content ul#social-buttons li a:hover i {
-  color: #e6b00f;
+  color: #003865;
 }
 #brand-moment-section #brand-moment-instagram-feed-container {
   font-size: 0;
@@ -12109,7 +12163,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
 }
 #brand-map-section .infoBox-text .address:hover h4,
 #brand-map-section .infoBox-text .address:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #brand-map-section .infoBox-text .address:hover .address-icon {
   background: url(../images/icons/pin-icon-hover.png) no-repeat;
@@ -12135,7 +12189,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
 }
 #brand-map-section .infoBox-text .telephone:hover h4,
 #brand-map-section .infoBox-text .telephone:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #brand-map-section .infoBox-text .telephone:hover .telephone-icon {
   background: url(../images/icons/phone-icon-hover.png) no-repeat;
@@ -12162,7 +12216,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
 }
 #brand-map-section .infoBox-text .mail:hover h4,
 #brand-map-section .infoBox-text .mail:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 #brand-map-section .infoBox-text .mail:hover .mail-icon {
   background: url(../images/icons/mail-icon-hover.png) no-repeat;
@@ -12352,7 +12406,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   padding-left: 15px;
   padding-bottom: 9px;
 }
@@ -12499,7 +12553,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   background: transparent;
-  border: 3px solid #e6b00f;
+  border: 3px solid #003865;
   -webkit-border-radius: 40px;
   border-radius: 40px;
   -moz-background-clip: padding;
@@ -12537,7 +12591,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   display: block;
   width: 25px;
   height: 37px;
-  background: transparent url('../images/icons/violet-arrow-left-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-left-landing.svg') center center no-repeat;
   background-size: 25px 37px;
   -webkit-background-size: 25px 37px;
   left: 19px;
@@ -12549,7 +12603,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   display: block;
   width: 25px;
   height: 37px;
-  background: transparent url('../images/icons/violet-arrow-right-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-right-landing.svg') center center no-repeat;
   background-size: 25px 37px;
   -webkit-background-size: 25px 37px;
   right: 19px;
@@ -12631,7 +12685,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   color: #747474;
 }
 .brand-location-slider-item .brand-location-slider-item-copy h2 a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .brand-location-slider-item .brand-location-slider-item-copy p {
   font-size: 15px;
@@ -12709,7 +12763,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   height: 9px;
 }
 #brand-all-location-slider-version-02-mobile .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 .brand-location-slider-item-mobile {
   padding-bottom: 15px;
@@ -12740,7 +12794,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   line-height: 24px !important;
 }
 .brand-location-slider-item-mobile .brand-location-slider-item-copy-mobile h2 a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .brand-location-slider-item-mobile .brand-location-slider-item-copy-mobile h4 {
   font-size: 13px !important;
@@ -13224,10 +13278,10 @@ body.brand-alternative-page{
   }
 }
 .room-index-page-item .room-index-page-item-title h5 {
-  color: #e6b00f;
+  color: #003865;
 }
 .room-index-page-item .room-index-page-item-title h5 a {
-  color: #e6b00f;
+  color: #003865;
 }
 .room-index-page-item .room-index-page-item-detail {
   padding-bottom: 15px;
@@ -13252,10 +13306,10 @@ body.brand-alternative-page{
   padding-bottom: 13px;
 }
 .hotel-page-item .hotel-page-item-title h5 {
-  color: #e6b00f;
+  color: #003865;
 }
 .hotel-page-item .hotel-page-item-title h5 a {
-  color: #e6b00f;
+  color: #003865;
 }
 .hotel-page-item .hotel-page-item-detail {
   padding-bottom: 15px;
@@ -13390,7 +13444,7 @@ body.brand-alternative-page{
   content: "\f073";
   font-size: 18px;
   letter-spacing: 0.08em;
-  color: #e6b00f;
+  color: #003865;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -13453,7 +13507,7 @@ body.brand-alternative-page{
   display: none;
 }
 .detail-page-booking-form #booking-calendar .daterangepicker .calendar th {
-  color: #e6b00f;
+  color: #003865;
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -13503,11 +13557,11 @@ body.brand-alternative-page{
   letter-spacing: 0.08em;
 }
 .detail-page-booking-form #booking-calendar .daterangepicker .calendar td.active {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff !important;
 }
 .detail-page-booking-form #booking-calendar .daterangepicker .calendar td.active:hover {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 .detail-page-booking-form #booking-calendar .daterangepicker .calendar td.disabled {
   background-color: #b9b9b9;
@@ -13515,7 +13569,7 @@ body.brand-alternative-page{
   color: #ffffff !important;
 }
 .detail-page-booking-form #booking-calendar .daterangepicker .calendar td.in-range {
-  background-color: #e6b00f;
+  background-color: #003865;
   color: #ffffff !important;
 }
 .detail-page-booking-form #booking-calendar .daterangepicker .calendar td.off {
@@ -13523,7 +13577,7 @@ body.brand-alternative-page{
 }
 .detail-page-booking-form #booking-calendar .daterangepicker .calendar td.available:hover {
   color: #ffffff;
-  background-color: #b68b0c;
+  background-color: #001c32;
 }
 .detail-page-other-info {
   width: 100%;
@@ -13570,16 +13624,16 @@ body.brand-alternative-page{
   }
 }
 .room-detail-page-item .room-detail-page-item-title h5 {
-  color: #e6b00f;
+  color: #003865;
 }
 .room-detail-page-item .room-detail-page-item-title h5 a {
-  color: #e6b00f;
+  color: #003865;
 }
 .room-detail-page-item .room-detail-page-item-content-copy h5 {
-  color: #e6b00f;
+  color: #003865;
 }
 .room-detail-page-item .room-detail-page-item-content-copy h5 a {
-  color: #e6b00f;
+  color: #003865;
 }
 .room-detail-page-item .room-detail-page-item-content-detail {
   padding-top: 10px;
@@ -13645,7 +13699,7 @@ body.brand-alternative-page{
   font-size: 27px;
   line-height: 32px;
   padding-bottom: 12px;
-  color: #e6b00f;
+  color: #003865;
 }
 #detail-page-content-2-section #room-content .room-content-box .box-content .room-size {
   position: relative;
@@ -13761,7 +13815,7 @@ body.brand-alternative-page{
   display: block;
 }
 .detail-list-item .detail-list-item-copy a.detail-list-item-title:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 @media all and (max-width: 480px) {
   .detail-list-item .detail-list-item-copy {
@@ -13817,7 +13871,7 @@ body.brand-alternative-page{
   height: 9px;
 }
 .detail-list-item-image-slider .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 .detail-list-item-image-slider .slick-dots {
   text-align: right;
@@ -13865,7 +13919,7 @@ body.brand-alternative-page{
     padding-top: 13px;
   }
   .detail-list-item-container .detail-list-item .detail-list-item-copy .default-copy h5 {
-    color: #e6b00f;
+    color: #003865;
   }
   .detail-list-item-container .detail-list-item .detail-list-item-copy .default-copy .read-more-cta-container {
     display: block;
@@ -14041,7 +14095,7 @@ body.brand-alternative-page{
   height: 9px;
 }
 .detail-list-item-slider-mobile .slick-dots li.slick-active button:before {
-  background-color: #e6b00f;
+  background-color: #003865;
 }
 .detail-list-item-slider-mobile .slick-dots {
   text-align: center;
@@ -14097,13 +14151,13 @@ body.brand-alternative-page{
   margin-bottom: 15px;
 }
 #detail-page-content .detail-page-content-title h5 {
-  color: #e6b00f;
+  color: #003865;
 }
 #detail-page-content .detail-page-content-subtitle {
   margin-bottom: 15px;
 }
 #detail-page-content .detail-page-content-subtitle h5 {
-  color: #e6b00f;
+  color: #003865;
 }
 #detail-page-content .detail-page-content-description {
   margin-bottom: 23px;
@@ -14532,7 +14586,7 @@ body.brand-alternative-page{
   color: #747474;
 }
 .dining-detail-page-item .dining-detail-page-item-content-copy h5 a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .dining-detail-page-item .dining-detail-page-item-content-copy .underline-cta-container {
   padding-top: 3px;
@@ -14592,7 +14646,7 @@ body.brand-alternative-page{
   color: #747474;
 }
 .offer-detail-page-item .offer-detail-page-item-content-copy h5 a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 .offer-detail-page-item .offer-detail-page-item-content-copy .underline-cta-container {
   padding-top: 3px;
@@ -14843,7 +14897,7 @@ body.brand-alternative-page{
 }
 .generic-map .infoBox-text .address:hover h4,
 .generic-map .infoBox-text .address:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 .generic-map .infoBox-text .address:hover .address-icon {
   background: url(../images/icons/pin-icon-hover.png) no-repeat;
@@ -14869,7 +14923,7 @@ body.brand-alternative-page{
 }
 .generic-map .infoBox-text .telephone:hover h4,
 .generic-map .infoBox-text .telephone:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 .generic-map .infoBox-text .telephone:hover .telephone-icon {
   background: url(../images/icons/phone-icon-hover.png) no-repeat;
@@ -14896,7 +14950,7 @@ body.brand-alternative-page{
 }
 .generic-map .infoBox-text .mail:hover h4,
 .generic-map .infoBox-text .mail:hover p {
-  color: #e6b00f;
+  color: #003865;
 }
 .generic-map .infoBox-text .mail:hover .mail-icon {
   background: url(../images/icons/mail-icon-hover.png) no-repeat;
@@ -15015,7 +15069,7 @@ body.brand-alternative-page{
   bottom: -3px;
   left: 0px;
   width: 0;
-  border-bottom: 2px solid #e6b00f;
+  border-bottom: 2px solid #003865;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
@@ -15023,7 +15077,7 @@ body.brand-alternative-page{
 }
 #gallery-page-tab-container nav ul li a.selected,
 #gallery-page-tab-container nav ul li a:hover {
-  color: #e6b00f;
+  color: #003865;
 }
 #gallery-page-tab-container nav ul li a.selected:before,
 #gallery-page-tab-container nav ul li a:hover:before {
@@ -15034,7 +15088,7 @@ body.brand-alternative-page{
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  color: #e6b00f;
+  color: #003865;
   border: none;
   border-bottom: 1px solid #cccccc;
   text-transform: uppercase;
@@ -15256,7 +15310,7 @@ body.brand-alternative-page{
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   background: transparent;
-  border: 3px solid #e6b00f;
+  border: 3px solid #003865;
   -webkit-border-radius: 35px;
   border-radius: 35px;
   -moz-background-clip: padding;
@@ -15294,7 +15348,7 @@ body.brand-alternative-page{
   display: block;
   width: 22px;
   height: 33px;
-  background: transparent url('../images/icons/violet-arrow-left-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-left-landing.svg') center center no-repeat;
   background-size: 22px 33px;
   -webkit-background-size: 22px 33px;
   left: 18px;
@@ -15306,7 +15360,7 @@ body.brand-alternative-page{
   display: block;
   width: 22px;
   height: 33px;
-  background: transparent url('../images/icons/violet-arrow-right-chifley.svg') center center no-repeat;
+  background: transparent url('../images/icons/violet-arrow-right-landing.svg') center center no-repeat;
   background-size: 22px 33px;
   -webkit-background-size: 22px 33px;
   right: 18px;

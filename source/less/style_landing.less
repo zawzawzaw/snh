@@ -11,14 +11,14 @@
 
 
 @is_sage: false;
-@is_country_comfort: true;
+@is_country_comfort: false;
 @is_next: false;
 @is_chifley: false;
 @is_sundowner: false;
-@is_kafnu: true;
-@is_brand_landing: false;
+@is_kafnu: false;
+@is_brand_landing: true;
 
-@brand-suffix: "-kafnu";
+@brand-suffix: "-landing";
 
 @black: #000000;
 @white: #ffffff;
@@ -44,8 +44,10 @@
 // @light-violet: #7d0052;
 // @violet: #7d0052;
 
-@light-violet: #b9d3d9;
-@violet: #b9d3d9;
+// @light-violet: #2c87ad;
+@light-violet: #003865;
+// @violet: #2c87ad;
+@violet: #003865;
 @dark-violet-2: darken(@violet, 10%);
 @dark-violet: #b2a4a0;
 @light-brown: #b1a5a0;
@@ -72,7 +74,7 @@
 
 // @import "sage/animation.less";
 // @import "sage/fonts.less";
-@import "sage/fonts_kafnu.less";
+@import "sage/fonts_landing.less";
 @import "sage/general.less";
 @import "sage/images.less";
 
@@ -178,69 +180,5 @@
   .daterangepicker .calendar th #hover-day{
     margin-top: 0;
     margin-bottom: -20px;
-  }
-}
-
-
-//////// OVERRIDE FOR COLORS 
-
-
-
-
-@kafnu-grey: #606468;
-
-
-.square-cta{
-  &:focus,
-  &:hover{
-    background-color: @violet;
-    color: @kafnu-grey;
-  }
-
-  &.highlight-version{
-    color: @kafnu-grey;
-    &:focus,
-    &:hover{
-      background-color: @dark-violet;
-      color: @white;
-    }
-
-  }
-}
-
-
-
-
-.arrow-cta, .download-cta {
-  color: #747474;
-
-
-  
-  &:focus, 
-  &:hover{
-    color: @violet;
-  }
-}
-
-
-
-#book-now {
-  color: @kafnu-grey;
-  box-shadow: none!important;
-}
-body.permanent-scrolled,
-body.scrolled {
-  #book-now {
-    box-shadow: none!important;
-  }
-}
-.boxlist-item-tag{
-  color: @kafnu-grey;
-}
-
-
-#destination-indicator{
-  p{
-    color: @kafnu-grey;
   }
 }

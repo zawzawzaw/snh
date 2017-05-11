@@ -267,6 +267,53 @@
         font-size: 62px;
         line-height: 75px;
         color: @white;
+      }      
+    }
+
+    .banner-text when (@is_brand_landing){
+      h2{
+        margin-bottom: 11px;
+      }
+      h1{
+        margin-bottom: 11px;
+        letter-spacing: 0.02em;
+      }
+      .banner-search-form {
+        margin-top: 10px;
+        position: relative;
+        width: 45%;
+        input {
+          background: @white;
+          width: 100%;
+          height: 50px;
+          color: #003865;
+          .open-sans-semi-bold;
+          font-size: 20px;
+          line-height: 35px;
+          border: none;
+          padding-left: 20px;
+        }
+        .hotel-search-btn {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          background: @light-violet;
+          border: none;
+          width: 56px;
+          height: 50px;
+
+
+          &:before {
+            content: "";
+            background: url(../images/icons/search-icon.svg) no-repeat;
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            display: block;
+          }
+          
+
+        }
       }
     }
 
@@ -294,7 +341,7 @@
       h1{
         margin-bottom: 11px;
         letter-spacing: 0.02em;
-      }
+      }      
     }
 
     .banner-text when (@is_chifley){

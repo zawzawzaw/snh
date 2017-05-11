@@ -25,7 +25,49 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
-  </head>
+
+
+<script type="text/javascript">
+  
+  // simple preloader script
+  
+  window.preloader_counter = 0;
+  window.preloader_js = 0;
+  window.preloader_css = 0;
+
+  window.preloader_interval = setInterval(function(){
+
+    var counter = window.preloader_counter;
+    var target = (window.preloader_js * 0.75) + (window.preloader_css * 0.25);
+    counter += (target - counter) / 5;
+    window.preloader_counter = counter;
+
+    var display = Math.floor(Math.round(counter * 10) / 10);
+
+    var number_element = document.getElementById('page-preloader-number');
+    if(number_element){
+      number_element.innerHTML = (display + '%');
+    }
+
+    var line_element = document.getElementById('page-preloader-line-b');
+    if (line_element) {
+      line_element.style.width = (display + '%');
+    }
+    
+
+    if (display >= 100) {
+
+      var preloader = document.getElementById('page-preloader');
+      if (preloader) {
+        preloader.className += ' preload-complete';
+      }
+
+      clearInterval(window.preloader_interval);
+    }
+
+  }, 50);
+
+</script>  </head>
 
 
   <body class="brand-location-page permanent-scrolled">
@@ -1105,15 +1147,24 @@
     var PAGE_JS                   = "js/page-brand.min.js";
     var PAGE_CSS                  = "css/style.css";
     
-    head.load(PAGE_CSS);
+    head.load(PAGE_CSS, function(){
+
+      window.preloader_css = 100;
+
+    });
+
     head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
+
+      window.preloader_js = 50;
 
       head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {
           
+        window.preloader_js = 100;
+
         page = new sagewest.page.Brand({});
-        $('body').addClass('preload-start');
 
       });
+
     });
 
     // start preload
@@ -1213,6 +1264,7 @@
         </div> <!-- footer-menu-container -->
 
         
+        
 
       </div>
 
@@ -1223,7 +1275,7 @@
             <div class="footer-contact-item">
               <h4>Central Reservations</h4>
               <p>
-                1800 303 186 (Within Australia) <br>
+                1300 346 835 (Within Australia) <br>
                 0800 480 274 (Within New Zealand)
               </p>
             </div>
