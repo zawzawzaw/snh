@@ -94,7 +94,7 @@
     <div class="row">
       <div class="col-md-12">
         <div id="hotel-introduction-breadcrumb">
-          <a href="#">silverneedle hospitality</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="brand_alternative.php">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
+          <a href="brand_landing.php">NEXT Hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="brand_alternative.php">sage hotels</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><span class="active">sage west perth</span>
         </div>
         <div id="hotel-introduction-title">
           <h1>We’re so glad to have you stay</h1>

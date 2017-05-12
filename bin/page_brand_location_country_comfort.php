@@ -25,7 +25,7 @@
 
             <div class="default-breadcrumb">
               <ul>
-                <li><a href="javascript:void(0);">silverneedle hospitality</a></li>
+                <li><a href="brand_landing.php">NEXT Hotels</a></li>
                 <li><a href="brand_alternative.php">Country Comfort</a></li>
                 <li>locations</li>
               </ul>
