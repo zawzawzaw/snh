@@ -7856,6 +7856,10 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
 .default-page-banner .default-page-banner-mobile-image .manic-image-container {
   height: 240px;
 }
+.default-page-banner #banner-search-form-scroll-target {
+  position: absolute;
+  top: 35%;
+}
 .default-page-banner .default-page-banner-text {
   position: absolute;
   width: 100%;
@@ -7913,7 +7917,7 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
   background: #ffffff;
   width: 100%;
   height: 50px;
-  color: #003865;
+  color: #747474;
   font-family: 'Open Sans', Verdana, Geneva, sans-serif;
   font-style: normal;
   font-weight: 600;

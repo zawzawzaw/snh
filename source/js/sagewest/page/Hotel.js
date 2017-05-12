@@ -532,14 +532,15 @@ sagewest.page.Hotel.prototype.others = function(){
               scrolled = false;
               $("#desktop-menu-bar").addClass('open');
               $("body").removeClass('scrolled');            
-              // $('#header-wrapper').removeClass('shadow');
-              // $('.arrow').show();
+              
           }
         }
         else {
           var position = 467;
           if( ( scrollPos >= position ) ) {
-              $("#desktop-menu-bar").removeClass('open');                        
+            if(!$("#desktop-header-menu").is(":visible")) 
+              $("#desktop-menu-bar").removeClass('open'); 
+                                     
               $("body").addClass('scrolled');            
               if(scrolled==false && initialLoad==false) {                
                   scrolled = true;               
@@ -550,8 +551,7 @@ sagewest.page.Hotel.prototype.others = function(){
               scrolled = false;
               $("#desktop-menu-bar").addClass('open');
               $("body").removeClass('scrolled');            
-              // $('#header-wrapper').removeClass('shadow');
-              // $('.arrow').show();
+              
           }  
         }
         

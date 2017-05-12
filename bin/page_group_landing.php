@@ -25,9 +25,10 @@
           data-image-mobile="images_cms/brand_landing/brand-banner-mobile.jpg">
       </div>
     </div>
-
+    
+    <div id="banner-search-form-scroll-target"></div>
     <div class="default-page-banner-text">   
-      <div class="banner-text scroll-target" data-value="banner-text">
+      <div class="banner-text" data-value="banner-text">
         <h2>For the modern traveller</h2>
         <!-- <img src="images/logo/brand-banner-text.svg" class="visible-md visible-lg">       -->
         <h1>Welcome to NEXT Hotels</h1>

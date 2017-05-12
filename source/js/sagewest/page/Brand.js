@@ -752,7 +752,10 @@ sagewest.page.Brand.prototype.others = function(){
         var scrollPos = $(window).scrollTop();
         
         if( ( scrollPos != 0 ) ) {
-            $("#desktop-menu-bar").removeClass('open');                        
+            
+            if(!$("#desktop-header-menu").is(":visible")) 
+              $("#desktop-menu-bar").removeClass('open');                        
+            
             $("body").addClass('scrolled');            
             if(scrolled==false && initialLoad==false) {                
                 scrolled = true;               
@@ -760,11 +763,11 @@ sagewest.page.Brand.prototype.others = function(){
                 
         }       
         else if( ( scrollPos === 0 ) ) {
-            scrolled = false;
+
+            scrolled = false;            
             $("#desktop-menu-bar").addClass('open');
-            $("body").removeClass('scrolled');            
-            // $('#header-wrapper').removeClass('shadow');
-            // $('.arrow').show();
+            $("body").removeClass('scrolled');   
+
         }
     }
 

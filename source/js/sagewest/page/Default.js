@@ -275,11 +275,12 @@ sagewest.page.Default.prototype.create_min_height = function(){
 sagewest.page.Default.prototype.create_autocompelete_search = function(){
   if($("#hotel_search").length) {
 
-    $("#hotel_search").on("click keypress", function(e){
-      // e.preventDefault();
-      window.location.hash = "banner-text";
-      $(this).focus();
-    });
+    $("#hotel_search").on("click", function(e){
+      
+      var scroll_target = $("#banner-search-form-scroll-target");
+      this.controller.scrollTo(scroll_target[0]);
+
+    }.bind(this));
 
     $.widget( "custom.catcomplete", $.ui.autocomplete, {
       _create: function() {
@@ -293,14 +294,14 @@ sagewest.page.Default.prototype.create_autocompelete_search = function(){
         $.each( items, function( index, item ) {
           var li;     
           
-          if ( item.country != currentMainCategory ) {             
-            ul.append( "<li class='ui-autocomplete-main-category'>" + item.country + "</li>" );
-            currentMainCategory = item.country;
-          }
-          if ( item.city != currentCategory ) {             
-            ul.append( "<li class='ui-autocomplete-category'>" + item.city + "</li>" );
-            currentCategory = item.city;
-          }
+          // if ( item.country != currentMainCategory ) {             
+          //   ul.append( "<li class='ui-autocomplete-main-category'>" + item.country + "</li>" );
+          //   currentMainCategory = item.country;
+          // }
+          // if ( item.city != currentCategory ) {             
+          //   ul.append( "<li class='ui-autocomplete-category'>" + item.city + "</li>" );
+          //   currentCategory = item.city;
+          // }
           li = that._renderItemData( ul, item );
           if ( item.city ) {
             li.attr( "aria-label", item.city + " : " + item.label );
@@ -310,22 +311,48 @@ sagewest.page.Default.prototype.create_autocompelete_search = function(){
     });
 
     var data = [
-      { value: "Country Comfort Adelaide Australia", label: "Country Comfort Adelaide", city: "Adelaide", country: "Australia" },
-      { value: "Country Comfort Adelaide Manor Australia", label: "Country Comfort Adelaide Manor", city: "Adelaide", country: "Australia" },
-      { value: "Sage Hotel Adelaid Australia", label: "Sage Hotel Adelaid", city: "Adelaide", country: "Australia" },
-      { value: "Country Comfort Amity Motel Albany Australia", label: "Country Comfort Amity Motel Albany", city: "ALBANY", country: "Australia" },
+      { value: "Riva Arun Bangkok Thailand", label: "Riva Arun", city: "Bangkok", country: "Thailand" },
+      { value: "Riva Surya Bangkok Thailand", label: "Riva Surya", city: "Bangkok", country: "Thailand" },
+      { value: "Kiridara Luang Prabang Laos", label: "Kiridara", city: "Luang Prabang", country: "Laos" },
 
-      { value: "Sage West Perth Queensland Australia", label: "Sundowner Rockhampton Gladstone ", city: "Queensland", country: "Australia" },
-      { value: "Sundowner Rockhampton Gladstone Queensland Australia", label: "Sundowner Rockhampton Gladstone ", city: "Queensland", country: "Australia" },
-      { value: "Chifley Plaza Townsville Queensland Australia", label: "Chifley Plaza Townsville", city: "Queensland", country: "Australia" },
-      { value: "Sage Hotel James Street Queensland Australia", label: "Sage Hotel James Street", city: "Queensland", country: "Australia" },
       { value: "NEXT Hotels Brisbane Australia", label: "NEXT Hotels Brisbane", city: "Brisbane", country: "Australia" },
+      { value: "Sage West Perth Australia", label: "Sage West Perth", city: "Perth", country: "Australia" },
+      { value: "Sage Hotel Adelaide Australia", label: "Sage Hotel Adelaide", city: "Adelaide", country: "Australia" },
+      { value: "Sage Hotel James Street Brisbane Australia", label: "Sage Hotel James Street", city: "Brisbane", country: "Australia" },
+      { value: "Sage Hotel Wollongong Australia", label: "Sage Hotel Wollongong", city: "Wollongong", country: "Australia" },
+      
+      { value: "Chifley Alice Springs Resort Australia", label: "Chifley Alice Springs Resort", city: "Alice Springs", country: "Australia" },
+      { value: "Chifley Plaza Townsville Australia", label: "Chifley Plaza Townsville", city: "Townsville", country: "Australia" },
+      { value: "Chifley Executive Suites Newcastle Australia", label: "Chifley Executive Suites Newcastle", city: "Newcastle", country: "Australia" },
+      { value: "Chifley Apartments Newcastle Australia", label: "Chifley Apartments Newcastle", city: "Newcastle", country: "Australia" },
+      { value: "The Chifley on South Terrace Australia", label: "The Chifley on South Terrace", city: "South Terrace", country: "Australia" },
+
+      { value: "Sundowner Rockhampton Gladstone Australia", label: "Sundowner Rockhampton Gladstone", city: "Gladstone", country: "Australia" },
+      { value: "Sundowner Twin Towns Motel Australia", label: "Sundowner Twin Towns Motel", city: "Twin Towns", country: "Australia" },
+      { value: "Sundowner Townhouse Goondiwindi Australia", label: "Sundowner Townhouse Goondiwindi", city: "Goondiwindi", country: "Australia" },
+      { value: "Sundowner Bendigo Golden Reef Australia", label: "Sundowner Bendigo Golden Reef", city: "Bendigo Golden Reef", country: "Australia" },
+      { value: "Sundowner Dubbo Aberdeen Motor Inn Australia", label: "Sundowner Dubbo Aberdeen Motor Inn", city: "Aberdeen", country: "Australia" },
+      { value: "Sundowner Echuca Nirebo Australia", label: "Sundowner Echuca Nirebo", city: "Echuca Nirebo", country: "Australia" },
+      { value: "Sundowner Gardenia Motor Inn Bass Hill Australia", label: "Sundowner Gardenia Motor Inn Bass Hill", city: "Bass Hill", country: "Australia" },
+      { value: "Sundowner Horsham Westlander Australia", label: "Sundowner Horsham Westlander", city: "Horsham Westlander", country: "Australia" },
+      { value: "Sundowner Hume Country Motor Inn Australia", label: "Sundowner Hume Country Motor Inn", city: "Hume", country: "Australia" },
+      { value: "Sundowner Huskisson Jervis Bay Australia", label: "Sundowner Huskisson Jervis Bay", city: "Jervis Bay", country: "Australia" },
+
+      { value: "Country Comfort Inner City Perth Australia", label: "Country Comfort Inner City Perth", city: "Perth", country: "Australia" },
+      { value: "Country Comfort Amity Motel Albany Australia", label: "Country Comfort Amity Motel Albany", city: "Albany", country: "Australia" },
+      { value: "Country Comfort Adelaide Australia", label: "Country Comfort Adelaide", city: "Adelaide", country: "Australia" },
+      { value: "Country Comfort Mt Gambier Australia", label: "Country Comfort Mt Gambier", city: "Mt Gambier", country: "Australia" },
+      { value: "Country Comfort Cowra Australia", label: "Country Comfort Cowra", city: "Cowra", country: "Australia" },
+      { value: "Country Comfort Hunts Liverpool Australia", label: "Country Comfort Hunts Liverpool", city: "Hunts Liverpool", country: "Australia" },
+      { value: "Country Comfort Newcastle Airport & Convention Centre Australia", label: "Country Comfort Newcastle Airport & Convention Centre", city: "Newcastle", country: "Australia" },
+      { value: "Country Comfort Newcastle Airport & Convention Centre Australia", label: "Country Comfort Newcastle Airport & Convention Centre", city: "Newcastle", country: "Australia" },
+      { value: "Country Comfort Port Macquarie Waters Edge Boutique Australia", label: "Country Comfort Port Macquarie Waters Edge Boutique", city: "Port Macquarie", country: "Australia" },
+      { value: "Country Comfort Armidal Australia", label: "Country Comfort Armidal", city: "Armidal", country: "Australia" },
+      { value: "Country Comfort Coffs Harbour Australia", label: "Country Comfort Coffs Harbour", city: "Coffs Harbour", country: "Australia" },
+      
       { value: "Country Comfort Toowoomba Australia", label: "Country Comfort Toowoomba", city: "Toowoomba", country: "Australia" },
       { value: "Country Comfort Bundaberg International Australia", label: "Country Comfort Bundaberg International", city: "Bundaberg", country: "Australia" },
-      { value: "Country Comfort Gin Gin Australia", label: "Country Comfort Gin Gin", city: "Gin Gin", country: "Australia" },      
-      { value: "Riva Arun Bangkok Thailand", label: "Riva Arun", city: "Bangkok", country: "Thailand" }
-      { value: "Riva Surya Bangkok Thailand", label: "Riva Surya", city: "Bangkok", country: "Thailand" }
-      { value: "Kiridara Luang Prabang Laos", label: "Kiridara", city: "Luang Prabang", country: "Laos" }
+      { value: "Country Comfort Gin Gin Australia", label: "Country Comfort Gin Gin", city: "Gin Gin", country: "Australia" }      
     ];
  
     $("#hotel_search").catcomplete({
@@ -1331,9 +1358,18 @@ sagewest.page.Default.prototype.promo_filter = function() {
 sagewest.page.Default.prototype.common_menu = function() {
 
   $("#desktop-menu-bar").on("click", function(e){
-      e.preventDefault();
-      $("#desktop-header-menu").slideToggle(300);
-      $("#desktop-header").toggleClass("open");
+      e.preventDefault();      
+      $("#desktop-header-menu").slideToggle(300, function(){
+        if(!$("#desktop-header-menu").is(":visible") && $("body").hasClass("scrolled")) {          
+          $(this).removeClass("open");
+        }  
+      }.bind(this));
+      $("#desktop-header").toggleClass("open");      
+
+      if($("#desktop-header-menu").is(":visible")) {
+        $(this).addClass("open");
+      }
+
     });
 
     // if (this.is_brand_alternative_version == false) {

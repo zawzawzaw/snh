@@ -7808,6 +7808,10 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
 .default-page-banner .default-page-banner-mobile-image .manic-image-container {
   height: 240px;
 }
+.default-page-banner #banner-search-form-scroll-target {
+  position: absolute;
+  top: 35%;
+}
 .default-page-banner .default-page-banner-text {
   position: absolute;
   width: 100%;
