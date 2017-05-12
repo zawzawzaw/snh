@@ -48,8 +48,9 @@ goog.addDependency('../../../../js/sagewest/component/GalleryData.js', ['sagewes
 goog.addDependency('../../../../js/sagewest/component/GalleryDetailTab.js', ['sagewest.component.GalleryDetailTab'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/GalleryIndexTab.js', ['sagewest.component.GalleryIndexTab'], ['goog.events.Event', 'goog.events.EventTarget', 'sagewest.component.GalleryData']);
 goog.addDependency('../../../../js/sagewest/component/GenericMap.js', ['sagewest.component.GenericMap'], ['goog.events.Event', 'goog.events.EventTarget']);
-goog.addDependency('../../../../js/sagewest/component/HomeMap.js', ['sagewest.component.HomeMap'], ['goog.events.Event', 'goog.events.EventTarget', 'sagewest.component.HomeMapItem']);
+goog.addDependency('../../../../js/sagewest/component/HomeMap.js', ['sagewest.component.HomeMap'], ['goog.events.Event', 'goog.events.EventTarget', 'sagewest.component.HomeMapItem', 'sagewest.component.HomeMapOverlayItem']);
 goog.addDependency('../../../../js/sagewest/component/HomeMapItem.js', ['sagewest.component.HomeMapItem'], ['goog.events.Event', 'goog.events.EventTarget']);
+goog.addDependency('../../../../js/sagewest/component/HomeMapOverlayItem.js', ['sagewest.component.HomeMapOverlayItem'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/MobileHeader.js', ['sagewest.component.MobileHeader'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/PackagesPopup.js', ['sagewest.component.PackagesPopup'], ['goog.events.Event', 'goog.events.EventTarget']);
 goog.addDependency('../../../../js/sagewest/component/ReviewContent.js', ['sagewest.component.ReviewContent'], ['goog.events.Event', 'goog.events.EventTarget', 'manic.ui.Dropdown']);

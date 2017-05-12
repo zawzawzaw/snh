@@ -291,7 +291,20 @@
           font-size: 20px;
           line-height: 35px;
           border: none;
-          padding-left: 20px;
+          padding-left: 20px;       
+          padding-right: 80px;   
+        }
+        input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: @light-violet;
+        }
+        input::-moz-placeholder { /* Firefox 19+ */
+          color: @light-violet;
+        }
+        input:-ms-input-placeholder { /* IE 10+ */
+          color: @light-violet;
+        }
+        input:-moz-placeholder { /* Firefox 18- */
+          color: @light-violet;
         }
         .hotel-search-btn {
           position: absolute;
@@ -1588,6 +1601,10 @@ body.is-tablet.is-tablet-portrait{
   overflow: hidden;  
 }
 
+#default-promotion-section when (@is_brand_landing) {
+  padding-bottom: 80px;
+}
+
 #default-promotion-filters {
   text-align: center;
   padding-bottom: 70px;
@@ -2181,6 +2198,75 @@ div.default-promotion-cta-container{
     }
 
   }
+  #page-brand-map-container {
+    position: relative;
+
+    #group-map-overlay {
+      position: absolute;
+      right: 5%;
+      top: 20px;
+      background: @off-white;
+      padding: 30px;
+      z-index: 1;
+
+      ul {
+        li {
+          .lato-bold;
+          font-size: 12px;
+          line-height: 20px;
+          letter-spacing: 0.08em;
+          color: @dark-grey;
+          text-transform: uppercase;
+          padding-left: 30px;
+          margin-bottom: 22px;
+          position: relative;
+          cursor: pointer;
+          &:before {
+            content: "";
+            background: url('../images/icons/group-map-pin-next-small.svg') no-repeat;
+            width: 12px;
+            height: 18px;
+            display: block;
+            background-size: contain;
+            position: absolute;
+            left: 0px;
+            top: 2px;
+          }
+          &[data-group="sage"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-sage-small.svg') no-repeat;
+            }
+          }
+          &[data-group="kafnu"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-kafnu-small.svg') no-repeat;
+            }
+          }
+          &[data-group="country"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-country-small.svg') no-repeat;
+            }
+          }
+          &[data-group="chifley"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-chifley-small.svg') no-repeat;
+            }
+          }
+          &[data-group="sundowner"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-sundowner-small.svg') no-repeat;
+            }
+          }
+          &[data-group="collection"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-collection-small.svg') no-repeat;
+            }
+          }
+        }
+      } 
+    }
+  }
+
   #page-brand-map{
       // height: 570px;
       height: 520px;
@@ -2188,7 +2274,7 @@ div.default-promotion-cta-container{
       padding-bottom: 22.25%;
       padding-top: 30px;
       position: relative;
-  }
+  }  
 
   .infoBox-text {
     background: #fbf9f5;
@@ -2343,6 +2429,10 @@ div.default-promotion-cta-container{
       left: -20px;
     }
   }
+}
+
+#default-map-section when (@is_brand_landing) {
+  padding-top: 80px;
 }
 
 @media all and (max-width: 991px) {
@@ -3311,5 +3401,59 @@ a.boxlist-item-content-image{
     .manic-expand-container-btn{
       display: none;
     }
+  }
+}
+
+
+//     ___   __  ____________  __________  __  _______  ________    __________________
+//    /   | / / / /_  __/ __ \/ ____/ __ \/  |/  / __ \/ ____/ /   / ____/_  __/ ____/
+//   / /| |/ / / / / / / / / / /   / / / / /|_/ / /_/ / __/ / /   / __/   / / / __/
+//  / ___ / /_/ / / / / /_/ / /___/ /_/ / /  / / ____/ /___/ /___/ /___  / / / /___
+// /_/  |_\____/ /_/  \____/\____/\____/_/  /_/_/   /_____/_____/_____/ /_/ /_____/
+
+.ui-autocomplete {
+  max-height: 300px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+  height: 100px;
+}
+
+.ui-widget.ui-widget-content {
+  border: none!important;
+  .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
+
+  li {
+    &.ui-autocomplete-main-category {
+      background: #998e8b;
+      color: @white;
+      padding: 10px 20px;
+    }
+    &.ui-autocomplete-category {
+      background: #c2b4b0;
+      color: @white;
+      padding: 10px 20px;
+    }
+    .ui-menu-item-wrapper {
+      padding: 10px 20px;
+      &.ui-state-active {
+        margin: 0px!important;
+        border: none;
+        background: @light-violet;
+        padding: 10px 20px;
+      }
+    }
+    
+    .open-sans-semi-bold;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    color: @dark-grey;
+    text-transform: uppercase;
   }
 }

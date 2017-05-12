@@ -4,6 +4,7 @@ goog.require('goog.events.Event');
 goog.require('goog.events.EventTarget');
 
 goog.require('sagewest.component.HomeMapItem');
+goog.require('sagewest.component.HomeMapOverlayItem');
 
 /**
  * The CLASSNAME constructor
@@ -30,6 +31,8 @@ sagewest.component.HomeMap = function(options, element) {
   //
 
   // console.log('init home map');
+
+  this.map_item_arr = [];
 
   this.styles = [
       {
@@ -189,6 +192,7 @@ sagewest.component.HomeMap = function(options, element) {
   this.create_map();
   this.create_infobox();
   this.create_markers_and_events();
+  this.create_map_overlay();
 
 
 };
@@ -235,7 +239,7 @@ sagewest.component.HomeMap.prototype.create_markers_and_events = function() {
 
   var arr = $('.markers');
   var item = null;
-  var map_item = null;
+  var map_item = null;  
 
   for (var i = 0; i < arr.length; i++) {
     var item = $(arr[i]);
@@ -245,6 +249,8 @@ sagewest.component.HomeMap.prototype.create_markers_and_events = function() {
 
     map_item.create_marker();
     map_item.create_event();
+
+    this.map_item_arr[i] = map_item;
   }
 
   // $(".markers").each(function(i, v){
@@ -320,6 +326,30 @@ sagewest.component.HomeMap.prototype.create_map = function() {
 
 
 
+};
+
+sagewest.component.HomeMap.prototype.create_map_overlay = function() {
+
+  if($("#group-map-overlay").length) {
+    var arr = $('#group-map-overlay ul li');
+    var item = null;
+    var overlay_item = null;
+
+    for (var i = 0; i < arr.length; i++) {
+      var item = $(arr[i]);
+      var overlay_item = new sagewest.component.HomeMapOverlayItem({}, item);   
+
+      goog.events.listen(overlay_item, sagewest.component.HomeMapOverlayItem.OVERLAY_ITEM_CLICK, function(event){      
+
+        var group_name = $(event.currentTarget.element[0]).data('group');
+
+        for(var i=0;i<this.map_item_arr.length;i++) {
+          this.map_item_arr[i].toggle_marker(group_name);
+        }
+        
+      }.bind(this)); 
+    }
+  }  
 };
 
 sagewest.component.HomeMap.prototype.create_infobox = function() {

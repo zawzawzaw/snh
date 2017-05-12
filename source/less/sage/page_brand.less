@@ -1131,6 +1131,9 @@ body.is-tablet{
   overflow: hidden;
 }
 
+#brand-all-location-section-version-02 when (@is_brand_landing){
+  padding-top: 107px;
+}
 
 
 
@@ -1228,7 +1231,21 @@ body.is-tablet{
   }
 }
 
+#brand-all-location-slider-prev-btn when (@is_brand_landing){
+  &:after {
+    .violet-arrow-left;
+    left: 22px;
+    top: 22px;
+  }
+}
 
+#brand-all-location-slider-next-btn when (@is_brand_landing){
+  &:after {
+    .violet-arrow-right;
+    right: 22px;
+    top: 22px;
+  }
+}
 
 
 
@@ -1340,7 +1357,21 @@ body.is-tablet{
 
 } // .brand-location-slider-item
 
-
+.brand-location-slider-item when (@is_brand_landing){
+  .brand-location-slider-item-copy {
+    padding-left:  117px;
+    position: relative;
+    .brand-location-slider-item-logo {
+      position: absolute;
+      left: 0px;
+      top: 16px;
+      .manic-image-container {
+        height: 93px;
+        width: 93px;
+      }        
+    }   
+  }
+}
 
 
 
@@ -1364,6 +1395,118 @@ body.is-tablet{
   text-align: right;
 
   .transition-single(opacity, 0.3s,  cubic-bezier(0.645, 0.045, 0.355, 1));
+}
+
+
+//     ____  ____  ____  __ __ _____   ________
+//    / __ )/ __ \/ __ \/ //_//  _/ | / / ____/
+//   / __  / / / / / / / ,<   / //  |/ / / __
+//  / /_/ / /_/ / /_/ / /| |_/ // /|  / /_/ /
+// /_____/\____/\____/_/ |_/___/_/ |_/\____/
+
+#group-booking-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  #group-booking-title {
+    padding-bottom: 85px;
+    text-align: center;
+
+    h4 + h1{
+      padding-top: 2px;
+    }
+  }
+  #group-booking-content {
+    text-align: center;
+    img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 33px;
+      width: 71px;
+      height: 94px;
+    }
+    h4 {
+      font-size: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: @violet;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    p {
+      color: #7d7d7d; // ??
+      text-align: center;
+      // padding: 0 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #group-booking-section{
+    padding-top: 58px;
+    padding-bottom: 146px;
+
+    #group-booking-title-mobile {
+      // padding-bottom: 50px;
+      padding-bottom: 43px;
+
+      text-align: center;
+      h4{
+        // margin-bottom: 4px;
+        margin-bottom: 2px;
+      }
+    }
+
+    #group-booking-content {
+      img{
+        padding-bottom: 30px;
+      }
+      h4{
+        padding-bottom: 9px;
+      }
+
+      p {
+        padding: 0px;
+      }
+
+      ul.slick-dots {
+        padding-top: 4px;
+
+        li {
+          display: inline-block;
+          margin-left: 4px;
+          margin-right: 4px;
+          width: 8px;
+          height: 8px;
+          button {
+            text-indent: -999999px;
+            position: relative;
+            border: none;
+            background: none;
+            &:before {
+              content: "";
+              width: 10px;
+              height: 10px;
+              background-color: @grey;
+              .round(10px);
+              display: block;
+              position: absolute;
+              left: 0px;
+              top: 20px;
+              cursor: pointer;
+            }
+          }
+          &.slick-active {
+            button {
+              &:before {
+                background-color: @violet;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 

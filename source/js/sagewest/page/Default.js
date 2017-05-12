@@ -228,6 +228,8 @@ sagewest.page.Default.prototype.init = function() {
   this.common_menu();
 
   this.expandable_text();
+
+  this.create_autocompelete_search();
 };
 
 
@@ -270,7 +272,77 @@ sagewest.page.Default.prototype.create_min_height = function(){
 };
 
 
+sagewest.page.Default.prototype.create_autocompelete_search = function(){
+  if($("#hotel_search").length) {
 
+    $("#hotel_search").on("click keypress", function(e){
+      // e.preventDefault();
+      window.location.hash = "banner-text";
+      $(this).focus();
+    });
+
+    $.widget( "custom.catcomplete", $.ui.autocomplete, {
+      _create: function() {
+        this._super();
+        this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+      },
+      _renderMenu: function( ul, items ) {
+        var that = this,
+          currentCategory = "";
+          currentMainCategory = "";
+        $.each( items, function( index, item ) {
+          var li;     
+          
+          if ( item.country != currentMainCategory ) {             
+            ul.append( "<li class='ui-autocomplete-main-category'>" + item.country + "</li>" );
+            currentMainCategory = item.country;
+          }
+          if ( item.city != currentCategory ) {             
+            ul.append( "<li class='ui-autocomplete-category'>" + item.city + "</li>" );
+            currentCategory = item.city;
+          }
+          li = that._renderItemData( ul, item );
+          if ( item.city ) {
+            li.attr( "aria-label", item.city + " : " + item.label );
+          }
+        });
+      }
+    });
+
+    var data = [
+      { value: "Country Comfort Adelaide Australia", label: "Country Comfort Adelaide", city: "Adelaide", country: "Australia" },
+      { value: "Country Comfort Adelaide Manor Australia", label: "Country Comfort Adelaide Manor", city: "Adelaide", country: "Australia" },
+      { value: "Sage Hotel Adelaid Australia", label: "Sage Hotel Adelaid", city: "Adelaide", country: "Australia" },
+      { value: "Country Comfort Amity Motel Albany Australia", label: "Country Comfort Amity Motel Albany", city: "ALBANY", country: "Australia" },
+
+      { value: "Sage West Perth Queensland Australia", label: "Sundowner Rockhampton Gladstone ", city: "Queensland", country: "Australia" },
+      { value: "Sundowner Rockhampton Gladstone Queensland Australia", label: "Sundowner Rockhampton Gladstone ", city: "Queensland", country: "Australia" },
+      { value: "Chifley Plaza Townsville Queensland Australia", label: "Chifley Plaza Townsville", city: "Queensland", country: "Australia" },
+      { value: "Sage Hotel James Street Queensland Australia", label: "Sage Hotel James Street", city: "Queensland", country: "Australia" },
+      { value: "NEXT Hotels Brisbane Australia", label: "NEXT Hotels Brisbane", city: "Brisbane", country: "Australia" },
+      { value: "Country Comfort Toowoomba Australia", label: "Country Comfort Toowoomba", city: "Toowoomba", country: "Australia" },
+      { value: "Country Comfort Bundaberg International Australia", label: "Country Comfort Bundaberg International", city: "Bundaberg", country: "Australia" },
+      { value: "Country Comfort Gin Gin Australia", label: "Country Comfort Gin Gin", city: "Gin Gin", country: "Australia" },      
+      { value: "Riva Arun Bangkok Thailand", label: "Riva Arun", city: "Bangkok", country: "Thailand" }
+      { value: "Riva Surya Bangkok Thailand", label: "Riva Surya", city: "Bangkok", country: "Thailand" }
+      { value: "Kiridara Luang Prabang Laos", label: "Kiridara", city: "Luang Prabang", country: "Laos" }
+    ];
+ 
+    $("#hotel_search").catcomplete({
+      delay: 0,
+      source: function(req, responseFn) {
+        var words = req.term.split(' ');
+        var results = $.grep(data, function(value, index) {
+          var sentence = value.value.toLowerCase();
+          return words.every(function(word) {
+            return sentence.indexOf(word.toLowerCase()) >= 0;
+          });
+        });
+        responseFn(results);
+      }
+    });
+  }
+}
 
 
 

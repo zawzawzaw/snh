@@ -27,10 +27,10 @@
       <div class="col-md-6">
         <div id="desktop-header-nav">
           <ul>
-            <li><a href="brand_alternative.php#about">About</a></li>
-            <li><a href="brand_alternative.php#location">Our Locations</a></li>
-            <li><a href="brand_alternative.php#offers">Offers</a></li>
-            <li><a href="brand_alternative.php#map">Map</a></li>
+            <li><a href="group_landing.php#our-brands">Our Brands</a></li>
+            <li><a href="group_landing.php#book-with-us">Book With Us</a></li>
+            <li><a href="group_landing.php#offers">Offers</a></li>
+            <li><a href="group_landing.php#map">Map</a></li>
           </ul>
         </div>
       </div>  

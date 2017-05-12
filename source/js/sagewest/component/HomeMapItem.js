@@ -24,6 +24,7 @@ sagewest.component.HomeMapItem = function(options, element) {
   this.infobox = null;
   this.marker = null;
 
+  this.group_name = this.element.data('group');
   this.location = this.element.data('location');
   this.placeId = this.element.data('place_id');
   this.pinIcon = this.element.data('pin-icon');
@@ -31,7 +32,7 @@ sagewest.component.HomeMapItem = function(options, element) {
   this.marker_name = this.location.split(' ').join('_')+"Marker";   
   this.request_name = this.location.split(' ').join('_')+"Request";   
   this.lat = parseFloat( this.element.data('lat') );
-  this.lng = parseFloat( this.element.data('lng') );  
+  this.lng = parseFloat( this.element.data('lng') );    
 
   //    ___ _   _ ___ _____
   //   |_ _| \ | |_ _|_   _|
@@ -102,12 +103,17 @@ sagewest.component.HomeMapItem.prototype.create_marker = function() {
   // console.log(this.pinIcon);
 
   var Latlng = new google.maps.LatLng(this.lat, this.lng);
-
+  var icon = {
+      url: this.pinIcon, // url
+      scaledSize: new google.maps.Size(25, 48), // scaled size
+      origin: new google.maps.Point(0,0), // origin
+      anchor: new google.maps.Point(0, 0) // anchor
+  };
   this.marker = new google.maps.Marker({
     position: Latlng,
     map: this.map,
     title: this.location,
-    icon: this.pinIcon
+    icon: icon
   });
 
 };
@@ -147,7 +153,24 @@ sagewest.component.HomeMapItem.prototype.create_event = function() {
 
 };
 
-sagewest.component.HomeMapItem.prototype.private_method_01 = function() {};
+sagewest.component.HomeMapItem.prototype.toggle_marker = function(group_name) {
+
+    
+  if(this.group_name === group_name) {
+    if (!this.marker.getVisible())
+      this.marker.setVisible(true);
+    else 
+      this.marker.setVisible(false);
+  }
+
+  // if(group_name === "collection") {
+  //   if (!this.marker.getVisible())
+  //     this.marker.setVisible(true);
+  //   else 
+  //     this.marker.setVisible(false);
+  // }
+
+};
 sagewest.component.HomeMapItem.prototype.private_method_02 = function() {};
 sagewest.component.HomeMapItem.prototype.private_method_03 = function() {};
 sagewest.component.HomeMapItem.prototype.private_method_04 = function() {};

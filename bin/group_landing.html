@@ -1,0 +1,1534 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    
+<title>NEXT</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
+
+<link rel="icon" href="images/icons/favicon-next.png">
+
+<!-- Critical Css -->
+<link rel="stylesheet" type="text/css" href="css/critical_style_landing.css">
+
+<!-- Social Tags -->
+<!-- <meta content="Sage West Perth" property="og:title"/>
+<meta content="http://sg.sagewestperth.com/images/facebook-share-image.png" property="og:image"/>
+<meta content="Sage West Perth" property="og:site_name"/>
+<meta content="http://sg.sagewestperth.com" property="og:url"/>
+<meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
+
+  <!-- move these to the at the bottom of the body -->
+
+
+  <!-- Web Fonts (in js_PAGENAME.php for optimized version) -->
+
+  <!-- open-sans -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+  
+
+
+<script type="text/javascript">
+  
+  // simple preloader script
+  
+  window.preloader_counter = 0;
+  window.preloader_js = 0;
+  window.preloader_css = 0;
+
+  window.preloader_interval = setInterval(function(){
+
+    var counter = window.preloader_counter;
+    var target = (window.preloader_js * 0.75) + (window.preloader_css * 0.25);
+    counter += (target - counter) / 5;
+    window.preloader_counter = counter;
+
+    var display = Math.floor(Math.round(counter * 10) / 10);
+
+    var number_element = document.getElementById('page-preloader-number');
+    if(number_element){
+      number_element.innerHTML = (display + '%');
+    }
+
+    var line_element = document.getElementById('page-preloader-line-b');
+    if (line_element) {
+      line_element.style.width = (display + '%');
+    }
+    
+
+    if (display >= 100) {
+
+      var preloader = document.getElementById('page-preloader');
+      if (preloader) {
+        preloader.className += ' preload-complete';
+      }
+
+      clearInterval(window.preloader_interval);
+    }
+
+  }, 50);
+
+</script>  </head>
+
+
+  <body class="group-landing-page">
+
+    <div id="page-preloader" class="square-version">
+      <div id="page-preloader-logo">
+        <img src="images/icons/preloader-next.png">
+      </div>
+
+      <div id="page-preloader-line">
+        <div id="page-preloader-line-a"></div>
+        <div id="page-preloader-line-b"></div>
+      </div>
+      <div id="page-preloader-number">0%</div>
+    </div>
+    
+
+
+    <!-- mobile header is outside the page wrapper -->
+    <!-- <div id="mobile-header-spacer"></div> -->
+<header id="mobile-header">
+
+  <div class="mobile-header-bg"></div>
+
+  <div id="mobile-header-content-container">
+    <div id="mobile-header-close-btn"><span>Menu</span></div>
+    <div id="mobile-header-open-btn"></div>
+
+    <a href="brand_next.php" id="mobile-header-logo">
+      <img src="images/logo/next-logo.png">
+    </a>  
+  
+    <a href="javascript:void(0);" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="javascript:void(0);" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+  </div>
+
+</header> <!-- #mobile-header -->
+
+<header id="mobile-header-expanded">
+
+  <div id="mobile-header-menu-container">
+    <div id="destination-indicator">
+      <p>Select a destination:</p>
+    </div>
+    <div id="country-indicator">
+      <p>Australia</p>
+    </div>
+
+    <nav id="mobile-menu">
+      <ul>
+        <li><a href="hotel.php">Brisbane</a></li>
+      </ul>
+    </nav>
+    <div id="brand-link" class="menu-link">
+      <a href="#"><span>Our Brands</span></a>
+    </div>
+    <div id="group-link" class="menu-link">
+      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    </div>
+  </div> <!-- #mobile-header-menu-container -->
+
+  <div id="mobile-header-booking-form">
+    <form action="">
+      <div class="input-box">
+        <label for="hotel">Select Hotel</label>
+        <div class="dropdown">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
+            <option value="NEXT Hotel Brisbane">NEXT Hotel Brisbane</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+        <div class="date-input">
+          <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
+        </div>
+      </div>
+      <div class="input-box row">
+        <div class="input-box-col-1 col-sm-6 col-xs-6">
+          <label for="">Adults</label>
+          <div class="dropdown">
+            <select name="adults" id="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box-col-2 col-sm-6 col-xs-6">
+          <label for="">Children</label>
+          <div class="dropdown">
+            <select name="children" id="children">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="">Promotion Code</label>
+        <input type="text" name="promo_code">
+      </div>
+      <div class="input-box">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
+      </div>
+    </form>
+  </div>
+  <div id="mobile-header-booking-calendar"></div>
+
+</header> <!-- #mobile-header-expanded -->        
+    <div id="page-wrapper">
+      <div id="page-wrapper-content">
+
+        <!-- 
+   ____  _____ ____  _  _______ ___  ____    _   _ _____    _    ____  _____ ____  
+  |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \  | | | | ____|  / \  |  _ \| ____|  _ \ 
+  | | | |  _| \___ \| ' /  | || | | | |_) | | |_| |  _|   / _ \ | | | |  _| | |_) |
+  | |_| | |___ ___) | . \  | || |_| |  __/  |  _  | |___ / ___ \| |_| | |___|  _ < 
+  |____/|_____|____/|_|\_\ |_| \___/|_|     |_| |_|_____/_/   \_\____/|_____|_| \_\
+                                           
+-->
+
+<header id="desktop-header">
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="desktop-header-menu-logo-container">
+          <div id="desktop-header-logo-container">
+            <a href="#" id="desktop-menu-bar" class="open">
+              <img src="images/icons/menu-bar.svg" alt="">     
+              <span>Menu</span>       
+            </a>
+            <a href="brand_landing.php" id="desktop-header-logo">
+              <img src="images/logo/next-logo.png">
+            </a>
+          </div>          
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="desktop-header-nav">
+          <ul>
+            <li><a href="group_landing.php#our-brands">Our Brands</a></li>
+            <li><a href="group_landing.php#book-with-us">Book With Us</a></li>
+            <li><a href="group_landing.php#offers">Offers</a></li>
+            <li><a href="group_landing.php#map">Map</a></li>
+          </ul>
+        </div>
+      </div>  
+      <div class="col-md-3">
+        <a href="javascript:void(0);" id="book-now"><span>Book Now</span></a>        
+      </div>
+    </div>
+  </div>  
+
+  <div id="desktop-header-booking-form">
+      <form action="">
+        <div class="input-box">
+          <label for="hotel">Select Brand</label>
+          <div class="dropdown">
+            <select name="brand" id="brand" class="brand-dropdown">
+              <option value="Sage Hotel">Sage Hotel</option>
+              <option value="Sage Hotel">Sage Hotel</option>
+              <option value="Sage Hotel">Sage Hotel</option>
+              <option value="Sage Hotel">Sage Hotel</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="hotel">Select Hotel</label>
+          <div class="dropdown">
+            <select name="hotel" id="hotel" class="hotel-dropdown">
+              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+          <div class="date-input">
+            <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
+          </div>
+        </div>
+        <div class="input-box row">
+          <div class="input-box-col-1 col-md-6">
+            <label for="">Adults</label>
+            <div class="dropdown">
+              <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-box-col-2 col-md-6">
+            <label for="">Children</label>
+            <div class="dropdown">
+              <select name="children" id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="">Promotion Code</label>
+          <input type="text" name="promo_code">
+        </div>
+        <div class="cta-container">
+          <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
+        </div>
+        
+      </form>
+  </div>
+  <div id="desktop-header-booking-calendar">
+    
+  </div>
+</header> <!-- #desktop-header -->
+
+<div id="desktop-header-menu">
+
+  <div id="destination-indicator">
+    <p>Select Brand:</p>
+  </div>
+
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">next hotels</a></li>
+      <li><a href="hotel.php">sage hotels</a></li>
+      <li><a href="hotel.php">kafnu</a></li>
+      <li><a href="hotel.php">Country Comfort</a></li>
+      <li><a href="hotel.php">Chifley Hotels</a></li>
+      <li><a href="hotel.php">Sundowner Inns</a></li>
+      <li><a href="hotel.php">collection</a></li>      
+    </ul>        
+  </div>
+  <div id="brand-link" class="menu-link">
+    <a href="#"><span>Hotel Directory</span></a>
+  </div>
+  <div id="group-link" class="menu-link">
+    <a href="#"><span>NEXT <br class="hidden-xs hidden-sm"> Story Group Corporate</span></a>
+  </div>
+</div>
+        <!--
+           ____ _____  _    ____ _____
+          / ___|_   _|/ \  |  _ \_   _|
+          \___ \ | | / _ \ | |_) || |
+           ___) || |/ ___ \|  _ < | |
+          |____/ |_/_/   \_\_| \_\|_|
+
+        -->
+
+
+
+
+        <!--
+   ____    _    _   _ _   _ _____ ____
+  | __ )  / \  | \ | | \ | | ____|  _ \
+  |  _ \ / _ \ |  \| |  \| |  _| | |_) |
+  | |_) / ___ \| |\  | |\  | |___|  _ <
+  |____/_/   \_\_| \_|_| \_|_____|_| \_\
+
+-->
+
+
+<div class="scroll-target" data-value="banner"></div>
+<article id="brand-banner-section">
+  <div id="brand-banner" class="default-page-banner">
+
+    <div class="default-page-banner-image visible-md visible-lg">
+      <div class="manic-image-container has-window-height">
+        <img src=""
+          data-image-desktop="images_cms/brand_landing/brand-banner.jpg">
+      </div>
+    </div>
+    <div class="default-page-banner-mobile-image visible-sm visible-xs">
+      <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
+        <img src=""
+          data-image-tablet="images_cms/brand_landing/brand-banner-tablet.jpg"
+          data-image-mobile="images_cms/brand_landing/brand-banner-mobile.jpg">
+      </div>
+    </div>
+
+    <div class="default-page-banner-text">   
+      <div class="banner-text scroll-target" data-value="banner-text">
+        <h2>For the modern traveller</h2>
+        <!-- <img src="images/logo/brand-banner-text.svg" class="visible-md visible-lg">       -->
+        <h1>Welcome to NEXT Hotels</h1>
+        <h3>Where do you want to go?</h3>
+
+        <div class="banner-search-form">
+          <input type="text" name="hotel_search" id="hotel_search" placeholder="Look for hotel by state, city or name">
+          <button class="hotel-search-btn"></button>
+        </div>
+      </div>
+      <!-- <div class="scroll-down-cta visible-md visible-lg"></div> -->
+      <div class="scroll-down-cta"></div>
+      
+    </div>
+  </div>
+  
+  <div class="default-page-banner-mobile-text">
+    <div class="visible-sm visible-xs">
+      <!-- <img src="images/logo/brand-banner-text.svg"> -->
+    </div>
+  </div>
+  
+</article>
+
+
+<!--
+   _     ___   ____    _  _____ ___ ___  _   _ ____     ___ ____
+  | |   / _ \ / ___|  / \|_   _|_ _/ _ \| \ | / ___|   / _ \___ \
+  | |  | | | | |     / _ \ | |  | | | | |  \| \___ \  | | | |__) |
+  | |__| |_| | |___ / ___ \| |  | | |_| | |\  |___) | | |_| / __/
+  |_____\___/ \____/_/   \_\_| |___\___/|_| \_|____/   \___/_____|
+
+-->
+<div class="scroll-target" data-value="our-brands"></div>
+
+<article id="brand-all-location-section-version-02" class="visible-md visible-lg">
+  <div class="container-fluid has-breakpoint">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="brand-all-location-title-version-02">
+          <h1>Our Brands</h1>
+        </div> <!-- brand-all-location-title-version-02 -->
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+
+        <div id="brand-all-location-slider-container-version-02">
+          <div id="brand-all-location-slider-version-02">
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/group_landing_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="brand-location-slider-item-logo">
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images/logo/next-logo.png">
+                  </div>
+                </div>
+                <h2><a href="hotel.php">NEXT Hotels</a></h2>
+                <p>Clock’s ticking, opportunities are opening, but travel choices are still somewhat limiting? Not at NEXT Hotels. With ultra-fast free Wi-Fi, open-plan rooms and In-transit lounges, our space, technology and service have been engineered for the modern business traveller.</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/group_landing_slider_02.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy"> 
+                <div class="brand-location-slider-item-logo">
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images/logo/sage-west-logo.svg">
+                  </div>
+                </div>               
+                <h2><a href="hotel.php">Sage Hotels</a></h2>
+                <p>The complex made simple, the simple made special. We know how important making things uncomplicated is when you are in an unfamiliar place or when business duties call. That’s why every stay bears the hallmarks of simplicity, familiarity and consistency you look for.</p>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/group_landing_slider_03.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">   
+                <div class="brand-location-slider-item-logo">
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images/logo/chifley-logo.png">
+                  </div>
+                </div>           
+                <h2><a href="hotel.php">Chifley Hotel</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/group_landing_slider_01.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">
+                <div class="brand-location-slider-item-logo">
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images/logo/next-logo.png">
+                  </div>
+                </div>
+                <h2><a href="hotel.php">NEXT Hotels</a></h2>
+                <p>Clock’s ticking, opportunities are opening, but travel choices are still somewhat limiting? Not at NEXT Hotels. With ultra-fast free Wi-Fi, open-plan rooms and In-transit lounges, our space, technology and service have been engineered for the modern business traveller.</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/group_landing_slider_02.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy"> 
+                <div class="brand-location-slider-item-logo">
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images/logo/sage-west-logo.svg">
+                  </div>
+                </div>               
+                <h2><a href="hotel.php">Sage Hotels</a></h2>
+                <p>The complex made simple, the simple made special. We know how important making things uncomplicated is when you are in an unfamiliar place or when business duties call. That’s why every stay bears the hallmarks of simplicity, familiarity and consistency you look for.</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item">
+              <a href="hotel.php" class="brand-location-slider-item-image">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/home/group_landing_slider_03.jpg">
+                </div>
+              </a>
+              <div class="brand-location-slider-item-copy">   
+                <div class="brand-location-slider-item-logo">
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images/logo/chifley-logo.png">
+                  </div>
+                </div>           
+                <h2><a href="hotel.php">Chifley Hotel</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance to Kings Park and on the city fringe of the city. With customer service that’s all about you, you couldn’t do better.</p>
+              </div>
+            </div>
+
+
+            
+
+
+
+          </div> <!-- brand-all-location-slider-version-02 -->
+
+          <a href="javascript:void(0);" title="Prev Image" id="brand-all-location-slider-prev-btn"></a>
+          <a href="javascript:void(0);" title="Next Image" id="brand-all-location-slider-next-btn"></a>
+
+        </div> <!-- brand-all-location-slider-container-version-02 -->
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div id="brand-all-location-cta-container-version-02">
+          <a href="javascript:void(0);" class="square-cta highlight-version">View all hotels</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+
+
+
+
+
+
+<article id="brand-all-location-section-version-02-mobile" class="visible-sm visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div id="brand-all-location-title-version-02-mobile">
+          <h1>Our Brand</h1>
+        </div>
+
+
+        <div id="brand-all-location-slider-container-version-02-mobile">
+          <div id="brand-all-location-slider-version-02-mobile">
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h4>Newcastle</h4>
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h4>Wollongong</h4>
+                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h4>Newcastle</h4>
+                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h4>Wollongong</h4>
+                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+        
+        <div id="brand-all-location-cta-container-version-02-mobile">
+          <a href="brand_location.php" class="square-cta">View all Locations</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</article> <!-- brand-all-location-section-version-02-mobile -->
+
+<!-- 
+    ____  ____  ____  __ __ _____   ________
+   / __ )/ __ \/ __ \/ //_//  _/ | / / ____/
+  / __  / / / / / / / ,<   / //  |/ / / __
+ / /_/ / /_/ / /_/ / /| |_/ // /|  / /_/ /
+/_____/\____/\____/_/ |_/___/_/ |_/\____/
+
+ -->
+
+<div class="scroll-target" data-value="booking"></div>
+<article id="group-booking-section">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="group-booking-title" class="hidden-sm hidden-xs">
+          <h4>friends with benefits</h4>
+          <h1>Book With Us, Stay With Us.</h1>   
+          <p>We love to give our close friends benefits, so when you book directly with us, you will see how <br class="hidden-xs hidden-sm"> your entire experience can become sweeter.</p>         
+        </div>
+        <div id="group-booking-title-mobile" class="visible-sm visible-xs">
+          <h4>friends with benefits</h4>
+          <h1>Book With Us, Stay With Us.</h1>      
+          <p>We love to give our close friends benefits, so when you book directly with us, you will see how your entire experience can become sweeter.</p>      
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="group-booking-content">
+        <div class="col-md-4">
+          <img src="images/icons/change-mind-icon-group-version.svg" alt="">
+          <h4>no penalties</h4>
+          <p>We accommodate last minutes changes — free cancellations are allowed up to 24 hours prior to check in (excluding advance purchase and promotional offer).</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/icons/best-price-icon-group-version.svg" alt="">
+          <h4>best price guarantee</h4>
+          <p>Find a better price for the same room elsewhere? Tell us and we’ll make sure you don’t pay a cent more if you book directly with us.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/icons/no-booking-fees-icon-group-version.svg" alt="">
+          <h4>Booking fees? not here</h4>
+          <p>We don’t believe in charging you to do business with us. No fees if you book directly with us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- 
+    ____  ____  ____  __  _______  ______________  _   __
+   / __ \/ __ \/ __ \/  |/  / __ \/_  __/  _/ __ \/ | / /
+  / /_/ / /_/ / / / / /|_/ / / / / / /  / // / / /  |/ /
+ / ____/ _, _/ /_/ / /  / / /_/ / / / _/ // /_/ / /|  /
+/_/   /_/ |_|\____/_/  /_/\____/ /_/ /___/\____/_/ |_/
+
+ -->
+<div class="scroll-target" data-value="offers"></div>
+<article id="default-promotion-section" class="visible-md visible-lg">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="default-promotion-title">
+          <h4>simply irresistable</h4>
+          <h1>Offers</h1>          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="default-promotion-content" class="boxlist-item-container">
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+
+              <div class="boxlist-item-tag">Accommodation</div>
+
+              <div class="boxlist-item-content-image">
+                <a href="offer_detail.php" class="manic-image-container">
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-01.png">
+                </a>
+              </div>
+
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5><a href="offer_detail.php">City Escape</a></h5>
+                  <p>Take a walk through Kings Park get some fresh air at Elizabeth Quays or take one of the hotel complimentary pushbikes for a spin.</p>
+                  <ul>
+                    <li><p>Newly Constructed Sage Rooms</p></li>
+                    <li><p>Continental Buffet Breakfast for 2</p></li>
+                    <li><p>Late Check out at 12 noon</p></li>
+                  </ul>
+                  
+                </div>
+              </div>
+
+              <div class="boxlist-item-content-cta">
+                <div class="default-promotion-content-item-arrow-cta-container">
+                  <a href="offer_detail.php" class="arrow-cta">More details</a>
+                </div>
+                <a href="javascript:void(0);" class="square-cta">Book now</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+
+              <div class="boxlist-item-tag">Dining</div>
+
+              <div class="boxlist-item-content-image">
+                <a href="offer_detail.php" class="manic-image-container">
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-02.png">
+                </a>
+              </div>
+
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5><a href="offer_detail.php">Valentine’s Day</a></h5>
+                  <p>Treat your loved one to a nice candlelit dinner at Lennons Restaurant</p>
+                  <ul>
+                    <li><p>Arrival rose for your significant other</p></li>
+                    <li><p>3-course dinner with choice of dish</p></li>
+                    <li><p>Complimentary bottle of red or white wine</p></li>
+                    <li><p>Live jazz singer duo</p></li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="boxlist-item-content-cta">
+                <div class="default-promotion-content-item-arrow-cta-container">
+                  <a href="offer_detail.php" class="arrow-cta">More details</a>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="javascript:void(0);" class="square-cta">Contact us</a>
+                  </div>
+                  <div class="col-xs-6">
+
+                    <div class="boxlist-item-content-price">
+                      <h6>per pax</h6>
+                      <p class="content-price">
+                        <span class="currency">aud</span>
+                        <span class="number">$79.90</span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="default-promotion-content-item boxlist-item">
+            <div class="default-promotion-content-box boxlist-item-box">
+
+              <div class="boxlist-item-tag">Dining</div>
+
+              <div class="boxlist-item-content-image">
+                <a href="offer_detail.php" class="manic-image-container">
+                  <img src=""
+                    data-image-desktop="images_cms/brand/brand-promotion-03.png">
+                </a>
+              </div>
+
+              <div class="default-promotion-content-item-copy">
+                <div class="default-copy">
+                  <h5><a href="offer_detail.php">Ascot Horse Racing</a></h5>
+                  <ul>
+                    <li><p>Complimentary upgrade to Executive Wing</p></li>
+                    <li><p>General admission ticket for 2 to Ascot Races</p></li>
+                    <li><p>Early Check-in</p></li>
+                    <li><p>Bottle of Sparkling Wine on arrival</p></li>
+                    <li><p>Complimentary shuttle to Ascot Race Track</p></li>
+                    <li><p>Complimentary beverage offer when dining in the Firehouse Restaurant</p></li>
+                  </ul>
+                  
+                </div>
+              </div>
+
+              <div class="boxlist-item-content-cta">
+                <div class="default-promotion-content-item-arrow-cta-container">
+                  <a href="offer_detail.php" class="arrow-cta">More details</a>
+                </div>
+
+                <a href="javascript:void(0);" class="square-cta">Book now</a>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> <!-- row -->
+  </div>
+</article>
+
+
+<!-- 
+    __  ______    ____
+   /  |/  /   |  / __ \
+  / /|_/ / /| | / /_/ /
+ / /  / / ___ |/ ____/
+/_/  /_/_/  |_/_/
+
+ -->
+
+<div class="scroll-target" data-value="map"></div>
+<article id="default-map-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="default-map-title">          
+          <h1>Our Hotels</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="page-brand-map-container">
+    <div id="group-map-overlay">
+      <ul>
+        <li data-group="next">next hotels</li>
+        <li data-group="sage">sage hotels</li>
+        <li data-group="kafnu">Kafnu</li>
+        <li data-group="country">Country Comfort</li>
+        <li data-group="chifley">Chifley Hotels</li>
+        <li data-group="sundowner">Sundowner Inns</li>
+        <li data-group="collection">collection</li>
+      </ul>
+    </div>
+    <div id="page-brand-map" class="default-version"></div>
+  </div>
+  <div class="default_marker" data-zoom="3" data-location="Australia" data-lat="6.1745" data-lng="106.8227"></div>
+
+  <div class="markers" 
+    data-group="sage"
+    data-pin-icon="images/icons/group-map-pin-sage.svg" 
+    data-location="SAGE WEST PERTH" 
+    data-lat="-31.947794" 
+    data-lng="115.8364702" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-group="sage"
+    data-pin-icon="images/icons/group-map-pin-sage.svg" 
+    data-location="SAGE HOTEL ADELAIDE" 
+    data-lat="-34.935157" 
+    data-lng="138.604256" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=208 South Terrace, Adelaide, SA 5000, Australia'><h4>SAGE HOTEL ADELAIDE</h4><p>208 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.adelaide@sage-hotels.com'>reservations.adelaide@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-group="sage"
+    data-pin-icon="images/icons/group-map-pin-sage.svg" 
+    data-location="SAGE HOTEL JAMES STREET" 
+    data-lat="-27.457871" 
+    data-lng="153.041832" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=70 James Street, Fortitude Valley, QLD 4006, Australia'><h4>SAGE HOTEL JAMES STREET</h4><p>70 James Street, Fortitude Valley, QLD 4006, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.jamesst@sage-hotels.com'>reservations.jamesst@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-group="sage"
+    data-pin-icon="images/icons/group-map-pin-sage.svg" 
+    data-location="SAGE HOTEL WOLLONGONG" 
+    data-lat="-34.428922" 
+    data-lng="150.901022" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=60-62 Harbour St, Wollongong, NSW 2500, Australia'><h4>SAGE HOTEL WOLLONGONG</h4><p>60-62 Harbour St, Wollongong, NSW 2500, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4201 2111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.wollongong@sage-hotels.com'>reservations.wollongong@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+      data-group="chifley"
+      data-pin-icon="images/icons/group-map-pin-chifley.svg" 
+      data-location="CHIFLEY ALICE SPRINGS RESORT" 
+      data-lat="-23.702922" 
+      data-lng="133.886493" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=34 Stott Terrace, Alice Springs, Northern Territory 0870, Australia'><h4>CHIFLEY ALICE SPRINGS RESORT</h4><p>34 Stott Terrace, Alice Springs, Northern Territory 0870, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8951 4545</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.alicesprings@chifleyhotels.com'>reservations.alicesprings@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+      data-group="chifley"
+      data-pin-icon="images/icons/group-map-pin-chifley.svg" 
+      data-location="CHIFLEY APARTMENTS NEWCASTLE" 
+      data-lat="-32.926286" 
+      data-lng="151.770029" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Wright & Settlement Lanes, Newcastle, NSW 2300, Australia'><h4>CHIFLEY APARTMENTS NEWCASTLE</h4><p>Cnr Wright & Settlement Lanes, Newcastle, NSW 2300, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4910 4910</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.newcastle@chifleyhotels.com'>reservations.newcastle@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+      data-group="chifley"
+      data-pin-icon="images/icons/group-map-pin-chifley.svg" 
+      data-location="CHIFLEY EXECUTIVE SUITES NEWCASTLE" 
+      data-lat="-32.927231" 
+      data-lng="151.783761" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=111 Scott St Newcastle, Newcastle, New South Wales 2300'><h4>CHIFLEY EXECUTIVE SUITES NEWCASTLE</h4><p>111 Scott St Newcastle, Newcastle, New South Wales 2300</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4040 1200</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:res.ces@optusnet.com.au'>res.ces@optusnet.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+      data-group="chifley"
+      data-pin-icon="images/icons/group-map-pin-chifley.svg" 
+      data-location="CHIFLEY PLAZA TOWNSVILLE" 
+      data-lat="-19.261410" 
+      data-lng="146.815561" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Flinders and Stanley Streets, Townsville, Queensland 4810'><h4>CHIFLEY PLAZA TOWNSVILLE</h4><p>Cnr Flinders and Stanley Streets, Townsville, Queensland 4810</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4772 1888</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@theplazahotel.com.au'>info@theplazahotel.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+      data-group="chifley"
+      data-pin-icon="images/icons/group-map-pin-chifley.svg" 
+      data-location="THE CHIFLEY ON SOUTH TERRACE" 
+      data-lat="-34.935021" 
+      data-lng="138.605591" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=226 South Terrace, Adelaide, SA 5000, Australia'><h4>THE CHIFLEY ON SOUTH TERRACE</h4><p>226 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 4355</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:frontoffice.southterrace@chifleyhotels.com'>frontoffice.southterrace@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+    <div class="markers"
+        data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT ADELAIDE" 
+      data-lat="-34.935001" 
+      data-lng="138.604923" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=215 South Terrace, Adelaide, South Australia 5000'><h4>COUNTRY COMFORT ADELAIDE</h4><p>215 South Terrace, Adelaide, South Australia 5000</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservation@silverneedle hotels.com.au'>reservation@silverneedle hotels.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT ADELAIDE MANOR" 
+      data-lat="-34.846215" 
+      data-lng="138.601540" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=574 Main North Road, Gepps Cross, South Australia 5094'><h4>COUNTRY COMFORT ADELAIDE MANOR</h4><p>574 Main North Road, Gepps Cross, South Australia 5094</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8349 4999</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@adelaidemanor.com.au'>reservations@adelaidemanor.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT AMITY MOTEL ALBANY" 
+      data-lat="-35.010812" 
+      data-lng="117.871683" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=234 Albany Highway, Albany, Western Australia 6330'><h4>COUNTRY COMFORT AMITY MOTEL ALBANY</h4><p>234 Albany Highway, Albany, Western Australia 6330</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 9841 2200</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reception@amitymotorinn.com.au'>reception@amitymotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT ARMIDALE" 
+      data-lat="-30.517078" 
+      data-lng="151.666582" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=86 Barney Street, Armidale, New South Wales 2350'><h4>COUNTRY COMFORT ARMIDALE</h4><p>86 Barney Street, Armidale, New South Wales 2350</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6772 8511</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:ccarm@bigpond.net.au'>ccarm@bigpond.net.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT BUNDABERG INTERNATIONAL" 
+      data-lat="-24.881855" 
+      data-lng="152.326396" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=73 Takalvan Street, Bundaberg, Queensland 4670'><h4>COUNTRY COMFORT BUNDABERG INTERNATIONAL</h4><p>73 Takalvan Street, Bundaberg, Queensland 4670</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4151 2365</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@bimi.com.au'>info@bimi.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT COFFS HARBOUR" 
+      data-lat="-30.273478" 
+      data-lng="153.133535" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=353 Pacific Highway, North Coffs harbour, New South Wales'><h4>COUNTRY COMFORT COFFS HARBOUR</h4><p>353 Pacific Highway, North Coffs harbour, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6652 8222</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT COWRA" 
+      data-lat="-33.835485" 
+      data-lng="148.697677" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=164 Kendal Street, Cowra, New South Wales'><h4>COUNTRY COMFORT COWRA</h4><p>164 Kendal Street, Cowra, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6342 3177</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:enquiries@cowramotel.com.au'>enquiries@cowramotel.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT GIN GIN" 
+      data-lat="-24.986031" 
+      data-lng="151.951885" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=5 Mulgrave Street, Gin Gin, Queensland'><h4>COUNTRY COMFORT GIN GIN</h4><p>5 Mulgrave Street, Gin Gin, Queensland</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4157 2522</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:wildscotsman@bigpond.com'>wildscotsman@bigpond.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT HUNTS LIVERPOOL" 
+      data-lat="-33.957676" 
+      data-lng="150.887093" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Your Street & Hune Highway, Casula, New South Wales 2170'><h4>COUNTRY COMFORT HUNTS LIVERPOOL</h4><p>Cnr Your Street & Hune Highway, Casula, New South Wales 2170</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 9601 5088</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@hunts.com.au'>info@hunts.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT INTER CITY PERTH" 
+      data-lat="-31.940562" 
+      data-lng="115.928338" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=249-263 Great Eastern Highway, Belmont, WA 6104, Australia'><h4>COUNTRY COMFORT INTER CITY PERTH</h4><p>249-263 Great Eastern Highway, Belmont, WA 6104, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 9478 0888</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.intercityperth@snhgroup.com'>reservations.intercityperth@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT MT GAMBIER" 
+      data-lat="-37.809957" 
+      data-lng="140.740797" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=corner of Jubilee Hwy West & Wandilo Rd, Mt Gambier, South Australia 5290'><h4>COUNTRY COMFORT MT GAMBIER</h4><p>corner of Jubilee Hwy West & Wandilo Rd, Mt Gambier, South Australia 5290</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8725 4811</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:countrycomfortreservations@mountgambier.net'>countrycomfortreservations@mountgambier.net</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT NEWCASTLE AIRPORT & CONVENTION CENTRE" 
+      data-lat="-32.787199" 
+      data-lng="151.726468" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=2285 Pacific Highway, Heatherbrae, New South Wales'><h4>COUNTRY COMFORT NEWCASTLE AIRPORT & CONVENTION CENTRE</h4><p>2285 Pacific Highway, Heatherbrae, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4987 1211</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:stay@countrycomfortmottofarm.com.au'>stay@countrycomfortmottofarm.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE" 
+      data-lat="-31.430618" 
+      data-lng="152.903950" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1 Buller Street, Port Macquarie, New South Wales'><h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4><p>1 Buller Street, Port Macquarie, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6583 2955</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@watersedgepm.com.au'>reservations@watersedgepm.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers"
+      data-group="country" 
+      data-pin-icon="images/icons/group-map-pin-country-comfort.svg" 
+      data-location="COUNTRY COMFORT TOOWOOMBA" 
+      data-lat="-27.466648" 
+      data-lng="151.950497" 
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=10552 New England Highway, Highfields, Queensland 4352'><h4>COUNTRY COMFORT TOOWOOMBA</h4><p>10552 New England Highway, Highfields, Queensland 4352</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4699 6996</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@silverneedlehotels.com'>reservations@silverneedlehotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-group="next"
+    data-pin-icon="images/icons/group-map-pin-next.svg" 
+    data-location="NEXT Hotel Brisbane" 
+    data-lat="-27.470221" 
+    data-lng="153.023849" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=72 Queen Street, Brisbane QLD 4000, Australia'><h4>NEXT Hotel Brisbane</h4><p>72 Queen Street, Brisbane QLD 4000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3222</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info.brisbane@nexthotels.com'>info.brisbane@nexthotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Bendigo Golden Reef" 
+    data-lat="-36.759526" 
+    data-lng="144.311731" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=186 McIvor Highway, Bendigo, Victoria 3550'><h4>Sundowner Bendigo Golden Reef</h4><p>186 McIvor Highway, Bendigo, Victoria 3550</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5441 1000</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:bookings@goldenreefmotorinn.com'>bookings@goldenreefmotorinn.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Dubbo Aberdeen Motor Inn" 
+    data-lat="-32.253234" 
+    data-lng="148.601233" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=25 Cobra St, Dubbo, New South Wales '><h4>Sundowner Dubbo Aberdeen Motor Inn</h4><p>25 Cobra St, Dubbo, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6884 1700</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Echuca Nirebo" 
+    data-lat="-36.123775" 
+    data-lng="144.747730" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=251 Hare Street, Echuca, Victoria '><h4>Sundowner Echuca Nirebo</h4><p>251 Hare Street, Echuca, Victoria </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5482 2033</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Gardenia Motor Inn Bass Hill" 
+    data-lat="-33.901914" 
+    data-lng="151.000380" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=850 Hume Hwy, Bass Hill, New South Wales '><h4>Sundowner Gardenia Motor Inn Bass Hill</h4><p>850 Hume Hwy, Bass Hill, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 9644 9600</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@gardeniamotorinn.com.au'>reservations@gardeniamotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Horsham Westlander" 
+    data-lat="-36.735746" 
+    data-lng="142.206969" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=100 Stawell Road, Horsham, Victoria 3400'><h4>Sundowner Horsham Westlander</h4><p>100 Stawell Road, Horsham, Victoria 3400</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5382 0191</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Hume Country Motor Inn" 
+    data-lat="-36.054486" 
+    data-lng="146.909649" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=736 Logan Road, Albury, 2640'><h4>Sundowner Hume Country Motor Inn</h4><p>736 Logan Road, Albury, 2640</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6025 8233</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@humecountrymotorinn.com.au'>info@humecountrymotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Huckisson - Jervis Bay" 
+    data-lat="-35.041050" 
+    data-lng="150.671737" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=28 Bowen Street, Huskisson, New South Wales '><h4>Sundowner Huckisson - Jervis Bay</h4><p>28 Bowen Street, Huskisson, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4441 5500</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:huskybayside@bigpond.com'>huskybayside@bigpond.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Oriana Orange" 
+    data-lat="-33.278611" 
+    data-lng="149.087920" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=178-184 Woodward St, Orange, New South Wales '><h4>Sundowner Oriana Orange</h4><p>178-184 Woodward St, Orange, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6362 3066</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reception@sundownerorange.com.au'>reception@sundownerorange.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Rockhampton Gladstone" 
+    data-lat="-23.393554" 
+    data-lng="150.505670" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=112 Gladstone Road, Rockhampton, Queensland 4700'><h4>Sundowner Rockhampton Gladstone</h4><p>112 Gladstone Road, Rockhampton, Queensland 4700</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4927 8866</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:admin@rockhamptonsundowner.com.au'>admin@rockhamptonsundowner.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Townhouse Goondiwindi" 
+    data-lat="-28.547518" 
+    data-lng="150.308302" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=110 Marshall Street, Goondiwindi, Queensland 4390'><h4>Sundowner Townhouse Goondiwindi</h4><p>110 Marshall Street, Goondiwindi, Queensland 4390</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4671 1855</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+  <div class="markers" 
+    data-group="sundowner"
+    data-pin-icon="images/icons/group-map-pin-sundowner.svg" 
+    data-location="Sundowner Twin Towns Motel" 
+    data-lat="-28.189175" 
+    data-lng="153.540731" 
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=21 Minjungbal Drive, Tweed Heads South, Tweed Heads, New South Wales 2486'><h4>Sundowner Twin Towns Motel</h4><p>21 Minjungbal Drive, Tweed Heads South, Tweed Heads, New South Wales 2486</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 5524 3108</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:sundownertwintowns@gmail.com'>sundownertwintowns@gmail.com</a></p></div></div><div class='arrow-left'></div></div>"></div>  
+
+  <div class="markers" 
+    data-group="collection"
+    data-pin-icon="images/icons/group-map-pin-collection.svg" 
+    data-location="Kiridara Hotel" 
+    data-lat="19.878311"
+    data-lng="102.1390643" 
+    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=22/13 North Road,Ban Naviengkham,Luang Prabang,Lao PDR,Thailand'><h4>Kiridara Hotel</h4><p>22/13 North Road,Ban Naviengkham, Luang Prabang, Lao PDR, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+856 7126 1888</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@kiridara.com'>stay@kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-group="collection"
+    data-pin-icon="images/icons/group-map-pin-collection.svg" 
+    data-location="Riva Arun Hotel" 
+    data-lat="13.7479059",
+    data-lng="100.4917176" 
+    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=392/25-26 Maharaj Road,Phraborom Maharajawang,Phra Nakhon,Bangkok,10200,Thailand'><h4>Riva Arun Hotel</h4><p>392/25-26 Maharaj Road, Phraborom Maharajawang, Phra Nakhon, Bangkok, 10200, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+66 (0) 2221 1188</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@rivaarunbangkok.com'>stay@rivaarunbangkok.com</a></p></div></div><div class='arrow-left'></div></div>kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+
+  <div class="markers" 
+    data-group="collection"
+    data-pin-icon="images/icons/group-map-pin-collection.svg" 
+    data-location="Riva Surya Hotel" 
+    data-lat="13.769502",
+    data-lng="100.4935813" 
+    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=23 Phra Arthit Road, Phra Nakhon, Bangkok, 10200, Thailand'><h4>Riva Surya Hotel</h4><p>23 Phra Arthit Road, Phra Nakhon, Bangkok, 10200, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+6626335000</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@rivasuryabangkok.com'>stay@rivasuryabangkok.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+  
+</article>
+
+<!--
+    ____ ___  _   _ _____  _    ____ _____
+   / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
+  | |  | | | |  \| | | | / _ \| |     | |
+  | |__| |_| | |\  | | |/ ___ \ |___  | |
+   \____\___/|_| \_| |_/_/   \_\____| |_|
+
+-->
+
+<!-- <div class="scroll-target" data-value="contact"></div>
+<article id="brand-contact-section">
+  <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="brand-contact-title">
+            <h4>get in touch</h4>
+            <h1>Contact us</h1>
+          </div>
+
+          <div class="row">
+            <form action="" id="brand-contact-form">
+            <div class="col-md-6">
+              <div class="input-box">
+                <input type="text" name="name" placeholder="Your Name">
+              </div>
+              <div class="input-box">
+                <input type="text" name="email" placeholder="Your Email">
+              </div>
+              <div class="input-box">
+                <div class="dropdown">
+                  <select name="location" id="location">
+                    <option value="">Select Location</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-box">
+                <div class="dropdown">
+                  <select name="enquiry" id="enquiry">
+                    <option value="">Select Enquiry</option>
+                  </select>
+                </div>
+              </div>
+              <div id="social-meida-links">
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-box">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+              </div>
+              <div class="input-box">
+                <input type="submit" value="Submit" class="square-cta">
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>      
+  </div>
+</article> 
+
+
+
+        <!--
+           _____ _   _ ____
+          | ____| \ | |  _ \
+          |  _| |  \| | | | |
+          | |___| |\  | |_| |
+          |_____|_| \_|____/
+
+        -->
+        
+        
+<!-- 
+         _   ___     ___    ____   ____ ____  ___ ____ _____ 
+        | | / \ \   / / \  / ___| / ___|  _ \|_ _|  _ \_   _|
+     _  | |/ _ \ \ / / _ \ \___ \| |   | |_) || || |_) || |  
+    | |_| / ___ \ V / ___ \ ___) | |___|  _ < | ||  __/ | |  
+     \___/_/   \_\_/_/   \_\____/ \____|_| \_\___|_|    |_|  
+                                                             
+-->
+
+
+  <!-- Development Version -->
+  <link rel="stylesheet" type="text/css" href="css/style_landing.css">
+
+  <!-- Page Library -->
+  <script type="text/javascript" src="../source/js/all.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
+  <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/jquery.gsap.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/easing/EasePack.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/plugins/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/ScrollMagic.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/debug.addIndicators.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
+  <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
+  <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>  
+  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>  
+  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
+
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp&libraries=places"></script>
+  <script type="text/javascript" src="../source/library/infobox/infobox.js"></script>  
+  
+  <!-- Google Closure -->
+  <script src="../source/library/closure-library/closure/goog/base.js"></script>
+  <script src="../source/js/goog-custom-dependencies.js"></script>
+  <script type="text/javascript">
+    goog.require('sagewest.page.Brand');
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      page = new sagewest.page.Brand({});    
+    });
+  </script>
+
+        <!--
+   _____ ___   ___ _____ _____ ____  
+  |  ___/ _ \ / _ \_   _| ____|  _ \ 
+  | |_ | | | | | | || | |  _| | |_) |
+  |  _|| |_| | |_| || | | |___|  _ < 
+  |_|   \___/ \___/ |_| |_____|_| \_\
+                                     
+-->
+
+
+<!-- <footer id="mobile-footer" class="visible-xs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-7">
+        <p class="mobile-footer-hashtag">#Sagewestperth</p>
+      </div>
+      <div class="col-xs-5">
+        <div id="mobile-social-container">
+          <ul>
+            <li><a href="https://www.facebook.com/SageHotelPerth/" target="_blank" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/sagewestperth/" target="_blank" class="fa fa-instagram"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>-->
+
+<footer id="desktop-footer" class="brand-version">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        
+        <div id="footer-logo">
+          <img src="images/logo/footer-snh-logo.png" alt="">
+        </div>
+
+        <div id="footer-subscribe-form">
+          <h1>Subscribe to us</h1>
+          <div class="input-box">
+            <input type="text" name="email" placeholder="Enter your email">
+          </div>
+        </div>
+
+        <div id="footer-copyright-info" class="visible-md visible-lg">
+          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div id="footer-copyright-info" class="visible-sm visible-xs">
+          <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+      </div>
+
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <div class="footer-seperator left-version">
+        </div>
+      </div>
+
+      <div class="col-md-3 hidden-sm hidden-xs">
+
+        <div id="footer-menu-container">
+          <div id="footer-menu-1" class="footer-menu">
+            <h1>Corporate</h1>
+            <ul>
+              <li><a href="#">SilverNeedle® Hospitality Group</a></li>
+              <li><a href="#">Press Room</a></li>
+              <li><a href="#">Careers</a></li>
+
+              <li><a href="#">SilverNeedle Select</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+
+          <!-- 
+          <div id="footer-menu-2" class="footer-menu">
+            <h1>&nbsp;</h1>
+            <ul>
+              <li><a href="#">SilverNeedle Select</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+          -->
+
+        </div> <!-- footer-menu-container -->
+
+        
+        
+
+      </div>
+
+      <div class="col-md-2 hidden-sm hidden-xs">
+
+        <div id="brand-middle-footer-container">
+          <div id="brand-footer-contact-item-container">
+            <div class="footer-contact-item">
+              <h4>Central Reservations</h4>
+              <p>
+                1300 346 835 (Within Australia) <br>
+                0800 480 274 (Within New Zealand)
+              </p>
+            </div>
+          </div>
+
+          <div id="footer-social-media">
+            <ul>
+              <li><a href="#" class="fa fa-facebook-square"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-youtube-square"></a></li>
+              <li><a href="#" class="fa fa-twitter-square"></a></li>
+              <li><a href="#" class="fa fa-google-plus-square"></a></li>
+            </ul>
+          </div>
+        </div> <!-- brand-middle-footer-container -->
+        
+      </div>
+
+
+      
+      <div class="col-md-1 hidden-sm hidden-xs">
+        <div class="footer-seperator right-version">
+        </div>
+      </div>
+      <div class="col-md-2 hidden-xs hidden-sm">
+
+        <div id="footer-snh-group-logos-container">
+          <div id="footer-snh-group-logos" class="brand-version">
+            <h1>Our Brands</h1>
+            <ul>
+              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- removed by client -->
+  <!-- 
+  <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div id="hotel-footer-bottom-bar">
+            <ul>
+              <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
+              <li><p>0800 480 274 (Within New Zealand)</p></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+</footer> <!-- #desktop-footer
+      </div> <!-- #page-wrapper-content -->
+    </div> <!-- #page-wrapper -->
+    
+    <div id="mobile-page-hitarea"></div>
+
+  </body>
+</html>

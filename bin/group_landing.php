@@ -5,10 +5,10 @@ ob_start();
   global $is_debug;
   global $body_class;
 
-  $is_debug = false;
-  // $is_debug = true;
+  // $is_debug = false;
+  $is_debug = true;
 
-  $body_class = "brand-landing-page";
+  $body_class = "group-landing-page";
 ?>
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -16,7 +16,7 @@ ob_start();
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
   <head>
-    <?php include('head_brand_landing.php'); ?>
+    <?php include('head_group_landing.php'); ?>
   </head>
 
 
@@ -37,12 +37,12 @@ ob_start();
 
 
     <!-- mobile header is outside the page wrapper -->
-    <?php include('brand_landing_header_mobile.php'); ?>
+    <?php include('group_landing_header_mobile.php'); ?>
     
     <div id="page-wrapper">
       <div id="page-wrapper-content">
 
-        <?php include('brand_header_landing.php'); ?>
+        <?php include('group_header_landing.php'); ?>
 
         <!--
            ____ _____  _    ____ _____
@@ -56,7 +56,7 @@ ob_start();
 
 
 
-        <?php include('page_brand_landing.php'); ?>
+        <?php include('page_group_landing.php'); ?>
 
 
 
@@ -70,7 +70,7 @@ ob_start();
 
         -->
         
-        <?php include('js_brand_landing.php'); ?>
+        <?php include('js_group_landing.php'); ?>
         <?php include('brand_alternative_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
@@ -82,7 +82,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('brand_landing.html', ob_get_contents());
+file_put_contents('group_landing.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>

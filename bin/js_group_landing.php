@@ -14,11 +14,13 @@
 
 <?php if($is_debug): ?>
   <!-- Development Version -->
-  <link rel="stylesheet" type="text/css" href="css/style_next.css">
+  <link rel="stylesheet" type="text/css" href="css/style_landing.css">
 
   <!-- Page Library -->
   <script type="text/javascript" src="../source/js/all.js"></script>
   <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
   <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
   <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
