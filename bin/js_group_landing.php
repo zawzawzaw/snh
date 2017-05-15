@@ -19,7 +19,7 @@
   <!-- Page Library -->
   <script type="text/javascript" src="../source/js/all.js"></script>
   <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="../source/library/jquery-ui/jquery-ui.js"></script>
+  <script type="text/javascript" src="../source/library/jquery-ui/jquery-ui.js"></script>                 <!-- only in group landing -->
   <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
   <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
   <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
@@ -59,7 +59,7 @@
   <!-- Optimized Version -->
   <script type="text/javascript">
     var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
-    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
+    var PAGE_LIBRARY              = "js/page-group-libraries.min.js";       // this one is special, has jquery ui
     var PAGE_JS                   = "js/page-brand.min.js";
     var PAGE_CSS                  = "css/style_landing.css";
     

@@ -1,6 +1,7 @@
 java -jar "compiler.jar" \
   --js=../js/all.js \
   --js=jquery/jquery-1.9.1.min.js \
+  --js=jquery-ui/jquery-ui.js \
   --js=jquery/jquery.mousewheel.min.js \
   --js=_js/mobile-detect.js \
   --js=_js/preloadjs-0.4.0.min.js \
@@ -17,4 +18,4 @@ java -jar "compiler.jar" \
   --js=momentjs/moment.min.js \
   --js=daterangepicker/daterangepicker.js \
   --compilation_level WHITESPACE_ONLY \
-  --js_output_file=../../bin/js/page-default-libraries.min.js
+  --js_output_file=../../bin/js/page-group-libraries.min.js

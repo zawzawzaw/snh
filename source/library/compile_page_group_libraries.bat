@@ -17,8 +17,5 @@ java -jar "compiler.jar" ^
   --js=instafeed\instafeed.min.js ^
   --js=momentjs\moment.min.js ^
   --js=daterangepicker\daterangepicker.js ^
-  --js=isotope\isotope.pkgd.js ^
-  --js=isotope\packery-mode.pkgd.js ^
-  --js=isotope\fit-columns.js ^
   --compilation_level WHITESPACE_ONLY ^
-  --js_output_file=..\..\bin\js\page-gallery-libraries.min.js
+  --js_output_file=..\..\bin\js\page-group-libraries.min.js
