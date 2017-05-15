@@ -1,6 +1,7 @@
 java -jar "compiler.jar" \
   --js=../js/all.js \
   --js=jquery/jquery-1.9.1.min.js \
+  --js=jquery-ui/jquery-ui.js \
   --js=jquery/jquery.mousewheel.min.js \
   --js=_js/mobile-detect.js \
   --js=_js/preloadjs-0.4.0.min.js \

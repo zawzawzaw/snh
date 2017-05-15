@@ -4,6 +4,8 @@ chmod u+x compile_page_google_libraries.command
 ./compile_page_google_libraries.command
 chmod u+x compile_page_default_libraries.command
 ./compile_page_default_libraries.command
+chmod u+x compile_page_group_libraries.command
+./compile_page_group_libraries.command
 chmod u+x compile_page_gallery_libraries.command
 ./compile_page_gallery_libraries.command
 chmod u+x compile_page_default.command
