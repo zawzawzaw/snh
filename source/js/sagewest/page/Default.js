@@ -275,6 +275,12 @@ sagewest.page.Default.prototype.create_min_height = function(){
 sagewest.page.Default.prototype.create_autocompelete_search = function(){
   if($("#hotel_search").length) {
 
+    $("#hotel_search").focus(function(){      
+      $(this).parent().addClass("on_focus");
+    }).blur(function(){      
+      $(this).parent().removeClass("on_focus");
+    });
+
     $("#hotel_search").on("click", function(e){
       
       var scroll_target = $("#banner-search-form-scroll-target");

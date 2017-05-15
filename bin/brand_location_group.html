@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
   <head>
     
-<title>Sage</title>
+<title>NEXT</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +13,10 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
 
-<link rel="icon" href="images/icons/favicon.png">
+<link rel="icon" href="images/icons/favicon-next.png">
 
 <!-- Critical Css -->
-<link rel="stylesheet" type="text/css" href="css/critical_style.css">
+<link rel="stylesheet" type="text/css" href="css/critical_style_landing.css">
 
 <!-- Social Tags -->
 <!-- <meta content="Sage West Perth" property="og:title"/>
@@ -72,12 +72,16 @@
 
   <body class="brand-location-page permanent-scrolled">
 
-    <div id="page-preloader">
-      <div id="page-preloader-line-01"></div>
-      <div id="page-preloader-line-02">
-        <div class="line-a"></div>
-        <div class="line-b"></div>
+    <div id="page-preloader" class="square-version">
+      <div id="page-preloader-logo">
+        <img src="images/icons/preloader-next.png">
       </div>
+
+      <div id="page-preloader-line">
+        <div id="page-preloader-line-a"></div>
+        <div id="page-preloader-line-b"></div>
+      </div>
+      <div id="page-preloader-number">0%</div>
     </div>
 
 
@@ -237,10 +241,10 @@
           <div id="desktop-header-logo-container">
             <a href="#" id="desktop-menu-bar" class="open">
               <img src="images/icons/menu-bar.svg" alt="">     
-              <span>Menu</span>       
+              <span>Menu</span>
             </a>
-            <a href="brand_alternative.php" id="desktop-header-logo">
-              <img src="images/logo/sage-west-logo.svg">            
+            <a href="brand_next.php" id="desktop-header-logo">
+              <img src="images/logo/next-logo.png">
             </a>
           </div>          
         </div>
@@ -248,10 +252,9 @@
       <div class="col-md-6">
         <div id="desktop-header-nav">
           <ul>
-            <li><a href="brand_alternative.php#about">About</a></li>
-            <li><a href="brand_alternative.php#location">Our Locations</a></li>
-            <li><a href="brand_alternative.php#offers">Offers</a></li>
-            <li><a href="brand_alternative.php#map">Map</a></li>
+            <li><a href="group_landing.php#map">Map</a></li>
+            <li><a href="group_landing.php#our-brands">Our Brands</a></li>
+            <li><a href="group_landing.php#book-with-us">Book With Us</a></li>
           </ul>
         </div>
       </div>  
@@ -263,6 +266,17 @@
 
   <div id="desktop-header-booking-form">
       <form action="">
+        <div class="input-box">
+          <label for="hotel">Select Brand</label>
+          <div class="dropdown">
+            <select name="brand" id="brand" class="brand-dropdown">
+              <option value="Sage Hotel">Sage Hotel</option>
+              <option value="Sage Hotel">Sage Hotel</option>
+              <option value="Sage Hotel">Sage Hotel</option>
+              <option value="Sage Hotel">Sage Hotel</option>
+            </select>
+          </div>
+        </div>
         <div class="input-box">
           <label for="hotel">Select Hotel</label>
           <div class="dropdown">
@@ -319,17 +333,16 @@
             <div class="input-box-disclaimer">
               <p>11 years & below</p>
             </div>
-
+            
           </div>
         </div>
         <div class="input-box">
           <label for="">Promotion Code</label>
           <input type="text" name="promo_code">
         </div>
-        <div class="cta-container">
+        <div class="input-box">
           <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
         </div>
-        
       </form>
   </div>
   <div id="desktop-header-booking-calendar">
@@ -337,29 +350,28 @@
   </div>
 </header> <!-- #desktop-header -->
 
-<div id="desktop-header-menu">
-
+<div id="desktop-header-menu">          
+  
   <div id="destination-indicator">
-    <p>Select a destination:</p>
-  </div>
-  <div id="country-indicator">
-    <p>Australia</p>
+    <p>Select Brand:</p>
   </div>
 
   <div id="sage-links">
     <ul>
-      <li><a href="hotel.php">Adelaide</a></li>
-      <li><a href="hotel.php">brisbane</a></li>
-      <li><a href="hotel.php">west perth</a></li>
-      <li><a href="hotel.php">wollongong</a></li>
+      <li><a href="hotel.php">next hotels</a></li>
+      <li><a href="hotel.php">sage hotels</a></li>
+      <li><a href="hotel.php">kafnu</a></li>
+      <li><a href="hotel.php">Country Comfort</a></li>
+      <li><a href="hotel.php">Chifley Hotels</a></li>
+      <li><a href="hotel.php">Sundowner Inns</a></li>
+      <li><a href="hotel.php">collection</a></li>      
     </ul>        
-    
   </div>
   <div id="brand-link" class="menu-link">
-    <a href="#"><span>Our Brands</span></a>
+    <a href="#"><span>Hotel Directory</span></a>
   </div>
   <div id="group-link" class="menu-link">
-    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    <a href="#"><span>NEXT <br class="hidden-xs hidden-sm"> Story Group Corporate</span></a>
   </div>
 </div>
         <!--
@@ -405,7 +417,7 @@
             <div class="default-breadcrumb">
               <ul>
                 <li><a href="brand_landing.php">NEXT Hotels</a></li>
-                <li><a href="brand_alternative.php">sage hotels</a></li>
+                <!-- <li><a href="brand_alternative.php">sage hotels</a></li> -->
                 <li>locations</li>
               </ul>
             </div> <!-- default-breadcrumb -->
@@ -444,6 +456,8 @@
             <!-- a list of cities, don't use special characters -->
             <div id="brand-location-page-filter-data-item-container">
 
+              <div class="brand-location-page-filter-data-item" data-country="Thailand" data-territory="Bangkok" data-city=""></div>
+              <div class="brand-location-page-filter-data-item" data-country="Laos" data-territory="Luang Prabang" data-city=""></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Adelaide"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Mt Gambier"></div>
               <!-- <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Gepps Cross"></div> -->
@@ -541,6 +555,48 @@
 
     
             <div id="brand-location-page-item-container">
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-country="Thailand"
+                data-territory="Bangkok"
+                data-city=""
+                data-id="Riva Arun">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Riva Arun</h5>
+                  <h4>Bangkok</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-country="Thailand"
+                data-territory="Bangkok"
+                data-city=""
+                data-id="Riva Surya">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Riva Surya</h5>
+                  <h4>Bangkok</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-country="Laos"
+                data-territory="Luang Prabang"
+                data-city=""
+                data-id="Kiridara">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Kiridara</h5>
+                  <h4>Luang Prabang</h4>
+                </div>
+              </a>
 
               <a href="hotel.php" class="brand-location-page-item"
                 data-country="Australia"
@@ -1145,7 +1201,7 @@
     var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
     var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
     var PAGE_JS                   = "js/page-brand.min.js";
-    var PAGE_CSS                  = "css/style.css";
+    var PAGE_CSS                  = "css/style_landing.css";
     
     head.load(PAGE_CSS, function(){
 
@@ -1219,7 +1275,7 @@
                 <div id="hotel-footer-menu-container">
                   <h1>Corporate</h1>
                   <ul>
-                    <li><a href="#">Next Story Group</a></li>
+                    <li><a href="#">NEXT Story Group</a></li>
                     <li><a href="#">Press Room</a></li>
                     <li><a href="#">Careers</a></li>
 

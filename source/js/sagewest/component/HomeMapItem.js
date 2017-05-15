@@ -103,17 +103,17 @@ sagewest.component.HomeMapItem.prototype.create_marker = function() {
   // console.log(this.pinIcon);
 
   var Latlng = new google.maps.LatLng(this.lat, this.lng);
-  var icon = {
-      url: this.pinIcon, // url
-      scaledSize: new google.maps.Size(25, 48), // scaled size
-      origin: new google.maps.Point(0,0), // origin
-      anchor: new google.maps.Point(0, 0) // anchor
-  };
+  // var icon = {
+  //     url: this.pinIcon, // url
+  //     scaledSize: new google.maps.Size(25, 48), // scaled size
+  //     origin: new google.maps.Point(0,0), // origin
+  //     anchor: new google.maps.Point(0, 0) // anchor
+  // };
   this.marker = new google.maps.Marker({
     position: Latlng,
     map: this.map,
     title: this.location,
-    icon: icon
+    icon: this.pinIcon
   });
 
 };

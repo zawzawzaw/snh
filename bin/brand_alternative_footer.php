@@ -45,7 +45,7 @@
                 <div id="hotel-footer-menu-container">
                   <h1>Corporate</h1>
                   <ul>
-                    <li><a href="#">NEXT Story Group</a></li>
+                    <li><a href="#">Next Story Group</a></li>
                     <li><a href="#">Press Room</a></li>
                     <li><a href="#">Careers</a></li>
 

@@ -16,9 +16,9 @@
           <div id="desktop-header-logo-container">
             <a href="#" id="desktop-menu-bar" class="open">
               <img src="images/icons/menu-bar.svg" alt="">     
-              <span>Menu</span>       
+              <span>Menu</span>
             </a>
-            <a href="brand_landing.php" id="desktop-header-logo">
+            <a href="brand_next.php" id="desktop-header-logo">
               <img src="images/logo/next-logo.png">
             </a>
           </div>          
@@ -108,17 +108,16 @@
             <div class="input-box-disclaimer">
               <p>11 years & below</p>
             </div>
-
+            
           </div>
         </div>
         <div class="input-box">
           <label for="">Promotion Code</label>
           <input type="text" name="promo_code">
         </div>
-        <div class="cta-container">
+        <div class="input-box">
           <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
         </div>
-        
       </form>
   </div>
   <div id="desktop-header-booking-calendar">
@@ -126,8 +125,8 @@
   </div>
 </header> <!-- #desktop-header -->
 
-<div id="desktop-header-menu">
-
+<div id="desktop-header-menu">          
+  
   <div id="destination-indicator">
     <p>Select Brand:</p>
   </div>

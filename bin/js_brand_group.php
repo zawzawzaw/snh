@@ -19,7 +19,6 @@
   <!-- Page Library -->
   <script type="text/javascript" src="../source/js/all.js"></script>
   <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="../source/library/jquery-ui/jquery-ui.js"></script>
   <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
   <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
   <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
@@ -35,10 +34,10 @@
   <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>  
   <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>  
   <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
-
+  
   <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp&libraries=places"></script>
   <script type="text/javascript" src="../source/library/infobox/infobox.js"></script>  
-  
+
   <!-- Google Closure -->
   <script src="../source/library/closure-library/closure/goog/base.js"></script>
   <script src="../source/js/goog-custom-dependencies.js"></script>
@@ -52,6 +51,7 @@
   </script>
 
 <?php else: ?>
+
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
@@ -80,7 +80,7 @@
         page = new sagewest.page.Brand({});
 
       });
-      
+
     });
 
     // start preload

@@ -272,6 +272,7 @@
         font-size: 62px;
         line-height: 75px;
         color: @white;
+        text-transform: none;
       }      
     }
 
@@ -310,7 +311,7 @@
         }
         input:-moz-placeholder { /* Firefox 18- */
           color: @light-violet;
-        }
+        }          
         .hotel-search-btn {
           position: absolute;
           right: 0px;
@@ -329,10 +330,26 @@
             margin: 0 auto;
             display: block;
           }
-          
+           
 
         }
       }
+
+      .on_focus {
+        input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: rgba(0, 56, 101, 0.4)!important;
+        }
+        input::-moz-placeholder { /* Firefox 19+ */
+          color: rgba(0, 56, 101, 0.4)!important;
+        }
+        input:-ms-input-placeholder { /* IE 10+ */
+          color: rgba(0, 56, 101, 0.4)!important;
+        }
+        input:-moz-placeholder { /* Firefox 18- */
+          color: rgba(0, 56, 101, 0.4)!important;
+        }
+      } 
+
     }
 
     .banner-text when (@is_country_comfort){
@@ -2437,7 +2454,7 @@ div.default-promotion-cta-container{
 }
 
 #default-map-section when (@is_brand_landing) {
-  padding-top: 80px;
+  padding-top: 110px;
 }
 
 @media all and (max-width: 991px) {

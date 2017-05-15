@@ -8884,6 +8884,7 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
   font-size: 62px;
   line-height: 75px;
   color: #ffffff;
+  text-transform: none;
 }
 .default-page-banner .default-page-banner-text .scroll-down-cta {
   position: absolute;
@@ -13621,6 +13622,7 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 .brand-location-page-item .brand-location-page-item-overlay:before {
   content: '';
@@ -13656,6 +13658,9 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   line-height: 24px;
   color: #b1a5a0;
   position: relative;
+}
+#brand-location-cta-container {
+  text-align: right;
 }
 #brand-all-location-section-version-02 {
   padding-top: 54px;
@@ -13847,8 +13852,8 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 #group-booking-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 54px;
+  padding-bottom: 160px;
 }
 #group-booking-section #group-booking-title {
   padding-bottom: 85px;
@@ -13878,6 +13883,10 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
 }
 #group-booking-section #group-booking-content p {
   color: #7d7d7d;
+  text-align: center;
+}
+#group-booking-section #group-booking-cta-container {
+  margin-top: 30px;
   text-align: center;
 }
 @media only screen and (max-width: 991px) {

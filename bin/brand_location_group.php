@@ -8,7 +8,7 @@ ob_start();
   $is_debug = false;
   // $is_debug = true;
 
-  $body_class = "group-landing-page";
+  $body_class = "brand-location-page permanent-scrolled";
 ?>
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -33,16 +33,15 @@ ob_start();
       </div>
       <div id="page-preloader-number">0%</div>
     </div>
-    
 
 
     <!-- mobile header is outside the page wrapper -->
-    <?php include('group_landing_header_mobile.php'); ?>
+    <?php include('brand_header_mobile.php'); ?>
     
     <div id="page-wrapper">
       <div id="page-wrapper-content">
 
-        <?php include('group_header_landing.php'); ?>
+        <?php include('brand_header_group.php'); ?>
 
         <!--
            ____ _____  _    ____ _____
@@ -56,7 +55,7 @@ ob_start();
 
 
 
-        <?php include('page_group_landing.php'); ?>
+        <?php include('page_brand_location_group.php'); ?>
 
 
 
@@ -70,7 +69,7 @@ ob_start();
 
         -->
         
-        <?php include('js_group_landing.php'); ?>
+        <?php include('js_brand_group.php'); ?>
         <?php include('brand_alternative_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
@@ -82,7 +81,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('group_landing.html', ob_get_contents());
+file_put_contents('brand_location_group.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>

@@ -1,380 +1,4 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
-  <head>
-    
-<title>Sage</title>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
-
-<link rel="icon" href="images/icons/favicon.png">
-
-<!-- Critical Css -->
-<link rel="stylesheet" type="text/css" href="css/critical_style.css">
-
-<!-- Social Tags -->
-<!-- <meta content="Sage West Perth" property="og:title"/>
-<meta content="http://sg.sagewestperth.com/images/facebook-share-image.png" property="og:image"/>
-<meta content="Sage West Perth" property="og:site_name"/>
-<meta content="http://sg.sagewestperth.com" property="og:url"/>
-<meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
-
-
-
-<script type="text/javascript">
-  
-  // simple preloader script
-  
-  window.preloader_counter = 0;
-  window.preloader_js = 0;
-  window.preloader_css = 0;
-
-  window.preloader_interval = setInterval(function(){
-
-    var counter = window.preloader_counter;
-    var target = (window.preloader_js * 0.75) + (window.preloader_css * 0.25);
-    counter += (target - counter) / 5;
-    window.preloader_counter = counter;
-
-    var display = Math.floor(Math.round(counter * 10) / 10);
-
-    var number_element = document.getElementById('page-preloader-number');
-    if(number_element){
-      number_element.innerHTML = (display + '%');
-    }
-
-    var line_element = document.getElementById('page-preloader-line-b');
-    if (line_element) {
-      line_element.style.width = (display + '%');
-    }
-    
-
-    if (display >= 100) {
-
-      var preloader = document.getElementById('page-preloader');
-      if (preloader) {
-        preloader.className += ' preload-complete';
-      }
-
-      clearInterval(window.preloader_interval);
-    }
-
-  }, 50);
-
-</script>  </head>
-
-
-  <body class="brand-location-page permanent-scrolled">
-
-    <div id="page-preloader">
-      <div id="page-preloader-line-01"></div>
-      <div id="page-preloader-line-02">
-        <div class="line-a"></div>
-        <div class="line-b"></div>
-      </div>
-    </div>
-
-
-    <!-- mobile header is outside the page wrapper -->
-    <!-- <div id="mobile-header-spacer"></div> -->
-<header id="mobile-header">
-
-  <div class="mobile-header-bg"></div>
-
-  <div id="mobile-header-content-container">
-    <div id="mobile-header-close-btn"><span>Menu</span></div>
-    <div id="mobile-header-open-btn"></div>
-
-    <a href="brand_alternative.php" id="mobile-header-logo">
-      <img src="images/logo/sage-west-logo.svg">
-    </a>  
-  
-    <a href="javascript:void(0);" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
-    <a href="javascript:void(0);" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
-  </div>
-
-</header> <!-- #mobile-header -->
-
-<header id="mobile-header-expanded">
-
-  <div id="mobile-header-menu-container">
-    <div id="destination-indicator">
-      <p>Select a destination:</p>
-    </div>
-    <div id="country-indicator">
-      <p>Australia</p>
-    </div>
-
-    <nav id="mobile-menu">
-      <ul>
-        <li><a href="hotel.php">Adelaide</a></li>
-        <li><a href="hotel.php">brisbane</a></li>
-        <li><a href="hotel.php">west perth</a></li>
-        <li><a href="hotel.php">wollongong</a></li>
-        
-        <!-- 
-        <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
-        <li><a href="hotel.php">Country Comfort Adelaide Manor</a></li>
-        <li><a href="hotel.php">Country Comfort Amity Motel Albany</a></li>
-        <li><a href="hotel.php">Country Comfort Armidale</a></li>
-        <li><a href="hotel.php">Country Comfort Bundaberg International</a></li>
-        <li><a href="hotel.php">Country Comfort Coffs Harbour</a></li>
-        <li><a href="hotel.php">Country Comfort gin gin</a></li>
-        <li><a href="hotel.php">Country Comfort hunts liverpool</a></li>   
-        <li><a href="hotel.php">Country Comfort Inter City Perth</a></li>   
-        <li><a href="hotel.php">Country Comfort Inter Mt Gambier</a></li>   
-        <li><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></li>   
-        <li><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
-        <li><a href="hotel.php">Country Comfort Toowoomba</a></li>   
-        -->
-      </ul>
-    </nav>
-    <div id="brand-link" class="menu-link">
-      <a href="#"><span>Our Brands</span></a>
-    </div>
-    <div id="group-link" class="menu-link">
-      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
-    </div>
-  </div> <!-- #mobile-header-menu-container -->
-
-  <div id="mobile-header-booking-form">
-    <form action="">
-      <div class="input-box">
-        <label for="hotel">Select Hotel</label>
-        <div class="dropdown">
-          <select name="hotel" id="hotel" class="hotel-dropdown">
-            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
-            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
-            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
-          </select>
-        </div>
-      </div>
-      <div class="input-box">
-        <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
-        <div class="date-input">
-          <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
-        </div>
-      </div>
-      <div class="input-box row">
-        <div class="input-box-col-1 col-sm-6 col-xs-6">
-          <label for="">Adults</label>
-          <div class="dropdown">
-            <select name="adults" id="adults">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-        </div>
-        <div class="input-box-col-2 col-sm-6 col-xs-6">
-          <label for="">Children</label>
-          <div class="dropdown">
-            <select name="children" id="children">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </div>
-          
-          <div class="input-box-disclaimer">
-            <p>11 years & below</p>
-          </div>
-
-        </div>
-      </div>
-      <div class="input-box">
-        <label for="">Promotion Code</label>
-        <input type="text" name="promo_code">
-      </div>
-      <div class="input-box">
-        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
-      </div>
-    </form>
-  </div>
-  <div id="mobile-header-booking-calendar"></div>
-
-</header> <!-- #mobile-header-expanded -->        
-    <div id="page-wrapper">
-      <div id="page-wrapper-content">
-
-        <!-- 
-   ____  _____ ____  _  _______ ___  ____    _   _ _____    _    ____  _____ ____  
-  |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \  | | | | ____|  / \  |  _ \| ____|  _ \ 
-  | | | |  _| \___ \| ' /  | || | | | |_) | | |_| |  _|   / _ \ | | | |  _| | |_) |
-  | |_| | |___ ___) | . \  | || |_| |  __/  |  _  | |___ / ___ \| |_| | |___|  _ < 
-  |____/|_____|____/|_|\_\ |_| \___/|_|     |_| |_|_____/_/   \_\____/|_____|_| \_\
-                                           
--->
-
-<header id="desktop-header">
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3">
-        <div id="desktop-header-menu-logo-container">
-          <div id="desktop-header-logo-container">
-            <a href="#" id="desktop-menu-bar" class="open">
-              <img src="images/icons/menu-bar.svg" alt="">     
-              <span>Menu</span>       
-            </a>
-            <a href="brand_alternative.php" id="desktop-header-logo">
-              <img src="images/logo/sage-west-logo.svg">            
-            </a>
-          </div>          
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div id="desktop-header-nav">
-          <ul>
-            <li><a href="brand_alternative.php#about">About</a></li>
-            <li><a href="brand_alternative.php#location">Our Locations</a></li>
-            <li><a href="brand_alternative.php#offers">Offers</a></li>
-            <li><a href="brand_alternative.php#map">Map</a></li>
-          </ul>
-        </div>
-      </div>  
-      <div class="col-md-3">
-        <a href="javascript:void(0);" id="book-now"><span>Book Now</span></a>        
-      </div>
-    </div>
-  </div>  
-
-  <div id="desktop-header-booking-form">
-      <form action="">
-        <div class="input-box">
-          <label for="hotel">Select Hotel</label>
-          <div class="dropdown">
-            <select name="hotel" id="hotel" class="hotel-dropdown">
-              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
-              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
-              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
-              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
-            </select>
-          </div>
-        </div>
-        <div class="input-box">
-          <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
-          <div class="date-input">
-            <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
-          </div>
-        </div>
-        <div class="input-box row">
-          <div class="input-box-col-1 col-md-6">
-            <label for="">Adults</label>
-            <div class="dropdown">
-              <select name="adults" id="adults">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-              </select>
-            </div>
-          </div>
-          <div class="input-box-col-2 col-md-6">
-            <label for="">Children</label>
-            <div class="dropdown">
-              <select name="children" id="children">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-              </select>
-            </div>
-
-            <div class="input-box-disclaimer">
-              <p>11 years & below</p>
-            </div>
-
-          </div>
-        </div>
-        <div class="input-box">
-          <label for="">Promotion Code</label>
-          <input type="text" name="promo_code">
-        </div>
-        <div class="cta-container">
-          <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
-        </div>
-        
-      </form>
-  </div>
-  <div id="desktop-header-booking-calendar">
-    
-  </div>
-</header> <!-- #desktop-header -->
-
-<div id="desktop-header-menu">
-
-  <div id="destination-indicator">
-    <p>Select a destination:</p>
-  </div>
-  <div id="country-indicator">
-    <p>Australia</p>
-  </div>
-
-  <div id="sage-links">
-    <ul>
-      <li><a href="hotel.php">Adelaide</a></li>
-      <li><a href="hotel.php">brisbane</a></li>
-      <li><a href="hotel.php">west perth</a></li>
-      <li><a href="hotel.php">wollongong</a></li>
-    </ul>        
-    
-  </div>
-  <div id="brand-link" class="menu-link">
-    <a href="#"><span>Our Brands</span></a>
-  </div>
-  <div id="group-link" class="menu-link">
-    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
-  </div>
-</div>
-        <!--
-           ____ _____  _    ____ _____
-          / ___|_   _|/ \  |  _ \_   _|
-          \___ \ | | / _ \ | |_) || |
-           ___) || |/ ___ \|  _ < | |
-          |____/ |_/_/   \_\_| \_\|_|
-
-        -->
-
-
-
-
-        
 
 
 <!-- page-wrapper-content-min-height for short pages, long pages will have a scrollbar -->
@@ -405,7 +29,7 @@
             <div class="default-breadcrumb">
               <ul>
                 <li><a href="brand_landing.php">NEXT Hotels</a></li>
-                <li><a href="brand_alternative.php">sage hotels</a></li>
+                <!-- <li><a href="brand_alternative.php">sage hotels</a></li> -->
                 <li>locations</li>
               </ul>
             </div> <!-- default-breadcrumb -->
@@ -444,6 +68,8 @@
             <!-- a list of cities, don't use special characters -->
             <div id="brand-location-page-filter-data-item-container">
 
+              <div class="brand-location-page-filter-data-item" data-country="Thailand" data-territory="Bangkok" data-city=""></div>
+              <div class="brand-location-page-filter-data-item" data-country="Laos" data-territory="Luang Prabang" data-city=""></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Adelaide"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Mt Gambier"></div>
               <!-- <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Gepps Cross"></div> -->
@@ -541,6 +167,48 @@
 
     
             <div id="brand-location-page-item-container">
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-country="Thailand"
+                data-territory="Bangkok"
+                data-city=""
+                data-id="Riva Arun">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Riva Arun</h5>
+                  <h4>Bangkok</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-country="Thailand"
+                data-territory="Bangkok"
+                data-city=""
+                data-id="Riva Surya">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Riva Surya</h5>
+                  <h4>Bangkok</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-country="Laos"
+                data-territory="Luang Prabang"
+                data-city=""
+                data-id="Kiridara">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Kiridara</h5>
+                  <h4>Luang Prabang</h4>
+                </div>
+              </a>
 
               <a href="hotel.php" class="brand-location-page-item"
                 data-country="Australia"
@@ -1111,188 +779,3 @@
 
 
 
-
-
-
-
-        <!--
-           _____ _   _ ____
-          | ____| \ | |  _ \
-          |  _| |  \| | | | |
-          | |___| |\  | |_| |
-          |_____|_| \_|____/
-
-        -->
-        
-        
-<!-- 
-         _   ___     ___    ____   ____ ____  ___ ____ _____ 
-        | | / \ \   / / \  / ___| / ___|  _ \|_ _|  _ \_   _|
-     _  | |/ _ \ \ / / _ \ \___ \| |   | |_) || || |_) || |  
-    | |_| / ___ \ V / ___ \ ___) | |___|  _ < | ||  __/ | |  
-     \___/_/   \_\_/_/   \_\____/ \____|_| \_\___|_|    |_|  
-                                                             
--->
-
-
-
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
-
-  <!-- Optimized Version -->
-  <script type="text/javascript">
-    var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
-    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
-    var PAGE_JS                   = "js/page-brand.min.js";
-    var PAGE_CSS                  = "css/style.css";
-    
-    head.load(PAGE_CSS, function(){
-
-      window.preloader_css = 100;
-
-    });
-
-    head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
-
-      window.preloader_js = 50;
-
-      head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {
-          
-        window.preloader_js = 100;
-
-        page = new sagewest.page.Brand({});
-
-      });
-
-    });
-
-    // start preload
-
-  </script>
-  
-
-        <!--
-   _____ ___   ___ _____ _____ ____  
-  |  ___/ _ \ / _ \_   _| ____|  _ \ 
-  | |_ | | | | | | || | |  _| | |_) |
-  |  _|| |_| | |_| || | | |___|  _ < 
-  |_|   \___/ \___/ |_| |_____|_| \_\
-                                     
--->
-
-<footer id="desktop-footer" class="brand-version">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3 col-sm-12 col-xs-12">
-        
-        <div id="footer-logo">
-          <img src="images/logo/footer-next-hotels-logo.png" alt="">
-        </div>
-
-        <div id="footer-subscribe-form">
-          <h1>Subscribe to us</h1>
-          <div class="input-box">
-            <input type="text" name="email" placeholder="Enter your email">
-          </div>
-        </div>
-
-        <div id="footer-copyright-info" class="visible-md visible-lg">
-          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
-          <a href="#">Privacy Policy</a>
-        </div>
-
-        <div id="footer-copyright-info" class="visible-sm visible-xs">
-          <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
-          <a href="#">Privacy Policy</a>
-        </div>
-
-      </div>
-
-      <div class="col-md-7 hidden-sm hidden-xs">
-        <div id="footer-line-container" class="brand-version">
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-
-              <div id="hotel-middle-footer-container">
-                <div id="hotel-footer-menu-container">
-                  <h1>Corporate</h1>
-                  <ul>
-                    <li><a href="#">Next Story Group</a></li>
-                    <li><a href="#">Press Room</a></li>
-                    <li><a href="#">Careers</a></li>
-
-                    <li><a href="#">SN Select</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Events</a></li>
-                  </ul>
-                </div>
-
-              </div> <!-- hotel-middle-footer-container -->
-
-
-            </div>
-            <div class="col-md-5">
-
-
-              <div id="brand-middle-footer-container">
-                <div id="brand-footer-contact-item-container">
-                  <div class="footer-contact-item">
-                    <h4>Central Reservations</h4>
-                    <p>
-                      1300 346 835 (Within Australia)
-                    </p>
-                  </div>
-                </div>
-
-                <div id="footer-social-media">
-                  <ul>
-                    <li><a href="#" class="fa fa-facebook-square"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li>
-                    <li><a href="#" class="fa fa-youtube-square"></a></li>
-                    <li><a href="#" class="fa fa-twitter-square"></a></li>
-                    <li><a href="#" class="fa fa-google-plus-square"></a></li>
-                  </ul>
-                </div>
-              </div> <!-- brand-middle-footer-container -->
-
-
-            </div>
-          </div>
-        </div> <!-- footer-line-container -->
-      </div>
-
-      <div class="col-md-2 hidden-xs hidden-sm">
-
-        <div id="footer-snh-group-logos-container">
-          <div id="footer-snh-group-logos" class="brand-version">
-            <h1>Our Brands</h1>
-            <ul>
-              <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
-
-              <li><a href="#"><img src="images/icons/kiridara.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/riva-arun.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/riva-surya.png" alt=""></a></li>
-              
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</footer> <!-- #desktop-footer
-      </div> <!-- #page-wrapper-content -->
-    </div> <!-- #page-wrapper -->
-    
-    <div id="mobile-page-hitarea"></div>
-
-  </body>
-</html>
