@@ -32,8 +32,25 @@ sagewest.page.Brand = function(options, element) {
     this.is_brand_location_page = true;
   }
 
+  if (this.body.hasClass('group-location-page')) {
+    this.is_group_location_page = true;
+  }
+
+  this.hotel_dropdown = null;
+
 
   this.create_dropdown();
+
+  this.hotel_dropdown = $("#brand-location-hotel-dropdown").data("manic.ui.Dropdown");
+
+  goog.events.listen(this.hotel_dropdown, manic.ui.Dropdown.ON_CHANGE, function(event){
+    // console.log('here');
+    // console.log('this.hotel_dropdown.current_value: ' + this.hotel_dropdown.current_value);
+
+    this.on_group_location_title_filter_change();
+
+  }.bind(this));
+
   this.create_brand_location_title();     // needs to be here because init is slow
 
 
@@ -94,8 +111,7 @@ sagewest.page.Brand.prototype.init = function() {
 
   this.creage_brand_slider();
   
-  this.create_brand_location_expanding_mobile();
-
+  this.create_brand_location_expanding_mobile();  
 
   this.update_page_layout();    // this is called after the initial create to update the layout
 
@@ -286,14 +302,22 @@ sagewest.page.Brand.prototype.create_brand_location_title = function() {
 
     this.brand_location_title = new sagewest.component.BrandLocationTitle({}, $('#brand-location-page-title-section'));
 
-    goog.events.listen(this.brand_location_title, sagewest.component.BrandLocationTitle.ON_CHANGE, this.on_brand_location_title_filter_change.bind(this) );
+    
 
-    this.on_brand_location_title_filter_change();
+    if(this.is_brand_location_page == true) {
+
+      goog.events.listen(this.brand_location_title, sagewest.component.BrandLocationTitle.ON_CHANGE, this.on_brand_location_title_filter_change.bind(this) );    
+      this.on_brand_location_title_filter_change();
+
+    }else if(this.is_group_location_page == true) {
+
+      goog.events.listen(this.brand_location_title, sagewest.component.BrandLocationTitle.ON_CHANGE, this.on_group_location_title_filter_change.bind(this) );    
+      this.on_group_location_title_filter_change();
+    }
 
   }
   
 };
-
 
 
 sagewest.page.Brand.prototype.create_brand_location_expanding_mobile = function(){
@@ -891,6 +915,110 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
     } else {
       item.hide(0);
     }
+
+  }
+
+
+  this.update_page_layout();
+  // TweenMax.delayedCall(0.2, this.update_page_layout, [], this);
+
+
+};
+
+
+sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(event){
+
+  
+  // console.log('on_group_location_title_filter_change');
+  // console.log(this.brand_location_title.current_country);
+  // console.log(this.brand_location_title.current_territory);
+  // console.log(this.brand_location_title.current_city);
+
+  /*
+  this.brand_location_title.current_country = 'none';
+  this.brand_location_title.current_territory = 'none';
+  this.brand_location_title.current_city = 'none';
+  */
+
+  var arr = $('#brand-location-page-item-container .brand-location-page-item');
+  var item = null;
+
+  // arr.removeClass('invisible-version');
+
+  var current_hotel = this.hotel_dropdown.current_value;
+  var country = '';
+  var territory = '';
+  var city = '';
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+    
+    hotel = item.attr('data-hotel');
+    country = item.attr('data-country');
+    territory = item.attr('data-territory');
+    city = item.attr('data-city');
+
+    if(current_hotel == '') {
+
+      if(this.brand_location_title.current_country == 'none'){
+        item.show(0);
+
+      } else if(this.brand_location_title.current_country == country) {
+
+        if (this.brand_location_title.current_territory == 'none'){
+          item.show(0);
+
+        } else if(this.brand_location_title.current_territory == territory) {
+
+          if (this.brand_location_title.current_city == 'none') {
+            item.show(0);
+          } else if (this.brand_location_title.current_city == city) {
+            item.show(0);
+          } else {
+            item.hide(0);
+          }
+
+        } else {
+          item.hide(0);
+        }
+
+      } else {
+        item.hide(0);
+      }
+
+    } else if(current_hotel == hotel) {      
+
+      if(this.brand_location_title.current_country == 'none'){
+        item.show(0);
+
+      } else if(this.brand_location_title.current_country == country) {
+
+        if (this.brand_location_title.current_territory == 'none'){
+          item.show(0);
+
+        } else if(this.brand_location_title.current_territory == territory) {
+
+          if (this.brand_location_title.current_city == 'none') {
+            item.show(0);
+          } else if (this.brand_location_title.current_city == city) {
+            item.show(0);
+          } else {
+            item.hide(0);
+          }
+
+        } else {
+          item.hide(0);
+        }
+
+      } else {
+        item.hide(0);
+      }
+
+    } else {
+      item.hide(0);
+    }
+
+    
 
   }
 

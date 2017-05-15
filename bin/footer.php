@@ -50,7 +50,7 @@
       </div>
       <div class="col-md-2 col-md-offset-1 hidden-xs hidden-sm">
         <div id="footer-menu-1" class="footer-menu">
-          <h1>Our Brands</h1>
+          <h1>Next Hotels Brands</h1>
           <ul>
             <li><a href="#">SilverNeedle® Collection</a></li>
             <li><a href="#">Next Hotels</a></li>

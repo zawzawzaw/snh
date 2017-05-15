@@ -56,8 +56,8 @@
           <div class="col-md-9">
 
             <div id="brand-location-page-title">
-              <h1>Experience Local At Sage Hotels</h1>
-              <p>Country Comfort has a rich Australian heritage. We combine the warm comforts of a traditional country stay with the advantages of our modern, connected world. We are proud to welcome road warriors of all ages, travelling across the country for business and leisure, with a friendly and familiar smile. </p>
+              <h1>Experience Local At Next Hotels</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt at nam, laudantium vitae rem ullam quo maiores? Alias atque dolorum magni, iste in rerum sit porro eligendi nisi voluptatum! </p>
             </div>
 
           </div>
@@ -90,10 +90,26 @@
 
             </div> <!-- brand-location-page-filter-data-item-container -->
 
-            <div id="brand-location-page-filter-container" data-selected-country="Australia" data-selected-territory="New South Wales" data-selected-city="">
+            <div id="brand-location-page-filter-container" data-selected-hotel="Sage Hotels" data-selected-country="" data-selected-territory="" data-selected-city="">
 
 
               <div class="row">
+                <div class="col-md-3">
+
+                  <div class="manic-dropdown" id="brand-location-hotel-dropdown">
+                    <select id="brand-location-hotel-select">
+                      <option value="">Our Hotels</option>
+                      <option>Next Hotels</option>
+                      <option>Sage Hotels</option>
+                      <option>Kafnu</option>
+                      <option>Country Comfort</option>
+                      <option>Chifley Hotels</option>                      
+                      <option>Sundowner Inns</option>                      
+                      <option>Collection</option>
+                    </select>
+                  </div>
+
+                </div>
                 <div class="col-md-3">
 
                   <div class="manic-dropdown" id="brand-location-country-dropdown">
@@ -107,7 +123,7 @@
                   </div>
 
                 </div>
-                <div class="col-md-1"></div>
+                <!-- <div class="col-md-1"></div> -->
                 <div class="col-md-3">
 
                   <div class="manic-dropdown" id="brand-location-territory-dropdown">
@@ -122,7 +138,7 @@
 
                 </div>
 
-                <div class="col-md-1"></div>
+                <!-- <div class="col-md-1"></div> -->
                 <div class="col-md-3">
 
                   <div class="manic-dropdown" id="brand-location-city-dropdown">
@@ -169,6 +185,7 @@
             <div id="brand-location-page-item-container">
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Collection"
                 data-country="Thailand"
                 data-territory="Bangkok"
                 data-city=""
@@ -183,6 +200,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Collection"
                 data-country="Thailand"
                 data-territory="Bangkok"
                 data-city=""
@@ -197,6 +215,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Collection"
                 data-country="Laos"
                 data-territory="Luang Prabang"
                 data-city=""
@@ -211,6 +230,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
@@ -225,6 +245,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
@@ -239,6 +260,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Albany"
@@ -253,6 +275,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Armidale"
@@ -267,6 +290,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Bundaberg"
@@ -281,6 +305,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="North Coffs Harbour"
@@ -295,6 +320,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Cowra"
@@ -309,6 +335,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Gin Gin"
@@ -323,6 +350,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Casula"
@@ -337,6 +365,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Belmont"
@@ -351,6 +380,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Mt Gambier"
@@ -365,6 +395,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Heatherbrae"
@@ -379,6 +410,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Port Macquarie"
@@ -393,6 +425,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Highfields"
@@ -403,6 +436,21 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Toowoomba</h5>
                   <h4>Highfields</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Next Hotels"
+                data-country="Australia"
+                data-territory="Queensland"
+                data-city="Brisbane"
+                data-id="Next Hotels Brisbane">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Next Hotels Brisbane</h5>
+                  <h4>Brisbane</h4>
                 </div>
               </a>
 

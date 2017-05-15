@@ -459,8 +459,12 @@ sagewest.component.BrandLocationTitle.prototype.set_country = function(country_p
     this.current_territory = 'none';
     this.current_city = 'none';
 
-    this.territory_dropdown.set_enabled();
+    this.territory_dropdown.set_enabled();    
     this.city_dropdown.set_enabled();
+
+    // if(this.current_country=="Thailand" || this.current_country=="Laos") {
+    //   this.city_dropdown.set_disabled();
+    // }
 
     var territory_array = [];
     territory_array[0] = {
@@ -499,9 +503,12 @@ sagewest.component.BrandLocationTitle.prototype.set_territory = function(territo
       goog.isDefAndNotNull(this.data_array[this.current_country][territory_param]) ) {
 
     this.current_territory = territory_param;
-    this.current_city = 'none';
+    this.current_city = 'none';    
 
-    this.city_dropdown.set_enabled();
+    this.city_dropdown.set_enabled();    
+
+    // if(this.current_territory=="Bangkok" || this.current_territory=="Luang Prabang")
+    //   this.city_dropdown.set_disabled();
 
     var city_array = [];
     city_array[0] = {
@@ -524,7 +531,7 @@ sagewest.component.BrandLocationTitle.prototype.set_territory = function(territo
 
     this.territory_dropdown.element.removeClass('not-selected-version');
 
-    this.dispatchEvent(new goog.events.Event(sagewest.component.BrandLocationTitle.ON_CHANGE));
+    this.dispatchEvent(new goog.events.Event(sagewest.component.BrandLocationTitle.ON_CHANGE));    
 
   } else {
     this.set_no_territory();

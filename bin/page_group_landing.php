@@ -96,7 +96,7 @@
     data-location="SAGE WEST PERTH" 
     data-lat="-31.947794" 
     data-lng="115.8364702" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1309 Hay Street, West Perth, WA 6005, Australia'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>SAGE WEST PERTH</h4><p>1309 Hay Street, West Perth, WA 6005, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 6500 9100</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.westperth@sage-hotels.com'>reservations.westperth@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
     data-group="sage"
@@ -104,7 +104,7 @@
     data-location="SAGE HOTEL ADELAIDE" 
     data-lat="-34.935157" 
     data-lng="138.604256" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=208 South Terrace, Adelaide, SA 5000, Australia'><h4>SAGE HOTEL ADELAIDE</h4><p>208 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.adelaide@sage-hotels.com'>reservations.adelaide@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>SAGE HOTEL ADELAIDE</h4><p>208 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.adelaide@sage-hotels.com'>reservations.adelaide@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
     data-group="sage"
@@ -112,7 +112,7 @@
     data-location="SAGE HOTEL JAMES STREET" 
     data-lat="-27.457871" 
     data-lng="153.041832" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=70 James Street, Fortitude Valley, QLD 4006, Australia'><h4>SAGE HOTEL JAMES STREET</h4><p>70 James Street, Fortitude Valley, QLD 4006, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.jamesst@sage-hotels.com'>reservations.jamesst@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>SAGE HOTEL JAMES STREET</h4><p>70 James Street, Fortitude Valley, QLD 4006, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.jamesst@sage-hotels.com'>reservations.jamesst@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
     data-group="sage"
@@ -120,7 +120,7 @@
     data-location="SAGE HOTEL WOLLONGONG" 
     data-lat="-34.428922" 
     data-lng="150.901022" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=60-62 Harbour St, Wollongong, NSW 2500, Australia'><h4>SAGE HOTEL WOLLONGONG</h4><p>60-62 Harbour St, Wollongong, NSW 2500, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4201 2111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.wollongong@sage-hotels.com'>reservations.wollongong@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>SAGE HOTEL WOLLONGONG</h4><p>60-62 Harbour St, Wollongong, NSW 2500, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4201 2111</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.wollongong@sage-hotels.com'>reservations.wollongong@sage-hotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
       data-group="chifley"
@@ -128,7 +128,7 @@
       data-location="CHIFLEY ALICE SPRINGS RESORT" 
       data-lat="-23.702922" 
       data-lng="133.886493" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=34 Stott Terrace, Alice Springs, Northern Territory 0870, Australia'><h4>CHIFLEY ALICE SPRINGS RESORT</h4><p>34 Stott Terrace, Alice Springs, Northern Territory 0870, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8951 4545</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.alicesprings@chifleyhotels.com'>reservations.alicesprings@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>CHIFLEY ALICE SPRINGS RESORT</h4><p>34 Stott Terrace, Alice Springs, Northern Territory 0870, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8951 4545</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.alicesprings@chifleyhotels.com'>reservations.alicesprings@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
       data-group="chifley"
@@ -136,7 +136,7 @@
       data-location="CHIFLEY APARTMENTS NEWCASTLE" 
       data-lat="-32.926286" 
       data-lng="151.770029" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Wright & Settlement Lanes, Newcastle, NSW 2300, Australia'><h4>CHIFLEY APARTMENTS NEWCASTLE</h4><p>Cnr Wright & Settlement Lanes, Newcastle, NSW 2300, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4910 4910</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.newcastle@chifleyhotels.com'>reservations.newcastle@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>CHIFLEY APARTMENTS NEWCASTLE</h4><p>Cnr Wright & Settlement Lanes, Newcastle, NSW 2300, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4910 4910</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.newcastle@chifleyhotels.com'>reservations.newcastle@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
       data-group="chifley"
@@ -144,7 +144,7 @@
       data-location="CHIFLEY EXECUTIVE SUITES NEWCASTLE" 
       data-lat="-32.927231" 
       data-lng="151.783761" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=111 Scott St Newcastle, Newcastle, New South Wales 2300'><h4>CHIFLEY EXECUTIVE SUITES NEWCASTLE</h4><p>111 Scott St Newcastle, Newcastle, New South Wales 2300</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4040 1200</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:res.ces@optusnet.com.au'>res.ces@optusnet.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>CHIFLEY EXECUTIVE SUITES NEWCASTLE</h4><p>111 Scott St Newcastle, Newcastle, New South Wales 2300</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4040 1200</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:res.ces@optusnet.com.au'>res.ces@optusnet.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
       data-group="chifley"
@@ -152,7 +152,7 @@
       data-location="CHIFLEY PLAZA TOWNSVILLE" 
       data-lat="-19.261410" 
       data-lng="146.815561" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Flinders and Stanley Streets, Townsville, Queensland 4810'><h4>CHIFLEY PLAZA TOWNSVILLE</h4><p>Cnr Flinders and Stanley Streets, Townsville, Queensland 4810</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4772 1888</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@theplazahotel.com.au'>info@theplazahotel.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>CHIFLEY PLAZA TOWNSVILLE</h4><p>Cnr Flinders and Stanley Streets, Townsville, Queensland 4810</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4772 1888</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@theplazahotel.com.au'>info@theplazahotel.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
       data-group="chifley"
@@ -160,7 +160,7 @@
       data-location="THE CHIFLEY ON SOUTH TERRACE" 
       data-lat="-34.935021" 
       data-lng="138.605591" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=226 South Terrace, Adelaide, SA 5000, Australia'><h4>THE CHIFLEY ON SOUTH TERRACE</h4><p>226 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 4355</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:frontoffice.southterrace@chifleyhotels.com'>frontoffice.southterrace@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>THE CHIFLEY ON SOUTH TERRACE</h4><p>226 South Terrace, Adelaide, SA 5000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 4355</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:frontoffice.southterrace@chifleyhotels.com'>frontoffice.southterrace@chifleyhotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
     <div class="markers"
         data-group="country" 
@@ -168,7 +168,7 @@
       data-location="COUNTRY COMFORT ADELAIDE" 
       data-lat="-34.935001" 
       data-lng="138.604923" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=215 South Terrace, Adelaide, South Australia 5000'><h4>COUNTRY COMFORT ADELAIDE</h4><p>215 South Terrace, Adelaide, South Australia 5000</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservation@silverneedle hotels.com.au'>reservation@silverneedle hotels.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT ADELAIDE</h4><p>215 South Terrace, Adelaide, South Australia 5000</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8223 2800</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservation@silverneedle hotels.com.au'>reservation@silverneedle hotels.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -176,7 +176,7 @@
       data-location="COUNTRY COMFORT ADELAIDE MANOR" 
       data-lat="-34.846215" 
       data-lng="138.601540" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=574 Main North Road, Gepps Cross, South Australia 5094'><h4>COUNTRY COMFORT ADELAIDE MANOR</h4><p>574 Main North Road, Gepps Cross, South Australia 5094</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8349 4999</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@adelaidemanor.com.au'>reservations@adelaidemanor.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT ADELAIDE MANOR</h4><p>574 Main North Road, Gepps Cross, South Australia 5094</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8349 4999</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@adelaidemanor.com.au'>reservations@adelaidemanor.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -184,7 +184,7 @@
       data-location="COUNTRY COMFORT AMITY MOTEL ALBANY" 
       data-lat="-35.010812" 
       data-lng="117.871683" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=234 Albany Highway, Albany, Western Australia 6330'><h4>COUNTRY COMFORT AMITY MOTEL ALBANY</h4><p>234 Albany Highway, Albany, Western Australia 6330</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 9841 2200</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reception@amitymotorinn.com.au'>reception@amitymotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT AMITY MOTEL ALBANY</h4><p>234 Albany Highway, Albany, Western Australia 6330</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 9841 2200</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reception@amitymotorinn.com.au'>reception@amitymotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -192,7 +192,7 @@
       data-location="COUNTRY COMFORT ARMIDALE" 
       data-lat="-30.517078" 
       data-lng="151.666582" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=86 Barney Street, Armidale, New South Wales 2350'><h4>COUNTRY COMFORT ARMIDALE</h4><p>86 Barney Street, Armidale, New South Wales 2350</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6772 8511</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:ccarm@bigpond.net.au'>ccarm@bigpond.net.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT ARMIDALE</h4><p>86 Barney Street, Armidale, New South Wales 2350</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6772 8511</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:ccarm@bigpond.net.au'>ccarm@bigpond.net.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -200,7 +200,7 @@
       data-location="COUNTRY COMFORT BUNDABERG INTERNATIONAL" 
       data-lat="-24.881855" 
       data-lng="152.326396" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=73 Takalvan Street, Bundaberg, Queensland 4670'><h4>COUNTRY COMFORT BUNDABERG INTERNATIONAL</h4><p>73 Takalvan Street, Bundaberg, Queensland 4670</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4151 2365</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@bimi.com.au'>info@bimi.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT BUNDABERG INTERNATIONAL</h4><p>73 Takalvan Street, Bundaberg, Queensland 4670</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4151 2365</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@bimi.com.au'>info@bimi.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -208,7 +208,7 @@
       data-location="COUNTRY COMFORT COFFS HARBOUR" 
       data-lat="-30.273478" 
       data-lng="153.133535" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=353 Pacific Highway, North Coffs harbour, New South Wales'><h4>COUNTRY COMFORT COFFS HARBOUR</h4><p>353 Pacific Highway, North Coffs harbour, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6652 8222</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT COFFS HARBOUR</h4><p>353 Pacific Highway, North Coffs harbour, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6652 8222</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -216,7 +216,7 @@
       data-location="COUNTRY COMFORT COWRA" 
       data-lat="-33.835485" 
       data-lng="148.697677" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=164 Kendal Street, Cowra, New South Wales'><h4>COUNTRY COMFORT COWRA</h4><p>164 Kendal Street, Cowra, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6342 3177</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:enquiries@cowramotel.com.au'>enquiries@cowramotel.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT COWRA</h4><p>164 Kendal Street, Cowra, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6342 3177</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:enquiries@cowramotel.com.au'>enquiries@cowramotel.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -224,7 +224,7 @@
       data-location="COUNTRY COMFORT GIN GIN" 
       data-lat="-24.986031" 
       data-lng="151.951885" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=5 Mulgrave Street, Gin Gin, Queensland'><h4>COUNTRY COMFORT GIN GIN</h4><p>5 Mulgrave Street, Gin Gin, Queensland</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4157 2522</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:wildscotsman@bigpond.com'>wildscotsman@bigpond.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT GIN GIN</h4><p>5 Mulgrave Street, Gin Gin, Queensland</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4157 2522</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:wildscotsman@bigpond.com'>wildscotsman@bigpond.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -232,7 +232,7 @@
       data-location="COUNTRY COMFORT HUNTS LIVERPOOL" 
       data-lat="-33.957676" 
       data-lng="150.887093" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=Cnr Your Street & Hune Highway, Casula, New South Wales 2170'><h4>COUNTRY COMFORT HUNTS LIVERPOOL</h4><p>Cnr Your Street & Hune Highway, Casula, New South Wales 2170</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 9601 5088</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@hunts.com.au'>info@hunts.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT HUNTS LIVERPOOL</h4><p>Cnr Your Street & Hune Highway, Casula, New South Wales 2170</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 9601 5088</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@hunts.com.au'>info@hunts.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -240,7 +240,7 @@
       data-location="COUNTRY COMFORT INTER CITY PERTH" 
       data-lat="-31.940562" 
       data-lng="115.928338" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=249-263 Great Eastern Highway, Belmont, WA 6104, Australia'><h4>COUNTRY COMFORT INTER CITY PERTH</h4><p>249-263 Great Eastern Highway, Belmont, WA 6104, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 9478 0888</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.intercityperth@snhgroup.com'>reservations.intercityperth@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT INTER CITY PERTH</h4><p>249-263 Great Eastern Highway, Belmont, WA 6104, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 9478 0888</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations.intercityperth@snhgroup.com'>reservations.intercityperth@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -248,7 +248,7 @@
       data-location="COUNTRY COMFORT MT GAMBIER" 
       data-lat="-37.809957" 
       data-lng="140.740797" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=corner of Jubilee Hwy West & Wandilo Rd, Mt Gambier, South Australia 5290'><h4>COUNTRY COMFORT MT GAMBIER</h4><p>corner of Jubilee Hwy West & Wandilo Rd, Mt Gambier, South Australia 5290</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8725 4811</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:countrycomfortreservations@mountgambier.net'>countrycomfortreservations@mountgambier.net</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT MT GAMBIER</h4><p>corner of Jubilee Hwy West & Wandilo Rd, Mt Gambier, South Australia 5290</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 8 8725 4811</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:countrycomfortreservations@mountgambier.net'>countrycomfortreservations@mountgambier.net</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -256,7 +256,7 @@
       data-location="COUNTRY COMFORT NEWCASTLE AIRPORT & CONVENTION CENTRE" 
       data-lat="-32.787199" 
       data-lng="151.726468" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=2285 Pacific Highway, Heatherbrae, New South Wales'><h4>COUNTRY COMFORT NEWCASTLE AIRPORT & CONVENTION CENTRE</h4><p>2285 Pacific Highway, Heatherbrae, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4987 1211</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:stay@countrycomfortmottofarm.com.au'>stay@countrycomfortmottofarm.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT NEWCASTLE AIRPORT & CONVENTION CENTRE</h4><p>2285 Pacific Highway, Heatherbrae, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4987 1211</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:stay@countrycomfortmottofarm.com.au'>stay@countrycomfortmottofarm.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -264,7 +264,7 @@
       data-location="COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE" 
       data-lat="-31.430618" 
       data-lng="152.903950" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=1 Buller Street, Port Macquarie, New South Wales'><h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4><p>1 Buller Street, Port Macquarie, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6583 2955</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@watersedgepm.com.au'>reservations@watersedgepm.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT PORT MACQUARIE WATERS EDGE BOUTIQUE</h4><p>1 Buller Street, Port Macquarie, New South Wales</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6583 2955</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@watersedgepm.com.au'>reservations@watersedgepm.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers"
       data-group="country" 
@@ -272,7 +272,7 @@
       data-location="COUNTRY COMFORT TOOWOOMBA" 
       data-lat="-27.466648" 
       data-lng="151.950497" 
-      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=10552 New England Highway, Highfields, Queensland 4352'><h4>COUNTRY COMFORT TOOWOOMBA</h4><p>10552 New England Highway, Highfields, Queensland 4352</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4699 6996</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@silverneedlehotels.com'>reservations@silverneedlehotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+      data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>COUNTRY COMFORT TOOWOOMBA</h4><p>10552 New England Highway, Highfields, Queensland 4352</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4699 6996</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@silverneedlehotels.com'>reservations@silverneedlehotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
     data-group="next"
@@ -280,7 +280,7 @@
     data-location="NEXT Hotel Brisbane" 
     data-lat="-27.470221" 
     data-lng="153.023849" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=72 Queen Street, Brisbane QLD 4000, Australia'><h4>NEXT Hotel Brisbane</h4><p>72 Queen Street, Brisbane QLD 4000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3222</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info.brisbane@nexthotels.com'>info.brisbane@nexthotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>NEXT Hotel Brisbane</h4><p>72 Queen Street, Brisbane QLD 4000, Australia</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 3222 3222</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info.brisbane@nexthotels.com'>info.brisbane@nexthotels.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
     data-group="sundowner"
@@ -288,7 +288,7 @@
     data-location="Sundowner Bendigo Golden Reef" 
     data-lat="-36.759526" 
     data-lng="144.311731" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=186 McIvor Highway, Bendigo, Victoria 3550'><h4>Sundowner Bendigo Golden Reef</h4><p>186 McIvor Highway, Bendigo, Victoria 3550</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5441 1000</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:bookings@goldenreefmotorinn.com'>bookings@goldenreefmotorinn.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Bendigo Golden Reef</h4><p>186 McIvor Highway, Bendigo, Victoria 3550</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5441 1000</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:bookings@goldenreefmotorinn.com'>bookings@goldenreefmotorinn.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -296,7 +296,7 @@
     data-location="Sundowner Dubbo Aberdeen Motor Inn" 
     data-lat="-32.253234" 
     data-lng="148.601233" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=25 Cobra St, Dubbo, New South Wales '><h4>Sundowner Dubbo Aberdeen Motor Inn</h4><p>25 Cobra St, Dubbo, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6884 1700</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Dubbo Aberdeen Motor Inn</h4><p>25 Cobra St, Dubbo, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6884 1700</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -304,7 +304,7 @@
     data-location="Sundowner Echuca Nirebo" 
     data-lat="-36.123775" 
     data-lng="144.747730" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=251 Hare Street, Echuca, Victoria '><h4>Sundowner Echuca Nirebo</h4><p>251 Hare Street, Echuca, Victoria </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5482 2033</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Echuca Nirebo</h4><p>251 Hare Street, Echuca, Victoria </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5482 2033</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -312,7 +312,7 @@
     data-location="Sundowner Gardenia Motor Inn Bass Hill" 
     data-lat="-33.901914" 
     data-lng="151.000380" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=850 Hume Hwy, Bass Hill, New South Wales '><h4>Sundowner Gardenia Motor Inn Bass Hill</h4><p>850 Hume Hwy, Bass Hill, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 9644 9600</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@gardeniamotorinn.com.au'>reservations@gardeniamotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Gardenia Motor Inn Bass Hill</h4><p>850 Hume Hwy, Bass Hill, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 9644 9600</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@gardeniamotorinn.com.au'>reservations@gardeniamotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -320,7 +320,7 @@
     data-location="Sundowner Horsham Westlander" 
     data-lat="-36.735746" 
     data-lng="142.206969" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=100 Stawell Road, Horsham, Victoria 3400'><h4>Sundowner Horsham Westlander</h4><p>100 Stawell Road, Horsham, Victoria 3400</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5382 0191</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Horsham Westlander</h4><p>100 Stawell Road, Horsham, Victoria 3400</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 3 5382 0191</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -328,7 +328,7 @@
     data-location="Sundowner Hume Country Motor Inn" 
     data-lat="-36.054486" 
     data-lng="146.909649" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=736 Logan Road, Albury, 2640'><h4>Sundowner Hume Country Motor Inn</h4><p>736 Logan Road, Albury, 2640</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6025 8233</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@humecountrymotorinn.com.au'>info@humecountrymotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Hume Country Motor Inn</h4><p>736 Logan Road, Albury, 2640</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6025 8233</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:info@humecountrymotorinn.com.au'>info@humecountrymotorinn.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -336,7 +336,7 @@
     data-location="Sundowner Huckisson - Jervis Bay" 
     data-lat="-35.041050" 
     data-lng="150.671737" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=28 Bowen Street, Huskisson, New South Wales '><h4>Sundowner Huckisson - Jervis Bay</h4><p>28 Bowen Street, Huskisson, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4441 5500</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:huskybayside@bigpond.com'>huskybayside@bigpond.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Huckisson - Jervis Bay</h4><p>28 Bowen Street, Huskisson, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 4441 5500</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:huskybayside@bigpond.com'>huskybayside@bigpond.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -344,7 +344,7 @@
     data-location="Sundowner Oriana Orange" 
     data-lat="-33.278611" 
     data-lng="149.087920" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=178-184 Woodward St, Orange, New South Wales '><h4>Sundowner Oriana Orange</h4><p>178-184 Woodward St, Orange, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6362 3066</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reception@sundownerorange.com.au'>reception@sundownerorange.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Oriana Orange</h4><p>178-184 Woodward St, Orange, New South Wales </p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 2 6362 3066</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reception@sundownerorange.com.au'>reception@sundownerorange.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -352,7 +352,7 @@
     data-location="Sundowner Rockhampton Gladstone" 
     data-lat="-23.393554" 
     data-lng="150.505670" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=112 Gladstone Road, Rockhampton, Queensland 4700'><h4>Sundowner Rockhampton Gladstone</h4><p>112 Gladstone Road, Rockhampton, Queensland 4700</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4927 8866</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:admin@rockhamptonsundowner.com.au'>admin@rockhamptonsundowner.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Rockhampton Gladstone</h4><p>112 Gladstone Road, Rockhampton, Queensland 4700</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4927 8866</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:admin@rockhamptonsundowner.com.au'>admin@rockhamptonsundowner.com.au</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -360,7 +360,7 @@
     data-location="Sundowner Townhouse Goondiwindi" 
     data-lat="-28.547518" 
     data-lng="150.308302" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=110 Marshall Street, Goondiwindi, Queensland 4390'><h4>Sundowner Townhouse Goondiwindi</h4><p>110 Marshall Street, Goondiwindi, Queensland 4390</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4671 1855</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Townhouse Goondiwindi</h4><p>110 Marshall Street, Goondiwindi, Queensland 4390</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 4671 1855</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:reservations@snhgroup.com'>reservations@snhgroup.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
   <div class="markers" 
     data-group="sundowner"
@@ -368,7 +368,7 @@
     data-location="Sundowner Twin Towns Motel" 
     data-lat="-28.189175" 
     data-lng="153.540731" 
-    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=21 Minjungbal Drive, Tweed Heads South, Tweed Heads, New South Wales 2486'><h4>Sundowner Twin Towns Motel</h4><p>21 Minjungbal Drive, Tweed Heads South, Tweed Heads, New South Wales 2486</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 5524 3108</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:sundownertwintowns@gmail.com'>sundownertwintowns@gmail.com</a></p></div></div><div class='arrow-left'></div></div>"></div>  
+    data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Twin Towns Motel</h4><p>21 Minjungbal Drive, Tweed Heads South, Tweed Heads, New South Wales 2486</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 5524 3108</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:sundownertwintowns@gmail.com'>sundownertwintowns@gmail.com</a></p></div></div><div class='arrow-left'></div></div>"></div>  
 
   <div class="markers" 
     data-group="collection"
@@ -376,7 +376,7 @@
     data-location="Kiridara Hotel" 
     data-lat="19.878311"
     data-lng="102.1390643" 
-    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=22/13 North Road,Ban Naviengkham,Luang Prabang,Lao PDR,Thailand'><h4>Kiridara Hotel</h4><p>22/13 North Road,Ban Naviengkham, Luang Prabang, Lao PDR, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+856 7126 1888</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@kiridara.com'>stay@kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Kiridara Hotel</h4><p>22/13 North Road,Ban Naviengkham, Luang Prabang, Lao PDR, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+856 7126 1888</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@kiridara.com'>stay@kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
     data-group="collection"
@@ -384,7 +384,7 @@
     data-location="Riva Arun Hotel" 
     data-lat="13.7479059",
     data-lng="100.4917176" 
-    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=392/25-26 Maharaj Road,Phraborom Maharajawang,Phra Nakhon,Bangkok,10200,Thailand'><h4>Riva Arun Hotel</h4><p>392/25-26 Maharaj Road, Phraborom Maharajawang, Phra Nakhon, Bangkok, 10200, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+66 (0) 2221 1188</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@rivaarunbangkok.com'>stay@rivaarunbangkok.com</a></p></div></div><div class='arrow-left'></div></div>kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Riva Arun Hotel</h4><p>392/25-26 Maharaj Road, Phraborom Maharajawang, Phra Nakhon, Bangkok, 10200, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+66 (0) 2221 1188</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@rivaarunbangkok.com'>stay@rivaarunbangkok.com</a></p></div></div><div class='arrow-left'></div></div>kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
     data-group="collection"
@@ -392,7 +392,7 @@
     data-location="Riva Surya Hotel" 
     data-lat="13.769502",
     data-lng="100.4935813" 
-    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://maps.google.com/?q=23 Phra Arthit Road, Phra Nakhon, Bangkok, 10200, Thailand'><h4>Riva Surya Hotel</h4><p>23 Phra Arthit Road, Phra Nakhon, Bangkok, 10200, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+6626335000</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@rivasuryabangkok.com'>stay@rivasuryabangkok.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
+    data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Riva Surya Hotel</h4><p>23 Phra Arthit Road, Phra Nakhon, Bangkok, 10200, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+6626335000</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@rivasuryabangkok.com'>stay@rivasuryabangkok.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
   
 </article>
 
@@ -446,7 +446,7 @@
                 data-territory="Western Australia"
                 data-city="Albany"
                 data-id="Country Comfort Amity Motel Albany">
-                <div class="manic-image-container">
+                <div class="manic-image-container custom-top-position">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-albany.jpg">
                 </div>
                 <div class="brand-location-page-item-overlay">
@@ -474,8 +474,8 @@
                 data-territory="Queensland"
                 data-city="Bundaberg"
                 data-id="Country Comfort Bundaberg International">
-                <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-bundaberg.jpg">
+                <div class="manic-image-container custom-top-position">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-bundaberg.jpg" style="display: none!important;">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Bundaberg International</h5>
@@ -606,7 +606,7 @@
               <div class="brand-location-slider-item-copy"> 
                 <div class="brand-location-slider-item-logo">
                   <div class="manic-image-container">
-                    <img src="" data-image-desktop="images/logo/sage-west-logo.svg">
+                    <img src="" data-image-desktop="images/logo/kiridara-logo.png">
                   </div>
                 </div>               
                 <h2><a href="hotel.php">Kiridara</a></h2>
@@ -623,7 +623,7 @@
               <div class="brand-location-slider-item-copy"> 
                 <div class="brand-location-slider-item-logo">
                   <div class="manic-image-container">
-                    <img src="" data-image-desktop="images/logo/sage-west-logo.svg">
+                    <img src="" data-image-desktop="images/logo/riva-surya-logo.png">
                   </div>
                 </div>               
                 <h2><a href="hotel.php">Riva Surya</a></h2>
@@ -640,7 +640,7 @@
               <div class="brand-location-slider-item-copy"> 
                 <div class="brand-location-slider-item-logo">
                   <div class="manic-image-container">
-                    <img src="" data-image-desktop="images/logo/sage-west-logo.svg">
+                    <img src="" data-image-desktop="images/logo/riva-arun-logo.png">
                   </div>
                 </div>               
                 <h2><a href="hotel.php">Riva Arun</a></h2>

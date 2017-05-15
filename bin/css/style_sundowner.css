@@ -5231,6 +5231,16 @@ body.hotel #desktop-header-nav ul li {
 #desktop-header-menu #brand-link:hover {
   background-color: #fdb924;
 }
+#desktop-header-menu #brand-link.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#desktop-header-menu #brand-link.no-padding a {
+  height: 100%;
+}
+#desktop-header-menu #brand-link.no-padding a span {
+  margin-top: -9px;
+}
 #desktop-header-menu #group-link {
   height: 80px;
   padding-top: 14px;
@@ -5238,6 +5248,16 @@ body.hotel #desktop-header-nav ul li {
 }
 #desktop-header-menu #group-link:hover {
   background-color: #fdb924;
+}
+#desktop-header-menu #group-link.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#desktop-header-menu #group-link.no-padding a {
+  height: 100%;
+}
+#desktop-header-menu #group-link.no-padding a span {
+  margin-top: -4px;
 }
 #desktop-header-menu #sage-links {
   background-color: #f7f1ef;
@@ -9184,6 +9204,9 @@ div.default-promotion-cta-container {
   position: relative;
   cursor: pointer;
 }
+#default-map-section #page-brand-map-container #group-map-overlay ul li:last-child {
+  margin-bottom: 0px;
+}
 #default-map-section #page-brand-map-container #group-map-overlay ul li:before {
   content: "";
   background: url('../images/icons/group-map-pin-next-small.svg') no-repeat;
@@ -12613,6 +12636,9 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   display: block;
   -webkit-box-shadow: 1px 1px 8px #e5e5e5;
   box-shadow: 1px 1px 8px #e5e5e5;
+}
+.brand-location-page-item .manic-image-container.custom-top-position img {
+  top: -20% !important;
 }
 .brand-location-page-item .brand-location-page-item-overlay {
   position: absolute;

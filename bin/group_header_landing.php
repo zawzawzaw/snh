@@ -143,10 +143,10 @@
       <li><a href="hotel.php">collection</a></li>      
     </ul>        
   </div>
-  <div id="brand-link" class="menu-link">
+  <div id="brand-link" class="menu-link no-padding">
     <a href="#"><span>Hotel Directory</span></a>
   </div>
-  <div id="group-link" class="menu-link">
+  <div id="group-link" class="menu-link no-padding">
     <a href="#"><span>NEXT <br class="hidden-xs hidden-sm"> Story Group Corporate</span></a>
   </div>
 </div>
