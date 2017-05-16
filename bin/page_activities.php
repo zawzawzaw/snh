@@ -100,11 +100,9 @@
             <div class="row">
               <div class="col-md-7 col-sm-5">
                 <div class="detail-list-item-image">
-                  <a href="javascript:void(0);">
-                    <div class="manic-image-container">
-                      <img src="" data-image-desktop="images_cms/activities/activities-roof-top.jpg">
-                    </div>
-                  </a>
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/activities/activities-roof-top.jpg">
+                  </div>
                 </div>
               </div>
               <div class="col-md-5 col-sm-7">
@@ -160,11 +158,9 @@
             <div class="row">
               <div class="col-md-7 col-sm-5">
                 <div class="detail-list-item-image">
-                  <a href="javascript:void(0);">
-                    <div class="manic-image-container">
-                      <img src="" data-image-desktop="images_cms/activities/activities-flow.jpg">
-                    </div>
-                  </a>
+                  <div class="manic-image-container">
+                    <img src="" data-image-desktop="images_cms/activities/activities-flow.jpg">
+                  </div>
                 </div>
               </div>
               <div class="col-md-5 col-sm-7">
