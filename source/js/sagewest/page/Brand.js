@@ -43,11 +43,22 @@ sagewest.page.Brand = function(options, element) {
 
   if(this.is_group_location_page) {
     this.hotel_dropdown = $("#brand-location-hotel-dropdown").data("manic.ui.Dropdown");
+    this.country_dropdown = $("#brand-location-country-dropdown").data("manic.ui.Dropdown");
 
     goog.events.listen(this.hotel_dropdown, manic.ui.Dropdown.ON_CHANGE, function(event){
       // console.log('here');
       // console.log('this.hotel_dropdown.current_value: ' + this.hotel_dropdown.current_value);
 
+      if(this.hotel_dropdown.current_value == "Kiridara") {
+        this.country_dropdown.set_value('Laos');  
+      } else if(this.hotel_dropdown.current_value == "Riva Surya") {
+        this.country_dropdown.set_value('Thailand');  
+      } else if(this.hotel_dropdown.current_value == "Riva Arun") {
+        this.country_dropdown.set_value('Thailand');  
+      } else {
+        this.country_dropdown.set_value('Australia');  
+      }
+      
       this.on_group_location_title_filter_change();
 
     }.bind(this));
@@ -687,6 +698,28 @@ sagewest.page.Brand.prototype.on_scroll_to_no_target = function(){
 sagewest.page.Brand.prototype.others = function(){  
 
     $('body').addClass('preload-start');
+
+    if($('#group-booking-content').length > 0) {
+      $('#group-booking-content').slick({
+        dots: true,      
+        slidesToShow: 1,
+        prevArrow: '<a class="carousel-prev"><span></span></a>',
+        nextArrow: '<a class="carousel-next"><span></span></a>',
+        responsive: [
+          {
+            breakpoint: 5000,
+            settings: "unslick"
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,            
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    }    
 
     $('#home-location-content-carousel').slick({
       dots: true,

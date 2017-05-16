@@ -21,15 +21,21 @@
 
   <div id="mobile-header-menu-container">
     <div id="destination-indicator">
-      <p>Select a destination:</p>
+      <p>Select Brand:</p>
     </div>
-    <div id="country-indicator">
+    <!-- <div id="country-indicator">
       <p>Australia</p>
-    </div>
+    </div> -->
 
     <nav id="mobile-menu">
       <ul>
-        <li><a href="hotel.php">Brisbane</a></li>
+        <li><a href="hotel.php">next hotels</a></li>
+        <li><a href="hotel.php">sage hotels</a></li>
+        <li><a href="hotel.php">kafnu</a></li>
+        <li><a href="hotel.php">Country Comfort</a></li>
+        <li><a href="hotel.php">Chifley Hotels</a></li>
+        <li><a href="hotel.php">Sundowner Inns</a></li>
+        <li><a href="hotel.php">collection</a></li>      
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
@@ -42,6 +48,18 @@
 
   <div id="mobile-header-booking-form">
     <form action="">
+      <div class="input-box">
+        <label for="hotel">Select Brand</label>
+        <div class="dropdown">
+          <select name="brand" id="brand" class="brand-dropdown">
+            <option value="Next Hotel">Next Hotel</option>
+            <option value="Sage Hotel">Sage Hotel</option>
+            <option value="Chifely Hotel">Chifely Hotel</option>
+            <option value="Sundowner Inns">Sundowner Inns</option>
+            <option value="Country Comfort">Country Comfort</option>
+          </select>
+        </div>
+      </div>
       <div class="input-box">
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">

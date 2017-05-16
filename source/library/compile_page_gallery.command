@@ -16,4 +16,4 @@ java -jar "compiler.jar" \
 --externs=closure-externs/others.js \
 --create_source_map=page-gallery.min.map \
 --source_map_format=V3 \
---js_output_file=../../bin/js/page-gallery-libraries.min.js
+--js_output_file=../../bin/js/page-gallery.min.js

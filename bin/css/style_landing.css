@@ -9376,6 +9376,9 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
     line-height: 34px;
     padding-bottom: 20px;
   }
+  .default-page-banner .default-page-banner-text .banner-text .banner-search-form {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .default-page-banner .default-page-banner-text .banner-text {
@@ -13617,6 +13620,12 @@ a.boxlist-item-content-image:hover {
   letter-spacing: 0.025em;
   text-transform: none;
   color: #747474;
+}
+@media only screen and (max-width: 991px) {
+  #brand-all-location-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 body.is-tablet #brand-all-location-section #brand-all-location-content-box .main-title-bar h4,
 body.is-tablet #brand-all-location-section #brand-all-location-content-box .territory-title-bar h4,

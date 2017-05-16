@@ -222,7 +222,7 @@ sagewest.component.BrandLocationTitle.prototype.create_dropdown = function() {
   
   var country_array = [];
   country_array[0] = {
-    'label': 'Please Select',
+    'label': 'Select Country',
     'value': ''
   };
   for( var i in this.data_array) {
@@ -464,7 +464,7 @@ sagewest.component.BrandLocationTitle.prototype.set_country = function(country_p
 
     var territory_array = [];
     territory_array[0] = {
-      'label': 'Please Select',
+      'label': 'Select Territory',
       'value': ''
     };
 
@@ -516,7 +516,7 @@ sagewest.component.BrandLocationTitle.prototype.set_territory = function(territo
 
     var city_array = [];
     city_array[0] = {
-      'label': 'Please Select',
+      'label': 'Select City',
       'value': ''
     };
 

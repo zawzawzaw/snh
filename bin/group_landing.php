@@ -42,7 +42,7 @@ ob_start();
     <div id="page-wrapper">
       <div id="page-wrapper-content">
 
-        <?php include('group_header_landing.php'); ?>
+        <?php include('group_landing_header.php'); ?>
 
         <!--
            ____ _____  _    ____ _____

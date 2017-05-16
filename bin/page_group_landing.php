@@ -437,15 +437,15 @@
 </article>
 
 <!-- 
-    __  ______  ______________   _____
-   / / / / __ \/_  __/ ____/ /  / ___/
-  / /_/ / / / / / / / __/ / /   \__ \
- / __  / /_/ / / / / /___/ /______/ /
-/_/ /_/\____/ /_/ /_____/_____/____/
+    ____  ____  ___    _   ______     __    ____  _________  ______________  _   __   __________  ______  __
+   / __ )/ __ \/   |  / | / / __ \   / /   / __ \/ ____/   |/_  __/  _/ __ \/ | / /  / ____/ __ \/ __ \ \/ /
+  / __  / /_/ / /| | /  |/ / / / /  / /   / / / / /   / /| | / /  / // / / /  |/ /  / /   / / / / /_/ /\  /
+ / /_/ / _, _/ ___ |/ /|  / /_/ /  / /___/ /_/ / /___/ ___ |/ / _/ // /_/ / /|  /  / /___/ /_/ / ____/ / /
+/_____/_/ |_/_/  |_/_/ |_/_____/  /_____/\____/\____/_/  |_/_/ /___/\____/_/ |_/   \____/\____/_/     /_/
 
  -->
 
-<article id="brand-location-page-content-section">
+<article id="brand-location-page-content-section" class="visible-md visible-lg">
 
       <div class="container-fluid has-breakpoint">
         <div class="row">
@@ -550,6 +550,140 @@
 
 
 </article> <!-- brand-location-page-content-section -->
+
+
+<!-- 
+      ____  ____  ___    _   ______     __    ____  _________  ______________  _   __
+     / __ )/ __ \/   |  / | / / __ \   / /   / __ \/ ____/   |/_  __/  _/ __ \/ | / /
+    / __  / /_/ / /| | /  |/ / / / /  / /   / / / / /   / /| | / /  / // / / /  |/ /
+   / /_/ / _, _/ ___ |/ /|  / /_/ /  / /___/ /_/ / /___/ ___ |/ / _/ // /_/ / /|  /
+  /_____/_/ |_/_/  |_/_/ |_/_____/  /_____/\____/\____/_/  |_/_/ /___/\____/_/ |_/
+
+    __  _______  ____  ______    ______   __________  ______  __
+   /  |/  / __ \/ __ )/  _/ /   / ____/  / ____/ __ \/ __ \ \/ /
+  / /|_/ / / / / __  |/ // /   / __/    / /   / / / / /_/ /\  /
+ / /  / / /_/ / /_/ // // /___/ /___   / /___/ /_/ / ____/ / /
+/_/  /_/\____/_____/___/_____/_____/   \____/\____/_/     /_/
+
+ -->
+
+  <!-- all locations are just arranged alphabetically -->
+  <article id="brand-all-location-section" class="visible-sm visible-xs">    
+
+    <div id="brand-all-location-content-box">
+
+      <div class="main-title-bar"><h4>Australia</h4></div>
+      <div class="sub-title-bar"><h4>Adelaide</h4></div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div id="hoteladelaide" class="brand-all-location-content-box active">
+              <div class="manic-image-container">
+                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              </div>
+              <div class="box-title row">
+                <div class="col-md-12"><h4>Country Comfort Hotel Adelaide</h4></div>              
+              </div>
+            </div>          
+
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <div id="adelaidemanor" class="brand-all-location-content-box">
+              <div class="manic-image-container">
+                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              </div>
+              <div class="row box-title">
+                <div class="col-md-12"><h4>Country Comfort Adelaide Manor</h4></div>              
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sub-title-bar"><h4>Albany</h4></div>
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-sm-6 col-xs-12">
+            <div id="amitymotelalbany" class="brand-all-location-content-box">
+              <div class="manic-image-container">
+                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              </div>
+              <div class="row box-title">
+                <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sub-title-bar"><h4>Armidale</h4></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div id="armidale" class="brand-all-location-content-box">
+              <div class="manic-image-container">
+                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              </div>
+              <div class="row box-title">
+                <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sub-title-bar"><h4>Bundaberg</h4></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div id="bundaberginternational" class="brand-all-location-content-box">
+              <div class="manic-image-container">
+                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              </div>
+              <div class="row box-title">
+                <div class="col-md-12"><h4>Country Comfort Bundaberg International</h4></div>              
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sub-title-bar"><h4>North Coffs Harbour</h4></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12">
+            <div id="coffsharbour" class="brand-all-location-content-box">
+              <div class="manic-image-container">
+                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
+              </div>
+              <div class="row box-title">
+                <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!-- brand-all-location-content-box -->
+    
+
+  </article>
 
 
 <!--
@@ -723,7 +857,7 @@
       <div class="col-xs-12">
 
         <div id="brand-all-location-title-version-02-mobile">
-          <h1>Our Brand</h1>
+          <h1>Our Brands</h1>
         </div>
 
 
@@ -735,9 +869,8 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <h2><a href="hotel.php">NEXT Hotels</a></h2>
+                <p>Clock’s ticking, opportunities are opening, but travel choices are still somewhat limiting? Not at NEXT Hotels...</p>                
               </div>
             </div>
 
@@ -746,9 +879,8 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h4>Wollongong</h4>
-                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <h2><a href="hotel.php">Sage Hotels</a></h2>
+                <p>The complex made simple, the simple made special. We know how important making things uncomplicated is ...</p>
               </div>
             </div>
 
@@ -757,9 +889,8 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h4>Newcastle</h4>
-                <h2><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <h2><a href="hotel.php">Chifley Hotel</a></h2>
+                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking distance ...</p>
               </div>
             </div>
 
@@ -768,9 +899,28 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h4>Wollongong</h4>
-                <h2><a href="hotel.php">Sage Hotel Wollongong</a></h2>
-                <p>Sage Hotel West Perth is your modern gateway to the City of Light, right in the heart of West Perth, walking ...</p>
+                <h2><a href="hotel.php">Kiridara</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit accusantium explicabo molestiae, dolore ...</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h2><a href="hotel.php">Riva Surya</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit accusantium explicabo molestiae, dolore ...</p>
+              </div>
+            </div>
+
+            <div class="brand-location-slider-item-mobile">
+              <a href="hotel.php" class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
+              </a>
+              <div class="brand-location-slider-item-copy-mobile">
+                <h2><a href="hotel.php">Riva Arun</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit accusantium explicabo molestiae, dolore ...</p>
               </div>
             </div>
 

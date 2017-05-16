@@ -103,14 +103,16 @@
                   <div class="manic-dropdown" id="brand-location-hotel-dropdown">
                     <select id="brand-location-hotel-select">
                       <option value="">Our Hotels</option>
+                      <option>View All</option>
                       <option>Next Hotels</option>
                       <option>Sage Hotels</option>
+                      <option>Kafnu</option>
+                      <option>Chifley Hotels</option>                      
+                      <option>Country Comfort</option>
+                      <option>Sundowner Inns</option>                      
                       <option>Kiridara</option>
                       <option>Riva Surya</option>
-                      <option>Riva Arun</option>                      
-                      <option>Chifley Hotels</option>                      
-                      <option>Country Comfort Hotels</option>
-                      <option>Sundowner Inns</option>                      
+                      <option>Riva Arun</option>                                            
                     </select>
                   </div>
 
@@ -119,7 +121,7 @@
 
                   <div class="manic-dropdown" id="brand-location-country-dropdown">
                     <select id="brand-location-country-select">
-                      <option value="">Please Select</option>
+                      <option value="">Select Country</option>
                       <option>Option 01</option>
                       <option>Option 02</option>
                       <option>Option 03</option>
@@ -133,7 +135,7 @@
 
                   <div class="manic-dropdown" id="brand-location-territory-dropdown">
                     <select id="brand-location-territory-select">
-                      <option value="">Please Select</option>
+                      <option value="">Select Territory</option>
                       <option>Option 01</option>
                       <option>Option 02</option>
                       <option>Option 03</option>
@@ -148,7 +150,7 @@
 
                   <div class="manic-dropdown" id="brand-location-city-dropdown">
                     <select id="brand-location-city-select">
-                      <option value="">Please Select</option>
+                      <option value="">Select City</option>
                       <option>Option 01</option>
                       <option>Option 02</option>
                       <option>Option 03</option>

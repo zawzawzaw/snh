@@ -18,7 +18,7 @@
               <img src="images/icons/menu-bar.svg" alt="">     
               <span>Menu</span>
             </a>
-            <a href="brand_next.php" id="desktop-header-logo">
+            <a href="group_landing.php" id="desktop-header-logo">
               <img src="images/logo/next-logo.png">
             </a>
           </div>          
