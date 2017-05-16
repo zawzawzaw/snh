@@ -316,56 +316,28 @@ sagewest.page.Default.prototype.create_autocompelete_search = function(){
       }
     });
 
-    var data = [
-      { value: "Riva Arun Bangkok Thailand", label: "Riva Arun", city: "Bangkok", country: "Thailand" },
-      { value: "Riva Surya Bangkok Thailand", label: "Riva Surya", city: "Bangkok", country: "Thailand" },
-      { value: "Kiridara Luang Prabang Laos", label: "Kiridara", city: "Luang Prabang", country: "Laos" },
+    var searchableHotels = $("#banner-search-form-data").find(".searchable-hotels");
+    var new_data = [];
 
-      { value: "NEXT Hotels Brisbane Australia", label: "NEXT Hotels Brisbane", city: "Brisbane", country: "Australia" },
-      { value: "Sage West Perth Australia", label: "Sage West Perth", city: "Perth", country: "Australia" },
-      { value: "Sage Hotel Adelaide Australia", label: "Sage Hotel Adelaide", city: "Adelaide", country: "Australia" },
-      { value: "Sage Hotel James Street Brisbane Australia", label: "Sage Hotel James Street", city: "Brisbane", country: "Australia" },
-      { value: "Sage Hotel Wollongong Australia", label: "Sage Hotel Wollongong", city: "Wollongong", country: "Australia" },
-      
-      { value: "Chifley Alice Springs Resort Australia", label: "Chifley Alice Springs Resort", city: "Alice Springs", country: "Australia" },
-      { value: "Chifley Plaza Townsville Australia", label: "Chifley Plaza Townsville", city: "Townsville", country: "Australia" },
-      { value: "Chifley Executive Suites Newcastle Australia", label: "Chifley Executive Suites Newcastle", city: "Newcastle", country: "Australia" },
-      { value: "Chifley Apartments Newcastle Australia", label: "Chifley Apartments Newcastle", city: "Newcastle", country: "Australia" },
-      { value: "The Chifley on South Terrace Australia", label: "The Chifley on South Terrace", city: "South Terrace", country: "Australia" },
+    for (var i = 0; i < searchableHotels.length; i++) {      
+      var value = $(searchableHotels[i]).data('hotel') + ' ' + $(searchableHotels[i]).data('city') + ' ' + $(searchableHotels[i]).data('country');
+      var label =  $(searchableHotels[i]).data('hotel');
+      var city =  $(searchableHotels[i]).data('city');
+      var country =  $(searchableHotels[i]).data('country');
 
-      { value: "Sundowner Rockhampton Gladstone Australia", label: "Sundowner Rockhampton Gladstone", city: "Gladstone", country: "Australia" },
-      { value: "Sundowner Twin Towns Motel Australia", label: "Sundowner Twin Towns Motel", city: "Twin Towns", country: "Australia" },
-      { value: "Sundowner Townhouse Goondiwindi Australia", label: "Sundowner Townhouse Goondiwindi", city: "Goondiwindi", country: "Australia" },
-      { value: "Sundowner Bendigo Golden Reef Australia", label: "Sundowner Bendigo Golden Reef", city: "Bendigo Golden Reef", country: "Australia" },
-      { value: "Sundowner Dubbo Aberdeen Motor Inn Australia", label: "Sundowner Dubbo Aberdeen Motor Inn", city: "Aberdeen", country: "Australia" },
-      { value: "Sundowner Echuca Nirebo Australia", label: "Sundowner Echuca Nirebo", city: "Echuca Nirebo", country: "Australia" },
-      { value: "Sundowner Gardenia Motor Inn Bass Hill Australia", label: "Sundowner Gardenia Motor Inn Bass Hill", city: "Bass Hill", country: "Australia" },
-      { value: "Sundowner Horsham Westlander Australia", label: "Sundowner Horsham Westlander", city: "Horsham Westlander", country: "Australia" },
-      { value: "Sundowner Hume Country Motor Inn Australia", label: "Sundowner Hume Country Motor Inn", city: "Hume", country: "Australia" },
-      { value: "Sundowner Huskisson Jervis Bay Australia", label: "Sundowner Huskisson Jervis Bay", city: "Jervis Bay", country: "Australia" },
-
-      { value: "Country Comfort Inner City Perth Australia", label: "Country Comfort Inner City Perth", city: "Perth", country: "Australia" },
-      { value: "Country Comfort Amity Motel Albany Australia", label: "Country Comfort Amity Motel Albany", city: "Albany", country: "Australia" },
-      { value: "Country Comfort Adelaide Australia", label: "Country Comfort Adelaide", city: "Adelaide", country: "Australia" },
-      { value: "Country Comfort Mt Gambier Australia", label: "Country Comfort Mt Gambier", city: "Mt Gambier", country: "Australia" },
-      { value: "Country Comfort Cowra Australia", label: "Country Comfort Cowra", city: "Cowra", country: "Australia" },
-      { value: "Country Comfort Hunts Liverpool Australia", label: "Country Comfort Hunts Liverpool", city: "Hunts Liverpool", country: "Australia" },
-      { value: "Country Comfort Newcastle Airport & Convention Centre Australia", label: "Country Comfort Newcastle Airport & Convention Centre", city: "Newcastle", country: "Australia" },
-      { value: "Country Comfort Newcastle Airport & Convention Centre Australia", label: "Country Comfort Newcastle Airport & Convention Centre", city: "Newcastle", country: "Australia" },
-      { value: "Country Comfort Port Macquarie Waters Edge Boutique Australia", label: "Country Comfort Port Macquarie Waters Edge Boutique", city: "Port Macquarie", country: "Australia" },
-      { value: "Country Comfort Armidal Australia", label: "Country Comfort Armidal", city: "Armidal", country: "Australia" },
-      { value: "Country Comfort Coffs Harbour Australia", label: "Country Comfort Coffs Harbour", city: "Coffs Harbour", country: "Australia" },
-      
-      { value: "Country Comfort Toowoomba Australia", label: "Country Comfort Toowoomba", city: "Toowoomba", country: "Australia" },
-      { value: "Country Comfort Bundaberg International Australia", label: "Country Comfort Bundaberg International", city: "Bundaberg", country: "Australia" },
-      { value: "Country Comfort Gin Gin Australia", label: "Country Comfort Gin Gin", city: "Gin Gin", country: "Australia" }      
-    ];
+      new_data.push({
+        value: value,
+        label: label,
+        city: city,
+        country: country
+      });
+    }    
  
     $("#hotel_search").catcomplete({
       delay: 0,
       source: function(req, responseFn) {
         var words = req.term.split(' ');
-        var results = $.grep(data, function(value, index) {
+        var results = $.grep(new_data, function(value, index) {
           var sentence = value.value.toLowerCase();
           return words.every(function(word) {
             return sentence.indexOf(word.toLowerCase()) >= 0;

@@ -233,6 +233,7 @@ sagewest.component.BrandLocationTitle.prototype.create_dropdown = function() {
     }
     
   }
+  console.log(country_array);
   this.country_dropdown.set_option_array(country_array);
 
 

@@ -41,15 +41,17 @@ sagewest.page.Brand = function(options, element) {
 
   this.create_dropdown();
 
-  this.hotel_dropdown = $("#brand-location-hotel-dropdown").data("manic.ui.Dropdown");
+  if(this.is_group_location_page) {
+    this.hotel_dropdown = $("#brand-location-hotel-dropdown").data("manic.ui.Dropdown");
 
-  goog.events.listen(this.hotel_dropdown, manic.ui.Dropdown.ON_CHANGE, function(event){
-    // console.log('here');
-    // console.log('this.hotel_dropdown.current_value: ' + this.hotel_dropdown.current_value);
+    goog.events.listen(this.hotel_dropdown, manic.ui.Dropdown.ON_CHANGE, function(event){
+      // console.log('here');
+      // console.log('this.hotel_dropdown.current_value: ' + this.hotel_dropdown.current_value);
 
-    this.on_group_location_title_filter_change();
+      this.on_group_location_title_filter_change();
 
-  }.bind(this));
+    }.bind(this));
+  }  
 
   this.create_brand_location_title();     // needs to be here because init is slow
 
@@ -861,7 +863,7 @@ sagewest.page.Brand.prototype.others = function(){
 sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(event){
 
   
-  // console.log('on_brand_location_title_filter_change');
+  console.log('on_brand_location_title_filter_change');
   // console.log(this.brand_location_title.current_country);
   // console.log(this.brand_location_title.current_territory);
   // console.log(this.brand_location_title.current_city);

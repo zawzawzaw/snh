@@ -105,11 +105,12 @@
                       <option value="">Our Hotels</option>
                       <option>Next Hotels</option>
                       <option>Sage Hotels</option>
-                      <option>Kafnu</option>
-                      <option>Country Comfort</option>
+                      <option>Kiridara</option>
+                      <option>Riva Surya</option>
+                      <option>Riva Arun</option>                      
                       <option>Chifley Hotels</option>                      
+                      <option>Country Comfort Hotels</option>
                       <option>Sundowner Inns</option>                      
-                      <option>Collection</option>
                     </select>
                   </div>
 
@@ -189,7 +190,7 @@
             <div id="brand-location-page-item-container">
 
               <a href="hotel.php" class="brand-location-page-item"
-                data-hotel="Collection"
+                data-hotel="Riva Arun"
                 data-country="Thailand"
                 data-territory="Bangkok"
                 data-city=""
@@ -204,7 +205,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
-                data-hotel="Collection"
+                data-hotel="Riva Surya"
                 data-country="Thailand"
                 data-territory="Bangkok"
                 data-city=""
@@ -219,7 +220,7 @@
               </a>
 
               <a href="hotel.php" class="brand-location-page-item"
-                data-hotel="Collection"
+                data-hotel="Kiridara"
                 data-country="Laos"
                 data-territory="Luang Prabang"
                 data-city=""

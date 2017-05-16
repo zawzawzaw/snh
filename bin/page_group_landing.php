@@ -38,6 +38,46 @@
           <input type="text" name="hotel_search" id="hotel_search" placeholder="Search by country, city or hotel name">
           <button class="hotel-search-btn"></button>
         </div>
+          
+        <!-- edit/add all searchable hotels here -->
+        <div id="banner-search-form-data">          
+          <div class="searchable-hotels" data-hotel="Riva Arun" data-city="Bangkok" data-country="Thailand"></div>
+          <div class="searchable-hotels" data-hotel="Riva Surya" data-city="Bangkok" data-country="Thailand"></div>
+          <div class="searchable-hotels" data-hotel="Kiridara" data-city="Luang Prabang" data-country="Laos"></div>
+          <div class="searchable-hotels" data-hotel="NEXT Hotels Brisbane" data-city="Brisbane" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sage West Perth" data-city="Perth" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sage Hotel Adelaide" data-city="Adelaide" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sage Hotel James Street" data-city="Brisbane" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sage Hotel Wollongong" data-city="Wollongong" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Chifley Alice Springs Resort" data-city="Alice Springs" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Chifley Plaza Townsville" data-city="Townsville" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Chifley Executive Suites Newcastle" data-city="Newcastle" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Chifley Apartments Newcastle" data-city="Newcastle" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="The Chifley on South Terrace" data-city="South Terrace" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Rockhampton Gladstone" data-city="Gladstone" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Twin Towns Motel" data-city="Twin Towns" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Townhouse Goondiwindi" data-city="Goondiwindi" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Bendigo Golden Reef" data-city="Bendigo Golden Reef" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Dubbo Aberdeen Motor Inn" data-city="Aberdeen" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Echuca Nirebo" data-city="Echuca Nirebo" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Gardenia Motor Inn Bass Hill" data-city="Bass Hill" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Horsham Westlander" data-city="Horsham Westlander" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Hume Country Motor Inn" data-city="Hume" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Sundowner Huskisson Jervis Bay" data-city="Jervis Bay" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Inner City Perth" data-city="Perth" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Amity Motel Albany" data-city="Albany" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Adelaide" data-city="Adelaide" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Mt Gambier" data-city="Mt Gambier" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Cowra" data-city="Cowra" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Hunts Liverpool" data-city="Hunts Liverpool" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Newcastle Airport & Convention Centre" data-city="Newcastle" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Port Macquarie Waters Edge Boutique" data-city="Port Macquarie" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Armidal" data-city="Armidal" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Coffs Harbour" data-city="Coffs Harbour" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Toowoomba" data-city="Toowoomba" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Bundaberg International" data-city="Bundaberg" data-country="Australia"></div>
+          <div class="searchable-hotels" data-hotel="Country Comfort Gin Gin" data-city="Gin Gin" data-country="Australia"></div>
+        </div>
       </div>
       <!-- <div class="scroll-down-cta visible-md visible-lg"></div> -->
       <div class="scroll-down-cta"></div>
