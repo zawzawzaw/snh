@@ -76,6 +76,9 @@
 
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Western Australia" data-city="Albany"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Western Australia" data-city="Belmont"></div>
+              <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Western Australia" data-city="Perth"></div>
+
+              <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Northern Territory" data-city="Alice Spring"></div>
 
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="New South Wales" data-city="Armidale"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="New South Wales" data-city="Casula"></div>
@@ -87,6 +90,7 @@
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Queensland" data-city="Bundaberg"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Queensland" data-city="Gin Gin"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Queensland" data-city="Highfields"></div>
+              <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="Queensland" data-city="Gladstone"></div>
 
             </div> <!-- brand-location-page-filter-data-item-container -->
 
@@ -451,6 +455,51 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Next Hotels Brisbane</h5>
                   <h4>Brisbane</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Sage Hotels"
+                data-country="Australia"
+                data-territory="Western Australia"
+                data-city="Perth"
+                data-id="Sage West Perth">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Sage West Perth</h5>
+                  <h4>Brisbane</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Chifley Hotels"
+                data-country="Australia"
+                data-territory="Northern Territory"
+                data-city="Alice Spring"
+                data-id="Chifley Alice Springs Resort">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Chifley Alice Springs Resort</h5>
+                  <h4>Alice Spring</h4>
+                </div>
+              </a>
+
+              <a href="hotel.php" class="brand-location-page-item"
+                data-hotel="Sundowner Inns"
+                data-country="Australia"
+                data-territory="Queensland"
+                data-city="Gladstone"
+                data-id="Sundowner Rockhampton Gladstone">
+                <div class="manic-image-container">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                </div>
+                <div class="brand-location-page-item-overlay">
+                  <h5>Sundowner Rockhampton Gladstone</h5>
+                  <h4>Gladstone</h4>
                 </div>
               </a>
 
