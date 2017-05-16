@@ -68,8 +68,8 @@
             <!-- a list of cities, don't use special characters -->
             <div id="brand-location-page-filter-data-item-container">
 
-              <div class="brand-location-page-filter-data-item" data-country="Thailand" data-territory="Bangkok" data-city=""></div>
-              <div class="brand-location-page-filter-data-item" data-country="Laos" data-territory="Luang Prabang" data-city=""></div>
+              <div class="brand-location-page-filter-data-item" data-country="Thailand" data-territory="Thailand" data-city="Bangkok"></div>
+              <div class="brand-location-page-filter-data-item" data-country="Laos" data-territory="Laos" data-city="Luang Prabang"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Adelaide"></div>
               <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Mt Gambier"></div>
               <!-- <div class="brand-location-page-filter-data-item" data-country="Australia" data-territory="South Australia" data-city="Gepps Cross"></div> -->
@@ -192,8 +192,8 @@
               <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Riva Arun"
                 data-country="Thailand"
-                data-territory="Bangkok"
-                data-city=""
+                data-territory="Thailand"
+                data-city="Bangkok"
                 data-id="Riva Arun">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
@@ -207,8 +207,8 @@
               <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Riva Surya"
                 data-country="Thailand"
-                data-territory="Bangkok"
-                data-city=""
+                data-territory="Thailand"
+                data-city="Bangkok"
                 data-id="Riva Surya">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
@@ -222,8 +222,8 @@
               <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Kiridara"
                 data-country="Laos"
-                data-territory="Luang Prabang"
-                data-city=""
+                data-territory="Laos"
+                data-city="Luang Prabang"
                 data-id="Kiridara">
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
