@@ -25,6 +25,19 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
+  <!-- move these to the at the bottom of the body -->
+
+
+  <!-- Web Fonts (in js_PAGENAME.php for optimized version) -->
+
+  <!-- open-sans -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+  
 
 
 <script type="text/javascript">
@@ -96,7 +109,7 @@
     <div id="mobile-header-open-btn"></div>
 
     <a href="brand_alternative.php" id="mobile-header-logo">
-      <img src="images/logo/sage-west-logo.svg">
+      <img src="images/logo/next-logo.png">
     </a>  
   
     <a href="javascript:void(0);" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
@@ -109,18 +122,20 @@
 
   <div id="mobile-header-menu-container">
     <div id="destination-indicator">
-      <p>Select a destination:</p>
-    </div>
-    <div id="country-indicator">
-      <p>Australia</p>
+      <p>Select Brand:</p>
     </div>
 
     <nav id="mobile-menu">
       <ul>
-        <li><a href="hotel.php">Adelaide</a></li>
-        <li><a href="hotel.php">brisbane</a></li>
-        <li><a href="hotel.php">west perth</a></li>
-        <li><a href="hotel.php">wollongong</a></li>
+        <li><a href="hotel.php">next hotels</a></li>
+        <li><a href="hotel.php">sage hotels</a></li>
+        <li><a href="hotel.php">kafnu</a></li>
+        <li><a href="hotel.php">Chifley Hotels</a></li>
+        <li><a href="hotel.php">Country Comfort</a></li>      
+        <li><a href="hotel.php">Sundowner Inns</a></li>
+        <li><a href="hotel.php">Kiridara</a></li>
+        <li><a href="hotel.php">Riva Arun</a></li>      
+        <li><a href="hotel.php">Riva Surya</a></li> 
         
         <!-- 
         <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
@@ -139,16 +154,28 @@
         -->
       </ul>
     </nav>
-    <div id="brand-link" class="menu-link">
-      <a href="#"><span>Our Brands</span></a>
+    <div id="brand-link" class="menu-link no-padding">
+      <a href="#"><span>Hotel Directory</span></a>
     </div>
-    <div id="group-link" class="menu-link">
-      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    <div id="group-link" class="menu-link no-padding">
+      <a href="#"><span>Next Story Group</span></a>
     </div>
   </div> <!-- #mobile-header-menu-container -->
 
   <div id="mobile-header-booking-form">
     <form action="">
+      <div class="input-box">
+        <label for="hotel">Select Brand</label>
+        <div class="dropdown">
+          <select name="brand" id="brand" class="brand-dropdown">
+            <option value="Next Hotel">Next Hotel</option>
+            <option value="Sage Hotel">Sage Hotel</option>
+            <option value="Chifely Hotel">Chifely Hotel</option>
+            <option value="Sundowner Inns">Sundowner Inns</option>
+            <option value="Country Comfort">Country Comfort</option>
+          </select>
+        </div>
+      </div>
       <div class="input-box">
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
@@ -373,7 +400,7 @@
     <a href="#"><span>Hotel Directory</span></a>
   </div>
   <div id="group-link" class="menu-link">
-    <a href="#"><span>NEXT <br class="hidden-xs hidden-sm"> Story Group Corporate</span></a>
+    <a href="#"><span>Next Story Group</span></a>
   </div>
 </div>
         <!--
@@ -437,6 +464,8 @@
 
     -->
 
+    <div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
+
 
     <article id="brand-location-page-title-section">
       <div class="container-fluid has-breakpoint">
@@ -482,7 +511,9 @@
               <div class="brand-location-page-filter-data-item" data-country="Laos" data-territory="Laos" data-city="Luang Prabang"></div>
 
             </div> <!-- brand-location-page-filter-data-item-container -->
+            
 
+            <div id="brand-location-page-filter-container-mobile-anchor"></div>
             <div id="brand-location-page-filter-container" data-selected-hotel="Sage Hotels" data-selected-country="" data-selected-territory="" data-selected-city="">
 
 
@@ -589,7 +620,7 @@
                 data-city="Adelaide"
                 data-id="Country Comfort Hotel Adelaide">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Hotel Adelaide</h5>
@@ -604,7 +635,7 @@
                 data-city="Adelaide"
                 data-id="Country Comfort Adelaide Manor">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Adelaide Manor</h5>
@@ -619,7 +650,7 @@
                 data-city="Albany"
                 data-id="Country Comfort Amity Motel Albany">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Amity Motel Albany</h5>
@@ -634,7 +665,7 @@
                 data-city="Armidale"
                 data-id="Country Comfort Armidale">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Armidale</h5>
@@ -649,7 +680,7 @@
                 data-city="Bundaberg"
                 data-id="Country Comfort Bundaberg International">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Bundaberg International</h5>
@@ -664,7 +695,7 @@
                 data-city="North Coffs Harbour"
                 data-id="Country Comfort Coffs Harbour">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Coffs Harbour</h5>
@@ -679,7 +710,7 @@
                 data-city="Cowra"
                 data-id="Country Comfort Cowra">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Cowra</h5>
@@ -694,7 +725,7 @@
                 data-city="Gin Gin"
                 data-id="Country Comfort Gin Gin">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Gin Gin</h5>
@@ -709,7 +740,7 @@
                 data-city="Casula"
                 data-id="Country Comfort Hunts Liverpool">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Hunts Liverpool</h5>
@@ -724,7 +755,7 @@
                 data-city="Belmont"
                 data-id="Country Comfort Inter City Perth">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Inter City Perth</h5>
@@ -739,7 +770,7 @@
                 data-city="Mt Gambier"
                 data-id="Country Comfort Inter Mt Gambier">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Inter Mt Gambier</h5>
@@ -754,7 +785,7 @@
                 data-city="Heatherbrae"
                 data-id="Country Comfort Newcastle Airport & Convention Centre">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Newcastle Airport & Convention Centre</h5>
@@ -769,7 +800,7 @@
                 data-city="Port Macquarie"
                 data-id="Country Comfort Port Macquarie Water Edge Boutique">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Port Macquarie Water Edge Boutique</h5>
@@ -784,7 +815,7 @@
                 data-city="Highfields"
                 data-id="Country Comfort Toowoomba">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Toowoomba</h5>
@@ -799,7 +830,7 @@
                 data-city="Brisbane"
                 data-id="Next Hotels Brisbane">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Next Hotels Brisbane</h5>
@@ -814,7 +845,7 @@
                 data-city="Perth"
                 data-id="Sage West Perth">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Sage West Perth</h5>
@@ -829,7 +860,7 @@
                 data-city="Alice Spring"
                 data-id="Chifley Alice Springs Resort">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Chifley Alice Springs Resort</h5>
@@ -844,7 +875,7 @@
                 data-city="Gladstone"
                 data-id="Sundowner Rockhampton Gladstone">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Sundowner Rockhampton Gladstone</h5>
@@ -859,7 +890,7 @@
                 data-city="Bangkok"
                 data-id="Riva Arun">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Riva Arun</h5>
@@ -874,7 +905,7 @@
                 data-city="Bangkok"
                 data-id="Riva Surya">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Riva Surya</h5>
@@ -889,7 +920,7 @@
                 data-city="Luang Prabang"
                 data-id="Kiridara">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Kiridara</h5>
@@ -911,156 +942,6 @@
 
 
     <div id="default-footer-spacer"></div>
-  
-
-
-
-
-
-
-  
-
-
-    <div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
-
-
-
-
-  <!--
-     __  __  ___  ____ ___ _     _____    ____ ___  _   _ _____ _____ _   _ _____
-    |  \/  |/ _ \| __ )_ _| |   | ____|  / ___/ _ \| \ | |_   _| ____| \ | |_   _|
-    | |\/| | | | |  _ \| || |   |  _|   | |  | | | |  \| | | | |  _| |  \| | | |
-    | |  | | |_| | |_) | || |___| |___  | |__| |_| | |\  | | | | |___| |\  | | |
-    |_|  |_|\___/|____/___|_____|_____|  \____\___/|_| \_| |_| |_____|_| \_| |_|
-
-  -->
-
-  <!-- all locations are just arranged alphabetically -->
-  <div class="scroll-target" data-value="location"></div>
-  <article id="brand-all-location-section" class="visible-sm visible-xs">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-            <div id="brand-all-location-title">
-              <h4>country comfort HOTELS</h4>
-              <h1>Our locations</h1>
-            </div>
-        </div>
-      </div>
-    </div>
-    
-
-
-    <!-- if there is NO territories, start with just the sub-title-bar div -->
-
-    <div id="brand-all-location-content-box">
-
-      <div class="main-title-bar"><h4>Australia</h4></div>
-
-      <div class="territory-expanding-container" data-value="mobile-south-australia" data-hash-value="australia-south-australia">
-        <div class="scroll-target" data-value="mobile-south-australia"></div>
-        <div class="territory-title-bar"><h4>South Australia</h4></div>
-        <div class="territory-expanded-content">
-
-
-          <div class="sub-title-bar"><h4>Adelaide</h4></div>
-
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-6 col-xs-12">
-                <div id="hoteladelaide" class="brand-all-location-content-box active">
-                  <div class="manic-image-container">
-                    <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hotel-adelaide-02.jpg">
-                  </div>
-                  <div class="box-title row">
-                    <div class="col-md-12"><h4>Country Comfort Hotel Adelaide</h4></div>              
-                  </div>
-                </div>          
-
-              </div>
-              <div class="col-sm-6 col-xs-12">
-                <div id="adelaidemanor" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
-                    <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-adelaide-manor.jpg">
-                  </div>
-                  <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Adelaide Manor</h4></div>              
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="sub-title-bar"><h4>Mt Gambier</h4></div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-6 col-xs-12">
-                <div id="intermtgambier" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
-                    <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-inter-mt-gambier.jpg">
-                  </div>
-                  <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Inter Mt Gambier</h4></div>              
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- territory-expanded-content -->
-      </div> <!-- territory-expanding-container -->
-
-      <div class="territory-expanding-container" data-value="mobile-western-australia" data-hash-value="australia-western-australia">
-        <div class="scroll-target" data-value="mobile-western-australia"></div>
-        <div class="territory-title-bar"><h4>Western Australia</h4></div>
-        <div class="territory-expanded-content">
-
-
-          <div class="sub-title-bar"><h4>Albany</h4></div>
-          <div class="container-fluid">
-            <div class="row">
-
-              <div class="col-sm-6 col-xs-12">
-                <div id="amitymotelalbany" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
-                    <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-albany.jpg">
-
-                  </div>
-                  <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="sub-title-bar"><h4>Belmont</h4></div>          
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-6 col-xs-12">
-                <div id="intercityperth" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
-                    <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-belmont.jpg">
-                  </div>
-                  <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Inter City Perth</h4></div>              
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div> <!-- territory-expanded-content -->
-      </div> <!-- territory-expanding-container -->
-
-    </div> <!-- brand-all-location-content-box -->
-
-  </article>
-
 
   
 </div> <!-- page-wrapper-content-min-height -->
@@ -1094,42 +975,42 @@
 -->
 
 
+  <!-- Development Version -->
+  <link rel="stylesheet" type="text/css" href="css/style_landing.css">
 
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
-
-  <!-- Optimized Version -->
-  <script type="text/javascript">
-    var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
-    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
-    var PAGE_JS                   = "js/page-brand.min.js";
-    var PAGE_CSS                  = "css/style_landing.css";
-    
-    head.load(PAGE_CSS, function(){
-
-      window.preloader_css = 100;
-
-    });
-
-    head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
-
-      window.preloader_js = 50;
-
-      head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {
-          
-        window.preloader_js = 100;
-
-        page = new sagewest.page.Brand({});
-
-      });
-
-    });
-
-    // start preload
-
-  </script>
+  <!-- Page Library -->
+  <script type="text/javascript" src="../source/js/all.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
+  <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/jquery.gsap.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/easing/EasePack.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/plugins/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/ScrollMagic.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/debug.addIndicators.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
+  <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
+  <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>  
+  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>  
+  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
   
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp&libraries=places"></script>
+  <script type="text/javascript" src="../source/library/infobox/infobox.js"></script>  
+
+  <!-- Google Closure -->
+  <script src="../source/library/closure-library/closure/goog/base.js"></script>
+  <script src="../source/js/goog-custom-dependencies.js"></script>
+  <script type="text/javascript">
+    goog.require('sagewest.page.Brand');
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      page = new sagewest.page.Brand({});    
+    });
+  </script>
 
         <!--
    _____ ___   ___ _____ _____ ____  

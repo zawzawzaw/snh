@@ -285,6 +285,7 @@ sagewest.page.Default.prototype.create_autocompelete_search = function(){
       
       var scroll_target = $("#banner-search-form-scroll-target");
       this.controller.scrollTo(scroll_target[0]);
+      $(e.currentTarget).val("");
 
     }.bind(this));
 

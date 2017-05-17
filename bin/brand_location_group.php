@@ -5,8 +5,8 @@ ob_start();
   global $is_debug;
   global $body_class;
 
-  $is_debug = false;
-  // $is_debug = true;
+  // $is_debug = false;
+  $is_debug = true;
 
   $body_class = "group-location-page permanent-scrolled";
 ?>
@@ -36,7 +36,7 @@ ob_start();
 
 
     <!-- mobile header is outside the page wrapper -->
-    <?php include('brand_header_mobile.php'); ?>
+    <?php include('brand_header_group_mobile.php'); ?>
     
     <div id="page-wrapper">
       <div id="page-wrapper-content">

@@ -45,10 +45,14 @@
           <label for="hotel">Select Brand</label>
           <div class="dropdown">
             <select name="brand" id="brand" class="brand-dropdown">
+              <option value="Next Hotel">Next Hotel</option>
               <option value="Sage Hotel">Sage Hotel</option>
-              <option value="Sage Hotel">Sage Hotel</option>
-              <option value="Sage Hotel">Sage Hotel</option>
-              <option value="Sage Hotel">Sage Hotel</option>
+              <option value="Chifely Hotel">Chifely Hotel</option>
+              <option value="Country Comfort">Country Comfort</option>
+              <option value="Sundowner Inns">Sundowner Inns</option>
+              <option value="Kiridara">Kiridara</option>
+              <option value="Riva Arun">Riva Arun</option>
+              <option value="Riva Surya">Riva Surya</option>            
             </select>
           </div>
         </div>
@@ -149,6 +153,6 @@
     <a href="#"><span>Hotel Directory</span></a>
   </div>
   <div id="group-link" class="menu-link no-padding">
-    <a href="#"><span>NEXT <br class="hidden-xs hidden-sm"> Story Group Corporate</span></a>
+    <a href="#"><span>Next Story Group</span></a>
   </div>
 </div>

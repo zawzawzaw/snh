@@ -315,7 +315,7 @@ sagewest.page.Booking.prototype.create_sticky_sidebar_mobile = function() {
       this.sticky_sidebar_scence_mobile = new ScrollMagic.Scene({triggerElement: "#sticky-anchor-mobile", triggerHook: 'onLeave', offset: -63 }) //$('.booking-steps.active-step').offset().top + 100
               .setClassToggle("#sticky-sidebar-mobile", "stick") // add class toggle
               // .setPin("#sticky-sidebar-mobile")
-              // .addIndicators({name: ("" + Math.random()) }) // add indicators (requires plugin)
+              .addIndicators({name: ("" + Math.random()) }) // add indicators (requires plugin)
               .addTo(this.controller);
       
       this.sticky_sidebar_scence_mobile.on("enter", function (event) {         

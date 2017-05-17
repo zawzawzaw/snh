@@ -991,8 +991,63 @@ body.is-tablet{
     &:after{
       font-size: 18px;
     }
-  }
+  }  
 
+}
+
+@media all and (max-width: 991px) {
+  #brand-location-page-filter-container{
+    &.stick {
+      position: fixed;
+      top: 63px;
+      width: 85%;
+      z-index: 10;
+    }
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    .col-md-3 {
+      margin-left: -25px;
+      margin-right: -25px;
+      .manic-dropdown {          
+        select {
+          border: 0px;
+          background: @off-white;
+          border-bottom: 1px solid @border-grey;
+          color: @grey;
+          text-transform: uppercase;
+          .open-sans-semi-bold;
+          font-size: 13px;
+          line-height: 26px;
+          padding-left: 25px;          
+        }     
+        &:after {
+          color: @grey;
+          top: 7px;
+          right: 20px;
+          font-size: 16px;
+        }   
+      }
+      &:first-child {
+        .manic-dropdown {          
+          select {
+            background: @grey-7;
+            border-bottom: 0px;
+            color: @white;
+          }     
+          &:after {
+            color: @white;
+            font-size: 16px;
+          }   
+        }
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+    
+  }
 }
 
 
@@ -1034,9 +1089,52 @@ body.is-tablet{
     // TABLET LANDSCAPE & LAPTOPS
     @media only screen and (max-width: 1199px) {
       height: 325px;
-    }
+    }    
 
     margin-bottom: 30px;
+
+    @media all and (max-width: 991px) {
+      width: 100%;      
+    }
+  }
+
+  ul.slick-dots {
+    padding-top: 4px;
+    margin-top: -30px;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-left: 4px;
+      margin-right: 4px;
+      width: 8px;
+      height: 8px;
+      button {
+        text-indent: -999999px;
+        position: relative;
+        border: none;
+        background: none;
+        &:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background-color: @grey;
+          .round(10px);
+          display: block;
+          position: absolute;
+          left: 0px;
+          top: 20px;
+          cursor: pointer;
+        }
+      }
+      &.slick-active {
+        button {
+          &:before {
+            background-color: @violet;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1063,6 +1161,11 @@ body.is-tablet{
     &.custom-top-position {
       img {
         top: -20%!important;
+      }
+      @media all and (max-width: 991px) {
+        img {
+          top: 0!important;
+        } 
       }
     }
   }
@@ -1129,6 +1232,10 @@ body.is-tablet{
 
 #brand-location-cta-container {
   text-align: right;
+  @media all and (max-width: 991px) {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 
 
@@ -1497,43 +1604,10 @@ body.is-tablet{
 
       p {
         padding: 0px;
-      }
+      }      
 
-      ul.slick-dots {
-        padding-top: 4px;
-
-        li {
-          display: inline-block;
-          margin-left: 4px;
-          margin-right: 4px;
-          width: 8px;
-          height: 8px;
-          button {
-            text-indent: -999999px;
-            position: relative;
-            border: none;
-            background: none;
-            &:before {
-              content: "";
-              width: 10px;
-              height: 10px;
-              background-color: @grey;
-              .round(10px);
-              display: block;
-              position: absolute;
-              left: 0px;
-              top: 20px;
-              cursor: pointer;
-            }
-          }
-          &.slick-active {
-            button {
-              &:before {
-                background-color: @violet;
-              }
-            }
-          }
-        }
+      .col-md-4 {
+        margin-bottom: 30px;
       }
     }
   }

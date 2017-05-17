@@ -123,7 +123,9 @@
         <li data-group="country">Country Comfort</li>
         <li data-group="chifley">Chifley Hotels</li>
         <li data-group="sundowner">Sundowner Inns</li>
-        <li data-group="collection">collection</li>
+        <li data-group="kiridara">kiridara</li>
+        <li data-group="arun">Riva Arun</li>
+        <li data-group="surya">Riva Surya</li>        
       </ul>
     </div>
     <div id="page-brand-map" class="default-version"></div>
@@ -411,7 +413,7 @@
     data-html="<div class='infoBox-text'><div class='address'><div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Sundowner Twin Towns Motel</h4><p>21 Minjungbal Drive, Tweed Heads South, Tweed Heads, New South Wales 2486</p></a></div></div><div class='telephone'><div class='telephone-icon'></div><div class='telephone-content'><a href='javascript:void(0);'><p>+61 7 5524 3108</p></a></div></div><div class='mail'><div class='mail-icon'></div><div class='mail-content'><p><a href='mailto:sundownertwintowns@gmail.com'>sundownertwintowns@gmail.com</a></p></div></div><div class='arrow-left'></div></div>"></div>  
 
   <div class="markers" 
-    data-group="collection"
+    data-group="kiridara"
     data-pin-icon="images/icons/group-map-pin-collection.svg" 
     data-location="Kiridara Hotel" 
     data-lat="19.878311"
@@ -419,7 +421,7 @@
     data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Kiridara Hotel</h4><p>22/13 North Road,Ban Naviengkham, Luang Prabang, Lao PDR, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+856 7126 1888</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@kiridara.com'>stay@kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
-    data-group="collection"
+    data-group="arun"
     data-pin-icon="images/icons/group-map-pin-collection.svg" 
     data-location="Riva Arun Hotel" 
     data-lat="13.7479059",
@@ -427,7 +429,7 @@
     data-html="<div class='infoBox-text'> <div class='address'> <div class='address-icon'></div><div class='address-content'><a target='_blank' href='http://clients.manic.com.sg/snh/html/bin/hotel.php'><h4>Riva Arun Hotel</h4><p>392/25-26 Maharaj Road, Phraborom Maharajawang, Phra Nakhon, Bangkok, 10200, Thailand</p></a></div></div><div class='telephone'> <div class='telephone-icon'></div><div class='telephone-content'> <a href='javascript:void(0);'> <p>+66 (0) 2221 1188</p></a> </div></div><div class='mail'> <div class='mail-icon'></div><div class='mail-content'> <p><a href='mailto:stay@rivaarunbangkok.com'>stay@rivaarunbangkok.com</a></p></div></div><div class='arrow-left'></div></div>kiridara.com</a></p></div></div><div class='arrow-left'></div></div>"></div>
 
   <div class="markers" 
-    data-group="collection"
+    data-group="surya"
     data-pin-icon="images/icons/group-map-pin-collection.svg" 
     data-location="Riva Surya Hotel" 
     data-lat="13.769502",
@@ -445,21 +447,21 @@
 
  -->
 
-<article id="brand-location-page-content-section" class="visible-md visible-lg">
+<article id="brand-location-page-content-section">
 
       <div class="container-fluid has-breakpoint">
         <div class="row">
           <div class="col-md-12">
 
     
-            <div id="brand-location-page-item-container">
+            <div id="brand-location-page-item-container" class="slider-mobile">
               <a href="hotel.php" class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
                 data-id="Country Comfort Hotel Adelaide">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide-02.jpg">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide-02.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Hotel Adelaide</h5>
@@ -473,7 +475,7 @@
                 data-city="Adelaide"
                 data-id="Country Comfort Adelaide Manor">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-adelaide-manor.jpg">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-adelaide-manor.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Adelaide Manor</h5>
@@ -487,7 +489,7 @@
                 data-city="Albany"
                 data-id="Country Comfort Amity Motel Albany">
                 <div class="manic-image-container custom-top-position">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-albany.jpg">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-albany.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Amity Motel Albany</h5>
@@ -501,7 +503,7 @@
                 data-city="Armidale"
                 data-id="Country Comfort Armidale">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide.jpg">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Armidale</h5>
@@ -515,7 +517,7 @@
                 data-city="Bundaberg"
                 data-id="Country Comfort Bundaberg International">
                 <div class="manic-image-container custom-top-position">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-bundaberg.jpg" style="display: none!important;">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-bundaberg.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png" style="display: none!important;">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Bundaberg International</h5>
@@ -529,7 +531,7 @@
                 data-city="North Coffs Harbour"
                 data-id="Country Comfort Coffs Harbour">
                 <div class="manic-image-container">
-                  <img src="" data-image-desktop="images_cms/brand/brand-location-coffs-harbour.jpg">
+                  <img src="" data-image-desktop="images_cms/brand/brand-location-coffs-harbour.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Coffs Harbour</h5>
@@ -550,140 +552,6 @@
 
 
 </article> <!-- brand-location-page-content-section -->
-
-
-<!-- 
-      ____  ____  ___    _   ______     __    ____  _________  ______________  _   __
-     / __ )/ __ \/   |  / | / / __ \   / /   / __ \/ ____/   |/_  __/  _/ __ \/ | / /
-    / __  / /_/ / /| | /  |/ / / / /  / /   / / / / /   / /| | / /  / // / / /  |/ /
-   / /_/ / _, _/ ___ |/ /|  / /_/ /  / /___/ /_/ / /___/ ___ |/ / _/ // /_/ / /|  /
-  /_____/_/ |_/_/  |_/_/ |_/_____/  /_____/\____/\____/_/  |_/_/ /___/\____/_/ |_/
-
-    __  _______  ____  ______    ______   __________  ______  __
-   /  |/  / __ \/ __ )/  _/ /   / ____/  / ____/ __ \/ __ \ \/ /
-  / /|_/ / / / / __  |/ // /   / __/    / /   / / / / /_/ /\  /
- / /  / / /_/ / /_/ // // /___/ /___   / /___/ /_/ / ____/ / /
-/_/  /_/\____/_____/___/_____/_____/   \____/\____/_/     /_/
-
- -->
-
-  <!-- all locations are just arranged alphabetically -->
-  <article id="brand-all-location-section" class="visible-sm visible-xs">    
-
-    <div id="brand-all-location-content-box">
-
-      <div class="main-title-bar"><h4>Australia</h4></div>
-      <div class="sub-title-bar"><h4>Adelaide</h4></div>
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 col-xs-12">
-            <div id="hoteladelaide" class="brand-all-location-content-box active">
-              <div class="manic-image-container">
-                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-              </div>
-              <div class="box-title row">
-                <div class="col-md-12"><h4>Country Comfort Hotel Adelaide</h4></div>              
-              </div>
-            </div>          
-
-          </div>
-          <div class="col-sm-6 col-xs-12">
-            <div id="adelaidemanor" class="brand-all-location-content-box">
-              <div class="manic-image-container">
-                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-              </div>
-              <div class="row box-title">
-                <div class="col-md-12"><h4>Country Comfort Adelaide Manor</h4></div>              
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="sub-title-bar"><h4>Albany</h4></div>
-      <div class="container-fluid">
-        <div class="row">
-
-          <div class="col-sm-6 col-xs-12">
-            <div id="amitymotelalbany" class="brand-all-location-content-box">
-              <div class="manic-image-container">
-                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-              </div>
-              <div class="row box-title">
-                <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="sub-title-bar"><h4>Armidale</h4></div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 col-xs-12">
-            <div id="armidale" class="brand-all-location-content-box">
-              <div class="manic-image-container">
-                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-              </div>
-              <div class="row box-title">
-                <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="sub-title-bar"><h4>Bundaberg</h4></div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 col-xs-12">
-            <div id="bundaberginternational" class="brand-all-location-content-box">
-              <div class="manic-image-container">
-                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-              </div>
-              <div class="row box-title">
-                <div class="col-md-12"><h4>Country Comfort Bundaberg International</h4></div>              
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="sub-title-bar"><h4>North Coffs Harbour</h4></div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 col-xs-12">
-            <div id="coffsharbour" class="brand-all-location-content-box">
-              <div class="manic-image-container">
-                <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-01.png">
-              </div>
-              <div class="row box-title">
-                <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
-    </div> <!-- brand-all-location-content-box -->
-    
-
-  </article>
 
 
 <!--
@@ -728,8 +596,8 @@
                     <img src="" data-image-desktop="images/logo/next-logo.png">
                   </div>
                 </div>
-                <h2><a href="hotel.php">NEXT Hotels</a></h2>
-                <p>Clock’s ticking, opportunities are opening, but travel choices are still somewhat limiting? Not at NEXT Hotels. With ultra-fast free Wi-Fi, open-plan rooms and In-transit lounges, our space, technology and service have been engineered for the modern business traveller.</p>
+                <h2><a href="hotel.php">Next Hotels</a></h2>
+                <p>Clock’s ticking, opportunities are opening, but travel choices are still somewhat limiting? Not at Next Hotels. With ultra-fast free Wi-Fi, open-plan rooms and In-transit lounges, our space, technology and service have been engineered for the modern business traveller.</p>
               </div>
             </div>
 

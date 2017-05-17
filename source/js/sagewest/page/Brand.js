@@ -131,6 +131,8 @@ sagewest.page.Brand.prototype.init = function() {
 
   this.update_page_layout();    // this is called after the initial create to update the layout
 
+  this.create_filter_dropdown_mobile_pin();
+
 };
 
 
@@ -399,6 +401,34 @@ sagewest.page.Brand.prototype.create_brand_location_expanding_mobile = function(
 
 
 }; // create_brand_location_expanding_mobile
+
+sagewest.page.Brand.prototype.create_filter_dropdown_mobile_pin = function() {
+  if(manic.IS_MOBILE == true){
+
+
+    if(this.controller==null){
+      this.controller = new ScrollMagic.Controller(); // needed by some components
+    }    
+
+    if($("#brand-location-page-filter-container-mobile-anchor").length > 0) {
+      this.sticky_filter_scence_mobile = new ScrollMagic.Scene({triggerElement: "#brand-location-page-filter-container-mobile-anchor", triggerHook: 'onLeave', offset: -63 }) //$('.booking-steps.active-step').offset().top + 100
+              .setClassToggle("#brand-location-page-filter-container", "stick") // add class toggle
+              // .setPin("#sticky-filter-mobile")
+              // .addIndicators({name: ("" + Math.random()) }) // add indicators (requires plugin)
+              .addTo(this.controller);
+
+      this.sticky_filter_scence_mobile.on("enter", function (event) {         
+          $("#brand-location-page-content-section").css("margin-top", '105px');
+          // $(".booking-steps.active-step").css("cssText", "padding-top: 90px!important");
+        }.bind(this));
+
+      this.sticky_filter_scence_mobile.on("leave", function (event) {         
+          $("#brand-location-page-content-section").css("margin-top", '0px');
+          // $(".booking-steps.active-step").css("cssText", "padding-top: 90px!important");
+        }.bind(this));
+    }
+  }
+}
 
 
 
@@ -702,27 +732,25 @@ sagewest.page.Brand.prototype.others = function(){
 
     $('body').addClass('preload-start');
 
-    if($('#group-booking-content').length > 0) {
-      $('#group-booking-content').slick({
-        dots: true,      
-        slidesToShow: 1,
-        prevArrow: '<a class="carousel-prev"><span></span></a>',
-        nextArrow: '<a class="carousel-next"><span></span></a>',
-        responsive: [
-          {
-            breakpoint: 5000,
-            settings: "unslick"
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,            
-              slidesToShow: 1
+    if(manic.IS_MOBILE == true) {
+      if($("#brand-location-page-item-container").hasClass("slider-mobile")) {
+        $("#brand-location-page-item-container").slick({
+          dots: true,
+          slidesToShow: 1,
+          prevArrow: '<a class="carousel-prev"><span></span></a>',
+          nextArrow: '<a class="carousel-next"><span></span></a>',
+          responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                slidesToShow: 1
+              }
             }
-          }
-        ]
-      });
-    }    
+          ]
+        });  
+      }      
+    }
 
     $('#home-location-content-carousel').slick({
       dots: true,

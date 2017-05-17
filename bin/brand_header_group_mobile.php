@@ -7,7 +7,7 @@
     <div id="mobile-header-close-btn"><span>Menu</span></div>
     <div id="mobile-header-open-btn"></div>
 
-    <a href="brand_next.php" id="mobile-header-logo">
+    <a href="brand_alternative.php" id="mobile-header-logo">
       <img src="images/logo/next-logo.png">
     </a>  
   
@@ -23,9 +23,6 @@
     <div id="destination-indicator">
       <p>Select Brand:</p>
     </div>
-    <!-- <div id="country-indicator">
-      <p>Australia</p>
-    </div> -->
 
     <nav id="mobile-menu">
       <ul>
@@ -37,7 +34,23 @@
         <li><a href="hotel.php">Sundowner Inns</a></li>
         <li><a href="hotel.php">Kiridara</a></li>
         <li><a href="hotel.php">Riva Arun</a></li>      
-        <li><a href="hotel.php">Riva Surya</a></li>      
+        <li><a href="hotel.php">Riva Surya</a></li> 
+        
+        <!-- 
+        <li><a href="hotel.php">Country Comfort Hotel Adelaide</a></li>
+        <li><a href="hotel.php">Country Comfort Adelaide Manor</a></li>
+        <li><a href="hotel.php">Country Comfort Amity Motel Albany</a></li>
+        <li><a href="hotel.php">Country Comfort Armidale</a></li>
+        <li><a href="hotel.php">Country Comfort Bundaberg International</a></li>
+        <li><a href="hotel.php">Country Comfort Coffs Harbour</a></li>
+        <li><a href="hotel.php">Country Comfort gin gin</a></li>
+        <li><a href="hotel.php">Country Comfort hunts liverpool</a></li>   
+        <li><a href="hotel.php">Country Comfort Inter City Perth</a></li>   
+        <li><a href="hotel.php">Country Comfort Inter Mt Gambier</a></li>   
+        <li><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></li>   
+        <li><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></li>   
+        <li><a href="hotel.php">Country Comfort Toowoomba</a></li>   
+        -->
       </ul>
     </nav>
     <div id="brand-link" class="menu-link no-padding">
@@ -69,7 +82,10 @@
         <label for="hotel">Select Hotel</label>
         <div class="dropdown">
           <select name="hotel" id="hotel" class="hotel-dropdown">
-            <option value="NEXT Hotel Brisbane">NEXT Hotel Brisbane</option>
+            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
           </select>
         </div>
       </div>
@@ -114,11 +130,11 @@
               <option value="10">10</option>
             </select>
           </div>
-
+          
           <div class="input-box-disclaimer">
             <p>11 years & below</p>
           </div>
-          
+
         </div>
       </div>
       <div class="input-box">

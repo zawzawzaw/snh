@@ -223,6 +223,10 @@
   #banner-search-form-scroll-target {
     position: absolute;
     top: 35%;
+
+    @media all and (max-width: 991px) {
+      top: 63%;
+    }
   }
 
   .default-page-banner-text{
@@ -299,6 +303,14 @@
           border: none;
           padding-left: 20px;       
           padding-right: 80px;   
+
+          @media all and (max-width: 991px) {
+            font-size: 11px;
+            height: 40px;
+            padding-left: 10px;
+            padding-right: 60px;
+            border-radius: 0px;
+          }
         }
         input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
           color: @light-violet;
@@ -331,11 +343,18 @@
             display: block;
           }
            
-
+          @media all and (max-width: 991px) {
+            height: 40px;
+            &:before {
+              width: 20px;
+              height: 20px;
+            }
+          }
         }
       }
 
       .on_focus {
+        .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
         input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
           color: rgba(0, 56, 101, 0.4)!important;
         }
@@ -413,8 +432,6 @@
 
   }
 }
-
-
 
 
 
@@ -2288,7 +2305,17 @@ div.default-promotion-cta-container{
               background: url('../images/icons/group-map-pin-sundowner-small.svg') no-repeat;
             }
           }
-          &[data-group="collection"] {
+          &[data-group="kiridara"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-collection-small.svg') no-repeat;
+            }
+          }
+          &[data-group="arun"] {
+            &:before {
+              background: url('../images/icons/group-map-pin-collection-small.svg') no-repeat;
+            }
+          }
+          &[data-group="surya"] {
             &:before {
               background: url('../images/icons/group-map-pin-collection-small.svg') no-repeat;
             }
@@ -3447,6 +3474,10 @@ a.boxlist-item-content-image{
   overflow-y: auto;
   /* prevent horizontal scrollbar */
   overflow-x: hidden;
+
+  @media all and (max-width: 991px) {
+    max-height: 135px;
+  }
 }
 /* IE 6 doesn't support max-height
  * we use height instead, but this forces the menu to always be this tall
@@ -3487,4 +3518,24 @@ a.boxlist-item-content-image{
     color: @dark-grey;
     text-transform: uppercase;
   }
+
+  @media all and (max-width: 991px) {
+    .box-shadow (2px, 4px, 15px, rgba(0,0,0,30%));
+    left: 0px;
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: none;
+
+    li {
+      font-size: 11px;
+      line-height: 13px;
+      .ui-menu-item-wrapper {
+        padding: 10px 10px;
+        &.ui-state-active {
+          padding: 10px 10px;
+        }
+      }
+    }
+  }  
 }
