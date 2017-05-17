@@ -468,14 +468,29 @@ sagewest.component.BrandLocationTitle.prototype.set_country = function(country_p
       'value': ''
     };
 
-    var territory = '';
+    // var territory = '';
 
-    for( var i in this.data_array[this.current_country]) {
-      territory = '' + i;
-      territory_array[territory_array.length] = {
+    // for( var i in this.data_array[this.current_country]) {      
+    //   territory = '' + i;
+    //   territory_array[territory_array.length] = {
+    //     'label': territory,
+    //     'value': territory
+    //   }
+    // }
+
+    var keys = [];
+    for( var key in this.data_array[this.current_country]) {      
+      keys.push(key);
+    }
+
+    keys.sort();
+
+    for (var i = 0; i < keys.length; i++) {
+      var territory = keys[i];
+      territory_array.push({
         'label': territory,
         'value': territory
-      }
+      });
     }
     
     this.territory_dropdown.set_option_array(territory_array);
@@ -493,8 +508,10 @@ sagewest.component.BrandLocationTitle.prototype.set_country = function(country_p
     this.dispatchEvent(new goog.events.Event(sagewest.component.BrandLocationTitle.ON_CHANGE));
 
   } else {
-
+    // console.log("set_no_country");
     this.set_no_country();
+
+    this.dispatchEvent(new goog.events.Event(sagewest.component.BrandLocationTitle.ON_CHANGE));
   }
 };
 

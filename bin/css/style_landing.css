@@ -6646,6 +6646,9 @@ body.hotel #desktop-header-nav ul li {
 #desktop-header-menu #sage-links ul li a:hover {
   color: #003865;
 }
+#desktop-header-menu #sage-links ul li {
+  margin-bottom: 15px;
+}
 #destination-indicator {
   background: #003865;
   padding-left: 30px;

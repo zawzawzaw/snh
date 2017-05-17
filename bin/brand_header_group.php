@@ -136,10 +136,12 @@
       <li><a href="hotel.php">next hotels</a></li>
       <li><a href="hotel.php">sage hotels</a></li>
       <li><a href="hotel.php">kafnu</a></li>
-      <li><a href="hotel.php">Country Comfort</a></li>
       <li><a href="hotel.php">Chifley Hotels</a></li>
+      <li><a href="hotel.php">Country Comfort</a></li>      
       <li><a href="hotel.php">Sundowner Inns</a></li>
-      <li><a href="hotel.php">collection</a></li>      
+      <li><a href="hotel.php">Kiridara</a></li>
+      <li><a href="hotel.php">Riva Arun</a></li>      
+      <li><a href="hotel.php">Riva Surya</a></li>      
     </ul>        
   </div>
   <div id="brand-link" class="menu-link">

@@ -55,6 +55,9 @@ sagewest.page.Brand = function(options, element) {
         this.country_dropdown.set_value('Thailand');  
       } else if(this.hotel_dropdown.current_value == "Riva Arun") {
         this.country_dropdown.set_value('Thailand');  
+      } else if(this.hotel_dropdown.current_value == "all") {                
+        this.country_dropdown.set_value();  
+        this.country_dropdown.element.trigger("change");
       } else {
         this.country_dropdown.set_value('Australia');  
       }
@@ -993,7 +996,9 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
     territory = item.attr('data-territory');
     city = item.attr('data-city');
 
-    if(current_hotel == '') {
+    if(current_hotel == '' || current_hotel=='all') {
+
+      console.log(this.brand_location_title.current_country)      
 
       if(this.brand_location_title.current_country == 'none'){
         item.show(0);
