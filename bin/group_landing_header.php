@@ -47,8 +47,9 @@
             <select name="brand" id="brand" class="brand-dropdown">
               <option value="Next Hotel">Next Hotel</option>
               <option value="Sage Hotel">Sage Hotel</option>
-              <option value="Chifely Hotel">Chifely Hotel</option>
-              <option value="Country Comfort">Country Comfort</option>
+              <option value="Kafnu">Kafnu</option>
+              <option value="Chifely Hotel">Chifely Hotel</option>              
+              <option value="Country Comfort">Country Comfort</option>              
               <option value="Sundowner Inns">Sundowner Inns</option>
               <option value="Kiridara">Kiridara</option>
               <option value="Riva Arun">Riva Arun</option>
