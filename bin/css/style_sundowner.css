@@ -7680,6 +7680,7 @@ html.actual-mobile .manic-dropdown:after {
   line-height: 20px;
   text-align: center;
   content: "\f107";
+  pointer-events: none;
 }
 html.actual-mobile .manic-dropdown > .goog-menu-button {
   display: none;
@@ -7874,6 +7875,15 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
 .default-page-banner .default-page-banner-mobile-image .manic-image-container {
   height: 240px;
 }
+.default-page-banner #banner-search-form-scroll-target {
+  position: absolute;
+  top: -100px;
+}
+@media all and (max-width: 991px) {
+  .default-page-banner #banner-search-form-scroll-target {
+    position: static;
+  }
+}
 .default-page-banner .default-page-banner-text {
   position: absolute;
   width: 100%;
@@ -7966,6 +7976,12 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
   }
 }
 @media only screen and (max-width: 767px) {
+  .default-page-banner .default-page-banner-mobile-image .manic-image-container.android {
+    height: 560px!important;
+  }
+  .default-page-banner .default-page-banner-mobile-image .manic-image-container.android img {
+    height: 560px!important;
+  }
   .default-page-banner .default-page-banner-text .banner-text {
     margin-bottom: 30px !important;
   }
@@ -10205,14 +10221,16 @@ a.boxlist-item-content-image:hover {
     max-height: 135px;
   }
 }
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+@media only screen and (max-width: 991px) {
+  .group-landing-page ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  .group-landing-page ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
 }
 /* IE 6 doesn't support max-height
  * we use height instead, but this forces the menu to always be this tall
@@ -12697,6 +12715,33 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
     display: none;
   }
 }
+@media all and (max-width: 768px) {
+  #brand-location-page-filter-container.stick {
+    width: 90%;
+  }
+  #brand-location-page-filter-container .col-md-3 {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+@media all and (max-width: 414px) {
+  #brand-location-page-filter-container.stick {
+    width: 88%;
+  }
+  #brand-location-page-filter-container .col-md-3 {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
+@media all and (max-width: 320px) {
+  #brand-location-page-filter-container.stick {
+    width: 85%;
+  }
+  #brand-location-page-filter-container .col-md-3 {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
 #brand-location-page-content-section {
   padding-bottom: 61px;
 }
@@ -12713,6 +12758,11 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
 @media only screen and (max-width: 1199px) {
   #brand-location-page-item-container .brand-location-page-item {
     height: 325px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #brand-location-page-item-container .brand-location-page-item {
+    height: 420px;
   }
 }
 #brand-location-page-item-container ul.slick-dots {

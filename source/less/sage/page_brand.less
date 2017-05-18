@@ -1050,8 +1050,41 @@ body.is-tablet{
   }
 }
 
+@media all and (max-width: 768px) {
+  #brand-location-page-filter-container{
+    &.stick {
+      width: 90%;
+    }
+    .col-md-3 {
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+  }
+}
 
+@media all and (max-width: 414px) {
+  #brand-location-page-filter-container{
+    &.stick {
+      width: 88%;
+    }
+    .col-md-3 {
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+  }
+}
 
+@media all and (max-width: 320px) {
+  #brand-location-page-filter-container{
+    &.stick {
+      width: 85%;
+    }
+    .col-md-3 {
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+  }
+}
 
 //    _     ___   ____    _  _____ ___ ___  _   _    ____ ___  _   _ _____ _____ _   _ _____
 //   | |   / _ \ / ___|  / \|_   _|_ _/ _ \| \ | |  / ___/ _ \| \ | |_   _| ____| \ | |_   _|
@@ -1089,6 +1122,10 @@ body.is-tablet{
     // TABLET LANDSCAPE & LAPTOPS
     @media only screen and (max-width: 1199px) {
       height: 325px;
+    }    
+
+    @media only screen and (max-width: 991px) {
+      height: 420px;
     }    
 
     margin-bottom: 30px;    

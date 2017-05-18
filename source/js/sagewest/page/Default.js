@@ -155,6 +155,15 @@ sagewest.page.Default = function(options) {
   this.desktop_footer_spacer = $('#desktop-footer-spacer');
   this.desktop_footer = $('#desktop-footer');
 
+  // mobile desktop banner height fix on android
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+  if(isAndroid) {
+    $(".default-page-banner-mobile-image .manic-image-container").addClass("android");
+  }else {
+    $(".default-page-banner-mobile-image .manic-image-container").removeClass("android");
+  }
+
 
   // console.log('init');
 };
@@ -273,7 +282,7 @@ sagewest.page.Default.prototype.create_min_height = function(){
 
 
 sagewest.page.Default.prototype.create_autocompelete_search = function(){
-  if($("#hotel_search").length) {
+  if($("#hotel_search").length) {    
 
     $("#hotel_search").focus(function(){      
       $(this).parent().addClass("on_focus");
@@ -282,9 +291,11 @@ sagewest.page.Default.prototype.create_autocompelete_search = function(){
     });
 
     $("#hotel_search").on("click", function(e){
-      
+          
       var scroll_target = $("#banner-search-form-scroll-target");
-      this.controller.scrollTo(scroll_target[0]);
+      this.controller.scrollTo(scroll_target[0]);  
+        
+
       $(e.currentTarget).val("");
 
     }.bind(this));

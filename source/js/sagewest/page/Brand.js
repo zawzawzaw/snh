@@ -992,6 +992,15 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
 };
 
 
+sagewest.page.Brand.prototype.add_visible_city_header_class_mobile = function(item, city, unique_cities){
+  if(unique_cities.indexOf(city)==-1 && item.is(":visible")) {      
+    unique_cities.push(city);
+    item.addClass("first-city-appearance-in-the-list");
+  }else{
+    item.removeClass("first-city-appearance-in-the-list");
+  }
+}
+
 sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(event){
 
   
@@ -1015,6 +1024,7 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
   var country = '';
   var territory = '';
   var city = '';
+  var unique_cities = [];
 
   for (var i = 0, l=arr.length; i < l; i++) {
     item = $(arr[i]);
@@ -1024,9 +1034,7 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
     territory = item.attr('data-territory');
     city = item.attr('data-city');
 
-    if(current_hotel == '' || current_hotel=='all') {
-
-      console.log(this.brand_location_title.current_country)      
+    if(current_hotel == '' || current_hotel=='all') {  
 
       if(this.brand_location_title.current_country == 'none'){
         item.show(0);
@@ -1086,8 +1094,8 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
       item.hide(0);
     }
 
+    this.add_visible_city_header_class_mobile(item, city, unique_cities);
     
-
   }
 
 

@@ -19,11 +19,15 @@
       </div>
     </div>
     <div class="default-page-banner-mobile-image visible-sm visible-xs">
+
+
       <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
         <img src=""
           data-image-tablet="images_cms/group_landing/group-banner-tablet.jpg"
           data-image-mobile="images_cms/group_landing/group-banner-mobile.jpg">
       </div>
+
+
     </div>
         
     <div class="default-page-banner-text">   
@@ -32,7 +36,7 @@
         <!-- <img src="images/logo/brand-banner-text.svg" class="visible-md visible-lg">       -->
 
         <div id="banner-search-form-scroll-target"></div>
-        
+
         <h1>Welcome to Next Hotels</h1>
         <h3>Where do you want to go?</h3>
 
@@ -550,7 +554,7 @@
         <div class="row">
           <div class="col-md-12">
             <div id="brand-location-cta-container">
-              <a href="brand_location_group.php" class="square-cta highlight-version">Learn more</a>
+              <a href="brand_location_group.php" class="square-cta highlight-version">View all hotels</a>
             </div>
           </div>
         </div>
@@ -716,7 +720,7 @@
       <div class="col-md-3"></div>
       <div class="col-md-6">
         <div id="brand-all-location-cta-container-version-02">
-          <a href="javascript:void(0);" class="square-cta highlight-version">View all hotels</a>
+          <a href="brand_location_group.php" class="square-cta highlight-version">Learn more</a>
         </div>
       </div>
     </div>
@@ -743,8 +747,8 @@
                 <img src="" data-image-mobile="images_cms/home/brand_location_slider_01_mobile.jpg">
               </a>
               <div class="brand-location-slider-item-copy-mobile">
-                <h2><a href="hotel.php">NEXT Hotels</a></h2>
-                <p>Clock’s ticking, opportunities are opening, but travel choices are still somewhat limiting? Not at NEXT Hotels...</p>                
+                <h2><a href="hotel.php">Next Hotels</a></h2>
+                <p>Clock’s ticking, opportunities are opening, but travel choices are still somewhat limiting? Not at Next Hotels...</p>                
               </div>
             </div>
 
@@ -804,7 +808,7 @@
         </div>
         
         <div id="brand-all-location-cta-container-version-02-mobile">
-          <a href="brand_location.php" class="square-cta">View all Hotels</a>
+          <a href="brand_location_group.php" class="square-cta">Learn more</a>
         </div>
 
 

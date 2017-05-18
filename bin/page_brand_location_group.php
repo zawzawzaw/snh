@@ -201,7 +201,7 @@
     
             <div id="brand-location-page-item-container" class="mobile-version">              
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="South Australia"
@@ -233,7 +233,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Western Australia"
@@ -249,7 +249,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
@@ -265,7 +265,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
@@ -281,7 +281,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
@@ -297,7 +297,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
@@ -313,7 +313,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
@@ -329,7 +329,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
@@ -345,7 +345,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Western Australia"
@@ -361,7 +361,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="South Australia"
@@ -377,7 +377,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
@@ -393,7 +393,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
@@ -409,7 +409,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
@@ -425,7 +425,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Next Hotels"
                 data-country="Australia"
                 data-territory="Queensland"
@@ -441,7 +441,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Sage Hotels"
                 data-country="Australia"
                 data-territory="Western Australia"
@@ -457,7 +457,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Chifley Hotels"
                 data-country="Australia"
                 data-territory="Northern Territory"
@@ -473,7 +473,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Sundowner Inns"
                 data-country="Australia"
                 data-territory="Queensland"
@@ -489,7 +489,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Riva Arun"
                 data-country="Thailand"
                 data-territory="Thailand"
@@ -521,7 +521,7 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
+              <a href="hotel.php" class="brand-location-page-item"
                 data-hotel="Kiridara"
                 data-country="Laos"
                 data-territory="Laos"

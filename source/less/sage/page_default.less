@@ -221,12 +221,13 @@
   }
 
   #banner-search-form-scroll-target {
-    // position: absolute;
-    // top: 35%;
+    position: absolute;
+    top: -100px;
 
-    // @media all and (max-width: 991px) {
-    //   top: 63%;
-    // }
+    @media all and (max-width: 991px) {
+      // top: 63%;
+      position: static;
+    }
   }
 
   .default-page-banner-text{
@@ -292,6 +293,11 @@
         margin-top: 10px;
         position: relative;
         width: 45%;
+
+        @media all and (max-width: 1024px) {
+          width: 55%;
+        }
+
         input {
           background: @white;
           width: 100%;
@@ -496,6 +502,16 @@
 // MOBILE
 @media only screen and (max-width: 767px) {
   .default-page-banner{
+    .default-page-banner-mobile-image {
+      .manic-image-container {
+        &.android {
+          height: 560px!important;
+          img {
+            height: 560px!important;
+          }  
+        }        
+      }
+    }
     .default-page-banner-text{
       .banner-text {
         margin-bottom: 30px !important;
@@ -3482,15 +3498,19 @@ a.boxlist-item-content-image{
   /* Overwrite the default to keep the scrollbar always visible */
 }
 
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-}
+@media only screen and (max-width: 991px) {
+  .group-landing-page {
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
 
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0,0,0,.5);
+        -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }  
+  }
 }
 
 /* IE 6 doesn't support max-height
