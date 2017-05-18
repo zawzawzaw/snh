@@ -221,12 +221,12 @@
   }
 
   #banner-search-form-scroll-target {
-    position: absolute;
-    top: 35%;
+    // position: absolute;
+    // top: 35%;
 
-    @media all and (max-width: 991px) {
-      top: 63%;
-    }
+    // @media all and (max-width: 991px) {
+    //   top: 63%;
+    // }
   }
 
   .default-page-banner-text{
@@ -3478,7 +3478,21 @@ a.boxlist-item-content-image{
   @media all and (max-width: 991px) {
     max-height: 135px;
   }
+
+  /* Overwrite the default to keep the scrollbar always visible */
 }
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
 /* IE 6 doesn't support max-height
  * we use height instead, but this forces the menu to always be this tall
  */

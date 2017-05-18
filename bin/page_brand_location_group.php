@@ -60,6 +60,11 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt at nam, laudantium vitae rem ullam quo maiores? Alias atque dolorum magni, iste in rerum sit porro eligendi nisi voluptatum! </p>
             </div>
 
+            <div id="brand-location-page-title-version-02-mobile" class="visible-xs visible-sm">
+              <h4>Next Hotels</h4>
+              <h1>Our Locations</h1>
+            </div>
+
           </div>
         </div>
         <div class="row">
@@ -194,14 +199,15 @@
           <div class="col-md-12">
 
     
-            <div id="brand-location-page-item-container">              
+            <div id="brand-location-page-item-container" class="mobile-version">              
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
                 data-id="Country Comfort Hotel Adelaide">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Adelaide</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -217,6 +223,7 @@
                 data-territory="South Australia"
                 data-city="Adelaide"
                 data-id="Country Comfort Adelaide Manor">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Adelaide</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -226,12 +233,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Albany"
                 data-id="Country Comfort Amity Motel Albany">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Albany</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -241,12 +249,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Armidale"
                 data-id="Country Comfort Armidale">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Armidale</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -256,12 +265,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Bundaberg"
                 data-id="Country Comfort Bundaberg International">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Bundaberg</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -271,12 +281,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="North Coffs Harbour"
                 data-id="Country Comfort Coffs Harbour">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>North Coffs Harbour</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -286,12 +297,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Cowra"
                 data-id="Country Comfort Cowra">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Cowra</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -301,12 +313,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Gin Gin"
                 data-id="Country Comfort Gin Gin">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Gin Gin</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -316,12 +329,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Casula"
                 data-id="Country Comfort Hunts Liverpool">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Casula</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -331,12 +345,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Belmont"
                 data-id="Country Comfort Inter City Perth">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Belmont</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -346,12 +361,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Mt Gambier"
                 data-id="Country Comfort Inter Mt Gambier">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Mt Gambier</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -361,12 +377,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Heatherbrae"
                 data-id="Country Comfort Newcastle Airport & Convention Centre">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Heatherbrae</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -376,12 +393,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Port Macquarie"
                 data-id="Country Comfort Port Macquarie Water Edge Boutique">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Port Macquarie</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -391,12 +409,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Country Comfort"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Highfields"
                 data-id="Country Comfort Toowoomba">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Highfields</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -406,12 +425,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Next Hotels"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Brisbane"
                 data-id="Next Hotels Brisbane">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Brisbane</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -421,12 +441,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Sage Hotels"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Perth"
                 data-id="Sage West Perth">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Perth</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -436,12 +457,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Chifley Hotels"
                 data-country="Australia"
                 data-territory="Northern Territory"
                 data-city="Alice Spring"
                 data-id="Chifley Alice Springs Resort">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Alice Spring</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -451,12 +473,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Sundowner Inns"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Gladstone"
                 data-id="Sundowner Rockhampton Gladstone">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Gladstone</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -466,12 +489,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Riva Arun"
                 data-country="Thailand"
                 data-territory="Thailand"
                 data-city="Bangkok"
                 data-id="Riva Arun">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Bangkok</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -487,6 +511,7 @@
                 data-territory="Thailand"
                 data-city="Bangkok"
                 data-id="Riva Surya">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Bangkok</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>
@@ -496,12 +521,13 @@
                 </div>
               </a>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <a href="hotel.php" class="brand-location-page-item first-city-appearance-in-the-list"
                 data-hotel="Kiridara"
                 data-country="Laos"
                 data-territory="Laos"
                 data-city="Luang Prabang"
                 data-id="Kiridara">
+                <div class="sub-title-city-mobile visible-xs visible-sm"><h4>Luang Prabang</h4></div>
                 <div class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-01.png" data-image-mobile="images_cms/brand/brand-location-01.png">
                 </div>

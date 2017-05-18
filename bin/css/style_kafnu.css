@@ -7846,15 +7846,6 @@ html.actual-mobile .manic-dropdown > .goog-menu-button {
 .default-page-banner .default-page-banner-mobile-image .manic-image-container {
   height: 240px;
 }
-.default-page-banner #banner-search-form-scroll-target {
-  position: absolute;
-  top: 35%;
-}
-@media all and (max-width: 991px) {
-  .default-page-banner #banner-search-form-scroll-target {
-    top: 63%;
-  }
-}
 .default-page-banner .default-page-banner-text {
   position: absolute;
   width: 100%;
@@ -10185,11 +10176,21 @@ a.boxlist-item-content-image:hover {
   overflow-y: auto;
   /* prevent horizontal scrollbar */
   overflow-x: hidden;
+  /* Overwrite the default to keep the scrollbar always visible */
 }
 @media all and (max-width: 991px) {
   .ui-autocomplete {
     max-height: 135px;
   }
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 /* IE 6 doesn't support max-height
  * we use height instead, but this forces the menu to always be this tall
@@ -12692,11 +12693,6 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
     height: 325px;
   }
 }
-@media all and (max-width: 991px) {
-  #brand-location-page-item-container .brand-location-page-item {
-    width: 100%;
-  }
-}
 #brand-location-page-item-container ul.slick-dots {
   padding-top: 4px;
   margin-top: -30px;
@@ -12779,6 +12775,14 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   padding-right: 20px;
   width: 100%;
 }
+@media all and (max-width: 991px) {
+  .brand-location-page-item .brand-location-page-item-overlay {
+    left: 0px;
+    right: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .brand-location-page-item .brand-location-page-item-overlay:before {
   content: '';
   display: block;
@@ -12814,6 +12818,75 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   color: #b1a5a0;
   position: relative;
 }
+@media all and (max-width: 991px) {
+  #brand-location-page-title-version-mobile {
+    margin-bottom: 12px;
+  }
+  #brand-location-page-title-version-mobile h1 {
+    font-family: 'Lato', Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    text-transform: none;
+  }
+  #brand-location-page-title-version-02-mobile {
+    padding-bottom: 35px;
+  }
+  #brand-location-page-title-version-02-mobile h1 {
+    font-family: 'Lato', Verdana, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    text-transform: none;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item {
+    width: 100%;
+    height: 290px;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item .sub-title-city-mobile {
+    display: none!important;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: -25px;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item .sub-title-city-mobile h4 {
+    color: #b9d3d9;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item.first-city-appearance-in-the-list {
+    margin-top: 20px;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item.first-city-appearance-in-the-list:first-child {
+    margin-top: 0px;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item.first-city-appearance-in-the-list .sub-title-city-mobile {
+    display: block!important;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item .brand-location-page-item-overlay {
+    min-height: 62px;
+    left: 0px;
+    right: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item .brand-location-page-item-overlay:before {
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    filter: alpha(opacity=100);
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item .brand-location-page-item-overlay h5 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  #brand-location-page-item-container.mobile-version .brand-location-page-item .brand-location-page-item-overlay h4 {
+    display: none;
+  }
+}
 #brand-location-cta-container {
   text-align: right;
 }
@@ -12821,6 +12894,10 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   #brand-location-cta-container {
     text-align: center;
     margin-top: 30px;
+  }
+  #brand-location-cta-container a.square-cta {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 #brand-all-location-section-version-02 {
@@ -13062,6 +13139,9 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
   #group-booking-section #group-booking-title-mobile h4 {
     margin-bottom: 2px;
   }
+  #group-booking-section #group-booking-title-mobile h1 {
+    margin-bottom: 25px;
+  }
   #group-booking-section #group-booking-content img {
     padding-bottom: 30px;
   }
@@ -13072,7 +13152,11 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
     padding: 0px;
   }
   #group-booking-section #group-booking-content .col-md-4 {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+  }
+  #group-booking-section #group-booking-cta-container a.square-cta {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 #brand-all-location-section-version-02-mobile {

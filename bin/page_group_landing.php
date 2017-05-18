@@ -25,12 +25,14 @@
           data-image-mobile="images_cms/group_landing/group-banner-mobile.jpg">
       </div>
     </div>
-    
-    <div id="banner-search-form-scroll-target"></div>
+        
     <div class="default-page-banner-text">   
       <div class="banner-text" data-value="banner-text">
         <h2>For the modern traveller</h2>
         <!-- <img src="images/logo/brand-banner-text.svg" class="visible-md visible-lg">       -->
+
+        <div id="banner-search-form-scroll-target"></div>
+        
         <h1>Welcome to Next Hotels</h1>
         <h3>Where do you want to go?</h3>
 
@@ -453,6 +455,10 @@
         <div class="row">
           <div class="col-md-12">
 
+            <div id="brand-location-page-title-version-mobile" class="visible-xs visible-sm">
+              <h1>Our Featured Hotel</h1>
+            </div>
+
     
             <div id="brand-location-page-item-container" class="slider-mobile">
               <a href="hotel.php" class="brand-location-page-item"
@@ -544,7 +550,7 @@
         <div class="row">
           <div class="col-md-12">
             <div id="brand-location-cta-container">
-              <a href="brand_location_group.php" class="square-cta highlight-version">View all hotels</a>
+              <a href="brand_location_group.php" class="square-cta highlight-version">Learn more</a>
             </div>
           </div>
         </div>

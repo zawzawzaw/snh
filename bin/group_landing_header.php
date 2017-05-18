@@ -154,6 +154,7 @@
     <a href="#"><span>Hotel Directory</span></a>
   </div>
   <div id="group-link" class="menu-link no-padding">
-    <a href="#"><span>Next Story Group</span></a>
+    <!-- <a href="#"><span>Next Story Group</span></a> -->
+    <a href="#"><span>NextHotels.com</span></a>
   </div>
 </div>

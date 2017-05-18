@@ -1091,11 +1091,7 @@ body.is-tablet{
       height: 325px;
     }    
 
-    margin-bottom: 30px;
-
-    @media all and (max-width: 991px) {
-      width: 100%;      
-    }
+    margin-bottom: 30px;    
   }
 
   ul.slick-dots {
@@ -1185,6 +1181,13 @@ body.is-tablet{
 
     width: 100%; // added to fixed the small gap on the right
 
+    @media all and (max-width: 991px) {
+      left: 0px;
+      right: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     // white background
     
     &:before{
@@ -1227,6 +1230,75 @@ body.is-tablet{
       position: relative;
     }
 
+  }  
+}
+
+@media all and (max-width: 991px) {
+  #brand-location-page-title-version-mobile {
+    margin-bottom: 12px;
+    h1{
+      // .poppins-regular;
+      .lato-regular;
+      font-size: 38px;
+      line-height: 44px;
+      text-transform: none;
+    }
+  }
+  #brand-location-page-title-version-02-mobile {
+    padding-bottom: 35px;
+    h1{
+      // .poppins-regular;
+      .lato-regular;
+      font-size: 38px;
+      line-height: 45px;
+      text-transform: none;
+    }
+  }
+  #brand-location-page-item-container{
+    &.mobile-version {
+      .brand-location-page-item{
+        width: 100%; 
+        height: 290px;
+        .sub-title-city-mobile {
+          display: none!important;
+          position: absolute;
+          left: 10px;
+          right: 10px;
+          top: -25px;
+          h4 {
+            color: @violet;
+          }
+        }
+
+        &.first-city-appearance-in-the-list {
+          &:first-child {
+            margin-top: 0px;
+          }
+          margin-top: 20px;
+          .sub-title-city-mobile {
+            display: block!important;
+          }
+        }
+
+        .brand-location-page-item-overlay {
+          min-height: 62px;
+          left: 0px;
+          right: 0px;
+          padding-left: 25px;
+          padding-right: 25px;
+          &:before {
+            .opacity(1);
+          }
+          h5 {
+            font-size: 17px;
+            line-height: 20px;
+          }
+          h4 {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1235,6 +1307,10 @@ body.is-tablet{
   @media all and (max-width: 991px) {
     text-align: center;
     margin-top: 30px;
+    a.square-cta {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 }
 
@@ -1592,6 +1668,9 @@ body.is-tablet{
         // margin-bottom: 4px;
         margin-bottom: 2px;
       }
+      h1 {
+        margin-bottom: 25px;
+      }
     }
 
     #group-booking-content {
@@ -1607,7 +1686,14 @@ body.is-tablet{
       }      
 
       .col-md-4 {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+      }
+    }
+
+    #group-booking-cta-container {
+      a.square-cta {
+        padding-left: 40px;
+        padding-right: 40px;
       }
     }
   }
