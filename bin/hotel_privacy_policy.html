@@ -1,0 +1,805 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    
+<title>Sage</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"/>
+
+<link rel="icon" href="images/icons/favicon.png">
+
+<!-- Critical Css -->
+<link rel="stylesheet" type="text/css" href="css/critical_style.css">
+
+<!-- Social Tags -->
+<!-- <meta content="Sage West Perth" property="og:title"/>
+<meta content="http://sg.sagewestperth.com/images/facebook-share-image.png" property="og:image"/>
+<meta content="Sage West Perth" property="og:site_name"/>
+<meta content="http://sg.sagewestperth.com" property="og:url"/>
+<meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
+
+
+
+<script type="text/javascript">
+  
+  // simple preloader script
+  
+  window.preloader_counter = 0;
+  window.preloader_js = 0;
+  window.preloader_css = 0;
+
+  window.preloader_interval = setInterval(function(){
+
+    var counter = window.preloader_counter;
+    var target = (window.preloader_js * 0.75) + (window.preloader_css * 0.25);
+    counter += (target - counter) / 5;
+    window.preloader_counter = counter;
+
+    var display = Math.floor(Math.round(counter * 10) / 10);
+
+    var number_element = document.getElementById('page-preloader-number');
+    if(number_element){
+      number_element.innerHTML = (display + '%');
+    }
+
+    var line_element = document.getElementById('page-preloader-line-b');
+    if (line_element) {
+      line_element.style.width = (display + '%');
+    }
+    
+
+    if (display >= 100) {
+
+      var preloader = document.getElementById('page-preloader');
+      if (preloader) {
+        preloader.className += ' preload-complete';
+      }
+
+      clearInterval(window.preloader_interval);
+    }
+
+  }, 50);
+
+</script>  </head>
+
+
+  <body class="hotel contact-page permanent-scrolled">
+
+    <div id="page-preloader" class="square-version">
+      <div id="page-preloader-logo">
+        <img src="images/icons/preloader-sage.png">
+      </div>
+
+      <div id="page-preloader-line">
+        <div id="page-preloader-line-a"></div>
+        <div id="page-preloader-line-b"></div>
+      </div>
+      <div id="page-preloader-number">0%</div>
+    </div>
+
+
+    <!-- mobile header is outside the page wrapper -->
+    <!-- <div id="mobile-header-spacer"></div> -->
+<header id="mobile-header">
+
+  <div class="mobile-header-bg"></div>
+
+  <div id="mobile-header-content-container">
+    <div id="mobile-header-close-btn"><span>Menu</span></div>
+    <div id="mobile-header-open-btn"></div>
+
+    <a href="hotel.php" id="mobile-header-logo">
+      <img src="images/logo/sage-west-logo.svg">
+    </a>  
+  
+    <a href="index.php" id="mobile-header-calendar-open-btn"><span>Book Now</span></a>  
+    <a href="index.php" id="mobile-header-calendar-close-btn"><span>Book Now</span></a>          
+  </div>
+
+</header> <!-- #mobile-header -->
+
+<header id="mobile-header-expanded">
+
+  <div id="mobile-header-menu-container">
+    <div id="destination-indicator" class="link-to-location">
+      <a href="brand_location.php"><p>Select another location:</p></a>
+    </div>
+    <nav id="mobile-menu" class="has-mobile-sub-menu">
+      <span>sage west perth</span>
+      <ul>
+        <li><a href="room_index.php">rooms</a></li>
+        <li><a href="offer_index.php">offers</a></li>
+        <li><a href="dining_index.php">dining</a></li>
+        <li class="has-subnav">
+          <a href="facilities.php">facilities</a>
+          <ul class="mobile-sub-menu">
+            <li><a href="facilities.php#lounge">Lounge</a></li>
+            <li><a href="facilities.php#gym">Gym</a></li>
+            <li><a href="facilities.php#spa">Spa</a></li>
+          </ul>
+          <div class="expand-btn"></div>
+        </li>
+        <li><a href="gallery.php">gallery</a></li>
+        <li><a href="activities.php">activities</a></li>
+        <li><a href="reviews.php">reviews</a></li>
+        <li><a href="events.php">events</a></li>
+        <li><a href="location.php">Location</a></li>
+      </ul>
+    </nav>
+    <div id="brand-link" class="menu-link">
+      <a href="#"><span>Our Brands</span></a>
+    </div>
+    <div id="group-link" class="menu-link">
+      <!-- <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a> -->
+      <a href="#"><span>NextHotels.com</span></a>
+    </div>
+  </div> <!-- #mobile-header-menu-container -->
+
+  <div id="mobile-header-booking-form">
+    <form action="">
+      <div class="input-box">
+        <label for="hotel">Select Hotel</label>
+        <div class="dropdown">
+          <select name="hotel" id="hotel" class="hotel-dropdown">
+            <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+            <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+            <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+            <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+        <div class="date-input">
+          <input type="text" name="date" id="mobile-date-picker" readonly="true" onfocus="this.blur()">
+        </div>
+      </div>
+      <div class="input-box row">
+        <div class="input-box-col-1 col-sm-6 col-xs-6">
+          <label for="">Adults</label>
+          <div class="dropdown">
+            <select name="adults" id="adults">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box-col-2 col-sm-6 col-xs-6">
+          <label for="">Children</label>
+          <div class="dropdown">
+            <select name="children" id="children">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class="input-box-disclaimer">
+            <p>11 years & below</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="input-box">
+        <label for="">Promotion Code</label>
+        <input type="text" name="promo_code">
+      </div>
+      <div class="input-box">
+        <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
+      </div>
+    </form>
+  </div>
+  <div id="mobile-header-booking-calendar"></div>
+
+</header> <!-- #mobile-header-expanded -->        
+    <div id="page-wrapper">
+      <div id="page-wrapper-content">
+
+        <!-- 
+   ____  _____ ____  _  _______ ___  ____    _   _ _____    _    ____  _____ ____  
+  |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \  | | | | ____|  / \  |  _ \| ____|  _ \ 
+  | | | |  _| \___ \| ' /  | || | | | |_) | | |_| |  _|   / _ \ | | | |  _| | |_) |
+  | |_| | |___ ___) | . \  | || |_| |  __/  |  _  | |___ / ___ \| |_| | |___|  _ < 
+  |____/|_____|____/|_|\_\ |_| \___/|_|     |_| |_|_____/_/   \_\____/|_____|_| \_\
+                                           
+-->
+
+<header id="desktop-header">
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div id="desktop-header-menu-logo-container">
+          <div id="desktop-header-logo-container">
+            <a href="#" id="desktop-menu-bar" class="open">
+              <img src="images/icons/menu-bar.svg" alt="">     
+              <span>Menu</span>       
+            </a>
+            <a href="hotel.php" id="desktop-header-logo">
+              <img src="images/logo/sage-west-logo.svg">            
+            </a>
+          </div>          
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div id="desktop-header-nav">
+          <nav>
+            <ul>
+              <li><a href="hotel.php">Home</a></li>
+              <li><a href="room_index.php">Rooms</a></li>
+              <li><a href="offer_index.php">Offers</a></li>
+              <li><a href="dining_index.php">Dining</a></li>
+              <li><a href="facilities.php">Facilities</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="activities.php">Activities</a></li>
+              <li><a href="reviews.php">Reviews</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="location.php">Location</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>  
+      <div class="col-md-2">
+        <div id="weather-container">
+          <div class="current-location-container">
+            <h6 class="current-country">Australia</h6>
+            <span class="current-location">West Perth</span>
+          </div>
+          <div class="seperator"></div>
+          <div class="time-weather-container">
+            <ul>
+              <li><span class="time">2:24<sup class="ampm">pm</sup></span></li>
+              <li><span class="temperature">23°C</span></li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" id="book-now"><span>Book Now</span></a>        
+      </div>
+    </div>
+  </div>
+
+  <div id="desktop-header-booking-form">
+      <form action="">
+        <div class="input-box">
+          <label for="hotel">Select Hotel</label>
+          <div class="dropdown">
+            <select name="hotel" id="hotel" class="hotel-dropdown">
+              <option value="Sage Hotel Adelaide">Sage Hotel Adelaide</option>
+              <option value="Sage Hotel James Street">Sage Hotel James Street</option>
+              <option value="Sage Hotel West Perth">Sage Hotel West Perth</option>
+              <option value="Sage Hotel Wollongong">Sage Hotel Wollongong</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="hotel">Arrival <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Departure</label>
+          <div class="date-input">
+            <input type="text" name="date" id="date-picker" readonly="true" onfocus="this.blur()">
+          </div>
+        </div>
+        <div class="input-box row">
+          <div class="input-box-col-1 col-md-6">
+            <label for="">Adults</label>
+            <div class="dropdown">
+              <select name="adults" id="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-box-col-2 col-md-6">
+            <label for="">Children</label>
+            <div class="dropdown">
+              <select name="children" id="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+
+            <div class="input-box-disclaimer">
+              <p>11 years & below</p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="">Promotion Code</label>
+          <input type="text" name="promo_code">
+        </div>
+        <div class="input-box">
+          <input type="submit" class="check-availability square-cta highlight-version" value="check availability">
+        </div>
+      </form>
+  </div>
+  <div id="desktop-header-booking-calendar">
+    
+  </div>
+</header> <!-- #desktop-header -->
+
+<div id="desktop-header-menu">          
+
+  <div id="destination-indicator">
+    <p>Select a destination:</p>
+  </div>
+  <div id="country-indicator">
+    <p>Australia</p>
+  </div>
+
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">Adelaide</a></li>
+      <li><a href="hotel.php">brisbane</a></li>
+      <li><a href="hotel.php">west perth</a></li>
+      <li><a href="hotel.php">wollongong</a></li>
+    </ul>    
+  </div>
+
+  <!-- 
+  <div id="sage-links">
+    <ul>
+      <li><a href="hotel.php">sage adelaide</a></li>
+      <li><a href="hotel.php">Sage James Street Brisbane</a></li>
+      <li><a href="hotel.php">sage west perth</a></li>
+      <li><a href="hotel.php">sage wollongong</a></li>
+    </ul>
+  </div>
+  -->
+  
+  <div id="brand-link" class="menu-link">
+    <a href="#"><span>Our Brands</span></a>
+  </div>
+  <div id="group-link" class="menu-link">
+    <!-- <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a> -->
+    <a href="#"><span>NextHotels.com</span></a>
+  </div>
+</div>
+        <!--
+           ____ _____  _    ____ _____
+          / ___|_   _|/ \  |  _ \_   _|
+          \___ \ | | / _ \ | |_) || |
+           ___) || |/ ___ \|  _ < | |
+          |____/ |_/_/   \_\_| \_\|_|
+
+        -->
+
+
+
+
+        <!-- this will select the header link with the following value -->
+<div id="desktop-header-selector" data-value="location.php"></div>
+
+
+
+<div id="default-header-spacer" class="visible-md visible-lg"></div>
+<div id="default-header-mobile-spacer" class="visible-sm visible-xs"></div>
+
+
+<!--
+   ____  ____  _____    _    ____   ____ ____  _   _ __  __ ____
+  | __ )|  _ \| ____|  / \  |  _ \ / ___|  _ \| | | |  \/  | __ )
+  |  _ \| |_) |  _|   / _ \ | | | | |   | |_) | | | | |\/| |  _ \
+  | |_) |  _ <| |___ / ___ \| |_| | |___|  _ <| |_| | |  | | |_) |
+  |____/|_| \_\_____/_/   \_\____/ \____|_| \_\\___/|_|  |_|____/
+
+-->
+
+<!-- used in index & inner pages -->
+
+<article class="default-breadcrumb-section visible-md visible-lg">
+  <div class="container-fluid has-breakpoint">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="default-breadcrumb">
+          <ul>
+            <li><a href="brand_landing.php">NEXT Hotels</a></li>
+            <li><a href="brand_alternative.php">Sage Hotels</a></li>
+            <li><a href="hotel.php">Sage West Perth</a></li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div> <!-- default-breadcrumb -->
+
+      </div>
+    </div>
+  </div>
+</article> <!-- default-breadcrumb-container -->
+
+<!--
+    ____ ___  ______   __
+   / ___/ _ \|  _ \ \ / /
+  | |  | | | | |_) \ V /
+  | |__| |_| |  __/ | |
+   \____\___/|_|    |_|
+
+-->
+
+<article id="contact-page-copy-section" class="privacy-policy-version">
+
+  
+
+  <div class="container-fluid has-breakpoint">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="contact-page-copy-section-title">
+          <h1>Privacy Policy</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div id="contact-page-copy-column-01">
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy">
+
+              <p>This statement is our privacy policy, which sets out how we manage your personal information and other information we collect from you.</p>
+
+              <p>We are committed to protecting your personal information and complying with privacy legislation that is applicable to us and our operations (“Privacy Legislation”). We believe that our privacy policy is both fair and represents industry best practice.</p>
+
+
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy">
+              <h3>The Kinds of Information We Collect and Hold</h3>
+              <p>The type of information that we collect from you will depend on the products and services you require. We may collect and hold a range of different information about you. This can include your name, date of birth, contact details (including address, email address, phone number or mobile telephone number), credit card details, occupation, identity card number, driver's licence number, passport number, username or password and information about how you use our products and services.</p>              
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>How We Collect Information</h3>
+              <p>You may choose to submit information to us when you elect to:</p>
+              <ul>
+                <li>Make a booking or place an order with us</li>
+                <li>Request information, prices or rates be sent to you</li>
+                <li>Submit a question or comment via our website enquiry or feedback forms</li>
+                <li>Apply for or request further information on any of the guest loyalty, rewards or marketing programmes that we administer</li>
+              </ul>
+              <p>This is not an exhaustive list. For example, we may sometimes need to collect additional information where you chose to supply information to us or provide us information by entering into a competition or promotion, participating in a survey, subscribing to our mailing list or registering as a member with us. If you do not provide certain personal information when requested, you may not be able to take advantage of selected services. </p>
+              <p>We usually only retain unsolicited information about our guests when dealing with a guest enquiry or complaint or where we conduct an investigation. For example, your image may be present on CCTV footage that also records a fall of another guest in one of our hotels.</p>
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>Use of Information</h3>
+              <p>The information that we collect about you is used to help you access our products and services more easily, and to continuously strive to provide a better level of service by understanding our guests.</p>              
+              <p>The information we collect from you is strictly confidential. We will not collect any information except where it is specifically and knowingly provided by you. We may share this information with the other of our entities in the SilverNeedle® Hospitality Group, but other than this we do not share any information about you unless you give your written consent or we are required by law to do so. </p>
+              <p>When you visit our website, our web server collects some basic information such as your Internet service provider’s domain name, which pages you accessed on our website, and when. We use this information only to analyse the use of our website to help guide improvements. We do not collect any personally identifiable information. </p>
+              <p>Your personal information may also be used for the following purposes:</p>
+              <ul>
+                <li>Promotional, marketing, publicity, research and profiling purposes, including sending electronic messages or telephoning you (unless otherwise advised)</li>
+                <li>Statistical purposes including general analysis of sales data</li>
+                <li>Any other customer support services</li>
+              </ul>
+              <p>We may disclose the personal information, other information or data we collect from you if:</p>
+              <ul>
+                <li>You give us your consent</li>
+                <li>You would reasonably expect us to disclose it for another purpose, and that other purpose is related to the purpose specified to you at the time of collection</li>
+                <li>We are required by law or it is otherwise necessary, as contemplated by the applicable Privacy Legislation</li>
+              </ul>
+              <p>Some of our service providers provide services to us entirely or partly from other locations and we may in order to receive those services occasionally transfer personal information to other locations, predominantly to the Asia-Pacific Region and the United States of America including where:</p>
+              <ul>
+                <li>We use service providers, cloud computing solutions or data storage in other locations;</li>
+                <li>We, or our related bodies corporate, have offices in other countries;</li>
+                <li>We need to comply with foreign legal or regulatory requirements; or</li>
+                <li>An international payment has been made.</li>
+              </ul>
+              <p>We will always transfer information to other countries or locations in accordance with and only to the extent permitted by the applicable Privacy Legislation. Other than as stated here, we will not disclose your personal information to recipients in other countries without your consent. </p>
+              <p>We may also use your information from time to time to send you out promotional material, which you may find of interest. If you do not wish to receive this material you may simply choose to unsubscribe from our mailing list and no further material will be sent to you. </p>
+              <p>As a participant in The Escape Club Guest Reward Programme, one of the benefits your membership includes is statement mailing. These statements include details relating to your personal membership (that is, your points balance) and may include special promotional offers. If you would prefer not to receive these communications, you have the right to opt out. Where relevant, a choice to opt out will be included on the subscription form. Alternatively, you can write, phone or email to request that you receive no further information on the contact details below.</p>
+              <p>From time to time you may be able to deal with us anonymously or by pseudonym, but in some instances if you do not provide us with certain information, we may not be able to provide you with the information services you request.</p>
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>Security of Your Information</h3>
+              <p>Any information that we collect about customers including email addresses will be kept in our database. We will take reasonable steps to ensure that the information we hold is protected against misuse and loss, modification or disclosure, and from unauthorised access, including restricting access of information only to employees who require it in order to fulfil our obligations to you.</p>            
+              <p>We will comply with all legislation, principles, industry codes and policies relating to information privacy protection by which we are bound.</p>
+              <p>We never released your information to third party websites.</p>
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>Your Rights to Access Information</h3>
+              <p>You have the right to request access to the personal information that our companies have relating to your history, profile or membership.</p>            
+              <p>You can access, update or correct your personal information upon request (by phone or email below), subject to any exemptions, which may be applicable under the applicable Privacy Legislation. We may need to ask you some detailed questions to ensure that only the appropriate person is able to access the information. In some circumstances, you may need to put your request in writing. You can also request that we delete your personal information at any time.</p>
+              <p>If you have provided us with your personal details but would prefer not to receive any promotional material or product offers via direct mail or email, then please advise us on the contact details below.</p>
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>Children’s Information</h3>
+              <p>We have no intention of collecting any personal information from individuals under thirteen (13) years of age. If a child has provided us with personal information, a parent or guardian of that child may contact us at the email address listed below if they would like this information deleted from our records.</p>                          
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>Cookies</h3>
+              <p>When you visit our website, we use cookies, which are small pieces of information that allow us to maintain your connection to our website. These cookies do not collect or store any personally identifiable information. You can refuse the use of cookies.</p>
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>How to Refuse the Use of Cookies</h3>
+              <p>You may refuse the use of cookies by selecting the appropriate settings in your browser. However, if you do this you may lose some useful functionality such as personalisation and “keep me signed in” and “remember me” features.</p>
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>Links to Other Websites</h3>
+              <p>Please note that our website may contain links to other websites and that the privacy policies of these websites may be different from ours, including the way in which these websites collect personal information. We advise you to check the privacy policies of such other websites before disclosing any personal information. These websites do not share your personal information with us. You can always confirm what website you are on by checking the location bar within your browser.</p>
+            </div>
+          </div>
+
+          <div class="contact-page-copy-section">
+            <div class="default-copy" style="position:relative;">
+              <h3>Contact Information for Enquiries</h3>
+              <p>We take the privacy of your information seriously and it is important that you understand how we manage your personal information. </p>
+              <p>Please contact us if you believe:</p>
+              <ul>
+                <li>Someone has gained access to your personal information</li>
+                <li>We have breached our privacy obligations or your privacy rights in any way, or</li>
+                <li>You would like to discuss any issues about our privacy policy or change your preferences</li>
+              </ul>
+              <p>We will try to satisfy any questions you have and correct any errors on our part. </p>
+              <p>You can contact us through our privacy policy officer with requests or enquiries as follows:</p>
+              <ul>
+                <li>By email: privacy@nextstory.com</li>
+                <li>By phone: +61 2 8962 2444</li>
+                <li>By fax: +61 2 8962 2320</li>
+                <li>By mail: Privacy Policy Officer, SilverNeedle Hospitality Australia Pty Ltd, PO Box 5368 West Chatswood NSW 1515 Australia.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div> <!-- contact-page-copy-column-01 -->
+
+      </div>
+
+    </div>
+  </div>
+</article> <!-- contact-page-copy-section -->
+
+
+
+<div id="default-footer-spacer"></div>
+
+
+
+
+        <!--
+           _____ _   _ ____
+          | ____| \ | |  _ \
+          |  _| |  \| | | | |
+          | |___| |\  | |_| |
+          |_____|_| \_|____/
+
+        -->
+        
+        
+<!-- 
+         _   ___     ___    ____   ____ ____  ___ ____ _____ 
+        | | / \ \   / / \  / ___| / ___|  _ \|_ _|  _ \_   _|
+     _  | |/ _ \ \ / / _ \ \___ \| |   | |_) || || |_) || |  
+    | |_| / ___ \ V / ___ \ ___) | |___|  _ < | ||  __/ | |  
+     \___/_/   \_\_/_/   \_\____/ \____|_| \_\___|_|    |_|  
+                                                             
+-->
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
+  <!-- Optimized Version -->
+  <script type="text/javascript">
+    var PAGE_GOOGLE_LIBRARY       = "js/page-google.min.js";
+    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
+    var PAGE_JS                   = "js/page-default.min.js";
+    var PAGE_CSS                  = "css/style.css";
+    
+    head.load(PAGE_CSS, function(){
+
+      window.preloader_css = 100;
+
+    });
+
+    head.load(PAGE_LIBRARY, "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp", function() {
+
+      window.preloader_js = 50;
+
+      head.load(PAGE_JS, PAGE_GOOGLE_LIBRARY, function() {
+
+        window.preloader_js = 100;
+        
+        page = new sagewest.page.Default({});
+
+      });
+
+    });
+    
+    // start preload
+    
+  </script>
+
+        <!--
+   _____ ___   ___ _____ _____ ____  
+  |  ___/ _ \ / _ \_   _| ____|  _ \ 
+  | |_ | | | | | | || | |  _| | |_) |
+  |  _|| |_| | |_| || | | |___|  _ < 
+  |_|   \___/ \___/ |_| |_____|_| \_\
+                                     
+-->
+
+<footer id="desktop-footer" class="hotel-version">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        
+        <!--
+        <div id="footer-logo">
+          <img src="images/logo/footer-next-hotels-logo.png" alt="">
+        </div>
+        -->
+
+        <div id="footer-subscribe-form">
+          <h1>Subscribe to us</h1>
+          <div class="input-box">
+            <input type="text" name="email" placeholder="Enter your email">
+          </div>
+        </div>
+        
+        <div id="footer-copyright-info" class="visible-md visible-lg">
+          <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
+          <a href="hotel_privacy_policy.php">Privacy Policy</a>
+        </div>
+
+        <div id="footer-copyright-info" class="visible-sm visible-xs">
+          <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
+          <a href="hotel_privacy_policy.php">Privacy Policy</a>
+        </div>
+
+      </div>
+
+      <div class="col-md-7 hidden-sm hidden-xs">
+        <div id="footer-line-container">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+
+              <div id="hotel-middle-footer-container">
+                <div id="hotel-footer-menu-container">
+                  <h1>Quick Links</h1>
+                  <ul>
+                    <li><a href="room_index.php">Rooms</a></li>
+                    <li><a href="offer_index.php">Offers</a></li>
+                    <li><a href="dining_index.php">Dining</a></li>
+                    <li><a href="facilities.php">Facilities</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="activities.php">Activities</a></li>
+                    <li><a href="reviews.php">Reviews</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="location.php">Location</a></li>
+                  </ul>
+                </div>
+
+                <div id="footer-social-media">
+                  <ul>
+                    <li><a href="#" class="fa fa-facebook-square"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-youtube-square"></a></li>
+                    <li><a href="#" class="fa fa-twitter-square"></a></li>
+                    <li><a href="#" class="fa fa-google-plus-square"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div id="hotel-footer-contact-item-container">
+                <div class="footer-contact-item">
+                  <h4>Contact Information</h4>
+                  <p>
+                    1309 Hay Street, West Perth, <br class="visible-md"> WA 6005, Australia <br>
+                    +618 6500 9100 <br>
+                    reservations.westperth@sage-hotels.com
+                  </p>
+                </div>
+                <div class="footer-contact-item">
+                  <h4>Central Reservations</h4>
+                  <p>
+                    1300 346 835 (Within Australia)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-2 hidden-xs hidden-sm">
+
+        <div id="footer-snh-group-logos-container">
+          <div id="footer-snh-group-logos" class="brand-version hotel-version">
+            <h1>Next Hotel Brands</h1>
+            <ul>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-next-hotels.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-sage.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-kafnu.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-chifley.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-country-comfort.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-sundowner.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-kiridara.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-riva-arun.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-riva-surya.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</footer> <!-- #desktop-footer
+      </div> <!-- #page-wrapper-content -->
+    </div> <!-- #page-wrapper -->
+    
+    <div id="mobile-page-hitarea"></div>
+
+  </body>
+</html>

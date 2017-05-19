@@ -27,12 +27,12 @@
         
         <div id="footer-copyright-info" class="visible-md visible-lg">
           <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
-          <a href="#">Privacy Policy</a>
+          <a href="hotel_privacy_policy.php">Privacy Policy</a>
         </div>
 
         <div id="footer-copyright-info" class="visible-sm visible-xs">
           <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
-          <a href="#">Privacy Policy</a>
+          <a href="hotel_privacy_policy.php">Privacy Policy</a>
         </div>
 
       </div>

@@ -10,24 +10,105 @@
 
 <div class="scroll-target" data-value="banner"></div>
 <article id="brand-banner-section">
+
   <div id="brand-banner" class="default-page-banner">
+    
+    <div class="page-banner-carousel-version">
+      <div class="banner-slide">
+        <div class="default-page-banner-image visible-md visible-lg">
+          <div class="manic-image-container has-window-height">
+            <img src=""
+              data-image-desktop="images_cms/group_landing/group-banner-01.jpg">
+          </div>
+        </div>
+        <div class="default-page-banner-mobile-image visible-sm visible-xs">
 
-    <div class="default-page-banner-image visible-md visible-lg">
-      <div class="manic-image-container has-window-height">
-        <img src=""
-          data-image-desktop="images_cms/group_landing/group-banner.jpg">
+
+          <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
+            <img src=""
+              data-image-tablet="images_cms/group_landing/group-banner-01-tablet.jpg"
+              data-image-mobile="images_cms/group_landing/group-banner-01-mobile.jpg">
+          </div>
+
+
+        </div>
       </div>
-    </div>
-    <div class="default-page-banner-mobile-image visible-sm visible-xs">
+      <div class="banner-slide">
+        <div class="default-page-banner-image visible-md visible-lg">
+          <div class="manic-image-container has-window-height">
+            <img src=""
+              data-image-desktop="images_cms/group_landing/group-banner-02.jpg">
+          </div>
+        </div>
+        <div class="default-page-banner-mobile-image visible-sm visible-xs">
 
 
-      <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
-        <img src=""
-          data-image-tablet="images_cms/group_landing/group-banner-tablet.jpg"
-          data-image-mobile="images_cms/group_landing/group-banner-mobile.jpg">
+          <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
+            <img src=""
+              data-image-tablet="images_cms/group_landing/group-banner-02-tablet.jpg"
+              data-image-mobile="images_cms/group_landing/group-banner-02-mobile.jpg">
+          </div>
+
+
+        </div>
       </div>
+      <div class="banner-slide">
+        <div class="default-page-banner-image visible-md visible-lg">
+          <div class="manic-image-container has-window-height">
+            <img src=""
+              data-image-desktop="images_cms/group_landing/group-banner-03.jpg">
+          </div>
+        </div>
+        <div class="default-page-banner-mobile-image visible-sm visible-xs">
 
 
+          <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
+            <img src=""
+              data-image-tablet="images_cms/group_landing/group-banner-03-tablet.jpg"
+              data-image-mobile="images_cms/group_landing/group-banner-03-mobile.jpg">
+          </div>
+
+
+        </div>
+      </div>
+      <div class="banner-slide">
+        <div class="default-page-banner-image visible-md visible-lg">
+          <div class="manic-image-container has-window-height">
+            <img src=""
+              data-image-desktop="images_cms/group_landing/group-banner-04.jpg">
+          </div>
+        </div>
+        <div class="default-page-banner-mobile-image visible-sm visible-xs">
+
+
+          <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
+            <img src=""
+              data-image-tablet="images_cms/group_landing/group-banner-04-tablet.jpg"
+              data-image-mobile="images_cms/group_landing/group-banner-04-mobile.jpg">
+          </div>
+
+
+        </div>
+      </div>
+      <div class="banner-slide">
+        <div class="default-page-banner-image visible-md visible-lg">
+          <div class="manic-image-container has-window-height">
+            <img src=""
+              data-image-desktop="images_cms/group_landing/group-banner-05.jpg">
+          </div>
+        </div>
+        <div class="default-page-banner-mobile-image visible-sm visible-xs">
+
+
+          <div class="manic-image-container has-window-height" data-vertical-align="center" data-offset-height="-63">
+            <img src=""
+              data-image-tablet="images_cms/group_landing/group-banner-05-tablet.jpg"
+              data-image-mobile="images_cms/group_landing/group-banner-05-mobile.jpg">
+          </div>
+
+
+        </div>
+      </div>
     </div>
         
     <div class="default-page-banner-text">   
@@ -88,12 +169,6 @@
       <!-- <div class="scroll-down-cta visible-md visible-lg"></div> -->
       <div class="scroll-down-cta"></div>
       
-    </div>
-  </div>
-  
-  <div class="default-page-banner-mobile-text">
-    <div class="visible-sm visible-xs">
-      <!-- <img src="images/logo/brand-banner-text.svg"> -->
     </div>
   </div>
   

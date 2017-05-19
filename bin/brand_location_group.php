@@ -70,7 +70,7 @@ ob_start();
         -->
         
         <?php include('js_brand_group.php'); ?>
-        <?php include('brand_alternative_footer.php'); ?>
+        <?php include('group_landing_footer.php'); ?>
 
       </div> <!-- #page-wrapper-content -->
     </div> <!-- #page-wrapper -->

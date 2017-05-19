@@ -12695,14 +12695,15 @@ body.is-tablet #brand-all-location-section #brand-all-location-content-box .sub-
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
-    line-height: 26px;
+    line-height: 37px;
     padding-left: 25px;
   }
   #brand-location-page-filter-container .col-md-3 .manic-dropdown:after {
     color: #747474;
-    top: 7px;
+    top: 9px;
     right: 20px;
     font-size: 16px;
+    line-height: 27px;
   }
   #brand-location-page-filter-container .col-md-3:first-child .manic-dropdown select {
     background: #998e8b;
@@ -15319,6 +15320,14 @@ body.brand-alternative-page{
 #contact-page-copy-section {
   padding-top: 59px;
   padding-bottom: 94px;
+}
+#contact-page-copy-section.privacy-policy-version {
+  padding-top: 0px;
+}
+@media only screen and (max-width: 991px) {
+  #contact-page-copy-section.privacy-policy-version {
+    padding-top: 59px;
+  }
 }
 #contact-page-copy-section-title {
   text-align: center;

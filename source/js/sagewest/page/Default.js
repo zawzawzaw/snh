@@ -229,6 +229,8 @@ sagewest.page.Default.prototype.init = function() {
   this.create_review_content();
   this.create_page_detail_list_image_sliders();
 
+  this.create_page_banner_slider();
+
 
 
   // mobile!
@@ -610,7 +612,28 @@ sagewest.page.Default.prototype.create_mobile_menu = function(){
 
 
 
+sagewest.page.Default.prototype.create_page_banner_slider = function(){
+  if ($('.page-banner-carousel-version').length != 0) {
+    $('.page-banner-carousel-version').on('init', function(event, slick){
+      this.create_image_container();
+    }.bind(this));
+    $('.page-banner-carousel-version').on('breakpoint init reInit setPosition', function(event, slick, breakpoint){
+      this.update_page_layout();
+    }.bind(this));
 
+    this.page_banner_carousel = $('.page-banner-carousel-version').slick({
+      'speed': 350,
+      'dots': false,
+      'arrows': false,
+      'infinite': true,
+      'slidesToShow': 1,
+      'slidesToScroll': 1,
+      'pauseOnHover': false,
+      'autoplay': true,
+      'autoplaySpeed': 4000
+    });
+  }
+}
 
 
 
