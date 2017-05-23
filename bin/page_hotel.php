@@ -808,10 +808,15 @@
       <div class="col-lg-7 col-md-6 col-md-offset-1 hidden-xs hidden-sm">
         <div id="hotel-dining-instagram-feed-container">
           <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-dining-01.png" alt="">
+            <div class="manic-image-container manic-image-container-01">
+              <img src="" data-image-desktop="images_cms/hotel/hotel-dining-01.jpg">
+            </div>
           </div>
+
           <div class="instagram-feed">
-            <img src="images_cms/hotel/hotel-dining-02.png" alt="">
+            <div class="manic-image-container manic-image-container-02">
+              <img src="" data-image-desktop="images_cms/hotel/hotel-dining-02.jpg">
+            </div>
           </div>
 
           <!-- <span class="instagram-feed-text">No half-hearted measures here—everything’s made from the freshest locally sourced ingredients!</span> -->
