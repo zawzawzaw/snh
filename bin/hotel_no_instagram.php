@@ -9,7 +9,7 @@ ob_start();
   $is_debug = false;
   // $is_debug = true;
   
-  $has_instagram = true;
+  $has_instagram = false;
 
   $body_class = "hotel";
 ?>

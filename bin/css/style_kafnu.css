@@ -9008,6 +9008,9 @@ div.default-promotion-cta-container {
   padding-left: 40px;
   padding-right: 40px;
 }
+#default-no-moment-section {
+  margin-top: -195px;
+}
 #default-moment-section {
   padding-top: 71px;
   padding-bottom: 121px;
@@ -11449,9 +11452,6 @@ a.boxlist-item-content-image:hover {
   }
   #hotel-attraction-section #hotel-attraction-title {
     padding-bottom: 25px;
-  }
-  #hotel-attraction-section #hotel-attraction-title h1 {
-    white-space: nowrap;
   }
   #hotel-attraction-section #page-brand-map {
     height: 392px;

@@ -1,3 +1,7 @@
+<?php 
+  global $has_instagram;
+?>
+
 <!--
    ____    _    _   _ _   _ _____ ____
   | __ )  / \  | \ | | \ | | ____|  _ \
@@ -1229,63 +1233,76 @@
   </div>
 </article>
 
-<!-- 
-    __  _______  __  __________   ________
-   /  |/  / __ \/  |/  / ____/ | / /_  __/
-  / /|_/ / / / / /|_/ / __/ /  |/ / / /
- / /  / / /_/ / /  / / /___/ /|  / / /
-/_/  /_/\____/_/  /_/_____/_/ |_/ /_/
 
- -->
 
-<div class="scroll-target" data-value="moment"></div>
-<article id="default-moment-section" class="hotel-version">
-  <div class="container-fluid has-breakpoint">
-    <div class="row">
-      <div class="col-md-4 hidden-xs hidden-sm">
-        <div id="default-moment-content">
-          <h4>Capture the best moments</h4>
-          <h1>#SageHotelWestPerth</h1>
-          <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <ul id="social-buttons">
-            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          </ul>
+
+<?php if($has_instagram == true): ?>
+
+  <!-- 
+      __  _______  __  __________   ________
+     /  |/  / __ \/  |/  / ____/ | / /_  __/
+    / /|_/ / / / / /|_/ / __/ /  |/ / / /
+   / /  / / /_/ / /  / / /___/ /|  / / /
+  /_/  /_/\____/_/  /_/_____/_/ |_/ /_/
+
+   -->
+
+  <div class="scroll-target" data-value="moment"></div>
+  <article id="default-moment-section" class="hotel-version">
+    <div class="container-fluid has-breakpoint">
+      <div class="row">
+        <div class="col-md-4 hidden-xs hidden-sm">
+          <div id="default-moment-content">
+            <h4>Capture the best moments</h4>
+            <h1>#SageHotelWestPerth</h1>
+            <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <ul id="social-buttons">
+              <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-md-7 col-md-offset-1">
-        <div id="default-moment-instagram-feed-container-container">
-          <div id="default-moment-instagram-feed-container">
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
-            
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
-            <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+        <div class="col-md-7 col-md-offset-1">
+          <div id="default-moment-instagram-feed-container-container">
+            <div id="default-moment-instagram-feed-container">
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+              
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-01.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-02.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-03.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-04.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-05.png" alt=""></div>
+              <div class="instagram-feed"><img src="images_cms/brand/brand-instagram-06.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 visible-xs visible-sm">
+          <div id="default-moment-content">
+            <h4>Capture the best moments</h4>
+            <h1>#SageHotelWestPerth</h1>
+            <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <ul id="social-buttons">
+              <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="col-md-4 visible-xs visible-sm">
-        <div id="default-moment-content">
-          <h4>Capture the best moments</h4>
-          <h1>#SageHotelWestPerth</h1>
-          <p>Share your favourite moments with us on Instagram! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <ul id="social-buttons">
-            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
-</article>
+  </article>
+
+<?php else: ?>
+
+  <article id="default-no-moment-section">
+  </article>
+
+<?php endif; ?>
+
 
 <!-- 
     ___  ________________  ___   ____________________  _   __
