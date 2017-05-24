@@ -1320,7 +1320,7 @@
       <div class="col-md-12">
         <div id="hotel-attraction-title">
           <h4>sage west perth</h4>
-          <h1>Local Attractions</h1>
+          <h1>Hang out in our neighbourhood</h1>
         </div>
       </div>
     </div>
