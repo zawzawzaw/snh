@@ -648,6 +648,8 @@
   }
   .carousel-next, .carousel-prev {
     position: absolute;
+    z-index: 20;
+    
     background-color: transparent;
     border: 2px solid @violet;
     .round(69px);
@@ -670,20 +672,26 @@
     right: 0;
     top: 50%;
     span {
-      background: url("../images/icons/carousel-right.png") no-repeat;
-      background-size: contain;
-      right: 34%;
-      top: 34%;
+      // background: url("../images/icons/carousel-right.png") no-repeat;
+      // background-size: contain;
+      // right: 34%;
+      // top: 34%;
+      .violet-arrow-right-smallest;
+      top: 16px;
+      right: 20px;
     }
   }
   .carousel-prev {
     left: 0;
     top: 50%;
     span {
-      background: url("../images/icons/carousel-left.png") no-repeat;
-      background-size: contain;
-      left: 35%;
-      top: 34%;
+      // background: url("../images/icons/carousel-left.png") no-repeat;
+      // background-size: contain;
+      // left: 35%;
+      // top: 34%;
+      .violet-arrow-left-smallest;
+      top: 16px;
+      left: 20px;
     }        
   }
 
