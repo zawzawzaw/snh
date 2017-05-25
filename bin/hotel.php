@@ -5,11 +5,13 @@ ob_start();
   global $is_debug;
   global $body_class;
   global $has_instagram;
+  global $has_video;
 
   $is_debug = false;
   // $is_debug = true;
   
   $has_instagram = true;
+  $has_video = true;
 
   $body_class = "hotel";
 ?>

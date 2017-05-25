@@ -11,7 +11,7 @@ ob_start();
   // $is_debug = true;
   
   $has_instagram = false;
-  $has_video = true;
+  $has_video = false;
 
   $body_class = "hotel";
 ?>
@@ -87,7 +87,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('hotel_no_instagram.html', ob_get_contents());
+file_put_contents('hotel_static_image.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>

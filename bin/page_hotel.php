@@ -1,5 +1,6 @@
 <?php 
   global $has_instagram;
+  global $has_video;
 ?>
 
 <!--
@@ -130,31 +131,43 @@
       </div>
       <div class="col-md-7 v-align hidden-xs hidden-sm">
 
-        <div id="hotel-introduction-video-container" class="visible-md visible-lg">
-          <div id="hotel-introduction-video">
-            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="1049" height="590" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
-            <!-- <iframe width="1049" height="590" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
+
+        <?php if ($has_video == true): ?>
+
+          <div id="hotel-introduction-video-container" class="visible-md visible-lg">
+            <div id="hotel-introduction-video">
+              <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe> -->
+              <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+              <!-- <iframe width="1049" height="590" src="https://www.youtube.com/embed/xk3DoW378EY?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
+              <!-- <iframe width="1049" height="590" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
 
 
-            <!-- <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=1&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
+              <!-- <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=1&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe> -->
 
-            <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=0&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe>
+              <iframe width="809" height="455" src="https://www.youtube.com/embed/uIF9AAjdXAw?autoplay=0&wmode=opaque&enablejsapi=1&showinfo=0&loop=1&playlist=xk3DoW378EY" frameborder="0" allowfullscreen></iframe>
 
 
+            </div>
           </div>
-        </div>
+        <?php else: ?>
 
-
-        <!--
-        <div id="hotel-introduction-image" class="visible-md visible-lg">
-          <div class="manic-image-container">
-            <img src=""
-              data-image-desktop="images_cms/hotel/hotel-introduction.jpg">
+          <div id="hotel-introduction-image-container" class="visible-md visible-lg">
+            <div id="hotel-introduction-image">
+              <div class="manic-image-container">
+                <img src=""
+                  data-image-desktop="images_cms/hotel/hotel_introduction_desktop.jpg"
+                  data-image-tablet="images_cms/hotel/hotel_introduction_tablet_mobile.jpg"
+                  data-image-mobile="images_cms/hotel/hotel_introduction_tablet_mobile.jpg">
+              </div>
+            </div>
           </div>
-        </div>
-        -->
+          
+        <?php endif; ?>
+
+
+
+        
+        
       </div>
     </div>
   </div>
