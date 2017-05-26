@@ -1990,9 +1990,16 @@ div.default-promotion-cta-container{
 
 #default-no-moment-section{
   margin-top: -195px;
+
+  &.brand-version{
+    margin-top: -195px - 24px;
+  }
   
   @media only screen and (max-width: 991px) {
     margin-top: -152px;
+    &.brand-version{
+      display: none;
+    }
   }
 }
 

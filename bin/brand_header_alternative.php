@@ -135,7 +135,7 @@
     
   </div>
   <div id="brand-link" class="menu-link">
-    <a href="#"><span>Our Brands</span></a>
+    <a href="brand_location_country_comfort.php"><span>Hotel Directory</span></a>
   </div>
   <div id="group-link" class="menu-link">
     <!-- <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a> -->

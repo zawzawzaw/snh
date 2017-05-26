@@ -161,7 +161,9 @@ sagewest.component.ReviewContent.ON_CLOSE_FILTER = 'on_close_filter';
  * @const
  * @type {string}
  */
-sagewest.component.ReviewContent.ITEMS_IN_PAGE = 5;
+sagewest.component.ReviewContent.ITEMS_IN_PAGE = 10;
+
+// sagewest.component.ReviewContent.ITEMS_IN_PAGE = 5;
 
 
 //    ____  ____  _____     ___  _____ _____

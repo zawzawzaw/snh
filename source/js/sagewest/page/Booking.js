@@ -651,11 +651,25 @@ sagewest.page.Booking.prototype.proceed_to_next_step = function() {
 
 sagewest.page.Booking.prototype.create_datepicker_inputs = function() {  
 
+  var today = new Date();
+  var tomorrow = new Date(today.getTime() + 24 * 60 * 60 * 1000);     // https://stackoverflow.com/questions/9271670/get-tomorrows-date-with-getday-javascript
+
+  var formatted_current_date = ("0" + (today.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + today.getDate().toString()).substr(-2)  + "/" + (today.getFullYear().toString());
+  var formatted_tomorrow_date = ("0" + (tomorrow.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + tomorrow.getDate().toString()).substr(-2)  + "/" + (tomorrow.getFullYear().toString());
+
+  console.log('formatted_current_date: ' + formatted_current_date);
+  console.log('formatted_tomorrow_date: ' + formatted_tomorrow_date);
+
+
   var daterangepicker_option = {
       "autoApply": true,
       "opens": "right",
       "parentEl": "#booking-calendar",
       "minDate": formatted_current_date,      
+
+      "startDate": formatted_current_date,
+      "endDate": formatted_tomorrow_date,
+
       "locale": {
           "separator": " to ",
           "daysOfWeek": [
@@ -707,6 +721,10 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
         "opens": "right",
         "parentEl": "#step-1-booking-calendar",
         "minDate": formatted_current_date,
+
+        "startDate": formatted_current_date,
+        "endDate": formatted_tomorrow_date,
+
         "locale": {
             "separator": " to ",
             "daysOfWeek": [
