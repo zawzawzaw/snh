@@ -140,7 +140,7 @@
                 <div class="detail-list-item-copy">
                   <div class="default-copy">
                     <div class="detail-list-item-title">
-                      <h5>Meetings & Conferences</h5>
+                      <h5>Meetings & Conferences Meetings & Conferences Meetings & Conferences</h5>
                     </div>
                     
                     <p>

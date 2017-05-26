@@ -150,7 +150,7 @@
     </ul>        
   </div>
   <div id="brand-link" class="menu-link">
-    <a href="#"><span>Hotel Directory</span></a>
+    <a href="brand_location_country_comfort.php"><span>Hotel Directory</span></a>
   </div>
   <div id="group-link" class="menu-link">
     <!-- <a href="#"><span>Next Story Group</span></a> -->

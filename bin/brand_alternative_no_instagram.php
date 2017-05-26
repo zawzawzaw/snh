@@ -8,8 +8,8 @@ ob_start();
 
   $is_debug = false;
   // $is_debug = true;
-  
-  $has_instagram = true;
+
+  $has_instagram = false;
 
   $body_class = "brand-alternative-page";
 ?>
@@ -85,7 +85,7 @@ ob_start();
 </html>
 <?php
 // saving captured output to file
-file_put_contents('brand_alternative.html', ob_get_contents());
+file_put_contents('brand_alternative_no_instagram.html', ob_get_contents());
 // end buffering and displaying page
 ob_end_flush();
 ?>
