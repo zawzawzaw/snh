@@ -82,29 +82,31 @@ sagewest.page.Booking.prototype.init = function() {
   //   $(".cvv-popup-container").removeClass('show');
   // });
 
-  $('.popup-container').on('click', '.back-to-booking-btn', function(e){  
-    e.preventDefault();  
-    e.stopPropagation();
+  if($('.popup-container').length > 0) {
+    $('.popup-container').on('click', '.back-to-booking-btn', function(e){  
+      e.preventDefault();  
+      e.stopPropagation();
 
-    this.pop_up_close();    
+      this.pop_up_close();    
 
-  }.bind(this));
+    }.bind(this));
 
-  $(document).click(function(e){    
-    // e.preventDefault();  
-    e.stopPropagation();
+    $(document).click(function(e){    
+      // e.preventDefault();  
+      e.stopPropagation();
 
-    var target = $(e.target);
+      var target = $(e.target);
 
-    if ($.contains($(".popup-container")[0], target[0]) == false) {
-      // $(".rates-breakdown-popup-container").removeClass('show');
-      // $(".cancellation-popup-container").removeClass('show');
-      // $(".cvv-popup-container").removeClass('show');
-      $(".popup-container").removeClass('show');
-    }
+      if ($.contains($(".popup-container")[0], target[0]) == false) {
+        // $(".rates-breakdown-popup-container").removeClass('show');
+        // $(".cancellation-popup-container").removeClass('show');
+        // $(".cvv-popup-container").removeClass('show');
+        $(".popup-container").removeClass('show');
+      }
 
-    
-  });
+      
+    });
+  }
 
   $(".back-to-select-your-room").click(this.on_back_to_select_your_room_click.bind(this));
 
@@ -654,8 +656,8 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
   var today = new Date();
   var tomorrow = new Date(today.getTime() + 24 * 60 * 60 * 1000);     // https://stackoverflow.com/questions/9271670/get-tomorrows-date-with-getday-javascript
 
-  var formatted_current_date = ("0" + (today.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + today.getDate().toString()).substr(-2)  + "/" + (today.getFullYear().toString());
-  var formatted_tomorrow_date = ("0" + (tomorrow.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + tomorrow.getDate().toString()).substr(-2)  + "/" + (tomorrow.getFullYear().toString());
+  var formatted_current_date = ("0" + today.getDate().toString()).substr(-2) + "/" + ("0" + (today.getMonth() + 1).toString()).substr(-2) + "/" + (today.getFullYear().toString());
+  var formatted_tomorrow_date = ("0" + tomorrow.getDate().toString()).substr(-2) + "/" + ("0" + (tomorrow.getMonth() + 1).toString()).substr(-2) + "/" + (tomorrow.getFullYear().toString());
 
   console.log('formatted_current_date: ' + formatted_current_date);
   console.log('formatted_tomorrow_date: ' + formatted_tomorrow_date);
@@ -671,6 +673,7 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
       "endDate": formatted_tomorrow_date,
 
       "locale": {
+          "format": 'DD/MM/YYYY',
           "separator": " to ",
           "daysOfWeek": [
               "S",
@@ -708,6 +711,10 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
       $('.booking-form').removeClass('open-calendar');
     });
 
+    $('#booking-engine-date-picker').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('DD/MM/YYYY') + ' to ' + picker.endDate.format('DD/MM/YYYY'));
+    });
+
   } else {
     
     $.extend(daterangepicker_option, {"alwaysShowCalendars": true});
@@ -726,6 +733,7 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
         "endDate": formatted_tomorrow_date,
 
         "locale": {
+            "format": 'DD/MM/YYYY',
             "separator": " to ",
             "daysOfWeek": [
                 "S",
@@ -751,6 +759,10 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
                 "December"
             ]
         }
+    });
+
+    $('#arrival_departure').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('DD/MM/YYYY') + ' to ' + picker.endDate.format('DD/MM/YYYY'));
     });
 }
 

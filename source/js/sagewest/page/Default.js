@@ -1413,8 +1413,8 @@ sagewest.page.Default.prototype.common_menu = function() {
     var today = new Date();
     var tomorrow = new Date(today.getTime() + 24 * 60 * 60 * 1000);     // https://stackoverflow.com/questions/9271670/get-tomorrows-date-with-getday-javascript
 
-    var formatted_current_date = ("0" + (today.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + today.getDate().toString()).substr(-2)  + "/" + (today.getFullYear().toString());
-    var formatted_tomorrow_date = ("0" + (tomorrow.getMonth() + 1).toString()).substr(-2) + "/" + ("0" + tomorrow.getDate().toString()).substr(-2)  + "/" + (tomorrow.getFullYear().toString());
+    var formatted_current_date = ("0" + today.getDate().toString()).substr(-2)  + "/" + ("0" + (today.getMonth() + 1).toString()).substr(-2) + "/" + (today.getFullYear().toString());
+    var formatted_tomorrow_date = ("0" + tomorrow.getDate().toString()).substr(-2)  + "/" + ("0" + (tomorrow.getMonth() + 1).toString()).substr(-2) + "/" + (tomorrow.getFullYear().toString());
 
     console.log('formatted_current_date: ' + formatted_current_date);
     console.log('formatted_tomorrow_date: ' + formatted_tomorrow_date);
@@ -1432,6 +1432,7 @@ sagewest.page.Default.prototype.common_menu = function() {
         "endDate": formatted_tomorrow_date,
 
         "locale": {
+            "format": 'DD/MM/YYYY',
             "separator": " to ",
             "daysOfWeek": [
                 "S",
@@ -1483,6 +1484,7 @@ sagewest.page.Default.prototype.common_menu = function() {
         "endDate": formatted_tomorrow_date,
 
         "locale": {
+            "format": 'DD/MM/YYYY',
             "separator": " to ",
             "daysOfWeek": [
                 "S",
@@ -1534,6 +1536,7 @@ sagewest.page.Default.prototype.common_menu = function() {
         "endDate": formatted_tomorrow_date,
 
         "locale": {
+            "format": 'DD/MM/YYYY',
             "separator": " to ",
             "daysOfWeek": [
                 "S",
@@ -1577,7 +1580,7 @@ sagewest.page.Default.prototype.common_menu = function() {
     });
 
     $('#date-picker').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
     });
 
     $(document).click(function(event) { 
