@@ -674,7 +674,7 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
 
       "locale": {
           "format": 'DD/MM/YYYY',
-          "separator": " to ",
+          "separator": " - ",
           "daysOfWeek": [
               "S",
               "M",
@@ -700,6 +700,7 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
           ]
       }
   };
+  
   if(manic.IS_MOBILE == true){
     $('#booking-engine-date-picker').daterangepicker(daterangepicker_option);
 
@@ -712,7 +713,22 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
     });
 
     $('#booking-engine-date-picker').on('apply.daterangepicker', function(ev, picker) {
-      $(this).val(picker.startDate.format('DD/MM/YYYY') + ' to ' + picker.endDate.format('DD/MM/YYYY'));
+      // $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+      
+      var output_start_date = picker.startDate;
+      var output_end_date = picker.endDate;
+
+      var output_start_date_str = '' + output_start_date.format('DD/MM/YYYY');
+      var output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+
+      if (output_start_date_str == output_end_date_str) {
+        output_end_date = output_start_date.add(1, 'days');
+        output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+      }
+
+      var output = output_start_date_str + ' - ' + output_end_date_str;
+
+      $(this).val(output);
     });
 
   } else {
@@ -721,6 +737,9 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
 
     $('#booking-engine-date-picker').daterangepicker(daterangepicker_option);
     $('#booking-engine-date-picker').trigger("click");
+
+
+
   }  
 
   $('#arrival_departure').daterangepicker({
@@ -734,7 +753,7 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
 
         "locale": {
             "format": 'DD/MM/YYYY',
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",
@@ -762,7 +781,22 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
     });
 
     $('#arrival_departure').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('DD/MM/YYYY') + ' to ' + picker.endDate.format('DD/MM/YYYY'));
+        // $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+        
+        var output_start_date = picker.startDate;
+        var output_end_date = picker.endDate;
+
+        var output_start_date_str = '' + output_start_date.format('DD/MM/YYYY');
+        var output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+
+        if (output_start_date_str == output_end_date_str) {
+          output_end_date = output_start_date.add(1, 'days');
+          output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+        }
+
+        var output = output_start_date_str + ' - ' + output_end_date_str;
+
+        $(this).val(output);
     });
 }
 
