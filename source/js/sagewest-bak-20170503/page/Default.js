@@ -1296,7 +1296,7 @@ sagewest.page.Default.prototype.common_menu = function() {
         "parentEl": "#booking-calendar",
         "minDate": formatted_current_date,
         "locale": {
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",
@@ -1343,7 +1343,7 @@ sagewest.page.Default.prototype.common_menu = function() {
         "parentEl": "#desktop-header-booking-calendar",
         "minDate": formatted_current_date,
         "locale": {
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",
@@ -1390,7 +1390,7 @@ sagewest.page.Default.prototype.common_menu = function() {
         "parentEl": "#mobile-header-booking-calendar",
         "minDate": formatted_current_date,
         "locale": {
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",

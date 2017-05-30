@@ -622,7 +622,7 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
       "parentEl": "#booking-calendar",
       "minDate": formatted_current_date,      
       "locale": {
-          "separator": " to ",
+          "separator": " - ",
           "daysOfWeek": [
               "S",
               "M",
@@ -673,7 +673,7 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
         "parentEl": "#step-1-booking-calendar",
         "minDate": formatted_current_date,
         "locale": {
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",

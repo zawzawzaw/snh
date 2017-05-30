@@ -1433,7 +1433,7 @@ sagewest.page.Default.prototype.common_menu = function() {
 
         "locale": {
             "format": 'DD/MM/YYYY',
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",
@@ -1485,7 +1485,7 @@ sagewest.page.Default.prototype.common_menu = function() {
 
         "locale": {
             "format": 'DD/MM/YYYY',
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",
@@ -1537,7 +1537,7 @@ sagewest.page.Default.prototype.common_menu = function() {
 
         "locale": {
             "format": 'DD/MM/YYYY',
-            "separator": " to ",
+            "separator": " - ",
             "daysOfWeek": [
                 "S",
                 "M",
@@ -1579,9 +1579,60 @@ sagewest.page.Default.prototype.common_menu = function() {
       $("#mobile-header-calendar-open-btn").trigger("click");
     });
 
-    $('#date-picker').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+
+    $('#sidebar-date-picker').on('apply.daterangepicker', function(ev, picker) {
+      var output_start_date = picker.startDate;
+      var output_end_date = picker.endDate;
+
+      var output_start_date_str = '' + output_start_date.format('DD/MM/YYYY');
+      var output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+
+      if (output_start_date_str == output_end_date_str) {
+        output_end_date = output_start_date.add(1, 'days');
+        output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+      }
+
+      var output = output_start_date_str + ' - ' + output_end_date_str;
+
+      $(this).val(output);
     });
+
+    $('#mobile-date-picker').on('apply.daterangepicker', function(ev, picker) {
+      var output_start_date = picker.startDate;
+      var output_end_date = picker.endDate;
+
+      var output_start_date_str = '' + output_start_date.format('DD/MM/YYYY');
+      var output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+
+      if (output_start_date_str == output_end_date_str) {
+        output_end_date = output_start_date.add(1, 'days');
+        output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+      }
+
+      var output = output_start_date_str + ' - ' + output_end_date_str;
+
+      $(this).val(output);
+    });
+
+    $('#date-picker').on('apply.daterangepicker', function(ev, picker) {
+      // $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+      
+      var output_start_date = picker.startDate;
+      var output_end_date = picker.endDate;
+
+      var output_start_date_str = '' + output_start_date.format('DD/MM/YYYY');
+      var output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+
+      if (output_start_date_str == output_end_date_str) {
+        output_end_date = output_start_date.add(1, 'days');
+        output_end_date_str = '' + output_end_date.format('DD/MM/YYYY');
+      }
+
+      var output = output_start_date_str + ' - ' + output_end_date_str;
+
+      $(this).val(output);
+    });
+
 
     $(document).click(function(event) { 
         if(!$(event.target).closest('#desktop-menu-bar').length && !$(event.target).closest('#hoverscroll').length) {
