@@ -300,7 +300,7 @@
       </div>
 
       <div class="detail-list-item-image-mobile">
-        <div class="manic-image-container">
+        <div class="manic-image-container has-full-width">
           <img src=""
             data-image-tablet="images_cms/facilities/facilities-lounge-mobile.jpg"
             data-image-mobile="images_cms/facilities/facilities-lounge-mobile.jpg">
@@ -461,7 +461,7 @@
       </div>
 
       <div class="detail-list-item-image-mobile">
-        <div class="manic-image-container">
+        <div class="manic-image-containe has-full-widthr">
           <img src=""
             data-image-tablet="images_cms/facilities/facilities-gym-mobile.jpg"
             data-image-mobile="images_cms/facilities/facilities-gym-mobile.jpg">
@@ -583,7 +583,7 @@
       </div>
 
       <div class="detail-list-item-image-mobile">
-        <div class="manic-image-container">
+        <div class="manic-image-container has-full-width">
           <img src=""
             data-image-tablet="images_cms/facilities/facilities-spa-mobile.jpg"
             data-image-mobile="images_cms/facilities/facilities-spa-mobile.jpg">
