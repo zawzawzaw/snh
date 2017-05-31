@@ -195,6 +195,9 @@ sagewest.component.GalleryDetailTab.prototype.set_category_and_id = function(cat
     this.desktop_close_btn.attr('href', '#' + this.current_category);
     this.mobile_close_btn.attr('href', '#' + this.current_category);
 
+    $('#gallery-page-tab-container a').removeClass('selected');
+    $('#gallery-page-tab-container a[href="#' + this.current_category + '"]').addClass('selected');
+
   }
 
 
@@ -439,7 +442,7 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
   // CREATE SLIDER
 
   this.thumbnail_slider.append(fragment);
-  this.thumbnail_slider.append(fragment2);
+  // this.thumbnail_slider.append(fragment2);
   this.thumbnail_slider.slick({
     'speed': 350,
     'dots': false,
