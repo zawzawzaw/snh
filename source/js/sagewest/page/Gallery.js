@@ -256,15 +256,26 @@ sagewest.page.Gallery.prototype.parse_data = function() {
     this.gallery_data_array[this.gallery_data_array.length] = data;
 
 
+    // add to 'all' category
+    if (goog.isDefAndNotNull(this.gallery_data_category_dictionary['all']) == false) {
+      this.gallery_data_category_dictionary['all'] = [];
+    }
+    
+    var temp_index_2 = this.gallery_data_category_dictionary['all'].length;
+    this.gallery_data_category_dictionary['all'][temp_index_2] = data;
 
     // add to category dictionary
     if (goog.isDefAndNotNull(this.gallery_data_category_dictionary[category]) == false) {
       this.gallery_data_category_dictionary[category] = [];
     }
 
+
     var temp_index = this.gallery_data_category_dictionary[category].length;
     this.gallery_data_category_dictionary[category][temp_index] = data;
 
+
+
+    
 
 
     // add to category id dictionary
@@ -276,6 +287,9 @@ sagewest.page.Gallery.prototype.parse_data = function() {
     this.gallery_data_category_id_dictionary[category][id] = data;
 
   } // endfor
+
+
+
   
 };
 

@@ -35,6 +35,7 @@ sagewest.component.GalleryDetailTab = function(options, element) {
 
 
   this.current_category = 'none';
+  // this.current_category = 'all';
   this.current_id = 'none';
 
   this.main_slider = this.element.find('#gallery-slider');
@@ -195,10 +196,13 @@ sagewest.component.GalleryDetailTab.prototype.set_category_and_id = function(cat
     this.desktop_close_btn.attr('href', '#' + this.current_category);
     this.mobile_close_btn.attr('href', '#' + this.current_category);
 
-    $('#gallery-page-tab-container a').removeClass('selected');
-    $('#gallery-page-tab-container a[href="#' + this.current_category + '"]').addClass('selected');
 
   }
+
+
+  // added may 31, removed from if statement because it was causing a bug
+  $('#gallery-page-tab-container a').removeClass('selected');
+  $('#gallery-page-tab-container a[href="#' + this.current_category + '"]').addClass('selected');
 
 
   // select current item (from sliders or existing sliders)
@@ -385,7 +389,10 @@ sagewest.component.GalleryDetailTab.prototype.create_main_slider = function() {
     'autoplaySpeed': 4000,
     
     'prevArrow': '<a href="javascript:void(0);" class="slick-prev">Previous</a>',
-    'nextArrow': '<a href="javascript:void(0);" class="slick-next">Next</a>'
+    'nextArrow': '<a href="javascript:void(0);" class="slick-next">Next</a>',
+
+    'asNavFor': '#gallery-thumbnail-slider'
+
   });
   
 
@@ -398,7 +405,8 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
   
   var slider_thumbnail_template = [
     '<div class="gallery-thumbnail-slider-item">',
-      '<a href="{url}" title="{title}" class="manic-image-container">',
+      // '<a href="{url}" title="{title}" class="manic-image-container">',
+      '<a href="javascript:void(0);" title="{title}" class="manic-image-container">',
         '<img src=""',
           'data-image-desktop="{image}"',
           'data-image-mobile="{mobileimage}">',
@@ -410,11 +418,11 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
 
 
   var fragment = $(document.createDocumentFragment());
-  var fragment2 = $(document.createDocumentFragment());
+  // var fragment2 = $(document.createDocumentFragment());
 
   var data = null;
   var item = null;
-  var item2 = null;
+  // var item2 = null;
 
   for (var i = 0, l=this.current_category_data_array.length; i < l; i++) {
     data = this.current_category_data_array[i];
@@ -422,10 +430,31 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
     slider_thumbnail_str = nano(slider_thumbnail_template, data.thumbnail_data_object);
 
     item = $(slider_thumbnail_str);
-    item2 = $(slider_thumbnail_str);
+    // item2 = $(slider_thumbnail_str);
 
     fragment.append(item);
-    fragment2.append(item2);
+    // fragment2.append(item2);
+    
+
+    /*
+    item.data('gallery-data', data);
+    item.click(function(event){
+
+      var target = $(event.currentTarget);
+      var data = target.data('gallery-data');
+
+      var new_hash_url = this.current_category + '/' + data.data_id;
+
+      window.location.hash = new_hash_url;
+      
+      
+
+      console.log(data);
+      console.log('clicked');
+
+    }.bind(this));
+    */
+    
 
   } // for
 
@@ -443,6 +472,7 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
 
   this.thumbnail_slider.append(fragment);
   // this.thumbnail_slider.append(fragment2);
+  
   this.thumbnail_slider.slick({
     'speed': 350,
     'dots': false,
@@ -453,8 +483,17 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
     'slidesToScroll': 8,
     'pauseOnHover': true,
     'autoplay': false,
-    'autoplaySpeed': 4000
+    'autoplaySpeed': 4000,
+
+
+    'asNavFor': '#gallery-slider',
+    'focusOnSelect': true
+    // 'centerMode': true
+
+
   });
+
+
 
 };
 

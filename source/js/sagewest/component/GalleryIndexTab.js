@@ -21,7 +21,8 @@ sagewest.component.GalleryIndexTab = function(options, element) {
   this.element = element;
 
   this.container = this.element.find('#gallery-masonry-grid');
-  this.current_category = 'none';
+  // this.current_category = 'none';
+  this.current_category = 'all';
 
   this.is_created = false;
 
@@ -84,7 +85,8 @@ sagewest.component.GalleryIndexTab.prototype.create_html = function() {
 
   var masonry_item_template = [
     '<div class="gallery-masonry-grid-item {extraclass}">',
-      '<a href="{url}" title="{title}">',
+      // '<a href="{url}" title="{title}">',
+      '<a href="javascript:void(0);" title="{title}">',
         '<div class="manic-image-container">',
           '<img src="" data-image="{image}">',
         '</div>',
@@ -110,7 +112,25 @@ sagewest.component.GalleryIndexTab.prototype.create_html = function() {
     masonry_item_str = nano(masonry_item_template, data.masonry_data_object);
 
     item = $(masonry_item_str);
+    
     fragment.append(item);
+
+    item.data('gallery-data', data);
+    item.click(function(event){
+
+      var target = $(event.currentTarget);
+      var data = target.data('gallery-data');
+
+      var new_hash_url = this.current_category + '/' + data.data_id;
+
+      window.location.hash = new_hash_url;
+      
+      
+
+      console.log(data);
+      console.log('clicked');
+
+    }.bind(this));
 
   } // for
 
