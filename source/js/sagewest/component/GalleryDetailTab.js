@@ -389,7 +389,10 @@ sagewest.component.GalleryDetailTab.prototype.create_main_slider = function() {
     'autoplaySpeed': 4000,
     
     'prevArrow': '<a href="javascript:void(0);" class="slick-prev">Previous</a>',
-    'nextArrow': '<a href="javascript:void(0);" class="slick-next">Next</a>'
+    'nextArrow': '<a href="javascript:void(0);" class="slick-next">Next</a>',
+
+    'asNavFor': '#gallery-thumbnail-slider'
+
   });
   
 
@@ -433,6 +436,7 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
     // fragment2.append(item2);
     
 
+    /*
     item.data('gallery-data', data);
     item.click(function(event){
 
@@ -449,7 +453,7 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
       console.log('clicked');
 
     }.bind(this));
-
+    */
     
 
   } // for
@@ -479,8 +483,17 @@ sagewest.component.GalleryDetailTab.prototype.create_thumbnail_slider = function
     'slidesToScroll': 8,
     'pauseOnHover': true,
     'autoplay': false,
-    'autoplaySpeed': 4000
+    'autoplaySpeed': 4000,
+
+
+    'asNavFor': '#gallery-slider',
+    'focusOnSelect': true
+    // 'centerMode': true
+
+
   });
+
+
 
 };
 
