@@ -481,25 +481,27 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="hoteladelaide" class="brand-all-location-content-box active">
+
+                <a href="hotel.php" id="hoteladelaide" class="brand-all-location-content-box active">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hotel-adelaide-02.jpg">
                   </div>
                   <div class="box-title row">
                     <div class="col-md-12"><h4>Country Comfort Hotel Adelaide</h4></div>              
                   </div>
-                </div>          
+                </a>          
 
               </div>
               <div class="col-sm-6 col-xs-12">
-                <div id="adelaidemanor" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="adelaidemanor" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-adelaide-manor.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Adelaide Manor</h4></div>              
                   </div>
-                </div>
+                </a>
                 
               </div>
             </div>
@@ -509,14 +511,14 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="intermtgambier" class="brand-all-location-content-box">
+                <a href="hotel.php" id="intermtgambier" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-inter-mt-gambier.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Inter Mt Gambier</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -542,7 +544,8 @@
             <div class="row">
 
               <div class="col-sm-6 col-xs-12">
-                <div id="amitymotelalbany" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="amitymotelalbany" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-albany.jpg">
 
@@ -550,7 +553,7 @@
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -560,14 +563,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="intercityperth" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="intercityperth" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-belmont.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Inter City Perth</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -596,14 +600,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="armidale" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="armidale" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hotel-adelaide.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -613,14 +618,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="huntsliverpool" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="huntsliverpool" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hunts-liverpool.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Hunts Liverpool</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -630,14 +636,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="cowra" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="cowra" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-cowra.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Cowra</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -647,14 +654,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="newcastleairport" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="newcastleairport" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-newcastle-airport-convention-centre.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Newcastle Airport & Convention Centre</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -665,14 +673,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="coffsharbour" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="coffsharbour" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-coffs-harbour.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -682,14 +691,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="portmacquarie" class="brand-all-location-content-box mobile-default-location">
+
+                <a href="hotel.php" id="portmacquarie" class="brand-all-location-content-box mobile-default-location">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-port-macquarie-water-edge-boutique.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Port Macquarie Water Edge Boutique</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -717,14 +727,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="bundaberginternational" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="bundaberginternational" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-bundaberg.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Bundaberg International</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -734,14 +745,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="gingin" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="gingin" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-gin-gin.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Gin Gin</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
@@ -751,14 +763,15 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <div id="toowoomba" class="brand-all-location-content-box">
+
+                <a href="hotel.php" id="toowoomba" class="brand-all-location-content-box">
                   <div class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-toowoomba.jpg">
                   </div>
                   <div class="row box-title">
                     <div class="col-md-12"><h4>Country Comfort Toowoomba</h4></div>              
                   </div>
-                </div>
+                </a>
 
               </div>
             </div>
