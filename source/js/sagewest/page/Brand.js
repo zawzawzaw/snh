@@ -358,6 +358,13 @@ sagewest.page.Brand.prototype.create_brand_location_expanding_mobile = function(
     content = item.find('.territory-expanded-content');
 
     index = 0;
+    
+    if (i == (l - 1) ) {
+      title.addClass('expand-version');
+      content.css({
+        'display': 'block'
+      });
+    }
 
     title.click(function(event){
       var target = $(event.currentTarget);
