@@ -677,7 +677,17 @@
     </div>
   </div>
 
-  <div class="manic-expand-container" data-group="mobile-offer-index-page">
+
+
+
+
+  <!-- 
+    rule for offer index page mobile:
+    the last 'manic-expand-container' will have these classes 'tablet-open-version' & 'mobile-open-version'
+    they will be open by default
+  -->
+  
+  <div class="manic-expand-container tablet-open-version mobile-open-version" data-group="mobile-offer-index-page">
     <div class="scroll-target" data-value="title-04"></div>
     <div class="manic-expand-container-title">
       <div class="container-fluid">
