@@ -263,6 +263,8 @@
       text-align: left;
     }
   }
+
+
   .detail-page-contact-info-item{
     // margin-bottom: 20px;
     margin-bottom: 18px;
@@ -366,6 +368,8 @@
           color: @dark-brown;
           .display-inline-block;
           padding-right: 10px;
+
+          position: relative;
         }
       }
 
@@ -373,7 +377,7 @@
       p.address {
         &:before {          
           content: "\f041"; // .fa-long-arrow-right
-          font-size: 25px;          
+          font-size: 25px;
         }          
       }
       p.phoneno {
@@ -413,6 +417,22 @@
           vertical-align: middle;
           margin-right: 10px;
           .detail-area-icon;
+
+        }
+        @media all and (max-width: 991px) {
+          margin-bottom: -6px;
+
+          span{
+            width: 75%;
+          }
+
+          &:before{
+            .icon-image-scale("../images/icons/detail-area-icon.svg", 31, 31);
+            left: -3px;
+            top: -2px;
+
+            margin-right: 9px;
+          }
         }
       }
       p.room-bed-size {
@@ -421,6 +441,17 @@
           font-size: 20px;          
           vertical-align: middle;
         } 
+
+        @media all and (max-width: 991px) {
+
+          margin-bottom: -3px;
+
+          &:before{
+            font-size: 24px;
+
+            top: -2px;
+          }
+        }
       }
       p.room-size-person {
         &:before {
@@ -429,6 +460,17 @@
           vertical-align: middle;
           margin-right: 10px;
           .detail-adult-icon;
+
+          width: 30px;
+          height: 30px;
+        }
+
+        @media all and (max-width: 991px) {
+          margin-bottom: -6px;
+
+          &:before {
+            left: -2px;
+          }
         }
       }
       p.room-view {        
@@ -436,7 +478,18 @@
           content: "\f06e"; // .fa-long-arrow-right
           font-size: 20px;          
           vertical-align: middle;
-        } 
+        }
+
+        @media all and (max-width: 991px) {
+          &:before{
+            font-size: 23px;
+            
+            .display-inline-block;
+            width: 37px;
+            position: relative;
+            top: -5px;
+          }
+        }
       }
     }
   }
