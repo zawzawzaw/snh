@@ -25,6 +25,19 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
+  <!-- move these to the at the bottom of the body -->
+  
+
+  <!-- Web Fonts (in js_PAGENAME.php for optimized version) -->
+
+  <!-- open-sans -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700' rel='stylesheet' type='text/css'> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display:400,600" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Playfair+Display:400,600|Poppins:300,400,500|Lato:300,400,600|Allan" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
+  
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+
 
 
 <script type="text/javascript">
@@ -506,6 +519,9 @@
                   <div class="manic-image-container" data-caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris">
                     <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
                   </div>
+
+
+                  <!-- 
                   <div class="manic-image-container" data-caption="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet">
                     <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
                   </div>
@@ -515,6 +531,8 @@
                   <div class="manic-image-container" data-caption="Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore">
                     <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
                   </div>
+                  -->
+
                 </div>
 
                 <div class="default-copy-special-description">
@@ -740,6 +758,7 @@
             data-image-tablet="images_cms/events/events-meeting-mobile.jpg"
             data-image-mobile="images_cms/events/events-meeting-mobile.jpg">
         </div>
+
         <div class="manic-image-container" data-caption="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet">
           <img src=""
             data-image-tablet="images_cms/events/events-meeting-mobile.jpg"
@@ -755,6 +774,7 @@
             data-image-tablet="images_cms/events/events-meeting-mobile.jpg"
             data-image-mobile="images_cms/events/events-meeting-mobile.jpg">
         </div>
+        
       </div>
 
       <!-- 
@@ -1150,38 +1170,38 @@
 -->
 
 
+  <!-- Development Version -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700|Lato:300,400,600" rel="stylesheet">
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>
+  <!-- Page Library -->
+  <script type="text/javascript" src="../source/js/all.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="../source/library/jquery/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="../source/library/_js/mobile-detect.js"></script>
+  <script type="text/javascript" src="../source/library/_js/preloadjs-0.4.0.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/TweenMax.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/jquery.gsap.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/easing/EasePack.min.js"></script>
+  <script type="text/javascript" src="../source/library/gsap/plugins/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/ScrollMagic.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/plugins/debug.addIndicators.js"></script>
+  <script type="text/javascript" src="../source/library/scrollmagic/lib/iscroll-probe.js"></script>
+  <script type="text/javascript" src="../source/library/slick/slick.min.js"></script>
+  <script type="text/javascript" src="../source/library/instafeed/instafeed.min.js"></script>
+  <script type="text/javascript" src="../source/library/momentjs/moment.min.js"></script>
+  <script type="text/javascript" src="../source/library/daterangepicker/daterangepicker.js"></script>
 
-  <!-- Optimized Version -->
+  <!-- Google Closure -->
+  <script src="../source/library/closure-library/closure/goog/base.js"></script>
+  <script src="../source/js/goog-custom-dependencies.js"></script>
   <script type="text/javascript">
-    var PAGE_LIBRARY              = "js/page-default-libraries.min.js";
-    var PAGE_JS                   = "js/page-default.min.js";
-    var PAGE_CSS                  = "css/style.css";
-
-    head.load(PAGE_CSS, function(){
-
-      window.preloader_css = 100;
-
+    goog.require('sagewest.page.Default');
+  </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      page = new sagewest.page.Default({});
     });
-
-    head.load(PAGE_LIBRARY, function() {
-
-      window.preloader_js = 50;
-
-      head.load(PAGE_JS, function() {
-
-        window.preloader_js = 100;
-          
-        page = new sagewest.page.Default({});
-
-      });
-
-    });
-
-    // start preload
-    
   </script>
 
         <!--

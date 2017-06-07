@@ -889,6 +889,11 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
       item.attr('data-caption-text', caption);
 
 
+      if (item.find('.manic-image-container').length == 1){
+        item.addClass('one-slide-version');
+      }
+
+
       carousel = item.slick({
         'speed': 350,
         'dots': true,
@@ -953,6 +958,11 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
       // initial caption
       var caption = item.find('.manic-image-container').attr('data-caption');
       item.attr('data-caption-text', caption);
+
+
+      if (item.find('.manic-image-container').length == 1){
+        item.addClass('one-slide-version');
+      }
 
 
       carousel = item.slick({
