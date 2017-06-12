@@ -675,8 +675,8 @@
             <ul>
               <li><p class="room-size-sqft"><span>25 SQM</span></p></li>
               <li><p class="room-size-person"><span>2 adults, 2 children (Max.)</span></p></li>
-              <li><p class="room-bed-size">2 TWIN BEDs</p></li>
-              <li><p class="room-view">MOUNTAIN AND CITY VIEW</p></li>
+              <li><p class="room-bed-size"><span>2 TWIN BEDs</span></p></li>
+              <li><p class="room-view"><span>MOUNTAIN AND CITY VIEW</span></p></li>
             </ul>
 
           </div> <!-- detail-page-contact-info -->

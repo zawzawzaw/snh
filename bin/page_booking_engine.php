@@ -1726,6 +1726,7 @@
                   <button type="submit" class="square-cta proceed-to-payment highlight-version">proceed to booking</button>
                   
                 </div>
+                
               </div>
             </div>
                 
