@@ -101,18 +101,7 @@
                   </div>
 
 
-                  <!-- 
-                  <div class="manic-image-container" data-caption="Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet">
-                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
-                  </div>
-                  <div class="manic-image-container" data-caption="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit">
-                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
-                  </div>
-                  <div class="manic-image-container" data-caption="Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore">
-                    <img src="" data-image-desktop="images_cms/events/events-meeting.jpg">
-                  </div>
-                  -->
-
+                  
                 </div>
 
                 <div class="default-copy-special-description">

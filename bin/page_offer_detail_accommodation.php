@@ -148,7 +148,7 @@
 
           <div class="detail-page-content-description">
             <div class="default-copy">
-              <p>Family friendly fun in the CBD this Easter! Stay two nights and get 15% off the daily rate!</p>           
+              <p>Family friendly fun in the CBD this <a href="https://www.google.com.sg/search?q=easter">Easter</a>! Stay two nights and get 15% off the daily rate!</p>           
             </div>
           </div>
 
