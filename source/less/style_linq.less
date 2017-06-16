@@ -10,23 +10,22 @@
 // @import "manic/dropdown.less";
 
 
-@is_sage: true;
+@is_sage: false;
 @is_country_comfort: false;
 @is_next: false;
 @is_chifley: false;
-@is_sundowner: false;
+@is_sundowner: true;
 @is_kafnu: false;
-@is_linq: false;
+@is_linq: true;
 @is_brand_landing: false;
 
-@brand-suffix: "";
+@brand-suffix: "-linq";
 
 @black: #000000;
 @white: #ffffff;
 @off-white: #fcf8f7;
 @off-white-2: #f1f1f1;
 @off-black: #262626;
-@dark-blue-2: #003865;
 
 
 @grey: #747474;
@@ -43,10 +42,13 @@
 @light-grey: #929090;
 
 
-@light-violet: #7d0052;
-@violet: #7d0052;
+// @light-violet: #7d0052;
+// @violet: #7d0052;
+
+@light-violet: #e6643b;
+@violet: #e6643b;
+@dark-violet-2: darken(@violet, 10%);
 @dark-violet: #b2a4a0;
-@dark-violet-2: #801b55;
 @light-brown: #b1a5a0;
 @icon-brown: #57514b;
 
@@ -59,7 +61,6 @@
 @border-grey-2: #e1e1e1;
 
 @brown: #b2a4a0;
-
 @dark-brown: #4a443d;
 
 @input-box-brown: #c2c2c2;
@@ -71,7 +72,8 @@
 
 
 // @import "sage/animation.less";
-@import "sage/fonts.less";
+// @import "sage/fonts.less";
+@import "sage/fonts_linq.less";
 @import "sage/general.less";
 @import "sage/images.less";
 
@@ -134,13 +136,17 @@
 
 
 
+// country-comfort-logo.png
+
+
+
 // TABLET LANDSCAPE
-body.is-tablet.is-tablet-landscape{
+.is-tablet.is-tablet-landscape{
 
 }
 
 // TABLET PORTRAIT
-body.is-tablet.is-tablet-portrait{
+.is-tablet.is-tablet-portrait{
 
 }
 
@@ -151,7 +157,7 @@ body.is-tablet.is-tablet-portrait{
 
 // TABLET PORTRAIT & SMALL DESKTOP
 @media only screen and (max-width: 991px) {
-  
+
 }
 
 // MOBILE
@@ -176,3 +182,10 @@ body.is-tablet.is-tablet-portrait{
 
 
 
+#desktop-header-booking-calendar{
+
+  .daterangepicker .calendar th #hover-day{
+    margin-top: 0;
+    margin-bottom: -20px;
+  }
+}
