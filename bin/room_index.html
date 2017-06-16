@@ -25,17 +25,63 @@
 <meta content="http://sg.sagewestperth.com" property="og:url"/>
 <meta content="Discover Western Australia with our exclusive packages. Check back frequently for new deals." property="og:description"/> -->
 
-  </head>
+
+
+<script type="text/javascript">
+  
+  // simple preloader script
+  
+  window.preloader_counter = 0;
+  window.preloader_js = 0;
+  window.preloader_css = 0;
+
+  window.preloader_interval = setInterval(function(){
+
+    var counter = window.preloader_counter;
+    var target = (window.preloader_js * 0.75) + (window.preloader_css * 0.25);
+    counter += (target - counter) / 5;
+    window.preloader_counter = counter;
+
+    var display = Math.floor(Math.round(counter * 10) / 10);
+
+    var number_element = document.getElementById('page-preloader-number');
+    if(number_element){
+      number_element.innerHTML = (display + '%');
+    }
+
+    var line_element = document.getElementById('page-preloader-line-b');
+    if (line_element) {
+      line_element.style.width = (display + '%');
+    }
+    
+
+    if (display >= 100) {
+
+      var preloader = document.getElementById('page-preloader');
+      if (preloader) {
+        preloader.className += ' preload-complete';
+      }
+
+      clearInterval(window.preloader_interval);
+    }
+
+  }, 50);
+
+</script>  </head>
 
 
   <body class="hotel room-index-page permanent-scrolled">
 
-    <div id="page-preloader">
-      <div id="page-preloader-line-01"></div>
-      <div id="page-preloader-line-02">
-        <div class="line-a"></div>
-        <div class="line-b"></div>
+    <div id="page-preloader" class="square-version">
+      <div id="page-preloader-logo">
+        <img src="images/icons/preloader-sage.png">
       </div>
+
+      <div id="page-preloader-line">
+        <div id="page-preloader-line-a"></div>
+        <div id="page-preloader-line-b"></div>
+      </div>
+      <div id="page-preloader-number">0%</div>
     </div>
 
 
@@ -88,10 +134,11 @@
       </ul>
     </nav>
     <div id="brand-link" class="menu-link">
-      <a href="#"><span>Our Brands</span></a>
+      <a href="brand_location_country_comfort.php"><span>Hotel Directory</span></a>
     </div>
     <div id="group-link" class="menu-link">
-      <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+      <!-- <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a> -->
+      <a href="#"><span>NextHotels.com</span></a>
     </div>
   </div> <!-- #mobile-header-menu-container -->
 
@@ -339,10 +386,11 @@
   -->
   
   <div id="brand-link" class="menu-link">
-    <a href="#"><span>Our Brands</span></a>
+    <a href="brand_location_country_comfort.php"><span>Hotel Directory</span></a>
   </div>
   <div id="group-link" class="menu-link">
-    <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a>
+    <!-- <a href="#"><span>SilverNeedle <br class="hidden-xs hidden-sm"> Hospitality Group</span></a> -->
+    <a href="#"><span>NextHotels.com</span></a>
   </div>
 </div>
         <!--
@@ -384,7 +432,7 @@
 
         <div class="default-breadcrumb">
           <ul>
-            <li><a href="javascript:void(0);">Silverneedle Hospitality</a></li>
+            <li><a href="brand_landing.php">NEXT Hotels</a></li>
             <li><a href="brand_alternative.php">Sage Hotels</a></li>
             <li><a href="hotel.php">Sage West Perth</a></li>
             <li>Rooms</li>
@@ -1033,16 +1081,28 @@
     var PAGE_JS                   = "js/page-default.min.js";
     var PAGE_CSS                  = "css/style.css";
 
-    head.load(PAGE_CSS);
+    head.load(PAGE_CSS, function(){
+
+      window.preloader_css = 100;
+
+    });
+
     head.load(PAGE_LIBRARY, function() {
+
+      window.preloader_js = 50;
+
       head.load(PAGE_JS, function() {
+
+        window.preloader_js = 100;
           
         page = new sagewest.page.Default({});
 
       });
+
     });
 
     // start preload
+    
   </script>
 
         <!--
@@ -1054,59 +1114,16 @@
                                      
 -->
 
-
-<!-- <footer id="mobile-footer" class="visible-xs">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-7">
-        <p class="mobile-footer-hashtag">#Sagewestperth</p>
-      </div>
-      <div class="col-xs-5">
-        <div id="mobile-social-container">
-          <ul>
-            <li><a href="https://www.facebook.com/SageHotelPerth/" target="_blank" class="fa fa-facebook"></a></li>
-            <li><a href="https://www.instagram.com/sagewestperth/" target="_blank" class="fa fa-instagram"></a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</footer>-->
-
-
-
-
 <footer id="desktop-footer" class="hotel-version">
-  <!-- 
-  <div id="hotel-footer-top-bar-container" class="hidden-sm hidden-xs">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div id="hotel-footer-top-bar">
-
-            <ul>
-              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
-              <li><p>+61865009100</p></li>
-              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
-            </ul>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div> 
-  -->
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-3 col-sm-12 col-xs-12">
         
+        <!--
         <div id="footer-logo">
-          <img src="images/logo/footer-snh-logo.png" alt="">
+          <img src="images/logo/footer-next-hotels-logo.png" alt="">
         </div>
+        -->
 
         <div id="footer-subscribe-form">
           <h1>Subscribe to us</h1>
@@ -1117,100 +1134,90 @@
         
         <div id="footer-copyright-info" class="visible-md visible-lg">
           <span>© SilverNeedle® Hospitality Group — 2017 All Rights Reserved.</span><br>
-          <a href="#">Privacy Policy</a>
+          <a href="hotel_privacy_policy.php">Privacy Policy</a>
         </div>
 
         <div id="footer-copyright-info" class="visible-sm visible-xs">
           <span>© SilverNeedle® Hospitality Group <br>2017 All Rights Reserved.</span><br>
-          <a href="#">Privacy Policy</a>
+          <a href="hotel_privacy_policy.php">Privacy Policy</a>
         </div>
 
       </div>
 
-      <!--
-      <div class="col-md-1 hidden-sm hidden-xs">
-        <div class="footer-seperator left-version">
-        </div>
-      </div> 
-      -->
+      <div class="col-md-7 hidden-sm hidden-xs">
+        <div id="footer-line-container">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
 
-      <div class="col-md-3 hidden-sm hidden-xs">
+              <div id="hotel-middle-footer-container">
+                <div id="hotel-footer-menu-container">
+                  <h1>Quick Links</h1>
+                  <ul>
+                    <li><a href="room_index.php">Rooms</a></li>
+                    <li><a href="offer_index.php">Offers</a></li>
+                    <li><a href="dining_index.php">Dining</a></li>
+                    <li><a href="facilities.php">Facilities</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="activities.php">Activities</a></li>
+                    <li><a href="reviews.php">Reviews</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="location.php">Location</a></li>
+                  </ul>
+                </div>
 
-        <div id="hotel-middle-footer-container">
-          <div id="hotel-footer-menu-container">
-            <h1>Quick Links</h1>
-            <ul>
-              <li><a href="room_index.php">Rooms</a></li>
-              <li><a href="offer_index.php">Offers</a></li>
-              <li><a href="dining_index.php">Dining</a></li>
-              <li><a href="facilities.php">Facilities</a></li>
-              <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="activities.php">Activities</a></li>
-              <li><a href="reviews.php">Reviews</a></li>
-              <li><a href="events.php">Events</a></li>
-              <li><a href="location.php">Location</a></li>
-            </ul>
-          </div>
+                <div id="footer-social-media">
+                  <ul>
+                    <li><a href="#" class="fa fa-facebook-square"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-youtube-square"></a></li>
+                    <li><a href="#" class="fa fa-twitter-square"></a></li>
+                    <li><a href="#" class="fa fa-google-plus-square"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-          <div id="footer-social-media">
-            <ul>
-              <li><a href="#" class="fa fa-facebook-square"></a></li>
-              <li><a href="#" class="fa fa-instagram"></a></li>
-              <li><a href="#" class="fa fa-youtube-square"></a></li>
-              <li><a href="#" class="fa fa-twitter-square"></a></li>
-              <li><a href="#" class="fa fa-google-plus-square"></a></li>
-            </ul>
-          </div>
-        </div>
+            <div class="col-md-5">
+              <div id="hotel-footer-contact-item-container">
+                <div class="footer-contact-item">
+                  <h4>Contact Information</h4>
+                  <p>
+                    1309 Hay Street, West Perth, <br class="visible-md"> WA 6005, Australia <br>
+                    +618 6500 9100 <br>
+                    reservations.westperth@sage-hotels.com
+                  </p>
+                </div>
+                <div class="footer-contact-item">
+                  <h4>Central Reservations</h4>
+                  <p>
+                    1300 346 835 (Within Australia)
+                  </p>
+                </div>
+              </div>
+            </div>
 
-
-      </div>
-
-
-
-      <div class="col-md-3 hidden-sm hidden-xs">
-        <div id="hotel-footer-contact-item-container">
-          <div class="footer-contact-item">
-            <h4>Contact Information</h4>
-            <p>
-              1309 Hay Street, West Perth, WA 6005, Australia <br>
-              +618 6500 9100 <br>
-              reservations.westperth@sage-hotels.com
-            </p>
-          </div>
-          <div class="footer-contact-item">
-            <h4>Central Reservations</h4>
-            <p>
-              1800 303 186 (Within Australia) <br>
-              0800 480 274 (Within New Zealand)
-            </p>
+            
           </div>
         </div>
       </div>
 
 
-      
-      <div class="col-md-1 hidden-sm hidden-xs">
-        <!-- 
-        <div class="footer-seperator right-version">
-        </div>
-        -->
-
-      </div>
       <div class="col-md-2 hidden-xs hidden-sm">
 
         <div id="footer-snh-group-logos-container">
-          <div id="footer-snh-group-logos">
-            <h1>Our Brands</h1>
+          <div id="footer-snh-group-logos" class="brand-version hotel-version">
+            <h1>Next Hotel Brands</h1>
             <ul>
-              <li><a href="#"><img src="images/icons/silverneedle-collection.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/next-hotels.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/sage.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/kafnu.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/chifley.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/country-comfort.png" alt=""></a></li>
-              <li><a href="#"><img src="images/icons/sundowner.png" alt=""></a></li>
-              
+              <li><a href="#"><img src="images/icons/footer-brand-logo-next-hotels.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-sage.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-kafnu.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-chifley.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-country-comfort.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-sundowner.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-kiridara.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-riva-arun.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/footer-brand-logo-riva-surya.png" alt=""></a></li>
             </ul>
           </div>
         </div>
@@ -1218,32 +1225,6 @@
       </div>
     </div>
   </div>
-
-
-  <!-- removed by client -->
-  <!-- 
-  <div id="hotel-footer-bottom-bar-container" class="hidden-sm hidden-xs">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div id="hotel-footer-bottom-bar">
-            <ul>
-              <li><p>1309 Hay Street, West Perth, WA 6005, Australia</p></li>
-              <li><p>+61865009100</p></li>
-              <li><p><a href="mailto:reservations.westperth@sage-hotels.com">reservations.westperth@sage-hotels.com</a></p></li>
-            </ul>
-            <ul>
-              <li><p>Central Reservations: 1800 303 186 (Within Australia)</p></li>
-              <li><p>0800 480 274 (Within New Zealand)</p></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  -->
 
 </footer> <!-- #desktop-footer
       </div> <!-- #page-wrapper-content -->

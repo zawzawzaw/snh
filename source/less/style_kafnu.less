@@ -45,8 +45,8 @@
 // @light-violet: #7d0052;
 // @violet: #7d0052;
 
-@light-violet: #b9d3d9;
-@violet: #b9d3d9;
+@light-violet: #0084b4;
+@violet: #0084b4;
 @dark-violet-2: darken(@violet, 10%);
 @dark-violet: #b2a4a0;
 @light-brown: #b1a5a0;
@@ -195,27 +195,39 @@
 
 
 
-
+@kafnu-light-blue: #b9d3d9;
 @kafnu-grey: #606468;
 
 
 .square-cta{
   &:focus,
   &:hover{
-    background-color: @violet;
+    background-color: @kafnu-light-blue;
     color: @kafnu-grey;
   }
 
   &.highlight-version{
+    background-color: @kafnu-light-blue;
     color: @kafnu-grey;
     &:focus,
     &:hover{
-      background-color: @dark-violet;
+      // background-color: @violet;
+      // color: @white;
+
+      background-color: @brown;
       color: @white;
     }
 
   }
 }
+
+
+/*
+#brand-all-location-slider-next-btn, 
+#brand-all-location-slider-prev-btn{
+  border: 3px solid @kafnu-light-blue;
+}
+*/
 
 
 
@@ -234,6 +246,7 @@
 
 
 #book-now {
+  background: @kafnu-light-blue;
   color: @kafnu-grey;
   box-shadow: none!important;
 }
@@ -244,6 +257,7 @@ body.scrolled {
   }
 }
 .boxlist-item-tag{
+  background: @kafnu-light-blue;
   color: @kafnu-grey;
 }
 
@@ -253,3 +267,16 @@ body.scrolled {
     color: @kafnu-grey;
   }
 }
+
+
+
+
+
+
+
+/*
+#hotel-reviews-section .carousel-next, 
+#hotel-reviews-section .carousel-prev{
+  border: 2px solid @kafnu-light-blue;
+}
+*/
