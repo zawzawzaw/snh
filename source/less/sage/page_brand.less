@@ -1119,15 +1119,15 @@ body.is-tablet{
 
   .brand-location-page-item{
     width: 33.33%;
-    height: 380px;
+    height: 380px + 72px;
 
     // TABLET LANDSCAPE & LAPTOPS
     @media only screen and (max-width: 1199px) {
-      height: 325px;
+      height: 325px + 72px;
     }    
 
     @media only screen and (max-width: 991px) {
-      height: 420px;
+      height: 420px + 72px;
     }    
 
     margin-bottom: 30px;    
@@ -1214,7 +1214,7 @@ body.is-tablet{
     min-height: 112px;
 
     padding-top: 14px;
-    padding-bottom: 15px;
+    padding-bottom: 15px + 72px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -1259,7 +1259,9 @@ body.is-tablet{
       //text-overflow: ellipsis;
 
       position: relative;
-      padding-bottom: 6px;
+      // padding-bottom: 6px;
+      margin-bottom: 6px;
+
     }
     h4{
       font-size: 14px;
@@ -1267,6 +1269,14 @@ body.is-tablet{
       color: @light-brown;
 
       position: relative;
+    }
+    .cta-container{
+      position: absolute;
+      left: 0px;
+      bottom: 30px;
+
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
   }  

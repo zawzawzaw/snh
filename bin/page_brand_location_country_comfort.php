@@ -179,6 +179,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Hotel Adelaide</h5>
                   <h4>Adelaide</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -193,6 +197,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Adelaide Manor</h5>
                   <h4>Adelaide</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -207,6 +215,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Amity Motel Albany</h5>
                   <h4>Albany</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -221,6 +233,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Armidale</h5>
                   <h4>Armidale</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -235,6 +251,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Bundaberg International</h5>
                   <h4>Bundaberg</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -249,6 +269,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Coffs Harbour</h5>
                   <h4>North Coffs Harbour</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -263,6 +287,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Cowra</h5>
                   <h4>Cowra</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -277,6 +305,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Gin Gin</h5>
                   <h4>Gin Gin</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -291,6 +323,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Hunts Liverpool</h5>
                   <h4>Casula</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -305,6 +341,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Inter City Perth</h5>
                   <h4>Belmont</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -319,6 +359,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Inter Mt Gambier</h5>
                   <h4>Mt Gambier</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -333,6 +377,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Newcastle Airport & Convention Centre</h5>
                   <h4>Heatherbrae</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -347,6 +395,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Port Macquarie Water Edge Boutique</h5>
                   <h4>New South Wales</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 
@@ -361,6 +413,10 @@
                 <div class="brand-location-page-item-overlay">
                   <h5>Country Comfort Toowoomba</h5>
                   <h4>Highfields</h4>
+
+                  <div class="cta-container">
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                  </div>
                 </div>
               </a>
 

@@ -951,6 +951,8 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
   // arr.removeClass('invisible-version');
 
 
+  var visible_arr = [];
+
   var country = '';
   var territory = '';
   var city = '';
@@ -965,18 +967,24 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
 
     if(this.brand_location_title.current_country == 'none'){
       item.show(0);
+      visible_arr[visible_arr.length] = item;
 
     } else if(this.brand_location_title.current_country == country) {
 
       if (this.brand_location_title.current_territory == 'none'){
         item.show(0);
+        visible_arr[visible_arr.length] = item;
 
       } else if(this.brand_location_title.current_territory == territory) {
 
         if (this.brand_location_title.current_city == 'none') {
           item.show(0);
+          visible_arr[visible_arr.length] = item;
+
         } else if (this.brand_location_title.current_city == city) {
           item.show(0);
+          visible_arr[visible_arr.length] = item;
+
         } else {
           item.hide(0);
         }
@@ -994,6 +1002,39 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
 
   this.update_page_layout();
   // TweenMax.delayedCall(0.2, this.update_page_layout, [], this);
+
+
+
+  var highest_height = 0;
+  var box_height = 0;
+  var overlay = null;
+
+  for (var i = 0, l=visible_arr.length; i < l; i++) {
+    item = visible_arr[i];
+    overlay = item.find('.brand-location-page-item-overlay');
+
+    overlay.css({
+      'height': ''
+    });
+
+    box_height = overlay.innerHeight();
+
+    if (highest_height < box_height) {
+      highest_height = box_height;
+    }
+  }
+
+
+  for (var i = 0, l=visible_arr.length; i < l; i++) {
+    item = visible_arr[i];
+    overlay = item.find('.brand-location-page-item-overlay');
+
+    overlay.css({
+      'height': highest_height + 'px'
+    });
+  }
+
+
 
 
 };
@@ -1026,6 +1067,9 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
   var item = null;
 
   // arr.removeClass('invisible-version');
+  
+
+  var visible_arr = [];
 
   var current_hotel = this.hotel_dropdown.current_value;
   var country = '';
@@ -1045,18 +1089,24 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
 
       if(this.brand_location_title.current_country == 'none'){
         item.show(0);
+        visible_arr[visible_arr.length] = item;
 
       } else if(this.brand_location_title.current_country == country) {
 
         if (this.brand_location_title.current_territory == 'none'){
           item.show(0);
+          visible_arr[visible_arr.length] = item;
 
         } else if(this.brand_location_title.current_territory == territory) {
 
           if (this.brand_location_title.current_city == 'none') {
             item.show(0);
+            visible_arr[visible_arr.length] = item;
+
           } else if (this.brand_location_title.current_city == city) {
             item.show(0);
+            visible_arr[visible_arr.length] = item;
+
           } else {
             item.hide(0);
           }
@@ -1073,18 +1123,24 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
 
       if(this.brand_location_title.current_country == 'none'){
         item.show(0);
+        visible_arr[visible_arr.length] = item;
 
       } else if(this.brand_location_title.current_country == country) {
 
         if (this.brand_location_title.current_territory == 'none'){
           item.show(0);
+          visible_arr[visible_arr.length] = item;
 
         } else if(this.brand_location_title.current_territory == territory) {
 
           if (this.brand_location_title.current_city == 'none') {
             item.show(0);
+            visible_arr[visible_arr.length] = item;
+
           } else if (this.brand_location_title.current_city == city) {
             item.show(0);
+            visible_arr[visible_arr.length] = item;
+
           } else {
             item.hide(0);
           }
@@ -1108,6 +1164,38 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
 
   this.update_page_layout();
   // TweenMax.delayedCall(0.2, this.update_page_layout, [], this);
+
+
+
+  var highest_height = 0;
+  var box_height = 0;
+  var overlay = null;
+
+  for (var i = 0, l=visible_arr.length; i < l; i++) {
+    item = visible_arr[i];
+    overlay = item.find('.brand-location-page-item-overlay');
+
+    overlay.css({
+      'height': ''
+    });
+
+    box_height = overlay.innerHeight();
+
+    if (highest_height < box_height) {
+      highest_height = box_height;
+    }
+  }
+
+
+  for (var i = 0, l=visible_arr.length; i < l; i++) {
+    item = visible_arr[i];
+    overlay = item.find('.brand-location-page-item-overlay');
+
+    overlay.css({
+      'height': highest_height + 'px'
+    });
+  }
+
 
 
 };
