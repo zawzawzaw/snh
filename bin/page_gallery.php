@@ -45,7 +45,7 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-01-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-01-thumbnail.jpg"
-    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-cta-url="booking_engine.php#0"
     data-accommodation-price-copy="Prices from"
     data-accommodation-price-currency="AUD"
     data-accommodation-price-number="$135">
@@ -62,7 +62,7 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-02-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-02-thumbnail.jpg"
-    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-cta-url="booking_engine.php#0"
     data-accommodation-price-copy="Prices from"
     data-accommodation-price-currency="AUD"
     data-accommodation-price-number="$135">
@@ -79,7 +79,7 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-03-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-03-thumbnail.jpg"
-    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-cta-url="booking_engine.php#0"
     data-accommodation-price-copy="Prices from"
     data-accommodation-price-currency="AUD"
     data-accommodation-price-number="$135">
@@ -96,7 +96,7 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-04-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-04-thumbnail.jpg"
-    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-cta-url="booking_engine.php#0"
     data-accommodation-price-copy="Prices from"
     data-accommodation-price-currency="AUD"
     data-accommodation-price-number="$135">
@@ -113,7 +113,7 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-05-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-05-thumbnail.jpg"
-    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-cta-url="booking_engine.php#0"
     data-accommodation-price-copy="Prices from"
     data-accommodation-price-currency="AUD"
     data-accommodation-price-number="$135">
@@ -130,7 +130,7 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-06-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-06-thumbnail.jpg"
-    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-cta-url="booking_engine.php#0"
     data-accommodation-price-copy="Prices from"
     data-accommodation-price-currency="AUD"
     data-accommodation-price-number="$135">
@@ -147,7 +147,7 @@
     data-gallery-desktop-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
     data-gallery-mobile-image="images_cms/gallery/accommodation-07-large.jpg"
     data-gallery-mobile-thumnbail="images_cms/gallery/accommodation-07-thumbnail.jpg"
-    data-accommodation-cta-url="room_detail.php"
+    data-accommodation-cta-url="booking_engine.php#0"
     data-accommodation-price-copy="Prices from"
     data-accommodation-price-currency="AUD"
     data-accommodation-price-number="$135">
