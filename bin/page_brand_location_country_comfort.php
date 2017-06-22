@@ -181,7 +181,7 @@
                   <h4>Adelaide</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -199,7 +199,7 @@
                   <h4>Adelaide</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -217,7 +217,7 @@
                   <h4>Albany</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -235,7 +235,7 @@
                   <h4>Armidale</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -253,7 +253,7 @@
                   <h4>Bundaberg</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -271,7 +271,7 @@
                   <h4>North Coffs Harbour</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -289,7 +289,7 @@
                   <h4>Cowra</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -307,7 +307,7 @@
                   <h4>Gin Gin</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -325,7 +325,7 @@
                   <h4>Casula</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -343,7 +343,7 @@
                   <h4>Belmont</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -361,7 +361,7 @@
                   <h4>Mt Gambier</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -379,7 +379,7 @@
                   <h4>Heatherbrae</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -397,7 +397,7 @@
                   <h4>New South Wales</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
@@ -415,7 +415,7 @@
                   <h4>Highfields</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine.php#0">Book Now</div>
+                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
                   </div>
                 </div>
               </a>
