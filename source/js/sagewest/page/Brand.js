@@ -1180,6 +1180,7 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
     });
 
     box_height = overlay.innerHeight();
+    console.log('box_height: ' + box_height);
 
     if (highest_height < box_height) {
       highest_height = box_height;
