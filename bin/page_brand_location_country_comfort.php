@@ -168,257 +168,257 @@
     
             <div id="brand-location-page-item-container">
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
                 data-id="Country Comfort Hotel Adelaide">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide-02.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Hotel Adelaide</h5>
+                  <h5><a href="hotel.php">Country Comfort Hotel Adelaide</a></h5>
                   <h4>Adelaide</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
                 data-id="Country Comfort Adelaide Manor">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-adelaide-manor.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Adelaide Manor</h5>
+                  <h5><a href="hotel.php">Country Comfort Adelaide Manor</a></h5>
                   <h4>Adelaide</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Albany"
                 data-id="Country Comfort Amity Motel Albany">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-albany.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Amity Motel Albany</h5>
+                  <h5><a href="hotel.php">Country Comfort Amity Motel Albany</a></h5>
                   <h4>Albany</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Armidale"
                 data-id="Country Comfort Armidale">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Armidale</h5>
+                  <h5><a href="hotel.php">Country Comfort Armidale</a></h5>
                   <h4>Armidale</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Bundaberg"
                 data-id="Country Comfort Bundaberg International">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-bundaberg.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Bundaberg International</h5>
+                  <h5><a href="hotel.php">Country Comfort Bundaberg International</a></h5>
                   <h4>Bundaberg</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="North Coffs Harbour"
                 data-id="Country Comfort Coffs Harbour">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-coffs-harbour.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Coffs Harbour</h5>
+                  <h5><a href="hotel.php">Country Comfort Coffs Harbour</a></h5>
                   <h4>North Coffs Harbour</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Cowra"
                 data-id="Country Comfort Cowra">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-cowra.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Cowra</h5>
+                  <h5><a href="hotel.php">Country Comfort Cowra</a></h5>
                   <h4>Cowra</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Gin Gin"
                 data-id="Country Comfort Gin Gin">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-gin-gin.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Gin Gin</h5>
+                  <h5><a href="hotel.php">Country Comfort Gin Gin</a></h5>
                   <h4>Gin Gin</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Casula"
                 data-id="Country Comfort Hunts Liverpool">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-hunts-liverpool.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Hunts Liverpool</h5>
+                  <h5><a href="hotel.php">Country Comfort Hunts Liverpool</a></h5>
                   <h4>Casula</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Belmont"
                 data-id="Country Comfort Inter City Perth">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-belmont.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Inter City Perth</h5>
+                  <h5><a href="hotel.php">Country Comfort Inter City Perth</a></h5>
                   <h4>Belmont</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Mt Gambier"
                 data-id="Country Comfort Inter Mt Gambier">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-inter-mt-gambier.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Inter Mt Gambier</h5>
+                  <h5><a href="hotel.php">Country Comfort Inter Mt Gambier</a></h5>
                   <h4>Mt Gambier</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Heatherbrae"
                 data-id="Country Comfort Newcastle Airport & Convention Centre">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-newcastle-airport-convention-centre.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Newcastle Airport & Convention Centre</h5>
+                  <h5><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h5>
                   <h4>Heatherbrae</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Port Macquarie"
                 data-id="Country Comfort Port Macquarie Water Edge Boutique">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-port-macquarie-water-edge-boutique.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Port Macquarie Water Edge Boutique</h5>
+                  <h5><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></h5>
                   <h4>New South Wales</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Highfields"
                 data-id="Country Comfort Toowoomba">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-toowoomba.jpg">
-                </div>
+                </a>
                 <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Toowoomba</h5>
+                  <h5><a href="hotel.php">Country Comfort Toowoomba</a></h5>
                   <h4>Highfields</h4>
 
                   <div class="cta-container">
-                    <div class="fake-a square-cta highlight-version" title="Book Now" data-href="booking_engine_search.php">Book Now</div>
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
                   </div>
                 </div>
-              </a>
+              </div>
 
             </div> <!-- brand-location-page-item-container -->
 
@@ -538,26 +538,35 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="hoteladelaide" class="brand-all-location-content-box active">
-                  <div class="manic-image-container">
+                <div id="hoteladelaide" class="brand-all-location-content-box active">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hotel-adelaide-02.jpg">
-                  </div>
+                  </a>
                   <div class="box-title row">
-                    <div class="col-md-12"><h4>Country Comfort Hotel Adelaide</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Hotel Adelaide</a></h4></div>
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>
+
                   </div>
-                </a>          
+                </div>
 
               </div>
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="adelaidemanor" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="adelaidemanor" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-adelaide-manor.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Adelaide Manor</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Adelaide Manor</a></h4></div>
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
                 
               </div>
             </div>
@@ -567,14 +576,18 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-6 col-xs-12">
-                <a href="hotel.php" id="intermtgambier" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="intermtgambier" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-inter-mt-gambier.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Inter Mt Gambier</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Inter Mt Gambier</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -601,15 +614,18 @@
 
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="amitymotelalbany" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="amitymotelalbany" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-albany.jpg">
-
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Amity Motel Albany</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Amity Motel Albany</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -620,14 +636,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="intercityperth" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="intercityperth" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-belmont.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Inter City Perth</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Inter City Perth</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -657,14 +677,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="armidale" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="armidale" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hotel-adelaide.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Armidale</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Armidale</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -675,14 +699,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="huntsliverpool" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="huntsliverpool" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-hunts-liverpool.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Hunts Liverpool</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Hunts Liverpool</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -693,14 +721,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="cowra" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="cowra" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-cowra.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Cowra</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Cowra</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -711,14 +743,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="newcastleairport" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="newcastleairport" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-newcastle-airport-convention-centre.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Newcastle Airport & Convention Centre</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Newcastle Airport & Convention Centre</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -730,14 +766,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="coffsharbour" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="coffsharbour" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-coffs-harbour.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Coffs Harbour</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Coffs Harbour</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -748,14 +788,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="portmacquarie" class="brand-all-location-content-box mobile-default-location">
-                  <div class="manic-image-container">
+                <div id="portmacquarie" class="brand-all-location-content-box mobile-default-location">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-port-macquarie-water-edge-boutique.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Port Macquarie Water Edge Boutique</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Port Macquarie Water Edge Boutique</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -784,14 +828,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="bundaberginternational" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="bundaberginternational" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-bundaberg.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Bundaberg International</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Bundaberg International</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -802,14 +850,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="gingin" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="gingin" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-gin-gin.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Gin Gin</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Gin Gin</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
@@ -820,14 +872,18 @@
             <div class="row">
               <div class="col-sm-6 col-xs-12">
 
-                <a href="hotel.php" id="toowoomba" class="brand-all-location-content-box">
-                  <div class="manic-image-container">
+                <div id="toowoomba" class="brand-all-location-content-box">
+                  <a href="hotel.php" class="manic-image-container">
                     <img src="" alt="" data-image-mobile="images_cms/brand/brand-location-toowoomba.jpg">
-                  </div>
+                  </a>
                   <div class="row box-title">
-                    <div class="col-md-12"><h4>Country Comfort Toowoomba</h4></div>              
+                    <div class="col-md-12"><h4><a href="hotel.php">Country Comfort Toowoomba</a></h4></div>              
+
+                    <div class="cta-container">
+                      <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                    </div>              
                   </div>
-                </a>
+                </div>
 
               </div>
             </div>
