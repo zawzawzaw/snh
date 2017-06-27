@@ -319,7 +319,7 @@ sagewest.component.GalleryDetailTab.prototype.create_main_slider = function() {
               '</p>',
             '</div>',
             '<div class="cta-container">',
-              '<a href="{url}" class="square-cta highlight-version">Book Now</a>',
+              '<a href="{url}" target="_blank" class="square-cta highlight-version">Book Now</a>',
             '</div>',
           '</div>',
         '</div>',
