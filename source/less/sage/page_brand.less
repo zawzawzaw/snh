@@ -1363,7 +1363,38 @@ body.is-tablet{
     &.mobile-version {
       .brand-location-page-item{
         width: 100%; 
-        height: 290px;
+        // height: 290px;
+        // height: 390px;
+        height: auto !important;
+
+        position: relative;
+
+        &:before{
+          content: '';
+          display: block;
+
+          position: absolute;
+          top: 0px;
+          left: 10px;
+          right: 10px;
+          height: 100%;
+          background: @white;
+          .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
+        }
+
+        .manic-image-container{
+          position: relative !important;
+          height: 270px !important;
+          left: 0px !important;
+          right: 0px !important;
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+
+
         .sub-title-city-mobile {
           display: none!important;
           position: absolute;
@@ -1395,14 +1426,28 @@ body.is-tablet{
           // padding-left: 25px;
           // padding-right: 25px;
 
-          left: 10px;
-          right: 10px;
+          /// left: 10px;
+          /// right: 10px;
+          left: auto;
+          right: auto;
           width: auto;
+          height: auto !important;
+
+          margin-left: 10px;
+          margin-right: 10px;
+
 
           padding-top: 11px;
           // padding-bottom: 49px;
-          padding-bottom: 63px;
+          // padding-bottom: 63px;
+          // padding-bottom: 20px;
+          padding-bottom: 19px;
 
+
+          position: relative !important;
+          height: auto !important;
+
+          min-height: 0px;
 
           
 
@@ -1416,7 +1461,7 @@ body.is-tablet{
             font-size: 17px;
             line-height: 20px;
 
-            margin-right: -12px;
+            // margin-right: -12px;
             width: auto;
 
             a{
@@ -1428,11 +1473,19 @@ body.is-tablet{
             display: none;
           }
           .cta-container{
-            padding-top: 10px;
-            bottom: 20px;
+            position: relative !important;
 
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-top: 8px;
+            // bottom: 20px;
+            bottom: auto;
+
+            padding-bottom: 0px;
+
+            padding-left: 0px;
+            padding-right: 0px;
+
+            // padding-left: 16px;
+            // padding-right: 16px;
 
           }
         }
@@ -1440,6 +1493,18 @@ body.is-tablet{
     }
   }
 }
+
+
+
+
+@media all and (max-width: 320px) {
+  #brand-location-page-item-container.mobile-version .brand-location-page-item .manic-image-container{
+    height: 200px !important;
+  }
+}
+
+
+
 
 #brand-location-cta-container {
   text-align: right;
