@@ -623,7 +623,8 @@ sagewest.page.Default.prototype.create_page_banner_slider = function(){
     }.bind(this));
 
     this.page_banner_carousel = $('.page-banner-carousel-version').slick({
-      'speed': 350,
+      // 'speed': 350,
+      'speed': 900,
       'dots': false,
       'arrows': false,
       'infinite': true,
@@ -631,7 +632,8 @@ sagewest.page.Default.prototype.create_page_banner_slider = function(){
       'slidesToScroll': 1,
       'pauseOnHover': false,
       'autoplay': true,
-      'autoplaySpeed': 4000
+        // 'autoplaySpeed': 4000
+      'autoplaySpeed': 6000
     });
   }
 }

@@ -216,7 +216,8 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
 
 
     this.home_brand_slider = $('#brand-all-location-slider-version-02').slick({
-      'speed': 350,
+      // 'speed': 350,
+      'speed': 750,
       'dots': false,
       // 'arrows': true,
       'arrows': false,
@@ -225,7 +226,8 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
       'slidesToScroll': 1,
       'pauseOnHover': true,
       'autoplay': true,
-      'autoplaySpeed': 4000
+      // 'autoplaySpeed': 4000
+      'autoplaySpeed': 6000
     });
 
     
@@ -265,7 +267,8 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
     }.bind(this));
 
     this.home_brand_slider_mobile = $('#brand-all-location-slider-version-02-mobile').slick({
-      'speed': 350,
+      // 'speed': 350,
+      'speed': 750,
       'dots': true,
       'arrows': false,
       'infinite': true,
@@ -273,7 +276,8 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
       'slidesToScroll': 1,
       'pauseOnHover': true,
       'autoplay': true,
-      'autoplaySpeed': 4000
+      // 'autoplaySpeed': 4000
+      'autoplaySpeed': 6000
     });
   }
 
@@ -291,7 +295,8 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
     }.bind(this));
 
     this.home_brand_offers_slider_mobile = $('#page-brand-promotion-slider-mobile').slick({
-      'speed': 350,
+      // 'speed': 350,
+      'speed': 750,
       'dots': true,
       'arrows': false,
       // 'infinite': true,
@@ -300,7 +305,8 @@ sagewest.page.Brand.prototype.creage_brand_slider = function(){
       'slidesToScroll': 2,
       'pauseOnHover': true,
       'autoplay': true,
-      'autoplaySpeed': 4000,
+      // 'autoplaySpeed': 4000,
+      'autoplaySpeed': 6000,
       'responsive': [
         {
           'breakpoint': 767,
