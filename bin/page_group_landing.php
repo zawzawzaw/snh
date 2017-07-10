@@ -540,89 +540,107 @@
 
     
             <div id="brand-location-page-item-container" class="slider-mobile">
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item group-landing-version"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
                 data-id="Country Comfort Hotel Adelaide">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container group-landing-version">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide-02.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
-                </div>
-                <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Hotel Adelaide</h5>
+                </a>
+                <div class="brand-location-page-item-overlay group-landing-version">
+                  <h5><a href="hotel.php">Country Comfort Hotel Adelaide</a></h5>
                   <h4>Adelaide</h4>
+                  <div class="cta-container">
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                  </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item group-landing-version"
                 data-country="Australia"
                 data-territory="South Australia"
                 data-city="Adelaide"
                 data-id="Country Comfort Adelaide Manor">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container group-landing-version">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-adelaide-manor.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
-                </div>
-                <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Adelaide Manor</h5>
+                </a>
+                <div class="brand-location-page-item-overlay group-landing-version">
+                  <h5><a href="hotel.php">Country Comfort Adelaide Manor</a></h5>
                   <h4>Adelaide</h4>
+                  <div class="cta-container">
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                  </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item group-landing-version"
                 data-country="Australia"
                 data-territory="Western Australia"
                 data-city="Albany"
                 data-id="Country Comfort Amity Motel Albany">
-                <div class="manic-image-container custom-top-position">
+                <a href="hotel.php" class="manic-image-container group-landing-version">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-albany.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
-                </div>
-                <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Amity Motel Albany</h5>
+                </a>
+                <div class="brand-location-page-item-overlay group-landing-version">
+                  <h5><a href="hotel.php">Country Comfort Amity Motel Albany</a></h5>
                   <h4>Albany</h4>
+                  <div class="cta-container">
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                  </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item group-landing-version"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="Armidale"
                 data-id="Country Comfort Armidale">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container group-landing-version">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-hotel-adelaide.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
-                </div>
-                <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Armidale</h5>
+                </a>
+                <div class="brand-location-page-item-overlay group-landing-version">
+                  <h5><a href="hotel.php">Country Comfort Armidale</a></h5>
                   <h4>Armidale</h4>
+                  <div class="cta-container">
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                  </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item group-landing-version"
                 data-country="Australia"
                 data-territory="Queensland"
                 data-city="Bundaberg"
                 data-id="Country Comfort Bundaberg International">
-                <div class="manic-image-container custom-top-position">
+                <a href="hotel.php" class="manic-image-container group-landing-version">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-bundaberg.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png" style="display: none!important;">
-                </div>
-                <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Bundaberg International</h5>
+                </a>
+                <div class="brand-location-page-item-overlay group-landing-version">
+                  <h5><a href="hotel.php">Country Comfort Bundaberg International</a></h5>
                   <h4>Bundaberg</h4>
+                  <div class="cta-container">
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                  </div>
                 </div>
-              </a>
+              </div>
 
-              <a href="hotel.php" class="brand-location-page-item"
+              <div class="brand-location-page-item group-landing-version"
                 data-country="Australia"
                 data-territory="New South Wales"
                 data-city="North Coffs Harbour"
                 data-id="Country Comfort Coffs Harbour">
-                <div class="manic-image-container">
+                <a href="hotel.php" class="manic-image-container group-landing-version">
                   <img src="" data-image-desktop="images_cms/brand/brand-location-coffs-harbour.jpg"  data-image-mobile="images_cms/brand/brand-location-01.png">
-                </div>
-                <div class="brand-location-page-item-overlay">
-                  <h5>Country Comfort Coffs Harbour</h5>
+                </a>
+                <div class="brand-location-page-item-overlay group-landing-version">
+                  <h5><a href="hotel.php">Country Comfort Coffs Harbour</a></h5>
                   <h4>North Coffs Harbour</h4>
+                  <div class="cta-container">
+                    <a href="booking_engine_search.php" target="_blank" class="square-cta highlight-version" title="Book Now">Book Now</a>
+                  </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
