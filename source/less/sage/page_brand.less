@@ -1219,6 +1219,27 @@ body.is-tablet{
   .display-inline-block;
   position: relative;
 
+  &.group-landing-version{
+    @media all and (max-width: 991px) {
+      height: auto !important;
+      
+      &:before{
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        right: 10px;
+        height: 100%;
+        background: @white;
+        border: 1px solid #222222;
+        // .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
+      }
+
+    }
+  }
+
 
   .manic-image-container{
     position: absolute !important;
@@ -1240,6 +1261,21 @@ body.is-tablet{
         } 
       }
     }
+
+    &.group-landing-version{
+      @media all and (max-width: 991px) {
+        position: relative !important;
+        height: 270px !important;
+        left: 0px !important;
+        right: 0px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      }
+      @media all and (max-width: 320px) {
+        height: 200px !important;
+      }
+    }
+    
 
     &:hover{
       // .manic-image-container{
@@ -1264,10 +1300,52 @@ body.is-tablet{
     width: 100%; // added to fixed the small gap on the right
 
     @media all and (max-width: 991px) {
+
       left: 0px;
       right: 0px;
       padding-left: 30px;
       padding-right: 30px;
+
+      &.group-landing-version{
+        position: relative !important;
+
+        min-height: 0px !important;
+        padding-top: 11px !important;
+        // padding-bottom: 23px !important;
+        /// padding-bottom: 60px !important;
+        
+
+
+        padding-bottom: 62px !important;
+        padding-left: 16px + 11px !important;
+        padding-right: 16px + 11px !important;
+
+        h5 {
+          font-size: 17px !important;
+          line-height: 20px !important;
+
+          // margin-right: -12px;
+          width: auto;
+
+          a{
+            font-size: 17px !important;
+            line-height: 20px !important;
+          }
+        }
+        h4 {
+          display: none;
+        }
+        .cta-container{
+          position: absolute;
+          left: 5px !important;
+          // bottom: 15px !important;
+          bottom: 19px !important;
+
+        }
+        
+      }
+
+
     }
 
     // white background
@@ -1472,6 +1550,7 @@ body.is-tablet{
           h4 {
             display: none;
           }
+          
           .cta-container{
             position: relative !important;
 
