@@ -155,6 +155,7 @@ sagewest.page.Default = function(options) {
   this.desktop_footer_spacer = $('#desktop-footer-spacer');
   this.desktop_footer = $('#desktop-footer');
 
+  /*
   // mobile desktop banner height fix on android
   var ua = navigator.userAgent.toLowerCase();
   var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
@@ -163,6 +164,7 @@ sagewest.page.Default = function(options) {
   }else {
     $(".default-page-banner-mobile-image .manic-image-container").removeClass("android");
   }
+  */
 
 
   // console.log('init');
