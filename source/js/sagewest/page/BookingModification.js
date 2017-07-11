@@ -218,8 +218,8 @@ sagewest.page.BookingModification.prototype.update_page_layout = function() {
  * @override
  * @inheritDoc
  */
-sagewest.page.BookingModification.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
-  sagewest.page.BookingModification.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
+sagewest.page.BookingModification.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
+  sagewest.page.BookingModification.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3, str_param_4);
 
   // console.log('scroll to target');
   // console.log(this.active_step);

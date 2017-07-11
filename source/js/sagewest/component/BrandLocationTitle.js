@@ -164,7 +164,8 @@ sagewest.component.BrandLocationTitle.prototype.parse_data = function() {
 
     this.country_name_dictionary[country_link] = country;
     this.territory_name_dictionary[territory_link] = territory;
-    this.city_name_dictionary[city_link] = city_link;
+    // this.city_name_dictionary[city_link] = city_link;
+    this.city_name_dictionary[city_link] = city;
 
 
     // add to country
@@ -298,16 +299,15 @@ sagewest.component.BrandLocationTitle.prototype.select_title = function(param_co
   }
 
 
-
   // console.log('param_country:' + param_country);
   // console.log('param_territory:' + param_territory);
   // console.log('param_city:' + param_city);
   // console.log('is_valid_country: ' + is_valid_country);
   // console.log('is_valid_territory: ' + is_valid_territory);
-  // console.log('is_valid_city: ' + is_valid_city);
+  console.log('is_valid_city: ' + is_valid_city);
   // console.log('target_country_str: ' + target_country_str);
   // console.log('target_territory_str: ' + target_territory_str);
-  // console.log('target_city_str: ' + target_city_str);
+  console.log('target_city_str: ' + target_city_str);
 
     
 
@@ -325,6 +325,7 @@ sagewest.component.BrandLocationTitle.prototype.select_title = function(param_co
 
 
       if (param_city != '' && is_valid_city == true) {
+        console.log('got here')
         this.city_dropdown.set_value(target_city_str);
       } else {
         this.set_no_city();
@@ -415,7 +416,7 @@ sagewest.component.BrandLocationTitle.prototype.check_city = function(param_coun
   if (goog.isDefAndNotNull(this.link_data_array[param_country][param_territory]) == false) {
     return false;
   }
-  if (this.link_data_array[param_country][param_territory].indexOf(param_city) != -1) {
+  if (this.link_data_array[param_country][param_territory].indexOf(param_city) == -1) {
     return false;
   }
 

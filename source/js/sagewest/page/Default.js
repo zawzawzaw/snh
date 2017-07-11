@@ -1331,7 +1331,7 @@ sagewest.page.Default.prototype.on_window_resize = function(event) {
  * @override
  * @inheritDoc
  */
-sagewest.page.Default.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
+sagewest.page.Default.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
 
   /**
    * @type {jQuery}

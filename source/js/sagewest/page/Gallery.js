@@ -364,8 +364,8 @@ sagewest.page.Gallery.prototype.update_page_layout = function() {
  * @override
  * @inheritDoc
  */
-sagewest.page.Gallery.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
-  sagewest.page.Gallery.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
+sagewest.page.Gallery.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
+  sagewest.page.Gallery.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3, str_param_4);
 
 
   // console.log('scroll_to_target gallery');

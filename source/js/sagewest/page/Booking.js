@@ -940,8 +940,8 @@ sagewest.page.Booking.prototype.getUrlParameter = function(sParam) {
  * @override
  * @inheritDoc
  */
-sagewest.page.Booking.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
-  sagewest.page.Booking.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
+sagewest.page.Booking.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
+  sagewest.page.Booking.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3, str_param_4);
 
   // console.log('scroll to target');
   // console.log(this.active_step);

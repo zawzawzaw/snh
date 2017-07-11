@@ -681,8 +681,8 @@ sagewest.page.Brand.prototype.update_page_layout = function() {
  * @override
  * @inheritDoc
  */
-sagewest.page.Brand.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
-  sagewest.page.Brand.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
+sagewest.page.Brand.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
+  sagewest.page.Brand.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3, str_param_4);
 
   // console.log('Brand scroll_to_target');
   // console.log('!!!!!!!!!!!!!!!!');
@@ -743,7 +743,9 @@ sagewest.page.Brand.prototype.scroll_to_target = function(str_param, str_param_2
         this.country_dropdown.set_value('Australia');  
       }
 
-      this.brand_location_title.select_title(str_param_2, str_param_3);
+      console.log('str_param_4: ' + str_param_4);
+
+      this.brand_location_title.select_title(str_param_2, str_param_3, str_param_4);
       this.on_group_location_title_filter_change();
 
     }

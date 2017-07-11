@@ -420,8 +420,8 @@ sagewest.page.Hotel.prototype.update_page_layout = function() {
  * @override
  * @inheritDoc
  */
-sagewest.page.Hotel.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
-  sagewest.page.Hotel.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3);
+sagewest.page.Hotel.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
+  sagewest.page.Hotel.superClass_.scroll_to_target.call(this, str_param, str_param_2, str_param_3, str_param_4);
 
   /*
   // Mice venue landing - on hash change

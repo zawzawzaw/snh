@@ -332,6 +332,9 @@ manic.page.Page.prototype.initial_scroll_to_target = function() {
     } else if(str_array.length == 3){
       this.scroll_to_target(str_array[0], str_array[1], str_array[2]);
 
+    } else if(str_array.length == 4){
+      this.scroll_to_target(str_array[0], str_array[1], str_array[2], str_array[3]);
+
     } else {
       console.log('there is too many slashes in the hash url...');
       console.log('there is too many slashes in the hash url...');
@@ -347,8 +350,9 @@ manic.page.Page.prototype.initial_scroll_to_target = function() {
  * @param  {String} str_param
  * @param  {String=} str_param_2
  * @param  {String=} str_param_3
+ * @param  {String=} str_param_4
  */
-manic.page.Page.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3) {
+manic.page.Page.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
   console.log('manic.page.Page: scroll_to_target');
   /**
    * @type {jQuery}
@@ -493,6 +497,9 @@ manic.page.Page.prototype.on_window_hash_change = function(event) {
 
     } else if(str_array.length == 3){
       this.scroll_to_target(str_array[0], str_array[1], str_array[2]);
+
+    } else if(str_array.length == 4){
+      this.scroll_to_target(str_array[0], str_array[1], str_array[2], str_array[3]);
 
     } else {
       console.log('there is too many slashes in the hash url...');
