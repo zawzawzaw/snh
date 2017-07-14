@@ -537,10 +537,37 @@
       .instagram-feed-text {
         display: none;
       }
+
+      font-size: 0;
+      // margin-bottom: 20px;
+      margin-bottom: 9px;
+
+      margin-left: -5px;
+      margin-right: -5px;
+
+      .mobile-hotel-dining-image-01,
+      .mobile-hotel-dining-image-02{
+        .display-inline-block;
+        width: 50%;
+
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .manic-image-container{
+        height: 350px;
+      }
+      
+    }
+  }
+}
+
+// MOBILE
+@media only screen and (max-width: 767px) {
+  #hotel-dining-section{
+    #mobile-hotel-dining-instagram-feed-container {
       .manic-image-container {
-        height: 392px;
-        // margin-bottom: 20px;
-        margin-bottom: 9px;
+        height: 300px;
       }
     }
   }
@@ -550,11 +577,22 @@
   #hotel-dining-section{
     #mobile-hotel-dining-instagram-feed-container {
       .manic-image-container {
-        height: 320px;
+        height: 260px;
       }
     }
   }
 }
+
+@media only screen and (max-width: 320px) {
+  #hotel-dining-section{
+    #mobile-hotel-dining-instagram-feed-container {
+      .manic-image-container {
+        height: 200px;
+      }
+    }
+  }
+}
+
 
 //     ____  _______    _____________       _______
 //    / __ \/ ____/ |  / /  _/ ____/ |     / / ___/
