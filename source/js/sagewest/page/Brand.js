@@ -43,7 +43,10 @@ sagewest.page.Brand = function(options, element) {
     this.is_group_landing_page = true;
   }
 
-  
+    
+  this.hotel_country_data_array = [];
+
+
 
   this.hotel_dropdown = null;
 
@@ -54,10 +57,43 @@ sagewest.page.Brand = function(options, element) {
     this.hotel_dropdown = $("#brand-location-hotel-dropdown").data("manic.ui.Dropdown");
     this.country_dropdown = $("#brand-location-country-dropdown").data("manic.ui.Dropdown");
 
+    this.create_hotel_country_data();
+
     goog.events.listen(this.hotel_dropdown, manic.ui.Dropdown.ON_CHANGE, function(event){
       // console.log('here');
       // console.log('this.hotel_dropdown.current_value: ' + this.hotel_dropdown.current_value);
+      
 
+      if(this.hotel_dropdown.current_value == "all") {
+        this.country_dropdown.set_value();  
+        this.country_dropdown.element.trigger("change");
+
+      } else {
+        // check against all possible values
+        
+        var found_match = false;
+        var data_obj = null;
+        var hotel = '';
+        var country = '';
+
+        for (var i = 0, l=this.hotel_country_data_array.length; i < l; i++) {
+          data_obj = this.hotel_country_data_array[i];
+
+          hotel = data_obj['hotel'];
+          country = data_obj['country'];
+
+          if (this.hotel_dropdown.current_value == hotel) {
+            this.country_dropdown.set_value(country);
+            found_match = true;
+          }
+        }
+
+        if (found_match == false) {
+          this.country_dropdown.set_value('Australia');
+        }
+      }
+
+      /*
       if(this.hotel_dropdown.current_value == "Kiridara") {
         this.country_dropdown.set_value('Laos');  
       } else if(this.hotel_dropdown.current_value == "Riva Surya") {
@@ -70,6 +106,7 @@ sagewest.page.Brand = function(options, element) {
       } else {
         this.country_dropdown.set_value('Australia');  
       }
+      */
       
       this.on_group_location_title_filter_change();
 
@@ -160,7 +197,36 @@ sagewest.page.Brand.prototype.init = function() {
 
 
 
+sagewest.page.Brand.prototype.create_hotel_country_data = function(){
 
+  var arr = $('#brand-location-page-filter-hotel-data-item-container .brand-location-page-filter-hotel-data-item');
+  var item = null;
+  var data_obj = {};
+
+  var hotel = '';
+  var country = '';
+  var hotel_url = '';
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    item = $(arr[i]);
+
+    hotel = item.attr('data-hotel');
+    hotel_url = hotel.toLowerCase().split(' ').join('-');
+    country = item.attr('data-country');
+
+    data_obj = {
+      'url': hotel_url,
+      'hotel': hotel,
+      'country': country
+    };
+
+    this.hotel_country_data_array[i] = data_obj;
+  }
+  
+
+
+  
+};
 
 
 sagewest.page.Brand.prototype.update_brand_slider_layout = function(){
@@ -711,6 +777,55 @@ sagewest.page.Brand.prototype.scroll_to_target = function(str_param, str_param_2
     if (goog.isDefAndNotNull(str_param)) {
 
 
+
+      if(str_param == "all") {
+
+        this.hotel_dropdown.set_value('all');
+        this.country_dropdown.set_value();  
+        this.country_dropdown.element.trigger("change");
+
+        this.brand_location_title.select_title(str_param_2, str_param_3, str_param_4);
+        this.on_group_location_title_filter_change();
+
+      } else {
+
+        var data_obj = null;
+        var hotel_url = '';
+        var hotel = '';
+        var country = '';
+        var found_match = false;
+
+        for (var i = 0, l=this.hotel_country_data_array.length; i < l; i++) {
+
+          data_obj = this.hotel_country_data_array[i];
+
+          hotel_url = data_obj['url'];
+          hotel = data_obj['hotel'];
+          country = data_obj['country'];
+
+          if (str_param == hotel_url) {
+            found_match = true;
+            this.hotel_dropdown.set_value(hotel);
+            this.country_dropdown.set_value(country);
+          }
+        }
+
+
+        if (found_match == false) {
+          this.country_dropdown.set_value('Australia');
+        }
+
+
+        this.brand_location_title.select_title(str_param_2, str_param_3, str_param_4);
+        this.on_group_location_title_filter_change();
+
+
+      }
+
+
+
+
+      /*
       if(str_param == "kiridara") {
         this.hotel_dropdown.set_value('Kiridara');
         this.country_dropdown.set_value('Laos');  
@@ -747,6 +862,7 @@ sagewest.page.Brand.prototype.scroll_to_target = function(str_param, str_param_2
 
       this.brand_location_title.select_title(str_param_2, str_param_3, str_param_4);
       this.on_group_location_title_filter_change();
+      */
 
     }
 

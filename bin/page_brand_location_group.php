@@ -69,6 +69,19 @@
         </div>
         <div class="row">
           <div class="col-md-12">
+
+            <!-- a list of hotels and thier countries -->
+            <div id="brand-location-page-filter-hotel-data-item-container">
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Next Hotels" data-country="Australia"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Sage Hotels" data-country="Australia"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Kafnu" data-country="Australia"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Chifley Hotels" data-country="Australia"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Country Comfort" data-country="Australia"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Sundowner Inns" data-country="Australia"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Kiridara" data-country="Laos"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Riva Surya" data-country="Thailand"></div>
+              <div class="brand-location-page-filter-hotel-data-item" data-hotel="Riva Arun" data-country="Thailand"></div>
+            </div> <!-- brand-location-page-filter-hotel-data-item-container -->
             
             <!-- a list of cities, don't use special characters -->
             <div id="brand-location-page-filter-data-item-container">
