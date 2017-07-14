@@ -1191,13 +1191,22 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
   var highest_height = 0;
   var box_height = 0;
   var overlay = null;
+  var image_container = null;
 
   for (var i = 0, l=visible_arr.length; i < l; i++) {
     item = visible_arr[i];
     overlay = item.find('.brand-location-page-item-overlay');
+    image_container = item.find('.manic-image-container');
+
+    // console.log('image_container');
+    // console.log(image_container);
 
     overlay.css({
       'height': ''
+    });
+    image_container.css({
+      'height': '',
+      'bottom': ''
     });
 
     box_height = overlay.innerHeight();
@@ -1211,9 +1220,14 @@ sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(e
   for (var i = 0, l=visible_arr.length; i < l; i++) {
     item = visible_arr[i];
     overlay = item.find('.brand-location-page-item-overlay');
+    image_container = item.find('.manic-image-container');
 
     overlay.css({
       'height': highest_height + 'px'
+    });
+    image_container.css({
+      'height': 'auto',
+      'bottom': highest_height + 'px'
     });
   }
 
@@ -1357,9 +1371,14 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
   for (var i = 0, l=visible_arr.length; i < l; i++) {
     item = visible_arr[i];
     overlay = item.find('.brand-location-page-item-overlay');
+    image_container = item.find('.manic-image-container');
 
     overlay.css({
       'height': ''
+    });
+    image_container.css({
+      'height': '',
+      'bottom': ''
     });
 
     box_height = overlay.innerHeight();
@@ -1374,9 +1393,14 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
   for (var i = 0, l=visible_arr.length; i < l; i++) {
     item = visible_arr[i];
     overlay = item.find('.brand-location-page-item-overlay');
+    image_container = item.find('.manic-image-container');
 
     overlay.css({
       'height': highest_height + 'px'
+    });
+    image_container.css({
+      'height': 'auto',
+      'bottom': highest_height + 'px'
     });
   }
 
@@ -1398,9 +1422,14 @@ sagewest.page.Brand.prototype.update_group_landing_hotel_index_section = functio
   for (var i = 0, l=visible_arr.length; i < l; i++) {
     item = $(visible_arr[i]);
     overlay = item.find('.brand-location-page-item-overlay');
+    image_container = item.find('.manic-image-container');
 
     overlay.css({
       'height': ''
+    });
+    image_container.css({
+      'height': '',
+      'bottom': ''
     });
 
     box_height = overlay.innerHeight();
@@ -1415,10 +1444,16 @@ sagewest.page.Brand.prototype.update_group_landing_hotel_index_section = functio
   for (var i = 0, l=visible_arr.length; i < l; i++) {
     item = $(visible_arr[i]);
     overlay = item.find('.brand-location-page-item-overlay');
+    image_container = item.find('.manic-image-container');
 
     overlay.css({
       'height': highest_height + 'px'
     });
+    image_container.css({
+      'height': 'auto',
+      'bottom': highest_height + 'px'
+    });
+    
   }
 };
 

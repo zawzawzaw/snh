@@ -808,8 +808,15 @@
           <h1>West Perth Dining</h1>
 
           <div id="mobile-hotel-dining-instagram-feed-container" class="visible-xs visible-sm">
-            <div class="manic-image-container">
-              <img src="" data-image-mobile="images_cms/hotel/hotel-dining-01.png" alt="">
+            <div class="mobile-hotel-dining-image-01">
+              <div class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/hotel/hotel-dining-01-new.jpg" alt="">
+              </div>
+            </div>
+            <div class="mobile-hotel-dining-image-02">
+              <div class="manic-image-container">
+                <img src="" data-image-mobile="images_cms/hotel/hotel-dining-02-new.jpg" alt="">
+              </div>
             </div>
           </div>
 
@@ -834,13 +841,13 @@
         <div id="hotel-dining-instagram-feed-container">
           <div class="instagram-feed">
             <div class="manic-image-container manic-image-container-01">
-              <img src="" data-image-desktop="images_cms/hotel/hotel-dining-01.jpg">
+              <img src="" data-image-desktop="images_cms/hotel/hotel-dining-01-new.jpg">
             </div>
           </div>
 
           <div class="instagram-feed">
             <div class="manic-image-container manic-image-container-02">
-              <img src="" data-image-desktop="images_cms/hotel/hotel-dining-02.jpg">
+              <img src="" data-image-desktop="images_cms/hotel/hotel-dining-02-new.jpg">
             </div>
           </div>
 

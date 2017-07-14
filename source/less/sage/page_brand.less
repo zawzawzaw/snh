@@ -494,7 +494,8 @@
       }
     }
     .brand-all-location-content-box {
-      .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
+      // .box-shadow (2px, 2px, 15px, rgba(0,0,0,30%));
+      .box-shadow (1px, 1px, 8px, #e5e5e5);
       margin-bottom: 18px;
       display: block;
       
@@ -1297,7 +1298,9 @@ body.is-tablet{
     padding-left: 20px;
     padding-right: 20px;
 
-    width: 100%; // added to fixed the small gap on the right
+    .box-shadow (1px, 1px, 8px, #e5e5e5);
+
+    // width: 100%; // added to fixed the small gap on the right
 
     @media all and (max-width: 991px) {
 
@@ -1305,6 +1308,9 @@ body.is-tablet{
       right: 0px;
       padding-left: 30px;
       padding-right: 30px;
+
+      -webkit-box-shadow: none;
+      box-shadow: none;
 
       &.group-landing-version{
         position: relative !important;
