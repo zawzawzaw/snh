@@ -17,6 +17,42 @@ ob_start();
 <!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
   <head>
     <?php include('head.php'); ?>
+
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?4h86XryKDSdwSe2B79EcoPHK2QIiVyy3";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <script>
+      $zopim(function() {
+        $zopim.livechat.theme.setFontConfig({
+          google: {
+            families: ['Open Sans']
+          }
+        }, 'Open Sans, cursive');
+        $zopim.livechat.theme.setColor('#7d0052');
+        $zopim.livechat.theme.reload(); // apply new theme settings
+
+        $zopim.livechat.hideAll();
+
+        $zopim.livechat.concierge.setAvatar('http://clients.manic.com.sg/snh/html/bin/images/logo/sage-west-logo.png');
+        $zopim.livechat.concierge.setName('Customer Support');
+        $zopim.livechat.concierge.setTitle('Sage Hotels');
+
+        $zopim.livechat.window.setTitle('SAGE HOTELS');
+
+        // $zopim.livechat.window.onHide(function(){
+        //   console.log('hiding...')
+        // });
+
+        // console.log('Chat window is visible: ' + $zopim.livechat.window.getDisplay());
+    
+      });
+    </script>
+    <!--End of Zendesk Chat Script-->
   </head>
 
 
@@ -74,6 +110,49 @@ ob_start();
     </div> <!-- #page-wrapper -->
     
     <div id="mobile-page-hitarea"></div>
+
+    <!-- <a href="javascript:void(0);" id="open-chat" style="position: fixed;bottom: 30px;right: 30px;color: white;border-radius: 50px;background-color: #7d0052;width: 50px;height: 50px;text-align: center;vertical-align: middle;font-size: 28px;line-height: 28px;padding-top: 8px; z-index: 999999;"><i class="fa fa-comment" aria-hidden="true"></i></a> -->
+    <a href="javascript:void(0);" id="open-chat" style="background: url('images/icons/livechat.png') no-repeat; width: 110px; height: 31px; display: block; position: fixed;bottom: 30px;right: 30px; z-index: 999999;"></a>
+
+    <script type="text/javascript">
+      $("#open-chat").on("click", function(e){
+        e.stopPropagation();   
+        $('*[data-test-id="ChatWidgetWindow"]').show();  
+        $zopim(function() {
+          $zopim.livechat.window.show();
+        });             
+      });      
+
+      var specifiedElement = $('*[data-test-id="ChatWidgetWindow"]')[0];
+      console.log(specifiedElement);
+      document.addEventListener('click', function(event) {
+          var isClickInside = specifiedElement.contains(event.target);
+          if (isClickInside) {
+            console.log('You clicked inside');
+          }
+          else {
+            $('*[data-test-id="ChatWidgetWindow"]').hide();    
+            $zopim(function() {
+              $zopim.livechat.window.hide();
+            });
+
+          }
+      });
+
+      // $('iframe').load(function(){
+      //   $(this).contents().find(".meshim_widget_widgets_titleBar_MinimizeButton").on('click', function(event) { alert('test'); });
+      // });
+
+      $('iframe').load( function() {
+        $('iframe').contents().find("head").append($("<style type='text/css'>  .meshim_widget_widgets_titleBar_MinimizeButton{display:none;}  </style>"));
+      });
+    </script>
+
+    <style>
+      [data-test-id="ChatWidgetButton"] {
+        display: none!important;
+      }
+    </style>
 
   </body>
 </html>
