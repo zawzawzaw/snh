@@ -397,6 +397,8 @@ sagewest.page.Hotel.prototype.others = function(){
       $(this).closest('.flip-container').removeClass("hover");
     });
 
+    
+
     function myScroller()  {
         var scrollPos = $(window).scrollTop();
         var position;

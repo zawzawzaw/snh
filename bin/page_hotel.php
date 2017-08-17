@@ -52,6 +52,7 @@
   -->
 </article>
 
+
 <!-- 
     __  __________   ____  __
    /  |/  / ____/ | / / / / /
@@ -83,6 +84,8 @@
     </div>    
   </div>
 </article>
+
+
 
 <!--
    ___ _   _ _____ ____   ___  ____  _   _  ____ _____ ___ ___  _   _
@@ -441,6 +444,8 @@
 
 
 
+
+
 <!--
       _    ____ ____ ___  __  __ __  __  ___  ____    _  _____ ___ ___  _   _   __  __  ___  ____ ___ _     _____    ___ ____
      / \  / ___/ ___/ _ \|  \/  |  \/  |/ _ \|  _ \  / \|_   _|_ _/ _ \| \ | | |  \/  |/ _ \| __ )_ _| |   | ____|  / _ \___ \
@@ -788,7 +793,6 @@
 
 
 
-
 <!-- 
     ____  _____   _______   ________
    / __ \/  _/ | / /  _/ | / / ____/
@@ -857,6 +861,13 @@
     </div>
   </div>
 </article>
+
+
+
+
+
+
+
 
 <!-- 
     ____  ____  ____  __  _______  ______________  _   __
@@ -1012,17 +1023,10 @@
       </div>
     </div> <!-- row -->
 
-    <div class="row">
-      <div class="col-md-12">
-
-        <div id="default-promotion-view-all-container">
-          <a href="offer_index.php" class="square-cta">View all offers</a>
-        </div>
-
-      </div>
-    </div>
+    <div class="row"></div>
   </div>
 </article>
+
 
 <!--
    ____  ____   ___  __  __  ___ _____ ___ ___  _   _   __  __  ___  ____ ___ _     _____
@@ -1353,8 +1357,11 @@
       </div>
     </div>
   </div>
-  <div id="page-brand-map" class="default-version"></div>
 
+  <!-- 
+  <div id="page-brand-map" class="default-version"></div>
+   -->
+   
 
   <!-- 
   <div class="default_marker" data-zoom="4" data-location="Australia" data-lat="-25.783190" data-lng="133.583079"></div>
@@ -1419,6 +1426,8 @@
     <div class="row">
 
       <div id="hotel-attraction-content" class="boxlist-item-container visible-md visible-lg">
+
+        
         <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
@@ -1544,6 +1553,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="col-md-4">
           <div class="hotel-attraction-content-item boxlist-item">
             <div class="hotel-attraction-content-box boxlist-item-box">
@@ -1569,6 +1580,9 @@
             </div>
           </div>
         </div>
+
+        
+
       </div> <!-- hotel-attraction-content -->
 
       <!-- mobile version -->

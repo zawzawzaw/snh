@@ -7,8 +7,8 @@ ob_start();
   global $has_instagram;
   global $has_video;
 
-  $is_debug = false;
-  // $is_debug = true;
+  // $is_debug = false;
+  $is_debug = true;
   
   $has_instagram = true;
   $has_video = true;
@@ -81,8 +81,10 @@ ob_start();
       </div> <!-- #page-wrapper-content -->
     </div> <!-- #page-wrapper -->
     
-    <div id="mobile-page-hitarea"></div>
 
+    
+    <div id="mobile-page-hitarea"></div>
+    
   </body>
 </html>
 <?php
