@@ -400,6 +400,7 @@ manic.page.Page.prototype.scroll_to_target = function(str_param, str_param_2, st
  * @param  {number} num_param
  */
 manic.page.Page.prototype.scroll_to = function(num_param) {
+  console.log('scroll_to:');
   var target_y = num_param;
   var current_scroll = this.window.scrollTop();
   var target_duration = Math.abs( (target_y - current_scroll) / 800 );
@@ -407,6 +408,7 @@ manic.page.Page.prototype.scroll_to = function(num_param) {
 };
 
 manic.page.Page.prototype.scroll_to_fast = function(num_param) {
+  console.log('scroll_to_fast:');
   var target_y = num_param;
   var current_scroll = this.window.scrollTop();
   var target_duration = 0.5;

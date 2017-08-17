@@ -519,7 +519,7 @@ sagewest.page.Default.prototype.add_lazy_load = function(image_container_param) 
       triggerHook: 1,
       triggerElement: image_container_param.element[0]
     })
-    .addIndicators({name: ("" + Math.random()) })
+    // .addIndicators({name: ("" + Math.random()) })
     .on('start', image_container_param.on_image_visible.bind(image_container_param))
     .addTo(this.controller);
 
@@ -1025,10 +1025,11 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
 
 
 
+
 sagewest.page.Default.prototype.update_page_layout = function() {
 
   // console.log('default update_page_layout');
-
+  
 
   
   if (manic.IS_ACTUAL_MOBILE == true || this.original_window_width < 992) {
@@ -1122,6 +1123,9 @@ sagewest.page.Default.prototype.update_page_layout = function() {
 
 
 
+  
+  var temp_scroll_position = this.window.scrollTop();   // cause it is moving scroll after changing height
+
   /**
    * @type {sagewest.component.BoxList}
    */
@@ -1130,10 +1134,9 @@ sagewest.page.Default.prototype.update_page_layout = function() {
   for (var i = 0, l=this.box_list_array.length; i < l; i++) {
     box_list = this.box_list_array[i];
     box_list.update_layout();
-    
   }
-  
 
+  this.window.scrollTop(temp_scroll_position);
 
   
 
@@ -1168,6 +1171,7 @@ sagewest.page.Default.prototype.show_desktop_header = function(){
  * @param  {object} target
  */
 sagewest.page.Default.prototype.controller_scroll_to = function(target) {
+  
   TweenMax.to(window, 0.5, {
     scrollTo : {
       y : target, // scroll position of the target along y axis
@@ -1176,6 +1180,7 @@ sagewest.page.Default.prototype.controller_scroll_to = function(target) {
     ease : Sine.easeInOut
     //ease : Cubic.easeInOut
   });
+
 };
 
 /**
@@ -1334,6 +1339,8 @@ sagewest.page.Default.prototype.on_window_resize = function(event) {
  * @inheritDoc
  */
 sagewest.page.Default.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
+
+  console.log('scroll_to_target')
 
   /**
    * @type {jQuery}

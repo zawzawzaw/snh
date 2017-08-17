@@ -81,8 +81,10 @@ ob_start();
       </div> <!-- #page-wrapper-content -->
     </div> <!-- #page-wrapper -->
     
-    <div id="mobile-page-hitarea"></div>
 
+    
+    <div id="mobile-page-hitarea"></div>
+    
   </body>
 </html>
 <?php
