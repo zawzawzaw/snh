@@ -516,6 +516,7 @@ sagewest.page.Hotel.prototype.others = function(){
 
 
 
+    
     function myScroller()  {
         var scrollPos = $(window).scrollTop();
         var position;
@@ -569,7 +570,7 @@ sagewest.page.Hotel.prototype.others = function(){
     });
 
     myScroller();
-
+    
 };
 
 sagewest.page.Hotel.prototype.create_map_events = function(marker) {
@@ -600,3 +601,4 @@ sagewest.page.Hotel.prototype.create_map_events = function(marker) {
 //
 
 
+goog.exportSymbol('sagewest.page.Hotel', sagewest.page.Hotel);
