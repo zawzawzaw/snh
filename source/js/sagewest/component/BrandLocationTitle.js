@@ -304,10 +304,10 @@ sagewest.component.BrandLocationTitle.prototype.select_title = function(param_co
   // console.log('param_city:' + param_city);
   // console.log('is_valid_country: ' + is_valid_country);
   // console.log('is_valid_territory: ' + is_valid_territory);
-  console.log('is_valid_city: ' + is_valid_city);
+  // console.log('is_valid_city: ' + is_valid_city);
   // console.log('target_country_str: ' + target_country_str);
   // console.log('target_territory_str: ' + target_territory_str);
-  console.log('target_city_str: ' + target_city_str);
+  // console.log('target_city_str: ' + target_city_str);
 
     
 
@@ -325,7 +325,7 @@ sagewest.component.BrandLocationTitle.prototype.select_title = function(param_co
 
 
       if (param_city != '' && is_valid_city == true) {
-        console.log('got here')
+        // console.log('got here')
         this.city_dropdown.set_value(target_city_str);
       } else {
         this.set_no_city();

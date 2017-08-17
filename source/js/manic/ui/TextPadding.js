@@ -51,19 +51,19 @@ manic.ui.TextPadding = function(options, element) {
   if (goog.isDefAndNotNull(this.element.attr('data-y'))) {
     this.data_y = parseInt( this.element.attr('data-y') );
   } else {
-    console.log('data-y attribute is MISSING!!!!');
+    // console.log('data-y attribute is MISSING!!!!');
   }
 
   if (goog.isDefAndNotNull(this.element.attr('data-width'))) {
     this.data_width = parseInt( this.element.attr('data-width') );
   } else {
-    console.log('data-width attribute is MISSING!!!!');
+    // console.log('data-width attribute is MISSING!!!!');
   }
 
   if (goog.isDefAndNotNull(this.element.attr('data-height'))) {
     this.data_height = parseInt( this.element.attr('data-height') );
   } else {
-    console.log('data-height attribute is MISSING!!!!');
+    // console.log('data-height attribute is MISSING!!!!');
   }
 
 
@@ -115,7 +115,7 @@ manic.ui.TextPadding = function(options, element) {
 
 
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(manic.ui.TextPadding, goog.events.EventTarget);
 

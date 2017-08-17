@@ -127,8 +127,8 @@ sagewest.component.GalleryIndexTab.prototype.create_html = function() {
       
       
 
-      console.log(data);
-      console.log('clicked');
+      // console.log(data);
+      // console.log('clicked');
 
     }.bind(this));
 

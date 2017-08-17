@@ -57,7 +57,7 @@ sagewest.component.GenericMap = function(options, element) {
     this.create_markers();
 
   } else {
-    console.log('Missing data-lng or data-lat attributes')
+    // console.log('Missing data-lng or data-lat attributes')
   }
 
 

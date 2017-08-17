@@ -47,7 +47,7 @@ manic.ui.FormCheck = function(options, element) {
   this.create_input_array();
 
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(manic.ui.FormCheck, goog.events.EventTarget);
 
@@ -273,7 +273,7 @@ manic.ui.FormCheck.prototype.remove_input_error = function(input_item) {
 manic.ui.FormCheck.prototype.add_input_error = function(input_item,input_name,message) {
   input_item.addClass(this.options["error_class"]);
 
-  console.log('has error: ' + input_name);
+  // console.log('has error: ' + input_name);
 
   /**
    * @type {jQuery}
@@ -440,21 +440,21 @@ manic.ui.FormCheck.prototype.check_form = function() {
 
       // must be redaundant
       if(input_item.hasClass('required-group')){
-        console.log('input has required-group')
+        // console.log('input has required-group')
         if( 
           (input_item.attr("type") == "radio" && input_item.is(':checked') == true) || 
           (input_item.attr("type") != "radio" && input_item.val() != "")  ){
 
-          console.log('one of the required is checked');
+          // console.log('one of the required is checked');
           required_group_value = input_item.val();
         }
       }
 
       if(input_item.hasClass('required-group-last')){
-        console.log('required_group_value: ' + required_group_value);
+        // console.log('required_group_value: ' + required_group_value);
 
         if(required_group_value == ""){
-          console.log('add alert');
+          // console.log('add alert');
 
           // console.log('required_group_value: ' + required_group_value);
           this.error_id_array[this.error_id_array.length] = input_id;

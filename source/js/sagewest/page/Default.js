@@ -200,7 +200,7 @@ sagewest.page.Default.DEFAULT = {
 sagewest.page.Default.prototype.init = function() {
   sagewest.page.Default.superClass_.init.call(this);
 
-  console.log('init desktop');
+  // console.log('init desktop');
 
   this.controller = new ScrollMagic.Controller(); // needed by some components
   this.controller.scrollTo(this.controller_scroll_to.bind(this));
@@ -892,7 +892,7 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
       }.bind(this));
 
       item.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        console.log('before change');
+        // console.log('before change');
         // console.log(event, slick, currentSlide, nextSlide);
         this.current_index = nextSlide;
         // this.current_slide = slick.$slider.find('.slick-slide:nth-child('+ (this.current_index) +')');
@@ -963,7 +963,7 @@ sagewest.page.Default.prototype.create_page_detail_list_image_sliders = function
       }.bind(this));
 
       item.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        console.log('before change');
+        // console.log('before change');
         // console.log(event, slick, currentSlide, nextSlide);
         this.current_index = nextSlide;
         // this.current_slide = slick.$slider.find('.slick-slide:nth-child('+ (this.current_index) +')');
@@ -1189,7 +1189,7 @@ sagewest.page.Default.prototype.util_scroll_to = function(str_param){
     //this.scroll_to_target(value);
     
   } else {
-    console.log('Element needs a [data-value] param');
+    // console.log('Element needs a [data-value] param');
   }
 
 };
@@ -1453,8 +1453,8 @@ sagewest.page.Default.prototype.common_menu = function() {
     var formatted_current_date = ("0" + today.getDate().toString()).substr(-2)  + "/" + ("0" + (today.getMonth() + 1).toString()).substr(-2) + "/" + (today.getFullYear().toString());
     var formatted_tomorrow_date = ("0" + tomorrow.getDate().toString()).substr(-2)  + "/" + ("0" + (tomorrow.getMonth() + 1).toString()).substr(-2) + "/" + (tomorrow.getFullYear().toString());
 
-    console.log('formatted_current_date: ' + formatted_current_date);
-    console.log('formatted_tomorrow_date: ' + formatted_tomorrow_date);
+    // console.log('formatted_current_date: ' + formatted_current_date);
+    // console.log('formatted_tomorrow_date: ' + formatted_tomorrow_date);
 
 
         // console.log(formatted_current_date);    

@@ -32,8 +32,8 @@ manic.framework.Fullpage = function(options, element) {
   this.previous_section_index = 0;
   this.section_index = 0;
 
-  console.log('create fullpage');
-  console.log($.isFunction);
+  // console.log('create fullpage');
+  // console.log($.isFunction);
 
 
 };
@@ -95,7 +95,7 @@ manic.framework.Fullpage.prototype.rebuild = function() {
     this.element.fullpage['reBuild']();
 
   } catch(e){
-    console.log(e);
+    // console.log(e);
     
   }
 
@@ -129,16 +129,16 @@ manic.framework.Fullpage.prototype.next_slide = function() {
  */
 manic.framework.Fullpage.prototype.on_fullpage_event_afterrender = function() {
 
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
-  console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
+  // console.log('framework: on_fullpage_event_afterrender');
 
   // create section
   this.section_array = [];
@@ -158,7 +158,7 @@ manic.framework.Fullpage.prototype.on_fullpage_event_afterrender = function() {
   }
 
   this.has_rendered = true;
-  console.log('framework: on_fullpage_event_afterrender 2');
+  // console.log('framework: on_fullpage_event_afterrender 2');
 
   this.dispatchEvent(new manic.framework.FullpageEvent(manic.framework.FullpageEvent.AFTER_RENDER));
 
@@ -171,8 +171,8 @@ manic.framework.Fullpage.prototype.on_fullpage_event_afterrender = function() {
  */
 manic.framework.Fullpage.prototype.on_fullpage_event_afterload = function(anchorLink, index) {
 
-  console.log(this);
-  console.log(this.has_rendered)
+  // console.log(this);
+  // console.log(this.has_rendered)
 
   if(this.has_rendered){
     this.previous_section_index = this.section_index;
@@ -349,7 +349,7 @@ manic.framework.Fullpage.prototype.on_custom_slide_change = function(event) {
  */
 manic.framework.Fullpage.prototype.on_trigger_rebuild = function(event){
 
-  console.log('on_trigger_rebuild');
+  // console.log('on_trigger_rebuild');
   this.rebuild();
 };
 
@@ -595,7 +595,7 @@ manic.framework.FullpageSection.prototype.move_scrollbar = function(top_param) {
  * rebuild description
  */
 manic.framework.FullpageSection.prototype.rebuild = function() {
-  console.log('section rebuild');
+  // console.log('section rebuild');
   this.dispatchEvent(new manic.framework.FullpageEvent(manic.framework.FullpageEvent.TRIGGER_REBUILD));
 };
 

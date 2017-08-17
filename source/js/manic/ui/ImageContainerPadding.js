@@ -50,8 +50,8 @@ manic.ui.ImageContainerPadding = function(options, element) {
   if (goog.isDefAndNotNull(this.element.attr('data-y'))) {
     this.data_y = parseInt( this.element.attr('data-y') );
   } else {
-    console.log('data-y attribute is MISSING!!');
-    console.log(this.element);
+    // console.log('data-y attribute is MISSING!!');
+    // console.log(this.element);
   }
 
 
@@ -66,7 +66,7 @@ manic.ui.ImageContainerPadding = function(options, element) {
   this.get_image_container();
 
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(manic.ui.ImageContainerPadding, goog.events.EventTarget);
 
@@ -152,7 +152,7 @@ manic.ui.ImageContainerPadding.prototype.on_target_image_container_update_layout
 
   //this.data_offset_y += this.data_offset_y;
   this.padding_y += this.data_offset_y;
-  console.log('this.data_offset_y: ' + this.data_offset_y);
+  // console.log('this.data_offset_y: ' + this.data_offset_y);
   
   this.padding_y = this.padding_y <= this.min_padding ? this.min_padding : this.padding_y;
   

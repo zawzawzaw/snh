@@ -29,7 +29,7 @@ sagewest.component.BookingStep = function(options, element) {
 
   // console.log('init booking step');
 
-  console.log($(".booking-steps").length)
+  // console.log($(".booking-steps").length)
 
   if($(".booking-steps").length > 1) {
     this.element.find(".check-availability").click(this.on_check_availability_click.bind(this));

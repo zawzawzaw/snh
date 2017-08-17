@@ -38,7 +38,7 @@ manic.fullpage.Fullpage = function(options, element) {
   if(this.element.hasClass('has-section-scroll')){
     this.has_section_scroll = true;
   }
-  console.log('has_section_scroll: ' + this.has_section_scroll);
+  // console.log('has_section_scroll: ' + this.has_section_scroll);
   
 
 
@@ -72,9 +72,9 @@ manic.fullpage.Fullpage = function(options, element) {
     if (goog.isDefAndNotNull(item.attr('data-anchor'))) {
       this.anchor_array[i] = "" + item.attr('data-anchor');
     } else {
-      console.log('ERROR');
-      console.log('ERROR! missing data-anchor');
-      console.log('ERROR');
+      // console.log('ERROR');
+      // console.log('ERROR! missing data-anchor');
+      // console.log('ERROR');
     }
   }
 
@@ -83,7 +83,7 @@ manic.fullpage.Fullpage = function(options, element) {
 
   TweenMax.delayedCall(0.3, this.create_jquery_fullpage, [], this);
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(manic.fullpage.Fullpage, goog.events.EventTarget);
 
@@ -175,9 +175,9 @@ manic.fullpage.Fullpage.prototype.initial_scroll_to_target = function() {
   
   if (section != '') {
     if (slide != null) {
-      console.log('silentMoveTo');
-      console.log('section: ' + section);
-      console.log('slide: ' + slide);
+      // console.log('silentMoveTo');
+      // console.log('section: ' + section);
+      // console.log('slide: ' + slide);
       $.fn.fullpage.silentMoveTo(section,slide);
     } else {
       $.fn.fullpage.silentMoveTo(section);

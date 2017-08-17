@@ -120,7 +120,7 @@ manic.video.VideoJSPlayer.ON_VIDEO_END_02 = 'on_video_end_02';
  * update the layout of the video to best fit the window
  */
 manic.video.VideoJSPlayer.prototype.delayed_video_init = function() {
-  console.log('this.id_str: ' + this.id_str);        // this fails often
+  // console.log('this.id_str: ' + this.id_str);        // this fails often
   this.player = videojs(this.id_str);
   this.player.ready(this.on_video_ready.bind(this));
   this.player.on('ended', this.on_video_end.bind(this));
@@ -161,8 +161,8 @@ manic.video.VideoJSPlayer.prototype.update_layout = function() {
   this.target_y = 0;
 
   //console.log('video js player: update_layout');
-  console.log('original_width: ' + this.original_width);
-  console.log('original_height: ' + this.original_height);
+  // console.log('original_width: ' + this.original_width);
+  // console.log('original_height: ' + this.original_height);
 
   this.element.find('.video-js').css({
     'width': this.original_width + 'px',
@@ -220,7 +220,7 @@ manic.video.VideoJSPlayer.prototype.update_layout = function() {
     x: this.target_x, y: this.target_y
   });
 
-  console.log('this was completed')
+  // console.log('this was completed')
 
 
 };
@@ -279,8 +279,8 @@ manic.video.VideoJSPlayer.prototype.pause_video = function() {
   try{
     this.player.pause();
   } catch(e){
-    console.log('manic.video.VideoJSPlayer.prototype.pause_video: ERROR');
-    console.log(e);
+    // console.log('manic.video.VideoJSPlayer.prototype.pause_video: ERROR');
+    // console.log(e);
   }
   this.is_paused = true;
 };

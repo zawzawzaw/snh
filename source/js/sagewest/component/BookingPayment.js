@@ -43,11 +43,11 @@ sagewest.component.BookingPayment = function(options, element) {
 
     e.preventDefault();
 
-    console.log($(this).parent().parent());
+    // console.log($(this).parent().parent());
 
     var guest_detail_form = $(this).parent().parent().find(".default-form");
 
-    console.log(guest_detail_form);
+    // console.log(guest_detail_form);
 
     if(!guest_detail_form.is(':visible')) {
       guest_detail_form.slideDown();

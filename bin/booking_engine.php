@@ -124,11 +124,11 @@ ob_start();
       });      
 
       var specifiedElement = $('*[data-test-id="ChatWidgetWindow"]')[0];
-      console.log(specifiedElement);
+      // console.log(specifiedElement);
       document.addEventListener('click', function(event) {
           var isClickInside = specifiedElement.contains(event.target);
           if (isClickInside) {
-            console.log('You clicked inside');
+            // console.log('You clicked inside');
           }
           else {
             $('*[data-test-id="ChatWidgetWindow"]').hide();    

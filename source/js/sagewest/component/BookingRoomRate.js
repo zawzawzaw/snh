@@ -141,7 +141,7 @@ sagewest.component.BookingRoomRate.prototype.expand = function() {
 
 sagewest.component.BookingRoomRate.prototype.pop_up_open = function() {
     // $("html,body").addClass("fixed");
-    console.log($(".rates-breakdown-popup-container"));
+    // console.log($(".rates-breakdown-popup-container"));
     // $(".rates-breakdown-popup-container").addClass('show');
     $(".popup-container").addClass('show');
 };
@@ -185,7 +185,7 @@ sagewest.component.BookingRoomRate.prototype.on_show_rate_detail_click = functio
 sagewest.component.BookingRoomRate.prototype.on_select_room_cta_click = function(event) {
   event.preventDefault();    
 
-  console.log(this.element.find(".booking-room-rates-title h5").text());
+  // console.log(this.element.find(".booking-room-rates-title h5").text());
 
   sagewest.component.BookingRoomRate.CURRENT_RATE_NAME = this.element.find(".booking-room-rates-title h5").text();
 

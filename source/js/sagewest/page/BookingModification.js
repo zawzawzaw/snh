@@ -98,7 +98,7 @@ sagewest.page.BookingModification.prototype.init = function() {
 
     var target = $(e.target);
 
-    console.log(target);
+    // console.log(target);
 
     if ($.contains($(".modification-popup-container")[0], target[0]) == false) {
       this.pop_up_close();      

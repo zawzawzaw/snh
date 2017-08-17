@@ -27,7 +27,7 @@ sagewest.component.HomeMapOverlayItem = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init home map overlay item');
+  // console.log('init home map overlay item');
 
   this.element.click(this.on_overlay_item_click.bind(this));
 

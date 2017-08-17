@@ -84,8 +84,8 @@ manic.ui.TextContainer = function(options, element) {
   this.target_image_width = 0;
   this.target_image_height = 0;
 
-  console.log('this.text_x: ' + this.text_x);
-  console.log('this.text_y: ' + this.text_y);
+  // console.log('this.text_x: ' + this.text_x);
+  // console.log('this.text_y: ' + this.text_y);
   //console.log('this.text_x: ' + this.text_x);
   //console.log('this.text_x: ' + this.text_x);
 
@@ -96,7 +96,7 @@ manic.ui.TextContainer = function(options, element) {
 
   this.update_layout();
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(manic.ui.TextContainer, goog.events.EventTarget);
 
@@ -241,7 +241,7 @@ manic.ui.TextContainer.prototype.update_layout = function() {
     this.use_scale_mode_best_fit_no_scale_down();
   }
 
-  console.log('---');
+  // console.log('---');
 
 
   // update the text based on current text width and height 
@@ -257,7 +257,7 @@ manic.ui.TextContainer.prototype.update_layout = function() {
   var target_text_y = center_y - this.text_element_element.height() / 2;
 
 
-  console.log('target_text_x: ' + target_text_x);
+  // console.log('target_text_x: ' + target_text_x);
   //console.log('text_element_element_width: ' + text_element_element_width);
   
   if(this.max_x != 0){
@@ -310,7 +310,7 @@ manic.ui.TextContainer.prototype.update_layout = function() {
 
     }
 
-    console.log('relative_max_x: ' + relative_max_x);
+    // console.log('relative_max_x: ' + relative_max_x);
 
     target_text_x = target_text_x < relative_min_x ? relative_min_x : target_text_x;
     target_text_x = target_text_x > relative_max_x ? relative_max_x : target_text_x;
@@ -326,17 +326,17 @@ manic.ui.TextContainer.prototype.update_layout = function() {
 
     if (this.vertical_align == manic.ui.TextContainer.TOP) {
 
-      console.log('this.vertical_align: top');
+      // console.log('this.vertical_align: top');
       relative_min_y = this.min_y;
 
     } else if (this.vertical_align == manic.ui.TextContainer.CENTER) {
 
-      console.log('this.vertical_align: center');
+      // console.log('this.vertical_align: center');
       relative_min_y = (this.target_image_y * -1) + this.min_y;
 
     } if (this.vertical_align == manic.ui.TextContainer.BOTTOM) {
 
-      console.log('this.vertical_align: bottom');
+      // console.log('this.vertical_align: bottom');
       relative_min_y = (this.target_image_y * -1) + this.min_y;
       
     }
@@ -354,9 +354,9 @@ manic.ui.TextContainer.prototype.update_layout = function() {
   target_text_x = Math.round(target_text_x);
   target_text_y = Math.round(target_text_y);
 
-  console.log('target_text_x: ' + target_text_x);
+  // console.log('target_text_x: ' + target_text_x);
 
-  console.log('---');
+  // console.log('---');
   
 
   this.text_element_element.css({

@@ -263,7 +263,7 @@ manic.canvas.ImageSequenceCanvas.prototype.custom_tick = function() {
       this.current_frame += (this.target_frame - this.current_frame) /8;
     //}
     
-    console.log('custom_tick: ' + this.current_frame);
+    // console.log('custom_tick: ' + this.current_frame);
 
     var target_frame = Math.round(this.current_frame);
     this.pixi_movieclip.gotoAndStop(target_frame);

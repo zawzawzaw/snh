@@ -1117,7 +1117,7 @@ sagewest.page.Brand.prototype.others = function(){
 sagewest.page.Brand.prototype.on_brand_location_title_filter_change = function(event){
 
   
-  console.log('on_brand_location_title_filter_change');
+  // console.log('on_brand_location_title_filter_change');
   // console.log(this.brand_location_title.current_country);
   // console.log(this.brand_location_title.current_territory);
   // console.log(this.brand_location_title.current_city);
@@ -1382,7 +1382,7 @@ sagewest.page.Brand.prototype.on_group_location_title_filter_change = function(e
     });
 
     box_height = overlay.innerHeight();
-    console.log('box_height: ' + box_height);
+    // console.log('box_height: ' + box_height);
 
     if (highest_height < box_height) {
       highest_height = box_height;
@@ -1433,7 +1433,7 @@ sagewest.page.Brand.prototype.update_group_landing_hotel_index_section = functio
     });
 
     box_height = overlay.innerHeight();
-    console.log('box_height: ' + box_height);
+    // console.log('box_height: ' + box_height);
 
     if (highest_height < box_height) {
       highest_height = box_height;

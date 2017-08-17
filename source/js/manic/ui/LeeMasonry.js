@@ -55,7 +55,7 @@ manic.ui.LeeMasonry = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(manic.ui.LeeMasonry, goog.events.EventTarget);
 

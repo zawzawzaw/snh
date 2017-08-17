@@ -10,7 +10,7 @@ goog.require('goog.events.EventTarget');
  */
 manic.util.JsonParser = function(options) {
   goog.events.EventTarget.call(this);
-  console.log('init');
+  // console.log('init');
 
   this.options = $.extend({}, manic.util.JsonParser.DEFAULT, options);
   this.data_array = null;
@@ -110,7 +110,7 @@ manic.util.JsonParser.prototype.on_json_load_complete = function(event) {
   try{
     this.process_json(JSON.parse(event['responseText']));
   } catch (e) {
-    console.log('on_json_load_complete: ' + this.options['json']);
-    console.log(e);
+    // console.log('on_json_load_complete: ' + this.options['json']);
+    // console.log(e);
   }
 };

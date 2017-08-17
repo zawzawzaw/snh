@@ -659,8 +659,8 @@ sagewest.page.Booking.prototype.create_datepicker_inputs = function() {
   var formatted_current_date = ("0" + today.getDate().toString()).substr(-2) + "/" + ("0" + (today.getMonth() + 1).toString()).substr(-2) + "/" + (today.getFullYear().toString());
   var formatted_tomorrow_date = ("0" + tomorrow.getDate().toString()).substr(-2) + "/" + ("0" + (tomorrow.getMonth() + 1).toString()).substr(-2) + "/" + (tomorrow.getFullYear().toString());
 
-  console.log('formatted_current_date: ' + formatted_current_date);
-  console.log('formatted_tomorrow_date: ' + formatted_tomorrow_date);
+  // console.log('formatted_current_date: ' + formatted_current_date);
+  // console.log('formatted_tomorrow_date: ' + formatted_tomorrow_date);
 
 
   var daterangepicker_option = {
@@ -870,7 +870,7 @@ sagewest.page.Booking.prototype.create_no_room_carousel = function() {
 
     var nextSlide = nextSlide + 1;
 
-    console.log(nextSlide);
+    // console.log(nextSlide);
 
     $("#home-location-content-carousel-text-"+nextSlide).addClass("active");
   });    

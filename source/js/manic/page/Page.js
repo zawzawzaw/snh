@@ -294,7 +294,7 @@ manic.page.Page.prototype.on_hide_preloader_start = function(){
   this.body.removeClass('preload-fade-start');
 };
 manic.page.Page.prototype.on_hide_preloader_complete = function() {
-  console.log('Page: on_hide_preloader_complete');
+  // console.log('Page: on_hide_preloader_complete');
   this.body.removeClass('preload-complete');
 
   
@@ -312,7 +312,7 @@ manic.page.Page.prototype.initial_scroll_to_target = function() {
   // console.log('initial_scroll_to_target: page')
 
   this.window_hash = window.location.hash.replace('#', '');
-  console.log('initial_scroll_to_target: ' + this.window_hash);
+  // console.log('initial_scroll_to_target: ' + this.window_hash);
 
   // last working code... Jun 02 2016
   // this.scroll_to_target(this.window_hash);
@@ -320,8 +320,8 @@ manic.page.Page.prototype.initial_scroll_to_target = function() {
   if (this.window_hash != '') {
     str_array = this.window_hash.split('/');
 
-    console.log('str_array2: ');
-    console.log(str_array);
+    // console.log('str_array2: ');
+    // console.log(str_array);
 
     if(str_array.length == 1){
       this.scroll_to_target(str_array[0]);
@@ -336,9 +336,9 @@ manic.page.Page.prototype.initial_scroll_to_target = function() {
       this.scroll_to_target(str_array[0], str_array[1], str_array[2], str_array[3]);
 
     } else {
-      console.log('there is too many slashes in the hash url...');
-      console.log('there is too many slashes in the hash url...');
-      console.log('there is too many slashes in the hash url...');
+      // console.log('there is too many slashes in the hash url...');
+      // console.log('there is too many slashes in the hash url...');
+      // console.log('there is too many slashes in the hash url...');
     }
   }
 
@@ -353,7 +353,7 @@ manic.page.Page.prototype.initial_scroll_to_target = function() {
  * @param  {String=} str_param_4
  */
 manic.page.Page.prototype.scroll_to_target = function(str_param, str_param_2, str_param_3, str_param_4) {
-  console.log('manic.page.Page: scroll_to_target');
+  // console.log('manic.page.Page: scroll_to_target');
   /**
    * @type {jQuery}
    */
@@ -477,7 +477,7 @@ manic.page.Page.prototype.on_window_resize = function(event) {
  */
 manic.page.Page.prototype.on_window_hash_change = function(event) {
 
-  console.log('manic.page.Page: on_window_hash_change');
+  // console.log('manic.page.Page: on_window_hash_change');
 
   this.window_hash = window.location.hash.replace('#', '');
   var str_array = [];
@@ -486,8 +486,8 @@ manic.page.Page.prototype.on_window_hash_change = function(event) {
 
     str_array = this.window_hash.split('/');
 
-    console.log('str_array: ');
-    console.log(str_array);
+    // console.log('str_array: ');
+    // console.log(str_array);
 
     if(str_array.length == 1){
       this.scroll_to_target(str_array[0]);
@@ -502,9 +502,9 @@ manic.page.Page.prototype.on_window_hash_change = function(event) {
       this.scroll_to_target(str_array[0], str_array[1], str_array[2], str_array[3]);
 
     } else {
-      console.log('there is too many slashes in the hash url...');
-      console.log('there is too many slashes in the hash url...');
-      console.log('there is too many slashes in the hash url...');
+      // console.log('there is too many slashes in the hash url...');
+      // console.log('there is too many slashes in the hash url...');
+      // console.log('there is too many slashes in the hash url...');
     }
 
     /*

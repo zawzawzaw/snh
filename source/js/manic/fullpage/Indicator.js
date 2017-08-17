@@ -32,7 +32,7 @@ manic.fullpage.Indicator = function(options, element) {
   //   |___|_| \_|___| |_|
   //
 
-  console.log('init');
+  // console.log('init');
 };
 goog.inherits(manic.fullpage.Indicator, goog.events.EventTarget);
 

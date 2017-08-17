@@ -118,7 +118,7 @@ manic.ui.Masonry.prototype.hide_not_visible = function() {
  */
 manic.ui.Masonry.prototype.update_layout = function() {
 
-  console.log('update_layout');
+  // console.log('update_layout');
 
   // needed
   //this.element_width = this.element.width();

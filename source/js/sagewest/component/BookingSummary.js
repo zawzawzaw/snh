@@ -169,7 +169,7 @@ sagewest.component.BookingSummary.prototype.private_method_05 = function() {};
 sagewest.component.BookingSummary.prototype.private_method_06 = function() {};
 
 sagewest.component.BookingSummary.prototype.getStepHeight = function() {
-    console.log('getstepheight: '+$(".booking-steps.active-step").height());
+    // console.log('getstepheight: '+$(".booking-steps.active-step").height());
 
     // if($(".booking-step.active-step").height()!==null) {
     return $(".booking-steps.active-step").height();  
@@ -213,13 +213,13 @@ sagewest.component.BookingSummary.prototype.update_summary_total = function() {
 
 sagewest.component.BookingSummary.prototype.update_page_height_on_stick = function() {
     
-    console.log("step height: "+$(".booking-steps.active-step").height())
-    console.log("sidebar height: "+$("#sticky-sidebar").height());
+    // console.log("step height: "+$(".booking-steps.active-step").height())
+    // console.log("sidebar height: "+$("#sticky-sidebar").height());
     // console.log("container height: "+$("#booking-engine-steps-container").height())
     // if($(".booking-steps.active-step").height() < this.element.height()) {   
     // console.log(this.element.find(".selected-rooms").length);
     if($(".booking-steps.active-step").height() < $("#sticky-sidebar")) {  
-      console.log('sidebar higher');
+      // console.log('sidebar higher');
       $("#booking-engine-steps-container").css('height', $("#sticky-sidebar") + 200);
     }else {
       $("#booking-engine-steps-container").css('height', 'auto');
@@ -229,13 +229,13 @@ sagewest.component.BookingSummary.prototype.update_page_height_on_stick = functi
 
 sagewest.component.BookingSummary.prototype.update_page_height = function() {
     
-    console.log("step height: "+$(".booking-steps.active-step").height())
-    console.log("sidebar height: "+this.element.height())
+    // console.log("step height: "+$(".booking-steps.active-step").height())
+    // console.log("sidebar height: "+this.element.height())
     // console.log("container height: "+$("#booking-engine-steps-container").height())
     // if($(".booking-steps.active-step").height() < this.element.height()) {   
     // console.log(this.element.find(".selected-rooms").length);
     if($(".booking-steps.active-step").height() < this.element.height()) {  
-      console.log('sidebar higher');
+      // console.log('sidebar higher');
       $("#booking-engine-steps-container").css('height', this.element.height() + 200);
     }else {
       $("#booking-engine-steps-container").css('height', 'auto');

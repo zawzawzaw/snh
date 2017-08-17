@@ -136,7 +136,7 @@ manic.ui.ExpandContainer = function(options, element) {
     this.instant_expand();
   }
 
-  console.log('manic.ui.ExpandContainer: init');
+  // console.log('manic.ui.ExpandContainer: init');
 };
 goog.inherits(manic.ui.ExpandContainer, goog.events.EventTarget);
 

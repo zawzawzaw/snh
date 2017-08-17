@@ -426,7 +426,7 @@ manic.ui.ImageContainer.prototype.update_layout = function() {
   // console.log('target_image: ' + target_image)
   // load new image
   if (this.current_image != target_image){
-    console.log('manic.ui.ImageContainer: load new image: ' + target_image);
+    // console.log('manic.ui.ImageContainer: load new image: ' + target_image);
 
     this.set_image_src(target_image);
 
@@ -842,6 +842,6 @@ manic.ui.ImageContainer.prototype.on_image_load_complete = function(event) {
 //
 
 manic.ui.ImageContainer.prototype.on_image_visible = function(){
-  console.log('this is visible');
+  // console.log('this is visible');
   //console.log(this.element);
 };
