@@ -244,6 +244,9 @@ sagewest.page.Default.prototype.init = function() {
   this.expandable_text();
 
   this.create_autocompelete_search();
+
+
+  this.create_live_chat();
 };
 
 
@@ -281,6 +284,45 @@ sagewest.page.Default.prototype.create_min_height = function(){
     this.min_height_container = $('#page-wrapper-content-min-height');
 
   }
+
+
+};
+
+sagewest.page.Default.prototype.create_live_chat = function(){
+
+  $("#open-chat").on("click", function(e){
+    e.stopPropagation();   
+    console.log('open-chat');
+
+    $('*[data-test-id="ChatWidgetWindow"]').show();  
+    $zopim(function() {
+      $zopim.livechat.window.show();
+    });             
+  });      
+
+  var specifiedElement = $('*[data-test-id="ChatWidgetWindow"]')[0];
+  // console.log(specifiedElement);
+  document.addEventListener('click', function(event) {
+      var isClickInside = specifiedElement.contains(event.target);
+      if (isClickInside) {
+        // console.log('You clicked inside');
+      }
+      else {
+        $('*[data-test-id="ChatWidgetWindow"]').hide();    
+        $zopim(function() {
+          $zopim.livechat.window.hide();
+        });
+
+      }
+  });
+
+  // $('iframe').load(function(){
+  //   $(this).contents().find(".meshim_widget_widgets_titleBar_MinimizeButton").on('click', function(event) { alert('test'); });
+  // });
+
+  $('iframe').load( function() {
+    $('iframe').contents().find("head").append($("<style type='text/css'>  .meshim_widget_widgets_titleBar_MinimizeButton{display:none;}  </style>"));
+  });
 
 
 };

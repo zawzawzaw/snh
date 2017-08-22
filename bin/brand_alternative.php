@@ -19,7 +19,7 @@ ob_start();
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="en" class="no-js"><!--<![endif]-->
   <head>
-    <?php include('head.php'); ?>
+    <?php include('head.php'); ?>    
   </head>
 
 
@@ -80,6 +80,17 @@ ob_start();
     </div> <!-- #page-wrapper -->
     
     <div id="mobile-page-hitarea"></div>
+
+    <!-- <a href="javascript:void(0);" id="open-chat" style="position: fixed;bottom: 30px;right: 30px;color: white;border-radius: 50px;background-color: #7d0052;width: 50px;height: 50px;text-align: center;vertical-align: middle;font-size: 28px;line-height: 28px;padding-top: 8px; z-index: 999999;"><i class="fa fa-comment" aria-hidden="true"></i></a> -->
+    <div class="open-chat-container" style="width: 90px; height: 45px; position: fixed;bottom: 20px;right: 15px; z-index: 999999;">
+      <a href="javascript:void(0);" id="open-chat" style="background: url('images/icons/livechat-alternative.svg') no-repeat; width: 100%; height: 100%; display: block;"></a>    
+    </div>
+
+    <style>
+      [data-test-id="ChatWidgetButton"], [data-test-id="ChatWidgetMobileButton"] {
+        display: none!important;
+      }
+    </style>
 
   </body>
 </html>
