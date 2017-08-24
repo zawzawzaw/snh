@@ -103,9 +103,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
     $zopim.livechat.concierge.setAvatar('http://clients.manic.com.sg/snh/html/bin/images/logo/sage-west-logo.png');
     $zopim.livechat.concierge.setName('Customer Support');
-    $zopim.livechat.concierge.setTitle('Sage Hotels');
+    $zopim.livechat.concierge.setTitle('Chifley Hotels');
 
-    $zopim.livechat.window.setTitle('SAGE HOTELS');
+    $zopim.livechat.window.setTitle('CHIFLEY HOTELS');
 
     // $zopim.livechat.window.onHide(function(){
     //   console.log('hiding...')
